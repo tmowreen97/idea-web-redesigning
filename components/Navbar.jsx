@@ -88,10 +88,10 @@ const Navbar = () => {
             <Link href='/services' id={router.pathname == "/services" ? "active" : ""}>Services</Link>
           </li>
           <li className='p-4'>
-            <Link href='/clients' id={router.pathname == "/clients" ? "active" : ""}>Clients</Link>
+            <Link href='/culture' id={router.pathname == "/culture" ? "active" : ""}>Culture</Link>
           </li>
           <li className='p-4'>
-            <Link href='/culture' id={router.pathname == "/culture" ? "active" : ""}>Culture</Link>
+            <Link href='/clients' id={router.pathname == "/clients" ? "active" : ""}>Clients</Link>
           </li>
           <li className='p-4'>
             <Link href='/contact' id={router.pathname == "/contact" ? "active" : ""}>Contact Us</Link>
