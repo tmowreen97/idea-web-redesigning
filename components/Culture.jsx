@@ -8,7 +8,12 @@ function CulturePage(){
         <h1 className="md:text-[1100%] text-5xl font-thin text-primary_text text-left tracking-wide">Culture</h1>
       </div>
       <div>
-        <ReactPlayer url={'https://www.youtube.com/watch?v=fmdLsdmYzTo&ab_channel=TravisScottVEVO'}/>
+        <ReactPlayer 
+        url={'https://www.youtube.com/watch?v=fmdLsdmYzTo&ab_channel=TravisScottVEVO'}
+        playing
+        loop
+        
+        />
       </div>
     </div>
   )
