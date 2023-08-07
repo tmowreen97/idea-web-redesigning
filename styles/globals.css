@@ -108,4 +108,17 @@ polyline {
   color: blueviolet;
 
 }
-/* Portfolio Select */
+
+/* Culture Grid */
+
+.culture__parent {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  }
+  
+  .culture__child1 { grid-area: 1 / 1 / 5 / 5; }
+  .culture__child2 { grid-area: 1 / 5 / 3 / 8; }
+  .culture__child3 { grid-area: 3 / 5 / 5 / 8; }

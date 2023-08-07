@@ -1,4 +1,5 @@
 'use client'
+import Image from "next/image";
 import React from "react";
 import ReactPlayer from "react-player/lazy";
 
@@ -9,14 +10,65 @@ function CulturePage(){
       <div className="p-20">
         <h1 className="md:text-[1100%] text-5xl font-thin text-primary_text text-left tracking-wide">Culture</h1>
       </div>
-      <div>
-        <ReactPlayer 
-        url={'https://www.youtube.com/watch?v=fmdLsdmYzTo&ab_channel=TravisScottVEVO'}
-        playing
-        loop
-        
-        />
+      <div className="justify-center items-center flex">
+        <div>
+          <ReactPlayer 
+            url={'https://www.youtube.com/watch?v=fmdLsdmYzTo&ab_channel=TravisScottVEVO'}
+            playing
+            loop
+            muted
+            width={'1000px'}
+            height={'600px'}
+          />
+        </div>
       </div>
+      <div className="flex justify-center items-center p-5 ">
+        <div className="culture__parent justify-center align-center">
+          <div className="culture__child1 bg-blue-600 p-20 flex">
+            <div>
+              <h2>June 2023</h2>
+              <div className="items-center justify-center">
+                <Image src={'/assets/filler-1.jpg'} width={500} height={300}/>
+              </div>
+              <div >
+                <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                </p>
+
+              </div>
+            </div>
+          </div>
+          <div className="culture__child2 bg-purple-800 p-20 flex">
+          <div>
+              <h2>Jan 2023</h2>
+              <div>
+                <Image src={'/assets/filler-2.jpg'} width={500} height={300}/>
+              </div>
+              <div >
+                <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                </p>
+
+              </div>
+            </div>
+          </div>
+          <div className="culture__child3 bg-green-800 p-20 flex">
+          <div>
+              <h2>June 2023</h2>
+              <div>
+                <Image src={'/assets/filler-3.jpg'} width={500} height={300}/>
+              </div>
+              <div >
+                <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                </p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     
     </div>
   )
 }
