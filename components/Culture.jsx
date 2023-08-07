@@ -13,10 +13,11 @@ function CulturePage(){
       <div className="justify-center items-center flex">
         <div>
           <ReactPlayer 
-            url={'https://www.youtube.com/watch?v=fmdLsdmYzTo&ab_channel=TravisScottVEVO'}
+            url={'https://www.youtube.com/watch?v=pz6P2vCF6tg&ab_channel=TravisScottVEVO'}
             playing
             loop
             muted
+            controls
             width={'1000px'}
             height={'600px'}
           />
@@ -24,7 +25,7 @@ function CulturePage(){
       </div>
       <div className="flex justify-center items-center p-5 ">
         <div className="culture__parent justify-center align-center">
-          <div className="culture__child1 bg-blue-600 p-20 flex">
+          <div className="culture__child1 p-20 flex">
             <div>
               <h2>June 2023</h2>
               <div className="items-center justify-center">
@@ -38,7 +39,7 @@ function CulturePage(){
               </div>
             </div>
           </div>
-          <div className="culture__child2 bg-purple-800 p-20 flex">
+          <div className="culture__child2 p-20 flex">
           <div>
               <h2>Jan 2023</h2>
               <div>
@@ -52,7 +53,8 @@ function CulturePage(){
               </div>
             </div>
           </div>
-          <div className="culture__child3 bg-green-800 p-20 flex">
+          {/* <div className="row-border"/> */}
+          <div className="culture__child3  p-20 flex">
           <div>
               <h2>June 2023</h2>
               <div>

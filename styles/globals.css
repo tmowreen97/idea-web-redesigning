@@ -122,3 +122,9 @@ polyline {
   .culture__child1 { grid-area: 1 / 1 / 5 / 5; }
   .culture__child2 { grid-area: 1 / 5 / 3 / 8; }
   .culture__child3 { grid-area: 3 / 5 / 5 / 8; }
+
+  /* .row-border{
+    border-top: 2px solid gray;
+    grid-column: 5 / 8; 
+    grid-row-start: 2;
+  } */
