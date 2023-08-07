@@ -72,10 +72,10 @@ function OurTeam (){
             main_team.map((member)=> {
               return(
                 <div className="flex items-center">
-                  <div className="mr-5 rounded-xl overflow-hidden">
+                  <div className="mr-5 rounded-xl overflow-hidden ">
                     <Image src={member.image} width={400} height={600} alt={'lead_team'}/>
                   </div>
-                  <div className="p-2 w-[260px] text-left bg-white/90 rounded-xl">
+                  <div className="p-2 w-[260px] text-left bg-secondary/40 rounded-xl ">
                     <h2 className="text-secondary_text">{member.name}</h2>
                     <p className="mx-2 text-secondary_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                   </div>
@@ -106,7 +106,7 @@ function OurTeam (){
         <div className="grid grid-cols-2 md:grid-cols-4 gap-5 mx-20 pb-20">
           {second_team.map((member)=> {
             return(
-              <div className="relative">
+              <div className="relative hover:cursor-pointer">
                 <Card member={member}/>
 
               </div>

@@ -35,13 +35,8 @@ export default function Footer(){
                   <textarea type="text" className="w-[300px] rounded-xl text-center max-h-[70px] p-1" placeholder="Message"/>
                 </div>
                 <div className="text-center items-center justify-center flex ">
-                  <div className="bg-tertiary/80 hover:bg-accent_2/80 hover:text-secondary_text/70 rounded-xl p-2 shadow-xl text-primary_text">
+                  <div className="bg-tertiary/80 hover:bg-accent_2/80 rounded-xl p-2 shadow-xl text-primary_text">
                     <button type='submit'>Send</button>
-                    {/* <Link href="https://www.linkedin.com/in/tasreenmowreen" legacyBehavior>
-                        <a target="_blank" rel="noopener noreferrer">
-                          <AiFillLinkedin/>
-                        </a>
-                    </Link> */}
                   </div>
                 </div>
               </form>
@@ -50,7 +45,7 @@ export default function Footer(){
           </div>
           <div className="grid grid-cols-3 gap-10 text-center items-center justify-center align-middle pt-5 ml-10 text-primary_text">
             <div className="text-center items-center justify-center flex rounded-xl ">
-              <div className="bg-tertiary/80 hover:bg-accent_2/80 hover:text-secondary_text/70 rounded-full p-4 text-2xl">
+              <div className="bg-tertiary/80 hover:bg-accent_2/80  rounded-full p-4 text-2xl">
                 <Link href="https://www.linkedin.com/in/tasreenmowreen" legacyBehavior>
                     <a target="_blank" rel="noopener noreferrer">
                       <AiFillInstagram/>
@@ -59,7 +54,7 @@ export default function Footer(){
               </div>
             </div>
             <div className="text-center items-center justify-center flex  p-1 rounded-xl ">
-              <div className="bg-tertiary/80 hover:bg-accent_2/80 hover:text-secondary_text/70 rounded-full p-4 text-2xl">
+              <div className="bg-tertiary/80 hover:bg-accent_2/80  rounded-full p-4 text-2xl">
                 <Link href="https://www.linkedin.com/in/tasreenmowreen" legacyBehavior>
                     <a target="_blank" rel="noopener noreferrer">
                       <AiFillFacebook/>

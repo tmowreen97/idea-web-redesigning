@@ -47,15 +47,15 @@ const About = () => {
 
             </div>
           </div>
-          <div className="about__child2 p-10 bg-secondary/50 rounded-xl m-5 w-[175%] mt-20 ml-20">
+          <div className="about__child2 p-10 bg-secondary/40 rounded-xl m-5 w-[175%] mt-20 ml-20">
             <h2>Our Mission</h2>
             <p className="tracking-wider">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
           </div>
-          <div className="about__img bg-secondary/50 items-center justify-center align-middle text-center p-5 ml-20 w-[175%] animation-pulse delay-200 rounded-xl m-5 hover:animate-none">
+          <div className="about__img bg-secondary/40 items-center justify-center align-middle text-center p-5 ml-20 w-[175%] animation-pulse delay-200 rounded-xl m-5 hover:animate-none">
             
             <div className='relative'>
-              {reveal ? <div id='cover' className=' z-10 absolute left-[-8px] bg-[#322d44]/80 w-[510px] h-[340px] rounded-xl ml-2 pt-[150px]'>
-                <Link href={'/team'} className='text-secondary_text font-light '>Click to See Our Team</Link>
+              {reveal ? <div id='cover' className=' z-10 absolute left-[-8px] bg-slate-600/50 w-[510px] h-[340px] rounded-xl ml-2 pt-[150px]'>
+                <Link href={'/team'} className='text-primary_text font-light '>Click to See Our Team</Link>
               </div>: ""}
               <div onMouseEnter={()=> mouse()} className='rounded-xl overflow-hidden'>
                 <Image src={'/assets/filler-1.jpg'} width={550} height={100} alt={'team'}/>

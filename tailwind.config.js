@@ -15,14 +15,15 @@ module.exports = {
 
       },
       colors:{
-        primary: '#DAD3DF',
+        primary: '#301B3D',
         secondary: '#A593B1',
-        tertiary : '#CBAEC7',
+        tertiary : '#1D0E25',
         footer_bg: '#564C6A',
-        accent_1 : '#E8D7DD',
-        accent_2 : '9C36FC',
-        primary_text : '#625A81',
-        secondary_text : '#F5F5F5',
+        accent_1 : '#9C6DB5',
+        accent_2 : '#9C36FC',
+        primary_text : '#F6F6F6',
+        secondary_text : '#DAD3F5',
+        dark_text : '#301B3D'
       },
       fontFamily: {
         sans: ['var(--font-urbanist)'],
