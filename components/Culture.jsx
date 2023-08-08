@@ -24,14 +24,14 @@ function CulturePage(){
         </div>
       </div>
       <div className="flex justify-center items-center p-5 ">
-        <div className="culture__parent justify-center align-center">
-          <div className="culture__child1 p-20 flex">
+        <div className="culture__parent justify-center py-10">
+          <div className="culture__child1 p-20 flex bg-secondary/40 rounded-xl">
             <div>
-              <h2>June 2023</h2>
-              <div className="items-center justify-center">
-                <Image src={'/assets/filler-1.jpg'} width={500} height={300}/>
+              <h2 className="p-5">June 2023</h2>
+              <div className="items-center justify-center rounded-xl overflow-hidden">
+                <Image src={'/assets/filler-1.jpg'} width={700} height={300}/>
               </div>
-              <div >
+              <div className="pt-10 m-5 text-lg" >
                 <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                 </p>
@@ -39,13 +39,13 @@ function CulturePage(){
               </div>
             </div>
           </div>
-          <div className="culture__child2 p-20 flex">
+          <div className="culture__child2 p-20 flex bg-secondary/40 rounded-xl">
           <div>
-              <h2>Jan 2023</h2>
-              <div>
+              <h2 className="p-5">Jan 2023</h2>
+              <div className="items-center justify-center rounded-xl overflow-hidden">
                 <Image src={'/assets/filler-2.jpg'} width={500} height={300}/>
               </div>
-              <div >
+              <div className="pt-10 m-5 text-lg">
                 <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                 </p>
@@ -54,13 +54,13 @@ function CulturePage(){
             </div>
           </div>
           {/* <div className="row-border"/> */}
-          <div className="culture__child3  p-20 flex">
+          <div className="culture__child3  p-20 flex bg-secondary/40 rounded-xl">
           <div>
-              <h2>June 2023</h2>
-              <div>
+              <h2 className="p-5">June 2023</h2>
+              <div className="items-center justify-center rounded-xl overflow-hidden">
                 <Image src={'/assets/filler-3.jpg'} width={500} height={300}/>
               </div>
-              <div >
+              <div className="pt-10 m-5 text-lg">
                 <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                 </p>

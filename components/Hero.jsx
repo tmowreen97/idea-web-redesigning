@@ -1,5 +1,6 @@
 import {React, useState} from 'react';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 function Hero({heading, message}){
   const [descTwo, setDescTwo] = useState(false)
@@ -23,6 +24,21 @@ function Hero({heading, message}){
   // console.log('coord',coord)
   return (
     <div className='flex relative items-center justify-center w-screen h-screen pt-12 bg-fixed bg-center bg-cover custom-img tracking-wider'>
+      {/* <div className='absolute left-0 top-0 h-[100%] w-[100%]'>
+        <Image src={'/assets/miami-port.jpeg'} alt='MiamiPort' fill style={{objectFit:'cover'}} priority/>
+      </div> */}
+      
+      {/* <Image
+      alt="Mountains"
+      src={mountains}
+      placeholder="blur"
+      quality={100}
+      fill
+      sizes="100vw"
+      style={{
+        objectFit: 'cover',
+      }}
+    /> */}
       {/* Overlay */}
       {/* <div className='absolute top-0 left-0 right-0 bottom-0 bg-black/70 z-[2]' /> */}
       <motion.button

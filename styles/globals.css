@@ -114,9 +114,9 @@ polyline {
 .culture__parent {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 20px;
   }
   
   .culture__child1 { grid-area: 1 / 1 / 5 / 5; }
