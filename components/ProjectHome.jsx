@@ -36,7 +36,7 @@ function ProjectHome(){
           <ProjectHomeCarousel projects={projects} setProjectSelect={setProjectSelect} projectSelect={projectSelect}/>
         </div>
         <div className="projecthome__img bg-secondary/50 items-center justify-center p-5 rounded-xl w-[450px] h-[45%] mt-20">
-          <h2>Category?</h2>
+          <h2>Category</h2>
         </div>
         <div className="projecthome__child2 p-10 bg-secondary/50 rounded-xl w-[450px]">
           <h2 className="">{projects[projectSelect].name}</h2>

@@ -40,7 +40,7 @@ const About = () => {
               {
                 traits.map((trait)=> {
                   return(
-                    <p key={trait} className='bg-accent_1 italic rounded-xl p-2 m-2'>{trait}</p>
+                    <p key={trait} className='bg-accent_1/90 italic rounded-xl p-2 m-2 text-dark_text'>{trait}</p>
                   )
                 })
               }

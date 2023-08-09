@@ -55,18 +55,18 @@ function Hero({heading, message}){
         />
         {descTwo ? 
         <>
-          <svg  width="100%" height="100%" className="relative"><polyline points={coord} stroke="white" strokeWidth={1.5} fill="none" animation="dash 5s linear"/></svg>
+          <svg  width="100%" height="100%" className="relative"><polyline points={coord} stroke="white" strokeWidth={1} fill="none" animation="dash 5s linear"/></svg>
           <motion.div 
           initial={{opacity:0}}
           whileInView={{opacity:1, transition:{delay:.7}}}
-          className='bg-white/50 w-[350px] fixed right-[3%] top-[10%] rounded-xl px-5 py-4'>
+          className='bg-white/60 w-[350px] absolute right-[3%] top-[10%] rounded-xl px-5 py-4'>
             <div className='text-right items-center'>
               <button className='bg-white/60 rounded-full px-1 hover:bg-accent_2 hover:text-secondary_text' onClick={()=> setDescTwo(false)}>
                 ⓧ
               </button>
             </div>
             
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <p className="text-dark_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
           </motion.div>
           {/* <motion.div initial={{opacity:0}} whileInView={{opacity:1, transition:{delay:1.1}}} id="desc" className="fixed md:right-[5%] md:bottom-[55%] w-60 bg-[#F5F4F9]/40 rounded-xl" onClick={(e)=>console.log(e)}>
             <button className="absolute right-1 p-2 ease-out 200" onClick={()=> {setDescTwo(false)}}>

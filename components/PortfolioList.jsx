@@ -41,8 +41,8 @@ function PortfolioList({project}){
         whileInView={{opacity:1, transition:{duration:1.5}}}
         className={" text-center items-center justify-center flex"}
         >
-          <div className="w-[500px] bg-white/60 text-left p-5 mt-5 rounded-xl">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elt, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          <div className="w-[500px] bg-primary_text/70 text-left p-5 mt-5 rounded-xl">
+            <p className="text-dark_text">Lorem ipsum dolor sit amet, consectetur adipiscing elt, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
           </div>
       </motion.div> : ""
       }
