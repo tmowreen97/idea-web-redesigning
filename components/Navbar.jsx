@@ -9,21 +9,27 @@ const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [color, setColor] = useState('transparent');
   const [textColor, setTextColor] = useState('white');
+  const[lightLogo, setLightLogo] = useState(false)
   const router = useRouter();
 
-  // console.log(router.asPath)
+  console.log(router.asPath)
 
   const handleNav = () => {
     setNav(!nav);
   };
 
   useEffect(() => {
+    // if (router.asPath == '/'){
+    //   setLightLogo(false)
+    // }
     const changeColor = () => {
       if (window.scrollY >= 90) {
-        setColor('#C8AEC7');
+        setColor('#A593B1');
+        setLightLogo(true);
         setTextColor('#000000');
       } else {
         setColor('transparent');
+        setLightLogo(false)
         setTextColor('#ffffff');
       }
     };
@@ -34,7 +40,7 @@ const Navbar = () => {
     <motion.div
       initial={{opacity:0}}
       whileInView={{opacity:1, transition:{delay:0.6, duration:1}}}
-      style={{ backgroundColor: `${color}`, opacity:50}}
+      style={{ backgroundColor: `${color}`, opacity:40}}
       className='fixed left-0 top-0 w-full z-10 ease-in duration-300 tracking-wider'
     >
       <div className='w-screen  m-auto flex justify-between items-center p-2 text-white'>
@@ -43,7 +49,7 @@ const Navbar = () => {
         >
           <Link href='/'>
             {/* style={{ color: `${textColor}` }} */}
-            <Image src={'/assets/idea-logo.png'} width={200} height={100} alt={'logo'} />
+            {lightLogo ? <Image src={'/assets/logo-4.png'} width={150} height={200} alt={'light_logo'} /> : <Image src={'/assets/logo-4.png'} width={100} height={100} alt={'logo'} />}
           </Link>
         </motion.div>
         

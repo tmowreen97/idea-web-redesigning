@@ -40,7 +40,7 @@ const About = () => {
               {
                 traits.map((trait)=> {
                   return(
-                    <p key={trait} className='bg-accent_1/90 italic rounded-xl p-2 m-2 text-dark_text'>{trait}</p>
+                    <p key={trait} className='bg-secondary_text/90 italic rounded-xl p-2 m-2 text-dark_text'>{trait}</p>
                   )
                 })
               }
@@ -54,7 +54,7 @@ const About = () => {
           <div className="about__img bg-secondary/40 items-center justify-center align-middle text-center p-5 ml-20 w-[175%] animation-pulse delay-200 rounded-xl m-5 hover:animate-none">
             
             <div className='relative'>
-              {reveal ? <div id='cover' className=' z-10 absolute left-[-8px] bg-slate-600/50 w-[510px] h-[340px] rounded-xl ml-2 pt-[150px]'>
+              {reveal ? <div id='cover' className=' z-9 absolute left-[-8px] bg-slate-600/50 w-[510px] h-[340px] rounded-xl ml-2 pt-[150px]'>
                 <Link href={'/team'} className='text-primary_text font-light '>Click to See Our Team</Link>
               </div>: ""}
               <div onMouseEnter={()=> mouse()} className='rounded-xl overflow-hidden'>

@@ -100,7 +100,7 @@ function OurTeam (){
         }}
         className="p-[150px] "
       >
-        <h2 className="italic font-bold">Let us assist you in making your IDEAs a reality!</h2>
+        <h2 className="italic font-bold">Manifesting world class IDEAs!</h2>
       </motion.div>
       <div className="">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-5 mx-20 pb-20">

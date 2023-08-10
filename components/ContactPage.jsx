@@ -34,21 +34,21 @@ function ContactPage(){
             <p>Follow us on our socials!</p>
             <div className="flex justify-evenly py-5 pt-10 rounded-xl text-primary_text/90">
               <div className="bg-tertiary/80 hover:bg-accent_2/80  rounded-full p-6 text-4xl">
-                <Link href="https://www.linkedin.com/in/tasreenmowreen" legacyBehavior>
+                <Link href="https://www.instagram.com/idea.aec/" legacyBehavior>
                     <a target="_blank" rel="noopener noreferrer">
                       <AiFillInstagram/>
                     </a>
                 </Link>
               </div>
               <div className="bg-tertiary/80 hover:bg-accent_2/80  rounded-full p-6 text-4xl">
-                <Link href="https://www.linkedin.com/in/tasreenmowreen" legacyBehavior>
+                <Link href="https://www.facebook.com/profile.php?id=100076951517206" legacyBehavior>
                     <a target="_blank" rel="noopener noreferrer">
                       <AiFillFacebook/>
                     </a>
                 </Link>
               </div>
               <div className="bg-tertiary/80 hover:bg-accent_2/80  rounded-full p-6 text-4xl">
-                <Link href="https://www.linkedin.com/in/tasreenmowreen" legacyBehavior>
+                <Link href="https://www.linkedin.com/company/idea-aec/" legacyBehavior>
                     <a target="_blank" rel="noopener noreferrer">
                       <AiFillLinkedin/>
                     </a>

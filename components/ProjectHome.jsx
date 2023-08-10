@@ -43,7 +43,7 @@ function ProjectHome(){
           <p className="tracking-wider mx-2">{projects[projectSelect].desc}</p>
           <div className="mt-[5%] mb-5 text-center ">
             <Link href={'/portfolio'}>
-              <button className="inline-block rounded-xl bg-accent_1 p-3 px-4 font-normal hover:drop-shadow-xl hover:bg-accent_2/80 hover:text-secondary_text  tracking-wider">Learn More on our Portfolio</button>
+              <button className="inline-block rounded-xl bg-secondary_text text-dark_text p-3 px-4 font-normal hover:drop-shadow-xl hover:bg-accent_2/80 hover:text-secondary_text  tracking-wider">Learn More on our Portfolio</button>
             </Link>
           </div>
           {/* <h1 className="text-4xl">Our Story</h1>
