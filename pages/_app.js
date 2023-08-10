@@ -11,7 +11,6 @@ const urbanist = Urbanist({
 export default function App({ Component, pageProps }) {
   return (
     <main className={urbanist.className}>
-      <Navbar/>
       <Component {...pageProps} />
       <Footer/>
     </main>

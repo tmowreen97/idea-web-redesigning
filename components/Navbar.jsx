@@ -5,11 +5,11 @@ import { motion } from 'framer-motion';
 import { useRouter } from 'next/router';
 // import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 
-const Navbar = () => {
+const Navbar = ({setLightLogo, lightLogo}) => {
   const [nav, setNav] = useState(false);
   const [color, setColor] = useState('transparent');
   const [textColor, setTextColor] = useState('white');
-  const[lightLogo, setLightLogo] = useState(false)
+  
   const router = useRouter();
 
   console.log(router.asPath)
@@ -25,11 +25,15 @@ const Navbar = () => {
     const changeColor = () => {
       if (window.scrollY >= 90) {
         setColor('#A593B1');
-        setLightLogo(true);
         setTextColor('#000000');
+        if (setLightLogo) {
+          setLightLogo(true)
+        }
       } else {
         setColor('transparent');
-        setLightLogo(false)
+        if (setLightLogo) {
+          setLightLogo(false)
+        }
         setTextColor('#ffffff');
       }
     };
@@ -43,13 +47,13 @@ const Navbar = () => {
       style={{ backgroundColor: `${color}`, opacity:40}}
       className='fixed left-0 top-0 w-full z-10 ease-in duration-300 tracking-wider'
     >
-      <div className='w-screen  m-auto flex justify-between items-center p-2 text-white'>
+      <div className='w-screen  m-auto flex justify-between items-center p-2 text-white ml-1'>
         <motion.div
         
         >
           <Link href='/'>
             {/* style={{ color: `${textColor}` }} */}
-            {lightLogo ? <Image src={'/assets/logo-4.png'} width={150} height={200} alt={'light_logo'} /> : <Image src={'/assets/logo-4.png'} width={100} height={100} alt={'logo'} />}
+            {lightLogo ? <Image src={'/assets/light-logo-2.png'} width={200} height={100} alt={'light_logo'} /> : <Image src={'/assets/dark-logo.png'} width={100} height={100} alt={'dark_logo'} className="ml-5"/>}
           </Link>
         </motion.div>
         
