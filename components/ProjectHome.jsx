@@ -1,27 +1,32 @@
 import React, { useState } from "react";
 import ProjectHomeCarousel from "./ProjectHomeCarousel";
+import { BsChevronCompactDown, BsChevronCompactUp } from "react-icons/bs";
 import Link from "next/link";
 
 function ProjectHome(){
   const [projectSelect, setProjectSelect]= useState(0)
+  const[showDropDown, setShowDropDown] = useState(false)
   const projects = [
     {
       id: 1,
       name: 'One',
       image: "/assets/filler-1.jpg",
-      desc: "Image One"
+      desc: "Image One",
+      category : 'Residential'
     },
     {
       id:2,
       name: 'Two',
       image: "/assets/filler-2.jpg",
-      desc: "Image Two"
+      desc: "Image Two",
+      category: 'Cultural',
     },
     {
       id: 3,
       name: 'Three',
       image: "/assets/filler-3.jpg",
-      desc: "Image Three"
+      desc: "Image Three",
+      category: "Transportation",
     }
   ]
 
@@ -35,8 +40,59 @@ function ProjectHome(){
         <div className="projecthome__child1 p-10 bg-secondary/50 rounded-xl mr-5 ml-4">
           <ProjectHomeCarousel projects={projects} setProjectSelect={setProjectSelect} projectSelect={projectSelect}/>
         </div>
-        <div className="projecthome__img bg-secondary/50 items-center justify-center p-5 rounded-xl w-[450px] h-[45%] mt-20">
-          <h2>Category</h2>
+        <div className="projecthome__img bg-secondary/50 items-center text-center justify-center p-5 rounded-xl w-[450px] h-[45%] mt-20">
+          {/* <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+    <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4"/>
+  </svg> */}
+          <button onClick={()=> {setShowDropDown(!showDropDown)}}  data-dropdown-toggle="dropdown" className="relative w-[400px] text-2xl justify-between  hover:bg-secondary/60 focus:ring-4 focus:outline-none focus:ring-secondary_text font-medium rounded-lg px-5 py-2.5 text-center inline-flex items-center text-secondary_text" type="button">{projects[projectSelect].category} 
+          { showDropDown ? <BsChevronCompactUp/> : <BsChevronCompactDown/>}
+          </button>
+
+    <div id="dropdown" className={ showDropDown ? "z-10 absolute right-52 w-[200px] bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700": "hidden"}>
+        <ul className="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+          <li>
+            <a href="#" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">Institutional</a>
+          </li>
+          <li>
+            <a href="#" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">Educational</a>
+          </li>
+          <li>
+            <a href="#" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">Commercial</a>
+          </li>
+          <li>
+            <a href="#" className="block px-4 py-2 hover:bg-accent_2/80   hover:text-white">Cultural</a>
+          </li>
+          <li>
+            <a href="#" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">Healthcare Facilities</a>
+          </li>
+          <li>
+            <a href="#" className="block px-4 py-2 hover:bg-accent_2/80 hover:text-white">Mixed-Use & High-Rise</a>
+          </li>
+          <li>
+            <a href="#" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">Residential</a>
+          </li>
+          <li>
+            <a href="#" className="block px-4 py-2 hover:bg-accent_2/80 hover:text-white ">Transportation</a>
+          </li>
+          <li>
+            <a href="#" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">Industrial</a>
+          </li>
+        </ul>
+    </div>
+          {/* <div className='category__select'>
+            <ul>
+              <li>Institutional</li>
+              <li>Educational</li>
+              <li>Commercial</li>
+              <li>Cultural</li>
+              <li>Healthcare Facilities</li>
+              <li>Mixed-Use & High-Rise</li>
+              <li>Residential (High-End)</li>
+              <li>Transportation</li>
+              <li>Industrial</li>
+            </ul>
+
+          </div> */}
         </div>
         <div className="projecthome__child2 p-10 bg-secondary/50 rounded-xl w-[450px]">
           <h2 className="">{projects[projectSelect].name}</h2>

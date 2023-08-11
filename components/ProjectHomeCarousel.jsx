@@ -20,7 +20,7 @@ function ProjectHomeCarousel ({projects, setProjectSelect, projectSelect}){
         setProjectSelect((prevProjSelect) =>
           prevProjSelect === projects.length - 1 ? 0 : prevProjSelect + 1
         ),
-      2500
+      4500
     );
 
     return () => {
