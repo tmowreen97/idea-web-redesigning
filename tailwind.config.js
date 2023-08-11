@@ -24,7 +24,8 @@ module.exports = {
         accent_2 : '#9C36FC',
         primary_text : '#F6F6F6',
         secondary_text : '#DAD3F5',
-        dark_text : '#301B3D'
+        dark_text : '#301B3D',
+        button_bg : '#C0B4D3'
       },
       fontFamily: {
         sans: ['var(--font-urbanist)'],

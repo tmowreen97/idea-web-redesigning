@@ -3,63 +3,12 @@ import Image from "next/image";
 import PortfolioList from "./PortfolioList";
 import {BsChevronCompactDown} from 'react-icons/bs';
 
-function ProjectPortfolio(){
+function ProjectPortfolio({ projects }){
   const [category, setCategory] = useState('All')
   
   // if id is odd, open the description div to the right
   //  if id is even, open the description div to the left
-  const projects = [
-    {
-      name: 'MSC',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-      image: '/assets/miami-terminal.avif'
-    },
-    {
-      name: 'MSC',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-      image: '/assets/miami-terminal.avif'
-    },
-    {
-      name: 'MSC',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-      image: '/assets/miami-terminal.avif'
-    },
-    {
-      name: 'MSC',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-      image: '/assets/miami-terminal.avif'
-    },
-    {
-      name: 'MSC',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-      image: '/assets/miami-terminal.avif'
-    },
-    {
-      name: 'MSC',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-      image: '/assets/miami-terminal.avif'
-    },
-    {
-      name: 'MSC',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-      image: '/assets/miami-terminal.avif'
-    },
-    {
-      name: 'MSC',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-      image: '/assets/miami-terminal.avif'
-    },
-    {
-      name: 'MSC',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-      image: '/assets/miami-terminal.avif'
-    },
-    {
-      name: 'MSC',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-      image: '/assets/miami-terminal.avif'
-    }
-  ]
+  
 
 
   return(
@@ -68,7 +17,50 @@ function ProjectPortfolio(){
         <h1 className="md:text-[1100%] text-5xl font-thin text-primary_text text-left tracking-wide">Portfolio</h1>
       </div>
       <div>
-      <div className="text-right">
+        <div className="mx-[100px] items-center justify-center text-center ml-[9%]">
+
+        
+        <div className="grid grid-cols-5">
+          
+            <button id="category-button-active" className="category-button bg-[#C0B4D3]">
+            All
+          </button>
+          <button className="category-button bg-[#C0B4D3]">
+            Commercial
+          </button>
+          <button className="category-button bg-[#C0B4D3]">
+            Cultural
+          </button>
+          <button className="category-button bg-[#C0B4D3]">
+            Educational
+          </button>
+          <button className="category-button bg-[#C0B4D3]">
+            Healthcare Facilities
+          </button>
+          <button className="category-button bg-[#C0B4D3]">
+            Industrial
+          </button>
+          <button className="category-button bg-[#C0B4D3]">
+            Institutional
+          </button>
+          <button className="category-button bg-[#C0B4D3]">
+            Mixed-Use/High-Rise
+          </button>
+          <button className="category-button bg-[#C0B4D3]">
+            Residential
+          </button>
+          <button className="category-button bg-[#C0B4D3]">
+            Transportation
+          </button>
+          </div>
+          
+          
+          
+
+        </div>
+        
+      {/*  SELECT DROP DOWN*/}
+      {/* <div className="text-right">
         <select
           value={category}
           onChange={(e) => {
@@ -85,7 +77,7 @@ function ProjectPortfolio(){
           <option value="Category 6">Category 6</option>
           <option value="Category 7">Category 7</option>
         </select>
-      </div>
+      </div> */}
       <div className="grid md:grid-cols-2 mx-20 py-10">
         {
           projects.map((proj)=> {

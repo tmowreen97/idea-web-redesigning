@@ -51,31 +51,31 @@ function ProjectHome(){
     <div id="dropdown" className={ showDropDown ? "z-10 absolute right-52 w-[200px] bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700": "hidden"}>
         <ul className="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
           <li>
-            <a href="#" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">Institutional</a>
+            <a href="/portfolio/institutional" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">Institutional</a>
           </li>
           <li>
-            <a href="#" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">Educational</a>
+            <a href="/portfolio/educational" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">Educational</a>
           </li>
           <li>
-            <a href="#" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">Commercial</a>
+            <a href="/portfolio/commercial" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">Commercial</a>
           </li>
           <li>
-            <a href="#" className="block px-4 py-2 hover:bg-accent_2/80   hover:text-white">Cultural</a>
+            <a href="/portfolio/cultural" className="block px-4 py-2 hover:bg-accent_2/80   hover:text-white">Cultural</a>
           </li>
           <li>
-            <a href="#" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">Healthcare Facilities</a>
+            <a href="/portfolio/healthcare-faciities" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">Healthcare Facilities</a>
           </li>
           <li>
-            <a href="#" className="block px-4 py-2 hover:bg-accent_2/80 hover:text-white">Mixed-Use & High-Rise</a>
+            <a href="/portfolio/mixed-use-and-high-rise" className="block px-4 py-2 hover:bg-accent_2/80 hover:text-white">Mixed-Use & High-Rise</a>
           </li>
           <li>
-            <a href="#" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">Residential</a>
+            <a href="/portfolio/residential" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">Residential</a>
           </li>
           <li>
-            <a href="#" className="block px-4 py-2 hover:bg-accent_2/80 hover:text-white ">Transportation</a>
+            <a href="/portfolio/transportation" className="block px-4 py-2 hover:bg-accent_2/80 hover:text-white ">Transportation</a>
           </li>
           <li>
-            <a href="#" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">Industrial</a>
+            <a href="/portfolio/industrial" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">Industrial</a>
           </li>
         </ul>
     </div>
