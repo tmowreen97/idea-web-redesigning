@@ -104,6 +104,49 @@ polyline {
   }
 }
 
+/* HERO BLIMP ANIMATIONS */
+.animation-blimp-1{
+  animation: blimp 5s infinite;
+}
+.animation-blimp-2{
+  animation: blimp 8s infinite;
+}
+.animation-blimp-3{
+  animation: blimp 11s infinite;
+}
+.animation-blimp-4{
+  animation: blimp 14s infinite;
+}
+.animation-blimp-5{
+  animation: blimp 25s infinite;
+}
+.animation-blimp-6{
+  animation: blimp 30s infinite;
+}
+.animation-blimp-7{
+  animation: blimp 35s infinite;
+}
+.animation-blimp-8{
+  animation: blimp 40s infinite;
+}
+@keyframes blimp {
+  0% {
+    transform: scale(0.8);
+    opacity: 0.6;
+  }
+  25% {
+    opacity: 0.8
+  }
+  50% {
+    transform: scale(2);
+    opacity: 1;
+  }
+  100%{
+    transform: scale(0.8);
+    opacity: 0.6;
+  }
+}
+
 #active{
   color: blueviolet;
 

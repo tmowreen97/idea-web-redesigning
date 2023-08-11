@@ -5,6 +5,8 @@ import Image from 'next/image';
 function Hero({heading, message}){
   const [descTwo, setDescTwo] = useState(false)
   const [coord, setCoord]= useState(["0,0 0,0 0,0"])  
+  const [animate, setAnimate] = useState(true)
+
  
   function handleDescTwo(e){
     // console.log(e)
@@ -41,16 +43,100 @@ function Hero({heading, message}){
     /> */}
       {/* Overlay */}
       {/* <div className='absolute top-0 left-0 right-0 bottom-0 bg-black/70 z-[2]' /> */}
+      <div>
+        <motion.button
+        
+        animate= { animate ? {scale:[1,3,3,1], opacity:[0.5,1,1,0.75], transition:{
+          duration: 3,
+          delay : 2,
+          repeat: Infinity,
+          repeatDelay: 19
+        }} : {scale:3, opacity:1}}
+        
+        initial={{opacity:0}}
+        // whileInView={{opacity:1, transition:{delay:2, duration:1, repeat: Infinity, repeatDelay: 20}}}
+        className="absolute left-1/4 top-1/3 bg-[#FF1493] rounded-full w-3 h-3 hover:shadow-2xl shadow-white"
+        onClick={() => console.log("Description for Point 1")}
+      />
+      </div>
+      
       <motion.button
         initial={{opacity:0}}
-        whileInView={{opacity:1, transition:{delay:1.8, duration:1}}}
-        className="absolute left-1/4 top-1/3 bg-red-500 rounded-full w-3 h-3 motion-safe:animate-ping hover:animate-none"
+        animate= {{scale:[1,3,3,1], opacity:[0.5,1,1,0.75]}}
+        transition={{
+          duration: 3,
+          delay : 5,
+          repeat: Infinity,
+          repeatDelay: 20
+        }}
+        className="absolute left-2/4 top-1/3 bg-[#00FF00] rounded-full w-3 h-3  hover:scale-3"
         onClick={() => console.log("Description for Point 1")}
       />
       <motion.button
+        initial={{opacity:0}}
+        animate= {{scale:[1,3,3,1], opacity:[0.5,1,1,0.75]}}
+        transition={{
+          duration: 3,
+          delay : 8,
+          repeat: Infinity,
+          repeatDelay: 20
+        }}
+        className="absolute left-2/4 top-2/3 bg-[#FFFF00] rounded-full w-3 h-3 hover:animate-none"
+        onClick={() => console.log("Description for Point 1")}
+      />
+      <motion.button
+        initial={{opacity:0}}
+        animate= {{scale:[1,3,3,1], opacity:[0.5,1,1,0.75]}}
+        transition={{
+          duration: 3,
+          delay : 11,
+          repeat: Infinity,
+          repeatDelay: 20
+        }}
+        className="absolute left-1/4 top-2/4 bg-[#FFA500] rounded-full w-3 h-3 hover:animate-none"
+        onClick={() => console.log("Description for Point 1")}
+      />
+      <motion.button
+        initial={{opacity:0}}
+        animate= {{scale:[1,3,3,1], opacity:[0.5,1,1,0.75]}}
+        transition={{
+          duration: 3,
+          delay : 14,
+          repeat: Infinity,
+          repeatDelay: 20
+        }}
+        className="absolute left-24 top-80  bg-[#BF00FF] rounded-full w-3 h-3 hover:animate-none"
+        onClick={() => console.log("Description for Point 1")}
+      />
+      <motion.button
+        initial={{opacity:0}}
+        animate= {{scale:[1,3,3,1], opacity:[0.5,1,1,0.75]}}
+        transition={{
+          duration: 3,
+          delay : 17,
+          repeat: Infinity,
+          repeatDelay: 20
+        }}
+        className="absolute right-20 top-80  bg-[#00FFFF] rounded-full w-3 h-3 hover:animate-none"
+        onClick={() => console.log("Description for Point 1")}
+      />
+      <motion.button
+        initial={{opacity:0}}
+        animate= {{scale:[1,3,3,1], opacity:[0.5,1,1,0.75]}}
+        transition={{
+          duration: 3,
+          delay : 20,
+          repeat: Infinity,
+          repeatDelay: 20
+        }}
+        className="absolute right-20 bottom-80  bg-[#33FF33] rounded-full w-3 h-3 hover:animate-none"
+        onClick={() => console.log("Description for Point 1")}
+      />
+      
+      <motion.button
           initial={{opacity:0}}
-          whileInView={{opacity:1, transition:{delay:1.8, duration:1}}}
-          className="absolute md:left-3/4 md:top-1/2 bg-white rounded-full w-3 h-3 motion-safe:animate-ping hover:animate-none"
+          whileInView={{opacity:0, transition:{delay:5, duration:1}}}
+          className="absolute md:left-3/4 md:top-1/2 bg-[#FF00FF] rounded-full w-3 h-3 hover:animate-none"
           onClick={(e)=> handleDescTwo(e)}
         />
         {descTwo ? 
