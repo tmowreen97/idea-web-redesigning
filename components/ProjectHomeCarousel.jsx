@@ -1,9 +1,32 @@
-import React from "react";
+import {React, useRef, useEffect} from "react";
 import { motion, transform } from "framer-motion";
 import {BsChevronCompactLeft, BsChevronCompactRight} from 'react-icons/bs'
 import {RxDotFilled} from 'react-icons/rx'
 
 function ProjectHomeCarousel ({projects, setProjectSelect, projectSelect}){
+
+  const timeoutRef = useRef(null);
+
+  function resetTimeout() {
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+    }
+  }
+
+  useEffect(() => {
+    resetTimeout();
+    timeoutRef.current = setTimeout(
+      () =>
+        setProjectSelect((prevProjSelect) =>
+          prevProjSelect === projects.length - 1 ? 0 : prevProjSelect + 1
+        ),
+      2500
+    );
+
+    return () => {
+      resetTimeout();
+    };
+  }, [projectSelect]);
 
   function handleRight(){
     if(projectSelect<2){

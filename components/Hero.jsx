@@ -1,6 +1,7 @@
 import {React, useState} from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import Blinker from './Blinker';
 
 function Hero({heading, message}){
   const [descTwo, setDescTwo] = useState(false)
@@ -24,6 +25,68 @@ function Hero({heading, message}){
 
   }
   // console.log('coord',coord)
+
+
+  // WORKING ON BLINKER INFO
+  const blinkers = [
+    {
+      name: 'blinker-1',
+      bgColor: '#FF1493',
+      delayTime: 2,
+      repeatDelayTime : 22,
+      classDesc : "absolute left-1/4 top-1/3"
+    },
+    {
+      name: 'blinker-2',
+      bgColor: '#00FF00',
+      delayTime:5,
+      repeatDelayTime: 23,
+      classDesc: "absolute left-2/4 top-1/3"
+    },
+    {
+      name: 'blinker-3',
+      bgColor: '#FFFF00',
+      delayTime:8,
+      repeatDelayTime: 23,
+      classDesc: "absolute left-2/4 top-2/3"
+    },
+    {
+      name: 'blinker-4',
+      bgColor: '#FFA500',
+      delayTime:11,
+      repeatDelayTime: 23,
+      classDesc: "absolute left-1/4 top-2/4"
+    },
+    {
+      name: 'blinker-5',
+      bgColor: '#BF00FF',
+      delayTime:14,
+      repeatDelayTime: 23,
+      classDesc: "absolute left-24 top-80"
+    },
+    {
+      name: 'blinker-6',
+      bgColor: '#00FFFF',
+      delayTime:17,
+      repeatDelayTime: 23,
+      classDesc: "absolute right-40 top-80"
+    },
+    {
+      name: 'blinker-7',
+      bgColor: '#33FF33',
+      delayTime:20,
+      repeatDelayTime: 23,
+      classDesc: "absolute right-20 bottom-80"
+    },
+    {
+      name: 'blinker-8',
+      bgColor: '#FF00FF',
+      delayTime:23,
+      repeatDelayTime: 20,
+      classDesc: "absolute right-80 bottom-80"
+    }
+  ]
+
   return (
     <div className='flex relative items-center justify-center w-screen h-screen pt-12 bg-fixed bg-center bg-cover custom-img tracking-wider'>
       {/* <div className='absolute left-0 top-0 h-[100%] w-[100%]'>
@@ -43,8 +106,21 @@ function Hero({heading, message}){
     /> */}
       {/* Overlay */}
       {/* <div className='absolute top-0 left-0 right-0 bottom-0 bg-black/70 z-[2]' /> */}
-      <div>
-        <motion.button
+      {
+        blinkers.map((blinker)=> {
+          return(
+            <div key={blinker.name}>
+              <Blinker delayTime={blinker.delayTime} repeatDelayTime={blinker.repeatDelayTime} bgColor={blinker.bgColor} classDesc={blinker.classDesc}/>
+            </div>
+          )
+        })
+      }
+
+
+
+
+
+        {/* <motion.button
         
         animate= { animate ? {scale:[1,3,3,1], opacity:[0.5,1,1,0.75], transition:{
           duration: 3,
@@ -57,10 +133,9 @@ function Hero({heading, message}){
         // whileInView={{opacity:1, transition:{delay:2, duration:1, repeat: Infinity, repeatDelay: 20}}}
         className="absolute left-1/4 top-1/3 bg-[#FF1493] rounded-full w-3 h-3 hover:shadow-2xl shadow-white"
         onClick={() => console.log("Description for Point 1")}
-      />
-      </div>
+      /> */}
       
-      <motion.button
+      {/* <motion.button
         initial={{opacity:0}}
         animate= {{scale:[1,3,3,1], opacity:[0.5,1,1,0.75]}}
         transition={{
@@ -71,8 +146,8 @@ function Hero({heading, message}){
         }}
         className="absolute left-2/4 top-1/3 bg-[#00FF00] rounded-full w-3 h-3  hover:scale-3"
         onClick={() => console.log("Description for Point 1")}
-      />
-      <motion.button
+      /> */}
+      {/* <motion.button
         initial={{opacity:0}}
         animate= {{scale:[1,3,3,1], opacity:[0.5,1,1,0.75]}}
         transition={{
@@ -83,8 +158,8 @@ function Hero({heading, message}){
         }}
         className="absolute left-2/4 top-2/3 bg-[#FFFF00] rounded-full w-3 h-3 hover:animate-none"
         onClick={() => console.log("Description for Point 1")}
-      />
-      <motion.button
+      /> */}
+      {/* <motion.button
         initial={{opacity:0}}
         animate= {{scale:[1,3,3,1], opacity:[0.5,1,1,0.75]}}
         transition={{
@@ -95,8 +170,8 @@ function Hero({heading, message}){
         }}
         className="absolute left-1/4 top-2/4 bg-[#FFA500] rounded-full w-3 h-3 hover:animate-none"
         onClick={() => console.log("Description for Point 1")}
-      />
-      <motion.button
+      /> */}
+      {/* <motion.button
         initial={{opacity:0}}
         animate= {{scale:[1,3,3,1], opacity:[0.5,1,1,0.75]}}
         transition={{
@@ -107,8 +182,8 @@ function Hero({heading, message}){
         }}
         className="absolute left-24 top-80  bg-[#BF00FF] rounded-full w-3 h-3 hover:animate-none"
         onClick={() => console.log("Description for Point 1")}
-      />
-      <motion.button
+      /> */}
+      {/* <motion.button
         initial={{opacity:0}}
         animate= {{scale:[1,3,3,1], opacity:[0.5,1,1,0.75]}}
         transition={{
@@ -119,8 +194,8 @@ function Hero({heading, message}){
         }}
         className="absolute right-20 top-80  bg-[#00FFFF] rounded-full w-3 h-3 hover:animate-none"
         onClick={() => console.log("Description for Point 1")}
-      />
-      <motion.button
+      /> */}
+      {/* <motion.button
         initial={{opacity:0}}
         animate= {{scale:[1,3,3,1], opacity:[0.5,1,1,0.75]}}
         transition={{
@@ -131,7 +206,7 @@ function Hero({heading, message}){
         }}
         className="absolute right-20 bottom-80  bg-[#33FF33] rounded-full w-3 h-3 hover:animate-none"
         onClick={() => console.log("Description for Point 1")}
-      />
+      /> */}
       
       <motion.button
           initial={{opacity:0}}
