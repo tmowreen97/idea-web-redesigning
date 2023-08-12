@@ -1,10 +1,11 @@
 import React from "react";
 import Link from "next/link";
 import { AiFillInstagram, AiFillFacebook, AiFillLinkedin } from "react-icons/ai";
+import {BsArrowReturnRight, BsArrowRight} from "react-icons/bs";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-function ContactPage(){
+function ThankYou(){
   return(
     <div className="w-screen h-full bg-primary">
       <div className="p-20">
@@ -25,14 +26,14 @@ function ContactPage(){
               animate={{opacity:1, transition:{duration:2, delay:1.5}}}
               className="mb-2"
             >
-            <Image src={'/assets/clip-2.png'} width={100} height={100}/>              
+            <Image src={'/assets/clip-2.png'} width={95} height={95}/>              
             </motion.div>
             <motion.div
               initial={{opacity:0}}
               animate={{opacity:1, transition:{duration:2, delay:2}}}
               className="mb-2"
             >
-            <Image src={'/assets/clip-3.png'} width={100} height={100}/>              
+            <Image src={'/assets/clip-3.png'} width={95} height={95}/>              
             </motion.div>
             <motion.div
               initial={{opacity:0}}
@@ -92,33 +93,42 @@ function ContactPage(){
           </div>
           
         </div>
-        <div className="bg-secondary rounded-xl">
-        <div className="items-center justify-center w-[500px] h-[400px] flex ">
-              <form className="text-center">
-                <h2>Contact Us</h2>
-                <div className="m-5">
-                  {/* <label>Name:</label> */}
-                  <input type="name" className="w-[400px] h-[40px] rounded-xl text-center p-1" placeholder="Name"/>
-                </div>
-                <div className="m-5">
-                  {/* <label>Email:</label> */}
-                  <input type="email" className="w-[400px] h-[40px] rounded-xl text-center p-1" placeholder="Email"/>
-                </div>
-                <div className="m-5">
-                  {/* <label>Message:</label> */}
-                  <textarea type="text" className="w-[400px] h-[80px] rounded-xl text-center max-h-[100px] p-1" placeholder="Message"/>
-                </div>
-                <div className="text-center items-center justify-center flex ">
-                  <div className="bg-tertiary/80 hover:bg-accent_2/80 rounded-xl p-2 px-5 shadow-xl text-primary_text">
-                    <button type='submit'>Send</button>
-                  </div>
-                </div>
-              </form>
+        <div className="text-center justify-evenly mt-[-200px] ">
+          <div className="text-2xl m-2 p-10 bg-secondary rounded-xl text-left  items-center justify-center">
+            <h1 className="">Thank you!</h1>
+            <h1>We look forward to empowering your ideas.</h1>
+          </div>
+          <motion.div 
+          initial={{opacity:0}}
+          whileInView={{opacity:1, transition:{delay:3}}}
+          className=" text-primary_text mt-5"
+          >
+            <div className="mr-2">
+              <h1 className="p-2 text-lg">In the meantime, check out what we've been up to:</h1>
             </div>
+            <div className="flex justify-center items-center gap-10">
+              <motion.div
+              animate={{x:[-3,2,2,-3], opacity:1}}
+              transition={{
+                // duration: "9",
+                delay : 3,
+                repeat: Infinity,
+                repeatDelay: 1
+              }}
+              >
+                <BsArrowRight className="text-3xl text-left"/>
+              </motion.div>
+              <button className="bg-button_bg p-3 rounded-xl text-dark_text hover:bg-accent_2 hover:text-primary_text">
+              <Link href={'/culture'}>Culture</Link>
+            </button>
+            </div>
+            
+          </motion.div>
+
         </div>
       </div>
     </div>
   )
 }
 
-export default ContactPage;
+export default ThankYou;

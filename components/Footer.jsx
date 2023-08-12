@@ -1,28 +1,60 @@
 import React from "react";
 import Link from "next/link";
 import {AiFillLinkedin, AiFillFacebook, AiFillInstagram} from 'react-icons/ai';
+import Image from "next/image";
 
 export default function Footer(){
   return(
-    <div id='footer' className="w-screen h-[475px]  bg-footer_bg ">
+    <div id='footer' className="w-screen h-[480px]  bg-footer_bg ">
       <div className="flex items-center justify-center pt-[50px]">
-        <div className=" grid grid-cols-2 gap-14 ml-10 text-secondary_text">
-          <div className="items-center justify-center pt-[40px] text-2xl font-light" >
-            <h1 className="py-1 text-4xl">IDEA AEC</h1>
-            <h1 className="py-1 ">Inter-Disciplinary Engineering Associates, LLC</h1>
-            <h1 className="py-1">Architectural Engineering Consultants</h1>
-            <Link href="https://www.google.com/maps/place/Idea/@41.3624549,-73.2686882,17z/data=!3m1!4b1!4m21!1m14!4m13!1m6!1m2!1s0x89e7e32f4acafcc9:0x25866ea4c7e9ca99!2sIdea,+1+Botsford+Hill+Rd,+Botsford,+CT+06404!2m2!1d-73.2661133!2d41.3624509!1m5!1m1!1s0x89e7e32f4acafcc9:0x25866ea4c7e9ca99!2m2!1d-73.2661133!2d41.3624509!3m5!1s0x89e7e32f4acafcc9:0x25866ea4c7e9ca99!8m2!3d41.3624509!4d-73.2661133!16s%2Fg%2F11rxhzx9pl?entry=ttu" legacyBehavior >
-              <a target="_blank" rel="noopener noreferrer">
-                <p className="text-xl hover:text-accent_2">
-                  1 Botsford Hill Rd Botsford, CT 06404
-                </p>       
-              </a>
-            </Link>
-            <p className="text-xl my-1">Info@IdeaAEC.com</p>
-            <p className="text-xl my-1">203-917-7907</p>
-            <p className="pt-5" >©Idea</p>
+        <div className=" grid grid-cols-2  text-secondary_text tracking-wide">
+          {/* <div className="bg-secondary mr-[300px]">
+            <div>
+              <Image src={'/assets/clip-1.png'} width={70} height={70}/>
+            </div>
+            <div>
+              <Image src={'/assets/clip-2.png'} width={70} height={70}/>
+            </div>
+            <div>
+              <Image src={'/assets/clip-3.png'} width={70} height={70}/>
+            </div>
+            <div>
+              <Image src={'/assets/clip-4.png'} width={70} height={70}/>
+            </div>
+          </div> */}
+          <div className="items-center justify-between text-2xl font-light flex" >
+          <div className="bg-secondary/70 mr-10 rounded-xl p-5 mt-[-10px]">
+            <div className="pb-1">
+              <Image src={'/assets/clip-1.png'} width={60} height={60}/>
+            </div>
+            <div className="pb-1">
+              <Image src={'/assets/clip-2.png'} width={55} height={55}/>
+            </div>
+            <div className="pb-1">
+              <Image src={'/assets/clip-3.png'} width={55} height={55}/>
+            </div>
+            <div>
+              <Image src={'/assets/clip-4.png'} width={55} height={55}/>
+            </div>
           </div>
-          <div className="ml-20">
+          <div>
+            <div className="flex mb-10">
+              <h1 className="py-1 text-6xl">IDEA</h1>
+              <h1 className="pl-2 pt-7 text-2xl">AEC</h1>
+            </div>
+            <div className="mb-10">
+              <h1 className="">Inter-Disciplinary Engineering Associates, LLC</h1>
+              <h1 className="">Architectural Engineering Consultants</h1>
+              <p className="text-lg">1 Botsford Hill Rd Botsford, CT 06404</p>       
+              <p className="text-lg">Info@IdeaAEC.com</p>
+              <p className="text-lg">203-917-7907</p>
+              <p className="pt-[50px] text-sm" >© 2023 by Idea Consulting</p>
+            </div>
+            
+          </div>
+            
+          </div>
+          <div className="ml-[150px]">
           <div className="bg-secondary w-[400px] h-[300px] ml-10  rounded-xl ">
             <div className="items-center justify-center ">
               <form className="text-center pt-5">
@@ -48,7 +80,7 @@ export default function Footer(){
             </div>
             
           </div>
-          <div className="grid grid-cols-3 gap-10 text-center items-center justify-center align-middle pt-5 ml-10 text-primary_text">
+          <div className="grid grid-cols-3 gap-2 text-center items-center justify-center align-middle pt-5 text-primary_text">
             <div className="text-center items-center justify-center flex rounded-xl ">
               <div className="bg-tertiary/80 hover:bg-accent_2/80  rounded-full p-4 text-2xl">
                 <Link href="https://www.instagram.com/idea.aec/" legacyBehavior>

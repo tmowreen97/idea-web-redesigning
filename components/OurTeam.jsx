@@ -67,17 +67,27 @@ function OurTeam (){
         <h1 className="md:text-[1100%] text-5xl font-thin text-primary_text text-left tracking-wide">Our Team</h1>
       </div>
       <div className="">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mx-20 ">
+        <div className="grid grid-cols-1 gap-10 mx-20 mt-10">
           {
             main_team.map((member)=> {
               return(
-                <div className="flex items-center">
+                <div className="flex items-center justify-evenly mb-20">
                   <div className="mr-5 rounded-xl overflow-hidden ">
-                    <Image src={member.image} width={400} height={600} alt={'lead_team'}/>
+                    <Image src={member.image} width={600} height={600} alt={'lead_team'}/>
                   </div>
-                  <div className="p-2 w-[260px] text-left bg-secondary/40 rounded-xl ">
-                    <h2 className="text-secondary_text">{member.name}</h2>
-                    <p className="mx-2 text-secondary_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                  <div className="w-[500px] text-left tracking-wide">
+                    <div className=" bg-secondary/40 rounded-xl p-4 mb-4">
+                      <h2 className="text-secondary_text">{member.name}</h2>
+                      <p className="mx-2 text-secondary_text ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                      <p className="mx-2 text-secondary_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                      <p className="mx-2 text-secondary_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    </div>
+                    
+                    <div className=" bg-accent_1/40 rounded-xl p-4">
+                    <p className="mx-2 text-secondary_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p className="mx-2 text-secondary_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  
+                    </div>
                   </div>
                 </div>
               )
@@ -90,19 +100,19 @@ function OurTeam (){
 
       </div>
       <motion.div 
-      // initial={{x:-1500}}
-        animate= {{x:[-1500,0,0,1500]}}
+      initial={{x:-1500}}
+        animate= {{x:[-1200,0,0,1200], scale:[0.75,1.5,1.5,0.75]}}
         transition={{
-          duration: "8",
+          duration: "9",
           delay : "2",
           repeat: Infinity,
           repeatDelay: 1
         }}
-        className="p-[150px] "
+        className="p-[100px] pb-[160px]"
       >
-        <h2 className="italic font-bold">Manifesting world class IDEAs!</h2>
+        <h2 className="italic font-bold tracking-wide">Manifesting World Class IDEAs</h2>
       </motion.div>
-      <div className="">
+      {/* <div className="">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-5 mx-20 pb-20">
           {second_team.map((member)=> {
             return(
@@ -114,7 +124,7 @@ function OurTeam (){
             )
             
           })
-          }
+          } */}
           
           {/* {second_team.map((member)=> {
             return(
@@ -131,9 +141,9 @@ function OurTeam (){
             )
           })} */}
 
-        </div>
+        {/* </div>
 
-      </div>
+      </div> */}
 
       
     </div>

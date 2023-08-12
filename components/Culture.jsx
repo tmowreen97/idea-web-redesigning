@@ -26,8 +26,8 @@ function CulturePage(){
           />
         </div>
       </div>
-      <div className="flex justify-center items-center p-5  ">
-        <div className="culture__parent justify-center py-10 mx-10">
+      <div className="flex justify-center items-center p-5  pb-20">
+        <div className="culture__parent justify-center py-10 mx-20">
           <div className="culture__child1 p-20 flex bg-secondary/40 rounded-xl">
             <div>
               <h1 className="md:text-[300%] px-5 pt-5 text-primary_text font-light tracking-wide">IDEA HOSTS MIAMI BBQ</h1>
