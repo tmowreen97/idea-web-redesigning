@@ -32,23 +32,23 @@ function ProjectHome(){
 
   return(
     <div id='projects' className='w-screen md:max-h-[980px] bg-primary'>
-      <div className='relative flex items-center align-middle justify-center p-4 ml-[8%] mt-16'>
-      <div className="projecthome__parent md:max-h-[980px] ">
-        <div className="projecthome__title mr-5 ">
-          <h1 className="md:text-[1000%] text-5xl tracking-wide text-left ml-[65px] font-thin mb-10  text-primary_text">Projects</h1>
+      <div className='relative flex items-center align-middle justify-center p-4 md:ml-[8%] md:mt-[110px]'>
+      <div className="projecthome__parent md:grid flexbox md:max-h-[980px] w-[100%] ">
+        <div className="projecthome__title mr-2 ml-5 ">
+          <h1 className="md:text-[1000%] text-5xl tracking-wide text-left md:ml-[65px] font-thin mb-10  text-primary_text">Projects</h1>
         </div>
-        <div className="projecthome__child1 p-10 bg-secondary/50 rounded-xl mr-5 ml-4">
+        <div className="projecthome__child1 md:p-10 p-5 bg-secondary/50 rounded-xl md:mr-5 md:ml-4">
           <ProjectHomeCarousel projects={projects} setProjectSelect={setProjectSelect} projectSelect={projectSelect}/>
         </div>
-        <div className="projecthome__img bg-secondary/50 items-center text-center justify-center p-5 rounded-xl w-[450px] h-[45%] mt-20">
+        <div className="projecthome__img bg-secondary/50 items-center text-center justify-center p-5 rounded-xl md:w-[450px] md:h-[45%] mt-20">
           {/* <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
     <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4"/>
   </svg> */}
-          <button onClick={()=> {setShowDropDown(!showDropDown)}}  data-dropdown-toggle="dropdown" className="relative w-[400px] text-2xl justify-between  hover:bg-secondary/60 focus:ring-4 focus:outline-none focus:ring-secondary_text font-medium rounded-lg px-5 py-2.5 text-center inline-flex items-center text-secondary_text" type="button">{projects[projectSelect].category} 
+          <button onClick={()=> {setShowDropDown(!showDropDown)}}  data-dropdown-toggle="dropdown" className="relative md:w-[400px] text-2xl justify-between  hover:bg-secondary/60 focus:ring-4 focus:outline-none focus:ring-secondary_text font-medium rounded-lg px-5 py-2.5 text-center inline-flex items-center text-secondary_text" type="button">{projects[projectSelect].category} 
           { showDropDown ? <BsChevronCompactUp/> : <BsChevronCompactDown/>}
           </button>
 
-    <div id="dropdown" className={ showDropDown ? "z-10 absolute right-52 w-[200px] bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700": "hidden"}>
+    <div id="dropdown" className={ showDropDown ? "z-10 absolute md:right-52 right-[100px] md:w-[200px] bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700": "hidden"}>
         <ul className="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
           <li>
             <a href="/portfolio/institutional" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">Institutional</a>
@@ -94,7 +94,7 @@ function ProjectHome(){
 
           </div> */}
         </div>
-        <div className="projecthome__child2 p-10 bg-secondary/50 rounded-xl w-[450px]">
+        <div className="projecthome__child2 p-10 bg-secondary/50 rounded-xl md:w-[450px]">
           <h2 className="">{projects[projectSelect].name}</h2>
           <p className="tracking-wider mx-2">{projects[projectSelect].desc}</p>
           <div className="mt-[5%] mb-5 text-center ">

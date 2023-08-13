@@ -10,7 +10,7 @@ function ContactPage(){
       <div className="p-20">
         <h1 className="md:text-[1100%] text-5xl font-thin text-primary_text text-left tracking-wide">Contact</h1>
       </div>
-      <div className="flex items-center justify-evenly pb-20">
+      <div className="md:flex items-center justify-evenly pb-20">
         <div className=" text-xl flex">
           <div className="mr-10">
             <motion.div
@@ -93,20 +93,20 @@ function ContactPage(){
           
         </div>
         <div className="bg-secondary rounded-xl">
-        <div className="items-center justify-center w-[500px] h-[400px] flex ">
+        <div className="items-center justify-center md:w-[500px] md:h-[400px] flex ">
               <form className="text-center">
                 <h2>Contact Us</h2>
                 <div className="m-5">
                   {/* <label>Name:</label> */}
-                  <input type="name" className="w-[400px] h-[40px] rounded-xl text-center p-1" placeholder="Name"/>
+                  <input type="name" className="md:w-[400px] h-[40px] rounded-xl text-center p-1" placeholder="Name"/>
                 </div>
                 <div className="m-5">
                   {/* <label>Email:</label> */}
-                  <input type="email" className="w-[400px] h-[40px] rounded-xl text-center p-1" placeholder="Email"/>
+                  <input type="email" className="md:w-[400px] h-[40px] rounded-xl text-center p-1" placeholder="Email"/>
                 </div>
                 <div className="m-5">
                   {/* <label>Message:</label> */}
-                  <textarea type="text" className="w-[400px] h-[80px] rounded-xl text-center max-h-[100px] p-1" placeholder="Message"/>
+                  <textarea type="text" className="md:w-[400px] md:h-[80px] rounded-xl text-center max-h-[100px] p-1" placeholder="Message"/>
                 </div>
                 <div className="text-center items-center justify-center flex ">
                   <div className="bg-tertiary/80 hover:bg-accent_2/80 rounded-xl p-2 px-5 shadow-xl text-primary_text">

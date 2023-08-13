@@ -34,61 +34,61 @@ function Hero({heading, message}){
       bgColor: '#FF1493',
       delayTime: 2,
       repeatDelayTime : 22,
-      classDesc : "absolute left-1/4 top-1/3"
+      classDesc : "md:absolute my-5 md:my-0 left-1/4 top-1/3"
     },
     {
       name: 'blinker-2',
       bgColor: '#00FF00',
       delayTime:5,
       repeatDelayTime: 23,
-      classDesc: "absolute left-2/4 top-1/3"
+      classDesc: "md:absolute my-5 md:my-0 left-2/4 top-1/3"
     },
     {
       name: 'blinker-3',
       bgColor: '#FFFF00',
       delayTime:8,
       repeatDelayTime: 23,
-      classDesc: "absolute left-2/4 top-2/3"
+      classDesc: "md:absolute my-5 md:my-0 left-2/4 top-2/3"
     },
     {
       name: 'blinker-4',
       bgColor: '#FFA500',
       delayTime:11,
       repeatDelayTime: 23,
-      classDesc: "absolute left-1/4 top-2/4"
+      classDesc: "md:absolute my-5 md:my-0 left-1/4 top-2/4"
     },
     {
       name: 'blinker-5',
       bgColor: '#BF00FF',
       delayTime:14,
       repeatDelayTime: 23,
-      classDesc: "absolute left-24 top-80"
+      classDesc: "md:absolute my-5 md:my-0 left-24 top-80"
     },
     {
       name: 'blinker-6',
       bgColor: '#00FFFF',
       delayTime:17,
       repeatDelayTime: 23,
-      classDesc: "absolute right-40 top-80"
+      classDesc: "md:absolute my-5 md:my-0 right-40 top-80"
     },
     {
       name: 'blinker-7',
       bgColor: '#33FF33',
       delayTime:20,
       repeatDelayTime: 23,
-      classDesc: "absolute right-20 bottom-80"
+      classDesc: "md:absolute my-5 md:my-0 right-20 bottom-80"
     },
     {
       name: 'blinker-8',
       bgColor: '#FF00FF',
       delayTime:23,
       repeatDelayTime: 20,
-      classDesc: "absolute right-80 bottom-80"
+      classDesc: "md:absolute my-5 md:my-0 right-80 bottom-80"
     }
   ]
 
   return (
-    <div className='flex relative items-center justify-center w-screen h-screen pt-12 bg-fixed bg-center bg-cover custom-img tracking-wider'>
+    <div className='flex relative items-center justify-center min-w-full h-screen pt-12 bg-fixed bg-center bg-cover custom-img tracking-wider'>
       {/* <div className='absolute left-0 top-0 h-[100%] w-[100%]'>
         <Image src={'/assets/miami-port.jpeg'} alt='MiamiPort' fill style={{objectFit:'cover'}} priority/>
       </div> */}
@@ -106,7 +106,8 @@ function Hero({heading, message}){
     /> */}
       {/* Overlay */}
       {/* <div className='absolute top-0 left-0 right-0 bottom-0 bg-black/70 z-[2]' /> */}
-      {
+      <div className=" mb-40 md:mb-0">
+        {
         blinkers.map((blinker)=> {
           return(
             <div key={blinker.name}>
@@ -115,6 +116,8 @@ function Hero({heading, message}){
           )
         })
       }
+      </div>
+      
 
 
 
@@ -211,7 +214,7 @@ function Hero({heading, message}){
       <motion.button
           initial={{opacity:0}}
           whileInView={{opacity:0, transition:{delay:5, duration:1}}}
-          className="absolute md:left-3/4 md:top-1/2 bg-[#FF00FF] rounded-full w-3 h-3 hover:animate-none"
+          className="md:absolute md:left-3/4 md:top-1/2 bg-[#FF00FF] rounded-full w-3 h-3 hover:animate-none"
           onClick={(e)=> handleDescTwo(e)}
         />
         {descTwo ? 
@@ -251,7 +254,7 @@ function Hero({heading, message}){
       whileInView={{opacity:1, transition:{delay:1.2, duration:1}}}
       className='p-5 text-primary_text z-[2] mt-[-10rem]'
       >
-        <h1 className='text-9xl absolute font-thin left-5 bottom-5'>{heading}</h1>
+        <h1 className='md:text-9xl text-7xl absolute font-thin left-5 bottom-5'>{heading}</h1>
 
         {/* <button className='px-8 py-2 border'>Book</button> */}
       </motion.div>

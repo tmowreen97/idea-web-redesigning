@@ -64,13 +64,13 @@ function ProjectHomeCarousel ({projects, setProjectSelect, projectSelect}){
     // </Carousel>
 
     
-    <div className="max-w-[700px] h-[450px] w-full m-auto px-4 relative group mb-[0%] ">
+    <div className="md:max-w-[700px] md:h-[450px] md:w-full m-auto px-4 relative group mb-[0%]">
       <motion.div 
       // initial={{ opacity:0 }}
       // whileInView={{ opacity:1 , transition:{delay:1}}}
 
       style={{backgroundImage:`url(${projects[projectSelect].image})`}}
-      className="w-[600px] h-[400px] rounded-2xl bg-center bg-cover hover:scale-105 hover:opacity-90 duration-500 transform"
+      className="md:w-[600px] md:h-[400px] w-[300px] h-[300px] rounded-2xl bg-center bg-cover hover:scale-105 hover:opacity-90 duration-500 transform"
       >
       {/* Left Arrow */}
       

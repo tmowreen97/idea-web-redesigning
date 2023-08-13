@@ -13,22 +13,22 @@ function CulturePage(){
       <div className="pb-[25px]">
         <h1 className="md:text-[500%] text-center items-center tracking-wide font-light text-primary_text/70">The IDEA Times</h1>
       </div>
-      <div className="justify-center items-center flex">
-        <div>
+      <div className="justify-center items-center flex md:w-[100%] md:h=[100%] overflow-hidden">
+        <div className=" relative">
           <ReactPlayer 
             url={'https://www.youtube.com/watch?v=9g08kucPQtE&ab_channel=Gunna'}
             playing
             loop
             muted
             controls
-            width={'900px'}
-            height={'500px'}
+            width='900px'
+            height='500px'
           />
         </div>
       </div>
       <div className="flex justify-center items-center p-5  pb-20">
-        <div className="culture__parent justify-center py-10 mx-20">
-          <div className="culture__child1 p-20 flex bg-secondary/40 rounded-xl">
+        <div className="culture__parent justify-center py-10 md:mx-20 md:grid flexbox">
+          <div className="culture__child1 md:p-20 p-5 flex bg-secondary/40 rounded-xl">
             <div>
               <h1 className="md:text-[300%] px-5 pt-5 text-primary_text font-light tracking-wide">IDEA HOSTS MIAMI BBQ</h1>
               <h2 className=" ml-6  text-primary_text text-3xl font-light tracking-wide">June 2023</h2>
@@ -44,7 +44,7 @@ function CulturePage(){
               </div>
             </div>
           </div>
-          <div className="culture__child2 p-20 flex bg-secondary/40 rounded-xl">
+          <div className="culture__child2 md:p-20 p-5 mt-5 md:mt-0 flex bg-secondary/40 rounded-xl">
           <div>
               <h1 className="md:text-[300%] px-5 pt-5 text-primary_text font-light tracking-wide">IDEA HOSTS ...</h1>
               <h2 className=" ml-6  text-primary_text text-3xl font-light tracking-wide">April 2023</h2>
@@ -61,7 +61,7 @@ function CulturePage(){
             </div>
           </div>
           {/* <div className="row-border"/> */}
-          <div className="culture__child3  p-20 flex bg-secondary/40 rounded-xl">
+          <div className="culture__child3 md:p-20 p-5 mt-5 md:mt-0 flex bg-secondary/40 rounded-xl">
           <div>
               <h1 className="md:text-[300%] px-5 pt-5 text-primary_text font-light tracking-wide">IDEA HOSTS ... </h1>
               <h2 className=" ml-6  text-primary_text text-3xl font-light tracking-wide">January 2023</h2>

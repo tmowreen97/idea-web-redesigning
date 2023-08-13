@@ -5,9 +5,9 @@ import Image from "next/image";
 
 export default function Footer(){
   return(
-    <div id='footer' className="w-screen h-[480px]  bg-footer_bg ">
+    <div id='footer' className="w- md:h-[480px]  bg-footer_bg ">
       <div className="flex items-center justify-center pt-[50px]">
-        <div className=" grid grid-cols-2  text-secondary_text tracking-wide">
+        <div className=" md:grid md:grid-cols-2 flexbox text-secondary_text tracking-wide">
           {/* <div className="bg-secondary mr-[300px]">
             <div>
               <Image src={'/assets/clip-1.png'} width={70} height={70}/>
@@ -23,17 +23,17 @@ export default function Footer(){
             </div>
           </div> */}
           <div className="items-center justify-between text-2xl font-light flex" >
-          <div className="bg-secondary/70 mr-10 rounded-xl p-5 mt-[-10px]">
+          <div className="bg-secondary/70 mr-10 rounded-xl px-5 py-4 mt-[-10px]">
             <div className="pb-1">
               <Image src={'/assets/clip-1.png'} width={60} height={60}/>
             </div>
-            <div className="pb-1">
+            <div className="pb-1 pl-[2px]">
               <Image src={'/assets/clip-2.png'} width={55} height={55}/>
             </div>
             <div className="pb-1">
               <Image src={'/assets/clip-3.png'} width={55} height={55}/>
             </div>
-            <div>
+            <div className="pl-[2px]">
               <Image src={'/assets/clip-4.png'} width={55} height={55}/>
             </div>
           </div>
@@ -54,22 +54,22 @@ export default function Footer(){
           </div>
             
           </div>
-          <div className="ml-[150px]">
-          <div className="bg-secondary w-[400px] h-[300px] ml-10  rounded-xl ">
+          <div className="md:ml-[150px]">
+          <div className="bg-secondary md:w-[400px] md:h-[300px] ml-10  rounded-xl ">
             <div className="items-center justify-center ">
               <form className="text-center pt-5">
                 <h2>Contact Us</h2>
                 <div className="m-2">
                   {/* <label>Name:</label> */}
-                  <input type="name" className="w-[300px] rounded-xl text-center p-1" placeholder="Name"/>
+                  <input type="name" className="md:w-[300px] rounded-xl text-center p-1" placeholder="Name"/>
                 </div>
                 <div className="m-2">
                   {/* <label>Email:</label> */}
-                  <input type="email" className="w-[300px] rounded-xl text-center p-1" placeholder="Email"/>
+                  <input type="email" className="md:w-[300px] rounded-xl text-center p-1" placeholder="Email"/>
                 </div>
                 <div className="m-2">
                   {/* <label>Message:</label> */}
-                  <textarea type="text" className="w-[300px] rounded-xl text-center max-h-[70px] p-1" placeholder="Message"/>
+                  <textarea type="text" className="md:w-[300px] rounded-xl text-center max-h-[70px] p-1" placeholder="Message"/>
                 </div>
                 <div className="text-center items-center justify-center flex ">
                   <div className="bg-tertiary/80 hover:bg-accent_2/80 rounded-xl p-2 shadow-xl text-primary_text">

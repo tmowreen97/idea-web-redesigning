@@ -20,39 +20,39 @@ function ProjectPortfolio({ projects }){
         <h1 className="md:text-[1100%] text-5xl font-thin text-primary_text text-left tracking-wide">Portfolio</h1>
       </div>
       <div>
-        <div className="mx-[100px] items-center justify-center text-center ml-[9%]">
+        <div className="md:mx-[100px] items-center justify-center text-center ml-[9%]">
 
         
-        <div className="grid grid-cols-5">
+        <div className="grid md:grid-cols-5 grid-cols-2">
           
-            <button id={router.asPath == '/portfolio' ? "category-button-active" : ''} className="category-button bg-[#C0B4D3]">
+            <button id={router.asPath == '/portfolio' ? "category-button-active" : ''} className="category-button md:w-[200px] md:h-[50px] bg-[#C0B4D3]">
             <Link href={'/portfolio'} >All</Link>
           </button>
-          <button id={router.asPath == '/portfolio/commercial' ? "category-button-active" : ''} className="category-button bg-[#C0B4D3]">
+          <button id={router.asPath == '/portfolio/commercial' ? "category-button-active" : ''} className="category-button md:w-[200px] md:h-[50px] bg-[#C0B4D3]">
             <Link href={'/portfolio/commercial'}>Commercial</Link>
           </button>
-          <button id={router.asPath == '/portfolio/cultural' ? "category-button-active" : ''} className="category-button bg-[#C0B4D3]">
+          <button id={router.asPath == '/portfolio/cultural' ? "category-button-active" : ''} className="category-button md:w-[200px] md:h-[50px] bg-[#C0B4D3]">
             <Link href={'/portfolio/cultural'}>Cultural</Link>
           </button>
-          <button id={router.asPath == '/portfolio/educational' ? "category-button-active" : ''} className="category-button bg-[#C0B4D3]">
+          <button id={router.asPath == '/portfolio/educational' ? "category-button-active" : ''} className="category-button md:w-[200px] md:h-[50px] bg-[#C0B4D3]">
             <Link href={'/portfolio/educational'}>Educational</Link>
           </button>
-          <button id={router.asPath == '/portfolio/healthcare-facilities' ? "category-button-active" : ''} className="category-button bg-[#C0B4D3]">
+          <button id={router.asPath == '/portfolio/healthcare-facilities' ? "category-button-active" : ''} className="category-button md:w-[200px] md:h-[50px] bg-[#C0B4D3]">
             <Link href={'/portfolio/healthcare-facilities'}>Healthcare Facilities</Link>
           </button>
-          <button id={router.asPath == '/portfolio/industrial' ? "category-button-active" : ''} className="category-button bg-[#C0B4D3]">
+          <button id={router.asPath == '/portfolio/industrial' ? "category-button-active" : ''} className="category-button md:w-[200px] md:h-[50px] bg-[#C0B4D3]">
             <Link href={'/portfolio/industrial'}>Industrial</Link>
           </button>
-          <button id={router.asPath == '/portfolio/institutional' ? "category-button-active" : ''} className="category-button bg-[#C0B4D3]">
+          <button id={router.asPath == '/portfolio/institutional' ? "category-button-active" : ''} className="category-button md:w-[200px] md:h-[50px] bg-[#C0B4D3]">
             <Link href={'/portfolio/institutional'}>Institutional</Link>
           </button>
-          <button id={router.asPath == '/portfolio/mixed-use-and-high-rise' ? "category-button-active" : ''} className="category-button bg-[#C0B4D3]">
+          <button id={router.asPath == '/portfolio/mixed-use-and-high-rise' ? "category-button-active" : ''} className="category-button md:w-[200px] md:h-[50px] bg-[#C0B4D3]">
             <Link href={'/portfolio/mixed-use-and-high-rise'}>Mixed-Use/High-Rise</Link>
           </button>
-          <button id={router.asPath == '/portfolio/residential' ? "category-button-active" : ''} className="category-button bg-[#C0B4D3]">
+          <button id={router.asPath == '/portfolio/residential' ? "category-button-active" : ''} className="category-button md:w-[200px] md:h-[50px] bg-[#C0B4D3]">
             <Link href={'/portfolio/residential'}>Residential</Link>
           </button>
-          <button id={router.asPath == '/portfolio/transportation' ? "category-button-active" : ''} className="category-button bg-[#C0B4D3]">
+          <button id={router.asPath == '/portfolio/transportation' ? "category-button-active" : ''} className="category-button md:w-[200px] md:h-[50px] bg-[#C0B4D3]">
             <Link href={'/portfolio/transportation'}>Transportation</Link>
           </button>
           </div>

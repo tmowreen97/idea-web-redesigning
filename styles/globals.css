@@ -39,8 +39,17 @@ polyline {
 }
 
   /* try to display about with flexbox */
-  .about__parent {
-    display: grid;
+
+  .about__parent{
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(5, 1fr) ;
+    grid-column-gap: 10px;
+  }
+  .about__title { grid-area: 1 / 1 / 2 / 2; }
+  .about__child1 { grid-area: 2 / 1 / 4 / 2; }
+  .about__child2 { grid-area : 1 / 2 / 3 / 5; }
+  .about__img { grid-area : 3 / 2 / 4 / 5; }
+  /* .about__parent {
     grid-template-columns: 2fr repeat(4, 1fr);
     grid-template-rows: repeat(3, .5fr) repeat(2, 1fr);
     grid-column-gap: 0px;
@@ -49,10 +58,9 @@ polyline {
   .about__title { grid-area: 1 / 1 / 2 / 2; }
   .about__child1 { grid-area: 2 / 1 / 4 / 2; }
   .about__child2 { grid-area: 1 / 2 / 3 / 3; }
-  .about__img { grid-area: 3 / 2 / 4 / 3; }
+  .about__img { grid-area: 3 / 2 / 4 / 5; } */
 
   .projecthome__parent {
-    display: grid;
     grid-template-columns: 2fr repeat(4, 1fr);
     grid-template-rows: repeat(3, .5fr) repeat(2, 1fr);
     grid-column-gap: 0px;
@@ -82,8 +90,7 @@ polyline {
     padding-right: 15px; */
     margin:10px;
     border-radius: 15px;
-    width: 200px;
-    height: 50px;
+    
     font-size: 15px;
   }
   .category-button:hover{
@@ -183,7 +190,6 @@ polyline {
 /* Culture Grid */
 
 .culture__parent {
-  display: grid;
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: repeat(4, 1fr);
   grid-column-gap: 30px;

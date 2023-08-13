@@ -1,12 +1,16 @@
-import { delay, motion } from "framer-motion";
-import {react, useState} from 'react';
+import { delay, motion, useInView } from "framer-motion";
+import {react, useState, useRef} from 'react';
 
 function Blinker({delayTime, bgColor, repeatDelayTime, description, classDesc}){
+
+  const ref = useRef(null)
+  const isInView = useInView(ref)
+
   const [animate, setAnimate] = useState(true)
   return(
-    <div className={classDesc} onMouseEnter={()=>{setAnimate(false)}} onMouseLeave={()=>{setAnimate(true)}}>
+    <div ref={ref} className={classDesc} onMouseEnter={()=>{setAnimate(false)}} onMouseLeave={()=>{setAnimate(true)}}>
       <motion.div
-        animate= { animate ? {scale:[1,3,3,1], opacity:[0.8,1,1,0.75], transition:{
+        animate= { animate && isInView ? {scale:[1,3,3,1], opacity:[0.8,1,1,0.75], transition:{
           duration: 3,
           delay : delayTime,
           repeat: Infinity,
