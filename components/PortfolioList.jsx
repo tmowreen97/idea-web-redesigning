@@ -23,11 +23,11 @@ function PortfolioList({project}){
       }
   }
   return(
-    <div className="items-center text-center justify-center p-5 py-10 relative" onMouseEnter={()=> setProjHover(true)}
+    <div className="items-center text-center justify-center p-5 py-10 relative mb-[100px] min-w-5xl" onMouseEnter={()=> setProjHover(true)}
     onMouseLeave={()=> setProjHover(false)}>
-      <Image src={project.image} width={650} height={500} alt={'project'}/>
+      <Image src={project.image} width={project.width} height={project.height} alt={'project'} className="rounded-xl overflow-hidden"/>
       {/* style="position: absolute; top: 0px; z-index: 3;" */}
-      <div className={projHover ? "absolute w-[638px] h-[330px] top-5 bg-[#322d44]/80 text-secondary_text  text-center justify-center items-center mt-5" : "hidden"}>
+      <div className={projHover ? "absolute w-[638px] h-[330px] top-0 bg-[#322d44]/80 text-secondary_text  text-center justify-center items-center mt-5" : "hidden"}>
           <h1 className="mx-10 mt-[80px] text-4xl ">{project.name}</h1>
           <p className="mx-32 mt-2 ">{project.description}</p>
           <div className="absolute bottom-0 left-[47%] p-2 motion-safe:animate-bounce text-2xl" onClick={()=> setProjClick(!projClick)}>
