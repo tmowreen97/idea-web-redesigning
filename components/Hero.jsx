@@ -1,12 +1,44 @@
-import {React, useState} from 'react';
+import {React, useState, useEffect, useCallback} from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Blinker from './Blinker';
+import {AiOutlineLine} from 'react-icons/ai';
+
 
 function Hero({heading, message}){
   const [descTwo, setDescTwo] = useState(false)
   const [coord, setCoord]= useState(["0,0 0,0 0,0"])  
   const [animate, setAnimate] = useState(true)
+  const [mobileAnimate, setMobileAnimate] = useState(true)
+  const useMediaQuery = (width) => {
+    const [targetReached, setTargetReached] = useState(false);
+  
+    const updateTarget = useCallback((e) => {
+      if (e.matches) {
+        setTargetReached(true);
+      } else {
+        setTargetReached(false);
+      }
+    }, []);
+  
+    useEffect(() => {
+      const media = window.matchMedia(`(max-width: ${width}px)`);
+      media.addListener(updateTarget);
+  
+      // Check on mount (callback is not called until a change occurs)
+      if (media.matches) {
+        setTargetReached(true);
+      }
+  
+      return () => media.removeListener(updateTarget);
+    }, []);
+  
+    return targetReached;
+  };
+
+
+  const isBreakPoint = useMediaQuery(768)
+  console.log(isBreakPoint, 'break')
 
  
   function handleDescTwo(e){
@@ -107,14 +139,98 @@ function Hero({heading, message}){
       {/* Overlay */}
       {/* <div className='absolute top-0 left-0 right-0 bottom-0 bg-black/70 z-[2]' /> */}
       <div className=" mb-40 md:mb-0 ">
-        {
+        { !isBreakPoint ? 
         blinkers.map((blinker)=> {
           return(
             <div key={blinker.name}>
               <Blinker delayTime={blinker.delayTime} repeatDelayTime={blinker.repeatDelayTime} bgColor={blinker.bgColor} classDesc={blinker.classDesc}/>
             </div>
           )
-        })
+        }) : 
+        <div className="text-center justify-center items-center ml-[50px]">
+          <motion.div
+            initial={{opacity:0}}
+            whileInView={{opacity:1, transition:{delay:2, duration:1}}}
+          >
+            <button className={mobileAnimate ? "bg-button_bg p-2 rounded-xl animation-blimp-1" : "bg-button_bg p-2 rounded-xl"} onClick={()=> setMobileAnimate(!mobileAnimate)}>What We're Working On</button>
+           </motion.div>
+            { !mobileAnimate ? <div className="items-center justify-center text-center">
+              <motion.div 
+              initial={{opacity:0}}
+              whileInView={{opacity:1, transition:{duration:1, delay:.5}}}
+              className="justify-center flex">
+                <AiOutlineLine className="rotate-90 text-lg text-white" />
+              </motion.div>
+              <motion.div 
+              initial={{opacity:0}}
+              whileInView={{opacity:1, transition:{duration:1, delay:1}}}
+              className="mobile-desc-div">
+                <p className='mobile-desc'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </motion.div>
+              <motion.div 
+              initial={{opacity:0}}
+              whileInView={{opacity:1, transition:{duration:1, delay:1.5}}}
+              className="justify-center flex">
+                <AiOutlineLine className="rotate-90 text-lg text-white" />
+              </motion.div>
+              <motion.div 
+              initial={{opacity:0}}
+              whileInView={{opacity:1, transition:{duration:1, delay:2}}}
+              className="mobile-desc-div">
+                <p className='mobile-desc'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </motion.div>
+              <motion.div 
+              initial={{opacity:0}}
+              whileInView={{opacity:1, transition:{duration:1, delay:2.5}}}
+              className="justify-center flex">
+                <AiOutlineLine className="rotate-90 text-lg text-white" />
+              </motion.div>
+              <motion.div 
+              initial={{opacity:0}}
+              whileInView={{opacity:1, transition:{duration:1, delay:3}}}
+              className="mobile-desc-div">
+                <p className='mobile-desc'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </motion.div>
+              <motion.div 
+              initial={{opacity:0}}
+              whileInView={{opacity:1, transition:{duration:1, delay:3.5}}}
+              className="justify-center flex">
+                <AiOutlineLine className="rotate-90 text-lg text-white" />
+              </motion.div>
+              <motion.div 
+              initial={{opacity:0}}
+              whileInView={{opacity:1, transition:{duration:1, delay:4}}}
+              className="mobile-desc-div">
+                <p className='mobile-desc'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </motion.div>
+              <motion.div 
+              initial={{opacity:0}}
+              whileInView={{opacity:1, transition:{duration:1, delay:4.5}}}
+              className="justify-center flex">
+                <AiOutlineLine className="rotate-90 text-lg text-white" />
+              </motion.div>
+              <motion.div 
+              initial={{opacity:0}}
+              whileInView={{opacity:1, transition:{duration:1, delay:5}}}
+              className="mobile-desc-div">
+                <p className='mobile-desc'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </motion.div>
+              <motion.div 
+              initial={{opacity:0}}
+              whileInView={{opacity:1, transition:{duration:1, delay:5.5}}}
+              className="justify-center flex">
+                <AiOutlineLine className="rotate-90 text-lg text-white" />
+              </motion.div>
+              <motion.div 
+              initial={{opacity:0}}
+              whileInView={{opacity:1, transition:{duration:1, delay:6}}}
+              className="mobile-desc-div">
+                <p className='mobile-desc'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </motion.div>
+            </div> : ""
+            }
+          
+        </div>
       }
       </div>
       
