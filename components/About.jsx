@@ -28,8 +28,8 @@ const About = () => {
 // bg-[#DAD3DF]
   return (
     <div id='about' className='w-screen md:h-full bg-primary'>
-      <div className='relative flex items-center align-middle justify-center p-4  mx-40  mt-[-60px]'>
-        <div className="about__parent md:grid ml-5">
+      <div className='relative flex items-center align-middle justify-center p-4  lg:mx-40 '>
+        <div className="about__parent lg:grid ml-5">
           <div className="about__title mt-40 ">
             <h1 className="md:text-[1100%] text-5xl tracking-wider text-center font-thin text-primary_text">About</h1>
           </div>

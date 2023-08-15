@@ -61,7 +61,7 @@ polyline {
   .about__img { grid-area: 3 / 2 / 4 / 5; } */
 
   .projecthome__parent {
-    grid-template-columns: 2fr repeat(2, 1fr);
+    grid-template-columns: 2fr, 1fr;
     grid-template-rows: repeat(3, .5fr) ;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
