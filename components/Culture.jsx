@@ -1,21 +1,54 @@
-'use client'
 import Image from "next/image";
-import React from "react";
+import {React, useState, useEffect, useCallback} from "react";
 import ReactPlayer from "react-player/lazy";
 
 
 function CulturePage(){
+
+  const [isClient, setIsClient] = useState(false)
+
+  const useMediaQuery = (width) => {
+    const [targetReached, setTargetReached] = useState(false);
+  
+    const updateTarget = useCallback((e) => {
+      if (e.matches) {
+        setTargetReached(true);
+      } else {
+        setTargetReached(false);
+      }
+    }, []);
+  
+    useEffect(() => {
+      setIsClient(true)
+      const media = window.matchMedia(`(max-width: ${width}px)`);
+      media.addListener(updateTarget);
+  
+      // Check on mount (callback is not called until a change occurs)
+      if (media.matches) {
+        setTargetReached(true);
+      }
+  
+      return () => media.removeListener(updateTarget);
+    }, []);
+  
+    return targetReached;
+  };
+
+
+  const isBreakPoint = useMediaQuery(900)
+
   return(
     <div className="w-screen h-full bg-primary">
-      <div className="px-20 pt-20 pb-[80px]">
-        <h1 className="md:text-[1100%] text-5xl font-thin text-primary_text text-left tracking-wider">Culture</h1>
+      <div className="md:px-20 pt-20 pb-[80px]">
+        <h1 className="md:text-[1100%] text-center text-8xl font-thin text-primary_text md:text-left tracking-wider">Culture</h1>
       </div>
       <div className="pb-[25px]">
-        <h1 className="md:text-[500%] text-center items-center tracking-wide font-light text-primary_text/70">The IDEA Times</h1>
+        <h1 className="md:text-[500%] text-4xl text-center items-center tracking-wide font-light text-primary_text/70">The IDEA Times</h1>
       </div>
-      <div className="justify-center items-center flex md:w-[100%] md:h=[100%] overflow-hidden">
-        <div className=" relative">
-          <ReactPlayer 
+      { isClient ? <div className="justify-center items-center flex md:w-[100%] md:h=[100%] overflow-hidden">
+          {
+            !isBreakPoint ? 
+            <ReactPlayer 
             url={'https://www.youtube.com/watch?v=9g08kucPQtE&ab_channel=Gunna'}
             playing
             loop
@@ -23,11 +56,21 @@ function CulturePage(){
             controls
             width='900px'
             height='500px'
+          /> : 
+          <ReactPlayer 
+            url={'https://www.youtube.com/watch?v=9g08kucPQtE&ab_channel=Gunna'}
+            playing
+            loop
+            muted
+            controls
+            width='375px'
+            height='250px'
           />
-        </div>
-      </div>
-      <div className="flex justify-center items-center p-5  pb-20">
-        <div className="culture__parent justify-center py-10 md:mx-20 md:grid flexbox">
+          }
+
+      </div> : ""}
+      <div className="flex justify-center items-center p-5  md:pb-20">
+        <div className="culture__parent justify-center py-10 md:mx-[10%] md:grid flexbox">
           <div className="culture__child1 md:p-20 p-5 flex bg-secondary/40 rounded-xl">
             <div>
               <h1 className="md:text-[300%] px-5 pt-5 text-primary_text font-light tracking-wide">IDEA HOSTS MIAMI BBQ</h1>
@@ -47,7 +90,7 @@ function CulturePage(){
           <div className="culture__child2 md:p-20 p-5 mt-5 md:mt-0 flex bg-secondary/40 rounded-xl">
           <div>
               <h1 className="md:text-[300%] px-5 pt-5 text-primary_text font-light tracking-wide">IDEA HOSTS ...</h1>
-              <h2 className=" ml-6  text-primary_text text-3xl font-light tracking-wide">April 2023</h2>
+              <h2 className=" ml-6 text-primary_text text-3xl font-light tracking-wide">April 2023</h2>
               <h2 className=" ml-6 mb-3 text-primary_text text-2xl font-light tracking-wide">Nancy Karim</h2>
               <div className="items-center justify-center rounded-xl overflow-hidden">
                 <Image src={'/assets/filler-2.jpg'} width={500} height={300}/>
