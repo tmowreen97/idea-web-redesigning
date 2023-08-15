@@ -120,7 +120,7 @@ function Hero({heading, message}){
   ]
 
   return (
-    <div className='flex items-center justify-center max-w-screen h-screen mb-16 bg-fixed bg-center bg-cover custom-img'>
+    <div className='flex items-center justify-center  h-screen mb-16 bg-fixed bg-center bg-cover custom-img'>
       {/* <div className='absolute left-0 top-0 h-[100%] w-[100%]'>
         <Image src={'/assets/miami-port.jpeg'} alt='MiamiPort' fill style={{objectFit:'cover'}} priority/>
       </div> */}
