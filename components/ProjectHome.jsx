@@ -32,15 +32,15 @@ function ProjectHome(){
 
   return(
     <div id='projects' className='w-screen md:h-full bg-primary'>
-      <div className='relative flex items-center justify-center p-4 md:pt-[110px]'>
+      <div className='relative flex items-center justify-center p-4 pt-[5%]'>
       <div className="projecthome__parent lg:grid flexbox  ">
         <div className="projecthome__title mr-2 ml-5 ">
-          <h1 className="md:text-[1000%] text-5xl tracking-wide text-left md:ml-[65px] font-thin mb-10  text-primary_text">Projects</h1>
+          <h1 className="md:text-[1000%] text-8xl tracking-wide text-left md:ml-[65px] font-thin mb-10  text-primary_text">Projects</h1>
         </div>
-        <div className="projecthome__child1 md:p-10 p-5 bg-secondary/50 rounded-xl md:mr-5 md:ml-4">
+        <div className="projecthome__child1 md:p-10 p-2 bg-secondary/50 rounded-xl md:mr-5 md:ml-4 m-4">
           <ProjectHomeCarousel projects={projects} setProjectSelect={setProjectSelect} projectSelect={projectSelect}/>
         </div>
-        <div className="projecthome__img bg-secondary/50 items-center text-center justify-center p-5 rounded-xl md:w-[450px] md:h-[45%] mt-20">
+        <div className="projecthome__img bg-secondary/50 items-center text-center justify-center p-5 rounded-xl md:w-[450px] md:h-[45%] md:mt-20 md:m-0 m-4">
           {/* <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
     <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4"/>
   </svg> */}
@@ -94,7 +94,7 @@ function ProjectHome(){
 
           </div> */}
         </div>
-        <div className="projecthome__child2 p-10 bg-secondary/50 rounded-xl md:w-[450px]">
+        <div className="projecthome__child2 p-10 bg-secondary/50 rounded-xl md:w-[450px] md:m-0 m-4">
           <h2 className="">{projects[projectSelect].name}</h2>
           <p className="tracking-wider mx-2">{projects[projectSelect].desc}</p>
           <div className="mt-[5%] mb-5 text-center ">

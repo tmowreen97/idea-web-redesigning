@@ -28,15 +28,15 @@ const About = () => {
 // bg-[#DAD3DF]
   return (
     <div id='about' className='w-screen md:h-full bg-primary'>
-      <div className='relative flex items-center align-middle justify-center p-4  lg:mx-40 '>
-        <div className="about__parent lg:grid ml-5">
-          <div className="about__title mt-40 ">
-            <h1 className="md:text-[1100%] text-5xl tracking-wider text-center font-thin text-primary_text">About</h1>
+      <div className=' flex items-center justify-center p-4 md:mx-[35%] pl-[5%]'>
+        <div className="about__parent lg:grid flexbox ">
+          <div className="about__title pt-[30%] ">
+            <h1 className="md:text-[1100%] text-8xl tracking-wider text-center font-thin text-primary_text">About</h1>
           </div>
-          <div className="about__child1 p-10 bg-secondary/50 rounded-xl mt-5">
+          <div className="about__child1 p-10 bg-secondary/50 rounded-xl mt-5 h-full md:m-0 m-2">
             <h2>Our Story</h2>
             <p className="tracking-wider">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <div className='grid grid-cols-2 justify-center items-center text-center m-2'>
+            <div className='grid md:grid-cols-2 justify-center items-center text-center m-2'>
               {
                 traits.map((trait)=> {
                   return(
@@ -47,21 +47,25 @@ const About = () => {
 
             </div>
           </div>
-          <div className="about__child2 p-10 bg-secondary/40 rounded-xl m-5 mt-40">
+          <div className="about__child2 p-10 bg-secondary/40 rounded-xl md:m-5 m-2 md:mt-40 md:w-[500px]">
             <h2>Our Mission</h2>
             <p className="tracking-wider">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
           </div>
-          <div className="about__img bg-secondary/40 items-center justify-center text-center p-5  animation-pulse delay-200 rounded-xl m-5 hover:animate-none">
+          <div className="about__img md:w-[500px] bg-secondary/40 items-center justify-center text-center p-5  animation-pulse delay-200 rounded-xl m-5 hover:animate-none">
             <div className="relative" onMouseOver={()=> setShow(true)} onMouseLeave={()=> setShow(false)}>
-                <div className="mx-10 overflow-hidden rounded-xl">
-                  <Image src={'/assets/filler-1.jpg'} width={500} height={100} alt={'team_member'}/> 
+                <div className="mx-10 overflow-hidden rounded-xl items-center justify-center flex">
+                  <div className="relative">
+                    <Image src={'/assets/filler-1.jpg'} width={500} height={100} alt={'team_member'}/> 
+                    <div className={show ? "absolute bg-cover bottom-0 left-0 right-0 top-0 bg-[#322d44]/80 rounded-xl text-secondary_text  text-center justify-center items-center" : "hidden"}>
+                    <Link href={'/team'}>
+                      <h1 className="md:mx-5 md:mt-[115px] justify-center text-center mt-[20%] md:text-2xl text-lg text-primary_text">Click to See Our Team</h1>
+                    </Link>
+              </div>
+                  </div>
+                  
                 </div>
                
-              {/* <div className={show ? "absolute w-[398px] h-[266px] mx-10 top-0 bg-[#322d44]/80 rounded-xl text-secondary_text  text-center justify-center items-center" : "hidden"}>
-                <Link href={'/team'}>
-                  <h1 className="mx-5 mt-[115px] text-2xl text-primary_text ">Click to See Our Team</h1>
-                </Link>
-              </div> */}
+              
       
           </div>
             
