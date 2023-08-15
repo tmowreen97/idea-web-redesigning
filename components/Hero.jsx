@@ -37,7 +37,7 @@ function Hero({heading, message}){
   };
 
 
-  const isBreakPoint = useMediaQuery(768)
+  const isBreakPoint = useMediaQuery(800)
   console.log(isBreakPoint, 'break')
 
  
@@ -120,7 +120,7 @@ function Hero({heading, message}){
   ]
 
   return (
-    <div className='flex relative items-center justify-center min-w-full h-screen pt-12 bg-fixed bg-center bg-cover custom-img tracking-wider'>
+    <div className='flex relative items-center justify-center w-full h-screen bg-fixed bg-center bg-cover custom-img tracking-wider'>
       {/* <div className='absolute left-0 top-0 h-[100%] w-[100%]'>
         <Image src={'/assets/miami-port.jpeg'} alt='MiamiPort' fill style={{objectFit:'cover'}} priority/>
       </div> */}
