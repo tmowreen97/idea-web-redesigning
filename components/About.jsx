@@ -57,10 +57,10 @@ const About = () => {
                   <div className="relative">
                     <Image src={'/assets/filler-1.jpg'} width={500} height={100} alt={'team_member'}/> 
                     <div className={show ? "absolute bg-cover bottom-0 left-0 right-0 top-0 bg-[#322d44]/80 rounded-xl text-secondary_text  text-center justify-center items-center" : "hidden"}>
-                    <Link href={'/team'}>
-                      <h1 className="md:mx-5 md:mt-[115px] justify-center text-center mt-[20%] md:text-2xl text-lg text-primary_text">Click to See Our Team</h1>
-                    </Link>
-              </div>
+                      <Link href={'/team'}>
+                        <h1 className="md:mx-5 md:mt-[115px] justify-center text-center mt-[20%] md:text-2xl text-lg text-primary_text">Click to See Our Team</h1>
+                      </Link>
+                    </div>
                   </div>
                   
                 </div>
