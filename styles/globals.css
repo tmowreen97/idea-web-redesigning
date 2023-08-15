@@ -41,8 +41,8 @@ polyline {
   /* try to display about with flexbox */
 
   .about__parent{
-    grid-template-columns: repeat(5,1fr);
-    grid-template-rows: repeat(5, 1fr) ;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3, 1fr) ;
     grid-column-gap: 10px;
   }
   .about__title { grid-area: 1 / 1 / 2 / 2; }
@@ -61,8 +61,8 @@ polyline {
   .about__img { grid-area: 3 / 2 / 4 / 5; } */
 
   .projecthome__parent {
-    grid-template-columns: 2fr repeat(4, 1fr);
-    grid-template-rows: repeat(3, .5fr) repeat(2, 1fr);
+    grid-template-columns: 2fr repeat(2, 1fr);
+    grid-template-rows: repeat(3, .5fr) ;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     }

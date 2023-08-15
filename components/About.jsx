@@ -27,9 +27,9 @@ const About = () => {
   ]
 // bg-[#DAD3DF]
   return (
-    <div id='about' className='w-screen md:max-h-[980px] bg-primary'>
-      <div className='relative flex items-center align-middle justify-center p-4  md:ml-[220px] mt-[-60px]'>
-        <div className="about__parent md:grid">
+    <div id='about' className='w-screen md:h-full bg-primary'>
+      <div className='relative flex items-center align-middle justify-center p-4  mx-40  mt-[-60px]'>
+        <div className="about__parent md:grid ml-5">
           <div className="about__title mt-40 ">
             <h1 className="md:text-[1100%] text-5xl tracking-wider text-center font-thin text-primary_text">About</h1>
           </div>
@@ -57,11 +57,11 @@ const About = () => {
                   <Image src={'/assets/filler-1.jpg'} width={500} height={100} alt={'team_member'}/> 
                 </div>
                
-              <div className={show ? "absolute w-[398px] h-[266px] mx-10 top-0 bg-[#322d44]/80 rounded-xl text-secondary_text  text-center justify-center items-center" : "hidden"}>
+              {/* <div className={show ? "absolute w-[398px] h-[266px] mx-10 top-0 bg-[#322d44]/80 rounded-xl text-secondary_text  text-center justify-center items-center" : "hidden"}>
                 <Link href={'/team'}>
                   <h1 className="mx-5 mt-[115px] text-2xl text-primary_text ">Click to See Our Team</h1>
                 </Link>
-              </div>
+              </div> */}
       
           </div>
             
