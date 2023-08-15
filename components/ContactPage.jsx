@@ -11,8 +11,12 @@ function ContactPage(){
         <h1 className="md:text-[1100%] text-5xl font-thin text-primary_text text-left tracking-wide">Contact</h1>
       </div>
       <div className="md:flex items-center justify-evenly pb-20">
-        <div className=" text-xl flex">
-          <div className="mr-10">
+        <div className=" text-xl flex  rounded-xl p-4">
+          <motion.div 
+          initial={{opacity:0}}
+          animate={{opacity:1, transition:{duration:2, delay:.5} }}
+          
+          className="mr-10 bg-light_bg/60 rounded-xl p-4">
             <motion.div
               initial={{opacity:0}}
               animate={{opacity:1, transition:{duration:2, delay:1}}}
@@ -41,8 +45,8 @@ function ContactPage(){
             <Image src={'/assets/clip-4.png'} width={100} height={100}/>              
             </motion.div>
 
-          </div>
-          <div>
+          </motion.div>
+          <div className="m-4">
             <div className="pb-5">
               <div className="flex pb-5">
                 <h2 className="text-6xl">IDEA</h2>

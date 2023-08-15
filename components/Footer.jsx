@@ -25,51 +25,51 @@ export default function Footer(){
           <div className="items-center justify-between text-2xl font-light flex" >
           <div className="bg-secondary/70 mr-10 rounded-xl px-5 py-4 mt-[-10px]">
             <div className="pb-1">
-              <Image src={'/assets/clip-1.png'} width={60} height={60}/>
+              <Image src={'/assets/clip-1.png'} width={65} height={60}/>
             </div>
             <div className="pb-1 pl-[2px]">
-              <Image src={'/assets/clip-2.png'} width={55} height={55}/>
+              <Image src={'/assets/clip-2.png'} width={60} height={60}/>
             </div>
             <div className="pb-1">
-              <Image src={'/assets/clip-3.png'} width={55} height={55}/>
+              <Image src={'/assets/clip-3.png'} width={60} height={60}/>
             </div>
             <div className="pl-[2px]">
-              <Image src={'/assets/clip-4.png'} width={55} height={55}/>
+              <Image src={'/assets/clip-4.png'} width={60} height={60}/>
             </div>
           </div>
           <div>
-            <div className="flex mb-10">
+            <div className="flex mb-[50px] mt-2">
               <h1 className="py-1 text-6xl">IDEA</h1>
               <h1 className="pl-2 pt-7 text-2xl">AEC</h1>
             </div>
-            <div className="mb-10">
+            <div className=" mb-7">
               <h1 className="">Inter-Disciplinary Engineering Associates, LLC</h1>
               <h1 className="">Architectural Engineering Consultants</h1>
-              <p className="text-lg">1 Botsford Hill Rd Botsford, CT 06404</p>       
-              <p className="text-lg">Info@IdeaAEC.com</p>
-              <p className="text-lg">203-917-7907</p>
-              <p className="pt-[50px] text-sm" >© 2023 by Idea Consulting</p>
+              <p className="text-lg text-dark_text">1 Botsford Hill Rd Botsford, CT 06404</p>       
+              <p className="text-lg text-dark_text">Info@IdeaAEC.com</p>
+              <p className="text-lg text-dark_text">203-917-7907</p>
+              <p className="mt-[60px] text-sm text-dark_text" >© 2023 by Idea Consulting</p>
             </div>
             
           </div>
             
           </div>
           <div className="md:ml-[150px]">
-          <div className="bg-secondary md:w-[400px] md:h-[300px] ml-10  rounded-xl ">
+          <div className="bg-button_bg/60 md:w-[400px] md:h-[300px] ml-10  rounded-xl ">
             <div className="items-center justify-center ">
-              <form className="text-center pt-5">
-                <h2>Contact Us</h2>
+              <form className="text-center pt-5 ">
+                <h2 className="text-dark_text">Contact Us</h2>
                 <div className="m-2">
                   {/* <label>Name:</label> */}
                   <input type="name" className="md:w-[300px] rounded-xl text-center p-1" placeholder="Name"/>
                 </div>
                 <div className="m-2">
                   {/* <label>Email:</label> */}
-                  <input type="email" className="md:w-[300px] rounded-xl text-center p-1" placeholder="Email"/>
+                  <input type="email" className="md:w-[300px] rounded-xl text-center p-1 border-none" placeholder="Email"/>
                 </div>
                 <div className="m-2">
                   {/* <label>Message:</label> */}
-                  <textarea type="text" className="md:w-[300px] rounded-xl text-center max-h-[70px] p-1" placeholder="Message"/>
+                  <textarea type="text" className="md:w-[300px] rounded-xl text-center max-h-[70px] p-1 border-none" placeholder="Message"/>
                 </div>
                 <div className="text-center items-center justify-center flex ">
                   <div className="bg-tertiary/80 hover:bg-accent_2/80 rounded-xl p-2 shadow-xl text-primary_text">
