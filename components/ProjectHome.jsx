@@ -44,11 +44,11 @@ function ProjectHome(){
           {/* <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
     <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4"/>
   </svg> */}
-          <button onClick={()=> {setShowDropDown(!showDropDown)}}  data-dropdown-toggle="dropdown" className="relative md:w-[400px] text-2xl justify-between  hover:bg-secondary/60 focus:ring-4 focus:outline-none focus:ring-secondary_text font-medium rounded-lg px-5 py-2.5 text-center inline-flex items-center text-secondary_text" type="button">{projects[projectSelect].category} 
-          { showDropDown ? <BsChevronCompactUp/> : <BsChevronCompactDown/>}
-          </button>
-
-    <div id="dropdown" className={ showDropDown ? "z-10 absolute md:right-52 right-[100px] md:w-[200px] bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700": "hidden"}>
+          <div className="relative">
+            <button onClick={()=> {setShowDropDown(!showDropDown)}}  data-dropdown-toggle="dropdown" className="relative md:w-[400px] text-2xl justify-between  hover:bg-secondary/60 focus:ring-4 focus:outline-none focus:ring-secondary_text font-medium rounded-lg px-5 py-2.5 text-center inline-flex items-center text-secondary_text" type="button">{projects[projectSelect].category} 
+              { showDropDown ? <BsChevronCompactUp/> : <BsChevronCompactDown/>}
+            </button>
+            <div id="dropdown" className={ showDropDown ? "z-10 absolute right-0 md:w-[200px] bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700": "hidden"}>
         <ul className="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
           <li>
             <a href="/portfolio/institutional" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">Institutional</a>
@@ -79,6 +79,13 @@ function ProjectHome(){
           </li>
         </ul>
     </div>
+
+          
+          
+          </div>
+          
+
+    
           {/* <div className='category__select'>
             <ul>
               <li>Institutional</li>
