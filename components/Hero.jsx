@@ -38,7 +38,6 @@ function Hero({heading, message}){
 
 
   const isBreakPoint = useMediaQuery(900)
-  console.log(isBreakPoint, 'break')
 
  
   function handleDescTwo(e){

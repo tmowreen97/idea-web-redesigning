@@ -5,9 +5,9 @@ import Image from "next/image";
 
 export default function Footer(){
   return(
-    <div id='footer' className="w- md:h-[480px]  bg-footer_bg ">
+    <div id='footer' className="w- md:h-[480px]  bg-secondary ">
       <div className="flex items-center justify-center pt-[50px]">
-        <div className=" md:grid md:grid-cols-2 flexbox text-secondary_text tracking-wide">
+        <div className=" md:grid md:grid-cols-2 flexbox justify-evenly  text-dark_text tracking-wide">
           {/* <div className="bg-secondary mr-[300px]">
             <div>
               <Image src={'/assets/clip-1.png'} width={70} height={70}/>

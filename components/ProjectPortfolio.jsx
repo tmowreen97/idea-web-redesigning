@@ -19,11 +19,11 @@ function ProjectPortfolio({ projects }){
       <div className="p-20">
         <h1 className="md:text-[1100%] text-5xl font-thin text-primary_text text-left tracking-wide">Portfolio</h1>
       </div>
-      <div>
-        <div className="md:mx-[100px] items-center justify-center text-center ml-[9%]">
+      <div className="items-center justify-center">
+        <div className="md:mx-[100px] items-center justify-center text-center ml-[9%] flex">
 
         
-        <div className="grid md:grid-cols-5 grid-cols-2">
+        <div className="grid md:grid-cols-5 grid-cols-2 ">
           
             <button id={router.asPath == '/portfolio' ? "category-button-active" : ''} className="category-button md:w-[200px] md:h-[50px] bg-[#C0B4D3]">
             <Link href={'/portfolio'} >All</Link>
@@ -81,7 +81,8 @@ function ProjectPortfolio({ projects }){
           <option value="Category 7">Category 7</option>
         </select>
       </div> */}
-      <div className="grid md:grid-cols-2 mx-20 py-10">
+      <div className="flex items-center justify-center">
+        <div className="grid md:grid-cols-2 mx-20 py-10">
         {
           projects.map((proj)=> {
             return(
@@ -95,6 +96,8 @@ function ProjectPortfolio({ projects }){
 
 
       </div>
+      </div>
+      
       </div>
 
     </div>
