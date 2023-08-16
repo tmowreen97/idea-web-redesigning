@@ -94,10 +94,13 @@ function ThankYou(){
           
         </div>
         <div className="text-center justify-evenly mt-[-200px] ">
-          <div className="text-2xl m-2 p-10 bg-secondary rounded-xl text-left  items-center justify-center">
+          <motion.div 
+          initial={{opacity:0}}
+          animate={{opacity:1, transition:{duration:2, delay:2.5}}}
+          className="text-2xl m-2 p-10 bg-secondary rounded-xl text-left  items-center justify-center">
             <h1 className="">Thank you!</h1>
             <h1>We look forward to empowering your ideas.</h1>
-          </div>
+          </motion.div>
           <motion.div 
           initial={{opacity:0}}
           whileInView={{opacity:1, transition:{delay:3}}}

@@ -114,7 +114,7 @@ function ContactPage(){
                   <input 
                   type="email" 
                   name="email" 
-                  className="md:w-[400px] h-[40px] rounded-xl text-center p-1" 
+                  className="md:w-[400px] h-[40px] rounded-xl text-center p-1 border-none" 
                   placeholder="Email"
                   required/>
                 </div>
@@ -123,11 +123,11 @@ function ContactPage(){
                   <textarea 
                   type="text" 
                   name="message" 
-                  className="md:w-[400px] md:h-[80px] rounded-xl text-center max-h-[100px] p-1" 
+                  className="md:w-[400px] md:h-[80px] rounded-xl text-center max-h-[100px] p-1 border-none" 
                   placeholder="Message"
                   required/>
                 </div>
-                <input type="hidden" name="_next" value="https://localhost:3000/thanks-you"></input>
+                <input type="hidden" name="_next" value="http://localhost:3000/thank-you"></input>
                 <div className="text-center items-center justify-center flex ">
                   <div className="bg-tertiary/80 hover:bg-accent_2/80 rounded-xl p-2 px-5 shadow-xl text-primary_text">
                     <button type='submit'>Send</button>
