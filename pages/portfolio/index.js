@@ -81,7 +81,7 @@ export default function Portfolio(){
   return(
     <div>
       <Navbar lightLogo={true}/>
-      <ProjectPortfolio projects={projects}/>
+      <ProjectPortfolio projects={projects} category={'All'}/>
     </div>
   )
 }

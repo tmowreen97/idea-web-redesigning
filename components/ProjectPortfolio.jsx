@@ -2,11 +2,13 @@ import { useState } from "react";
 import { useRouter } from 'next/router';
 import Link from "next/link";
 import Image from "next/image";
+import { motion } from "framer-motion";
 import PortfolioList from "./PortfolioList";
-import {BsChevronCompactDown} from 'react-icons/bs';
+import {BsChevronCompactDown, BsChevronCompactUp} from 'react-icons/bs';
 
-function ProjectPortfolio({ projects }){
-  const [category, setCategory] = useState('All')
+function ProjectPortfolio({ projects, category }){
+  
+  const [showDropDown, setShowDropDown] = useState(false)
   const router = useRouter();
   
   // if id is odd, open the description div to the right
@@ -16,14 +18,17 @@ function ProjectPortfolio({ projects }){
 
   return(
     <div className="w-screen h-full bg-primary">
-      <div className="p-20">
+      <motion.div 
+      initial={{opacity:0}}
+      animate={{opacity:1, transition:{delay:1, duration:1}}}
+      className="p-20">
         <h1 className="md:text-[1100%] text-5xl font-thin text-primary_text text-left tracking-wide">Portfolio</h1>
-      </div>
+      </motion.div>
       <div className="items-center justify-center">
         <div className="md:mx-[100px] items-center justify-center text-center ml-[9%] flex">
 
         
-        <div className="grid md:grid-cols-5 grid-cols-2 ">
+        {/* <div className="grid md:grid-cols-5 grid-cols-2 ">
           
             <button id={router.asPath == '/portfolio' ? "category-button-active" : ''} className="category-button md:w-[200px] md:h-[50px] bg-[#C0B4D3]">
             <Link href={'/portfolio'} >All</Link>
@@ -55,12 +60,70 @@ function ProjectPortfolio({ projects }){
           <button id={router.asPath == '/portfolio/transportation' ? "category-button-active" : ''} className="category-button md:w-[200px] md:h-[50px] bg-[#C0B4D3]">
             <Link href={'/portfolio/transportation'}>Transportation</Link>
           </button>
-          </div>
+          </div> */}
           
           
           
 
         </div>
+        <motion.div 
+        initial={{opacity:0}}
+        animate={{opacity:1, transition:{delay:1.5, duration:1}}}
+        className="flex items-center justify-center">
+          <div className='relative'>
+            <label className="text-2xl text-secondary_text mr-2 ">Select a Category:</label>
+            <button onClick={()=> {setShowDropDown(!showDropDown)}}  data-dropdown-toggle="dropdown" className="relative md:w-[330px] text-2xl text-center bg-button_bg/30 hover:bg-secondary/70 focus:ring-4 focus:outline-none focus:ring-secondary_text font-medium rounded-lg px-3 py-4 mt-2 ml-2 inline-flex items-center justify-center text-secondary_text" type="button">
+              <p className='flex mr-2'>{category}</p>
+              <motion.p 
+              animate={{y:[-1,2,2,-1]}}
+              transition={{
+                duration: "1",
+                repeat: Infinity,
+              }}
+              className='absolute right-5'>
+                { showDropDown ? <BsChevronCompactUp/> : <BsChevronCompactDown/>}
+              </motion.p>
+            </button>
+            <div id="dropdown" className={ showDropDown ? "z-10 absolute right-0 md:w-[200px] bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 text-center": "hidden"}>
+        <ul className="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+        <li>
+            <a href="/portfolio" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">All</a>
+          </li>
+          <li>
+            <a href="/portfolio/commercial" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">Commercial</a>
+          </li>
+          <li>
+            <a href="/portfolio/cultural" className="block px-4 py-2 hover:bg-accent_2/80   hover:text-white">Cultural</a>
+          </li>
+          <li>
+            <a href="/portfolio/educational" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">Educational</a>
+          </li>
+          <li>
+            <a href="/portfolio/healthcare-facilities" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">Healthcare Facilities</a>
+          </li>
+          <li>
+            <a href="/portfolio/industrial" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">Industrial</a>
+          </li>
+          <li>
+            <a href="/portfolio/institutional" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">Institutional</a>
+          </li>
+          <li>
+            <a href="/portfolio/mixed-use-and-high-rise" className="block px-4 py-2 hover:bg-accent_2/80 hover:text-white">Mixed-Use & High-Rise</a>
+          </li>
+          <li>
+            <a href="/portfolio/residential" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">Residential</a>
+          </li>
+          <li>
+            <a href="/portfolio/transportation" className="block px-4 py-2 hover:bg-accent_2/80 hover:text-white ">Transportation</a>
+          </li>
+          
+        </ul>
+    </div>
+    </div>
+
+          
+          
+          </motion.div>
         
       {/*  SELECT DROP DOWN*/}
       {/* <div className="text-right">
