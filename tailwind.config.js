@@ -26,7 +26,8 @@ module.exports = {
         secondary_text : '#DAD3F5',
         dark_text : '#301B3D',
         button_bg : '#C0B4D3',
-        light_bg : '#E9DCF9'
+        light_bg : '#E9DCF9',
+        dark_bg : '#170927'
       },
       fontFamily: {
         sans: ['var(--font-urbanist)'],

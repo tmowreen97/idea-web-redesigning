@@ -98,20 +98,36 @@ function ContactPage(){
         </div>
         <div className="bg-secondary rounded-xl">
         <div className="items-center justify-center md:w-[500px] md:h-[400px] flex ">
-              <form className="text-center">
+              <form className="text-center" action="https://formsubmit.co/nabila@ideaaec.com" method="POST">
                 <h2>Contact Us</h2>
                 <div className="m-5">
                   {/* <label>Name:</label> */}
-                  <input type="name" className="md:w-[400px] h-[40px] rounded-xl text-center p-1" placeholder="Name"/>
+                  <input 
+                  type="name" 
+                  name="name" 
+                  className="md:w-[400px] h-[40px] rounded-xl text-center p-1" 
+                  placeholder="Name"
+                  required/>
                 </div>
                 <div className="m-5">
                   {/* <label>Email:</label> */}
-                  <input type="email" className="md:w-[400px] h-[40px] rounded-xl text-center p-1" placeholder="Email"/>
+                  <input 
+                  type="email" 
+                  name="email" 
+                  className="md:w-[400px] h-[40px] rounded-xl text-center p-1" 
+                  placeholder="Email"
+                  required/>
                 </div>
                 <div className="m-5">
                   {/* <label>Message:</label> */}
-                  <textarea type="text" className="md:w-[400px] md:h-[80px] rounded-xl text-center max-h-[100px] p-1" placeholder="Message"/>
+                  <textarea 
+                  type="text" 
+                  name="message" 
+                  className="md:w-[400px] md:h-[80px] rounded-xl text-center max-h-[100px] p-1" 
+                  placeholder="Message"
+                  required/>
                 </div>
+                <input type="hidden" name="_next" value="https://localhost:3000/thanks-you"></input>
                 <div className="text-center items-center justify-center flex ">
                   <div className="bg-tertiary/80 hover:bg-accent_2/80 rounded-xl p-2 px-5 shadow-xl text-primary_text">
                     <button type='submit'>Send</button>

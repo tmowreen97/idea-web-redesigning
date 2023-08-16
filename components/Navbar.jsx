@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { useRouter } from 'next/router';
 import { BiChevronDown } from 'react-icons/bi';
+import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 // import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 
 const Navbar = ({setLightLogo, lightLogo}) => {
@@ -112,36 +113,70 @@ const Navbar = ({setLightLogo, lightLogo}) => {
         </ul>
 
         {/* Mobile Button */}
-        {/* <div onClick={handleNav} className='block sm:hidden z-10'>
+        <div onClick={handleNav} className='block sm:hidden z-10'>
           {nav ? (
             <AiOutlineClose size={20} style={{ color: `${textColor}` }} />
           ) : (
             <AiOutlineMenu size={20} style={{ color: `${textColor}` }} />
           )}
-        </div> */}
+        </div>
         {/* Mobile Menu */}
-        {/* <div
+        <div
           className={
             nav
-              ? 'sm:hidden absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-300'
-              : 'sm:hidden absolute top-0 left-[-100%] right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-300'
+              ? 'sm:hidden absolute top-0 left-0 right-0 bottom-0 flex justify-evenly text-justify items-center w-full h-screen bg-dark_bg ease-in duration-300 tracking-wider'
+              : 'sm:hidden absolute top-0 left-[-100%] right-0 bottom-0 flex justify-center items-center w-full h-screen bg-dark_bg text-center ease-in duration-300 tracking-wider'
           }
         >
           <ul>
             <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
               <Link href='/'>Home</Link>
             </li>
-            <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
-              <Link href='/#gallery'>Gallery</Link>
+            <li  className=' hover:text-gray-500 text-4xl p-4 '>
+              <div className="dropdown inline-block relative">
+                <button className="inline-flex items-center " id={router.asPath == '/#about' || router.asPath == '/team' ? "active" : ''}>
+                  <div className="relative">About</div>
+                  <BiChevronDown />
+                  {/* <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg> */}
+                </button>
+                <ul className="dropdown-menu absolute left-5 hidden text-gray-70 text-center z-10">
+                  <li onClick={handleNav} className="bg-button_bg hover:bg-accent_2 hover:text-primary_text text-dark_text rounded-xl text-4xl p-2 w-[200px] m-2 ">
+                    <Link className="block " href={'/#about'}>About Us</Link>
+                  </li>
+                  <li onClick={handleNav} className="bg-button_bg hover:bg-accent_2 hover:text-primary_text text-dark_text rounded-xl text-4xl p-2 w-[200px] m-2">
+                    <Link className="block" href={'/team'}>Our Team</Link>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li className='p-4 text-4xl hover:text-gray-500'>
+            <div className="dropdown inline-block relative">
+                <button className="inline-flex items-center " id={router.asPath == '/#about' || router.asPath == '/team' ? "active" : ''}>
+                  <div className="relative">Projects</div>
+                  <BiChevronDown />
+                  {/* <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg> */}
+                </button>
+                <ul className="dropdown-menu absolute left-5 hidden text-gray-70 text-center z-10">
+                  <li onClick={handleNav} className="bg-button_bg hover:bg-accent_2 hover:text-primary_text text-dark_text rounded-xl text-4xl p-2 w-[275px] m-2 ">
+                    <Link className="block " href={'/#projects'}>Recent Projects</Link>
+                  </li>
+                  <li onClick={handleNav} className="bg-button_bg hover:bg-accent_2 right-0 hover:text-primary_text text-dark_text rounded-xl ml-14 text-4xl p-2 w-[200px] m-2">
+                    <Link className="block" href={'/portfolio'}>Portfolio</Link>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
-              <Link href='/work'>Work</Link>
+              <Link href='/services'>Services</Link>
             </li>
             <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
-              <Link href='/contact'>Contact</Link>
+              <Link href='/culture'>Culture</Link>
+            </li>
+            <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
+              <Link href='/contact'>Contact Us</Link>
             </li>
           </ul>
-        </div> */}
+        </div>
       </div>
     </motion.div>
   );
