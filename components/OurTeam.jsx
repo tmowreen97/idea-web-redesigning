@@ -83,7 +83,7 @@ function OurTeam (){
         </div>
 
       </div>
-      {/* <motion.div 
+      <motion.div 
       initial={{x:-1500}}
         animate= {{x:[-1200,0,0,1200], scale:[0.75,1.5,1.5,0.75]}}
         transition={{
@@ -95,7 +95,7 @@ function OurTeam (){
         className="p-[100px] pb-[160px]"
       >
         <h2 className="italic font-bold tracking-wide">Manifesting World Class IDEAs</h2>
-      </motion.div> */}
+      </motion.div>
       {/* <div className="">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-5 mx-20 pb-20">
           {second_team.map((member)=> {

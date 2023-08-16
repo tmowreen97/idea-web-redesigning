@@ -25,15 +25,22 @@ function PortfolioList({project}){
   return(
     <div className="items-center text-center justify-center p-5 py-10 relative mb-[100px] min-w-5xl" onMouseEnter={()=> setProjHover(true)}
     onMouseLeave={()=> setProjHover(false)}>
-      <Image src={project.image} width={project.width} height={project.height} alt={'project'} className="rounded-xl overflow-hidden"/>
-      {/* style="position: absolute; top: 0px; z-index: 3;" */}
-      <div className={projHover ? "absolute w-[638px] h-[330px] top-0 bg-[#322d44]/80 text-secondary_text  text-center justify-center items-center mt-5" : "hidden"}>
-          <h1 className="mx-10 mt-[80px] text-4xl ">{project.name}</h1>
-          <p className="mx-32 mt-2 ">{project.description}</p>
-          <div className="absolute bottom-0 left-[47%] p-2 motion-safe:animate-bounce text-2xl" onClick={()=> setProjClick(!projClick)}>
-            {projClick ? <BsChevronCompactUp/> : <BsChevronCompactDown/>}
+      <div className="relative rounded-xl overflow-hidden">
+        <Image src={project.image} width={project.width} height={project.height} alt={'project'} />
+        <div className={projHover ? "absolute top-0 bottom-0 left-0 right-0 bg-[#322d44]/80 text-secondary_text  " : "hidden"}>
+          <div className="absolute bottom-[40%] ">
+            <h1 className="text-4xl mb-5 mt-10">{project.name}</h1>
+            <p className="text-lg mx-5">{project.description}</p>
           </div>
+          
+          <div className="absolute bottom-0 left-[47%] p-2 motion-safe:animate-bounce text-2xl" onClick={()=> setProjClick(!projClick)}>
+              {projClick ? <BsChevronCompactUp/> : <BsChevronCompactDown/>}
+            
+          </div>
+        </div>
       </div>
+      {/* style="position: absolute; top: 0px; z-index: 3;" */}
+      
       {
         projClick ? 
         <motion.div 
