@@ -5,11 +5,11 @@ import Blinker from './Blinker';
 import {AiOutlineLine} from 'react-icons/ai';
 
 
-function Hero({heading, message}){
+function Hero({heading}){
   const [descTwo, setDescTwo] = useState(false)
   const [coord, setCoord]= useState(["0,0 0,0 0,0"])  
   const [animate, setAnimate] = useState(true)
-  const [mobileAnimate, setMobileAnimate] = useState(true)
+  const [mobileAnimate, setMobileAnimate] = useState(false)
   const useMediaQuery = (width) => {
     const [targetReached, setTargetReached] = useState(false);
   
@@ -118,6 +118,11 @@ function Hero({heading, message}){
     }
   ]
 
+  function handleMobileAnimate(){
+    setAnimate(!animate)
+    setMobileAnimate(!mobileAnimate)
+  }
+
   return (
     <div className='flex items-center justify-center  h-screen pb-16 bg-fixed bg-center bg-cover custom-img'>
       {/* <div className='absolute left-0 top-0 h-[100%] w-[100%]'>
@@ -151,9 +156,9 @@ function Hero({heading, message}){
             initial={{opacity:0}}
             whileInView={{opacity:1, transition:{delay:2, duration:1}}}
           >
-            <button className={mobileAnimate ? "bg-button_bg p-2 rounded-xl animation-blimp-1" : "bg-button_bg p-2 rounded-xl"} onClick={()=> setMobileAnimate(!mobileAnimate)}>What We're Working On</button>
+            <button className={animate ? "bg-button_bg p-2 rounded-xl animation-blimp-1" : "bg-button_bg p-2 rounded-xl"} onClick={()=> handleMobileAnimate()}>What We're Working On</button>
            </motion.div>
-            { !mobileAnimate ? <div className="items-center justify-center text-center">
+            { mobileAnimate && !animate ? <div className="items-center justify-center text-center">
               <motion.div 
               initial={{opacity:0}}
               whileInView={{opacity:1, transition:{duration:1, delay:.5}}}

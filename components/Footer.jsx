@@ -5,71 +5,57 @@ import Image from "next/image";
 
 export default function Footer(){
   return(
-    <div id='footer' className="w- md:h-[480px]  bg-secondary ">
+    <div id='footer' className=" md:h-[480px]  bg-secondary ">
       <div className="flex items-center justify-center pt-[50px]">
-        <div className=" md:grid md:grid-cols-2 flexbox justify-evenly  text-dark_text tracking-wide">
-          {/* <div className="bg-secondary mr-[300px]">
-            <div>
-              <Image src={'/assets/clip-1.png'} width={70} height={70}/>
-            </div>
-            <div>
-              <Image src={'/assets/clip-2.png'} width={70} height={70}/>
-            </div>
-            <div>
-              <Image src={'/assets/clip-3.png'} width={70} height={70}/>
-            </div>
-            <div>
-              <Image src={'/assets/clip-4.png'} width={70} height={70}/>
-            </div>
-          </div> */}
+        <div className=" md:grid md:grid-cols-2 flexbox justify-evenly text-dark_text tracking-wide">
           <div className="items-center justify-between text-2xl font-light flex" >
-          <div className="bg-secondary/70 mr-10 rounded-xl px-5 py-4 mt-[-10px]">
-            <div className="pb-1">
-              <Image src={'/assets/clip-1.png'} width={65} height={60}/>
+          <div className="bg-secondary/70 md:mr-10 rounded-xl md:px-5 pb-5 mx-10 text-center">
+            <div className="pb-2">
+              <Image src={'/assets/clip-1.png'} width={70} height={72}/>
             </div>
             <div className="pb-1 pl-[2px]">
-              <Image src={'/assets/clip-2.png'} width={60} height={60}/>
+              <Image src={'/assets/clip-2.png'} width={65} height={65}/>
             </div>
             <div className="pb-1">
-              <Image src={'/assets/clip-3.png'} width={60} height={60}/>
+              <Image src={'/assets/clip-3.png'} width={65} height={65}/>
             </div>
             <div className="pl-[2px]">
-              <Image src={'/assets/clip-4.png'} width={60} height={60}/>
+              <Image src={'/assets/clip-4.png'} width={65} height={65}/>
             </div>
           </div>
           <div>
-            <div className="flex mb-[50px] mt-2">
+            <div className="flex md:mb-[60px]">
               <h1 className="py-1 text-6xl">IDEA</h1>
               <h1 className="pl-2 pt-7 text-2xl">AEC</h1>
             </div>
-            <div className=" mb-7">
+            <div className=" mb-10">
               <h1 className="">Inter-Disciplinary Engineering Associates, LLC</h1>
               <h1 className="">Architectural Engineering Consultants</h1>
               <p className="text-lg text-dark_text">1 Botsford Hill Rd Botsford, CT 06404</p>       
               <p className="text-lg text-dark_text">Info@IdeaAEC.com</p>
               <p className="text-lg text-dark_text">203-917-7907</p>
-              <p className="mt-[60px] text-sm text-dark_text" >© 2023 by Idea Consulting</p>
+              <p className="md:pt-[70px] text-sm text-dark_text" >© 2023 by Idea Consulting</p>
             </div>
             
           </div>
             
           </div>
-          <div className="md:ml-[150px]">
-          <div className="bg-button_bg/60 md:w-[400px] md:h-[300px] ml-10  rounded-xl ">
-            <div className="items-center justify-center ">
-              <form className="text-center pt-5 ">
+          <div className="md:ml-[150px] mx-10 md:mx-[8%]" >
+          <div className="bg-button_bg/60 md:w-[400px] md:h-[290px] md:ml-10  rounded-xl ">
+            <div className="items-center justify-center pb-5 ">
+              <form className="text-center pt-2 ">
                 <h2 className="text-dark_text">Contact Us</h2>
                 <div className="m-2">
                   {/* <label>Name:</label> */}
-                  <input type="name" className="md:w-[300px] rounded-xl text-center p-1" placeholder="Name"/>
+                  <input type="name" className="md:w-[300px] w-[90%] rounded-xl text-center p-1" placeholder="Name"/>
                 </div>
                 <div className="m-2">
                   {/* <label>Email:</label> */}
-                  <input type="email" className="md:w-[300px] rounded-xl text-center p-1 border-none" placeholder="Email"/>
+                  <input type="email" className="md:w-[300px] w-[90%] rounded-xl text-center p-1 border-none" placeholder="Email"/>
                 </div>
                 <div className="m-2">
                   {/* <label>Message:</label> */}
-                  <textarea type="text" className="md:w-[300px] rounded-xl text-center max-h-[70px] p-1 border-none" placeholder="Message"/>
+                  <textarea type="text" className="md:w-[300px] w-[90%] rounded-xl text-center max-h-[70px] p-1 border-none" placeholder="Message"/>
                 </div>
                 <div className="text-center items-center justify-center flex ">
                   <div className="bg-tertiary/80 hover:bg-accent_2/80 rounded-xl p-2 shadow-xl text-primary_text">
@@ -80,7 +66,7 @@ export default function Footer(){
             </div>
             
           </div>
-          <div className="grid grid-cols-3 gap-2 text-center items-center justify-center align-middle pt-5 text-primary_text">
+          <div className="grid grid-cols-3 gap-2 text-center items-center justify-center align-middle pt-5 text-primary_text pb-5">
             <div className="text-center items-center justify-center flex rounded-xl ">
               <div className="bg-tertiary/80 hover:bg-accent_2/80  rounded-full p-4 text-2xl">
                 <Link href="https://www.instagram.com/idea.aec/" legacyBehavior>

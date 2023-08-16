@@ -13,6 +13,7 @@ const urbanist = Urbanist({
 
 export default function Home() {
   const [lightLogo, setLightLogo] = useState(false)
+
   return (
     <main className={`${urbanist.variable} font-sans tracking-wider justify-center items-center`}>
       <Navbar setLightLogo={setLightLogo} lightLogo={lightLogo} />
