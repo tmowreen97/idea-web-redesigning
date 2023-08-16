@@ -52,9 +52,10 @@ function ThankYou(){
               
               <h2 className="text-2xl">Inter-Disciplinary Engineering Associates, LLC</h2>
               <p className="pb-5">Architectural Engineering Consultants</p>
-              <p className="">1 Botsford Hill Rd Botsford, CT 06404 </p>
+              <p className="">Monroe, Connecticut | Miami, Florida</p>
               <p>Info@IdeaAEC.com</p>
-              <p>203-917-7907</p>
+              <p>CT - 203-917-7907</p>
+              <p>FL - 954-295-2125</p>
             </div>
             <div>
               <p>Please feel free to contact us with any questions or business inquiries.</p>
@@ -93,7 +94,7 @@ function ThankYou(){
           </div>
           
         </div>
-        <div className="text-center justify-evenly mt-[-200px] ">
+        <div className="text-center justify-evenly mt-[-100px]">
           <motion.div 
           initial={{opacity:0}}
           animate={{opacity:1, transition:{duration:2, delay:2.5}}}

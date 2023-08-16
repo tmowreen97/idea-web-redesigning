@@ -5,11 +5,11 @@ import Image from "next/image";
 
 export default function Footer(){
   return(
-    <div id='footer' className=" md:h-[480px]  bg-secondary ">
+    <div id='footer' className="w-full md:h-[480px]  bg-secondary ">
       <div className="flex items-center justify-center pt-[50px]">
         <div className=" md:grid md:grid-cols-2 flexbox justify-evenly text-dark_text tracking-wide">
           <div className="items-center justify-between text-2xl font-light flex" >
-          <div className="bg-secondary/70 md:mr-10 rounded-xl md:px-5 pb-5 mx-10 text-center">
+          <div className="bg-secondary/70 md:mr-10 rounded-xl md:px-5 pb-5 md:mx-10 text-center">
             <div className="pb-2">
               <Image src={'/assets/clip-1.png'} width={70} height={72}/>
             </div>
@@ -40,11 +40,11 @@ export default function Footer(){
           </div>
             
           </div>
-          <div className="md:ml-[150px] mx-10 md:mx-[8%]" >
-          <div className="bg-button_bg/60 md:w-[400px] md:h-[290px] md:ml-10  rounded-xl ">
-            <div className="items-center justify-center pb-5 ">
+          <div className="md:ml-[150px]  md:mx-[8%]" >
+          <div className="bg-dark_bg/60 md:w-[400px] md:h-[290px] md:ml-10  rounded-xl ">
+            <div className="items-center justify-center pb-5">
               <form className="text-center pt-2 ">
-                <h2 className="text-dark_text">Contact Us</h2>
+                <h2 className="text-primary_text">Contact Us</h2>
                 <div className="m-2">
                   {/* <label>Name:</label> */}
                   <input type="name" className="md:w-[300px] w-[90%] rounded-xl text-center p-1" placeholder="Name"/>

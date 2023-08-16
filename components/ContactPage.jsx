@@ -10,39 +10,39 @@ function ContactPage(){
       <div className="p-20">
         <h1 className="md:text-[1100%] text-5xl font-thin text-primary_text text-left tracking-wide">Contact</h1>
       </div>
-      <div className="md:flex items-center justify-evenly pb-20">
-        <div className=" text-xl flex  rounded-xl p-4">
+      <div className="md:flex items-center justify-evenly ">
+        <div className=" text-xl flex rounded-xl p-4 pt-2">
           <motion.div 
           initial={{opacity:0}}
           animate={{opacity:1, transition:{duration:2, delay:.5} }}
           
-          className="mr-10 bg-light_bg/60 rounded-xl p-4">
+          className="mr-10  rounded-xl p-4">
             <motion.div
               initial={{opacity:0}}
               animate={{opacity:1, transition:{duration:2, delay:1}}}
-              className="mb-2"
+              className="mb-2 "
             >
-              <Image src={'/assets/clip-1.png'} width={100} height={100}/>
+              <Image src={'/assets/clip-1.png'} width={75} height={75} className=""/>
             </motion.div>
             <motion.div
               initial={{opacity:0}}
               animate={{opacity:1, transition:{duration:2, delay:1.5}}}
               className="mb-2"
             >
-            <Image src={'/assets/clip-2.png'} width={100} height={100}/>              
+            <Image src={'/assets/clip-2.png'} width={75} height={75}/>              
             </motion.div>
             <motion.div
               initial={{opacity:0}}
               animate={{opacity:1, transition:{duration:2, delay:2}}}
               className="mb-2"
             >
-            <Image src={'/assets/clip-3.png'} width={100} height={100}/>              
+            <Image src={'/assets/clip-3.png'} width={75} height={75}/>              
             </motion.div>
             <motion.div
               initial={{opacity:0}}
               animate={{opacity:1, transition:{duration:2, delay:2.5}}}
             >
-            <Image src={'/assets/clip-4.png'} width={100} height={100}/>              
+            <Image src={'/assets/clip-4.png'} width={75} height={75}/>              
             </motion.div>
 
           </motion.div>

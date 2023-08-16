@@ -29,7 +29,7 @@ const About = () => {
   return (
     <div id='about' className='w-screen md:h-full bg-primary'>
       <div className=' flex items-center justify-center p-4 md:mx-[35%] pl-[5%]'>
-        <div className="about__parent lg:grid flexbox ">
+        <div className="about__parent md:grid flexbox ">
           <div className="about__title pt-[30%] ">
             <h1 className="md:text-[1100%] text-8xl tracking-wider text-center font-thin text-primary_text">About</h1>
           </div>

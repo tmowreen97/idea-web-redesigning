@@ -33,7 +33,7 @@ function ProjectHome(){
   return(
     <div id='projects' className='w-screen md:h-full bg-primary'>
       <div className='relative flex items-center justify-center p-4 pt-[5%]'>
-      <div className="projecthome__parent lg:grid flexbox  ">
+      <div className="projecthome__parent md:grid flexbox  ">
         <div className="projecthome__title mr-2 ml-5 ">
           <h1 className="md:text-[1000%] text-8xl tracking-wide text-left md:ml-[65px] font-thin mb-10 md:mt-[8%] text-primary_text">Projects</h1>
         </div>
