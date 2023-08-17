@@ -2,6 +2,7 @@ import {React, useState, useEffect, useCallback} from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Blinker from './Blinker';
+import Line from './Line';
 import {AiOutlineLine} from 'react-icons/ai';
 
 
@@ -37,7 +38,7 @@ function Hero({heading}){
   };
 
 
-  const isBreakPoint = useMediaQuery(900)
+  const isBreakPoint = useMediaQuery(1000)
 
  
   function handleDescTwo(e){
@@ -59,63 +60,112 @@ function Hero({heading}){
 
 
   // WORKING ON BLINKER INFO
+
+  // blinker 5 -> blinker 1
+  // blinker 4 -> blinker 2
+  // blinker 1 -> blinker 3
+  // blinker 3 -> blinker 4
+  // blinker 9 -> blinker 5
+  // blinker 2 -> blinker 6
+  // blinker 8 -> blinker 7
+  // blinker 6 -> blinker 8
+  // blinker 7 -> blinker 9
+
+
+
   const blinkers = [
     {
       name: 'blinker-1',
       bgColor: '#FF1493',
       delayTime: 2,
       repeatDelayTime : 22,
-      classDesc : "md:absolute my-5 md:my-0 left-1/4 top-1/3"
+      classDesc: "md:absolute my-5 md:my-0 left-[9%] bottom-[55%]"
+
+      // classDesc: "md:absolute my-5 md:my-0 left-[130px] top-[360px]"
+
+      
+      // classDesc : "md:absolute my-5 md:my-0 left-1/4 top-1/3"
     },
     {
       name: 'blinker-2',
       bgColor: '#00FF00',
       delayTime:5,
       repeatDelayTime: 23,
-      classDesc: "md:absolute my-5 md:my-0 left-2/4 top-1/3"
+      classDesc: "md:absolute my-5 md:my-0 left-[15%] top-[36%]"
+      // classDesc: "md:absolute my-5 md:my-0 left-[300px] top-[330px]"
+
+      // classDesc: "md:absolute my-5 md:my-0 right-[460px] top-[345px]"
     },
     {
       name: 'blinker-3',
       bgColor: '#FFFF00',
       delayTime:8,
       repeatDelayTime: 23,
-      classDesc: "md:absolute my-5 md:my-0 left-2/4 top-2/3"
+      classDesc : "md:absolute my-5 md:my-0 left-[30%] bottom-[38%]"
+      // classDesc : "md:absolute my-5 md:my-0 left-1/4 top-1/3"
+
+      // classDesc: "md:absolute my-5 md:my-0 left-[445px] top-[480px]"
     },
     {
       name: 'blinker-4',
       bgColor: '#FFA500',
       delayTime:11,
       repeatDelayTime: 23,
-      classDesc: "md:absolute my-5 md:my-0 left-1/4 top-2/4"
+      classDesc: "md:absolute my-5 md:my-0 right-[44%] bottom-[40%]"
+      // classDesc: "md:absolute my-5 md:my-0 left-[445px] top-[480px]"
+
+      // classDesc: "md:absolute my-5 md:my-0 left-[300px] top-[330px]"
     },
     {
       name: 'blinker-5',
       bgColor: '#BF00FF',
       delayTime:14,
       repeatDelayTime: 23,
-      classDesc: "md:absolute my-5 md:my-0 left-24 top-80"
+      classDesc: "md:absolute my-5 md:my-0 right-[30%] top-[42%]"
+
+      // classDesc: "md:absolute my-5 md:my-0 left-[130px] top-[360px]"
     },
     {
       name: 'blinker-6',
       bgColor: '#00FFFF',
       delayTime:17,
       repeatDelayTime: 23,
-      classDesc: "md:absolute my-5 md:my-0 right-40 top-80"
+      classDesc: "md:absolute my-5 md:my-0 right-[20%] bottom-[43%]"
+
+      // classDesc: "md:absolute my-5 md:my-0 right-[460px] top-[345px]"
+
+
     },
     {
       name: 'blinker-7',
       bgColor: '#33FF33',
       delayTime:20,
       repeatDelayTime: 23,
-      classDesc: "md:absolute my-5 md:my-0 right-20 bottom-80"
+      classDesc: "md:absolute my-5 md:my-0 right-[11%] top-[49%]"
+
+      // classDesc: "md:absolute my-5 md:my-0 right-[295px] bottom-[355px]"
+
+      // classDesc: "md:absolute my-5 md:my-0 right-20 bottom-[275px]"
     },
     {
       name: 'blinker-8',
       bgColor: '#FF00FF',
       delayTime:23,
-      repeatDelayTime: 20,
-      classDesc: "md:absolute my-5 md:my-0 right-80 bottom-80"
-    }
+      repeatDelayTime: 23,
+      classDesc: "md:absolute my-5 md:my-0 right-[7%] bottom-[30%]"
+      // classDesc: "md:absolute my-5 md:my-0 right-[145px] top-[400px]"
+
+      // classDesc: "md:absolute my-5 md:my-0 right-[295px] bottom-[355px]"
+    },
+    // {
+    //   name: 'blinker-9',
+    //   bgColor: '#00FF00',
+    //   delayTime:26,
+    //   repeatDelayTime: 23,
+    //   classDesc: "md:absolute my-5 md:my-0 right-20 bottom-[275px]"
+
+    //   // classDesc: "md:absolute my-5 md:my-0 right-[660px] bottom-[335px]"
+    // },
   ]
 
   function handleMobileAnimate(){
@@ -146,8 +196,13 @@ function Hero({heading}){
         { !isBreakPoint ? 
         blinkers.map((blinker)=> {
           return(
-            <div key={blinker.name}>
-              <Blinker delayTime={blinker.delayTime} repeatDelayTime={blinker.repeatDelayTime} bgColor={blinker.bgColor} classDesc={blinker.classDesc}/>
+            <div key={blinker.name} onClick={(e)=> handleDescTwo(e)}>
+              <Blinker delayTime={blinker.delayTime} blinker_name={blinker.name} repeatDelayTime={blinker.repeatDelayTime} bgColor={blinker.bgColor} classDesc={blinker.classDesc}/>
+              {/* {descTwo ? <Line/> : ""} */}
+
+              {/* {descTwo? <svg width='100%' height='100%'>
+                <line x1="0" y1="0" x2="200" y2="200" strokeWidth="5" stroke='blue' fill='blue'/>
+              </svg>: ""} */}
             </div>
           )
         }) : 
@@ -337,7 +392,7 @@ function Hero({heading}){
           className="md:absolute md:left-3/4 md:top-1/2 bg-[#FF00FF] rounded-full w-3 h-3 hover:animate-none"
           onClick={(e)=> handleDescTwo(e)}
         />
-        {descTwo ? 
+        {false ? 
         <>
           <svg  width="100%" height="100%" className="relative"><polyline points={coord} stroke="white" strokeWidth={1} fill="none" animation="dash 5s linear"/></svg>
           <motion.div 
