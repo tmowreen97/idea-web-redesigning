@@ -14,6 +14,7 @@ function Blinker({delayTime, blinker_name, bgColor, repeatDelayTime, description
   function handleDesc(e){
     // console.log(e)
     // console.log('current coord', e.clientX, e.clientY)
+    console.log(e)
     let y1= e.clientY-47
     let x2 = e.clientX+150
     let y2= y1-100
@@ -29,44 +30,22 @@ function Blinker({delayTime, blinker_name, bgColor, repeatDelayTime, description
 
 
   return(
-    <div ref={ref} className={classDesc} onMouseEnter={()=>{setAnimate(false)}} onMouseLeave={()=>{setAnimate(true)}}>
+    <div ref={ref} className={classDesc} onClick={()=> setAnimate(!animate)}>
       <motion.div
         animate= { animate && isInView ? {scale:[1,3,3,1], opacity:[0.8,1,1,0.75], transition:{
           duration: 3,
           delay : delayTime,
           repeat: Infinity,
           repeatDelay: repeatDelayTime,
-        }} : {scale:3, opacity:1}}
+        }} : {opacity:1}}
         
         initial={{opacity:1}}
         // whileInView={{opacity:1, transition:{delay:2, duration:1, repeat: Infinity, repeatDelay: 20}}}
         
       >
         <button className="bg-white rounded-full w-3 h-3 hover:shadow-2xl shadow-white" onClick={(e) => handleDesc(e)}/>
-        {!showDesc ? 
-        <>
-          {/* <svg  width="100%" height="100%" className="relative"><polyline points={coord} stroke="white" strokeWidth={5} fill="none" animation="dash 5s linear"/></svg> */}
-          {/* <motion.div 
-          initial={{opacity:0}}
-          whileInView={{opacity:1, transition:{delay:.7}}}
-          className='bg-white/60  absolute right-[3%] top-[10%] rounded-xl px-5 py-4'>
-            <div className='text-right items-center'>
-              <button className='bg-white/60 rounded-full px-1 hover:bg-accent_2 hover:text-secondary_text' onClick={()=> setShowDesc(false)}>
-                ⓧ
-              </button>
-            </div>
-            
-            <p className="text-dark_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-          </motion.div> */}
-          {/* <motion.div initial={{opacity:0}} whileInView={{opacity:1, transition:{delay:1.1}}} id="desc" className="fixed md:right-[5%] md:bottom-[55%] w-60 bg-[#F5F4F9]/40 rounded-xl" onClick={(e)=>console.log(e)}>
-            <button className="absolute right-1 p-2 ease-out 200" onClick={()=> {setDescTwo(false)}}>
-              <AiOutlineCloseCircle/>
-            </button>
-            <p className="p-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-          </motion.div> */}
-        </> : ""}
       </motion.div>
-      <div className=''>
+      <div className='absolute'>
         {showDesc ? <Line/> : ""}
       </div>
       

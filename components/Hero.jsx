@@ -79,7 +79,13 @@ function Hero({heading}){
       bgColor: '#FF1493',
       delayTime: 2,
       repeatDelayTime : 22,
-      classDesc: "md:absolute my-5 md:my-0 left-[9%] bottom-[55%]"
+      classDesc: "md:absolute my-5 md:my-0 left-[9%] bottom-[55%]",
+      svg_w : "300px",
+      svg_h: "55px",
+      x1 : "5",
+      y1: "0",
+      x2: "0",
+      y2: "400"
 
       // classDesc: "md:absolute my-5 md:my-0 left-[130px] top-[360px]"
 
@@ -101,7 +107,13 @@ function Hero({heading}){
       bgColor: '#FFFF00',
       delayTime:8,
       repeatDelayTime: 23,
-      classDesc : "md:absolute my-5 md:my-0 left-[30%] bottom-[38%]"
+      classDesc : "md:absolute my-5 md:my-0 left-[30%] bottom-[38%]",
+      svg_w : "300px",
+      svg_h: "45px",
+      x1 : "10",
+      y1: "0",
+      x2: "400",
+      y2: "400"
       // classDesc : "md:absolute my-5 md:my-0 left-1/4 top-1/3"
 
       // classDesc: "md:absolute my-5 md:my-0 left-[445px] top-[480px]"
@@ -198,7 +210,6 @@ function Hero({heading}){
           return(
             <div key={blinker.name} onClick={(e)=> handleDescTwo(e)}>
               <Blinker delayTime={blinker.delayTime} blinker_name={blinker.name} repeatDelayTime={blinker.repeatDelayTime} bgColor={blinker.bgColor} classDesc={blinker.classDesc}/>
-              {/* {descTwo ? <Line/> : ""} */}
 
               {/* {descTwo? <svg width='100%' height='100%'>
                 <line x1="0" y1="0" x2="200" y2="200" strokeWidth="5" stroke='blue' fill='blue'/>
