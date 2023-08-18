@@ -81,7 +81,10 @@ function Hero({heading}){
       repeatDelayTime : 22,
       classDesc: "md:absolute my-5 md:my-0 left-[9%] bottom-[55%]",
       svg_w : "300px",
-      svg_h: "55px",
+      svg_h: "50px",
+      svg_class: "relative rotate-6",
+      poly_points: "0,0 120,260",
+      div_parent_class: " absolute top-[80%] ml-[-40%] w-[410px]",
       x1 : "5",
       y1: "0",
       x2: "0",
@@ -97,7 +100,16 @@ function Hero({heading}){
       bgColor: '#00FF00',
       delayTime:5,
       repeatDelayTime: 23,
-      classDesc: "md:absolute my-5 md:my-0 left-[15%] top-[36%]"
+      classDesc: "md:absolute my-5 md:my-0 left-[15%] top-[36%]",
+      svg_w : "300px",
+      svg_h: "143px",
+      svg_class: "relative rotate-90 origin-top",
+      poly_points : "0,0 244,260",
+      div_parent_class : " absolute bottom-[170%] ml-[-40%]",
+      x1 : "5",
+      y1: "0",
+      x2: "0",
+      y2: "400"
       // classDesc: "md:absolute my-5 md:my-0 left-[300px] top-[330px]"
 
       // classDesc: "md:absolute my-5 md:my-0 right-[460px] top-[345px]"
@@ -109,7 +121,10 @@ function Hero({heading}){
       repeatDelayTime: 23,
       classDesc : "md:absolute my-5 md:my-0 left-[30%] bottom-[38%]",
       svg_w : "300px",
-      svg_h: "45px",
+      svg_h: "50px",
+      svg_class: "relative rotate-6",
+      poly_points: "0,0 400,200",
+      div_parent_class: "absolute top-[80%] ml-[-40%] w-[500px]",
       x1 : "10",
       y1: "0",
       x2: "400",

@@ -46,7 +46,7 @@ function Blinker({delayTime, blinker_name, bgColor, repeatDelayTime, description
         <button className="bg-white rounded-full w-3 h-3 hover:shadow-2xl shadow-white" onClick={(e) => handleDesc(e)}/>
       </motion.div>
       <div className='absolute'>
-        {showDesc ? <Line/> : ""}
+        {showDesc ? <Line setShowDesc={setShowDesc}/> : ""}
       </div>
       
       
