@@ -2,7 +2,7 @@ import { delay, motion, useInView } from "framer-motion";
 import {react, useState, useRef} from 'react';
 import Line from "./Line";
 
-function Blinker({delayTime, blinker_name, bgColor, repeatDelayTime, description, classDesc}){
+function Blinker({blinker}){
 
   const ref = useRef(null)
   const isInView = useInView(ref)
@@ -14,7 +14,8 @@ function Blinker({delayTime, blinker_name, bgColor, repeatDelayTime, description
   function handleDesc(e){
     // console.log(e)
     // console.log('current coord', e.clientX, e.clientY)
-    console.log(e)
+    // console.log(e)
+    console.log(blinker)
     let y1= e.clientY-47
     let x2 = e.clientX+150
     let y2= y1-100
@@ -30,13 +31,13 @@ function Blinker({delayTime, blinker_name, bgColor, repeatDelayTime, description
 
 
   return(
-    <div ref={ref} className={classDesc} onClick={()=> setAnimate(!animate)}>
+    <div ref={ref} className={blinker.classDesc} onClick={()=> setAnimate(!animate)}>
       <motion.div
         animate= { animate && isInView ? {scale:[1,3,3,1], opacity:[0.8,1,1,0.75], transition:{
           duration: 3,
-          delay : delayTime,
+          delay : blinker.delayTime,
           repeat: Infinity,
-          repeatDelay: repeatDelayTime,
+          repeatDelay: blinker.repeatDelayTime,
         }} : {opacity:1}}
         
         initial={{opacity:1}}
@@ -46,7 +47,7 @@ function Blinker({delayTime, blinker_name, bgColor, repeatDelayTime, description
         <button className="bg-white rounded-full w-3 h-3 hover:shadow-2xl shadow-white" onClick={(e) => handleDesc(e)}/>
       </motion.div>
       <div className='absolute'>
-        {showDesc ? <Line setShowDesc={setShowDesc}/> : ""}
+        {showDesc ? <Line setShowDesc={setShowDesc} blinker={blinker}/> : ""}
       </div>
       
       
