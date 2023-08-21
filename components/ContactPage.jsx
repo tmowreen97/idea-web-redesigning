@@ -55,7 +55,6 @@ function ContactPage(){
               
               <h2 className="text-2xl">Inter-Disciplinary Engineering Associates, LLC</h2>
               <p className="pb-5">Architectural Engineering Consultants</p>
-              <p className="">1 Botsford Hill Rd Botsford, CT 06404 </p>
               <p>Info@IdeaAEC.com</p>
               <p>203-917-7907</p>
             </div>
@@ -63,8 +62,8 @@ function ContactPage(){
               <p>Please feel free to contact us with any questions or business inquiries.</p>
               <p>You may fill out this form, or contact us by email or phone.</p>
               <p>You can also contact our principals directly:</p>
-              <p>Kazi Karim ...</p>
-              <p>Vinoo Jankie ...</p>
+              <p>Kazi Karim: kazi@ideaaec.com</p>
+              <p>Vinoo Jankie: vinoo@ideaaec.com</p>
             </div>
             <div>
               <p>Follow us on our socials!</p>

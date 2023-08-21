@@ -30,33 +30,47 @@ export default function Footer(){
             </div>
             <div className=" mb-10">
               <h1 className="">Inter-Disciplinary Engineering Associates, LLC</h1>
-              <h1 className="">Architectural Engineering Consultants</h1>
-              <p className="text-lg text-dark_text">1 Botsford Hill Rd Botsford, CT 06404</p>       
+              <h1 className="">Architectural Engineering Consultants</h1>  
               <p className="text-lg text-dark_text">Info@IdeaAEC.com</p>
               <p className="text-lg text-dark_text">203-917-7907</p>
               <p className="md:pt-[70px] text-sm text-dark_text" >© 2023 by Idea Consulting</p>
             </div>
             
           </div>
-            
           </div>
           <div className="md:ml-[150px]  md:mx-[8%]" >
           <div className="bg-dark_bg/60 md:w-[400px] md:h-[290px] md:ml-10  rounded-xl ">
             <div className="items-center justify-center pb-5">
-              <form className="text-center pt-2 ">
+              <form className="text-center pt-2 " action="https://formsubmit.co/nabila@ideaaec.com" method="POST">
                 <h2 className="text-primary_text">Contact Us</h2>
                 <div className="m-2">
                   {/* <label>Name:</label> */}
-                  <input type="name" className="md:w-[300px] w-[90%] rounded-xl text-center p-1" placeholder="Name"/>
+                  <input 
+                  type="name" 
+                  name="name" 
+                  className="md:w-[300px] w-[90%] rounded-xl text-center p-1" 
+                  placeholder="Name"
+                  required/>
                 </div>
                 <div className="m-2">
                   {/* <label>Email:</label> */}
-                  <input type="email" className="md:w-[300px] w-[90%] rounded-xl text-center p-1 border-none" placeholder="Email"/>
+                  <input 
+                  type="email" 
+                  name="email"
+                  className="md:w-[300px] w-[90%] rounded-xl text-center p-1 border-none" 
+                  placeholder="Email"
+                  required/>
                 </div>
                 <div className="m-2">
                   {/* <label>Message:</label> */}
-                  <textarea type="text" className="md:w-[300px] w-[90%] rounded-xl text-center max-h-[70px] p-1 border-none" placeholder="Message"/>
+                  <textarea 
+                  type="text" 
+                  name="message"
+                  className="md:w-[300px] w-[90%] rounded-xl text-center max-h-[70px] p-1 border-none" 
+                  placeholder="Message"
+                  required/>
                 </div>
+                <input type="hidden" name="_next" value="http://localhost:3000/thank-you"></input>
                 <div className="text-center items-center justify-center flex ">
                   <div className="bg-tertiary/80 hover:bg-accent_2/80 rounded-xl p-2 shadow-xl text-primary_text">
                     <button type='submit'>Send</button>

@@ -84,7 +84,7 @@ function Hero({heading}){
       svg_h: "50px",
       svg_class: "relative rotate-6",
       poly_points: "0,0 120,260",
-      div_parent_class: " absolute top-[80%] ml-[-40%] w-[350px]",
+      div_parent_class: " absolute top-[80%] ml-[-40%] w-[350px] z-10",
       x1 : "5",
       y1: "0",
       x2: "0",
@@ -105,7 +105,7 @@ function Hero({heading}){
       svg_h: "143px",
       svg_class: "relative rotate-90 origin-top",
       poly_points : "0,0 244,260",
-      div_parent_class : " absolute bottom-[170%] ml-[-40%]",
+      div_parent_class : " absolute bottom-[170%] ml-[-40%] z-10",
       x1 : "5",
       y1: "0",
       x2: "0",
@@ -124,7 +124,7 @@ function Hero({heading}){
       svg_h: "50px",
       svg_class: "relative rotate-6",
       poly_points: "0,0 400,200",
-      div_parent_class: "absolute top-[70%] ml-[-30%] w-[430px]",
+      div_parent_class: "absolute top-[70%] ml-[-30%] w-[430px] z-10",
       x1 : "10",
       y1: "0",
       x2: "400",
@@ -143,7 +143,7 @@ function Hero({heading}){
       svg_h: '150px',
       svg_class: "relative rotate-180 origin-top right-[95%]",
       poly_points: "8,15 200,200",
-      div_parent_class: "absolute bottom-[180%] ml-[-125%] w-[500px]"
+      div_parent_class: "absolute bottom-[180%] ml-[-125%] w-[500px] z-10"
 
       // classDesc: "md:absolute my-5 md:my-0 left-[445px] top-[480px]"
 
