@@ -34,9 +34,26 @@ const About = () => {
             <h1 className="md:text-[1100%] text-8xl tracking-wider text-center font-thin text-primary_text">About</h1>
           </div>
           <div className="about__child1 p-10 bg-secondary/50 rounded-xl mt-5 h-full md:m-0 m-2">
-            <h2>Our Story</h2>
-            <p className="tracking-wider">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <div className='grid md:grid-cols-2 justify-center items-center text-center m-2'>
+            <h2 className="tracking-wider mb-5">Our Story</h2>
+            <p className="m-2">
+              Engineering Tomorrow, Today
+            </p>
+            <p className="m-2">
+              Founded in 2021, IDEA is a forward-focused Inter-Disciplinary Engineering Associates firm. With a
+              tight-knit team of 11 MEP-FP engineering experts, we excel across sectors including commercial,
+              high-end residential, institutional, educational, cultural, industrial, healthcare, and mixed-use projects.
+            </p>
+            <p className="m-2">
+              Our accomplishments include the design completion of the MSC Miami Cruise Terminal, showcasing
+              our ability to handle large-scale ventures. Currently, we're immersed in a project set to conclude in
+              2024, emblematic of our ongoing commitment to innovation.
+            </p>
+            <p className="m-2">
+              Headquartered in Connecticut and Miami, our strategic locations empower us to understand and serve
+              diverse regional needs. At IDEA, we drive progress through collaboration, pioneering engineering
+              excellence for a brighter future.
+            </p>
+            <div className='grid md:grid-cols-2 justify-center items-center text-center m-2 mt-[13%]'>
               {
                 traits.map((trait)=> {
                   return(
@@ -48,12 +65,22 @@ const About = () => {
             </div>
           </div>
           <div className="about__child2 p-10 bg-secondary/40 rounded-xl md:m-5 m-2 md:mt-40 md:w-[500px]">
-            <h2>Our Mission</h2>
-            <p className="tracking-wider">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <h2 className="tracking-wider mb-5">Our Mission</h2>
+            <p className="m-2">IDEA Consulting: Streamlining Architectural Engineering Solutions</p>
+            <p className="m-2">
+              IDEA Consulting specializes in comprehensive Mechanical, Electrical, Plumbing, and Fire Protection
+              (MEP-FP) Engineering services for architectural construction. From initial concept to post-
+              construction maintenance, we offer tailored, efficient, and cost-effective solutions. Our
+              interdisciplinary approach empowers efficient coordination, ensuring optimal results across projects of
+              various scales and industries. We collaborate closely with architectural industry stakeholders,
+              providing expert project management from conception to completion. Additionally, IDEA&#39;s
+              commitment to industry advancement is showcased through upcoming AIA CES courses for
+              professional development.
+            </p>
           </div>
-          <div className="about__img md:w-[500px] bg-secondary/40 items-center justify-center text-center p-5  animation-pulse delay-200 rounded-xl m-5 hover:animate-none">
-            <div className="relative" onMouseOver={()=> setShow(true)} onMouseLeave={()=> setShow(false)}>
-                <div className="mx-10 overflow-hidden rounded-xl items-center justify-center flex">
+          <div className="about__img md:w-[500px] bg-secondary/40 items-center justify-center text-center p-4  animation-pulse delay-200 rounded-xl m-5 hover:animate-none">
+            <div className="relative items-center justify-center" onMouseOver={()=> setShow(true)} onMouseLeave={()=> setShow(false)}>
+                <div className="m-5 mt-8 overflow-hidden rounded-xl items-center justify-center flex">
                   <div className="relative">
                     <Image src={'/assets/filler-1.jpg'} width={500} height={100} alt={'team_member'}/> 
                     <div className={show ? "absolute bg-cover bottom-0 left-0 right-0 top-0 bg-[#322d44]/80 rounded-xl text-secondary_text  text-center justify-center items-center" : "hidden"}>
