@@ -30,7 +30,7 @@ const About = () => {
     <div id='about' className='w-screen md:h-full bg-primary'>
       <div className=' flex items-center justify-center p-4 md:mx-[35%] pl-[5%]'>
         <div className="about__parent md:grid flexbox ">
-          <div className="about__title pt-[30%] ">
+          <div className="about__title pt-[25%] ">
             <h1 className="md:text-[1100%] text-8xl tracking-wider text-center font-thin text-primary_text">About</h1>
           </div>
           <div className="about__child1 p-10 bg-secondary/50 rounded-xl mt-5 h-full md:m-0 m-2">
@@ -82,7 +82,7 @@ const About = () => {
             <div className="relative items-center justify-center" onMouseOver={()=> setShow(true)} onMouseLeave={()=> setShow(false)}>
                 <div className="m-5 mt-8 overflow-hidden rounded-xl items-center justify-center flex">
                   <div className="relative">
-                    <Image src={'/assets/filler-1.jpg'} width={500} height={100} alt={'team_member'}/> 
+                    <Image src={'/assets/idea-team.jpeg'} width={500} height={100} alt={'team_member'}/> 
                     <div className={show ? "absolute bg-cover bottom-0 left-0 right-0 top-0 bg-[#322d44]/80 rounded-xl text-secondary_text  text-center justify-center items-center" : "hidden"}>
                       <Link href={'/team'}>
                         <h1 className="md:mx-5 md:mt-[115px] justify-center text-center mt-[20%] md:text-2xl text-lg text-primary_text">Click to See Our Team</h1>
