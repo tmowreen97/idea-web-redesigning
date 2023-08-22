@@ -38,7 +38,7 @@ function CulturePage(){
   const isBreakPoint = useMediaQuery(900)
 
   return(
-    <div className="w-screen h-full bg-primary tracking-wider">
+    <div className="w-screen h-full bg-primary">
       <div className="md:px-20 pt-20 pb-[80px]">
         <h1 className="md:text-[1100%] text-center text-8xl font-thin text-primary_text md:text-left tracking-wider">Culture</h1>
       </div>
@@ -76,8 +76,8 @@ function CulturePage(){
               <h1 className="md:text-[300%] px-5 pt-5 text-primary_text font-light tracking-wide">IDEA HOSTS MIAMI BBQ</h1>
               <h2 className=" ml-6  text-primary_text text-3xl font-light tracking-wide">1</h2>
               <h2 className=" ml-6 mb-3 text-primary_text text-2xl font-light tracking-wide">Nancy Karim</h2>
-              <div className='flex items-center justify-center  '>
-                <Image className="rounded-xl overflow-hidden" src={'/assets/filler-3.jpg'} width={500} height={300}/>
+              <div className="items-center justify-center rounded-xl overflow-hidden">
+                <Image src={'/assets/filler-1.jpg'} width={700} height={300}/>
               </div>
               <div className="pt-10 m-5 text-lg" >
                 <p>
@@ -92,8 +92,8 @@ function CulturePage(){
               <h1 className="md:text-[300%] px-5 pt-5 text-primary_text font-light tracking-wide">IDEA HOSTS ...</h1>
               <h2 className=" ml-6 text-primary_text text-3xl font-light tracking-wide">2</h2>
               <h2 className=" ml-6 mb-3 text-primary_text text-2xl font-light tracking-wide">Nancy Karim</h2>
-              <div className='flex items-center justify-center  '>
-                <Image className="rounded-xl overflow-hidden" src={'/assets/filler-3.jpg'} width={500} height={300}/>
+              <div className="items-center justify-center rounded-xl overflow-hidden">
+                <Image src={'/assets/filler-2.jpg'} width={500} height={300}/>
               </div>
               <div className="pt-10 m-5 text-lg">
                 <p>
@@ -109,8 +109,8 @@ function CulturePage(){
               <h1 className="md:text-[300%] px-5 pt-5 text-primary_text font-light tracking-wide">IDEA HOSTS ... </h1>
               <h2 className=" ml-6  text-primary_text text-3xl font-light tracking-wide">3</h2>
               <h2 className=" ml-6 mb-3 text-primary_text text-2xl font-light tracking-wide">Nancy Karim</h2>
-              <div className='flex items-center justify-center  '>
-                <Image className="rounded-xl overflow-hidden" src={'/assets/filler-3.jpg'} width={500} height={300}/>
+              <div className="items-center justify-center rounded-xl overflow-hidden">
+                <Image src={'/assets/filler-3.jpg'} width={500} height={300}/>
               </div>
               <div className="pt-10 m-5 text-lg">
                 <p>
@@ -120,75 +120,65 @@ function CulturePage(){
               </div>
             </div>
           </div>
-          <div className="culture__child4 md:p-10 p-5 mt-5 md:mt-0 flex bg-secondary/40 rounded-xl">
+          <div className="culture__child4 md:p-20 p-5 mt-5 md:mt-0 flex bg-secondary/40 rounded-xl">
           <div>
-              <h1 className="md:text-[300%] px-5 pt-5 text-primary_text font-light">Vinoo Jankie Promoted</h1>
-              <h2 className=" ml-6  text-primary_text text-2xl font-light tracking-wide">April 5, 2022</h2>
-              <h2 className=" ml-6 mb-10 text-primary_text text-2xl font-light tracking-wide">Nancy Karim</h2>
-              <div className='flex items-center justify-center  '>
-                <Image className="rounded-xl overflow-hidden" src={'/assets/filler-3.jpg'} width={500} height={300}/>
+              <h1 className="md:text-[300%] px-5 pt-5 text-primary_text font-light tracking-wide">IDEA HOSTS ... </h1>
+              <h2 className=" ml-6  text-primary_text text-3xl font-light tracking-wide">4</h2>
+              <h2 className=" ml-6 mb-3 text-primary_text text-2xl font-light tracking-wide">Nancy Karim</h2>
+              <div className="items-center justify-center rounded-xl overflow-hidden">
+                <Image src={'/assets/filler-3.jpg'} width={500} height={300}/>
               </div>
               <div className="pt-10 m-5 text-lg">
                 <p>
-                On April 5, 2022 Vinoo Jankie, PE, RCDD was Appointed and Promoted to a Principal of the firm. Vinoo empowers IDEA’s initiatives with a diverse engineering portfolio. He has successfully completed various large scale and complex Electrical and Low Voltage engineering engagements. Vinoo will help build and lead IDEA’s Electrical and Low Voltage Inter-Disciplinary disciplines.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                 </p>
 
               </div>
             </div>
           </div>
-          <div className="culture__child5 md:p-10 p-5 mt-5 md:mt-0 flex bg-secondary/40 rounded-xl">
+          <div className="culture__child5 md:p-20 p-5 mt-5 md:mt-0 flex bg-secondary/40 rounded-xl">
           <div>
-              <h1 className="md:text-[300%] px-5 pt-5 text-primary_text font-light ">IDEA Turns 1!</h1>
-              <h2 className=" ml-6  text-primary_text text-2xl font-light ">April 5, 2022</h2>
-              <h2 className=" ml-6 mb-10 text-primary_text text-2xl font-light ">Nancy Karim</h2>
-              <div className='flex items-center justify-center  '>
-                <Image className="rounded-xl overflow-hidden" src={'/assets/filler-3.jpg'} width={500} height={300}/>
+              <h1 className="md:text-[300%] px-5 pt-5 text-primary_text font-light tracking-wide">IDEA HOSTS ... </h1>
+              <h2 className=" ml-6  text-primary_text text-3xl font-light tracking-wide">5</h2>
+              <h2 className=" ml-6 mb-3 text-primary_text text-2xl font-light tracking-wide">Nancy Karim</h2>
+              <div className="items-center justify-center rounded-xl overflow-hidden">
+                <Image src={'/assets/filler-3.jpg'} width={500} height={300}/>
               </div>
               <div className="pt-10 m-5 text-lg">
                 <p>
-                Thank you to all of our Team Members, adn supporters for being a part of our continured success! We look forward to designing and manifesting more World Class IDEAs!
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                 </p>
 
               </div>
             </div>
           </div>
-          <div className="culture__child6 md:p-10 p-5 mt-5 md:mt-0 flex bg-secondary/40 rounded-xl">
+          <div className="culture__child6 md:p-20 p-5 mt-5 md:mt-0 flex bg-secondary/40 rounded-xl">
           <div>
-              <h1 className="md:text-[300%] px-5 pt-5 text-primary_text font-light ">MSC Groundbreaking </h1>
-              <h2 className="ml-6  text-primary_text text-2xl font-light ">March 10, 2022</h2>
-              <h2 className=" ml-6 mb-10 text-primary_text text-2xl font-light ">Nancy Karim</h2>
-              <div className='flex items-center justify-center rounded-xl overflow-hidden mx-2'>
-                <ReactPlayer
-                url={'https://fb.watch/mzye9avpRQ/'}
-                playing
-                loop
-                controls
-                width='100%'
-                height='100%'
-
-                />
-                {/* <Image className="rounded-xl overflow-hidden" src={'/assets/filler-3.jpg'} width={500} height={300}/> */}
+              <h1 className="md:text-[300%] px-5 pt-5 text-primary_text font-light tracking-wide">IDEA HOSTS ... </h1>
+              <h2 className=" ml-6  text-primary_text text-3xl font-light tracking-wide">6</h2>
+              <h2 className=" ml-6 mb-3 text-primary_text text-2xl font-light tracking-wide">Nancy Karim</h2>
+              <div className="items-center justify-center rounded-xl overflow-hidden">
+                <Image src={'/assets/filler-3.jpg'} width={500} height={300}/>
               </div>
-              <div className="pt-10 m-3 text-lg">
+              <div className="pt-10 m-5 text-lg">
                 <p>
-                For the past year, IDEA has been providing MEP-FP Engineering services & expertise on MSC’s World’s Largest Cruise Ship Terminal project. We celebrated this achievement with a Groundbreaking Ceremony at PortMiami March 10, 2022
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                 </p>
 
               </div>
             </div>
           </div>
-          <div className="culture__child7 md:p-10 p-5 mt-5 md:mt-0 flex bg-secondary/40 rounded-xl">
+          <div className="culture__child7 md:p-20 p-5 mt-5 md:mt-0 flex bg-secondary/40 rounded-xl">
           <div>
-              <h1 className="md:text-[300%] px-5 pt-5 text-primary_text font-light ">IDEA Is Founded! </h1>
-              <h2 className=" ml-6  text-primary_text text-2xl font-light ">April 5, 2021</h2>
-              <h2 className=" ml-6 mb-10 text-primary_text text-2xl font-light ">Nancy Karim</h2>
-              <div className='flex items-center justify-center  '>
-                <Image className="rounded-xl overflow-hidden" src={'/assets/filler-3.jpg'} width={500} height={300}/>
+              <h1 className="md:text-[300%] px-5 pt-5 text-primary_text font-light tracking-wide">IDEA HOSTS ... </h1>
+              <h2 className=" ml-6  text-primary_text text-3xl font-light tracking-wide">7</h2>
+              <h2 className=" ml-6 mb-3 text-primary_text text-2xl font-light tracking-wide">Nancy Karim</h2>
+              <div className="items-center justify-center rounded-xl overflow-hidden">
+                <Image src={'/assets/filler-3.jpg'} width={500} height={300}/>
               </div>
-              
-              <div className="pt-10 m-3 text-lg justify-center">
+              <div className="pt-10 m-5 text-lg">
                 <p>
-                On April 5, 2021 Kazi Karim, PE took on the initiative to contribute to and improve the Architectural Engineering community by founding IDEA. With the intent to provide client-specific high-quality MEP-FP Engineering services, Kazi is facilitating the growth of IDEAs. He is now the Founder and Managing Principal for IDEA and currently servicing a variety of World Class IDEAs.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                 </p>
 
               </div>

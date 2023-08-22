@@ -37,7 +37,7 @@ function ProjectHome(){
         <div className="projecthome__title mr-2 ml-5 ">
           <h1 className="md:text-[1000%] text-8xl tracking-wide text-left md:ml-[65px] font-thin mb-10 md:mt-[8%] text-primary_text">Projects</h1>
         </div>
-        <div className="projecthome__child1 md:p-10 p-2 bg-secondary/50 rounded-xl md:mr-5 md:ml-4 m-4 md:m-0">
+        <div className="projecthome__child1 md:p-10 p-2 bg-secondary/50 rounded-xl md:mr-5 md:ml-4  md:m-0">
           <ProjectHomeCarousel projects={projects} setProjectSelect={setProjectSelect} projectSelect={projectSelect}/>
         </div>
         <div className="projecthome__img relative bg-secondary/50 items-center text-center justify-center p-5 rounded-xl md:w-[450px] md:h-[45%] md:mt-20 md:m-0 m-4">
