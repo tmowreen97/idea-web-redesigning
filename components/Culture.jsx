@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import {React, useState, useEffect, useCallback} from "react";
 import ReactPlayer from "react-player/lazy";
 import { motion } from "framer-motion";
@@ -168,13 +169,21 @@ function CulturePage(){
               <h2 className=" ml-6  text-primary_text text-2xl font-light tracking-wide">March 10, 2022</h2>
               <h2 className=" ml-6 mb-3 text-primary_text text-2xl font-light tracking-wide">Nancy Karim</h2>
               <div className="items-center justify-center rounded-xl overflow-hidden">
-                <ReactPlayer 
-                url={'https://fb.watch/mz-rmFIevK/'}
-                loop
-                playing
-                muted
-                height='100%'
-                width='100%'/>
+                <Link href={'https://www.facebook.com/reel/661496844905448'} legacyBehavior>
+                <a target="_blank" rel="noopener noreferrer">
+                  <ReactPlayer 
+                  url={'/assets/msc_groundbreaking.mp4'}
+                  loop
+                  playing
+                  controls
+                  muted
+                  height='100%'
+                  width='100%'/>
+
+                </a>
+                
+                </Link>
+                
               </div>
               <div className="pt-10 mx-5 text-lg">
                 <p>

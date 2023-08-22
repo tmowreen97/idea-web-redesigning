@@ -78,14 +78,14 @@ const About = () => {
               professional development.
             </p>
           </div>
-          <div className="about__img md:w-[500px] bg-secondary/40 items-center justify-center text-center p-4  animation-pulse delay-200 rounded-xl m-5 hover:animate-none">
+          <div className="about__img md:w-[510px] bg-secondary/40 items-center justify-center text-center p-4  animation-pulse delay-200 rounded-xl m-5 hover:animate-none">
             <div className="relative items-center justify-center" onMouseOver={()=> setShow(true)} onMouseLeave={()=> setShow(false)}>
-                <div className="m-5 mt-8 overflow-hidden rounded-xl items-center justify-center flex">
+                <div className="m-5 mt-6 overflow-hidden rounded-xl items-center justify-center flex">
                   <div className="relative">
                     <Image src={'/assets/idea-team.jpeg'} width={500} height={100} alt={'team_member'}/> 
-                    <div className={show ? "absolute bg-cover bottom-0 left-0 right-0 top-0 bg-[#322d44]/80 rounded-xl text-secondary_text  text-center justify-center items-center" : "hidden"}>
+                    <div className={show ? "absolute bg-cover bottom-0 left-0 right-0 top-0 bg-[#322d44]/80 rounded-xl text-secondary_text  " : "hidden"}>
                       <Link href={'/team'}>
-                        <h1 className="md:mx-5 md:mt-[115px] justify-center text-center mt-[20%] md:text-2xl text-lg text-primary_text">Click to See Our Team</h1>
+                        <h1 className="md:mx-5 justify-center top-[44%] relative md:text-2xl text-lg text-primary_text">Click to See Our Team</h1>
                       </Link>
                     </div>
                   </div>

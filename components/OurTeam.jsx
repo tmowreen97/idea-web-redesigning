@@ -4,9 +4,43 @@ import Link from "next/link";
 import {motion} from 'framer-motion';
 import Card from "./Card";
 import TeamList from "./TeamList";
+import AnimatedText from "./AnimatedText";
 
 
 function OurTeam (){
+
+
+  const textContainer = {
+      hidden: { opacity: 0 },
+      visible: (i = 1) => ({
+        opacity: 1,
+        transition: { staggerChildren: 0.12, delayChildren: 0.04 * i },
+      }),
+    };
+
+    const textChild = {
+      visible: {
+        opacity: 1,
+        x: 0,
+        transition: {
+          type: "spring",
+          damping: 12,
+          stiffness: 100,
+        },
+      },
+      hidden: {
+        opacity: 0,
+        x: 20,
+        transition: {
+          type: "spring",
+          damping: 12,
+          stiffness: 100,
+        },
+      },
+    };
+
+    const words = "Manifesting World Class Ideas"
+
   const main_team = [
     {
       name: 'Kazi Karim',
@@ -98,22 +132,28 @@ function OurTeam (){
         </div>
 
       </div>
-      <motion.div 
-      initial={{x:-3000}}
-        animate= {{x:[-2500,0,0,2500], scale:[0.75,1.5,1.5,0.75], opacity:[0.5,1,1,0.5]}}
-        transition={{
-          duration: "8",
-          delay : "2",
-          repeat: Infinity,
-          repeatDelay: 1
-        }}
-      className="max-w-screen"
+      <div className="container h-screen mx-auto flex flex-col items-center justify-center">
+        <AnimatedText text={words}/>
+      </div>
+      
+      
+      {/* <motion.div 
+      style={{ overflow: "hidden", display: "flex", fontSize: "2rem" }}
+      variants={textContainer}
+      initial="hidden"
+      animate="visible"
       >
-        <div className="p-[10%]">
-          <h2 className="italic font-bold tracking-wide">Manifesting World Class IDEAs</h2>
-        </div>
+        {words.map((word, index) => (
+        <motion.span
+          variants={textChild}
+          style={{ marginRight: "5px" }}
+          key={index}
+        >
+          {word}
+        </motion.span>
+      ))}
         
-      </motion.div>
+      </motion.div> */}
       {/* <div className="">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-5 mx-20 pb-20">
           {second_team.map((member)=> {
