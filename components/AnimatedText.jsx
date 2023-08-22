@@ -21,7 +21,7 @@ export default function AnimatedText({text}){
         damping: 12,
         stiffness: 100,
         duration: 8,
-        delay: 10
+        delay: 10  
       },
     },
     hidden: {
