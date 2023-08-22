@@ -31,7 +31,6 @@ export default function Footer(){
             <div className=" mb-10">
               <h1 className="">Inter-Disciplinary Engineering Associates, LLC</h1>
               <h1 className="">Architectural Engineering Consultants</h1>
-              <p className="text-lg text-dark_text">1 Botsford Hill Rd Botsford, CT 06404</p>       
               <p className="text-lg text-dark_text">Info@IdeaAEC.com</p>
               <p className="text-lg text-dark_text">203-917-7907</p>
               <p className="md:pt-[70px] text-sm text-dark_text" >© 2023 by Idea Consulting</p>

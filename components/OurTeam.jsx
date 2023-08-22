@@ -107,7 +107,7 @@ function OurTeam (){
           repeat: Infinity,
           repeatDelay: 1
         }}
-        
+      className="max-w-screen"
       >
         <div className="p-[10%]">
           <h2 className="italic font-bold tracking-wide">Manifesting World Class IDEAs</h2>

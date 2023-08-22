@@ -37,7 +37,7 @@ function ServicesPage(){
               transition:{
                 repeat: Infinity
               }} : ""}
-            className='text-white flex items-center justify-center text-center'>
+            className='text-white text-2xl flex items-center justify-center text-center'>
               <BsArrowRight/>
             </motion.div>
           
@@ -82,7 +82,7 @@ function ServicesPage(){
               transition:{
                 repeat: Infinity
               }} : ""}
-            className='text-white flex items-center justify-center text-center'>
+            className='text-white text-2xl flex items-center justify-center text-center'>
               <BsArrowRight/>
             </motion.div>
           
@@ -126,7 +126,7 @@ function ServicesPage(){
               transition:{
                 repeat: Infinity
               }} : ""}
-            className='text-white flex items-center justify-center text-center'>
+            className='text-white text-2xl flex items-center justify-center text-center'>
               <BsArrowRight/>
             </motion.div>
           
