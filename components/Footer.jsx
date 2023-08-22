@@ -24,17 +24,18 @@ export default function Footer(){
             </div>
           </div>
           <div className="pb-5">
-            <div className="flex md:mb-[70px]">
+            <div className="flex md:mb-[60px]">
               <h1 className="py-1 text-7xl">IDEA</h1>
               <h1 className="pl-2 pt-7 text-2xl">AEC</h1>
             </div>
-            <div className="md:mb-[70px]">
-              <h1 className="">Inter-Disciplinary Engineering Associates, LLC</h1>
-              <h1 className="">Architectural Engineering Consultants</h1>
+            <div className="md:mb-[60px]">
+              <h1 className="">Inter-Disciplinary Engineering Associates,</h1>
+              <h1 className="">Architectural Engineering Consultants LLC</h1>
             </div>
             <div>
               <p className="text-lg text-dark_text">Info@IdeaAEC.com</p>
-              <p className="text-lg text-dark_text">203-917-7907</p>
+              <p className="text-lg text-dark_text">FL: 954-295-2125</p>
+              <p className="text-lg text-dark_text">CT: 203-917-7907</p>
             </div>
             
           </div>
@@ -104,7 +105,7 @@ export default function Footer(){
         
       </div>
       <div className="flex items-center justify-center">
-          <p className="text-sm text-dark_text" >© 2023 by Idea Consulting</p>
+          <p className="text-sm text-dark_text" >© 2023 by IDEA AEC LLC</p>
         </div>
     </div>
   )

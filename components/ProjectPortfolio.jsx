@@ -69,7 +69,7 @@ function ProjectPortfolio({ projects, category }){
         <motion.div 
         initial={{opacity:0}}
         animate={{opacity:1, transition:{delay:1.5, duration:1}}}
-        className="flex justify-end mx-20">
+        className="flex justify-start mx-20">
           <div className='relative'>
             {/* <label className="text-2xl text-secondary_text mr-2 ">Select a Category:</label> */}
             <button onClick={()=> {setShowDropDown(!showDropDown)}}  data-dropdown-toggle="dropdown" className="relative text-2xl justify-between w-[250px] bg-button_bg/30 hover:bg-secondary/70 focus:ring-4 focus:outline-none focus:ring-secondary_text font-medium rounded-lg  py-2 mt-2 ml-2 inline-flex items-center text-secondary_text" type="button">
