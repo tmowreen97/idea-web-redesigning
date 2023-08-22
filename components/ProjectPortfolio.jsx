@@ -69,25 +69,25 @@ function ProjectPortfolio({ projects, category }){
         <motion.div 
         initial={{opacity:0}}
         animate={{opacity:1, transition:{delay:1.5, duration:1}}}
-        className="flex items-center justify-center">
+        className="flex justify-end mx-20">
           <div className='relative'>
-            <label className="text-2xl text-secondary_text mr-2 ">Select a Category:</label>
-            <button onClick={()=> {setShowDropDown(!showDropDown)}}  data-dropdown-toggle="dropdown" className="relative md:w-[330px] text-2xl text-center bg-button_bg/30 hover:bg-secondary/70 focus:ring-4 focus:outline-none focus:ring-secondary_text font-medium rounded-lg px-3 py-4 mt-2 ml-2 inline-flex items-center justify-center text-secondary_text" type="button">
-              <p className='flex mr-2'>{category}</p>
+            {/* <label className="text-2xl text-secondary_text mr-2 ">Select a Category:</label> */}
+            <button onClick={()=> {setShowDropDown(!showDropDown)}}  data-dropdown-toggle="dropdown" className="relative text-2xl justify-between w-[250px] bg-button_bg/30 hover:bg-secondary/70 focus:ring-4 focus:outline-none focus:ring-secondary_text font-medium rounded-lg  py-2 mt-2 ml-2 inline-flex items-center text-secondary_text" type="button">
+              <p className='mx-2'>{category}</p>
               <motion.p 
               animate={{y:[-1,2,2,-1]}}
               transition={{
                 duration: "1",
                 repeat: Infinity,
               }}
-              className='absolute right-5'>
+              className='mx-2 '>
                 { showDropDown ? <BsChevronCompactUp/> : <BsChevronCompactDown/>}
               </motion.p>
             </button>
-            <div id="dropdown" className={ showDropDown ? "z-10 absolute right-0 md:w-[200px] bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 text-center": "hidden"}>
+            <div id="dropdown" className={ showDropDown ? "z-10 absolute right-0 md:w-[150px] bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 text-center": "hidden"}>
               <ul className="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
                 <li>
-                  <a href="/portfolio" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">All</a>
+                  <a href="/portfolio" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">Select A Sector</a>
                 </li>
                 <li>
                   <a href="/portfolio/commercial" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">Commercial</a>
@@ -99,7 +99,7 @@ function ProjectPortfolio({ projects, category }){
                   <a href="/portfolio/educational" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">Educational</a>
                 </li>
                 <li>
-                  <a href="/portfolio/healthcare-facilities" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">Healthcare Facilities</a>
+                  <a href="/portfolio/healthcare-facilities" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">Healthcare</a>
                 </li>
                 <li>
                   <a href="/portfolio/industrial" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">Industrial</a>
@@ -108,7 +108,10 @@ function ProjectPortfolio({ projects, category }){
                   <a href="/portfolio/institutional" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">Institutional</a>
                 </li>
                 <li>
-                  <a href="/portfolio/mixed-use-and-high-rise" className="block px-4 py-2 hover:bg-accent_2/80 hover:text-white">Mixed-Use & High-Rise</a>
+                  <a href="/portfolio/mixed-use" className="block px-4 py-2 hover:bg-accent_2/80 hover:text-white">Mixed-Use</a>
+                </li>
+                <li>
+                  <a href="/portfolio/high-rise" className="block px-4 py-2 hover:bg-accent_2/80 hover:text-white">High-Rise</a>
                 </li>
                 <li>
                   <a href="/portfolio/residential" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">Residential</a>
@@ -144,11 +147,11 @@ function ProjectPortfolio({ projects, category }){
         </select>
       </div> */}
       <div className="flex items-center justify-center">
-        <div className="grid md:grid-cols-2 mx-20 py-10">
+        <div className="grid md:grid-cols-2 mx-20 py-10 items-center justify-center">
         {
           projects.map((proj)=> {
             return(
-              <div key={proj.name}>
+              <div key={proj.name} >
                 <PortfolioList project={proj}/>
               </div>
               

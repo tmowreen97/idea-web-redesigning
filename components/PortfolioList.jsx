@@ -27,8 +27,8 @@ function PortfolioList({project}){
     <>
     <div className="items-center text-center justify-center p-5 py-10 relative mb-[100px] min-w-5xl" onMouseEnter={()=> setProjHover(true)}
     onMouseLeave={()=> setProjHover(false)}>
-      <div className="relative rounded-xl overflow-hidden">
-        <Image src={project.image} width={project.width} height={project.height} alt={'project'} />
+      <div className="relative rounded-xl overflow-hidden ">
+        <Image src={project.image} width={project.width} height={project.height} alt={'project'}  />
         <div className={projHover ? "absolute top-0 bottom-0 left-0 right-0 bg-[#322d44]/80 text-secondary_text  " : "hidden"}>
           <div className="relative mx-auto justify-center items-center top-1/4">
             <div className="relative justify-center items-center text-center">
@@ -56,21 +56,24 @@ function PortfolioList({project}){
       
     </div>
     {
-        projClick ? 
+        projClick ?
+        //This ensures the user can't click outside of the box
+        <div className="w-full h-full bg-none fixed top-0 bottom-0 right-0 left-0 z-10">
+
         <motion.div 
-        initial={{opacity:0.85}}
-        animate={{opacity:1, transition:{duration:1}}}
-        className={"z-10"}
+        initial={{opacity:.5}}
+        animate={{opacity:1, transition: {duration:1}}}
+        className={"z-20"}
         >
-          <div className="mx-10 my-5 justify-center items-center bg-light_bg text-left p-5 rounded-xl z-10 fixed left-0 right-0 top-0 bottom-0">
-            <div className="flex justify-end ">
+          <div className="mx-10 my-5 justify-center items-center bg-light_bg text-left p-5 rounded-xl z-20 fixed left-0 right-0 top-0 bottom-0">
+            <div className="flex justify-end my-[-10px]">
               <AiOutlineCloseCircle 
               onClick={()=> setProjClick(false)}
               className="cursor-pointer hover:bg-accent_2 hover:text-primary_text  rounded-full overflow-hidden text-2xl z-10" />
             </div>
             <div className="grid grid-cols-2 items-center justify-center h-full gap-5">
-              <div className="flex m-2">
-                <Image src={'/assets/filler-1.jpg'} width={700} height={400} className="rounded-xl overflow-hidden"/>
+              <div className="flex max-w-[800px] items-center justify-center ">
+                <Image src={project.image} width={project.width} height={project.height} className="rounded-xl overflow-hidden max-h-[750px]"/>
               </div>
               <div className="m-2">
                 <h2 className="text-dark_text">{project.name}</h2>
@@ -91,7 +94,8 @@ function PortfolioList({project}){
             
             
           </div>
-      </motion.div> : ""
+      </motion.div>
+      </div> : ""
       }
     </>
     

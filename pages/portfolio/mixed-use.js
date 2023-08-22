@@ -97,7 +97,7 @@ export default function MixedUse(){
   return(
     <div>
       <Navbar lightLogo={true}/>
-      <ProjectPortfolio projects={projects} category={'Mixed-Use & High-Rise'}/>
+      <ProjectPortfolio projects={projects} category={'Mixed-Use'}/>
     </div>
   )
 }

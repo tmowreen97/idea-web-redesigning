@@ -1,10 +1,7 @@
 import Navbar from "@/components/Navbar"
 import ProjectPortfolio from "@/components/ProjectPortfolio"
 
-
-// This contains all of the projects no category selected
-export default function Portfolio(){
-
+export default function HighRise(){
   const projects = [
     {
       name: 'MSC Miami Cruise Terminal',
@@ -21,7 +18,7 @@ export default function Portfolio(){
       heading: 'NEED',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
       image: '/assets/projects/838 WEA.jpg',
-      width: '650',
+      width: '700',
       height: '200'
     },
     {
@@ -97,11 +94,10 @@ export default function Portfolio(){
       height: '400'
     }
   ]
-
   return(
     <div>
       <Navbar lightLogo={true}/>
-      <ProjectPortfolio projects={projects} category={'Select A Sector'}/>
+      <ProjectPortfolio projects={projects} category={'High-Rise'}/>
     </div>
   )
 }
