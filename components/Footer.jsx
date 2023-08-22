@@ -9,30 +9,31 @@ export default function Footer(){
       <div className="flex items-center justify-center pt-[50px]">
         <div className=" md:grid md:grid-cols-2 flexbox justify-evenly text-dark_text tracking-wide">
           <div className="items-center justify-between text-2xl font-light flex" >
-          <div className="bg-secondary/70 md:mr-10 rounded-xl md:px-5 md:mx-10 pb-3 text-center ">
+          <div className="bg-secondary/70 md:mr-10 rounded-xl md:px-5 md:mx-10  text-center ">
             <div className="pb-1">
-              <Image src={'/assets/clip-1.png'} width={60} height={60}/>
+              <Image src={'/assets/clip-1.png'} width={70} height={70}/>
             </div>
             <div className="pb-1 pl-[2px]">
-              <Image src={'/assets/clip-2.png'} width={55} height={55}/>
+              <Image src={'/assets/clip-2.png'} width={62} height={62}/>
             </div>
             <div className="pb-1">
-              <Image src={'/assets/clip-3.png'} width={60} height={60}/>
+              <Image src={'/assets/clip-3.png'} width={65} height={65}/>
             </div>
             <div className="pl-[2px]">
-              <Image src={'/assets/clip-4.png'} width={60} height={60}/>
+              <Image src={'/assets/clip-4.png'} width={65} height={65}/>
             </div>
           </div>
-          <div className="pb-5">
-            <div className="flex md:mb-[60px]">
-              <h1 className="py-1 text-7xl">IDEA</h1>
-              <h1 className="pl-2 pt-7 text-2xl">AEC</h1>
-            </div>
-            <div className="md:mb-[60px]">
+          <div className="">
+            <div className="md:mb-[130px]">
+               <div className="flex ">
+                  <h1 className="text-7xl">IDEA</h1>
+                  <h1 className="pl-2 pt-7 text-2xl">AEC</h1>
+                </div>
               <h1 className="">Inter-Disciplinary Engineering Associates,</h1>
               <h1 className="">Architectural Engineering Consultants LLC</h1>
             </div>
-            <div>
+            <div className="mb-[5px]">
+              <p className="text-lg text-dark_text">Monroe, Connecticut | Miami, Florida</p>
               <p className="text-lg text-dark_text">Info@IdeaAEC.com</p>
               <p className="text-lg text-dark_text">FL: 954-295-2125</p>
               <p className="text-lg text-dark_text">CT: 203-917-7907</p>
