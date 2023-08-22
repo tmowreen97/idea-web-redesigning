@@ -22,7 +22,7 @@ function ContactPage(){
               animate={{opacity:1, transition:{duration:2, delay:1}}}
               className="mb-2 "
             >
-              <Image src={'/assets/clip-1.png'} width={75} height={75} className=""/>
+              <Image src={'/assets/clip-1.png'} width={80} height={80} className=""/>
             </motion.div>
             <motion.div
               initial={{opacity:0}}
@@ -47,24 +47,23 @@ function ContactPage(){
 
           </motion.div>
           <div className="m-4">
-            <div className="pb-5">
-              <div className="flex pb-5">
+            <div className="pb-8">
+              <div className="flex pb-8">
                 <h2 className="text-6xl">IDEA</h2>
                 <h2 className="text-2xl pt-6 ml-2">AEC</h2>
               </div>
               
               <h2 className="text-2xl">Inter-Disciplinary Engineering Associates, LLC</h2>
-              <p className="pb-5">Architectural Engineering Consultants</p>
-              <p className="">1 Botsford Hill Rd Botsford, CT 06404 </p>
+              <p className="pb-8">Architectural Engineering Consultants</p>
               <p>Info@IdeaAEC.com</p>
-              <p>203-917-7907</p>
+              <p className="">203-917-7907</p>
             </div>
             <div>
               <p>Please feel free to contact us with any questions or business inquiries.</p>
               <p>You may fill out this form, or contact us by email or phone.</p>
               <p>You can also contact our principals directly:</p>
-              <p>Kazi Karim ...</p>
-              <p>Vinoo Jankie ...</p>
+              <p>Kazi Karim - kazi@ideaaec.com | phone number? </p>
+              <p>Vinoo Jankie - vinoo@ideaaec.com | phone number?</p>
             </div>
             <div>
               <p>Follow us on our socials!</p>

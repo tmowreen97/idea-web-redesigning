@@ -80,13 +80,13 @@ function CulturePage(){
       </div> : ""}
       
       
-      <div className="flex justify-center items-center p-5  md:pb-20">
+      <div className="flex justify-center items-center p-5  md:pb-20 tracking-wider">
         <div className="culture__parent justify-center py-10 md:mx-[10%] md:grid flexbox">
           <div className="culture__child1 md:p-10 p-5 flex bg-secondary/40 rounded-xl">
             <div>
-              <h1 className="md:text-[300%] px-5 pt-5 text-primary_text font-light tracking-wide">IDEA HOSTS MIAMI BBQ</h1>
-              <h2 className=" ml-6  text-primary_text text-2xl font-light tracking-wide">1</h2>
-              <h2 className=" ml-6 mb-8 text-primary_text text-2xl font-light tracking-wide">Nancy Karim</h2>
+              <h1 className="md:text-[300%] px-5 pt-5 text-primary_text font-light ">IDEA HOSTS MIAMI BBQ</h1>
+              <h2 className=" ml-6  text-primary_text text-2xl font-light ">1</h2>
+              <h2 className=" ml-6 mb-8 text-primary_text text-2xl font-light ">Nancy Karim</h2>
               <div className="flex items-center justify-center mb-8">
                 <Image src={'/assets/filler-3.jpg'} width={500} height={300} className="rounded-xl overflow-hidden"/>
               </div>
@@ -100,9 +100,9 @@ function CulturePage(){
           </div>
           <div className="culture__child2 md:p-10 p-5 mt-5 md:mt-0 flex bg-secondary/40 rounded-xl">
           <div>
-              <h1 className="md:text-[300%] px-5 pt-5 text-primary_text font-light tracking-wide">IDEA HOSTS ...</h1>
-              <h2 className=" ml-6 text-primary_text text-2xl font-light tracking-wide">2</h2>
-              <h2 className=" ml-6 mb-8 text-primary_text text-2xl font-light tracking-wide">Nancy Karim</h2>
+              <h1 className="md:text-[300%] px-5 pt-5 text-primary_text font-light ">IDEA HOSTS ...</h1>
+              <h2 className=" ml-6 text-primary_text text-2xl font-light ">2</h2>
+              <h2 className=" ml-6 mb-8 text-primary_text text-2xl font-light ">Nancy Karim</h2>
               <div className="flex items-center justify-center mb-8">
                 <Image src={'/assets/filler-3.jpg'} width={500} height={300} className="rounded-xl overflow-hidden"/>
               </div>
@@ -117,8 +117,8 @@ function CulturePage(){
           {/* <div className="row-border"/> */}
           <div className="culture__child3 md:p-10 p-5 mt-5 md:mt-0 flex bg-secondary/40 rounded-xl">
           <div>
-              <h1 className="md:text-[300%] px-5 pt-5 text-primary_text font-light tracking-wide">IDEA HOSTS ... </h1>
-              <h2 className=" ml-6  text-primary_text text-2xl font-light tracking-wide">3</h2>
+              <h1 className="md:text-[300%] px-5 pt-5 text-primary_text font-light">IDEA HOSTS ... </h1>
+              <h2 className=" ml-6  text-primary_text text-2xl font-light">3</h2>
               <h2 className=" ml-6 mb-8 text-primary_text text-2xl font-light tracking-wide">Nancy Karim</h2>
               <div className="flex items-center justify-center mb-5">
                 <Image src={'/assets/filler-3.jpg'} width={500} height={300} className="rounded-xl overflow-hidden"/>
@@ -133,7 +133,7 @@ function CulturePage(){
           </div>
           <div className="culture__child4 md:p-10 p-5 mt-5 md:mt-0 flex bg-secondary/40 rounded-xl">
           <div>
-              <h1 className="md:text-[300%] px-5 pt-5 text-primary_text font-light tracking-wide">Vinoo is Promoted to Principal! </h1>
+              <h1 className="md:text-5xl px-5 pt-5 text-primary_text font-light">Vinoo is Promoted to Principal! </h1>
               <h2 className=" ml-6  text-primary_text text-2xl font-light tracking-wide">April 5, 2022</h2>
               <h2 className=" ml-6 mb-8 text-primary_text text-2xl font-light tracking-wide">Nancy Karim</h2>
               <div className="flex items-center justify-center mb-5">
