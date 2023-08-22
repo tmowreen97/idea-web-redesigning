@@ -75,43 +75,43 @@ function ContactPage(){
         {/* col/row 2/1 form */}
         <div className="items-center justify-center  flex ">
         <div className="md:w-[500px] md:h-[400px] bg-secondary rounded-xl ml-20">
-              <form className="text-center items-center justify-center mt-[3%]" action="https://formsubmit.co/nabila@ideaaec.com" method="POST">
-                <h2>Contact Us</h2>
-                <div className="m-5">
-                  {/* <label>Name:</label> */}
-                  <input 
-                  type="name" 
-                  name="name" 
-                  className="md:w-[400px] h-[40px] rounded-xl text-center p-1" 
-                  placeholder="Name"
-                  required/>
-                </div>
-                <div className="m-5">
-                  {/* <label>Email:</label> */}
-                  <input 
-                  type="email" 
-                  name="email" 
-                  className="md:w-[400px] h-[40px] rounded-xl text-center p-1 border-none" 
-                  placeholder="Email"
-                  required/>
-                </div>
-                <div className="m-5">
-                  {/* <label>Message:</label> */}
-                  <textarea 
-                  type="text" 
-                  name="message" 
-                  className="md:w-[400px] md:h-[80px] rounded-xl text-center max-h-[100px] p-1 border-none" 
-                  placeholder="Message"
-                  required/>
-                </div>
-                <input type="hidden" name="_next" value="http://localhost:3000/thank-you"></input>
-                <div className="text-center items-center justify-center flex ">
-                  <div className="bg-tertiary/80 hover:bg-accent_2/80 rounded-xl p-2 px-5 shadow-xl text-primary_text">
-                    <button type='submit'>Send</button>
-                  </div>
-                </div>
-              </form>
+          <form className="text-center items-center justify-center mt-[3%]" action="https://formsubmit.co/nabila@ideaaec.com" method="POST">
+            <h2>Contact Us</h2>
+            <div className="m-5">
+              {/* <label>Name:</label> */}
+              <input 
+              type="name" 
+              name="name" 
+              className="md:w-[400px] h-[40px] rounded-xl text-center p-1" 
+              placeholder="Name"
+              required/>
             </div>
+            <div className="m-5">
+              {/* <label>Email:</label> */}
+              <input 
+              type="email" 
+              name="email" 
+              className="md:w-[400px] h-[40px] rounded-xl text-center p-1 border-none" 
+              placeholder="Email"
+              required/>
+            </div>
+            <div className="m-5">
+              {/* <label>Message:</label> */}
+              <textarea 
+              type="text" 
+              name="message" 
+              className="md:w-[400px] md:h-[80px] rounded-xl text-center max-h-[100px] p-1 border-none" 
+              placeholder="Message"
+              required/>
+            </div>
+            <input type="hidden" name="_next" value="http://localhost:3000/thank-you"></input>
+            <div className="text-center items-center justify-center flex ">
+              <div className="bg-tertiary/80 hover:bg-accent_2/80 rounded-xl p-2 px-5 shadow-xl text-primary_text">
+                <button type='submit'>Send</button>
+              </div>
+            </div>
+          </form>
+        </div>
         </div>
       </div>
       <div>

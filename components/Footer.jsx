@@ -9,22 +9,22 @@ export default function Footer(){
       <div className="flex items-center justify-center pt-[50px]">
         <div className=" md:grid md:grid-cols-2 flexbox justify-evenly text-dark_text tracking-wide">
           <div className="items-center justify-between text-2xl font-light flex" >
-          <div className="bg-secondary/70 md:mr-10 rounded-xl md:px-5 md:mx-10  text-center ">
-            <div className="pb-1">
+          <div className="bg-secondary/70  rounded-xl  text-center ">
+            <div className="my-1">
               <Image src={'/assets/clip-1.png'} width={70} height={70}/>
             </div>
-            <div className="pb-1 pl-[2px]">
+            <div className="my-1">
               <Image src={'/assets/clip-2.png'} width={62} height={62}/>
             </div>
-            <div className="pb-1">
+            <div className="my-1">
               <Image src={'/assets/clip-3.png'} width={65} height={65}/>
             </div>
-            <div className="pl-[2px]">
+            <div className="my-1">
               <Image src={'/assets/clip-4.png'} width={65} height={65}/>
             </div>
           </div>
           <div className="">
-            <div className="md:mb-[130px]">
+            <div className="md:mb-[115px]">
                <div className="flex ">
                   <h1 className="text-7xl">IDEA</h1>
                   <h1 className="pl-2 pt-7 text-2xl">AEC</h1>
@@ -42,10 +42,10 @@ export default function Footer(){
           </div>
             
           </div>
-          <div className="md:ml-[150px]  md:mx-[8%]" >
-          <div className="bg-dark_bg/60 md:w-[400px] md:h-[290px] md:ml-10  rounded-xl ">
+          <div className="md:ml-[160px] md:w-[450px]" >
+          <div className="bg-dark_bg/60  md:h-[290px]   rounded-xl ">
             <div className="items-center justify-center pb-5">
-              <form className="text-center pt-2 ">
+              <form className="text-center pt-2 items-center justify-center">
                 <h2 className="text-primary_text">Contact Us</h2>
                 <div className="m-2">
                   {/* <label>Name:</label> */}
@@ -68,7 +68,7 @@ export default function Footer(){
             </div>
             
           </div>
-          <div className="grid grid-cols-3 gap-2 text-center items-center justify-center align-middle pt-5 text-primary_text pb-5">
+          <div className="grid grid-cols-3  text-center items-center justify-center  pt-5 text-primary_text pb-5">
             <div className="text-center items-center justify-center flex rounded-xl ">
               <div className="bg-tertiary/80 hover:bg-accent_2/80  rounded-full p-4 text-2xl">
                 <Link href="https://www.instagram.com/idea.aec/" legacyBehavior>
