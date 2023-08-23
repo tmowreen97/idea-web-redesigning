@@ -1,39 +1,120 @@
-import {React, useState} from "react";
-import { motion } from "framer-motion";
-import {BsArrowRight} from 'react-icons/bs';
+import {React, useState, useRef, useEffect} from "react";
+import { motion, useInView } from "framer-motion";
+import { BsArrowRight } from "react-icons/bs";
+import {LiaLongArrowAltRightSolid} from 'react-icons/lia';
+
 
 
 function ServicesPage(){
-
   const [showMep, setShowMep] = useState(false)
   const [showFS, setShowFS] = useState(false)
   const [showPM, setShowPM] = useState(false)
+
+  const ref = useRef(null)
+  const isInView = useInView(ref)
+
+  useEffect(() => {
+    mouse()
+    console.log("Element is in view: ", isInView)
+  }, [isInView])
+
+  function mouse (){
+    myStopFunction();
+    myFunction();
+  }
+  function myFunction() {
+    let myVar = setTimeout(function(){
+        setShowMep(true)
+        setShowFS(true)
+        setShowPM(true)
+      }, 5000);
+  }   
+  function myStopFunction() {
+      if(typeof myVar != 'undefined'){
+          clearTimeout(myVar);
+      }
+  }
+
+
+  const name = {
+    hidden:{ opacity:1 },
+    visible: {
+      opacity: [1, 0.85, 0.85, 1],
+      x: [0, 40, 40, 0],
+      transition: {
+        duration: .5,
+      }
+    }
+  }
+
+  const arrow = {
+    hidden:{ opacity:0 },
+    visible: {
+      opacity: 1,
+      
+      transition: {
+        delay: .5,
+        duration: .5,
+      }
+    }
+  }
+
+  const list = {
+    hidden: {opacity:0},
+    visible: {
+      opacity: 1,
+      transition: {
+        delay: 1,
+        duration: .5
+      }
+    }
+  }
+
   return(
-    <div className="w-screen h-full bg-primary">
+    <div className="w-screen h-full bg-primary pb-20" ref={ref}>
       <motion.div 
+
       initial={{opacity:0}}
       animate={{opacity:1, transition:{delay:1 , duration:1}}}
-      className="p-20">
+      className="pt-20 px-20 pb-10">
         <h1 className="md:text-[1100%] text-5xl font-thin text-primary_text text-left tracking-wide">Services</h1>
       </motion.div>
-      <div className="">
+      <motion.div 
+      initial={{opacity:0}}
+      animate={{opacity:1, transition:{ delay: 1.5, duration:1}}}
+      className="">
         {/* MEP & FP SECTION */}
         <div className="w-screen h-full flex items-center justify-evenly p-10">
           {/* MEP & FP NAME */}
-          <div className="bg-light_bg  w-[550px] h-[425px] rounded-xl">
+          <motion.div 
+          variants={name}
+          initia="hidden"
+          animate={showMep ? "visible" : "hidden"}
+          onClick={()=> setShowMep(!showMep)}
+          className="bg-light_bg  w-[550px] h-[425px] my-20 rounded-xl"
+          >
             <div className="absolute">
               <div className="relative w-[200px] left-[85%]">
                 <p className="text-dark_text text-5xl  my-[90%] ">MEP & FP</p>
               </div>
             </div>
-          </div>
+          </motion.div>
           {/* MEP FP ARROW */}
-          <div className={showMep ? "" : "hidden"}>
+          <motion.div 
+            variants={arrow}
+            initial="hidden"
+            animate={showMep ? "visible" : ""}
+            className={showMep ? "" : "hidden"}
+          >
             <BsArrowRight className="text-white text-7xl "/>
-          </div>
+          </motion.div>
           
           {/* MEP & FP LIST */}
-          <div className={showMep ? "bg-secondary w-[575px] h-[475px] rounded-xl" : "hidden"}>
+          <motion.div 
+          variants={list}
+          initial="hidden"
+          animate={showMep ? "visible" : ""}
+          className={showMep ? "bg-secondary w-[575px] h-[475px] rounded-xl" : "hidden"}>
             <div className="absolute">
               <div className="relative w-[475px] left-[15%] my-[8%]">
                 <ul className="list-disc text-xl" >
@@ -54,24 +135,38 @@ function ServicesPage(){
                 {/* <p className="text-dark_text text-5xl  my-[90%] ">MEP & FP</p> */}
             </div>
           </div>
-          </div>
+          </motion.div>
         </div>
         {/* FACILITY SUPPORT SECTION */}
         <div className="w-screen h-full flex items-center justify-evenly p-10">
           {/* FACILITY SUPPORT NAME */}
-          <div className="bg-light_bg  w-[550px] h-[425px] rounded-xl">
+          <motion.div 
+          variants={name}
+          initia="hidden"
+          animate={showFS ? "visible" : "hidden"}
+          onClick={()=> setShowFS(!showFS)}
+          className="bg-light_bg  w-[550px] h-[425px] my-20 rounded-xl">
             <div className="absolute">
               <div className="relative w-[200px] left-[90%]">
                 <p className="text-dark_text text-5xl  my-[65%] ">Facility Support Services</p>
               </div>
             </div>
-          </div>
+          </motion.div>
           {/* FACILITY ARROW */}
-          <div>
+          <motion.div
+            variants={arrow}
+            initial="hidden"
+            animate={showFS ? "visible" : ""}
+            className={showFS ? "" : "hidden"}
+            >
             <BsArrowRight className="text-white text-7xl "/>
-          </div>
+          </motion.div>
           {/* FACILITY SUPPORT LIST */}
-          <div className="bg-secondary w-[575px] h-[475px] rounded-xl ">
+          <motion.div 
+          variants={list}
+          initial="hidden"
+          animate={showFS ? "visible" : ""}
+          className={showFS ? "bg-secondary w-[575px] h-[475px] rounded-xl" : "hidden"}>
             <div className="absolute">
               <div className="relative w-[475px] left-[15%] my-[10%]">
                 <ul className="list-disc text-xl" >
@@ -91,24 +186,38 @@ function ServicesPage(){
                 </ul>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
         {/* PROJECT MANAGEMENT & EXPEDITING SECTION */}
         <div className="w-screen h-full flex items-center justify-evenly p-10">
           {/* PROJECT MANAGEMENT & EXPEDITING NAME */}
-          <div className="bg-light_bg  w-[550px] h-[425px] rounded-xl">
+          <motion.div 
+          variants={name}
+          initia="hidden"
+          animate={showPM ? "visible" : "hidden"}
+          onClick={()=> setShowPM(!showPM)}
+          className="bg-light_bg  w-[550px] h-[425px] rounded-xl my-20">
             <div className="absolute">
               <div className="relative left-[50%] ">
                 <p className="text-dark_text text-5xl w-[300px] my-[40%] ">Project Management & Expediting Services</p>
               </div>
             </div>
-          </div>
+          </motion.div>
           {/* PROJECT MANAGEMENT ARROW */}
-          <div>
+          <motion.div
+            variants={arrow}
+            initial="hidden"
+            animate={showPM ? "visible" : ""}
+            className={showPM ? "" : "hidden"}
+          >
             <BsArrowRight className="text-white text-7xl "/>
-          </div>
+          </motion.div>
           {/* FACILITY SUPPORT LIST */}
-          <div className="bg-secondary w-[575px] h-[475px] rounded-xl ">
+          <motion.div
+          variants={list}
+          initial="hidden"
+          animate={showPM ? "visible" : ""}
+          className={showPM ? "bg-secondary w-[575px] h-[475px] rounded-xl " : "hidden"}>
             <div className="absolute">
               <div className="relative w-[475px] left-[15%] my-[15%]">
             <ul className="list-disc text-xl" >
@@ -127,9 +236,9 @@ function ServicesPage(){
             </ul>
           </div>
           </div>
-          </div>
+          </motion.div>
         </div>
-      </div>
+      </motion.div>
       
       
 
