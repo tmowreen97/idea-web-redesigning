@@ -81,18 +81,18 @@ function CulturePage(){
       
       
       <div className="flex justify-center items-center p-5  md:pb-20 tracking-wider">
-        <div className="culture__parent justify-center py-10 md:mx-[10%] md:grid flexbox">
+        <div className="culture__parent justify-center py-10 mx-[8%] 2xl:mx-[25%] md:grid flexbox">
           <div className="culture__child1 md:p-10 p-5 flex bg-secondary/40 rounded-xl">
             <div>
-              <h1 className="md:text-[300%] px-5 pt-5 text-primary_text font-light ">IDEA HOSTS MIAMI BBQ</h1>
-              <h2 className=" ml-6  text-primary_text text-2xl font-light ">1</h2>
+              <h1 className="md:text-[300%] px-5 pt-5 text-primary_text font-light ">IDEA Hosts 2 Year BBQ</h1>
+              <h2 className=" ml-6  text-primary_text text-2xl font-light ">DATE</h2>
               <h2 className=" ml-6 mb-8 text-primary_text text-2xl font-light ">Nancy Karim</h2>
               <div className="flex items-center justify-center mb-8">
                 <Image src={'/assets/filler-3.jpg'} width={500} height={300} className="rounded-xl overflow-hidden"/>
               </div>
               <div className="mx-8 text-lg" >
                 <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Celebrating 2 Remarkable Years: A Fusion BBQ Extravaganza! Our 2-year anniversary marked a splendid occasion as we united the dedicated forces of MSC, Fincentari, and IDEA for a memorable Company BBQ. Orchestrated meticulously by the Marketing team, the event boasted an inviting ambiance, complemented by the culinary creations of our in-house engineering talents turned BBQ maestros. This harmonious collaboration embodies our unwavering commitment to excellence and the spirit of collaboration. Cheers to sharing in this journey of success!  
                 </p>
 
               </div>
@@ -100,7 +100,7 @@ function CulturePage(){
           </div>
           <div className="culture__child2 md:p-10 p-5 mt-5 md:mt-0 flex bg-secondary/40 rounded-xl">
           <div>
-              <h1 className="md:text-[300%] px-5 pt-5 text-primary_text font-light ">IDEA HOSTS ...</h1>
+              <h1 className="md:text-[300%] px-5 pt-5 text-primary_text font-light ">EEFI UPDATE</h1>
               <h2 className=" ml-6 text-primary_text text-2xl font-light ">2</h2>
               <h2 className=" ml-6 mb-8 text-primary_text text-2xl font-light ">Nancy Karim</h2>
               <div className="flex items-center justify-center mb-8">
@@ -117,7 +117,7 @@ function CulturePage(){
           {/* <div className="row-border"/> */}
           <div className="culture__child3 md:p-10 p-5 mt-5 md:mt-0 flex bg-secondary/40 rounded-xl">
           <div>
-              <h1 className="md:text-[300%] px-5 pt-5 text-primary_text font-light">IDEA HOSTS ... </h1>
+              <h1 className="md:text-[300%] px-5 pt-5 text-primary_text font-light">MSC UPDATE </h1>
               <h2 className=" ml-6  text-primary_text text-2xl font-light">3</h2>
               <h2 className=" ml-6 mb-8 text-primary_text text-2xl font-light tracking-wide">Nancy Karim</h2>
               <div className="flex items-center justify-center mb-5">
@@ -131,18 +131,17 @@ function CulturePage(){
               </div>
             </div>
           </div>
-          <div className="culture__child4 md:p-10 p-5 mt-5 md:mt-0 flex bg-secondary/40 rounded-xl">
+          <div className="culture__child4 md:p-10 p-5 mt-5 md:mt-0 flex bg-secondary/40 rounded-xl h-full">
           <div>
-              <h1 className="md:text-5xl px-5 pt-5 text-primary_text font-light">Vinoo is Promoted to Principal! </h1>
-              <h2 className=" ml-6  text-primary_text text-2xl font-light tracking-wide">April 5, 2022</h2>
+              <h1 className="md:text-5xl px-5 pt-5 text-primary_text font-light">INTERNS </h1>
+              <h2 className=" ml-6  text-primary_text text-2xl font-light tracking-wide">DATE</h2>
               <h2 className=" ml-6 mb-8 text-primary_text text-2xl font-light tracking-wide">Nancy Karim</h2>
               <div className="flex items-center justify-center mb-5">
-                <Image src={'/assets/vinoo_promoted.png'} width={500} height={300} className="rounded-xl overflow-hidden"/>
+                <Image src={'/assets/interns.jpeg'} width={500} height={300} className="rounded-xl overflow-hidden"/>
               </div>
               <div className="mx-8 text-lg">
                 <p>
-                On April 5, 2022 Vinoo Jankie, PE, RCDD was Appointed and Promoted to a Principal of the firm. Vinoo empowers IDEA’s initiatives with a diverse engineering portfolio. He has successfully completed various large scale and complex Electrical and Low Voltage engineering engagements. Vinoo will help build and lead IDEA’s Electrical and Low Voltage Inter-Disciplinary disciplines.
-
+                Celebrating a fantastic summer with our talented interns! Raiyan, Abrar, and Preo have been rocking their 3rd year interning journey at IDEA. Their passion and dedication have truly made a mark on our interdisciplinary engineering projects. Here's to a summer of growth and innovation! 
                 </p>
 
               </div>
@@ -165,6 +164,23 @@ function CulturePage(){
             </div>
           </div>
           <div className="culture__child6 md:p-10 p-5 mt-5 md:mt-0 flex bg-secondary/40 rounded-xl">
+          <div>
+              <h1 className="md:text-5xl px-5 pt-5 text-primary_text font-light">Vinoo is Promoted to Principal! </h1>
+              <h2 className=" ml-6  text-primary_text text-2xl font-light tracking-wide">April 5, 2022</h2>
+              <h2 className=" ml-6 mb-8 text-primary_text text-2xl font-light tracking-wide">Nancy Karim</h2>
+              <div className="flex items-center justify-center mb-5">
+                <Image src={'/assets/vinoo_promoted.png'} width={500} height={300} className="rounded-xl overflow-hidden"/>
+              </div>
+              <div className="mx-8 text-lg">
+                <p>
+                On April 5, 2022 Vinoo Jankie, PE, RCDD was Appointed and Promoted to a Principal of the firm. Vinoo empowers IDEA’s initiatives with a diverse engineering portfolio. He has successfully completed various large scale and complex Electrical and Low Voltage engineering engagements. Vinoo will help build and lead IDEA’s Electrical and Low Voltage Inter-Disciplinary disciplines.
+
+                </p>
+
+              </div>
+            </div>
+          </div>
+          <div className="culture__child7 md:p-10 p-5 mt-5 md:mt-0 flex bg-secondary/40 rounded-xl">
           <div>
               <h1 className="md:text-[300%] px-5 pt-5 text-primary_text font-light tracking-wide">MSC Groundbreaking </h1>
               <h2 className=" ml-6  text-primary_text text-2xl font-light tracking-wide">March 10, 2022</h2>
@@ -194,7 +210,7 @@ function CulturePage(){
               </div>
             </div>
           </div>
-          <div className="culture__child7 md:p-10 p-5 mt-5 md:mt-0  bg-secondary/40 rounded-xl">
+          <div className="culture__child8 md:p-10 p-5 mt-5 md:mt-0  bg-secondary/40 rounded-xl h-[90%]">
           <div>
               <h1 className="md:text-[300%] px-5 pt-5 text-primary_text font-light tracking-wide">IDEA is Founded </h1>
               <h2 className=" ml-6  text-primary_text text-2xl font-light tracking-wide">April 5, 2021</h2>
