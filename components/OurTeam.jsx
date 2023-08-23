@@ -9,59 +9,30 @@ import AnimatedText from "./AnimatedText";
 
 function OurTeam (){
 
-
-  const textContainer = {
-      hidden: { opacity: 0 },
-      visible: (i = 1) => ({
-        opacity: 1,
-        transition: { staggerChildren: 0.12, delayChildren: 0.04 * i },
-      }),
-    };
-
-    const textChild = {
-      visible: {
-        opacity: 1,
-        x: 0,
-        transition: {
-          type: "spring",
-          damping: 12,
-          stiffness: 100,
-        },
-      },
-      hidden: {
-        opacity: 0,
-        x: 20,
-        transition: {
-          type: "spring",
-          damping: 12,
-          stiffness: 100,
-        },
-      },
-    };
-
     const words = "Manifesting World Class Ideas"
 
   const main_team = [
     {
       name: 'Kazi Karim',
-      title: 'Meet Our Managing Principal, Kazi Karim.',
-      heading: 'Engineering Vision into Reality',
+      title: 'Introducing Kazi: Our Visionary Founder & Managing Principal',
+      heading: '',
       body: [
-        "As the Managing Principal, Kazi spearheads the strategic growth of Inter-Disciplinary Engineering Associates, LLC (IDEA), driving excellence in integrated Mechanical, Electrical (including Fire Alarm), Plumbing, and Fire Protection engineering (MEP-FP) practices. With an extensive background in Design and Forensics engineering, Kazi's expertise equips him to navigate and excel in intricate and demanding projects.",
-        "His roles as a project manager and lead engineer have seen him successfully guide the design and construction of multiple sustainable LEED-certified facilities across a spectrum of sectors. From performance art centers and museums to historical buildings, high-rise residences, and more, Kazi's portfolio speaks volumes of his meticulous approach and adaptability.",
-        "Kazi's mastery in project management, design development, and construction administration has led to the successful completion of numerous large-scale projects nationwide. His adeptness encompasses a range of complex MEP-FP projects, including electrical system designs for both normal and emergency power, intricate lighting control systems, fire alarm setups, and low-voltage systems.Prior to IDEA, Kazi's journey included impactful roles at AltieriSeborWieber LCC (Altieri) and DeSimone Consulting Engineers (New York), LLC. With a wealth of professional experience, Kazi continues to drive innovation and excellence, translating engineering visions into tangible accomplishments."
+        "At the helm of Inter-Disciplinary Engineering Associates, LLC (IDEA) stands Kazi, the visionary Founder & Managing Principal. His leadership fuels the strategic growth of IDEA's integrated Mechanical, Electrical (including Fire Alarm), Plumbing, and Fire Protection (MEP-FP) engineering practice. Drawing from an extensive portfolio of Design and Forensics engineering expertise, Kazi is uniquely experienced to lead and accommodate complex and demanding project engagements.",
+        "Prior to founding IDEA, Kazi's journey included impactful roles at prominent engineering establishments including AltieriSeborWieber LLC (Altieri) and DeSimone Consulting Engineers, LLC (New York). With a wealth of diverse professional experience and knowledge, Kazi continues to drive innovation and excellence, translating engineering visions into tangible accomplishments and developments for the Architectural Engineering industry."
       ],
+      fun_fact: "Kazi is an enthusiastic sports fan, always willing to hit the field or harwood (football & basketball) for a good competitive workout. His experience as a College and High-School Quarterback empowers Kazi to joyfully Quarterback the growth and development of IDEA.",
       image: '/assets/profile-pic.webp'
     },
     {
       name: 'Vinoo Jankie',
-      title: 'Meet Vinoo Jankie.',
-      heading: "An instrumental figure at IDEA LLC.",
+      title: 'Introducing Vinoo, an instrumental figure at Inter-Disciplinary Engineering Associates, LLC (IDEA).',
+      heading: "",
       body:[
-        "As the Principal and Electrical Department Lead, Vinoo spearheads overall client engagement, ensuring a  seamless experience for all opportunities. His extensive experience as a Lead Electrical Engineer is exemplified by his successful contributions to numerous large-scale and intricate projects, including his notable role in completing the Glenstone Museum Complex in Potomac, MD during his prior engagement.",
-        "Vinoo brings a wealth of Professional Engineering licensure and experience, enriching our team's capabilities in detailed large-scale Electrical, Fire Alarm, Lighting Controls, and Low Voltage (Information Technology, Security, Audio/Visual, etc.) system design. His expertise spans various industry sectors such as high-rise residential, mission-critical facilities, industrial spaces, and cultural institutions. This versatility equips Vinoo to seamlessly manage projects of all scales and types, with several LEED certified projects successfully serviced and completed.",
-        "As a Registered Communications Distribution Designer (RCDD) and Professional Engineer (PE), Vinoo leads IDEA's expanding Low Voltage Design offerings, including Information Technology infrastructure systems, Security Systems, and Audio/Visual Systems. Vinoo's leadership drives IDEA's success, embodying a passion for engineering excellence and innovation that propels us forward."
+        "In his role as Principal and Electrical Department Lead, Vinoo spearheads overall client engagement, ensuring a seamless experience for all opportunities.",
+        "Vinoo brings 12+ years of detailed Electrical, Fire Alarm, Lighting Controls and Low Voltage (Information Technology, Security, Audio/Visual, etc.) system design experience to our growing team. With a diverse set of project experience and expertise in multiple sectors of the industry including high-rise residential, mission critical, industrial, and cultural institutions, Vinoo is able to effectively and seamlessly service and manage projects of all scales and types. Vinoo has serviced and completed multiple LEED certified projects.",
+
       ],
+      fun_fact: "Vinoo has two kids and no time for fun",
       image: '/assets/profile-pic.webp'
     }
   ]
@@ -132,7 +103,7 @@ function OurTeam (){
         </div>
 
       </div>
-      <div className=" p-40 mx-auto flex flex-col items-center justify-center text-2xl">
+      <div className=" p-40 mx-auto flex flex-col items-center justify-center">
         <AnimatedText text={words}/>
       </div>
       

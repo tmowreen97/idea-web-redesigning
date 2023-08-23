@@ -46,9 +46,12 @@ function TeamList({member}){
           
         </div>
         
-        <div className=" bg-accent_1/40 rounded-xl p-4">
-        <p className="mx-2 text-secondary_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <p className="mx-2 text-secondary_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <div className=" bg-accent_1/40 rounded-xl p-4  justify-center">
+          <p className="mx-2 text-secondary_text italic">Fun Fact: </p>
+          <p className="mx-2 text-secondary_text">
+            {member.fun_fact}
+          </p>
+
 
         </div>
       </div>
