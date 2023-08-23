@@ -22,55 +22,75 @@ function ServicesPage(){
           {/* MEP & FP NAME */}
           <div className="bg-light_bg  w-[550px] h-[425px] rounded-xl">
             <div className="absolute">
-              <p className="text-dark_text text-5xl relative top-[175px] left-[170px]">MEP & FP</p>
+              <div className="relative w-[200px] left-[85%]">
+                <p className="text-dark_text text-5xl  my-[90%] ">MEP & FP</p>
+              </div>
             </div>
           </div>
+          {/* MEP FP ARROW */}
+          <div className={showMep ? "" : "hidden"}>
+            <BsArrowRight className="text-white text-7xl "/>
+          </div>
+          
           {/* MEP & FP LIST */}
-          <div className="bg-secondary pl-5  ">
-            <ul className="list-disc" >
-              <li>Mechanical (HVAC) Design</li>
-              <li>Electrical Design</li>
-              <li>Plumbing Design</li>
-              <li>Fire Protection / Fire Suppression System Design</li>
-              <li>Fire Alarm System Design</li>
-              <li>Lighting & Lighting Control Design</li>
-              <li>Peer Review</li>
-              <li>Due-Diligence Studies</li>
-              <li>Existing Condition Assessments and Studies</li>
-              <li>Energy Modeling</li>
-              <li>Short circuit, Selective Coordination, and Arc Flash Studies</li>
-              <li>Construction Administration</li>
-              <li>Project Management</li> 
-            </ul>
-            <p className="text-dark_text"></p>
+          <div className={showMep ? "bg-secondary w-[575px] h-[475px] rounded-xl" : "hidden"}>
+            <div className="absolute">
+              <div className="relative w-[475px] left-[15%] my-[8%]">
+                <ul className="list-disc text-xl" >
+                  <li>Mechanical (HVAC) Design</li>
+                  <li>Electrical Design</li>
+                  <li>Plumbing Design</li>
+                  <li>Fire Protection / Fire Suppression System Design</li>
+                  <li>Fire Alarm System Design</li>
+                  <li>Lighting & Lighting Control Design</li>
+                  <li>Peer Review</li>
+                  <li>Due-Diligence Studies</li>
+                  <li>Existing Condition Assessments and Studies</li>
+                  <li>Energy Modeling</li>
+                  <li>Short circuit, Selective Coordination, and Arc Flash Studies</li>
+                  <li>Construction Administration</li>
+                  <li>Project Management</li> 
+                </ul>
+                {/* <p className="text-dark_text text-5xl  my-[90%] ">MEP & FP</p> */}
+            </div>
+          </div>
           </div>
         </div>
         {/* FACILITY SUPPORT SECTION */}
         <div className="w-screen h-full flex items-center justify-evenly p-10">
           {/* FACILITY SUPPORT NAME */}
           <div className="bg-light_bg  w-[550px] h-[425px] rounded-xl">
-          <div className="absolute">
-              <p className="text-dark_text text-5xl relative top-[125px] left-[175px] w-[300px] ">Facility Support Services</p>
+            <div className="absolute">
+              <div className="relative w-[200px] left-[90%]">
+                <p className="text-dark_text text-5xl  my-[65%] ">Facility Support Services</p>
+              </div>
             </div>
           </div>
+          {/* FACILITY ARROW */}
+          <div>
+            <BsArrowRight className="text-white text-7xl "/>
+          </div>
           {/* FACILITY SUPPORT LIST */}
-          <div className="bg-secondary pl-5">
-            <ul className="list-disc" >
-              <li>MEP-FP System Upgrades</li>
-              <li>Code Compliance/Upgrades</li>
-              <li>Efficiency/Energy Use Evaluations</li>
-              <li>Building Management/Automation System Upgrades</li>
-              <li>Oil To Gas/Steam Conversion</li>
-              <li>Boiler Replacement</li>
-              <li>Exhaust System Upgrades</li>
-              <li>Condensation/Humidification/Dehumidification Issues</li>
-              <li>Code Compliance Upgrades For Normal and Emergency Lighting</li>
-              <li>Code Compliance Upgrades For Lighting Controls</li>
-              <li>Fire Alarm System Upgrades</li>
-              <li>AS-BUILT Documentation</li>
-              <li>Existing Conditions Documentation</li>
-            </ul>
-            <p className="text-dark_text"></p>
+          <div className="bg-secondary w-[575px] h-[475px] rounded-xl ">
+            <div className="absolute">
+              <div className="relative w-[475px] left-[15%] my-[10%]">
+                <ul className="list-disc text-xl" >
+                  <li>MEP-FP System Upgrades</li>
+                  <li>Code Compliance/Upgrades</li>
+                  <li>Efficiency/Energy Use Evaluations</li>
+                  <li>Building Management/Automation System Upgrades</li>
+                  <li>Oil To Gas/Steam Conversion</li>
+                  <li>Boiler Replacement</li>
+                  <li>Exhaust System Upgrades</li>
+                  <li>Condensation/Humidification/Dehumidification Issues</li>
+                  <li>Code Compliance Upgrades For Normal and Emergency Lighting</li>
+                  <li>Code Compliance Upgrades For Lighting Controls</li>
+                  <li>Fire Alarm System Upgrades</li>
+                  <li>AS-BUILT Documentation</li>
+                  <li>Existing Conditions Documentation</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
         {/* PROJECT MANAGEMENT & EXPEDITING SECTION */}
@@ -78,12 +98,20 @@ function ServicesPage(){
           {/* PROJECT MANAGEMENT & EXPEDITING NAME */}
           <div className="bg-light_bg  w-[550px] h-[425px] rounded-xl">
             <div className="absolute">
-              <p className="text-dark_text text-5xl relative top-[115px] left-[125px] w-[300px] ">Project Management & Expediting Services</p>
+              <div className="relative left-[50%] ">
+                <p className="text-dark_text text-5xl w-[300px] my-[40%] ">Project Management & Expediting Services</p>
+              </div>
             </div>
           </div>
+          {/* PROJECT MANAGEMENT ARROW */}
+          <div>
+            <BsArrowRight className="text-white text-7xl "/>
+          </div>
           {/* FACILITY SUPPORT LIST */}
-          <div className="bg-secondary pl-5 ">
-            <ul className="list-disc" >
+          <div className="bg-secondary w-[575px] h-[475px] rounded-xl ">
+            <div className="absolute">
+              <div className="relative w-[475px] left-[15%] my-[15%]">
+            <ul className="list-disc text-xl" >
               <li>Design Management</li>
               <li>Construction Management</li>
               <li>Project Coordination</li>
@@ -97,7 +125,8 @@ function ServicesPage(){
               <li>Due-Diligence Studies</li>
               <li>Existing Condition Assessments and Studies</li>
             </ul>
-            <p className="text-dark_text"></p>
+          </div>
+          </div>
           </div>
         </div>
       </div>
