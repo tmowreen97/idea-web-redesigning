@@ -5,10 +5,10 @@ import Image from "next/image";
 
 export default function Footer(){
   return(
-    <div id='footer' className="w-full md:h-[480px]  bg-secondary ">
+    <div id='footer' className="w-full md:h-[500px]  bg-secondary ">
       <div className="flex items-center justify-center pt-[50px]">
         <div className=" md:grid md:grid-cols-2 flexbox justify-evenly text-dark_text tracking-wide">
-          <div className="items-center justify-between text-2xl font-light flex" >
+          <div className="items-center justify-between text-2xl font-light flex " >
           <div className="bg-secondary/70  rounded-xl  text-center ">
             <div className="my-1">
               <Image src={'/assets/clip-1.png'} width={70} height={70}/>
@@ -23,17 +23,22 @@ export default function Footer(){
               <Image src={'/assets/clip-4.png'} width={65} height={65}/>
             </div>
           </div>
-          <div className="">
-            <div className="md:mb-[115px]">
-               <div className="flex ">
+          <div className="mb-10">
+            <div className="md:mb-[30px]">
+               <div className="flex pt-8">
                   <h1 className="text-7xl">IDEA</h1>
                   <h1 className="pl-2 pt-7 text-2xl">AEC</h1>
                 </div>
-              <h1 className="">Inter-Disciplinary Engineering Associates,</h1>
-              <h1 className="">Architectural Engineering Consultants LLC</h1>
+                <div className="pt-5">
+                  <h1 className="">Inter-Disciplinary Engineering Associates,</h1>
+                  <h1 className="">Architectural Engineering Consultants LLC</h1>
+                </div>
+              
             </div>
-            <div className="mb-[5px]">
-              <p className="text-lg text-dark_text">Monroe, Connecticut | Miami, Florida</p>
+            <div className="mb-[30px]">
+              <p className="text-xl text-dark_text">Monroe, Connecticut | Miami, Florida</p>
+            </div>
+            <div>
               <p className="text-lg text-dark_text">Info@IdeaAEC.com</p>
               <p className="text-lg text-dark_text">FL: 954-295-2125</p>
               <p className="text-lg text-dark_text">CT: 203-917-7907</p>
@@ -42,9 +47,9 @@ export default function Footer(){
           </div>
             
           </div>
-          <div className="md:ml-[160px] md:w-[450px]" >
+          <div className="md:ml-[160px] md:w-[450px] h-[95%] mt-5" >
           <div className="bg-dark_bg/60  md:h-[290px]   rounded-xl ">
-            <div className="items-center justify-center pb-5">
+            <div className="items-center justify-center">
               <form 
               className="text-center pt-2 items-center justify-center"
               action="https://formsubmit.co/nabila@ideaaec.com" 
@@ -124,7 +129,7 @@ export default function Footer(){
         
         
       </div>
-      <div className="flex items-center justify-center">
+      <div className="flex items-center justify-center mb-5">
           <p className="text-sm text-dark_text" >© 2023 by IDEA AEC LLC</p>
         </div>
     </div>

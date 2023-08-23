@@ -21,7 +21,7 @@ function ProjectPortfolio({ projects, category }){
       <motion.div 
       initial={{opacity:0}}
       animate={{opacity:1, transition:{delay:1, duration:1}}}
-      className="p-20">
+      className="px-20 pt-20 pb-10">
         <h1 className="md:text-[1100%] text-5xl font-thin text-primary_text text-left tracking-wide">Portfolio</h1>
       </motion.div>
       <div className="items-center justify-center">
@@ -72,7 +72,7 @@ function ProjectPortfolio({ projects, category }){
         className="flex justify-start mx-20">
           <div className='relative'>
             {/* <label className="text-2xl text-secondary_text mr-2 ">Select a Category:</label> */}
-            <button onClick={()=> {setShowDropDown(!showDropDown)}}  data-dropdown-toggle="dropdown" className="relative text-2xl justify-between w-[250px] bg-button_bg/30 hover:bg-secondary/70 focus:ring-4 focus:outline-none focus:ring-secondary_text font-medium rounded-lg  py-2 mt-2 ml-2 inline-flex items-center text-secondary_text" type="button">
+            <button onClick={()=> {setShowDropDown(!showDropDown)}}  data-dropdown-toggle="dropdown" className="relative text-xl justify-between w-[250px] bg-button_bg/30 hover:bg-secondary/70 focus:ring-4 focus:outline-none focus:ring-secondary_text font-medium rounded-lg  py-2  ml-2 inline-flex items-center text-secondary_text" type="button">
               <p className='mx-2'>{category}</p>
               <motion.p 
               animate={{y:[-1,2,2,-1]}}
@@ -84,7 +84,7 @@ function ProjectPortfolio({ projects, category }){
                 { showDropDown ? <BsChevronCompactUp/> : <BsChevronCompactDown/>}
               </motion.p>
             </button>
-            <div id="dropdown" className={ showDropDown ? "z-10 absolute right-0 md:w-[150px] bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 text-center": "hidden"}>
+            <div id="dropdown" className={ showDropDown ? "z-10 absolute right-0 md:w-[180px] bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 text-center": "hidden"}>
               <ul className="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
                 <li>
                   <a href="/portfolio" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">Select A Sector</a>
@@ -114,7 +114,7 @@ function ProjectPortfolio({ projects, category }){
                   <a href="/portfolio/high-rise" className="block px-4 py-2 hover:bg-accent_2/80 hover:text-white">High-Rise</a>
                 </li>
                 <li>
-                  <a href="/portfolio/residential" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">Residential</a>
+                  <a href="/portfolio/high-end-residential" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">High-End Residential</a>
                 </li>
                 <li>
                   <a href="/portfolio/transportation" className="block px-4 py-2 hover:bg-accent_2/80 hover:text-white ">Transportation</a>

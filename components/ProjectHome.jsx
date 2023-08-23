@@ -19,7 +19,7 @@ function ProjectHome(){
     {
       id:2,
       name: 'East End Food Hub - East End Food Institute (EEFI)',
-      image: '/assets/projects/Khair.jpg',
+      image: '/assets/project-home/eefi-exterior.png',
       location:"Riverhead, NY",
       sector: "Institutional",
       year: "2023 (Construction Completion)",
@@ -31,7 +31,7 @@ function ProjectHome(){
       location: "Great Harbor Cay, Bahamas",
       year: "2024 (Construction Completion)",
       sector: "High-End Residential",
-      image: '/assets/projects/johnson-res.jpg',
+      image: '/assets/project-home/johnson-res-home.jpg',
       desc: "High-end residence consisting of two separate single-story glass enveloped structures located in the Bahamas.",
     }
   ]
@@ -78,7 +78,7 @@ function ProjectHome(){
             <a href="/portfolio/mixed-use" className="block px-4 py-2 hover:bg-accent_2/80 hover:text-white">Mixed-Use</a>
           </li>
           <li>
-            <a href="/portfolio/residential" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">Residential</a>
+            <a href="/portfolio/high-end-residential" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">High-End Residential</a>
           </li>
           <li>
             <a href="/portfolio/transportation" className="block px-4 py-2 hover:bg-accent_2/80 hover:text-white ">Transportation</a>
@@ -111,15 +111,26 @@ function ProjectHome(){
           </div> */}
         </div>
         <div className="projecthome__child2 p-10 bg-secondary/50 rounded-xl md:w-[450px] md:m-0 m-4">
-          <h2 className="">{projects[projectSelect].name}</h2>
-          <p className="tracking-wider mx-2">{projects[projectSelect].location}</p>
-          <p className="tracking-wider mx-2">{projects[projectSelect].year}</p>
-          <p className="tracking-wider mx-2">{projects[projectSelect].desc}</p>
-          <div className="mt-[5%] mb-5 text-center ">
+          <div className="absolute w-[380px] min-h-[450px]">
+            <div>
+              <h2 className="text-4xl m-2">{projects[projectSelect].name}</h2>
+              <div className="m-3">
+                <h3 className="tracking-wider text-xl text-secondary_text">{projects[projectSelect].location}</h3>
+                <h3 className="tracking-wider text-xl text-secondary_text">{projects[projectSelect].year}</h3>
+              </div>
+              
+              <p className="tracking-wider m-3">{projects[projectSelect].desc}</p>
+            </div>
+            <div className=" text-center absolute bottom-0 left-[15%]">
             <Link href={'/portfolio'}>
-              <button className="inline-block rounded-xl bg-secondary_text text-dark_text p-3 px-4 font-normal hover:drop-shadow-xl hover:bg-accent_2/80 hover:text-secondary_text  tracking-wider">Learn More on our Portfolio</button>
+              <button className="inline-block rounded-xl bg-secondary_text text-dark_text p-3 px-4 font-normal hover:drop-shadow-xl hover:bg-accent_2/80 hover:text-secondary_text  tracking-wider">Learn More on Our Portfolio</button>
             </Link>
+            </div>
+            
           </div>
+          
+          
+          
           {/* <h1 className="text-4xl">Our Story</h1>
           <p className="tracking-wider">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p> */}
         </div>

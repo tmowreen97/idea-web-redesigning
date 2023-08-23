@@ -1,7 +1,7 @@
 import Navbar from "@/components/Navbar"
 import ProjectPortfolio from "@/components/ProjectPortfolio"
 
-export default function Residential(){
+export default function HighEndResidential(){
   const projects = [
     {
       name: 'MSC Miami Cruise Terminal',
@@ -54,7 +54,7 @@ export default function Residential(){
       location: 'Great Harbor Cay, Bahamas',
       heading: 'High End Residential',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-      image: '/assets/projects/JOHNSON RES.jpg',
+      image: '/assets/projects/johnson-res.jpg',
       width: '700',
       height: '500'
     },
@@ -98,7 +98,7 @@ export default function Residential(){
   return(
     <div>
       <Navbar lightLogo={true}/>
-      <ProjectPortfolio projects={projects} category={'Residential'}/>
+      <ProjectPortfolio projects={projects} category={'High-End Residential'}/>
     </div>
   )
 }
