@@ -48,13 +48,14 @@ function ServicesPage(){
   }
 
   const arrow = {
-    hidden:{ opacity:0 },
+    hidden:{ opacity:1 },
     visible: {
-      opacity: 1,
-      
+      x: [0,8,5,0],
       transition: {
         delay: .5,
         duration: .5,
+        repeat: Infinity,
+        repeatDelay: 1
       }
     }
   }
@@ -91,7 +92,7 @@ function ServicesPage(){
           initia="hidden"
           animate={showMep ? "visible" : "hidden"}
           onClick={()=> setShowMep(!showMep)}
-          className="bg-light_bg  w-[550px] h-[425px] my-20 rounded-xl"
+          className="bg-light_bg  w-[550px] h-[425px] my-20 rounded-xl hover:cursor-pointer hover:bg-secondary"
           >
             <div className="absolute">
               <div className="relative w-[200px] left-[85%]">
@@ -114,7 +115,7 @@ function ServicesPage(){
           variants={list}
           initial="hidden"
           animate={showMep ? "visible" : ""}
-          className={showMep ? "bg-secondary w-[575px] h-[475px] rounded-xl" : "hidden"}>
+          className={showMep ? "bg-light_bg/80 w-[575px] h-[475px] rounded-xl" : "hidden"}>
             <div className="absolute">
               <div className="relative w-[475px] left-[15%] my-[8%]">
                 <ul className="list-disc text-xl" >
@@ -145,7 +146,7 @@ function ServicesPage(){
           initia="hidden"
           animate={showFS ? "visible" : "hidden"}
           onClick={()=> setShowFS(!showFS)}
-          className="bg-light_bg  w-[550px] h-[425px] my-20 rounded-xl">
+          className="bg-light_bg  w-[550px] h-[425px] my-20 rounded-xl hover:cursor-pointer hover:bg-secondary">
             <div className="absolute">
               <div className="relative w-[200px] left-[90%]">
                 <p className="text-dark_text text-5xl  my-[65%] ">Facility Support Services</p>
@@ -166,7 +167,7 @@ function ServicesPage(){
           variants={list}
           initial="hidden"
           animate={showFS ? "visible" : ""}
-          className={showFS ? "bg-secondary w-[575px] h-[475px] rounded-xl" : "hidden"}>
+          className={showFS ? "bg-light_bg/80 w-[575px] h-[475px] rounded-xl" : "hidden"}>
             <div className="absolute">
               <div className="relative w-[475px] left-[15%] my-[10%]">
                 <ul className="list-disc text-xl" >
@@ -196,7 +197,7 @@ function ServicesPage(){
           initia="hidden"
           animate={showPM ? "visible" : "hidden"}
           onClick={()=> setShowPM(!showPM)}
-          className="bg-light_bg  w-[550px] h-[425px] rounded-xl my-20">
+          className="bg-light_bg  w-[550px] h-[425px] rounded-xl my-20 hover:cursor-pointer hover:bg-secondary">
             <div className="absolute">
               <div className="relative left-[50%] ">
                 <p className="text-dark_text text-5xl w-[300px] my-[40%] ">Project Management & Expediting Services</p>
@@ -217,7 +218,7 @@ function ServicesPage(){
           variants={list}
           initial="hidden"
           animate={showPM ? "visible" : ""}
-          className={showPM ? "bg-secondary w-[575px] h-[475px] rounded-xl " : "hidden"}>
+          className={showPM ? "bg-light_bg/80 w-[575px] h-[475px] rounded-xl " : "hidden"}>
             <div className="absolute">
               <div className="relative w-[475px] left-[15%] my-[15%]">
             <ul className="list-disc text-xl" >

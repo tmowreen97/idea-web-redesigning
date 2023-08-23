@@ -21,7 +21,7 @@ function OurTeam (){
         "Prior to founding IDEA, Kazi's journey included impactful roles at prominent engineering establishments including AltieriSeborWieber LLC (Altieri) and DeSimone Consulting Engineers, LLC (New York). With a wealth of diverse professional experience and knowledge, Kazi continues to drive innovation and excellence, translating engineering visions into tangible accomplishments and developments for the Architectural Engineering industry."
       ],
       fun_fact: "Kazi is an enthusiastic sports fan, always willing to hit the field or harwood (football & basketball) for a good competitive workout. His experience as a College and High-School Quarterback empowers Kazi to joyfully Quarterback the growth and development of IDEA.",
-      image: '/assets/profile-pic.webp'
+      image: '/assets/KK.jpg'
     },
     {
       name: 'Vinoo Jankie',
@@ -33,7 +33,7 @@ function OurTeam (){
 
       ],
       fun_fact: "Vinoo has two kids and no time for fun",
-      image: '/assets/profile-pic.webp'
+      image: '/assets/VJ.jpg'
     }
   ]
 
@@ -82,15 +82,21 @@ function OurTeam (){
 
   return(
     <div className="w-screen h-full items-center text-center justify-center bg-primary">
-      <div className="p-20">
+      <motion.div 
+      initial={{opacity:0}}
+      animate={{opacity:1, transition:{delay:1 , duration:1}}}
+      className="p-20">
         <h1 className="md:text-[1100%] text-8xl font-thin text-primary_text text-left tracking-wide">Our Team</h1>
-      </div>
-      <div className="">
+      </motion.div>
+      <motion.div
+      initial={{opacity:0}}
+      animate={{opacity:1, transition:{delay:1.5 , duration:1}}}
+      className="">
         <div className="md:grid grid-cols-1 md:gap-20 md:mx-20 mt-10">
           {
             main_team.map((member)=> {
               return(
-                <div key={member.name}>
+                <div key={member.title}>
                   <TeamList member={member}/>
                 </div>
                 
@@ -102,11 +108,11 @@ function OurTeam (){
 
         </div>
 
-      </div>
+      
       <div className=" p-40 mx-auto flex flex-col items-center justify-center">
         <AnimatedText text={words}/>
       </div>
-      
+      </motion.div>
       
       {/* <motion.div 
       style={{ overflow: "hidden", display: "flex", fontSize: "2rem" }}

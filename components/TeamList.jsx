@@ -11,7 +11,7 @@ function TeamList({member}){
         <div className="relative" onMouseEnter={()=> setShowDetails(true)} onMouseLeave={()=> setShowDetails(false)}>
           <Image src={member.image} width={600} height={600} alt={'lead_team'}/>
           {showDetails ? <div className="absolute top-0 bottom-0 left-0 right-0 bg-dark_bg/90">
-            <div className="flex text-white my-[45%] justify-evenly text-lg ">
+            <div className="flex text-white my-[65%] justify-evenly text-lg ">
               <Link href="https://www.linkedin.com/company/idea-aec/" legacyBehavior className="my-[50%]">
                 <a target="_blank" rel="noopener noreferrer">
                   <button className="bg-button_bg rounded-xl p-3">Resume</button>
@@ -35,9 +35,9 @@ function TeamList({member}){
             <h2 className="text-2xl">{member.heading}</h2>
           </div>
           <div>
-            {member.body.map((body_text)=> {
+            {member.body.map((body_text, index)=> {
               return(
-                 <p key={member.name} className="m-4 text-secondary_text">{body_text}</p>
+                 <p key={index} className="m-4 text-secondary_text">{body_text}</p>
               )
              
             })}
