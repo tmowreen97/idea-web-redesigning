@@ -132,7 +132,7 @@ function OurTeam (){
         </div>
 
       </div>
-      <div className="container h-screen mx-auto flex flex-col items-center justify-center">
+      <div className=" p-40 mx-auto flex flex-col items-center justify-center text-2xl">
         <AnimatedText text={words}/>
       </div>
       
