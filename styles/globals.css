@@ -43,14 +43,14 @@ polyline {
 
   .about__parent{
     grid-template-columns: .5fr repeat(3, 1fr);
-    grid-template-rows: .5fr repeat(2, 1fr);
+    grid-template-rows: .25fr repeat(2, .5fr);
     grid-row-gap: 2px;
-    grid-column-gap:10px;
+    grid-column-gap:95px;
 
   }
   .about__title { grid-area: 1 / 1 / 2 / 2; }
   .about__child1 { grid-area: 2 / 1 / 4 / 2; }
-  .about__child2 { grid-area : 1 / 2 / 3 / 4; }
+  .about__child2 { grid-area : 2 / 2 / 3 / 4; }
   .about__img { grid-area : 3 / 2 / 4 / 4; }
   /* .about__parent {
     grid-template-columns: 2fr repeat(4, 1fr);
