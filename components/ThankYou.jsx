@@ -8,49 +8,51 @@ import { motion } from "framer-motion";
 function ThankYou(){
   return(
     <div className="w-screen h-full bg-primary font-light">
-      <div className="p-20">
+      <motion.div 
+      initial={{opacity:0}}
+      animate={{opacity:1, transition:{duration:2, delay:1} }}
+      className="p-20">
         <h1 className="md:text-[1100%] text-5xl font-thin text-primary_text text-left tracking-wide">Contact</h1>
-      </div>
+      </motion.div>
       <div className="md:grid md:grid-cols-2 items-center justify-center px-20">
         {/* col/row 1/1 area */}
         <div className=" text-xl flex rounded-xl m-3 pt-2 items-center justify-center ">
           {/* Icons on left handle */}
-          <motion.div 
-          initial={{opacity:0}}
-          animate={{opacity:1, transition:{duration:2, delay:.5} }}
-          
-          className="  rounded-xl p-4">
+          <div className="rounded-xl p-4">
             <motion.div
               initial={{opacity:0}}
-              animate={{opacity:1, transition:{duration:2, delay:1}}}
+              animate={{opacity:1, transition:{duration:2, delay:2}}}
               className="mb-2 "
             >
               <Image src={'/assets/clip-1.png'} width={84} height={82} className=""/>
             </motion.div>
             <motion.div
               initial={{opacity:0}}
-              animate={{opacity:1, transition:{duration:2, delay:1.5}}}
+              animate={{opacity:1, transition:{duration:2, delay:2.5}}}
               className="mb-2"
             >
             <Image src={'/assets/clip-2.png'} width={80} height={80}/>              
             </motion.div>
             <motion.div
               initial={{opacity:0}}
-              animate={{opacity:1, transition:{duration:2, delay:2}}}
+              animate={{opacity:1, transition:{duration:2, delay:3}}}
               className="mb-3"
             >
             <Image src={'/assets/clip-3.png'} width={80} height={80}/>              
             </motion.div>
             <motion.div
               initial={{opacity:0}}
-              animate={{opacity:1, transition:{duration:2, delay:2.5}}}
+              animate={{opacity:1, transition:{duration:2, delay:3.5}}}
             >
             <Image src={'/assets/clip-4.png'} width={82} height={82}/>              
             </motion.div>
 
-          </motion.div>
+          </div>
           {/* col/row 1/1 text */}
-          <div className="">
+          <motion.div 
+          initial={{opacity:0}}
+          animate={{opacity:1, transition:{duration:2, delay:1.5} }}
+          className="">
             <div className="pb-[75px]">
               <div className="pb-[75px]">
                 <div className="flex ">
@@ -70,20 +72,20 @@ function ThankYou(){
               <p className="text-lg">You may fill out this form, or contact us by email or phone.</p>
             </div>
             
-          </div>
+          </motion.div>
           
         </div>
         <div className="text-center justify-evenly mt-[-25px]">
           <motion.div 
           initial={{opacity:0}}
-          animate={{opacity:1, transition:{duration:2, delay:2.5}}}
+          animate={{opacity:1, transition:{duration:2, delay:1.5} }}
           className="text-2xl m-2 mx-8  p-8 bg-secondary rounded-xl text-left  items-center justify-center">
             <h1 className="">Thank you!</h1>
             <h1>We look forward to empowering your ideas.</h1>
           </motion.div>
           <motion.div 
           initial={{opacity:0}}
-          whileInView={{opacity:1, transition:{delay:3}}}
+          whileInView={{opacity:1, transition:{delay:2}}}
           className=" text-primary_text mt-10"
           >
             <div className="mr-2">
@@ -111,7 +113,10 @@ function ThankYou(){
         </div>
       </div>
       <div>
-        <div className="flex justify-evenly p-14 pb-24 rounded-xl text-primary_text/90">
+        <motion.div 
+        initial={{opacity:0}}
+        animate={{opacity:1, transition:{duration:2, delay:2.5} }}
+        className="flex justify-evenly p-14 pb-24 rounded-xl text-primary_text/90">
           <div className="bg-tertiary/80 hover:bg-accent_2/80  rounded-full p-7 text-4xl">
             <Link href="https://www.instagram.com/idea.aec/" legacyBehavior>
                 <a target="_blank" rel="noopener noreferrer">
@@ -133,7 +138,7 @@ function ThankYou(){
                 </a>
             </Link>
           </div>
-        </div>
+        </motion.div>
         
       </div>       
     </div>

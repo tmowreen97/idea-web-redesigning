@@ -45,20 +45,39 @@ export default function Footer(){
           <div className="md:ml-[160px] md:w-[450px]" >
           <div className="bg-dark_bg/60  md:h-[290px]   rounded-xl ">
             <div className="items-center justify-center pb-5">
-              <form className="text-center pt-2 items-center justify-center">
+              <form 
+              className="text-center pt-2 items-center justify-center"
+              action="https://formsubmit.co/nabila@ideaaec.com" 
+              method="POST">
                 <h2 className="text-primary_text">Contact Us</h2>
                 <div className="m-2">
                   {/* <label>Name:</label> */}
-                  <input type="name" className="md:w-[300px] w-[90%] rounded-xl text-center p-1" placeholder="Name"/>
+                  <input 
+                  type="name" 
+                  name="name"
+                  className="md:w-[300px] w-[90%] rounded-xl text-center p-1" 
+                  placeholder="Name"
+                  required/>
                 </div>
                 <div className="m-2">
                   {/* <label>Email:</label> */}
-                  <input type="email" className="md:w-[300px] w-[90%] rounded-xl text-center p-1 border-none" placeholder="Email"/>
+                  <input 
+                  type="email" 
+                  name="email"
+                  className="md:w-[300px] w-[90%] rounded-xl text-center p-1 border-none" 
+                  placeholder="Email"
+                  required/>
                 </div>
                 <div className="m-2">
                   {/* <label>Message:</label> */}
-                  <textarea type="text" className="md:w-[300px] w-[90%] rounded-xl text-center max-h-[70px] p-1 border-none" placeholder="Message"/>
+                  <textarea 
+                  type="text"
+                  name="message" 
+                  className="md:w-[300px] w-[90%] rounded-xl text-center max-h-[70px] p-1 border-none" 
+                  placeholder="Message"
+                  required/>
                 </div>
+                <input type="hidden" name="_next" value="http://localhost:3000/thank-you"/>
                 <div className="text-center items-center justify-center flex ">
                   <div className="bg-tertiary/80 hover:bg-accent_2/80 rounded-xl p-2 shadow-xl text-primary_text">
                     <button type='submit'>Send</button>
