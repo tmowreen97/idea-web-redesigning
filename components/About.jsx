@@ -28,49 +28,49 @@ const About = () => {
 // bg-[#DAD3DF]
   return (
     <div id='about' className='w-screen md:h-full bg-primary font-light'>
-      <div className=' flex items-center justify-center p-4 md:mx-[30%] pl-[10%]'>
-        <div className="about__parent md:grid flexbox items-center justify-center mt-[15%]">
-          <div className="about__title  ">
-            <h1 className="md:text-[1100%] text-8xl tracking-wider text-center font-thin text-primary_text ml-10">About</h1>
+      <div className=' flex items-center justify-center p-4 md:ml-[5%]'>
+        <div className="about__parent md:grid   mt-[5%]  md:mx-[15%] 2xl:mx-[25%]">
+          <div className="about__title mt-[5%] ">
+            <h1 className="md:text-[1100%] text-8xl tracking-wider text-center font-thin text-primary_text ">About</h1>
           </div>
-          <div className="about__child1 p-10 bg-secondary/40 rounded-xl mt-10  md:m-0 w-[118%] text-lg h-[95%]">
+          <div className="about__child1 p-8 h-full bg-secondary/40 rounded-xl md:m-0 md:text-lg 2xl:text-lg ">
             <h2 className="tracking-wider mb-10 mt-5">Our Story</h2>
-            <p className="m-2">
+            <p className="m-3 2xl:my-5">
               Founded in 2021, IDEA is a technology oriented, forward-focused Interdisciplinary MEP-FP 
               Engineering firm that thrives on innovation and collaboration. In a short period of time, our IDEAs have established ourselves as effective industry contributors and practitioners. Our expertise includes experience in various sectors including educational, mixed-use, commercial, high-end residential, institutional industrial, transportation, and cultural.
             </p>
-            <p className="m-2">
+            <p className="m-3 2xl:my-5">
               At IDEA, we believe in pushing boundaries and delivering innovative solutions that exceed expectations. Our engineering experience and portfolio is a testament to our versatility, as a growing team, our team is effectively accommodating engineering assignments on various projects of varying complexity and sizes. 
             </p>
-            <p className="m-2">
+            <p className="m-3 2xl:my-5">
               One of our notable achievements is the successful completion of the design for the MSC Miami Cruise Terminal (project is under construction, scheduled to finish late 2024). Once completed, this transportation venue will be the largest cruise terminal in the Americas.  This is a testament to our ability to service and accommodate intricate projects on a grand scale. 
             </p>
-            <p className="m-2">
+            <p className="m-3 2xl:my-5">
               As a certified Small Business Enterprise (SBE) and Minority Business Enterprise (MBE) establishment, IDEA stands as a beacon of diversity and we aim to empower all of our team members and our environment & communities. Throughout the year, IDEA offers internship programs to College and High-School engineering students as a method to empower our younger generation of future professionals.
             </p>
             
-            <div className='grid md:grid-cols-2 justify-center items-center text-center m-2 mt-[8%]'>
+            <div className='grid md:grid-cols-2 justify-center items-center text-center m-2 2xl:mt-[15%]'>
               {
                 traits.map((trait)=> {
                   return(
-                    <p key={trait} className='bg-secondary_text/90 italic rounded-xl p-2 m-2 text-dark_text'>{trait}</p>
+                    <p key={trait} className='bg-secondary_text/90 italic rounded-xl p-2 m-2 2xl:text-xl 2xl:my-4  text-dark_text'>{trait}</p>
                   )
                 })
               }
 
             </div>
           </div>
-          <div className="about__child2 p-10 bg-secondary/40 rounded-xl  md:w-[460px] ml-[5%]  mt-[15%]">
+          <div className="about__child2 md:p-10 bg-secondary/40 rounded-xl  md:w-[500px] md:mx-[5%] ">
             <h2 className="tracking-wider mb-5">Our Mission</h2>
             <p className="m-2 text-lg">
             IDEA, we strive to cultivate enduring partnerships founded on quality of service, trust, collaboration, and the relentless pursuit of engineering innovation.  We align our engineering efforts to empower client specific sustainable building system solutions. Our Interdisciplinary engineering approach embraces technology as we strive to develop efficiencies and improve the Architectural Engineering industry. Together, we are pushing boundaries, ensuring mutual growth and success for our clients and collaboration partners.
             </p>
           </div>
-          <div className="about__img md:w-[520px] bg-secondary/40 items-center justify-center text-center animation-pulse delay-200 rounded-xl m-2 mb-[25%] mt-5 hover:animate-none ml-5">
+          <div className="about__img  bg-secondary/40 items-center justify-center text-center animation-pulse delay-200 rounded-xl m-5 hover:animate-none  w-[550px]">
             <div className="relative items-center justify-center" onMouseOver={()=> setShow(true)} onMouseLeave={()=> setShow(false)}>
-                <div className="m-5 mt-6 overflow-hidden rounded-xl items-center justify-center flex">
+                <div className="m-5 overflow-hidden rounded-xl items-center justify-center flex">
                   <div className="relative">
-                    <Image src={'/assets/idea-team.jpeg'} width={500} height={100} alt={'team_member'}/> 
+                    <Image src={'/assets/our-team-pic.jpg'} width={500} height={200} alt={'team_member'}/> 
                     <div className={show ? "absolute bg-cover bottom-0 left-0 right-0 top-0 bg-[#322d44]/80 rounded-xl text-secondary_text  " : "hidden"}>
                       <Link href={'/team'}>
                         <h1 className="md:mx-5 justify-center top-[44%] relative md:text-2xl text-lg text-primary_text">Click to See Our Team</h1>
