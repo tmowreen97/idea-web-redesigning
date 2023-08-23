@@ -33,7 +33,7 @@ const About = () => {
           <div className="about__title  ">
             <h1 className="md:text-[1100%] text-8xl tracking-wider text-center font-thin text-primary_text ml-10">About</h1>
           </div>
-          <div className="about__child1 p-10 bg-secondary/50 rounded-xl mt-10  md:m-0 w-[118%] text-lg h-[95%]">
+          <div className="about__child1 p-10 bg-secondary/40 rounded-xl mt-10  md:m-0 w-[118%] text-lg h-[95%]">
             <h2 className="tracking-wider mb-10 mt-5">Our Story</h2>
             <p className="m-2">
               Founded in 2021, IDEA is a technology oriented, forward-focused Interdisciplinary MEP-FP 
