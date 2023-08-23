@@ -9,24 +9,30 @@ function ProjectHome(){
   const projects = [
     {
       id: 1,
-      name: 'One',
-      image: "/assets/filler-1.jpg",
-      desc: "Image One",
-      category : 'Residential'
+      name: 'MSC Miami Cruise Terminal',
+      location: 'PortMiami, Miami, FL',
+      sector: 'Transportation',
+      year: '2024 (Construction Completion)',
+      image: "/assets/miami-terminal.avif",
+      desc: "A 4-Story cruise terminal capable of serving a total of 36,000 cruise ship passengers daily (embarking & disembarking). The facility consists of 495,000 SF of interior space and 1,200,000 SF garage (2500 parking spaces). Project will be LEED Silver Certified upon completion.",
     },
     {
       id:2,
-      name: 'Two',
-      image: "/assets/filler-2.jpg",
-      desc: "Image Two",
-      category: 'Cultural',
+      name: 'East End Food Hub - East End Food Institute (EEFI)',
+      image: '/assets/projects/Khair.jpg',
+      location:"Riverhead, NY",
+      sector: "Institutional",
+      year: "2023 (Construction Completion)",
+      desc: "Full renovation and upgrade of existing year-round farmers market and community kitchen facility. Facility encompasses a state of the art commercial kitchen installation and associated programming. ",
     },
     {
       id: 3,
-      name: 'Three',
-      image: "/assets/filler-3.jpg",
-      desc: "Image Three",
-      category: "Transportation",
+      name: 'Johnson Private High-End Residence',
+      location: "Great Harbor Cay, Bahamas",
+      year: "2024 (Construction Completion)",
+      sector: "High-End Residential",
+      image: '/assets/projects/johnson-res.jpg',
+      desc: "High-end residence consisting of two separate single-story glass enveloped structures located in the Bahamas.",
     }
   ]
 
@@ -45,7 +51,7 @@ function ProjectHome(){
     <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4"/>
   </svg> */}
           <div className="relative">
-            <button onClick={()=> {setShowDropDown(!showDropDown)}}  data-dropdown-toggle="dropdown" className="relative md:w-[400px] text-2xl justify-between  hover:bg-secondary/60 focus:ring-4 focus:outline-none focus:ring-secondary_text font-medium rounded-lg px-5 py-4 mt-2 text-center inline-flex items-center text-secondary_text" type="button">{projects[projectSelect].category} 
+            <button onClick={()=> {setShowDropDown(!showDropDown)}}  data-dropdown-toggle="dropdown" className="relative md:w-[400px] text-2xl justify-between  hover:bg-secondary/60 focus:ring-4 focus:outline-none focus:ring-secondary_text font-medium rounded-lg px-5 py-4 mt-2 text-center inline-flex items-center text-secondary_text" type="button">{projects[projectSelect].sector} 
               { showDropDown ? <BsChevronCompactUp/> : <BsChevronCompactDown/>}
             </button>
             <div id="dropdown" className={ showDropDown ? "z-10 absolute right-0 md:w-[200px] bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700": "hidden"}>
@@ -63,10 +69,13 @@ function ProjectHome(){
             <a href="/portfolio/cultural" className="block px-4 py-2 hover:bg-accent_2/80   hover:text-white">Cultural</a>
           </li>
           <li>
-            <a href="/portfolio/healthcare-faciities" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">Healthcare Facilities</a>
+            <a href="/portfolio/healthcare-faciities" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">Healthcare</a>
           </li>
           <li>
-            <a href="/portfolio/mixed-use-and-high-rise" className="block px-4 py-2 hover:bg-accent_2/80 hover:text-white">Mixed-Use & High-Rise</a>
+            <a href="/portfolio/high-rise" className="block px-4 py-2 hover:bg-accent_2/80 hover:text-white">High-Rise</a>
+          </li>
+          <li>
+            <a href="/portfolio/mixed-use" className="block px-4 py-2 hover:bg-accent_2/80 hover:text-white">Mixed-Use</a>
           </li>
           <li>
             <a href="/portfolio/residential" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">Residential</a>
@@ -103,6 +112,8 @@ function ProjectHome(){
         </div>
         <div className="projecthome__child2 p-10 bg-secondary/50 rounded-xl md:w-[450px] md:m-0 m-4">
           <h2 className="">{projects[projectSelect].name}</h2>
+          <p className="tracking-wider mx-2">{projects[projectSelect].location}</p>
+          <p className="tracking-wider mx-2">{projects[projectSelect].year}</p>
           <p className="tracking-wider mx-2">{projects[projectSelect].desc}</p>
           <div className="mt-[5%] mb-5 text-center ">
             <Link href={'/portfolio'}>
