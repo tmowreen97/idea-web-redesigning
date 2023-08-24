@@ -11,9 +11,9 @@ function ProjectHome(){
       id: 1,
       name: 'MSC Miami Cruise Terminal',
       location: 'PortMiami, Miami, FL',
-      sector: 'Transportation',
+      sector: 'Commercial/Transportation',
       year: '2024 (Construction Completion)',
-      image: "/assets/miami-terminal.avif",
+      image: "/assets/need-filler.jpeg",
       desc: "A 4-Story cruise terminal capable of serving a total of 36,000 cruise ship passengers daily (embarking & disembarking). The facility consists of 495,000 SF of interior space and 1,200,000 SF garage (2500 parking spaces). Project will be LEED Silver Certified upon completion.",
     },
     {
@@ -21,7 +21,7 @@ function ProjectHome(){
       name: 'East End Food Hub - East End Food Institute (EEFI)',
       image: '/assets/project-home/eefi-exterior.png',
       location:"Riverhead, NY",
-      sector: "Institutional",
+      sector: "Educational/Institutional",
       year: "2023 (Construction Completion)",
       desc: "Full renovation and upgrade of existing year-round farmers market and community kitchen facility. Facility encompasses a state of the art commercial kitchen installation and associated programming. ",
     },
@@ -62,38 +62,33 @@ function ProjectHome(){
               {projects[projectSelect].sector}
               { showDropDown ? <BsChevronCompactUp/> : <BsChevronCompactDown/>}
             </button>
-            <div id="dropdown" className={ showDropDown ? "z-10 absolute right-0 md:w-[200px] bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700": "hidden"}>
+            <div id="dropdown" className={ showDropDown ? "z-10 absolute right-0 md:w-[220px] bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700": "hidden"}>
         <ul className="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
           <li>
-            <a href="/portfolio/institutional" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">Institutional</a>
-          </li>
-          <li>
-            <a href="/portfolio/educational" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">Educational</a>
-          </li>
-          <li>
-            <a href="/portfolio/commercial" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">Commercial</a>
+            <a href="/portfolio/commercial-transportation" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">Commercial/Transportation</a>
           </li>
           <li>
             <a href="/portfolio/cultural" className="block px-4 py-2 hover:bg-accent_2/80   hover:text-white">Cultural</a>
           </li>
           <li>
-            <a href="/portfolio/healthcare-faciities" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">Healthcare</a>
-          </li>
-          <li>
-            <a href="/portfolio/high-rise" className="block px-4 py-2 hover:bg-accent_2/80 hover:text-white">High-Rise</a>
-          </li>
-          <li>
-            <a href="/portfolio/mixed-use" className="block px-4 py-2 hover:bg-accent_2/80 hover:text-white">Mixed-Use</a>
+            <a href="/portfolio/educational/institutional" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">Educational/Institutional</a>
           </li>
           <li>
             <a href="/portfolio/high-end-residential" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">High-End Residential</a>
           </li>
           <li>
-            <a href="/portfolio/transportation" className="block px-4 py-2 hover:bg-accent_2/80 hover:text-white ">Transportation</a>
+            <a href="/portfolio/high-rise" className="block px-4 py-2 hover:bg-accent_2/80 hover:text-white">High-Rise</a>
           </li>
           <li>
             <a href="/portfolio/industrial" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">Industrial</a>
           </li>
+          <li>
+            <a href="/portfolio/mixed-use" className="block px-4 py-2 hover:bg-accent_2/80 hover:text-white">Mixed-Use</a>
+          </li>
+          <li>
+            <a href="/portfolio/performance-venues" className="block px-4 py-2 hover:bg-accent_2/80 hover:text-white ">Performance Venues</a>
+          </li>
+          
         </ul>
     </div>
 

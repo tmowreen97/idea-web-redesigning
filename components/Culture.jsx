@@ -62,7 +62,7 @@ function CulturePage(){
   const interns = [
     {
       name: 'interns-1',
-      image: '/assets/culture/interns/1.JPG'
+      image: '/assets/culture/interns/1-updated.JPG'
     },
     {
       name: 'interns-2',

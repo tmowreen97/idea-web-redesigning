@@ -6,9 +6,10 @@ import ProjectPortfolio from "@/components/ProjectPortfolio"
 export default function Portfolio(){
 
   const projects = [
+    // MSC
     {
       name: 'MSC Miami Cruise Terminal',
-      heading: 'Commercial/Transportation',
+      heading: ['Commercial/Transportation'],
       location: 'Miami, Fl',
       size: '490,000 SF Terminal / 1,200,000 SF Garage',
       year: '2024',
@@ -30,14 +31,17 @@ export default function Portfolio(){
         }
         
       ],
+      awards: [],
       image: '/assets/need-filler.jpeg',
       width: '700',
-      height: '600'
+      height: '600',
+      disclaimer: ""
     },
+    // EEFI
     {
       name: 'East End Food Institute EEFI',
-      location: 'NEED',
-      heading: 'Commercial/Transportation',
+      location: 'Southampton, NY',
+      heading: ['Commercial/Transportation'],
       size: '5,000 SF & SITE Development',
       year: '2023',
       services: [
@@ -45,23 +49,25 @@ export default function Portfolio(){
       ],
       description: [
         'MEP-FP site/campus design and planning of proposed multi-facility and multi-phase project at EEFI project site. Design includes a central MEP-FP plant, the plant would include centralized geothermal and boiler plant to heat and cool several buildings. Plant would interconnect several wells located on the site to provide efficient sustainable HVAC systems accommodations.',
-        // 'Phase 1 : Full renovation of existing 5,000 sq ft. facility to provide a permanent home for East End Food Institute, including a year-round farmers market and community kitchen. Renovation will include upgrade/replacement of existing Mechanical, Electrical, Plumbing and Fire Protection systems to align with new program.  '
+        'Phase 1 : Full renovation of existing 5,000 sq ft. facility to provide a permanent home for East End Food Institute, including a year-round farmers market and community kitchen. Renovation will include upgrade/replacement of existing Mechanical, Electrical, Plumbing and Fire Protection systems to align with new program.  '
       ],
       resources: [
         {
-          title: 'Link 1',
-          url: 'https://www.eastendfood.org/east-end-food-hub/about-the-food-hub', 
+          title: 'East End Food - Food Hub',
+          url: 'https://www.eastendfood.org/food-hub', 
         }
         
       ],
-      // need to add phase-1?
+      awards:[],
       image: '/assets/projects/featured/eefi-featured.png',
       width: '650',
-      height: '200'
+      height: '200',
+      disclaimer: ""
     },
+    // KHAIR
     {
       name: 'Khair Community Center',
-      heading: 'Cultural',
+      heading: ['Cultural'],
       location: 'Phoenixville, PA',
       size: '20,000 SF',
       year: '2023',
@@ -74,14 +80,17 @@ export default function Portfolio(){
       resources: [
 
       ],
+      awards: [],
       image: '/assets/projects/featured/khair-featured.jpg',
       width: '700',
-      height: '400'
+      height: '400',
+      disclaimer: ""
     },
+    // LIU
     {
       name: 'Little Theater at LIU',
-      heading: ['Educational/Institutional', 'Performance Venue'],
-      location: 'NEED',
+      heading: ['Educational/Institutional', 'Performance Venues'],
+      location: 'Queens, NY',
       size: '20,000 SF',
       year: '2022',
       services: [
@@ -93,17 +102,19 @@ export default function Portfolio(){
         'IDEA served as Prime-Consultant on this engagement with LIU and led Architectural and Engineering efforts on this opportunity.'
       ],
       resources: [
-
       ],
+      awards: [],
       image: '/assets/need-filler.jpeg',
       width: '700',
-      height: '400'
+      height: '400',
+      disclaimer: ""
     },
+    // ECSU
     {
       name: 'Fine Arts Instructional Center at ECSU (Eastern Connecticut State University)',
       heading: [
         'Educational/Institutional',
-        'Performance Venue'
+        'Performance Venues'
       ],
       location: 'Willimantic, CT',
       size: '118,000 SF',
@@ -115,24 +126,28 @@ export default function Portfolio(){
       description: [
         ' The 118,000 sf Center serves as a new home for the visual and performing arts departments. It includes a 400-seat multipurpose Concert Hall, 250-seat Proscenium Theatre, and 125-seat Studio Theatre, along with instructional classrooms, multiple studios, and art gallery. Spaces are equipped with state-of-the-art AV equipment, professional theatre lighting and sound systems, and other modern arts-related technology.',
         'Leadership in Energy & Environmental Design (LEED) SILVER Certified.',
-        'Awards: 2017 SCUP/AIA-CAE Excellence in Architecture for a New Building'
       ],
       resources: [
         {
-          title: 'Link 1',
-          url: 'https://rawnarch.com/ecsu_fine_arts', 
+          title: 'William Rawn Associates',
+          url: 'https://rawnarch.com/projects/ecsu-fine-arts.html', 
         },
         {
-          title: 'Link 2',
-          url: 'http://theatreprojects.com/en/project/view/574/eastern-connecticut-state-university-fine-arts-instructional-center', 
+          title: 'Theatre Projects',
+          url: 'https://theatreprojects.com/project/eastern-connecticut-state-university-fine-arts-instructional-center/', 
         }
+      ],
+      awards: [
+        '2017 SCUP/AIA-CAE Excellence in Architecture for a New Building'
       ],
       image: '/assets/projects/ECSU - Fine Arts Instructional Center 3.jpg',
       width: '700',
-      height: '400'
+      height: '400',
+      disclaimer : ""
     },
+    // AMNH
     {
-      name: 'North American Mammals Gallery at AMNH (American Museum of Natural History)',
+      name: 'North American Mammals Gallery at AMNH (American Museum of Natural History)*',
       heading: 'Cultural',
       location: 'New York, NY',
       size: '',
@@ -141,20 +156,25 @@ export default function Portfolio(){
         'Electrical Design',
       ],
       description: [
-        ' For a gallery wide lighting upgrade (Gallery & Diorama’s) to LED source. Decreased gallery and diorama’s lighting power consumption by 50%.',
-        '*Project performed by IDEA team member at previous employment.'
+        ' For a gallery wide lighting upgrade (Gallery & Diorama’s) to LED source. Decreased gallery and diorama’s lighting power consumption by 50%.'
       ],
       resources: [
-
+        {
+          title: "AMNH",
+          url:"https://www.amnh.org/exhibitions/permanent/north-american-mammals/educator-resources/virtual-field-trip"
+        }
       ],
+      awards : [],
       image: '/assets/projects/featured/amnh-featured.jpg',
       width: '700',
-      height: '200'
+      height: '200',
+      disclaimer: '*Project performed by IDEA team member at previous employment.'
     },
+    // LANG
     {
       name: 'Lang Residence',
       heading: 'High-End Residential',
-      location: '',
+      location: 'Great Harbor Cay, Bahamas',
       size: '5,000 SF',
       year: '2021',
       services: [
@@ -167,10 +187,13 @@ export default function Portfolio(){
       resources: [
 
       ],
+      awards: [],
       image: '/assets/projects/featured/lang-featured.jpg',
       width: '700',
-      height: '200'
+      height: '200',
+      disclaimer: ""
     },
+    // JOHNSON
     {
       name: 'Johnson Residence',
       location: 'Great Harbor Cay, Bahamas',
@@ -187,12 +210,15 @@ export default function Portfolio(){
       resources: [
 
       ],
+      awards: [],
       image: '/assets/projects/featured/johnson-featured.jpg',
       width: '700',
-      height: '500'
+      height: '500',
+      disclaimer:""
     },
+    // PRINCETON 20 WASHINGTON
     {
-      name: '20 Washington at Princeton University',
+      name: '20 Washington at Princeton University*',
       location: 'Princeton, NJ',
       heading: 'Educational/Institutional',
       size: '200,000 SF',
@@ -204,7 +230,7 @@ export default function Portfolio(){
       description: [
         'Full renovation of a historic 200,000sf chemistry building. Renovated facility included two atriums, lecture rooms, offices, classrooms, and conference rooms. Renovation maintained and restored the existing historic envelope of the building. Renovated facility will consist of classrooms, offices, conference room, common spaces, etc. Renovation consists of (2) atrium areas which serves as common spaces, both atriums are served by dedicated smoke control systems. The project consisted of connecting to the campus 5kV loop to a dual feed unit substation with 1500kVA transformer and 2500-amp switchgear with draw-out circuit breakers.',
         'Leadership in Energy & Environmental Design (LEED) GOLD certified.',
-        '*Project performed by IDEA team member at previous employment.'
+        
       ],
       resources: [
         {
@@ -218,14 +244,16 @@ export default function Portfolio(){
       ],
       image: '/assets/need-filler.jpeg',
       width: '700',
-      height: '500'
+      height: '500',
+      disclaimer: '*Project performed by IDEA team member at previous employment.'
     },
+    // JAZZ LINCOLN CENTER
     {
-      name: 'Jazz at Lincoln Center',
-      location: 'Need',
+      name: 'Jazz at Lincoln Center*',
+      location: 'New York, NY',
       heading: [
         'Commercial/Transportation',
-        'Performance Venue'
+        'Performance Venues'
       ],
       size: '27,000 SF',
       year: '2015',
@@ -235,11 +263,10 @@ export default function Portfolio(){
       ],
       description: [
         'Renovation of a 27,000 SF public space into a flexible theatrical performance venue. Spaces are equipped with state-of-the-art AV equipment, professional theatre lighting and sound systems, and other modern arts-related technology.',
-        '*Project performed by IDEA team member at previous employment.'
       ],
       resources: [
         {
-          title: 'Link 1',
+          title: 'Ennead',
           url: 'http://www.ennead.com/work/jazz', 
         }
       ],
@@ -247,37 +274,45 @@ export default function Portfolio(){
       ],
       image: '/assets/need-filler.jpeg',
       width: '700',
-      height: '500'
+      height: '500',
+      disclaimer: '*Project performed by IDEA team member at previous employment.'
     },
+    // HENDRI HALL YALE
     {
-      name: 'Art Gallery at Yale University',
-      location: 'Need',
+      name: 'Hendri Hall at School of Music, Yale University*',
+      location: 'New Haven, CT',
       heading: [
-        'Cultural',
+        'Educational/Institutional',
       ],
-      size: '68,000 SF',
-      year: '2010',
+      size: '60,000 SF',
+      year: '2016',
       services: [
         'Electrical & Fire Alarm Design',
       ],
       description: [
-        'For a full renovation of the historic Swartwout (53,000sf) & Street Hall (15,000sf) Buildings. Programmed spaces included art galleries, offices, and classrooms. ',
-        '*Project performed by IDEA team member at previous employment.'
+        'Renovation to a 60,000sf facility historic facility. Renovated program consisted of rehearsal rooms, classrooms, music rooms, practice rooms, and offices. Specialty programmed spaces are equipped with state-of-the-art AV equipment, professional sound systems and other modern music/arts-related technology.',
+        
       ],
       resources: [
-
+        {
+          title: 'Yale - Adam Center',
+          url: 'https://music.yale.edu/2017/01/17/adams-center-musical-arts-opens'
+        }
       ],
       awards: [
       ],
       image: '/assets/projects/featured/yale-featured.jpg',
       width: '700',
-      height: '500'
+      height: '500',
+      disclaimer: '*Project performed by IDEA team member at previous employment.'
     },
+    // 900 CHURCH ST
     {
-      name: '900 Church Street',
+      name: '900 Church Street*',
       location: 'Nashville, TN',
       heading: [
         'High Rise',
+        'High-End Residential'
       ],
       size: '68,000 SF',
       year: '2010',
@@ -286,16 +321,15 @@ export default function Portfolio(){
       ],
       description: [
         'Thirty-Four (34) story 372,000 SF high rise residential with 356 units includes two rooftop pools and rooftop amenities such as club room, gym and private dining areas. Building includes several 75ft high outdoor terraces.',
-        '*Project performed by IDEA team member at previous employment.'
       ],
       resources: [
-
       ],
       awards: [
       ],
       image: '/assets/need-filler.jpeg',
       width: '700',
-      height: '500'
+      height: '500',
+      disclaimer: '*Project performed by IDEA team member at previous employment.'
     }
   ]
 
