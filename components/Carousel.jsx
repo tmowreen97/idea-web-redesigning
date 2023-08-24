@@ -7,6 +7,8 @@ function Carousel ({array, setCurrentIndex, currentIndex, custom}){
 
   const timeoutRef = useRef(null);
 
+  console.log(array)
+
   function resetTimeout() {
     if (timeoutRef.current) {
       clearTimeout(timeoutRef.current);
@@ -29,10 +31,10 @@ function Carousel ({array, setCurrentIndex, currentIndex, custom}){
   }, [currentIndex]);
 
   function handleRight(){
-    if(currentIndex<2){
+    if(currentIndex<(array.length-1)){
       setCurrentIndex(currentIndex+1)
     } else{
-      setCurrentIndex(currentIndex-2)
+      setCurrentIndex(currentIndex-(array.length-1))
     }
   }
 
@@ -40,7 +42,7 @@ function Carousel ({array, setCurrentIndex, currentIndex, custom}){
     if(currentIndex>0){
       setCurrentIndex(currentIndex-1)
     } else{
-      setCurrentIndex(currentIndex+2)
+      setCurrentIndex(currentIndex+(array.length-1))
     }
   }
 
