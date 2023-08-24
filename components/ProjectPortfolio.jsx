@@ -72,7 +72,7 @@ function ProjectPortfolio({ projects, category }){
         className="flex justify-start mx-20">
           <div className='relative'>
             {/* <label className="text-2xl text-secondary_text mr-2 ">Select a Category:</label> */}
-            <button onClick={()=> {setShowDropDown(!showDropDown)}}  data-dropdown-toggle="dropdown" className="relative text-xl justify-between w-[250px] bg-button_bg/30 hover:bg-secondary/70 focus:ring-4 focus:outline-none focus:ring-secondary_text font-medium rounded-lg  py-2  ml-2 inline-flex items-center text-secondary_text" type="button">
+            <button onClick={()=> {setShowDropDown(!showDropDown)}}  data-dropdown-toggle="dropdown" className="relative text-xl justify-between w-[300px] bg-button_bg/30 hover:bg-secondary/70 focus:ring-4 focus:outline-none focus:ring-secondary_text font-medium rounded-lg  py-2  ml-2 inline-flex items-center text-secondary_text" type="button">
               <p className='mx-2'>{category}</p>
               <motion.p 
               animate={{y:[-1,2,2,-1]}}
@@ -84,41 +84,39 @@ function ProjectPortfolio({ projects, category }){
                 { showDropDown ? <BsChevronCompactUp/> : <BsChevronCompactDown/>}
               </motion.p>
             </button>
-            <div id="dropdown" className={ showDropDown ? "z-10 absolute right-0 md:w-[180px] bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 text-center": "hidden"}>
+            <div id="dropdown" className={ showDropDown ? "z-10 absolute right-0 md:w-[200px] bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 text-center": "hidden"}>
               <ul className="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
                 <li>
                   <a href="/portfolio" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">Select A Sector</a>
                 </li>
                 <li>
-                  <a href="/portfolio/commercial" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">Commercial</a>
+                  <a href="/portfolio/commercial-transportation" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">Commercial/Transportation</a>
                 </li>
                 <li>
                   <a href="/portfolio/cultural" className="block px-4 py-2 hover:bg-accent_2/80   hover:text-white">Cultural</a>
                 </li>
                 <li>
-                  <a href="/portfolio/educational" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">Educational</a>
-                </li>
-                <li>
-                  <a href="/portfolio/healthcare-facilities" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">Healthcare</a>
-                </li>
-                <li>
-                  <a href="/portfolio/industrial" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">Industrial</a>
-                </li>
-                <li>
-                  <a href="/portfolio/institutional" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">Institutional</a>
-                </li>
-                <li>
-                  <a href="/portfolio/mixed-use" className="block px-4 py-2 hover:bg-accent_2/80 hover:text-white">Mixed-Use</a>
-                </li>
-                <li>
-                  <a href="/portfolio/high-rise" className="block px-4 py-2 hover:bg-accent_2/80 hover:text-white">High-Rise</a>
+                  <a href="/portfolio/educational-institutional" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">Educational/Institutional</a>
                 </li>
                 <li>
                   <a href="/portfolio/high-end-residential" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">High-End Residential</a>
                 </li>
                 <li>
-                  <a href="/portfolio/transportation" className="block px-4 py-2 hover:bg-accent_2/80 hover:text-white ">Transportation</a>
+                  <a href="/portfolio/healthcare-facilities" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">High-Rise</a>
                 </li>
+                <li>
+                  <a href="/portfolio/industrial" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">Industrial</a>
+                </li>
+                <li>
+                  <a href="/portfolio/mixed-use" className="block px-4 py-2 hover:bg-accent_2/80 hover:text-white">Mixed-Use</a>
+                </li>
+                <li>
+                  <a href="/portfolio/high-rise" className="block px-4 py-2 hover:bg-accent_2/80 hover:text-white">Performance Venue</a>
+                </li>
+{/*                 
+                <li>
+                  <a href="/portfolio/transportation" className="block px-4 py-2 hover:bg-accent_2/80 hover:text-white ">Transportation</a>
+                </li> */}
               </ul>
             </div>
           </div>

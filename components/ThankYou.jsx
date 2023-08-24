@@ -63,7 +63,7 @@ function ThankYou(){
                 <p className="">Architectural Engineering Consultants</p>
               </div>
               <p>Monroe, Connecticut | Miami, Florida</p>
-              <p className="text-lg">Info@IdeaAEC.com</p>
+              <p className="text-lg">info@IdeaAEC.com</p>
               <p className="text-lg ">FL: 954-295-2125</p>
               <p className="text-lg ">CT: 203-917-7907</p>
             </div>
@@ -85,7 +85,7 @@ function ThankYou(){
           </motion.div>
           <motion.div 
           initial={{opacity:0}}
-          whileInView={{opacity:1, transition:{delay:2}}}
+          animate={{opacity:1, transition:{delay:2}}}
           className=" text-primary_text mt-10"
           >
             <div className="mr-2">

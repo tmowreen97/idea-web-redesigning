@@ -52,7 +52,7 @@ function CulturePage(){
       animate={{opacity:1, transition: {delay:1.5, duration:1}}}
       >
         <div className="pb-[25px]">
-          <h1 className="md:text-[500%] text-4xl text-center items-center tracking-wide font-light text-primary_text/70">The IDEA Times</h1>
+          <h1 className="md:text-[500%] text-4xl text-center items-center tracking-wide font-light text-primary_text/70">IDEA Turns 2!</h1>
         </div>
       { isClient ? <div className="justify-center items-center flex md:w-[100%] md:h=[100%] overflow-hidden">
           {

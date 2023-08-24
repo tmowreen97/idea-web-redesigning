@@ -75,20 +75,53 @@ function PortfolioList({project}){
               <div className="flex max-w-[800px] items-center justify-center ">
                 <Image src={project.image} width={project.width} height={project.height} className="rounded-xl overflow-hidden max-h-[750px]"/>
               </div>
-              <div className="m-2">
-                <h2 className="text-dark_text">{project.name}</h2>
-                <h3 className="text-dark_text text-2xl">{project.heading}</h3>
-                <p className="text-dark_text">{project.description}</p>
-                <p className="text-dark_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <ul className="list-disc m-4">
-                  <li>One</li>
-                  <li>Two</li>
-                  <li>Three</li>
-                  <li>Four</li>
-                  <li>Five</li>
-                  <li>Six</li>
-                </ul>
+              <div >
+                <div className="m-2">
+                  <h2 className="text-dark_text">{project.name}</h2>
+                </div>
+                <div className="m-3">
+                  <h3 className="text-dark_text text-2xl">{project.heading}</h3>
+                  <h3 className="text-dark_text text-2xl">{project.size}</h3>
+                  <h3 className="text-dark_text text-2xl">Completion Date: {project.year}</h3>
+                </div>
+                <div className="m-3">
+                  {
+                    project.description.map((desc, index)=> {
+                      return(
+                        <p key={index} className="text-dark_text">{desc}</p>
+                      )
+                      
+                    })
+                  }
+                  </div>
+                  <div className="m-5 flex justify-evenly items-center">
+                    <div>
+                      <h4 className="text-xl">Services:</h4>
+                      <ul className="list-disc mx-5 m-3">
+                        {project.services.map((service, index) => {
+                          return(
+                            <li key={index} >{service}</li>
+                          )
+                        })}
+                    </ul>
+                    </div>
+                    { project.resources.length > 0 ? <div className="">
+                      <h4 className="text-xl">Resources:</h4>
+                      <ul className="mx-5 m-3">
+                        {project.resources.map((link, index) => {
+                          return(
+                            <li key={index} >
+                              <a href={link.url} className="hover:text-accent_1" target="__blank" rel="noopener noreferrer">{link.title}</a>
+                            </li>
+                          )
+                        })}
+                    </ul>
+                      
+                    </div> : ""}
+                    
+                </div>
               </div>
+              
               
             </div>
             

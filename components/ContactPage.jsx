@@ -62,7 +62,7 @@ function ContactPage(){
                 <p className="">Architectural Engineering Consultants</p>
               </div>
               <p>Monroe, Connecticut | Miami, Florida</p>
-              <p className="text-lg">Info@IdeaAEC.com</p>
+              <p className="text-lg">info@IdeaAEC.com</p>
               <p className="text-lg ">FL: 954-295-2125</p>
               <p className="text-lg ">CT: 203-917-7907</p>
             </div>
@@ -82,7 +82,7 @@ function ContactPage(){
         <div className="md:w-[500px] md:h-[400px] bg-secondary rounded-xl ml-20">
           <form 
           className="text-center items-center justify-center mt-[3%]" 
-          action="https://formsubmit.co/nabila@ideaaec.com" 
+          action="https://formsubmit.co/info@ideaaec.com" 
           method="POST">
             <h2>Contact Us</h2>
             <div className="m-5">
@@ -113,7 +113,7 @@ function ContactPage(){
               required/>
             </div>
             <input type="hidden" name="_next" value="http://localhost:3000/thank-you"></input>
-            <input type="hidden" name="_captcha" value="false"></input>
+            {/* <input type="hidden" name="_captcha" value="false"></input> */}
             <div className="text-center items-center justify-center flex ">
               <div className="bg-tertiary/80 hover:bg-accent_2/80 rounded-xl p-2 px-5 shadow-xl text-primary_text">
                 <button type='submit'>Send</button>

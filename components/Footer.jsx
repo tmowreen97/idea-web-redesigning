@@ -39,20 +39,18 @@ export default function Footer(){
               <p className="text-xl text-dark_text">Monroe, Connecticut | Miami, Florida</p>
             </div>
             <div>
-              <p className="text-lg text-dark_text">Info@IdeaAEC.com</p>
+              <p className="text-lg text-dark_text">info@IdeaAEC.com</p>
               <p className="text-lg text-dark_text">FL: 954-295-2125</p>
               <p className="text-lg text-dark_text">CT: 203-917-7907</p>
             </div>
-            
           </div>
-            
           </div>
           <div className="md:ml-[160px] md:w-[450px] h-[95%] mt-5" >
           <div className="bg-dark_bg/60  md:h-[290px]   rounded-xl ">
             <div className="items-center justify-center">
               <form 
               className="text-center pt-2 items-center justify-center"
-              action="https://formsubmit.co/nabila@ideaaec.com" 
+              action="https://formsubmit.co/info@ideaaec.com" 
               method="POST">
                 <h2 className="text-primary_text">Contact Us</h2>
                 <div className="m-2">
