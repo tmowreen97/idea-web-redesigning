@@ -97,7 +97,7 @@ function ServicesPage(){
           >
             <div className="absolute">
               <div className="relative w-[200px] left-[85%]">
-                <p className="text-dark_text text-5xl  my-[90%] ">MEP & FP</p>
+                <p className="text-dark_text text-5xl  my-[80%] ">MEP & FP Services</p>
               </div>
             </div>
           </motion.div>
@@ -150,7 +150,7 @@ function ServicesPage(){
           className="bg-light_bg  w-[550px] h-[425px] my-20 rounded-xl hover:cursor-pointer hover:bg-secondary">
             <div className="absolute">
               <div className="relative w-[200px] left-[90%]">
-                <p className="text-dark_text text-5xl  my-[65%] ">Facility Support Services</p>
+                <p className="text-dark_text text-5xl  my-[68%] ">Facility Support Services</p>
               </div>
             </div>
           </motion.div>

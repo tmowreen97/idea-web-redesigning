@@ -21,6 +21,7 @@ function OurTeam (){
         "Prior to founding IDEA, Kazi's journey included impactful roles at prominent engineering establishments including AltieriSeborWieber LLC (Altieri) and DeSimone Consulting Engineers, LLC (New York). With a wealth of diverse professional experience and knowledge, Kazi continues to drive innovation and excellence, translating engineering visions into tangible accomplishments and developments for the Architectural Engineering industry."
       ],
       contact: "/assets/PE Kazi A. Karim",
+      linkedin: "https://www.linkedin.com/in/kazi-a-karim-p-e-2a3a3416/",
       fun_fact: "Kazi is an enthusiastic sports fan, always willing to hit the field or harwood (football & basketball) for a good competitive workout. His experience as a College and High-School Quarterback empowers Kazi to joyfully Quarterback the growth and development of IDEA.",
       image: '/assets/KK.jpg'
     },
@@ -34,6 +35,7 @@ function OurTeam (){
 
       ],
       contact: "/assets/PE RCDD Vinoo Jankie",
+      linkedin: "https://www.linkedin.com/in/vinoo-jankie-pe-09206828/",
       fun_fact: "Vinoo has two kids and no time for fun",
       image: '/assets/VJ.jpg'
     }
