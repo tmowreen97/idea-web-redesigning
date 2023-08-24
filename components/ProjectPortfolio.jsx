@@ -111,7 +111,7 @@ function ProjectPortfolio({ projects, category }){
                   <a href="/portfolio/mixed-use" className="block px-4 py-2 hover:bg-accent_2/80 hover:text-white">Mixed-Use</a>
                 </li>
                 <li>
-                  <a href="/portfolio/high-rise" className="block px-4 py-2 hover:bg-accent_2/80 hover:text-white">Performance Venue</a>
+                  <a href="/portfolio/performance-venues" className="block px-4 py-2 hover:bg-accent_2/80 hover:text-white">Performance Venues</a>
                 </li>
 {/*                 
                 <li>

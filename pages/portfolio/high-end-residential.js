@@ -4,95 +4,48 @@ import ProjectPortfolio from "@/components/ProjectPortfolio"
 export default function HighEndResidential(){
   const projects = [
     {
-      name: 'MSC Miami Cruise Terminal',
-      heading: 'Terminal/Transportation',
-      location: 'Miami, Fl',
-      description: 'A 4-story cruise terminal capable of serving 18,000 cruise ship passengers. The facility consists of 490,000 SF of interior space and 1,200,000 SF garage (6-Levels).',
-      image: '/assets/miami-terminal.avif',
+      name: 'Johnson Residence',
+      heading: [
+        'High-End Residential'
+      ],
+      location: 'Great Harbor Cay, Bahamas',
+      size: '3,500 SF',
+      year: '2023',
+      services: [
+        'MEP Project Management',
+        'MEP Design'
+
+      ],
+      description: [
+        'The project is a high-end residence consisting of two separate single-story structures totaling 3,500 sf, located in Great Harbor Cay, Bahamas.'
+      ],
+      resources: [
+      ],
+      image: '/assets/projects/high-end/john-high.jpg',
       width: '700',
       height: '600'
     },
     {
-      name: '838 WEA',
-      location: 'NEED',
-      heading: 'NEED',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-      image: '/assets/projects/838 WEA.jpg',
-      width: '700',
-      height: '200'
-    },
-    {
-      name: 'Khair Community Center',
-      heading: 'Cultural',
-      location: 'Phoenixville, PA',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-      image: '/assets/projects/Khair3.jpg',
-      width: '700',
-      height: '400'
-    },
-    {
-      name: 'ECSU (Eastern Connecticut State University)',
-      heading: 'Institutional/Performance Venue',
-      location: 'Willimantic, CT',
-      description: 'A 118,000 SF Performance center equipped with state-of-the-art AV equipment, professional theatre lighting and sound systems, and other modern arts-related technology.',
-      image: '/assets/projects/ECSU - Fine Arts Instructional Center 3.jpg',
-      width: '700',
-      height: '400'
-    },
-    {
-      name: 'American Museum of Natural History',
-      heading: 'Cultural',
-      location: 'New York, NY',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-      image: '/assets/projects/AMNH - Diorama.jpeg',
-      width: '700',
-      height: '200'
-    },
-    
-    {
-      name: 'Johnson Residence',
+      name: 'Lang Residence',
+      heading: [
+        'High-End Residential'
+      ],
       location: 'Great Harbor Cay, Bahamas',
-      heading: 'High End Residential',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-      image: '/assets/projects/johnson-res.jpg',
-      width: '700',
-      height: '500'
+      size: '5,000 SF',
+      year: '2021',
+      services: [
+        'MEP-FP Project Management', 
+        'MEP Design'
+      ],
+      description: [
+        'The project is a high-end residence consisting of three separate single-story structures totaling 5,000 sf, located in Great Harbor Cay, Bahamas.',
+      ],
+      resources: [
+      ],
+      image: '/assets/projects/high-end/lang-high.jpg',
+      width: '650',
+      height: '200'
     },
-    {
-      name: 'Princeton University',
-      location: 'Princeton, NJ',
-      heading: 'NEED',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-      image: '/assets/projects/Princeton University.jpg',
-      width: '700',
-      height: '500'
-    },
-    // {
-    //   name: 'MSC',
-    //   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-    //   image: '/assets/projects/Khair.jpg',
-    //   width: '700',
-    //   height: '400'
-    // },
-    
-    {
-      name: 'Wellesley College',
-      location: 'NEED',
-      heading: 'NEED',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-      image: '/assets/projects/Wellesley College 1.jpg',
-      width: '700',
-      height: '400'
-    },
-    {
-      name: 'Adams Center at Yale University',
-      location: 'New Haven, CT',
-      heading: 'Institutional',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-      image: '/assets/projects/Yale Adams Center 2.jpg',
-      width: '700',
-      height: '400'
-    }
   ]
 
   return(
