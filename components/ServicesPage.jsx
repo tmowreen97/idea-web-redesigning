@@ -27,7 +27,7 @@ function ServicesPage(){
         setShowMep(true)
         setShowFS(true)
         setShowPM(true)
-      }, 5000);
+      }, 2500);
   }   
   function myStopFunction() {
       if(typeof myVar != 'undefined'){
@@ -96,8 +96,8 @@ function ServicesPage(){
           className="bg-light_bg  w-[550px] h-[425px] my-20 rounded-xl hover:cursor-pointer hover:bg-secondary"
           >
             <div className="absolute">
-              <div className="relative w-[200px] left-[85%]">
-                <p className="text-dark_text text-5xl  my-[80%] ">MEP & FP Services</p>
+              <div className="relative w-[208px] left-[80%]">
+                <p className="text-dark_text text-5xl my-[73%] tracking-wide leading-[55px] text-justify  ">MEP & FP Services</p>
               </div>
             </div>
           </motion.div>
@@ -132,7 +132,6 @@ function ServicesPage(){
                   <li>Energy Modeling</li>
                   <li>Short circuit, Selective Coordination, and Arc Flash Studies</li>
                   <li>Construction Administration</li>
-                  <li>Project Management</li> 
                 </ul>
                 {/* <p className="text-dark_text text-5xl  my-[90%] ">MEP & FP</p> */}
             </div>
@@ -149,8 +148,8 @@ function ServicesPage(){
           onClick={()=> setShowFS(!showFS)}
           className="bg-light_bg  w-[550px] h-[425px] my-20 rounded-xl hover:cursor-pointer hover:bg-secondary">
             <div className="absolute">
-              <div className="relative w-[200px] left-[90%]">
-                <p className="text-dark_text text-5xl  my-[68%] ">Facility Support Services</p>
+              <div className="relative w-[210px] left-[86%]">
+                <p className="text-dark_text text-5xl  my-[58%] tracking-wide leading-[55px] text-justify ">Facility Support Services</p>
               </div>
             </div>
           </motion.div>
@@ -177,7 +176,7 @@ function ServicesPage(){
                   <li>Efficiency/Energy Use Evaluations</li>
                   <li>Building Management/Automation System Upgrades</li>
                   <li>Oil To Gas/Steam Conversion</li>
-                  <li>Boiler Replacement</li>
+                  <li>Boiler Replacement and Upgrades</li>
                   <li>Exhaust System Upgrades</li>
                   <li>Condensation/Humidification/Dehumidification Issues</li>
                   <li>Code Compliance Upgrades For Normal and Emergency Lighting</li>
@@ -200,8 +199,8 @@ function ServicesPage(){
           onClick={()=> setShowPM(!showPM)}
           className="bg-light_bg  w-[550px] h-[425px] rounded-xl my-20 hover:cursor-pointer hover:bg-secondary">
             <div className="absolute">
-              <div className="relative left-[50%] ">
-                <p className="text-dark_text text-5xl w-[300px] my-[40%] ">Project Management & Expediting Services</p>
+              <div className="relative left-[35%] ">
+                <h3 className="text-dark_text text-5xl tracking-wide w-[330px] my-[30%] leading-[55px] text-justify">Project Management & Construction Services</h3>
               </div>
             </div>
           </motion.div>
@@ -223,18 +222,16 @@ function ServicesPage(){
             <div className="absolute">
               <div className="relative w-[475px] left-[15%] my-[15%]">
             <ul className="list-disc text-xl" >
+              <li>Owner's Representation</li>
               <li>Design Management</li>
-              <li>Construction Management</li>
+              <li>Construction Management Assistance</li>
               <li>Project Coordination</li>
-              <li>Cost Estimation</li>
-              <li>Construction Project Schedule Development</li>
               <li>Sub-Consultant Procurement</li>
               <li>Sub-Consultant Management</li>
-              <li>Obtaining Permits & Approvals</li>
-              <li>Violation Removals</li>
+              <li>Cost Estimation</li>
+              <li>Construction Project Schedule Development</li>
+              <li>Construction Bid Procurement</li>
               <li>Site Safety Coordination & Supervision</li>
-              <li>Due-Diligence Studies</li>
-              <li>Existing Condition Assessments and Studies</li>
             </ul>
           </div>
           </div>
