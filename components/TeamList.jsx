@@ -12,9 +12,9 @@ function TeamList({member}){
           <Image src={member.image} width={600} height={600} alt={'lead_team'}/>
           {showDetails ? <div className="absolute top-0 bottom-0 left-0 right-0 bg-dark_bg/90">
             <div className="flex text-white my-[65%] justify-evenly text-lg ">
-              <Link href="https://www.linkedin.com/company/idea-aec/" legacyBehavior className="my-[50%]">
+              <Link href={member.contact} legacyBehavior className="my-[50%]">
                 <a target="_blank" rel="noopener noreferrer">
-                  <button className="bg-button_bg rounded-xl p-3">Resume</button>
+                  <button className="bg-button_bg rounded-xl p-3">Contact Card</button>
                 </a>
               </Link>
               <Link href="https://www.linkedin.com/company/idea-aec/" legacyBehavior className="my-[50%]">

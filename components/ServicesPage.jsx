@@ -50,6 +50,7 @@ function ServicesPage(){
   const arrow = {
     hidden:{ opacity:1 },
     visible: {
+      opacity:[0,1],
       x: [0,8,5,0],
       transition: {
         delay: .5,
@@ -65,7 +66,7 @@ function ServicesPage(){
     visible: {
       opacity: 1,
       transition: {
-        delay: 1,
+        delay: .25,
         duration: .5
       }
     }

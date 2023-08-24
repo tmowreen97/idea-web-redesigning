@@ -47,7 +47,7 @@ export default function AnimatedText({text}){
             variants={letter}
             style={{ marginRight: "5px" }}
             key={index}
-            className="text-6xl font-thin py-5 tracking-wider"
+            className="text-6xl font-thin py-5 tracking-wider m-4"
           >
             {word}
           </motion.span>
