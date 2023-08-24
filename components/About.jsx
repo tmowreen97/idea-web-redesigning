@@ -23,7 +23,7 @@ const About = () => {
   }
 
   const traits = [
-    'sustainable', 'energy-efficient', 'minority-owned', 'client-care', 'small-business', 'ethical'
+    'sustainable', 'ethical', 'minority-owned', 'client-care', 'small-business', 'energy-efficient'
   ]
 // bg-[#DAD3DF]
   return (
@@ -69,11 +69,11 @@ const About = () => {
             IDEA, we strive to cultivate enduring partnerships founded on qualities of service, trust, collaboration, and the relentless pursuit of engineering innovation.  We align our engineering efforts to empower client-specific and sustainable building system solutions. Our Interdisciplinary engineering approach embraces technology as we strive to develop efficiencies and improve the Architectural Engineering industry. Together, we are pushing boundaries, ensuring mutual growth and success for our clients and collaboration partners.
             </p>
           </div>
-          <div className="about__img  bg-secondary/40 items-center justify-center text-center animation-pulse delay-200 rounded-xl m-5 hover:animate-none  w-[510px] h-[97%]">
+          <div className="about__img  bg-secondary/40 items-center justify-center text-center animation-pulse delay-200 rounded-xl m-5 ml-6 2xl:mx-8  hover:animate-none  w-[510px] h-[97.5%]">
             <div className="relative items-center justify-center" onMouseOver={()=> setShow(true)} onMouseLeave={()=> setShow(false)}>
                 <div className="m-5 overflow-hidden rounded-xl items-center justify-center flex">
-                  <div className="relative mt-2">
-                    <Image src={'/assets/our-team-pic.jpg'} width={500} height={200} alt={'team_member'}/> 
+                  <div className="relative mt-3">
+                    <Image src={'/assets/our-team-pic.jpg'} width={500} height={300} alt={'team'} className='rounded-xl'/> 
                     <div className={show ? "absolute bg-cover bottom-0 left-0 right-0 top-0 bg-[#322d44]/80 rounded-xl text-secondary_text  " : "hidden"}>
                       <Link href={'/team'}>
                         <h1 className="md:mx-5 justify-center top-[44%] relative md:text-2xl text-lg text-primary_text">Click to See Our Team</h1>
