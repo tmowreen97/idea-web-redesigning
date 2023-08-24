@@ -64,7 +64,8 @@ function Carousel ({array, setCurrentIndex, currentIndex, custom}){
     // </Carousel>
 
     
-    <div className="relative group">
+    <div className="relative group items-center justify-center">
+
       <motion.div 
       // initial={{ opacity:0 }}
       // whileInView={{ opacity:1 , transition:{delay:1}}}

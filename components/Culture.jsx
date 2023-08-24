@@ -105,27 +105,48 @@ function CulturePage(){
       
       <div className="flex justify-center items-center p-5  md:pb-20 tracking-wider">
         <div className="culture__parent justify-center py-10 mx-[8%] 2xl:mx-[25%] md:grid flexbox">
-          <div className="culture__child1 md:p-10 p-5 flex bg-secondary/40 rounded-xl">
+          <div className="culture__child1 md:p-8 p-5 flex bg-secondary/40 rounded-xl justify-center">
+            <div className="">
+              <div className="">
+                <h1 className="md:text-[300%] px-5 pt-5 text-primary_text font-light ">2 Year BBQ</h1>
+                <h2 className=" ml-6  text-primary_text text-2xl font-light ">DATE</h2>
+              </div>
+            <div className=" md:w-[630px] md:h-[475px] max-w-[1000px] items-center justify-center relative group  my-10">
+              <Carousel
+                array={bbq}
+                currentIndex={bbqIndex}
+                setCurrentIndex={setBbqIndex}
+                custom={"md:w-[640px] h-[420px] rounded-2xl bg-center bg-cover hover:scale-105  duration-500 transform"}
+              />
+            </div>
             <div>
+              <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+              </p>
+            </div>
+            </div>
+            
+            {/* <div>
               <h1 className="md:text-[300%] px-5 pt-5 text-primary_text font-light ">2 Year BBQ</h1>
               <h2 className=" ml-6  text-primary_text text-2xl font-light ">DATE</h2>
-              <div className="flex  ">
-                <div className="absolute">
-                  <div className="relative items-center justify-center mb-8">
-                    <Carousel array={bbq} setCurrentIndex={setBbqIndex} currentIndex={bbqIndex}/>
-                  </div>
+              <div className=" items-center justify-center">
+                {/* <div className="absolute">
+                  <div className="relative items-center justify-center mb-8"> */}
+                    {/* <Carousel 
+                      array={bbq} 
+                      setCurrentIndex={setBbqIndex} 
+                      currentIndex={bbqIndex} 
+                      custom={"md:max-w-[720px] h-[400px] absolute left-0 right-0 flex rounded-2xl bg-center bg-cover hover:scale-105  duration-500 transform"}
+                    /> */}
+                  {/* </div>
                   
-                </div>
+                </div> */}
                 
                 {/* <Image src={'/assets/filler-3.jpg'} width={500} height={300} className="rounded-xl overflow-hidden"/> */}
-              </div>
-              <div className="mx-8 text-lg" >
-                <p>
-                Celebrating 2 Remarkable Years: A Fusion BBQ Extravaganza! Our 2-year anniversary marked a splendid occasion as we united the dedicated forces of MSC, Fincentari, and IDEA for a memorable Company BBQ. Orchestrated meticulously by the Marketing team, the event boasted an inviting ambiance, complemented by the culinary creations of our in-house engineering talents turned BBQ maestros. This harmonious collaboration embodies our unwavering commitment to excellence and the spirit of collaboration. Cheers to sharing in this journey of success!  
-                </p>
-
-              </div>
-            </div>
+              {/* </div>
+÷
+            </div> */} 
+            
           </div>
           <div className="culture__child2 md:p-10 p-5 mt-5 md:mt-0 flex bg-secondary/40 rounded-xl">
           <div>

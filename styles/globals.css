@@ -215,7 +215,7 @@ polyline {
 .culture__parent {
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows:repeat(11, .5fr);
-  grid-column-gap: 30px;
+  grid-column-gap: 20px;
   grid-row-gap: 20px;
   }
   

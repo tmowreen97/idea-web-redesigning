@@ -44,14 +44,16 @@ function ProjectHome(){
           <h1 className="md:text-[1000%] text-8xl tracking-wide text-left md:ml-[65px] font-thin mb-10 md:mt-[8%] text-primary_text">Projects</h1>
         </div>
         <div className="projecthome__child1 md:p-10 p-2 bg-secondary/50 rounded-xl md:mr-5 md:ml-4  md:m-0">
-          <div className="md:max-w-[720px] md:h-[450px] md:w-full m-auto md:px-4 p-1 relative group mb-[0%]">
-            <Carousel array={projects} setCurrentIndex={setProjectSelect} currentIndex={projectSelect} custom={"md:w-[620px] xl:w-[700px] md:h-[400px] w-[355px] h-[300px] rounded-2xl bg-center bg-cover hover:scale-105  duration-500 transform"}/>
+          <div className="md:max-w-[720px] md:h-[450px] md:w-full m-auto md:px-4 p-1  mb-[0%]">
+            <Carousel 
+              array={projects} 
+              setCurrentIndex={setProjectSelect} 
+              currentIndex={projectSelect} 
+              custom={"md:w-[620px] xl:w-[700px] md:h-[400px] w-[355px] h-[300px] rounded-2xl bg-center bg-cover hover:scale-105  duration-500 transform"}
+            />
             </div>
         </div>
         <div className="projecthome__img relative bg-secondary/50 items-center text-center justify-center p-5 rounded-xl md:w-[450px] md:h-[45%] md:mt-20 md:m-0 m-4">
-          {/* <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-    <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4"/>
-  </svg> */}
           <div className="relative">
             <button 
             onClick={()=> {setShowDropDown(!showDropDown)}}  
