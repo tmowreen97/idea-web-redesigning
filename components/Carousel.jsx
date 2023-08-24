@@ -64,7 +64,7 @@ function Carousel ({array, setCurrentIndex, currentIndex, custom}){
     // </Carousel>
 
     
-    <div className="relative group items-center justify-center">
+    <div className="relative group items-center justify-center ">
 
       <motion.div 
       // initial={{ opacity:0 }}

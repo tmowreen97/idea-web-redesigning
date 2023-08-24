@@ -105,23 +105,26 @@ function CulturePage(){
       
       <div className="flex justify-center items-center p-5  md:pb-20 tracking-wider">
         <div className="culture__parent justify-center py-10 mx-[8%] 2xl:mx-[25%] md:grid flexbox">
-          <div className="culture__child1 md:p-8 p-5 flex bg-secondary/40 rounded-xl justify-center">
+          <div className="culture__child1 md:p-10 p-5 pb-10flex bg-secondary/40 rounded-xl justify-center">
             <div className="">
               <div className="">
-                <h1 className="md:text-[300%] px-5 pt-5 text-primary_text font-light ">2 Year BBQ</h1>
-                <h2 className=" ml-6  text-primary_text text-2xl font-light ">DATE</h2>
+                <h1 className="md:text-6xl px-5 pt-[50px] text-primary_text font-light ">2 Year BBQ</h1>
+                <h2 className=" ml-6  text-primary_text text-3xl font-light ">DATE</h2>
               </div>
-            <div className=" md:w-[630px] md:h-[475px] max-w-[1000px] items-center justify-center relative group  my-10">
+            <div className=" md:w-[630px] md:h-[550px] 2xl:w-[750px] max-w-[1000px] items-center justify-center relative group  my-20 ">
               <Carousel
                 array={bbq}
                 currentIndex={bbqIndex}
                 setCurrentIndex={setBbqIndex}
-                custom={"md:w-[640px] h-[420px] rounded-2xl bg-center bg-cover hover:scale-105  duration-500 transform"}
+                custom={"md:w-[640px] h-[500px] 2xl:w-[750px] rounded-2xl bg-center bg-cover hover:scale-105  duration-500 transform"}
               />
             </div>
             <div>
-              <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+              <p className="my-8 mx-[35px] 2xl:text-xl tracking-wide text-lg leading-[185%]">
+              Celebrating 2 Remarkable Years: A Fusion BBQ Extravaganza! Our 2-year anniversary marked a splendid occasion as we united the dedicated forces of MSC, Fincentari, and IDEA for a memorable Company BBQ. 
+              </p>
+              <p className="my-8 mx-[35px] 2xl:text-xl tracking-wide text-lg leading-[32px]">
+              Orchestrated meticulously by the Marketing team, the event boasted an inviting ambiance, complemented by the culinary creations of our in-house engineering talents turned BBQ maestros. This harmonious collaboration embodies our unwavering commitment to excellence and the spirit of collaboration. Cheers to sharing in this journey of success!
               </p>
             </div>
             </div>
