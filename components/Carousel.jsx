@@ -3,7 +3,7 @@ import { motion, transform } from "framer-motion";
 import {BsChevronCompactLeft, BsChevronCompactRight} from 'react-icons/bs'
 import {RxDotFilled} from 'react-icons/rx'
 
-function Carousel ({array, setCurrentIndex, currentIndex}){
+function Carousel ({array, setCurrentIndex, currentIndex, custom}){
 
   const timeoutRef = useRef(null);
 
@@ -64,13 +64,13 @@ function Carousel ({array, setCurrentIndex, currentIndex}){
     // </Carousel>
 
     
-    <div className="md:max-w-[720px] md:h-[450px] md:w-full m-auto md:px-4 p-1 relative group mb-[0%]">
+    <div className="relative group">
       <motion.div 
       // initial={{ opacity:0 }}
       // whileInView={{ opacity:1 , transition:{delay:1}}}
 
       style={{backgroundImage:`url(${array[currentIndex].image})`}}
-      className="md:w-[620px] xl:w-[700px] md:h-[400px] w-[355px] h-[300px] rounded-2xl bg-center bg-cover hover:scale-105 hover:opacity-90 duration-500 transform"
+      className={custom}
       >
       {/* Left Arrow */}
       
