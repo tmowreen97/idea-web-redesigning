@@ -3,7 +3,7 @@ import { motion, transform } from "framer-motion";
 import {BsChevronCompactLeft, BsChevronCompactRight} from 'react-icons/bs'
 import {RxDotFilled} from 'react-icons/rx'
 
-function ProjectHomeCarousel ({projects, setProjectSelect, projectSelect}){
+function Carousel ({array, setCurrentIndex, currentIndex}){
 
   const timeoutRef = useRef(null);
 
@@ -17,8 +17,8 @@ function ProjectHomeCarousel ({projects, setProjectSelect, projectSelect}){
     resetTimeout();
     timeoutRef.current = setTimeout(
       () =>
-        setProjectSelect((prevProjSelect) =>
-          prevProjSelect === projects.length - 1 ? 0 : prevProjSelect + 1
+        setCurrentIndex((prevIndex) =>
+          prevIndex === array.length - 1 ? 0 : prevIndex + 1
         ),
       4500
     );
@@ -26,26 +26,26 @@ function ProjectHomeCarousel ({projects, setProjectSelect, projectSelect}){
     return () => {
       resetTimeout();
     };
-  }, [projectSelect]);
+  }, [currentIndex]);
 
   function handleRight(){
-    if(projectSelect<2){
-      setProjectSelect(projectSelect+1)
+    if(currentIndex<2){
+      setCurrentIndex(currentIndex+1)
     } else{
-      setProjectSelect(projectSelect-2)
+      setCurrentIndex(currentIndex-2)
     }
   }
 
   function handleLeft(){
-    if(projectSelect>0){
-      setProjectSelect(projectSelect-1)
+    if(currentIndex>0){
+      setCurrentIndex(currentIndex-1)
     } else{
-      setProjectSelect(projectSelect+2)
+      setCurrentIndex(currentIndex+2)
     }
   }
 
   const goToSlide = (slideIndex) => {
-    setProjectSelect(slideIndex);
+    setCurrentIndex(slideIndex);
   };
 
   return (
@@ -69,7 +69,7 @@ function ProjectHomeCarousel ({projects, setProjectSelect, projectSelect}){
       // initial={{ opacity:0 }}
       // whileInView={{ opacity:1 , transition:{delay:1}}}
 
-      style={{backgroundImage:`url(${projects[projectSelect].image})`}}
+      style={{backgroundImage:`url(${array[currentIndex].image})`}}
       className="md:w-[620px] xl:w-[700px] md:h-[400px] w-[355px] h-[300px] rounded-2xl bg-center bg-cover hover:scale-105 hover:opacity-90 duration-500 transform"
       >
       {/* Left Arrow */}
@@ -85,11 +85,11 @@ function ProjectHomeCarousel ({projects, setProjectSelect, projectSelect}){
       </div>
       </motion.div>
       <div className=' flex  text-center  items-center justify-center py-8'>
-        {projects.map((proj, i) => (
+        {array.map((current, i) => (
           <div
             key={i}
             onClick={() => goToSlide(i)}
-            className={ i===projectSelect ? 'text-2xl cursor-pointer text-accent_2' : 'text-2xl cursor-pointer text-white' }
+            className={ i===currentIndex ? 'text-2xl cursor-pointer text-accent_2' : 'text-2xl cursor-pointer text-white' }
 
           >
             <RxDotFilled/>
@@ -100,4 +100,4 @@ function ProjectHomeCarousel ({projects, setProjectSelect, projectSelect}){
   )
 }
 
-export default ProjectHomeCarousel;
+export default Carousel;

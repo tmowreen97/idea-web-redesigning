@@ -27,16 +27,16 @@ function OurTeam (){
     },
     {
       name: 'Vinoo Jankie',
-      title: 'Introducing Vinoo, an instrumental figure at Inter-Disciplinary Engineering Associates, LLC (IDEA).',
+      title: 'Introducing Vinoo, An Instrumental Figure at IDEA',
       heading: "",
       body:[
         "In his role as Principal and Electrical Department Lead, Vinoo spearheads overall client engagement, ensuring a seamless experience for all opportunities.",
-        "Vinoo brings 12+ years of detailed Electrical, Fire Alarm, Lighting Controls and Low Voltage (Information Technology, Security, Audio/Visual, etc.) system design experience to our growing team. With a diverse set of project experience and expertise in multiple sectors of the industry including high-rise residential, mission critical, industrial, and cultural institutions, Vinoo is able to effectively and seamlessly service and manage projects of all scales and types. Vinoo has serviced and completed multiple LEED certified projects.",
+        "Vinoo brings 12+ years of detailed Electrical, Fire Alarm, Lighting Controls and Low Voltage (Information Technology, Security, Audio/Visual, etc.) System Design experience to our growing team. With a diverse set of project experience and expertise in multiple sectors of the industry including high-rise residential, mission critical, industrial, and cultural institutions, Vinoo is able to seamlessly service and manage projects of all scales and types. Vinoo has serviced and completed multiple LEED certified projects."
 
       ],
       contact: "/assets/PE RCDD Vinoo Jankie",
       linkedin: "https://www.linkedin.com/in/vinoo-jankie-pe-09206828/",
-      fun_fact: "Vinoo has two kids and no time for fun",
+      fun_fact: "Vinoo has a passion for history, and is an avid reader on the subject.",
       image: '/assets/VJ.jpg'
     }
   ]

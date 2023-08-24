@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import Carousel from "./Carousel";
 import {React, useState, useEffect, useCallback} from "react";
 import ReactPlayer from "react-player/lazy";
 import { motion } from "framer-motion";
@@ -8,6 +9,30 @@ import { motion } from "framer-motion";
 function CulturePage(){
 
   const [isClient, setIsClient] = useState(false)
+  const [bbqIndex, setBbqIndex] = useState(0)
+
+  const bbq = [
+    {
+      name: 'bbq-1',
+      image: '/assets/culture/bbq-1.jpeg'
+    },
+    {
+      name: 'bbq-2',
+      image: '/assets/culture/bbq-2.jpeg'
+    },
+    {
+      name: 'bbq-3',
+      image: '/assets/culture/bbq-3.jpeg'
+    },
+    {
+      name: 'bbq-4',
+      image: '/assets/culture/bbq-4.jpeg'
+    },
+    {
+      name: 'bbq-5',
+      image: '/assets/culture/bbq-5.jpeg'
+    }
+  ]
 
   const useMediaQuery = (width) => {
     const [targetReached, setTargetReached] = useState(false);
@@ -35,8 +60,6 @@ function CulturePage(){
   
     return targetReached;
   };
-
-
   const isBreakPoint = useMediaQuery(900)
 
   return(
@@ -86,8 +109,15 @@ function CulturePage(){
             <div>
               <h1 className="md:text-[300%] px-5 pt-5 text-primary_text font-light ">2 Year BBQ</h1>
               <h2 className=" ml-6  text-primary_text text-2xl font-light ">DATE</h2>
-              <div className="flex items-center justify-center mb-8">
-                <Image src={'/assets/filler-3.jpg'} width={500} height={300} className="rounded-xl overflow-hidden"/>
+              <div className="flex  ">
+                <div className="absolute">
+                  <div className="relative items-center justify-center mb-8">
+                    <Carousel array={bbq} setCurrentIndex={setBbqIndex} currentIndex={bbqIndex}/>
+                  </div>
+                  
+                </div>
+                
+                {/* <Image src={'/assets/filler-3.jpg'} width={500} height={300} className="rounded-xl overflow-hidden"/> */}
               </div>
               <div className="mx-8 text-lg" >
                 <p>
