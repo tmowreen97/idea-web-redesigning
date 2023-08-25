@@ -68,11 +68,11 @@ const About = () => {
             </div>
           </div>
 
-          <div className="about__child2 p-4 m-4 md:m-0 md:text-lg items-center justify-center bg-secondary/40 rounded-xl md:w-[485px]  ">
-            <div className='md:m-14 m-3'>
+          <div className="about__child2 p-4 m-4 md:m-0 md:text-2xl items-center justify-center bg-secondary/40 rounded-xl md:w-[485px]  ">
+            <div className='md:m-8 m-3'>
               <h2 className="tracking-wider">Our Mission</h2>
             </div>
-            <div className='md:m-14 m-3'>
+            <div className='md:m-8 m-3'>
               <div>
                 <p className="my-[4%]">
                 IDEA, we strive to cultivate enduring partnerships founded on qualities of service, trust, collaboration, and the relentless pursuit of engineering innovation.  We align our engineering efforts to empower client-specific and sustainable building system solutions. Our Interdisciplinary engineering approach embraces technology as we strive to develop efficiencies and improve the Architectural Engineering industry. Together, we are pushing boundaries, ensuring mutual growth and success for our clients and collaboration partners.
@@ -84,7 +84,7 @@ const About = () => {
           </div>
           <div className="about__img  bg-secondary/40 p-4 m-4 items-center justify-center text-center rounded-xl hover:animate-none  md:w-[485px] md:m-0 animation-pulse delay-200">
             <div className="relative items-center justify-center" onMouseOver={()=> setShow(true)} onMouseLeave={()=> setShow(false)}>
-                <div className="m-5 overflow-hidden rounded-xl items-center justify-center flex">
+                <div className="m-2 overflow-hidden rounded-xl items-center justify-center flex">
                   <div className="relative ">
                     <Image src={'/assets/our-team-pic.jpg'} width={500} height={300} alt={'team'} className='rounded-xl'/> 
                     <div className={show ? "absolute bg-cover bottom-0 left-0 right-0 top-0 bg-[#322d44]/80 rounded-xl text-secondary_text  " : "hidden"}>
