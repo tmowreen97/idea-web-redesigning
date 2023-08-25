@@ -28,16 +28,18 @@ const About = () => {
 // bg-[#DAD3DF]
   return (
     <div id='about' className='w-screen md:h-full bg-primary font-light'>
-      <div className=' flex items-center justify-center p-4 '>
-        <div className="about__parent md:grid   mt-[5%] md:mx-[15%]">
-          <div className="about__title mt-[5%] ">
-            <h1 className="md:text-[1100%] text-8xl tracking-wider text-center font-thin text-primary_text ">About</h1>
+      <div className=' flex items-center justify-center md:p-4'>
+        <div className="about__parent md:grid mt-[5%] md:mx-[15%]">
+          <div className="about__title m-[5%] md:m-0 ">
+            <h1 className="md:text-[1100%] text-8xl tracking-wider text-center font-thin text-primary_text ">
+              About
+            </h1>
           </div>
-          <div className="about__child1 p-4 text-lg items-center justify-center bg-secondary/40 rounded-xl w-[645px] ">
-            <div className='m-14'>
+          <div className="about__child1 p-4 m-4 md:m-0 md:text-lg items-center justify-center bg-secondary/40 rounded-xl md:w-[645px] ">
+            <div className='md:m-14 m-3'>
               <h2 className="tracking-wider">Our Story</h2>
             </div>
-            <div className='m-14'>
+            <div className='md:m-14 m-3'>
               <div>
                 <p className='my-[4%]'>
                   Founded in 2021, IDEA is a technology-oriented, forward-focused Interdisciplinary MEP-FP 
@@ -55,7 +57,7 @@ const About = () => {
               </div>
             </div>
             
-            <div className='grid md:grid-cols-2 justify-center items-center text-center  w-full mx-10'>
+            <div className='grid md:grid-cols-2 justify-center items-center text-center  md:w-full m-10'>
               {
                 traits.map((trait, index) => (
                   <div key={index} className='bg-secondary_text/90 italic rounded-xl p-4 w-[200px] m-[4%]'>
@@ -66,11 +68,11 @@ const About = () => {
             </div>
           </div>
 
-          <div className="about__child2 p-4 text-lg items-center justify-center bg-secondary/40 rounded-xl w-[485px]  ">
-            <div className='m-14'>
+          <div className="about__child2 p-4 m-4 md:m-0 md:text-lg items-center justify-center bg-secondary/40 rounded-xl md:w-[485px]  ">
+            <div className='md:m-14 m-3'>
               <h2 className="tracking-wider">Our Mission</h2>
             </div>
-            <div className='m-14'>
+            <div className='md:m-14 m-3'>
               <div>
                 <p className="my-[4%]">
                 IDEA, we strive to cultivate enduring partnerships founded on qualities of service, trust, collaboration, and the relentless pursuit of engineering innovation.  We align our engineering efforts to empower client-specific and sustainable building system solutions. Our Interdisciplinary engineering approach embraces technology as we strive to develop efficiencies and improve the Architectural Engineering industry. Together, we are pushing boundaries, ensuring mutual growth and success for our clients and collaboration partners.
@@ -80,7 +82,7 @@ const About = () => {
             
             
           </div>
-          <div className="about__img  bg-secondary/40 p-4 items-center justify-center text-center rounded-xl hover:animate-none  w-[485px] animation-pulse delay-200">
+          <div className="about__img  bg-secondary/40 p-4 m-4 items-center justify-center text-center rounded-xl hover:animate-none  md:w-[485px] md:m-0 animation-pulse delay-200">
             <div className="relative items-center justify-center" onMouseOver={()=> setShow(true)} onMouseLeave={()=> setShow(false)}>
                 <div className="m-5 overflow-hidden rounded-xl items-center justify-center flex">
                   <div className="relative ">
