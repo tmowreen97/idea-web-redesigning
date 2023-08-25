@@ -122,7 +122,7 @@ function ProjectHome(){
                 <h3 className="tracking-wider md:text-xl text-secondary_text">{projects[projectSelect].location}</h3>
                 <h3 className="tracking-wider md:text-xl text-secondary_text">{projects[projectSelect].year}</h3>
               </div>
-              <p className="tracking-wider m-2">{projects[projectSelect].desc}</p>
+              <p className="tracking-wider m-2 md:text-lg">{projects[projectSelect].desc}</p>
             </div>
             <div className=" text-center absolute bottom-0 md:left-[15%] left-5 ">
               <Link href={'/portfolio'}>

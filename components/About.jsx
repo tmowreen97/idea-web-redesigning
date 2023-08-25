@@ -39,7 +39,7 @@ const About = () => {
             <div className='md:m-14 m-3'>
               <h2 className="tracking-wider">Our Story</h2>
             </div>
-            <div className='md:m-14 m-3'>
+            <div className='md:m-14 m-3 text-xl'>
               <div>
                 <p className='my-[4%]'>
                   Founded in 2021, IDEA is a technology-oriented, forward-focused Interdisciplinary MEP-FP 
@@ -57,7 +57,7 @@ const About = () => {
               </div>
             </div>
             
-            <div className='grid md:grid-cols-2 justify-center items-center text-center  md:w-full m-10'>
+            <div className='grid md:grid-cols-2 justify-center items-center text-center  md:w-full m-10 md:mt-[15%]'>
               {
                 traits.map((trait, index) => (
                   <div key={index} className='bg-secondary_text/90 italic rounded-xl p-4 w-[200px] m-[4%]'>
@@ -70,11 +70,11 @@ const About = () => {
 
           <div className="about__child2 p-4 m-4 md:m-0 md:text-2xl items-center justify-center bg-secondary/40 rounded-xl md:w-[485px]  ">
             <div className='md:m-8 m-3'>
-              <h2 className="tracking-wider">Our Mission</h2>
+              <h2 className="tracking-wider text-5xl">Our Mission</h2>
             </div>
             <div className='md:m-8 m-3'>
               <div>
-                <p className="my-[4%]">
+                <p className="">
                 IDEA, we strive to cultivate enduring partnerships founded on qualities of service, trust, collaboration, and the relentless pursuit of engineering innovation.  We align our engineering efforts to empower client-specific and sustainable building system solutions. Our Interdisciplinary engineering approach embraces technology as we strive to develop efficiencies and improve the Architectural Engineering industry. Together, we are pushing boundaries, ensuring mutual growth and success for our clients and collaboration partners.
                 </p>
               </div>
