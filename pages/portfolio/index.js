@@ -22,11 +22,11 @@ export default function Portfolio(){
       ],
       resources: [
         {
-          title: 'Link 1',
+          title: 'MSC Cruises',
           url: 'https://www.msccruisesusa.com/news/new-cruise-terminal-miami', 
         },
         {
-          title: 'Link 2',
+          title: 'Arquitectonica',
           url: 'https://arquitectonica.com/architecture/project/msc-cruises-terminal-at-port-miami/' 
         }
         
@@ -173,7 +173,7 @@ export default function Portfolio(){
     // LANG
     {
       name: 'Lang Residence',
-      heading: 'High-End Residential',
+      heading: 'Residential',
       location: 'Great Harbor Cay, Bahamas',
       size: '5,000 SF',
       year: '2021',
@@ -197,7 +197,7 @@ export default function Portfolio(){
     {
       name: 'Johnson Residence',
       location: 'Great Harbor Cay, Bahamas',
-      heading: 'High-End Residential',
+      heading: 'Residential',
       size: '3,500 SF',
       year: '2023',
       services: [
@@ -216,12 +216,14 @@ export default function Portfolio(){
       height: '500',
       disclaimer:""
     },
-    // PRINCETON 20 WASHINGTON
+    // Julius Romo Rabinowitz Building at Princeton University MULITIPLE IMAGES
     {
-      name: '20 Washington at Princeton University*',
+      name: 'Julius Romo Rabinowitz Building at Princeton University*',
+      heading: [
+        'Educational/Institutional',
+      ],
       location: 'Princeton, NJ',
-      heading: 'Educational/Institutional',
-      size: '200,000 SF',
+      size: '200,000',
       year: '2016',
       services: [
         'MEP-FP Project Management', 
@@ -229,25 +231,24 @@ export default function Portfolio(){
       ],
       description: [
         'Full renovation of a historic 200,000sf chemistry building. Renovated facility included two atriums, lecture rooms, offices, classrooms, and conference rooms. Renovation maintained and restored the existing historic envelope of the building. Renovated facility will consist of classrooms, offices, conference room, common spaces, etc. Renovation consists of (2) atrium areas which serves as common spaces, both atriums are served by dedicated smoke control systems. The project consisted of connecting to the campus 5kV loop to a dual feed unit substation with 1500kVA transformer and 2500-amp switchgear with draw-out circuit breakers.',
-        'Leadership in Energy & Environmental Design (LEED) GOLD certified.',
-        
+        'Leadership in Energy & Environmental Design (LEED) GOLD certified.'
       ],
       resources: [
         {
-          title: 'Link 1',
-          url: 'https://www.kpmb.com/project/julis-romo-rabinowitz-building-louis-a-simpson-international-building-princeton-university/', 
+          title: 'KPMB',
+          url: 'https://www.kpmb.com/project/julis-romo-rabinowitz-building-louis-a-simpson-international-building-princeton-university/'
         }
       ],
       awards: [
         '2018 Ontario Association of Architects Award of Design Excellence', 
         '2018 SCUP Excellence in Architecture for Building Additions, Renovation or Adaptive Reuse – Honorable Mention'
       ],
-      image: '/assets/need-filler.jpeg',
+      image: '/assets/projects/featured/julius-1-featured.jpg',
       width: '700',
-      height: '500',
+      height: '200',
       disclaimer: '*Project performed by IDEA team member at previous employment.'
     },
-    // JAZZ LINCOLN CENTER
+    // JAZZ LINCOLN CENTER MULTIPLE IMAGES
     {
       name: 'Jazz at Lincoln Center*',
       location: 'New York, NY',
@@ -258,11 +259,12 @@ export default function Portfolio(){
       size: '27,000 SF',
       year: '2015',
       services: [
-        'MEP-FP Project Management', 
-        'Electrical & Fire Alarm Design',
+        'MEP-FP Project Managment', 
+        'Electrical', 
+        'Fire Alarm Design'
       ],
       description: [
-        'Renovation of a 27,000 SF public space into a flexible theatrical performance venue. Spaces are equipped with state-of-the-art AV equipment, professional theatre lighting and sound systems, and other modern arts-related technology.',
+        'Renovation of a 27,000sf public space into a flexible theatrical performance venue. Spaces are equipped with state-of-the-art AV equipment, professional theatre lighting and sound systems, and other modern arts-related technology.'
       ],
       resources: [
         {
@@ -272,14 +274,14 @@ export default function Portfolio(){
       ],
       awards: [
       ],
-      image: '/assets/need-filler.jpeg',
+      image: '/assets/projects/featured/jazz-1-featured.jpg',
       width: '700',
       height: '500',
       disclaimer: '*Project performed by IDEA team member at previous employment.'
     },
-    // HENDRI HALL YALE
+    // HENDRI HALL YALE ENSURE INFO IS CORRECT
     {
-      name: 'Hendri Hall at School of Music, Yale University*',
+      name: 'Adams Center at Yale School of Music*',
       location: 'New Haven, CT',
       heading: [
         'Educational/Institutional',
@@ -290,8 +292,7 @@ export default function Portfolio(){
         'Electrical & Fire Alarm Design',
       ],
       description: [
-        'Renovation to a 60,000sf facility historic facility. Renovated program consisted of rehearsal rooms, classrooms, music rooms, practice rooms, and offices. Specialty programmed spaces are equipped with state-of-the-art AV equipment, professional sound systems and other modern music/arts-related technology.',
-        
+        'Renovation to a 60,000sf facility historic facility. Renovated program consisted of rehearsal rooms, classrooms, music rooms, practice rooms, and offices. Specialty programmed spaces are equipped with state-of-the-art AV equipment, professional sound systems and other modern music/arts-related technology.'        
       ],
       resources: [
         {
@@ -306,31 +307,28 @@ export default function Portfolio(){
       height: '500',
       disclaimer: '*Project performed by IDEA team member at previous employment.'
     },
-    // 900 CHURCH ST
+    // 900 CHURCH ST NEED IMAGE ?? SIZE?
     {
       name: '900 Church Street*',
+      heading: ['Residential',],
       location: 'Nashville, TN',
-      heading: [
-        'High Rise',
-        'High-End Residential'
-      ],
-      size: '68,000 SF',
-      year: '2010',
+      size: 'NEED',
+      year: '2023',
       services: [
-        'Electrical & Fire Alarm Design',
+        ' Electrical & Fire Alarm Design',
       ],
       description: [
-        'Thirty-Four (34) story 372,000 SF high rise residential with 356 units includes two rooftop pools and rooftop amenities such as club room, gym and private dining areas. Building includes several 75ft high outdoor terraces.',
+        'Thirty-Four (34) story 372,000 sq. ft high rise residential with 356 units includes two rooftop pools and rooftop amenities such as club room, gym and private dining areas. Building includes several 75ft high outdoor terraces.'
       ],
       resources: [
+
       ],
-      awards: [
-      ],
+      awards: [],
       image: '/assets/need-filler.jpeg',
       width: '700',
-      height: '500',
-      disclaimer: '*Project performed by IDEA team member at previous employment.'
-    }
+      height: '200',
+      disclaimer: "*Project performed by IDEA team member at previous employment."
+    },
   ]
 
   return(

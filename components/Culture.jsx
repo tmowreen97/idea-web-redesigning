@@ -16,7 +16,7 @@ function CulturePage(){
   const bbq = [
     {
       name: 'bbq-1',
-      image: '/assets/culture/bbq-1.jpeg'
+      image: '/assets/culture/bbq/bbq-1.jpeg'
     },
     {
       name: 'bbq-2',

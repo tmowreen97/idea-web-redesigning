@@ -30,7 +30,7 @@ function ProjectHome(){
       name: 'Johnson Private High-End Residence',
       location: "Great Harbor Cay, Bahamas",
       year: "2024 (Construction Completion)",
-      sector: "High-End Residential",
+      sector: "Residential",
       image: '/assets/project-home/johnson-res-home.jpg',
       desc: "High-end residence consisting of two separate single-story glass enveloped structures located in the Bahamas.",
     }
@@ -74,9 +74,6 @@ function ProjectHome(){
             <a href="/portfolio/educational/institutional" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">Educational/Institutional</a>
           </li>
           <li>
-            <a href="/portfolio/high-end-residential" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">High-End Residential</a>
-          </li>
-          <li>
             <a href="/portfolio/high-rise" className="block px-4 py-2 hover:bg-accent_2/80 hover:text-white">High-Rise</a>
           </li>
           <li>
@@ -87,6 +84,9 @@ function ProjectHome(){
           </li>
           <li>
             <a href="/portfolio/performance-venues" className="block px-4 py-2 hover:bg-accent_2/80 hover:text-white ">Performance Venues</a>
+          </li>
+          <li>
+            <a href="/portfolio/residential" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">Residential</a>
           </li>
           
         </ul>

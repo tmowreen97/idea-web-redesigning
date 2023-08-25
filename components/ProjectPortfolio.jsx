@@ -99,10 +99,7 @@ function ProjectPortfolio({ projects, category }){
                   <a href="/portfolio/educational-institutional" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">Educational/Institutional</a>
                 </li>
                 <li>
-                  <a href="/portfolio/high-end-residential" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">High-End Residential</a>
-                </li>
-                <li>
-                  <a href="/portfolio/healthcare-facilities" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">High-Rise</a>
+                  <a href="/portfolio/high-rise" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">High-Rise</a>
                 </li>
                 <li>
                   <a href="/portfolio/industrial" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">Industrial</a>
@@ -112,6 +109,9 @@ function ProjectPortfolio({ projects, category }){
                 </li>
                 <li>
                   <a href="/portfolio/performance-venues" className="block px-4 py-2 hover:bg-accent_2/80 hover:text-white">Performance Venues</a>
+                </li>
+                <li>
+                  <a href="/portfolio/residential" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">Residential</a>
                 </li>
 {/*                 
                 <li>
