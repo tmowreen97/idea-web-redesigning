@@ -140,7 +140,7 @@ export default function Portfolio(){
       awards: [
         '2017 SCUP/AIA-CAE Excellence in Architecture for a New Building'
       ],
-      image: '/assets/projects/ECSU - Fine Arts Instructional Center 3.jpg',
+      image: '/assets/projects/featured/ecsu-1-featured.jpg',
       width: '700',
       height: '400',
       disclaimer : ""
@@ -293,32 +293,30 @@ export default function Portfolio(){
       height: '500',
       disclaimer: '*Project performed by IDEA team member at previous employment.'
     },
-    // HENDRI HALL YALE ENSURE INFO IS CORRECT
+    // Adams Center at Yale School of Music 
     {
       name: 'Adams Center at Yale School of Music*',
+      heading: ['Educational/Institutional',],
       location: 'New Haven, CT',
-      heading: [
-        'Educational/Institutional',
-      ],
       size: '60,000 SF',
       year: '2016',
       services: [
         'Electrical & Fire Alarm Design',
       ],
       description: [
-        'Renovation to a 60,000sf facility historic facility. Renovated program consisted of rehearsal rooms, classrooms, music rooms, practice rooms, and offices. Specialty programmed spaces are equipped with state-of-the-art AV equipment, professional sound systems and other modern music/arts-related technology.'        
+        'Renovation to a 60,000sf facility historic facility. Renovated program consisted of rehearsal rooms, classrooms, music rooms, practice rooms, and offices. Specialty programmed spaces are equipped with state-of-the-art AV equipment, professional sound systems and other modern music/arts-related technology.'
       ],
       resources: [
         {
-          title: 'Yale - Adam Center',
+          title: 'Yale School of Music',
           url: 'https://music.yale.edu/2017/01/17/adams-center-musical-arts-opens'
         }
+
       ],
-      awards: [
-      ],
-      image: '/assets/projects/featured/yale-featured.jpg',
+      awards : [],
+      image: '/assets/projects/featured/adams-featured.jpg',
       width: '700',
-      height: '500',
+      height: '200',
       disclaimer: '*Project performed by IDEA team member at previous employment.'
     },
     // 900 CHURCH ST NEED IMAGE ?? SIZE?

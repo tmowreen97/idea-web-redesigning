@@ -145,11 +145,11 @@ function ProjectPortfolio({ projects, category }){
         </select>
       </div> */}
       <div className="flex items-center justify-center">
-        <div className="grid md:grid-cols-2 mx-20 py-10 items-center justify-center">
+        <div className="grid md:grid-cols-2  items-center justify-center">
         {
           projects.map((proj)=> {
             return(
-              <div key={proj.name} >
+              <div key={proj.name} className="items-center justify-center">
                 <PortfolioList project={proj}/>
               </div>
               

@@ -122,30 +122,7 @@ export default function EduInst () {
       disclaimer: '*Project performed by IDEA team member at previous employment.'
     },
     //  Performance Arts Center at College of the Holy Cross NEED IMAGE ??
-    // Pendleton Hall at Wellesley College NEED IMAGE ?? CONFIRM WELLESLEY MA
-    {
-      name: 'Pendleton Hall at Wellesley College*',
-      heading: [
-        'Educational/Institutional',
-      ],
-      location: 'Wellesley, MA',
-      size: '50,000',
-      year: '2018',
-      services: [
-        'Electrical & Fire Alarm Design',
-      ],
-      description: [
-        'Renovation of a 40,000sf space and an addition of 10,000sf. Programmed spaces consisted of maker spaces, shops, studios, classrooms, and offices. Specialty programmed spaces are equipped with state-of-the-art process making equipment and associated infrastructure.'
-      ],
-      resources: [
-      ],
-      awards: [
-      ],
-      image: '/assets/projects/edu-inst/well-ei.jpg',
-      width: '700',
-      height: '200',
-      disclaimer: '*Project performed by IDEA team member at previous employment.'
-    },
+
     // FOX School of Business at Temple University NEED IMAGE ??
     // SEC at Penn State University NEED IMAGE ??
     // Adams Center at Yale School of Music 
