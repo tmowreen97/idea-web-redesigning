@@ -231,21 +231,6 @@ function Hero({heading}){
 
   return (
     <div className='flex items-center justify-center  h-screen pb-16 bg-fixed bg-center bg-cover custom-img'>
-      {/* <div className='absolute left-0 top-0 h-[100%] w-[100%]'>
-        <Image src={'/assets/miami-port.jpeg'} alt='MiamiPort' fill style={{objectFit:'cover'}} priority/>
-      </div> */}
-      
-      {/* <Image
-      alt="Mountains"
-      src={mountains}
-      placeholder="blur"
-      quality={100}
-      fill
-      sizes="100vw"
-      style={{
-        objectFit: 'cover',
-      }}
-    /> */}
       {/* Overlay */}
       {/* <div className='absolute top-0 left-0 right-0 bottom-0 bg-black/70 z-[2]' /> */}
       <div className=" mb-40 md:mb-0 ">

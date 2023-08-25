@@ -213,8 +213,8 @@ polyline {
 /* Culture Grid */
 
 .culture__parent {
-  grid-template-columns: repeat(7, 1fr);
-  grid-template-rows:repeat(5, .5fr) ;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows:repeat(4, .5fr) repeat(1, .25fr);
   grid-column-gap: 20px;
   grid-row-gap: 20px;
   }
@@ -227,6 +227,7 @@ polyline {
   .culture__child6 { grid-area: 5 / 1 / 6 / 5; }
   .culture__child7 { grid-area: 4 / 5 / 5 / 8; }
   .culture__child8 { grid-area: 5 / 5 / 6 / 8; }
+  .culture__child9 { grid-area: 6 / 5 / 7 / 8; }
 
 
 

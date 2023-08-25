@@ -188,19 +188,19 @@ function CulturePage(){
       
       
       <div className="flex justify-center items-center p-5  md:pb-20 tracking-wider">
-        <div className="culture__parent justify-center pt-10 mx-[8%] 2xl:mx-[25%] md:grid flexbox">
-          <div className="culture__child1 md:p-10 p-5 pb-10flex bg-secondary/40 rounded-xl justify-center">
+        <div className="culture__parent justify-center   pt-10 mx-[8%]  md:grid">
+          <div className="culture__child1 md:p-10 p-5 pb-10flex bg-secondary/40 rounded-xl justify-center md:w-[705px]">
             <div className="">
               <div className="">
                 <h1 className="md:text-6xl px-5 pt-[50px] text-primary_text font-light ">2 Year BBQ</h1>
                 <h2 className=" ml-6  text-primary_text text-3xl font-light ">DATE</h2>
               </div>
-            <div className=" md:w-[630px] md:h-[750px] 2xl:w-[750px] max-w-[1000px] items-center justify-center relative group  my-20 ">
+            <div className=" md:w-[630px] md:h-[750px] items-center justify-center relative group  my-20 ">
               <Carousel
                 array={bbq}
                 currentIndex={bbqIndex}
                 setCurrentIndex={setBbqIndex}
-                custom={"md:w-[630px] h-[700px] 2xl:w-[750px] rounded-2xl bg-center bg-cover hover:scale-105  duration-500 transform p-0"}
+                custom={"md:w-[630px] h-[700px] rounded-2xl bg-center bg-cover hover:scale-105  duration-500 transform p-0"}
               />
             </div>
             <div>
@@ -216,18 +216,18 @@ function CulturePage(){
             </div>
             </div>
           </div>
-          <div className="culture__child2 md:p-10 p-5 mt-5 md:mt-0 flex bg-secondary/40 rounded-xl">
+          <div className="culture__child2 md:p-10 p-5 mt-5 md:mt-0 flex bg-secondary/40 rounded-xl w-[525px]">
           <div>
             <div>
               <h1 className="md:text-[288%] px-2  pt-[30px] text-primary_text font-light">Project EEFI Update</h1>
               <h2 className=" ml-6 text-primary_text text-3xl font-light ">DATE</h2>
             </div>
-            <div className=" md:w-[445px] md:h-[350px] 2xl:w-[525px] max-w-[1000px] items-center justify-center relative group  my-10 ">
+            <div className=" md:w-[445px] md:h-[350px] items-center justify-center relative group  my-10 ">
               <Carousel
                 array={eefi}
                 currentIndex={eefiIndex}
                 setCurrentIndex={setEefiIndex}
-                custom={"md:w-[445px] h-[300px] 2xl:w-[525px] rounded-2xl bg-center bg-cover hover:scale-105  duration-500 transform"}
+                custom={"md:w-[445px] h-[300px] rounded-2xl bg-center bg-cover hover:scale-105  duration-500 transform"}
               />
             </div>
             <div>
@@ -237,18 +237,18 @@ function CulturePage(){
             </div>
             </div>
           </div>
-          <div className="culture__child3 md:p-10 p-5 mt-5 md:mt-0 flex bg-secondary/40 rounded-xl">
+          <div className="culture__child3 md:p-10 p-5 mt-5 md:mt-0 flex bg-secondary/40 rounded-xl w-[525px]">
           <div>
             <div>
               <h1 className="md:text-[285%] px-2 pt-[30px] text-primary_text font-light">Project MSC Update </h1>
               <h2 className=" ml-6  text-primary_text text-3xl font-light">DATE</h2>
             </div>
-            <div className=" md:w-[445px] md:h-[475px] 2xl:w-[525px] max-w-[1000px] items-center justify-center relative group  my-10 ">
+            <div className=" md:w-[445px] md:h-[475px]  items-center justify-center relative group  my-10 ">
               <Carousel
                 array={msc}
                 currentIndex={mscIndex}
                 setCurrentIndex={setMscIndex}
-                custom={"md:w-[445px] h-[425px] 2xl:w-[525px] rounded-2xl bg-center bg-cover hover:scale-105  duration-500 transform"}
+                custom={"md:w-[445px] h-[425px] rounded-2xl bg-center bg-cover hover:scale-105  duration-500 transform"}
               />
             </div>
             <div>
@@ -258,18 +258,18 @@ function CulturePage(){
             </div>
             </div>
           </div>
-          <div className="culture__child4 md:p-10 p-5 mt-5 md:mt-0 flex bg-secondary/40 rounded-xl h-full">
+          <div className="culture__child4 md:p-10 p-5 mt-5 md:mt-0 flex bg-secondary/40 rounded-xl w-[705px]">
           <div>
             <div>
               <h1 className="md:text-6xl px-5 pt-[50px] text-primary_text font-light ">The Summer of IDEA's 2023 Interns </h1>
               <h2 className=" ml-6 text-primary_text text-3xl font-light ">August 15, 2023</h2>
             </div>
-            <div className=" md:w-[630px] md:h-[700px] 2xl:w-[750px] max-w-[1000px] items-center justify-center relative group  my-20 ">
+            <div className=" md:w-[630px] md:h-[700px]items-center justify-center relative group  my-20 ">
               <Carousel
                 array={interns}
                 currentIndex={internIndex}
                 setCurrentIndex={setInternIndex}
-                custom={"md:w-[625px] h-[650px] 2xl:w-[750px] rounded-2xl bg-center bg-cover hover:scale-105  duration-500 transform"}
+                custom={"md:w-[625px] h-[650px] rounded-2xl bg-center bg-cover hover:scale-105  duration-500 transform"}
               />
             </div>
             <div>
@@ -283,7 +283,7 @@ function CulturePage(){
             </div>
             </div>
           </div>
-          <div className="culture__child5 md:p-10 p-5 mt-5 md:mt-0 flex bg-secondary/40 rounded-xl">
+          <div className="culture__child5 md:p-10 p-5 mt-5 md:mt-0 flex bg-secondary/40 rounded-xl w-[525px]">
           <div>
             <div>
               <h1 className="md:text-[285%] px-2 pt-[30px] text-primary_text font-light">IDEA Turns 1!</h1>
@@ -300,7 +300,7 @@ function CulturePage(){
               </div>
             </div>
           </div>
-          <div className="culture__child6 md:p-10 p-5 mt-5 md:mt-0 flex bg-secondary/40 rounded-xl">
+          <div className="culture__child6 md:p-10 p-5 mt-5 md:mt-0 flex bg-secondary/40 rounded-xl w-[705px]">
           <div>
               <h1 className="md:text-5xl px-5 pt-5 text-primary_text font-light">MSC Groundbreaking</h1>
               <h2 className=" ml-6  text-primary_text text-2xl font-light tracking-wide">March 10, 2022</h2>
@@ -330,7 +330,7 @@ function CulturePage(){
             </div>
             </div>
           </div>
-          <div className="culture__child7 md:p-10 p-5 mt-5 md:mt-0 flex bg-secondary/40 rounded-xl">
+          <div className="culture__child7 md:p-10 p-5 mt-5 md:mt-0 flex bg-secondary/40 rounded-xl w-[525px]">
           <div>
             <div>
               <h1 className="md:text-[285%] px-2 pt-[30px] text-primary_text font-light">Vinoo is Promoted to Principal!</h1>
@@ -348,7 +348,7 @@ function CulturePage(){
               </div>
             </div>
           </div>
-          <div className="culture__child8 md:p-10 p-5 mt-5 md:mt-0  bg-secondary/40 rounded-xl h-[85%]">
+          <div className="culture__child8 md:p-10 p-5 mt-5 md:mt-0  bg-secondary/40 rounded-xl h-[85%] w-[525px]">
           <div>
             <div>
               <h1 className="md:text-[285%] px-2 pt-[30px] text-primary_text font-light">IDEA is Founded </h1>
@@ -363,7 +363,9 @@ function CulturePage(){
               </p>
             </div>
             </div>
-            <motion.div 
+          </div>
+          <div className="culture__child9  rounded-xl w-[525px] mt-[-200px] h-[36%]">
+          <motion.div 
             initial={{opacity:0}}
             animate={{
               opacity:[0,0.85,1,0],
@@ -378,9 +380,11 @@ function CulturePage(){
               
 
             }}
-            className="absolute right-[13%] 2xl:right-[29%] md:mt-[11%] 2xl:mt-[7%]">
-              <div className="relative  ">
-                <Image src={'/assets/light-logo-2.png'} width={400} height={100}/>
+            // className="absolute right-[13%] 2xl:right-[29%] md:mt-[11%] 2xl:mt-[7%]">
+            className="items-center justify-center">
+
+              <div className="flex m-[9%]">
+                <Image src={'/assets/light-logo-2.png'} width={400} height={100} className="items-center justify-center "/>
               </div>
           
             </motion.div>
