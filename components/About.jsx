@@ -39,7 +39,7 @@ const About = () => {
             <div className='md:m-14 m-3'>
               <h2 className="tracking-wider">Our Story</h2>
             </div>
-            <div className='md:m-14 m-3 text-xl'>
+            <div className='md:m-14 m-3'>
               <div>
                 <p className='my-[4%]'>
                   Founded in 2021, IDEA is a technology-oriented, forward-focused Interdisciplinary MEP-FP 
@@ -60,7 +60,7 @@ const About = () => {
             <div className='grid md:grid-cols-2 justify-center items-center text-center  md:w-full m-10 md:mt-[10%]'>
               {
                 traits.map((trait, index) => (
-                  <div key={index} className='bg-secondary_text/90 italic rounded-xl p-4 w-[200px] m-[4%]'>
+                  <div key={index} className='bg-secondary_text/90 italic rounded-xl p-4 w-[200px] m-[4%] mt-8'>
                     <p className='text-dark_text'>{trait}</p>
                   </div>
                 ))
