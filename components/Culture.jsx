@@ -21,7 +21,7 @@ function CulturePage(){
     },
     {
       name: 'bbq-2',
-      image: '/assets/culture/bbq/bbq-2.jpeg'
+      image: '/assets/culture/bbq/bbq-2-crop.png'
     },
     {
       name: 'bbq-3',
