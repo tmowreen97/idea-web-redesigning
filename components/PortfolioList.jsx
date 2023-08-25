@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Carousel from "./Carousel";
 import {BsChevronCompactDown, BsChevronCompactUp} from 'react-icons/bs';
 import { useState } from "react";
 import { motion } from "framer-motion";
@@ -8,6 +9,8 @@ function PortfolioList({project}){
 
   const [projHover, setProjHover] = useState(false)
   const [projClick, setProjClick] = useState(false)
+
+  const [projIndex, setProjIndex] = useState(0)
   function mouse (){
     setProjHover(true)
     myStopFunction();
@@ -72,15 +75,38 @@ function PortfolioList({project}){
               className="cursor-pointer hover:bg-accent_2 hover:text-primary_text  rounded-full overflow-hidden text-2xl z-10" />
             </div>
             <div className="grid grid-cols-2 items-center justify-center h-full gap-5">
-              <div className="flex max-w-[800px] items-center justify-center ">
-                <Image src={project.image} width={project.width} height={project.height} className="rounded-xl overflow-hidden max-h-[750px]"/>
+              <div className="flex items-center justify-center ">
+              {/* <div className=" md:w-[500px] md:h-[475px] 2xl:w-[525px] max-w-[1000px] items-center justify-center relative group  my-10 ">
+                  <Carousel
+                    array={project.images}
+                    currentIndex={projIndex}
+                    setCurrentIndex={setProjIndex}
+                    custom={"md:w-[500px] h-[425px] 2xl:w-[525px] rounded-2xl bg-center bg-cover hover:scale-105  duration-500 transform"}
+                  />
+                </div>  */}
+                <Image src={project.image} width={project.width} height={project.height} className="rounded-xl flex overflow-hidden max-h-[750px] justify-center"/>
               </div>
               <div >
                 <div className="m-2">
                   <h2 className="text-dark_text">{project.name}</h2>
                 </div>
                 <div className="m-3">
-                  <h3 className="text-dark_text text-2xl">{project.heading}</h3>
+                  <div className="flex">
+                   {
+                    project.heading.map((sect, index)=> {
+                      return(
+                        <span className="flex">
+                          <h3 className="text-dark_text text-2xl ">{sect}</h3>
+                          {index < project.heading.length-1 ? <p className="text-dark_text text-2xl mr-2">,</p> : '' }
+                        </span>
+                        
+                      )
+                      
+                    })
+                  } 
+                  </div>
+                  
+                  
                   <h3 className="text-dark_text text-2xl">{project.size}</h3>
                   <h3 className="text-dark_text text-2xl">Completion Date: {project.year}</h3>
                 </div>
@@ -89,6 +115,16 @@ function PortfolioList({project}){
                     project.description.map((desc, index)=> {
                       return(
                         <p key={index} className="text-dark_text">{desc}</p>
+                      )
+                      
+                    })
+                  }
+                  </div>
+                  <div className="m-3">
+                  {
+                    project.awards.map((award, index)=> {
+                      return(
+                        <p key={index} className="text-dark_text">{award}</p>
                       )
                       
                     })
@@ -118,6 +154,12 @@ function PortfolioList({project}){
                     </ul>
                       
                     </div> : ""}
+                    
+                </div>
+                <div className="m-5 flex justify-left bottom-0">
+                  {
+                    project.disclaimer ? <p className="text-dark_text text-xs">{project.disclaimer}</p>: ''
+                  }
                     
                 </div>
               </div>

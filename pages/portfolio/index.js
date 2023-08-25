@@ -104,7 +104,7 @@ export default function Portfolio(){
       resources: [
       ],
       awards: [],
-      image: '/assets/need-filler.jpeg',
+      image: '/assets/projects/featured/liu-featured.jpeg',
       width: '700',
       height: '400',
       disclaimer: ""
@@ -275,6 +275,20 @@ export default function Portfolio(){
       awards: [
       ],
       image: '/assets/projects/featured/jazz-1-featured.jpg',
+      images: [
+        '/assets/projects/featured/jazz-1-featured.jpg',
+        '/assets/projects/featured/jazz-2-featured.jpg'
+      ],
+      // images: [
+      //   {
+      //     title: 'jazz-1',
+      //     url: '/assets/projects/featured/jazz-1-featured.jpg'
+      //   },
+      //   {
+      //     title: 'jazz-2',
+      //     url: '/assets/projects/featured/jazz-2-featured.jpg'
+      //   }
+      // ],
       width: '700',
       height: '500',
       disclaimer: '*Project performed by IDEA team member at previous employment.'
