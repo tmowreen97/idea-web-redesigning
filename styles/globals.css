@@ -44,8 +44,8 @@ polyline {
   .about__parent{
     grid-template-columns: repeat(2, .5fr);
     grid-template-rows: .25fr repeat(2, .5fr);
-    grid-row-gap: 2px;
-    grid-column-gap:15px;
+    grid-row-gap: 30px;
+    grid-column-gap:30px;
 
   }
   .about__title { grid-area: 1 / 1 / 2 / 2; }
