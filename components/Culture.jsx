@@ -164,24 +164,24 @@ function CulturePage(){
       { isClient ? <div className="justify-center items-center flex md:w-[100%] md:h=[100%] overflow-hidden">
           {
             !isBreakPoint ? 
-            <ReactPlayer 
-            url={'https://www.youtube.com/watch?v=f7DEe1hqRq0&ab_channel=IDEA'}
-            playing
-            loop
-            muted
-            controls
-            width='900px'
-            height='500px'
-          /> : 
-          <ReactPlayer 
-            url={'https://www.youtube.com/watch?v=f7DEe1hqRq0&ab_channel=IDEA'}
-            playing
-            loop
-            muted
-            controls
-            width='375px'
-            height='250px'
-          />
+              <ReactPlayer 
+                url={'https://www.youtube.com/watch?v=f7DEe1hqRq0&ab_channel=IDEA'}
+                playing
+                loop
+                muted
+                controls
+                width='900px'
+                height='500px'
+              /> : 
+              <ReactPlayer 
+                url={'https://www.youtube.com/watch?v=f7DEe1hqRq0&ab_channel=IDEA'}
+                playing
+                loop
+                muted
+                controls
+                width='375px'
+                height='250px'
+              />
           }
 
       </div> : ""}

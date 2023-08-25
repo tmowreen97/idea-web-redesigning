@@ -38,13 +38,13 @@ function ProjectHome(){
 
   return(
     <div id='projects' className='w-screen md:h-full bg-primary'>
-      <div className='relative flex items-center justify-center p-4 pt-[5%]'>
+      <div className='relative flex items-center justify-center p-4 md:pt-[5%]'>
       <div className="projecthome__parent md:grid flexbox  ">
         <div className="projecthome__title mr-2 ml-5 ">
           <h1 className="md:text-[1000%] text-8xl tracking-wide text-left md:ml-[65px] font-thin mb-10 md:mt-[8%] text-primary_text">Projects</h1>
         </div>
-        <div className="projecthome__child1 md:p-10 p-2 bg-secondary/50 rounded-xl md:mr-5 md:ml-4  md:m-0">
-          <div className="md:max-w-[720px] md:h-[450px] md:w-full m-auto md:px-4 p-1  mb-[0%]">
+        <div className="projecthome__child1 md:p-10 p-2 bg-secondary/50 rounded-xl md:mr-5 md:ml-4  md:m-0 w-[375px] md:w-[815px]">
+          <div className="md:h-[450px] md:w-full md:px-4 p-1  mb-[0%]">
             <Carousel 
               array={projects} 
               setCurrentIndex={setProjectSelect} 
@@ -53,12 +53,12 @@ function ProjectHome(){
             />
             </div>
         </div>
-        <div className="projecthome__img relative bg-secondary/50 items-center text-center justify-center p-5 rounded-xl md:w-[450px] md:h-[45%] md:mt-20 md:m-0 m-4">
+        <div className="projecthome__img relative bg-secondary/50 items-center text-center justify-center md:p-5 rounded-xl w-[375px] mt-3 md:w-[450px] md:h-[45%] md:mt-20 md:m-0">
           <div className="relative">
             <button 
             onClick={()=> {setShowDropDown(!showDropDown)}}  
             data-dropdown-toggle="dropdown" 
-            className="relative md:w-[400px] text-2xl justify-between  hover:bg-secondary/60 focus:ring-4 focus:outline-none focus:ring-secondary_text font-medium rounded-lg px-5 py-4 mt-2 text-center inline-flex items-center text-secondary_text" type="button">
+            className="relative md:w-[400px] md:text-2xl text-xl justify-between  hover:bg-secondary/60 focus:ring-4 focus:outline-none focus:ring-secondary_text font-medium rounded-lg p-4 md:mt-2 text-center inline-flex items-center text-secondary_text" type="button">
               {projects[projectSelect].sector}
               { showDropDown ? <BsChevronCompactUp/> : <BsChevronCompactDown/>}
             </button>
@@ -113,24 +113,26 @@ function ProjectHome(){
 
           </div> */}
         </div>
-        <div className="projecthome__child2 p-10 bg-secondary/50 rounded-xl md:w-[450px] md:m-0 m-4">
-          <div className="absolute w-[380px] min-h-[450px]">
-            <div>
-              <h2 className="text-4xl m-2">{projects[projectSelect].name}</h2>
-              <div className="m-3">
-                <h3 className="tracking-wider text-xl text-secondary_text">{projects[projectSelect].location}</h3>
-                <h3 className="tracking-wider text-xl text-secondary_text">{projects[projectSelect].year}</h3>
+        <div className="projecthome__child2 p-10 bg-secondary/50 rounded-xl md:w-[450px] md:m-0 m-2 md:h-[550px] h-[600px] w-[360px]">
+          <div>
+            <div className="absolute md:w-[380px] h-[525px] w-[250px] md:h-[475px]">
+            <div className="relative">
+              <h2 className="md:text-4xl text-2xl m-2">{projects[projectSelect].name}</h2>
+              <div className="m-2">
+                <h3 className="tracking-wider md:text-xl text-secondary_text">{projects[projectSelect].location}</h3>
+                <h3 className="tracking-wider md:text-xl text-secondary_text">{projects[projectSelect].year}</h3>
               </div>
-              
-              <p className="tracking-wider m-3">{projects[projectSelect].desc}</p>
+              <p className="tracking-wider m-2">{projects[projectSelect].desc}</p>
             </div>
-            <div className=" text-center absolute bottom-0 left-[15%]">
-            <Link href={'/portfolio'}>
-              <button className="inline-block rounded-xl bg-secondary_text text-dark_text p-3 px-4 font-normal hover:drop-shadow-xl hover:bg-accent_2/80 hover:text-secondary_text  tracking-wider">Learn More on Our Portfolio</button>
-            </Link>
+            <div className=" text-center absolute bottom-0 md:left-[15%] left-5 ">
+              <Link href={'/portfolio'}>
+                <button className="inline-block rounded-xl bg-secondary_text text-dark_text p-3 px-4 font-normal hover:drop-shadow-xl hover:bg-accent_2/80 hover:text-secondary_text  tracking-wider">Learn More on Our Portfolio</button>
+              </Link>
             </div>
             
           </div>
+          </div>
+          
           
           
           
