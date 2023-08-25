@@ -11,6 +11,7 @@ function CulturePage(){
   const [isClient, setIsClient] = useState(false)
   const [bbqIndex, setBbqIndex] = useState(0)
   const [eefiIndex, setEefiIndex] = useState(0)
+  const [mscIndex, setMscIndex] = useState(0)
   const [internIndex, setInternIndex] = useState(0)
 
   const bbq = [
@@ -72,6 +73,49 @@ function CulturePage(){
       name: 'interns-3',
       image: '/assets/culture/interns/3-crop.png'
     }
+  ]
+
+  const msc = [
+    {
+      name: 'msc-1',
+      image: '/assets/culture/msc/1.jpg'
+    },
+    {
+      name: 'msc-2',
+      image: '/assets/culture/msc/2.jpg'
+    },
+    {
+      name: 'msc-3',
+      image: '/assets/culture/msc/3.jpg'
+    },
+    {
+      name: 'msc-4',
+      image: '/assets/culture/msc/4.jpg'
+    },
+    {
+      name: 'msc-5',
+      image: '/assets/culture/msc/5.jpg'
+    },
+    {
+      name: 'msc-6',
+      image: '/assets/culture/msc/6.jpg'
+    },
+    {
+      name: 'msc-7',
+      image: '/assets/culture/msc/7.jpg'
+    },
+    {
+      name: 'msc-8',
+      image: '/assets/culture/msc/8.jpg'
+    },
+    {
+      name: 'msc-9',
+      image: '/assets/culture/msc/9.jpg'
+    },
+    {
+      name: 'msc-10',
+      image: '/assets/culture/msc/10.jpg'
+    },
   ]
 
   const useMediaQuery = (width) => {
@@ -201,9 +245,9 @@ function CulturePage(){
             </div>
             <div className=" md:w-[445px] md:h-[475px] 2xl:w-[525px] max-w-[1000px] items-center justify-center relative group  my-10 ">
               <Carousel
-                array={eefi}
-                currentIndex={eefiIndex}
-                setCurrentIndex={setEefiIndex}
+                array={msc}
+                currentIndex={mscIndex}
+                setCurrentIndex={setMscIndex}
                 custom={"md:w-[445px] h-[425px] 2xl:w-[525px] rounded-2xl bg-center bg-cover hover:scale-105  duration-500 transform"}
               />
             </div>
