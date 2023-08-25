@@ -165,7 +165,7 @@ function CulturePage(){
           {
             !isBreakPoint ? 
             <ReactPlayer 
-            url={'https://www.youtube.com/watch?v=9g08kucPQtE&ab_channel=Gunna'}
+            url={'https://www.youtube.com/watch?v=f7DEe1hqRq0&ab_channel=IDEA'}
             playing
             loop
             muted
@@ -174,7 +174,7 @@ function CulturePage(){
             height='500px'
           /> : 
           <ReactPlayer 
-            url={'https://www.youtube.com/watch?v=9g08kucPQtE&ab_channel=Gunna'}
+            url={'https://www.youtube.com/watch?v=f7DEe1hqRq0&ab_channel=IDEA'}
             playing
             loop
             muted
