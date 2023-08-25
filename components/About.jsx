@@ -57,7 +57,7 @@ const About = () => {
               </div>
             </div>
             
-            <div className='grid md:grid-cols-2 justify-center items-center text-center  md:w-full m-10 md:mt-[15%]'>
+            <div className='grid md:grid-cols-2 justify-center items-center text-center  md:w-full m-10 md:mt-[10%]'>
               {
                 traits.map((trait, index) => (
                   <div key={index} className='bg-secondary_text/90 italic rounded-xl p-4 w-[200px] m-[4%]'>
