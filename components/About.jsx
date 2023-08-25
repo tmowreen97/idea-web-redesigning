@@ -69,8 +69,8 @@ const About = () => {
           </div>
 
           <div className="about__child2 p-4 m-4 md:m-0 md:text-2xl items-center justify-center bg-secondary/40 rounded-xl md:w-[485px]  ">
-            <div className='md:m-8 m-3'>
-              <h2 className="tracking-wider text-5xl">Our Mission</h2>
+            <div className='md:my-14 m-3 md:mx-8'>
+              <h2 className="tracking-wider">Our Mission</h2>
             </div>
             <div className='md:m-8 m-3'>
               <div>

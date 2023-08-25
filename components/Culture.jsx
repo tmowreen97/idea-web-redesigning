@@ -17,7 +17,7 @@ function CulturePage(){
   const bbq = [
     {
       name: 'bbq-1',
-      image: '/assets/culture/bbq/bbq-1.jpeg'
+      image: '/assets/culture/bbq/bbq-1-cropp.png'
     },
     {
       name: 'bbq-2',
@@ -33,7 +33,7 @@ function CulturePage(){
     },
     {
       name: 'bbq-5',
-      image: '/assets/culture/bbq/bbq-5.jpeg'
+      image: '/assets/culture/bbq/bbq-5-crop.png'
     }
   ]
 
@@ -189,13 +189,13 @@ function CulturePage(){
       
       <div className="flex justify-center items-center p-5  md:pb-20 tracking-wider">
         <div className="culture__parent justify-center   pt-10 mx-[8%]  md:grid">
-          <div className="culture__child1 md:p-10 p-5 pb-10flex bg-secondary/40 rounded-xl justify-center md:w-[705px]">
+          <div className="culture__child1 md:p-10 p-3 pb-10flex bg-secondary/40 rounded-xl justify-center md:w-[705px] w-[350px]">
             <div className="">
               <div className="">
-                <h1 className="md:text-6xl px-5 pt-[50px] text-primary_text font-light ">2 Year BBQ</h1>
-                <h2 className=" ml-6  text-primary_text text-3xl font-light ">DATE</h2>
+                <h1 className="md:text-6xl text-5xl px-5 pt-[50px] text-primary_text font-light ">2 Year BBQ</h1>
+                <h2 className=" ml-6  text-primary_text md:text-3xl text-2xl font-light ">May 12, 2023</h2>
               </div>
-            <div className=" md:w-[630px] md:h-[750px] items-center justify-center relative group  my-20 ">
+            <div className=" md:w-[630px] md:h-[750px] items-center justify-center relative group  md:my-20 my-5">
               <Carousel
                 array={bbq}
                 currentIndex={bbqIndex}
@@ -204,25 +204,28 @@ function CulturePage(){
               />
             </div>
             <div>
-              <p className="my-8 mx-[35px] 2xl:text-xl tracking-wide text-lg leading-[185%]">
-              As we gathered to celebrate a significant milestone, our 2-year anniversary transformed into a spectacular event that brought together the combined efforts of MSC, Fincentari, and IDEA. This occasion was more than just a date on the calendar; it was a convergence of dedication and achievement. The collaborative spirit that binds these entities was on full display during the memorable Company BBQ that ensued.
+              <p className="md:my-8 md:mx-[35px] m-3 2xl:text-xl tracking-wide text-lg leading-[185%]">
+              Celebrating 2 Remarkable Years: A Fusion BBQ Extravaganza! IDEA’s 2-year anniversary marked a splendid occasion as we united the dedicated forces of MSC, Fincentari, and IDEA for a memorable Company BBQ. Orchestrated meticulously by the Marketing team, the event boasted an inviting ambiance, complemented by the culinary creations of our in-house engineering talents turned BBQ maestros. This harmonious collaboration embodies our unwavering commitment to excellence and the spirit of collaboration. Cheers to sharing in this journey of success!
               </p>
-              <p className="my-8 mx-[35px] 2xl:text-xl tracking-wide text-lg leading-[32px]">
-              Guided by the meticulous planning of the Marketing team, the event radiated a warm and inviting atmosphere that set the stage for an extraordinary experience. Amidst the laughter and camaraderie, the true stars of the evening emerged: our in-house engineering talents who embraced their roles as BBQ maestros. With spatulas and tongs in hand, they showcased a blend of creativity and culinary finesse that mirrored the innovation that our companies stand for.
+              <p className="md:my-8 md:mx-[35px] m-3 2xl:text-xl tracking-wide text-lg leading-[32px]">
+              The Marketing team's thorough preparation was clear in the event's details, from combining company identities in decorations to organizing engaging activities. The delicious food, grilled by our engineering talents, mirrored the blend of skills they contribute.
               </p>
-              <p className="my-8 mx-[35px] 2xl:text-xl tracking-wide text-lg leading-[32px]">
-              We witnessed a tangible representation of the values that define us: a dedication to excellence and an unwavering commitment to working together. This celebration was not only a tribute to the past two years of accomplishment but also a testament to the vibrant journey that lies ahead. As we raised our glasses in collective cheer, we saluted the shared successes and anticipated the strides we will make as a united force, fueled by the synergy of MSC, Fincentari, and IDEA. Here's to the road we've traveled and the milestones awaiting us on the horizon.
+              <p className="md:my-8 md:mx-[35px] m-3 2xl:text-xl tracking-wide text-lg leading-[32px]">
+              Beyond the great food, the event deepened connections among colleagues, laughter and shared stories have left a sense of camaraderie and a renewed drive for the future. Reminding everyone of the people behind their roles throughout this journey of the soon to be, MSC Cruise Terminal. 
+              </p>
+              <p className="md:my-8 md:mx-[35px] m-3 2xl:text-xl tracking-wide text-lg leading-[32px]">
+              This celebration wasn't just about the past but also signaled a stronger future together. The Fusion BBQ Extravaganza demonstrated our ability to collaborate and adapt, setting the tone for continued growth and success.
               </p>
             </div>
             </div>
           </div>
-          <div className="culture__child2 md:p-10 p-5 mt-5 md:mt-0 flex bg-secondary/40 rounded-xl w-[525px]">
+          <div className="culture__child2 md:p-10 p-5 mt-5 md:mt-0 flex bg-secondary/40 rounded-xl md:w-[525px] w-[350px]">
           <div>
             <div>
-              <h1 className="md:text-[288%] px-2  pt-[30px] text-primary_text font-light">Project EEFI Update</h1>
-              <h2 className=" ml-6 text-primary_text text-3xl font-light ">DATE</h2>
+              <h1 className="md:text-6xl text-5xl px-5  pt-[30px] text-primary_text font-light">Project EEFI Update</h1>
+              <h2 className=" ml-6 text-primary_text md:text-3xl text-2xl font-light ">DATE</h2>
             </div>
-            <div className=" md:w-[445px] md:h-[350px] items-center justify-center relative group  my-10 ">
+            <div className=" md:w-[445px] md:h-[350px] items-center justify-center relative group  md:my-10 my-5">
               <Carousel
                 array={eefi}
                 currentIndex={eefiIndex}
@@ -231,19 +234,19 @@ function CulturePage(){
               />
             </div>
             <div>
-              <p className="my-5 mx-[5px] 2xl:text-xl tracking-wide  leading-[185%]">
+              <p className="md:my-8 md:mx-[35px] m-3 2xl:text-xl tracking-wide text-lg  leading-[185%]">
               Would you look at the progress here at East End Food Institute! This collection of site visits show the envelope closure and the installation of underground plumbing work. The envelope closure marks the first step toward waterproofing and structural integrity, while the installation of underground plumbing is a critical infrastructure development for building commercial kitchen programs!
               </p>
             </div>
             </div>
           </div>
-          <div className="culture__child3 md:p-10 p-5 mt-5 md:mt-0 flex bg-secondary/40 rounded-xl w-[525px]">
+          <div className="culture__child3 md:p-10 p-5 mt-5 md:mt-0 flex bg-secondary/40 rounded-xl md:w-[525px] w-[350px]">
           <div>
             <div>
-              <h1 className="md:text-[285%] px-2 pt-[30px] text-primary_text font-light">Project MSC Update </h1>
-              <h2 className=" ml-6  text-primary_text text-3xl font-light">DATE</h2>
+              <h1 className="md:text-6xl text-5xl px-5 pt-[30px] text-primary_text font-light">Project MSC Update </h1>
+              <h2 className=" ml-6  text-primary_text md:text-3xl text-2xl font-light">DATE</h2>
             </div>
-            <div className=" md:w-[445px] md:h-[475px]  items-center justify-center relative group  my-10 ">
+            <div className=" md:w-[445px] md:h-[475px]  items-center justify-center relative group  md:my-10 my-5">
               <Carousel
                 array={msc}
                 currentIndex={mscIndex}
@@ -252,19 +255,19 @@ function CulturePage(){
               />
             </div>
             <div>
-              <p className="mt-20 mx-[5px] 2xl:text-xl tracking-wide  leading-[185%] text-lg">
-              Celebrating 2 Remarkable Years: A Fusion BBQ Extravaganza! Our 2-year anniversary marked a splendid occasion as we united the dedicated forces of MSC, Fincentari, and IDEA for a memorable Company BBQ. 
+              <p className="md:mt-10 mx-[5px] 2xl:text-xl tracking-wide  leading-[185%] text-lg">
+              Witnessing remarkable progress at the MSC Cruise Terminal in Miami, Florida! As the structural steel installation nears completion, the project sails smoothly ahead. Building systems are racing towards the finish line, and a major milestone has been achieved with the completion of the curtain wall installation, while the dredging progress continues to impress. The future of cruising is on the horizon at MSC Terminal! A major shout out to all the hard working disciplines involved in what we call greatness! 
               </p>
             </div>
             </div>
           </div>
-          <div className="culture__child4 md:p-10 p-5 mt-5 md:mt-0 flex bg-secondary/40 rounded-xl w-[705px]">
+          <div className="culture__child4 md:p-10 p-5 mt-5 md:mt-0 flex bg-secondary/40 rounded-xl md:w-[705px] w-[350px]">
           <div>
             <div>
-              <h1 className="md:text-6xl px-5 pt-[50px] text-primary_text font-light ">The Summer of IDEA's 2023 Interns </h1>
-              <h2 className=" ml-6 text-primary_text text-3xl font-light ">August 15, 2023</h2>
+              <h1 className="md:text-6xl text-5xl px-5 pt-[50px] text-primary_text font-light ">The Summer of IDEA's 2023 Interns </h1>
+              <h2 className=" ml-6 text-primary_text md:text-3xl text-2xl font-light ">August 15, 2023</h2>
             </div>
-            <div className=" md:w-[630px] md:h-[700px]items-center justify-center relative group  my-20 ">
+            <div className=" md:w-[630px] md:h-[700px]items-center justify-center relative group  md:my-20 my-5 ">
               <Carousel
                 array={interns}
                 currentIndex={internIndex}
@@ -273,40 +276,45 @@ function CulturePage(){
               />
             </div>
             <div>
-              <p className="my-8 mx-[35px] 2xl:text-xl tracking-wide text-lg leading-[185%]">
+              <p className="md:my-8 md:mx-[35px] m-3 2xl:text-xl tracking-wide text-lg leading-[185%]">
               Celebrating a fantastic summer with our talented interns! Raiyan, Abrar, and Preo have been rocking their 3rd year interning journey at IDEA. Their passion and dedication have truly made a mark on our interdisciplinary engineering projects. Here's to a summer of growth and innovation!
               </p>
-              <p className="my-8 mx-[35px] 2xl:text-xl tracking-wide text-lg leading-[185%]">
+              <p className="md:my-8 md:mx-[35px] m-3 2xl:text-xl tracking-wide text-lg leading-[185%]">
               Reflecting on the past few months, it's evident that our exceptional interns have etched their names into IDEA's legacy during their impactful 3rd year internship journey. The dynamic contributions of Raiyan, Abrar, and Preo have undeniably elevated the outcomes of our cross-disciplinary engineering endeavors at IDEA.
               </p>
 
             </div>
             </div>
           </div>
-          <div className="culture__child5 md:p-10 p-5 mt-5 md:mt-0 flex bg-secondary/40 rounded-xl w-[525px]">
+          <div className="culture__child5 md:p-10 p-5 mt-5 md:mt-0 flex bg-secondary/40 rounded-xl md:w-[525px] w-[350px]">
           <div>
             <div>
-              <h1 className="md:text-[285%] px-2 pt-[30px] text-primary_text font-light">IDEA Turns 1!</h1>
-              <h2 className=" ml-6  text-primary_text text-3xl font-light">April 5, 2022</h2>
+              <h1 className="md:text-6xl text-5xl px-5  pt-[30px] text-primary_text font-light">IDEA Turns 1!</h1>
+              <h2 className=" ml-6  text-primary_text md:text-3xl text-2xl font-light">April 5, 2022</h2>
             </div>
-              <div className="flex items-center justify-center my-10">
+              <div className="flex items-center justify-center md:my-10 my-5">
                 <Image src={'/assets/idea_turns_1.png'} width={500} height={300} className="rounded-xl overflow-hidden"/>
               </div>
-              <div className="mt-20 mx-8 text-lg">
-                <p>
+              <div >
+                <div>
+                  <p className="md:my-8 md:mx-[35px] m-3 2xl:text-xl tracking-wide text-lg  leading-[185%]">
                 Thank you to all of our Team Members, and supporters for being a part of our continued success! We look forward to designing and manigesting more World Class IDEAs!
                 </p>
+                </div>
+                
 
               </div>
             </div>
           </div>
-          <div className="culture__child6 md:p-10 p-5 mt-5 md:mt-0 flex bg-secondary/40 rounded-xl w-[705px]">
+          <div className="culture__child6 md:p-10 p-5 mt-5 md:mt-0 flex bg-secondary/40 rounded-xl md:w-[705px] w-[350px]">
           <div>
-              <h1 className="md:text-5xl px-5 pt-5 text-primary_text font-light">MSC Groundbreaking</h1>
+              <h1 className="md:text-5xl text-4xl px-5 pt-5 text-primary_text font-light">MSC Groundbreaking</h1>
               <h2 className=" ml-6  text-primary_text text-2xl font-light tracking-wide">March 10, 2022</h2>
-              <div className="flex items-center justify-center  my-10 ">
+              <div className="flex items-center justify-center  md:my-10  my-5 ">
+              { isClient ? 
               <Link href={'https://www.facebook.com/reel/661496844905448'} legacyBehavior>
                 <a target="_blank" rel="noopener noreferrer">
+                  {!isBreakPoint ? 
                   <ReactPlayer 
                   url={'/assets/msc_groundbreaking.mp4'}
                   loop
@@ -317,54 +325,70 @@ function CulturePage(){
                   width='600px'
                   className="rounded-xl overflow-hidden"
                   />
+                  : 
+                  <ReactPlayer 
+                  url={'/assets/msc_groundbreaking.mp4'}
+                  loop
+                  playing
+                  controls
+                  muted
+                  height='500px'
+                  width='300px'
+                  className="rounded-xl overflow-hidden"
+                  />
+                }
+                  
 
                 </a>
                 
                 </Link>
+                : ""
+                
+              }
               </div>
               <div>
-              <p className="my-8 mx-[35px] 2xl:text-xl tracking-wide text-lg leading-[32px]">
+              <p className="md:my-8 md:mx-[35px] m-3 2xl:text-xl tracking-wide text-lg leading-[32px]">
               For the past year, IDEA has been providing MEP-FP Engineering services & expertise on MSC’s World’s Largest Cruise Ship Terminal project. We celebrated this achievement with a Groundbreaking Ceremony at the Port of Miami on March 10, 2022!
               </p>
 
             </div>
             </div>
           </div>
-          <div className="culture__child7 md:p-10 p-5 mt-5 md:mt-0 flex bg-secondary/40 rounded-xl w-[525px]">
+          <div className="culture__child7 md:p-10 p-5 mt-5 md:mt-0 flex bg-secondary/40 rounded-xl md:w-[525px] w-[350px]">
           <div>
             <div>
-              <h1 className="md:text-[285%] px-2 pt-[30px] text-primary_text font-light">Vinoo is Promoted to Principal!</h1>
-              <h2 className=" ml-6  text-primary_text text-3xl font-light tracking-wide">April 5, 2022</h2>
+              <h1 className="md:text-[6xl] text-5xl px-5 pt-[30px] text-primary_text font-light">Vinoo is Promoted to Principal!</h1>
+              <h2 className=" ml-6  text-primary_text md:text-3xl text-2xl font-light tracking-wide">April 5, 2022</h2>
             </div>
               
               <div className="items-center justify-center rounded-xl overflow-hidden my-10">
               <Image src={'/assets/vinoo_promoted.png'} width={500} height={300} className="rounded-xl overflow-hidden"/>
               </div>
               <div >
-              <p className="mt-20 mx-[5px] 2xl:text-xl tracking-wide text-lg leading-[185%]">
+              <p className="md:my-8 md:mx-[35px] m-3 2xl:text-xl tracking-wide text-lg leading-[185%]">
                 On April 5, 2021, Kazi Karim, PE took on the initiative to contribute and improve the Architectural Engineering community by founding IDEA. With the intent to provide client-specific high-quality MEP-FP Engineering services, Kazi is facilitating the growth of IDEAs. He is now the Founder and Managing Principal for IDEA and currently servicing a variety of World Class IDEAs.
                 </p>
 
               </div>
             </div>
           </div>
-          <div className="culture__child8 md:p-10 p-5 mt-5 md:mt-0  bg-secondary/40 rounded-xl h-[85%] w-[525px]">
+          <div className="culture__child8 md:p-10 p-5 mt-5 md:mt-0  bg-secondary/40 rounded-xl h-[85%] md:w-[525px] w-[350px]">
           <div>
             <div>
-              <h1 className="md:text-[285%] px-2 pt-[30px] text-primary_text font-light">IDEA is Founded </h1>
-              <h2 className="ml-6  text-primary_text text-3xl font-light">April 5, 2021</h2>
+              <h1 className="md:text-[6xl] text-5xl px-5 pt-[30px] text-primary_text font-light">IDEA is Founded </h1>
+              <h2 className="ml-6  text-primary_text md:text-3xl text-2xl font-light">April 5, 2021</h2>
             </div>
             <div className="flex items-center justify-center my-10">
               <Image src={'/assets/idea_founded.png'} width={400} height={300} className="rounded-xl overflow-hidden"/>
             </div>
             <div>
-              <p className="mt-20 mx-[5px] 2xl:text-xl tracking-wide text-lg leading-[185%]">
+              <p className="md:my-8 md:mx-[35px] m-3 2xl:text-xl tracking-wide text-lg leading-[185%]">
               On April 5, 2021 Kazi Karim, PE took on the initiative to contribute to and improve the Architectural Engineering community by founding IDEA. With the intent to provide client-specific high-quality MEP-FP Engineering services, Kazi is facilitating the growth of IDEAs. He is now the Founder and Managing Principal for IDEA and currently servicing a variety of World Class IDEAs.
               </p>
             </div>
             </div>
           </div>
-          <div className="culture__child9  rounded-xl w-[525px] mt-[-200px] h-[36%]">
+          <div className="culture__child9  rounded-xl md:w-[525px] md:mt-[-200px] h-[36%]">
           <motion.div 
             initial={{opacity:0}}
             animate={{
