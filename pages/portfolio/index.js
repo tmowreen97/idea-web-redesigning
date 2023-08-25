@@ -60,8 +60,8 @@ export default function Portfolio(){
       ],
       awards:[],
       image: '/assets/projects/featured/eefi-featured.png',
-      width: '650',
-      height: '200',
+      width: '700',
+      height: '100',
       disclaimer: ""
     },
     // KHAIR
