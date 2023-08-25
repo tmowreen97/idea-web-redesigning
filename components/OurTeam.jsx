@@ -36,7 +36,7 @@ function OurTeam (){
       ],
       contact: "/assets/PE RCDD Vinoo Jankie",
       linkedin: "https://www.linkedin.com/in/vinoo-jankie-pe-09206828/",
-      fun_fact: "Vinoo has a passion for history, and is an avid reader on the subject.",
+      fun_fact: "Vinoo has two kids and no time for fun… he also has a passion for history, and is an avid reader on the subject.",
       image: '/assets/VJ.jpg'
     }
   ]

@@ -144,27 +144,30 @@ function CulturePage(){
       
       
       <div className="flex justify-center items-center p-5  md:pb-20 tracking-wider">
-        <div className="culture__parent justify-center py-10 mx-[8%] 2xl:mx-[25%] md:grid flexbox">
+        <div className="culture__parent justify-center pt-10 mx-[8%] 2xl:mx-[25%] md:grid flexbox">
           <div className="culture__child1 md:p-10 p-5 pb-10flex bg-secondary/40 rounded-xl justify-center">
             <div className="">
               <div className="">
                 <h1 className="md:text-6xl px-5 pt-[50px] text-primary_text font-light ">2 Year BBQ</h1>
                 <h2 className=" ml-6  text-primary_text text-3xl font-light ">DATE</h2>
               </div>
-            <div className=" md:w-[630px] md:h-[600px] 2xl:w-[750px] max-w-[1000px] items-center justify-center relative group  my-20 ">
+            <div className=" md:w-[630px] md:h-[750px] 2xl:w-[750px] max-w-[1000px] items-center justify-center relative group  my-20 ">
               <Carousel
                 array={bbq}
                 currentIndex={bbqIndex}
                 setCurrentIndex={setBbqIndex}
-                custom={"md:w-[625px] h-[550px] 2xl:w-[750px] rounded-2xl bg-center bg-cover hover:scale-105  duration-500 transform"}
+                custom={"md:w-[630px] h-[700px] 2xl:w-[750px] rounded-2xl bg-center bg-cover hover:scale-105  duration-500 transform p-0"}
               />
             </div>
             <div>
               <p className="my-8 mx-[35px] 2xl:text-xl tracking-wide text-lg leading-[185%]">
-              Celebrating 2 Remarkable Years: A Fusion BBQ Extravaganza! Our 2-year anniversary marked a splendid occasion as we united the dedicated forces of MSC, Fincentari, and IDEA for a memorable Company BBQ. 
+              As we gathered to celebrate a significant milestone, our 2-year anniversary transformed into a spectacular event that brought together the combined efforts of MSC, Fincentari, and IDEA. This occasion was more than just a date on the calendar; it was a convergence of dedication and achievement. The collaborative spirit that binds these entities was on full display during the memorable Company BBQ that ensued.
               </p>
               <p className="my-8 mx-[35px] 2xl:text-xl tracking-wide text-lg leading-[32px]">
-              Orchestrated meticulously by the Marketing team, the event boasted an inviting ambiance, complemented by the culinary creations of our in-house engineering talents turned BBQ maestros. This harmonious collaboration embodies our unwavering commitment to excellence and the spirit of collaboration. Cheers to sharing in this journey of success!
+              Guided by the meticulous planning of the Marketing team, the event radiated a warm and inviting atmosphere that set the stage for an extraordinary experience. Amidst the laughter and camaraderie, the true stars of the evening emerged: our in-house engineering talents who embraced their roles as BBQ maestros. With spatulas and tongs in hand, they showcased a blend of creativity and culinary finesse that mirrored the innovation that our companies stand for.
+              </p>
+              <p className="my-8 mx-[35px] 2xl:text-xl tracking-wide text-lg leading-[32px]">
+              We witnessed a tangible representation of the values that define us: a dedication to excellence and an unwavering commitment to working together. This celebration was not only a tribute to the past two years of accomplishment but also a testament to the vibrant journey that lies ahead. As we raised our glasses in collective cheer, we saluted the shared successes and anticipated the strides we will make as a united force, fueled by the synergy of MSC, Fincentari, and IDEA. Here's to the road we've traveled and the milestones awaiting us on the horizon.
               </p>
             </div>
             </div>
@@ -185,10 +188,7 @@ function CulturePage(){
             </div>
             <div>
               <p className="my-5 mx-[5px] 2xl:text-xl tracking-wide  leading-[185%]">
-              Celebrating 2 Remarkable Years: A Fusion BBQ Extravaganza! Our 2-year anniversary marked a splendid occasion as we united the dedicated forces of MSC, Fincentari, and IDEA for a memorable Company BBQ. 
-              </p>
-              <p className="my-5 mx-[5px] 2xl:text-xl tracking-wide  leading-[185%]">
-              Celebrating 2 Remarkable Years: A Fusion BBQ Extravaganza! Our 2-year anniversary marked a splendid occasion as we united the dedicated forces of MSC, Fincentari, and IDEA for a memorable Company BBQ. 
+              Would you look at the progress here at East End Food Institute! This collection of site visits show the envelope closure and the installation of underground plumbing work. The envelope closure marks the first step toward waterproofing and structural integrity, while the installation of underground plumbing is a critical infrastructure development for building commercial kitchen programs!
               </p>
             </div>
             </div>
@@ -199,12 +199,12 @@ function CulturePage(){
               <h1 className="md:text-[285%] px-2 pt-[30px] text-primary_text font-light">Project MSC Update </h1>
               <h2 className=" ml-6  text-primary_text text-3xl font-light">DATE</h2>
             </div>
-            <div className=" md:w-[445px] md:h-[575px] 2xl:w-[525px] max-w-[1000px] items-center justify-center relative group  my-10 ">
+            <div className=" md:w-[445px] md:h-[475px] 2xl:w-[525px] max-w-[1000px] items-center justify-center relative group  my-10 ">
               <Carousel
                 array={eefi}
                 currentIndex={eefiIndex}
                 setCurrentIndex={setEefiIndex}
-                custom={"md:w-[445px] h-[525px] 2xl:w-[525px] rounded-2xl bg-center bg-cover hover:scale-105  duration-500 transform"}
+                custom={"md:w-[445px] h-[425px] 2xl:w-[525px] rounded-2xl bg-center bg-cover hover:scale-105  duration-500 transform"}
               />
             </div>
             <div>
@@ -218,7 +218,7 @@ function CulturePage(){
           <div>
             <div>
               <h1 className="md:text-6xl px-5 pt-[50px] text-primary_text font-light ">The Summer of IDEA's 2023 Interns </h1>
-              <h2 className=" ml-6 text-primary_text text-3xl font-light ">DATE</h2>
+              <h2 className=" ml-6 text-primary_text text-3xl font-light ">August 15, 2023</h2>
             </div>
             <div className=" md:w-[630px] md:h-[700px] 2xl:w-[750px] max-w-[1000px] items-center justify-center relative group  my-20 ">
               <Carousel
@@ -230,7 +230,10 @@ function CulturePage(){
             </div>
             <div>
               <p className="my-8 mx-[35px] 2xl:text-xl tracking-wide text-lg leading-[185%]">
-              Celebrating a fantastic summer with our talented interns! Raiyan, Abrar, and Preo have been rocking their 3rd year interning journey at IDEA. Their passion and dedication have truly made a mark on our interdisciplinary engineering projects. Here's to a summer of growth and innovation! 
+              Celebrating a fantastic summer with our talented interns! Raiyan, Abrar, and Preo have been rocking their 3rd year interning journey at IDEA. Their passion and dedication have truly made a mark on our interdisciplinary engineering projects. Here's to a summer of growth and innovation!
+              </p>
+              <p className="my-8 mx-[35px] 2xl:text-xl tracking-wide text-lg leading-[185%]">
+              Reflecting on the past few months, it's evident that our exceptional interns have etched their names into IDEA's legacy during their impactful 3rd year internship journey. The dynamic contributions of Raiyan, Abrar, and Preo have undeniably elevated the outcomes of our cross-disciplinary engineering endeavors at IDEA.
               </p>
 
             </div>
@@ -238,12 +241,14 @@ function CulturePage(){
           </div>
           <div className="culture__child5 md:p-10 p-5 mt-5 md:mt-0 flex bg-secondary/40 rounded-xl">
           <div>
-              <h1 className="md:text-[300%] px-5 pt-5 text-primary_text font-light tracking-wide">IDEA Turns 1!</h1>
-              <h2 className=" ml-6  text-primary_text text-2xl font-light tracking-wide">April 5, 2022</h2>
-              <div className="flex items-center justify-center mb-8">
+            <div>
+              <h1 className="md:text-[285%] px-2 pt-[30px] text-primary_text font-light">IDEA Turns 1!</h1>
+              <h2 className=" ml-6  text-primary_text text-3xl font-light">April 5, 2022</h2>
+            </div>
+              <div className="flex items-center justify-center my-10">
                 <Image src={'/assets/idea_turns_1.png'} width={500} height={300} className="rounded-xl overflow-hidden"/>
               </div>
-              <div className="mx-8 text-lg">
+              <div className="mt-20 mx-8 text-lg">
                 <p>
                 Thank you to all of our Team Members, and supporters for being a part of our continued success! We look forward to designing and manigesting more World Class IDEAs!
                 </p>
@@ -274,7 +279,7 @@ function CulturePage(){
                 </Link>
               </div>
               <div>
-              <p className="my-8 mx-[35px] 2xl:text-xl tracking-wide text-lg leading-[185%]">
+              <p className="my-8 mx-[35px] 2xl:text-xl tracking-wide text-lg leading-[32px]">
               For the past year, IDEA has been providing MEP-FP Engineering services & expertise on MSC’s World’s Largest Cruise Ship Terminal project. We celebrated this achievement with a Groundbreaking Ceremony at the Port of Miami on March 10, 2022!
               </p>
 
@@ -299,7 +304,7 @@ function CulturePage(){
               </div>
             </div>
           </div>
-          <div className="culture__child8 md:p-10 p-5 mt-5 md:mt-0  bg-secondary/40 rounded-xl h-[90%]">
+          <div className="culture__child8 md:p-10 p-5 mt-5 md:mt-0  bg-secondary/40 rounded-xl h-[85%]">
           <div>
             <div>
               <h1 className="md:text-[285%] px-2 pt-[30px] text-primary_text font-light">IDEA is Founded </h1>
@@ -314,11 +319,39 @@ function CulturePage(){
               </p>
             </div>
             </div>
+            <motion.div 
+            initial={{opacity:0}}
+            animate={{
+              opacity:[0,0.85,1,0],
+              scale: [0.5, 1, 1, 0.5],
+              
+              transition:{
+                repeat: Infinity,
+                repeatDelay: 2,
+                delay:2,
+                duration:4
+              }
+              
+
+            }}
+            className="absolute right-[13%] 2xl:right-[29%] md:mt-[11%] 2xl:mt-[7%]">
+              <div className="relative  ">
+                <Image src={'/assets/light-logo-2.png'} width={400} height={100}/>
+              </div>
+          
+            </motion.div>
           </div>
         </div>
       </div>
-     
+      {/* <div className="absolute right-[5%]">
+      <div className="relative bottom-[100px] ">
+        <Image src={'/assets/light-logo-2.png'} width={400} height={100}/>
+      </div>
+          
+        </div> */}
     </motion.div>
+    
+      
     </div>
   )
 }
