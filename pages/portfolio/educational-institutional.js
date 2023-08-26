@@ -3,7 +3,36 @@ import ProjectPortfolio from "@/components/ProjectPortfolio"
 export default function EduInst () {
 
   const projects = [
-    // EEFI MULTIPLE IMAGES
+    // Adams Center at Yale School of Music 
+    {
+      name: 'Adams Center at Yale School of Music*',
+      heading: ['Educational/Institutional',],
+      location: 'New Haven, CT',
+      size: '60,000 SF',
+      year: '2016',
+      services: [
+        'Electrical & Fire Alarm Design',
+      ],
+      description: [
+        'Renovation to a 60,000sf facility historic facility. Renovated program consisted of rehearsal rooms, classrooms, music rooms, practice rooms, and offices. Specialty programmed spaces are equipped with state-of-the-art AV equipment, professional sound systems and other modern music/arts-related technology.'
+      ],
+      resources: [
+        {
+          title: 'Yale School of Music',
+          url: 'https://music.yale.edu/2017/01/17/adams-center-musical-arts-opens'
+        }
+  
+      ],
+      awards : [],
+      image: '/assets/projects/edu-inst/adams-ei.jpg',
+      images_array: [
+      ],
+      
+      width: '700',
+      height: '200',
+      disclaimer: '*Project performed by IDEA team member at previous employment.'
+    },
+    // East End Food Institute EEFI
     {
       name: 'East End Food Institute EEFI',
       location: 'Southampton, NY',
@@ -26,34 +55,22 @@ export default function EduInst () {
       ],
       awards:[],
       image: '/assets/projects/edu-inst/eefi-1-ei.png',
+      images_array: [
+        {
+          title: 'eefi-1',
+          image: '/assets/projects/edu-inst/eefi-1-ei.png'
+        },
+        {
+          title: 'eefi-2',
+          image: '/assets/projects/edu-inst/eefi-2-ei.png'
+        }
+        
+      ],
       width: '650',
       height: '200',
       disclaimer: ""
     },
-    // LIU MULTIPLE IMAGES
-    {
-      name: 'Little Theater at LIU',
-      heading: ['Educational/Institutional', 'Performance Venues'],
-      location: 'Queens, NY',
-      size: '20,000 SF',
-      year: '2022',
-      services: [
-        'Prime Consultant (Architectural & MEP-FP)',  
-        'MEP & Architectural Project Management' , 'MEP Design'
-      ],
-      description: [
-        'Project includes renovation of Mechanical, Electrical, Plumbing and Architectural upgrades to existing performance arts theatre building (20,000sf). Project program includes two (2) performance venues (125-Seat, 50-Seat) and associated theatrical front and back of house program (scene shop, dressing rooms, costume shop, bathrooms, etc.) spaces. Project upgrades included program revisions and associated Architectural, Mechanical (HVAC), Electrical and Plumbing upgrades.', 
-        'IDEA served as Prime-Consultant on this engagement with LIU and led Architectural and Engineering efforts on this opportunity.'
-      ],
-      resources: [
-      ],
-      awards: [],
-      image: '/assets/projects/edu-inst/liu-1-ei.jpg',
-      width: '700',
-      height: '400',
-      disclaimer: ""
-    },
-    // FINE ARTS ECSU (PERF)
+    // Fine Arts Instructional Center at ECSU (Eastern Connecticut State University)
     {
       name: 'Fine Arts Instructional Center at ECSU (Eastern Connecticut State University)',
       heading: [
@@ -84,7 +101,18 @@ export default function EduInst () {
       awards: [
         '2017 SCUP/AIA-CAE Excellence in Architecture for a New Building'
       ],
-      image: '/assets/projects/ECSU - Fine Arts Instructional Center 3.jpg',
+      image: '/assets/projects/edu-inst/ecsu-1-ei.jpg',
+      images_array: [
+        {
+          title: 'ecsu-1',
+          image: '/assets/projects/edu-inst/ecsu-1-ei.jpg'
+        },
+        {
+          title: 'ecsu-2',
+          image: '/assets/projects/edu-inst/ecsu-2-ei.jpg'
+        }
+        
+      ],
       width: '700',
       height: '400',
       disclaimer : ""
@@ -117,44 +145,58 @@ export default function EduInst () {
         '2018 SCUP Excellence in Architecture for Building Additions, Renovation or Adaptive Reuse – Honorable Mention'
       ],
       image: '/assets/projects/edu-inst/julius-1-ei.jpg',
+      images_array: [
+        {
+          title: 'julius-1',
+          image: '/assets/projects/edu-inst/julius-1-ei.jpg'
+        },
+        {
+          title: 'julius-2',
+          image: '/assets/projects/edu-inst/julius-2-ei.jpg'
+        },
+        {
+          title: 'julius-3',
+          image: '/assets/projects/edu-inst/julius-3-ei.jpg'
+        }
+        
+      ],
+      
       width: '700',
       height: '200',
       disclaimer: '*Project performed by IDEA team member at previous employment.'
     },
-    //  Performance Arts Center at College of the Holy Cross NEED IMAGE ??
-
-    // FOX School of Business at Temple University NEED IMAGE ??
-    // SEC at Penn State University NEED IMAGE ??
-    // Adams Center at Yale School of Music 
+    // Little Theater at LIU
     {
-      name: 'Adams Center at Yale School of Music*',
-      heading: ['Educational/Institutional',],
-      location: 'New Haven, CT',
-      size: '60,000 SF',
-      year: '2016',
+      name: 'Little Theater at LIU',
+      heading: ['Educational/Institutional', 'Performance Venues'],
+      location: 'Queens, NY',
+      size: '20,000 SF',
+      year: '2022',
       services: [
-        'Electrical & Fire Alarm Design',
+        'Prime Consultant (Architectural & MEP-FP)',  
+        'MEP & Architectural Project Management' , 'MEP Design'
       ],
       description: [
-        'Renovation to a 60,000sf facility historic facility. Renovated program consisted of rehearsal rooms, classrooms, music rooms, practice rooms, and offices. Specialty programmed spaces are equipped with state-of-the-art AV equipment, professional sound systems and other modern music/arts-related technology.'
+        'Project includes renovation of Mechanical, Electrical, Plumbing and Architectural upgrades to existing performance arts theatre building (20,000sf). Project program includes two (2) performance venues (125-Seat, 50-Seat) and associated theatrical front and back of house program (scene shop, dressing rooms, costume shop, bathrooms, etc.) spaces. Project upgrades included program revisions and associated Architectural, Mechanical (HVAC), Electrical and Plumbing upgrades.', 
+        'IDEA served as Prime-Consultant on this engagement with LIU and led Architectural and Engineering efforts on this opportunity.'
       ],
       resources: [
-        {
-          title: 'Yale School of Music',
-          url: 'https://music.yale.edu/2017/01/17/adams-center-musical-arts-opens'
-        }
-
       ],
-      awards : [],
-      image: '/assets/projects/edu-inst/adams-ei.jpg',
+      awards: [],
+      image: '/assets/projects/edu-inst/liu-1-ei.jpg',
+      images_array: [
+      ],
       width: '700',
-      height: '200',
-      disclaimer: '*Project performed by IDEA team member at previous employment.'
-    },
-    // Child Care Center at Princeton University NEED IMAGE ??
-    // Hammond Units Study at Penn State University NEED IMAGE ??
-  ]
+      height: '400',
+      disclaimer: ""
+    }
+  ];
 
+    // Child Care Center at Princeton University NEED IMAGE ??
+    // Hammond Units Study at Penn State University NEED IMAGE ??    
+    //  Performance Arts Center at College of the Holy Cross NEED IMAGE ??
+    // FOX School of Business at Temple University NEED IMAGE ??
+    // SEC at Penn State University NEED IMAGE ??
   return(
     <div>
       <Navbar lightLogo={true}/>

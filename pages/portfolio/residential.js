@@ -22,6 +22,8 @@ export default function Residential(){
       ],
       awards: [],
       image: '/assets/projects/featured/johnson-featured.jpg',
+      images_array: [
+      ],
       width: '700',
       height: '500',
       disclaimer:""
@@ -45,6 +47,8 @@ export default function Residential(){
       ],
       awards: [],
       image: '/assets/projects/featured/lang-featured.jpg',
+      images_array: [
+      ],
       width: '700',
       height: '200',
       disclaimer: ""
@@ -63,32 +67,11 @@ export default function Residential(){
         'Thirty-Eight (38) story 590,000 sq. ft high rise residential with 350 units. Building includes three levels of below-grade parking, consisting of (142) spaces and nine levels of above grade parking.'
       ],
       resources: [
-
       ],
       awards: [],
       image: '/assets/need-filler.jpeg',
-      width: '700',
-      height: '200',
-      disclaimer: "*Project performed by IDEA team member at previous employment."
-    },
-    // 900 CHURCH ST NEED IMAGE ?? SIZE?
-    {
-      name: '900 Church Street*',
-      heading: ['Residential',],
-      location: 'Nashville, TN',
-      size: 'NEED',
-      year: '2023',
-      services: [
-        ' Electrical & Fire Alarm Design',
+      images_array: [
       ],
-      description: [
-        'Thirty-Four (34) story 372,000 sq. ft high rise residential with 356 units includes two rooftop pools and rooftop amenities such as club room, gym and private dining areas. Building includes several 75ft high outdoor terraces.'
-      ],
-      resources: [
-
-      ],
-      awards: [],
-      image: '/assets/need-filler.jpeg',
       width: '700',
       height: '200',
       disclaimer: "*Project performed by IDEA team member at previous employment."
@@ -118,6 +101,31 @@ export default function Residential(){
       height: '600',
       disclaimer: "*Project performed by IDEA team member at previous employment."
     },
+    // 900 CHURCH ST NEED IMAGE ?? SIZE?
+    {
+      name: '900 Church Street*',
+      heading: ['Residential',],
+      location: 'Nashville, TN',
+      size: 'NEED',
+      year: '2023',
+      services: [
+        ' Electrical & Fire Alarm Design',
+      ],
+      description: [
+        'Thirty-Four (34) story 372,000 sq. ft high rise residential with 356 units includes two rooftop pools and rooftop amenities such as club room, gym and private dining areas. Building includes several 75ft high outdoor terraces.'
+      ],
+      resources: [
+
+      ],
+      awards: [],
+      image: '/assets/need-filler.jpeg',
+      images_array: [
+      ],
+      width: '700',
+      height: '200',
+      disclaimer: "*Project performed by IDEA team member at previous employment."
+    },
+
     // 3025 JFK BLVD in Schuylkill Yards NEED IMAGE ??
 
   ]

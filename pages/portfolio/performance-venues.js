@@ -3,32 +3,9 @@ import ProjectPortfolio from "@/components/ProjectPortfolio"
 export default function PerfVenue () {
 
   const projects = [
-    // LIU MULTIPLE IMAGES
+    // Fine Arts Instructional Center at ECSU (Eastern Connecticut State University)
     {
-      name: 'Little Theater at LIU',
-      heading: ['Educational/Institutional', 'Performance Venues'],
-      location: 'Queens, NY',
-      size: '20,000 SF',
-      year: '2022',
-      services: [
-        'Prime Consultant (Architectural & MEP-FP)',  
-        'MEP & Architectural Project Management' , 'MEP Design'
-      ],
-      description: [
-        'Project includes renovation of Mechanical, Electrical, Plumbing and Architectural upgrades to existing performance arts theatre building (20,000sf). Project program includes two (2) performance venues (125-Seat, 50-Seat) and associated theatrical front and back of house program (scene shop, dressing rooms, costume shop, bathrooms, etc.) spaces. Project upgrades included program revisions and associated Architectural, Mechanical (HVAC), Electrical and Plumbing upgrades.', 
-        'IDEA served as Prime-Consultant on this engagement with LIU and led Architectural and Engineering efforts on this opportunity.'
-      ],
-      resources: [
-      ],
-      awards: [],
-      image: '/assets/projects/performance/liu-perf.jpg',
-      width: '700',
-      height: '400',
-      disclaimer: ""
-    },
-    // ECSU MULTIPLE IMAGES
-    {
-      name: 'Fine Arts Instructional Center at ECSU*',
+      name: 'Fine Arts Instructional Center at ECSU (Eastern Connecticut State University)',
       heading: [
         'Educational/Institutional',
         'Performance Venues'
@@ -58,11 +35,22 @@ export default function PerfVenue () {
         '2017 SCUP/AIA-CAE Excellence in Architecture for a New Building'
       ],
       image: '/assets/projects/performance/ecsu-1-perf.jpg',
+      images_array: [
+        {
+          title: 'ecsu-1',
+          image: '/assets/projects/performance/ecsu-1-perf.jpg'
+        },
+        {
+          title: 'ecsu-2',
+          image: '/assets/projects/performance/ecsu-2-perf.jpg'
+        }
+        
+      ],
       width: '700',
       height: '400',
-      disclaimer : '*Project performed by IDEA team member at previous employment.'
+      disclaimer : ""
     },
-    // JAZZ LINCOLN CENTER
+    // Jazz at Lincoln Center
     {
       name: 'Jazz at Lincoln Center*',
       location: 'New York, NY',
@@ -88,12 +76,72 @@ export default function PerfVenue () {
       ],
       awards: [
       ],
-      image: '/assets/need-filler.jpeg',
+      image: '/assets/projects/performance/jazz-1-perf.jpg',
+      images_array: [
+        {
+          title: 'jazz-1',
+          image: '/assets/projects/performance/jazz-1-perf.jpg'
+        },
+        {
+          title: 'jazz-2',
+          image: '/assets/projects/performance/jazz-2-perf.jpg'
+        }
+      ],
       width: '700',
       height: '500',
       disclaimer: '*Project performed by IDEA team member at previous employment.'
     },
-    // MCC THEATER
+    // Little Theater at LIU 
+    {
+      name: 'Little Theater at LIU',
+      heading: ['Educational/Institutional', 'Performance Venues'],
+      location: 'Queens, NY',
+      size: '20,000 SF',
+      year: '2022',
+      services: [
+        'Prime Consultant (Architectural & MEP-FP)',  
+        'MEP & Architectural Project Management' , 'MEP Design'
+      ],
+      description: [
+        'Project includes renovation of Mechanical, Electrical, Plumbing and Architectural upgrades to existing performance arts theatre building (20,000sf). Project program includes two (2) performance venues (125-Seat, 50-Seat) and associated theatrical front and back of house program (scene shop, dressing rooms, costume shop, bathrooms, etc.) spaces. Project upgrades included program revisions and associated Architectural, Mechanical (HVAC), Electrical and Plumbing upgrades.', 
+        'IDEA served as Prime-Consultant on this engagement with LIU and led Architectural and Engineering efforts on this opportunity.'
+      ],
+      resources: [
+      ],
+      awards: [],
+      image: '/assets/projects/performance/liu-perf.jpg',
+      images_array: [
+      ],
+      width: '700',
+      height: '400',
+      disclaimer: ""
+    },
+    // The FLEA Theater
+    {
+      name: 'The FLEA Theater*',
+      heading: ['Performance Venues'],
+      location: 'New York, NY',
+      size: '11,000 SF',
+      year: '2014',
+      services: [
+        'MEP-FP Project Management', 
+        'Electrical', 
+        'Fire Alarm Design'
+      ],
+      description: [
+        'Full renovation of a 11,000sf facility to a theater venue. Programmed spaces consist of three theaters (120-Seat, 80-Seat, 46-Seat), performance supporting spaces and offices.',
+      ],
+      resources: [
+      ],
+      awards: [],
+      image: '/assets/projects/performance/flea-perf.jpg',
+      images_array: [ 
+      ],
+      width: '700',
+      height: '400',
+      disclaimer: '*Project performed by IDEA team member at previous employment.', 
+    },
+    // The Robert W. WIlson MCC Theater
     {
       name: 'The Robert W. WIlson MCC Theater*',
       heading: ['Performance Venues'],
@@ -112,37 +160,15 @@ export default function PerfVenue () {
       ],
       awards: [],
       image: '/assets/projects/performance/mcc-perf.jpg',
+      images_array: [
+      ],
       width: '700',
       height: '400',
       disclaimer: "*Project performed by IDEA team member at previous employment."
     },
-    // FLEA THEATER
-    {
-      name: 'The FLEA Theater',
-      heading: ['Performance Venues'],
-      location: 'New York, NY',
-      size: '11,000 SF',
-      year: '2014',
-      services: [
-        'MEP-FP Project Management', 
-        'Electrical', 
-        'Fire Alarm Design'
-      ],
-      description: [
-        'Full renovation of a 11,000sf facility to a theater venue. Programmed spaces consist of three theaters (120-Seat, 80-Seat, 46-Seat), performance supporting spaces and offices.',
-      ],
-      resources: [
+  ];
 
-      ],
-      awards: [],
-      image: '/assets/projects/performance/flea-perf.jpg',
-      width: '700',
-      height: '400',
-      disclaimer: '*Project performed by IDEA team member at previous employment.', 
-    },
-    // MERRIAM WEBSTER NEED IMAGES ??
-  ]
-
+// MERRIAM WEBSTER NEED IMAGES ??
   return(
     <div>
       <Navbar lightLogo={true}/>

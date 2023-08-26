@@ -149,7 +149,7 @@ function ProjectPortfolio({ projects, category }){
         {
           projects.map((proj)=> {
             return(
-              <div key={proj.name} className=" justify-center">
+              <div key={proj.name} className=" md:w-[725px]">
                 <PortfolioList project={proj}/>
               </div>
               

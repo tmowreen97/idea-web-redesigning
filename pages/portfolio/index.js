@@ -4,7 +4,7 @@ import ProjectPortfolio from "@/components/ProjectPortfolio"
 
 // This contains all of the projects no category selected
 export default function Portfolio(){
-
+    
   const projects = [
     // MSC
     {
@@ -33,6 +33,10 @@ export default function Portfolio(){
       ],
       awards: [],
       image: '/assets/need-filler.jpeg',
+      images_array: [
+
+      ],
+
       width: '700',
       height: '600',
       disclaimer: ""
@@ -56,10 +60,20 @@ export default function Portfolio(){
           title: 'East End Food - Food Hub',
           url: 'https://www.eastendfood.org/food-hub', 
         }
-        
       ],
       awards:[],
-      image: '/assets/projects/featured/eefi-featured.png',
+      image: '/assets/projects/featured/eefi-1-featured.png',
+      images_array: [
+        {
+          title: 'eefi-1',
+          image: '/assets/projects/featured/eefi-1-featured.png'
+        },
+        {
+          title: 'eefi-2',
+          image: '/assets/projects/featured/eefi-2-featured.png'
+        }
+        
+      ],
       width: '700',
       height: '100',
       disclaimer: ""
@@ -81,7 +95,18 @@ export default function Portfolio(){
 
       ],
       awards: [],
-      image: '/assets/projects/featured/khair-featured.jpg',
+      image: '/assets/projects/featured/khair-1-featured.jpg',
+      images_array: [
+        {
+          title: 'khair-1',
+          image: '/assets/projects/featured/khair-1-featured.jpg'
+        },
+        {
+          title: 'khair-2',
+          image: '/assets/projects/featured/khair-2-featured.jpg'
+        }
+        
+      ],
       width: '700',
       height: '400',
       disclaimer: ""
@@ -105,6 +130,8 @@ export default function Portfolio(){
       ],
       awards: [],
       image: '/assets/projects/featured/liu-featured.jpg',
+      images_array: [
+      ],
       width: '700',
       height: '400',
       disclaimer: ""
@@ -141,6 +168,17 @@ export default function Portfolio(){
         '2017 SCUP/AIA-CAE Excellence in Architecture for a New Building'
       ],
       image: '/assets/projects/featured/ecsu-1-featured.jpg',
+      images_array: [
+        {
+          title: 'ecsu-1',
+          image: '/assets/projects/featured/ecsu-1-featured.jpg'
+        },
+        {
+          title: 'ecsu-2',
+          image: '/assets/projects/featured/ecsu-2-featured.jpg'
+        }
+        
+      ],
       width: '700',
       height: '400',
       disclaimer : ""
@@ -165,7 +203,18 @@ export default function Portfolio(){
         }
       ],
       awards : [],
-      image: '/assets/projects/featured/amnh-featured.jpg',
+      image: '/assets/projects/featured/amnh-1-featured.jpg',
+      images_array: [
+        {
+          title: 'amnh-1',
+          image: '/assets/projects/featured/amnh-1-featured.jpg'
+        },
+        {
+          title: 'amnh-2',
+          image: '/assets/projects/featured/amnh-2-featured.jpeg'
+        }
+        
+      ],
       width: '700',
       height: '200',
       disclaimer: '*Project performed by IDEA team member at previous employment.'
@@ -189,6 +238,8 @@ export default function Portfolio(){
       ],
       awards: [],
       image: '/assets/projects/featured/lang-featured.jpg',
+      images_array: [        
+      ],
       width: '700',
       height: '200',
       disclaimer: ""
@@ -212,6 +263,8 @@ export default function Portfolio(){
       ],
       awards: [],
       image: '/assets/projects/featured/johnson-featured.jpg',
+      images_array: [        
+      ],
       width: '700',
       height: '500',
       disclaimer:""
@@ -244,6 +297,17 @@ export default function Portfolio(){
         '2018 SCUP Excellence in Architecture for Building Additions, Renovation or Adaptive Reuse – Honorable Mention'
       ],
       image: '/assets/projects/featured/julius-1-featured.jpg',
+      images_array: [
+        {
+          title: 'julius-1',
+          image: '/assets/projects/featured/julius-1-featured.jpg'
+        },
+        {
+          title: 'julius-2',
+          image: '/assets/projects/featured/julius-2-featured.jpg'
+        }
+        
+      ],
       width: '700',
       height: '200',
       disclaimer: '*Project performed by IDEA team member at previous employment.'
@@ -275,9 +339,16 @@ export default function Portfolio(){
       awards: [
       ],
       image: '/assets/projects/featured/jazz-1-featured.jpg',
-      images: [
-        '/assets/projects/featured/jazz-1-featured.jpg',
-        '/assets/projects/featured/jazz-2-featured.jpg'
+      images_array: [
+        {
+          title: 'jazz-1',
+          image: '/assets/projects/featured/jazz-1-featured.jpg'
+        },
+        {
+          title: 'jazz-1',
+          image: '/assets/projects/featured/jazz-2-featured.jpg'
+        }
+        
       ],
       // images: [
       //   {
@@ -315,6 +386,8 @@ export default function Portfolio(){
       ],
       awards : [],
       image: '/assets/projects/featured/adams-featured.jpg',
+      images_array: [
+      ],
       width: '700',
       height: '200',
       disclaimer: '*Project performed by IDEA team member at previous employment.'
@@ -337,11 +410,14 @@ export default function Portfolio(){
       ],
       awards: [],
       image: '/assets/need-filler.jpeg',
+      images_array: [
+      ],
       width: '700',
       height: '200',
       disclaimer: "*Project performed by IDEA team member at previous employment."
     },
   ]
+  
 
   return(
     <div>
