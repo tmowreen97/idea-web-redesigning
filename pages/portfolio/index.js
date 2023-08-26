@@ -104,7 +104,7 @@ export default function Portfolio(){
       resources: [
       ],
       awards: [],
-      image: '/assets/projects/featured/liu-featured.jpeg',
+      image: '/assets/projects/featured/liu-featured.jpg',
       width: '700',
       height: '400',
       disclaimer: ""

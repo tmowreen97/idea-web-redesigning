@@ -25,7 +25,7 @@ const Navbar = ({setLightLogo, lightLogo}) => {
     //   setLightLogo(false)
     // }
     const changeColor = () => {
-      if (window.scrollY >= 5) {
+      if (window.scrollY >= 25) {
         setColor('#a88ca4');
         setTextColor('#000000');
         if (setLightLogo) {
@@ -47,9 +47,9 @@ const Navbar = ({setLightLogo, lightLogo}) => {
       initial={{opacity:0}}
       whileInView={{opacity:1, transition:{delay:0.6, duration:1}}}
       style={{ backgroundColor: `${color}`, opacity:40}}
-      className='fixed left-0 top-0 w-full z-10 ease-in duration-100 tracking-wider'
+      className='fixed left-0 top-0 w-full z-10 ease-in duration-200 tracking-wider'
     >
-      <div className='w-screen  m-auto flex justify-between items-center p-2 text-white ml-1'>
+      <div className='w-screen  m-auto flex justify-between items-center p-3 text-white ml-1'>
         <motion.div
         
         >
