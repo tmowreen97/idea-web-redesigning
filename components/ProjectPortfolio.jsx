@@ -145,7 +145,7 @@ function ProjectPortfolio({ projects, category }){
         </select>
       </div> */}
       <div className="flex items-center justify-center">
-        <div className="grid md:grid-cols-2 m-8 items-center justify-evenly">
+        <div className="grid md:grid-cols-2 p-2 m-5 items-center justify-evenly bg-tertiary/80 rounded-xl">
         {
           projects.map((proj)=> {
             return(
