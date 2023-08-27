@@ -68,7 +68,8 @@ export default function EduInst () {
       ],
       width: '650',
       height: '200',
-      disclaimer: ""
+      disclaimer: "",
+      custom: ' w-full max-w-[900px] xl:h-[530px] rounded-lg'
     },
     // Fine Arts Instructional Center at ECSU (Eastern Connecticut State University)
     {
@@ -188,7 +189,9 @@ export default function EduInst () {
       ],
       width: '700',
       height: '400',
-      disclaimer: ""
+      disclaimer: "",
+      child: "col-start-1 col-end-5 flex justify-center w-full",
+      custom: ' w-[875px] max-w-[900px] xl:h-[550px] rounded-lg items-center flex'
     }
   ];
 

@@ -29,7 +29,9 @@ export default function Industrial(){
       ],
       width: '700',
       height: '600',
-      disclaimer: '*Project performed by IDEA team member at previous employment.'
+      disclaimer: '*Project performed by IDEA team member at previous employment.',
+      child: 'col-start-1 col-end-5 flex justify-center',
+
     },
   ]
   return(

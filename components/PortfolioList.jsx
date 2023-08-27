@@ -4,6 +4,7 @@ import {BsChevronCompactDown, BsChevronCompactUp} from 'react-icons/bs';
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { AiOutlineCloseCircle } from "react-icons/ai";
+import { Catamaran } from "next/font/google";
 
 function PortfolioList({project}){
 
@@ -30,8 +31,8 @@ function PortfolioList({project}){
     <>
     <div className=" relative p-1 " onMouseEnter={()=> setProjHover(true)}
     onMouseLeave={()=> setProjHover(false)}>
-      <div className="relative rounded-xl  overflow-hidden ">
-        <img src={project.image} className="max-h-[800px] min-w-[700px] w-full max-w-full rounded-lg"/>
+      <div className="relative rounded-xl  overflow-hidden">
+        <img src={project.image} className={project.custom ? `${project.custom}` : 'max-h-[800px] w-full max-w-[900px] rounded-lg'}/>
         {/* <Image src={project.image} width={project.width} height={project.height} alt={'project'}  /> */}
         <div className={projHover ? "absolute top-0 bottom-0 left-0 right-0 bg-[#322d44]/80 text-secondary_text  " : "hidden"}>
           <div className="relative mx-auto justify-center items-center top-1/4">
@@ -75,8 +76,8 @@ function PortfolioList({project}){
               onClick={()=> setProjClick(false)}
               className="cursor-pointer hover:bg-accent_2 hover:text-primary_text  rounded-full overflow-hidden text-2xl z-10" />
             </div>
-            <div className="grid grid-cols-2 items-center justify-center h-full gap-5">
-              <div className="flex items-center justify-center ">
+            <div className="grid grid-cols-4 items-center justify-center h-full gap-5">
+              <div className="col-start-1 col-end-3 flex items-center justify-center ">
               {/* <div className=" md:w-[500px] md:h-[475px] 2xl:w-[525px] max-w-[1000px] items-center justify-center relative group  my-10 ">
                   <Carousel
                     array={project.images}
@@ -85,9 +86,23 @@ function PortfolioList({project}){
                     custom={"md:w-[500px] h-[425px] 2xl:w-[525px] rounded-2xl bg-center bg-cover hover:scale-105  duration-500 transform"}
                   />
                 </div>  */}
+                
+                {project.images_array.length>0 ? 
+
+                  <Carousel
+                    array={project.images_array}
+                    currentIndex={projIndex}
+                    setCurrentIndex={setProjIndex}
+                    // custom={'w-[500px] h-[400px] bg-cover bg-center bg-fixed'}
+                    custom={" 2xl:w-[1000px] 2xl:h-[500px] w-[500px] h-[400px] rounded-2xl bg-center bg-cover hover:scale-105  duration-500 transform"}
+                    />
+
+                
+                :
                 <Image src={project.image} width={project.width} height={project.height} className="rounded-xl flex overflow-hidden max-h-[750px] justify-center"/>
+                }
               </div>
-              <div >
+              <div className="col-start-3 col-end-5">
                 <div className="m-2">
                   <h2 className="text-dark_text">{project.name}</h2>
                 </div>

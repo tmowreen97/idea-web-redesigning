@@ -26,7 +26,8 @@ export default function Cultural(){
       ],
       width: '700',
       height: '400',
-      disclaimer: '*Project performed by IDEA team member at previous employment.'
+      disclaimer: '*Project performed by IDEA team member at previous employment.',
+
     },
     // BBG NEED SIZE 
     {
@@ -53,11 +54,12 @@ export default function Cultural(){
       width: '700',
       height: '400',
       disclaimer: '*Project performed by IDEA team member at previous employment.', 
+
     },
     // Discovery & Water Garden at Brooklyn Botanical Garden*
     {
       name: 'Discovery & Water Garden at Brooklyn Botanical Garden*',
-      heading: 'Cultural',
+      heading: ['Cultural'],
       location: 'Brooklyn, NY',
       size: '',
       year: '2015',
@@ -77,7 +79,9 @@ export default function Cultural(){
       ],
       width: '700',
       height: '400',
-      disclaimer: '*Project performed by IDEA team member at previous employment.'
+      disclaimer: '*Project performed by IDEA team member at previous employment.',
+      custom: ' w-full max-w-[900px] xl:h-[650px] rounded-lg'
+
     },
     // Glenstone Museum*
     {
@@ -117,7 +121,9 @@ export default function Cultural(){
       ],
       width: '650',
       height: '200',
-      disclaimer: '* Project performed by IDEA team member at previous employment.'
+      disclaimer: '* Project performed by IDEA team member at previous employment.',
+      custom: ' w-full max-w-[900px] xl:h-[650px] rounded-lg'
+
     },
     // Khair Community Center
     {
@@ -149,7 +155,9 @@ export default function Cultural(){
       ],
       width: '700',
       height: '400',
-      disclaimer: ""
+      disclaimer: "",
+      custom: ' w-full max-w-[900px] xl:h-[500px] rounded-lg'
+
     },
     // North American Mammals Gallery at AMNH*
     {
@@ -182,7 +190,9 @@ export default function Cultural(){
       ],
       width: '700',
       height: '400',
-      disclaimer: '*Project performed by IDEA team member at previous employment.'
+      disclaimer: '*Project performed by IDEA team member at previous employment.',
+      custom: ' w-full max-w-[900px] xl:h-[500px] rounded-lg'
+
     },
     // St. Thomas Church*
     {
@@ -209,7 +219,9 @@ export default function Cultural(){
       ],
       width: '700',
       height: '400',
-      disclaimer: '*Project performed by IDEA team member at previous employment.'
+      disclaimer: '*Project performed by IDEA team member at previous employment.',
+      child: 'col-start-2 col-end-4'
+
     },
     // Church of the Heavenly Rest??
     // Scenic Hudson Long Dock Park ???

@@ -89,7 +89,8 @@ export default function PerfVenue () {
       ],
       width: '700',
       height: '500',
-      disclaimer: '*Project performed by IDEA team member at previous employment.'
+      disclaimer: '*Project performed by IDEA team member at previous employment.',
+      custom: ' w-full max-w-[900px] xl:h-[475px] 2xl:h-[600px] rounded-lg'
     },
     // Little Theater at LIU 
     {
@@ -114,7 +115,8 @@ export default function PerfVenue () {
       ],
       width: '700',
       height: '400',
-      disclaimer: ""
+      disclaimer: "",
+      custom: ' w-full max-w-[900px] xl:h-[615px] 2xl:h-[675px] rounded-lg'
     },
     // The FLEA Theater
     {
@@ -164,7 +166,8 @@ export default function PerfVenue () {
       ],
       width: '700',
       height: '400',
-      disclaimer: "*Project performed by IDEA team member at previous employment."
+      disclaimer: "*Project performed by IDEA team member at previous employment.",
+      child: 'col-start-1 col-end-5 flex justify-center',
     },
   ];
 

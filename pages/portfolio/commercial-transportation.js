@@ -37,12 +37,13 @@ export default function CommTrans () {
       ],
       width: '650',
       height: '200',
-      disclaimer: ""
+      disclaimer: "",
+      custom: 'w-[900px] h-[580px] max-w-[900px] rounded-lg '
     },
     // JAZZ
     {
       name: 'Jazz at Lincoln Center*',
-      heading: 'Commercial/Transportation',
+      heading: ['Commercial/Transportation',],
       location: 'New York, NY',
       size: '27,000 SF',
       year: '2015',
@@ -65,7 +66,8 @@ export default function CommTrans () {
       ],
       width: '700',
       height: '400',
-      disclaimer: '*Project performed by IDEA team member at previous employment.'
+      disclaimer: '*Project performed by IDEA team member at previous employment.',
+      custom: 'max-h-[800px] w-full max-w-[900px] rounded-lg'
     },
     // MSC Miami Cruise Terminal
     {
@@ -98,7 +100,8 @@ export default function CommTrans () {
       ],
       width: '700',
       height: '600',
-      disclaimer: ""
+      disclaimer: "",
+      custom: 'max-h-[800px] w-full max-w-[900px] rounded-lg '
     },
     // Steinway & Sons Piano*
     {
@@ -121,7 +124,8 @@ export default function CommTrans () {
       ],
       width: '700',
       height: '600',
-      disclaimer: "*Project performed by IDEA team member at previous employment. "
+      disclaimer: "*Project performed by IDEA team member at previous employment. ",
+      custom:'max-h-[800px] w-full max-w-[900px] rounded-lg '
     },
   ];
   

@@ -24,7 +24,8 @@ export default function MixedUse(){
       ],
       width: '700',
       height: '600',
-      disclaimer: ""
+      disclaimer: "",
+      child: 'col-start-1 col-end-5 flex justify-center',
     },
     // 3025 JFK BLVD in Schuylkill Yards NEED IMAGE ??
     // AmeriSourceBergen NEED IMAGE ??

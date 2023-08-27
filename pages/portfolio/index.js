@@ -186,7 +186,7 @@ export default function Portfolio(){
     // AMNH
     {
       name: 'North American Mammals Gallery at AMNH (American Museum of Natural History)*',
-      heading: 'Cultural',
+      heading: ['Cultural'],
       location: 'New York, NY',
       size: '',
       year: '2010',
