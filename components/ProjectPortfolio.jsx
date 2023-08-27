@@ -21,55 +21,17 @@ function ProjectPortfolio({ projects, category }){
       <motion.div 
       initial={{opacity:0}}
       animate={{opacity:1, transition:{delay:1, duration:1}}}
-      className="px-20 pt-20 pb-10">
-        <h1 className="md:text-[1100%] text-5xl font-thin text-primary_text text-left tracking-wide">Portfolio</h1>
+      className="md:px-20 pt-20 pb-10">
+        <h1 className="md:text-[1100%] text-8xl font-thin text-primary_text md:text-left text-center tracking-wide">Portfolio</h1>
       </motion.div>
       <div className="items-center justify-center">
         <div className="md:mx-[100px] items-center justify-center text-center ml-[9%] flex">
-
-        
-        {/* <div className="grid md:grid-cols-5 grid-cols-2 ">
-          
-            <button id={router.asPath == '/portfolio' ? "category-button-active" : ''} className="category-button md:w-[200px] md:h-[50px] bg-[#C0B4D3]">
-            <Link href={'/portfolio'} >All</Link>
-          </button>
-          <button id={router.asPath == '/portfolio/commercial' ? "category-button-active" : ''} className="category-button md:w-[200px] md:h-[50px] bg-[#C0B4D3]">
-            <Link href={'/portfolio/commercial'}>Commercial</Link>
-          </button>
-          <button id={router.asPath == '/portfolio/cultural' ? "category-button-active" : ''} className="category-button md:w-[200px] md:h-[50px] bg-[#C0B4D3]">
-            <Link href={'/portfolio/cultural'}>Cultural</Link>
-          </button>
-          <button id={router.asPath == '/portfolio/educational' ? "category-button-active" : ''} className="category-button md:w-[200px] md:h-[50px] bg-[#C0B4D3]">
-            <Link href={'/portfolio/educational'}>Educational</Link>
-          </button>
-          <button id={router.asPath == '/portfolio/healthcare-facilities' ? "category-button-active" : ''} className="category-button md:w-[200px] md:h-[50px] bg-[#C0B4D3]">
-            <Link href={'/portfolio/healthcare-facilities'}>Healthcare Facilities</Link>
-          </button>
-          <button id={router.asPath == '/portfolio/industrial' ? "category-button-active" : ''} className="category-button md:w-[200px] md:h-[50px] bg-[#C0B4D3]">
-            <Link href={'/portfolio/industrial'}>Industrial</Link>
-          </button>
-          <button id={router.asPath == '/portfolio/institutional' ? "category-button-active" : ''} className="category-button md:w-[200px] md:h-[50px] bg-[#C0B4D3]">
-            <Link href={'/portfolio/institutional'}>Institutional</Link>
-          </button>
-          <button id={router.asPath == '/portfolio/mixed-use-and-high-rise' ? "category-button-active" : ''} className="category-button md:w-[200px] md:h-[50px] bg-[#C0B4D3]">
-            <Link href={'/portfolio/mixed-use-and-high-rise'}>Mixed-Use/High-Rise</Link>
-          </button>
-          <button id={router.asPath == '/portfolio/residential' ? "category-button-active" : ''} className="category-button md:w-[200px] md:h-[50px] bg-[#C0B4D3]">
-            <Link href={'/portfolio/residential'}>Residential</Link>
-          </button>
-          <button id={router.asPath == '/portfolio/transportation' ? "category-button-active" : ''} className="category-button md:w-[200px] md:h-[50px] bg-[#C0B4D3]">
-            <Link href={'/portfolio/transportation'}>Transportation</Link>
-          </button>
-          </div> */}
-          
-          
-          
 
         </div>
         <motion.div 
         initial={{opacity:0}}
         animate={{opacity:1, transition:{delay:1.5, duration:1}}}
-        className="flex justify-start mx-20">
+        className="flex md:justify-start md:mx-20 justify-center ">
           <div className='relative'>
             {/* <label className="text-2xl text-secondary_text mr-2 ">Select a Category:</label> */}
             <button onClick={()=> {setShowDropDown(!showDropDown)}}  data-dropdown-toggle="dropdown" className="relative text-xl justify-between w-[300px] bg-button_bg/30 hover:bg-secondary/70 focus:ring-4 focus:outline-none focus:ring-secondary_text font-medium rounded-lg  py-2  ml-2 inline-flex items-center text-secondary_text" type="button">
@@ -145,7 +107,7 @@ function ProjectPortfolio({ projects, category }){
         </select>
       </div> */}
       <div className="flex items-center justify-center">
-        <div className="grid grid-cols-1 lg:grid-cols-4 p-2 m-5 items-center justify-evenly bg-tertiary/80 rounded-xl">
+        <div className="grid grid-cols-1 lg:grid-cols-4 p-2 m-5 items-center justify-evenly bg-tertiary/80 rounded-xl max-w-[2000px]">
         {
           projects.map((proj)=> {
             return(

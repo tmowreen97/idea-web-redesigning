@@ -34,7 +34,6 @@ function PortfolioList({project}){
     setHide(!hide)
   }
 
-  console.log(projClick)
   return(
     <>
     <div className=" relative p-1" onMouseEnter={()=> setProjHover(true)}
@@ -42,7 +41,7 @@ function PortfolioList({project}){
 
     
       <div className={hide ? "relative rounded-xl overflow-hidden hidden" : "relative rounded-xl overflow-hidden"}>
-        <img src={project.image} className={project.custom ? `${project.custom}` : 'max-h-[800px] w-full max-w-[900px] md:h-full rounded-lg'}/>
+        <img src={project.image} className={project.custom ? `${project.custom}` : 'w-full rounded-lg'}/>
         {/* <Image src={project.image} width={project.width} height={project.height} alt={'project'}  /> */}
         <div className={projHover ? "absolute top-0 bottom-0 left-0 right-0 bg-[#322d44]/80 text-secondary_text  " : "hidden"}>
           <div className="relative mx-auto justify-center items-center md:top-1/4 top-[15%] ">
@@ -80,8 +79,8 @@ function PortfolioList({project}){
         animate={{opacity:1, transition: {duration:1}}}
         className={"lg:z-20 flex h-full w-full items-center justify-center  bg-tertiary/80"}
         >
-          <div className="justify-center items-center bg-light_bg text-left p-5 rounded-2xl  z-9 lg:z-20 m-5   h-[1100px] xs:h-full md:h-auto max-w-[2500px]  md:top-[10%] md:bottom-[10%] bottom-[0] ">
-            <div className="flex justify-end my-[-10px]">
+          <div className="justify-center items-center bg-light_bg text-left p-5 rounded-2xl  z-9 lg:z-20 m-5  h-full md:h-auto max-w-[2500px]  md:top-[10%] md:bottom-[10%] bottom-[0] ">
+            <div className="flex justify-end lg:my-[-10px] my-2">
               <AiOutlineCloseCircle 
               onClick={()=> handleClick()}
               className="cursor-pointer hover:bg-accent_2 hover:text-primary_text  rounded-full overflow-hidden text-2xl lg:z-10" />
@@ -97,7 +96,7 @@ function PortfolioList({project}){
                   />
                 </div>  */}
                 
-                {project.images_array.length>0 ? 
+                {project.images_array ? 
                 <div className="flex justify-center">
 
 
@@ -106,7 +105,7 @@ function PortfolioList({project}){
                     currentIndex={projIndex}
                     setCurrentIndex={setProjIndex}
                     // custom={'w-[500px] h-[400px] bg-cover bg-center bg-fixed'}
-                    custom={" xl:w-[700px] xl:h-[400px] md:w-[400px] w-[275px] h-[200px] m-3 right-0 rounded-2xl bg-center bg-cover hover:scale-105  duration-500 transform"}
+                    custom={" xl:w-[700px] xl:h-[490px] md:w-[400px] w-[275px] h-[200px] m-3 right-0 rounded-2xl bg-center bg-cover hover:scale-105  duration-500 transform"}
                     />
 
                 </div>

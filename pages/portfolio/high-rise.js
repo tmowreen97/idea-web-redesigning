@@ -27,8 +27,6 @@ export default function HighRise(){
         ],
         awards: [],
         image: '/assets/projects/high-rise/838-hr.jpg',
-        images_array: [
-        ],
         width: '700',
         height: '600',
         disclaimer: "*Project performed by IDEA team member at previous employment.",

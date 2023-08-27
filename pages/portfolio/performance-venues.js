@@ -90,7 +90,7 @@ export default function PerfVenue () {
       width: '700',
       height: '500',
       disclaimer: '*Project performed by IDEA team member at previous employment.',
-      custom: ' w-full max-w-[900px] xl:h-[475px] 2xl:h-[600px] rounded-lg'
+      // custom: ' w-full max-w-[900px] xl:h-[475px] 2xl:h-[600px] rounded-lg'
     },
     // Little Theater at LIU 
     {
@@ -111,12 +111,10 @@ export default function PerfVenue () {
       ],
       awards: [],
       image: '/assets/projects/performance/liu-perf.jpg',
-      images_array: [
-      ],
       width: '700',
       height: '400',
       disclaimer: "",
-      custom: ' w-full max-w-[900px] xl:h-[615px] 2xl:h-[675px] rounded-lg'
+      // custom: ' w-full max-w-[900px] xl:h-[615px] 2xl:h-[675px] rounded-lg'
     },
     // The FLEA Theater
     {
@@ -137,8 +135,6 @@ export default function PerfVenue () {
       ],
       awards: [],
       image: '/assets/projects/performance/flea-perf.jpg',
-      images_array: [ 
-      ],
       width: '700',
       height: '400',
       disclaimer: '*Project performed by IDEA team member at previous employment.', 
@@ -162,12 +158,10 @@ export default function PerfVenue () {
       ],
       awards: [],
       image: '/assets/projects/performance/mcc-perf.jpg',
-      images_array: [
-      ],
       width: '700',
       height: '400',
       disclaimer: "*Project performed by IDEA team member at previous employment.",
-      child: 'col-start-1 col-end-5 flex justify-center',
+      child: 'lg:col-start-2 lg:col-end-4 flex justify-center',
     },
   ];
 

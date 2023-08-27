@@ -38,7 +38,7 @@ export default function CommTrans () {
       width: '650',
       height: '200',
       disclaimer: "",
-      custom: 'w-[900px] h-[580px] max-w-[900px] rounded-lg '
+
     },
     // JAZZ
     {
@@ -61,13 +61,20 @@ export default function CommTrans () {
           url: 'https://www.ennead.com/work/jazz'
         }
       ],
-      image: '/assets/projects/com-trans/jazz-ct.jpg',
+      image: '/assets/projects/com-trans/jazz-1-ct.jpg',
       images_array: [
+        {
+          title: 'jazz-1',
+          image: '/assets/projects/com-trans/jazz-1-ct.jpg'
+        },
+        {
+          title: 'jazz-2',
+          image: '/assets/projects/com-trans/jazz-2-ct.jpg'
+        }
       ],
       width: '700',
       height: '400',
       disclaimer: '*Project performed by IDEA team member at previous employment.',
-      custom: 'max-h-[800px] w-full max-w-[900px] rounded-lg'
     },
     // MSC Miami Cruise Terminal
     {
@@ -95,13 +102,9 @@ export default function CommTrans () {
       ],
       awards: [],
       image: '/assets/need-filler.jpeg',
-      images_array: [
-  
-      ],
       width: '700',
       height: '600',
       disclaimer: "",
-      custom: 'max-h-[800px] w-full max-w-[900px] rounded-lg '
     },
     // Steinway & Sons Piano*
     {
@@ -120,12 +123,9 @@ export default function CommTrans () {
       ],
       awards: [],
       image: '/assets/projects/com-trans/steinway-ct.jpg',
-      images_array: [
-      ],
       width: '700',
       height: '600',
       disclaimer: "*Project performed by IDEA team member at previous employment. ",
-      custom:'max-h-[800px] w-full max-w-[900px] rounded-lg '
     },
   ];
   

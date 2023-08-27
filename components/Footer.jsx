@@ -5,11 +5,11 @@ import Image from "next/image";
 
 export default function Footer(){
   return(
-    <div id='footer' className="w-full md:h-[500px]  bg-secondary ">
+    <div id='footer' className="w-full h-full  bg-secondary ">
       <div className="flex items-center justify-center pt-[50px]">
-        <div className=" md:grid md:grid-cols-2 flexbox justify-evenly text-dark_text tracking-wide">
-          <div className="items-center justify-between text-2xl font-light flex " >
-          <div className="bg-secondary/70  rounded-xl  text-center ">
+        <div className=" lg:grid lg:grid-cols-2 justify-evenly text-dark_text tracking-wide">
+          <div className="items-center justify-between text-2xl font-light flex md:p-0 px-5" >
+          <div className="bg-secondary/70  rounded-xl  text-center mx-3 mt-[20%] md:mx-0 md:mt-0 ">
             <div className="my-1">
               <Image src={'/assets/clip-1.png'} width={70} height={70}/>
             </div>
@@ -26,8 +26,8 @@ export default function Footer(){
           <div className="mb-10">
             <div className="md:mb-[30px]">
                <div className="flex pt-8">
-                  <h1 className="text-7xl">IDEA</h1>
-                  <h1 className="pl-2 pt-7 text-2xl">AEC</h1>
+                  <h1 className="md:text-7xl text-6xl">IDEA</h1>
+                  <h1 className="pl-2 md:pt-9 text-2xl pt-6">AEC</h1>
                 </div>
                 <div className="pt-5">
                   <h1 className="">Inter-Disciplinary Engineering Associates,</h1>
@@ -35,8 +35,8 @@ export default function Footer(){
                 </div>
               
             </div>
-            <div className="mb-[30px]">
-              <p className="text-xl text-dark_text">Monroe, Connecticut | Miami, Florida</p>
+            <div className="md:mb-[30px]">
+              <p className="md:text-xl text-lg text-dark_text">Monroe, Connecticut | Miami, Florida</p>
             </div>
             <div>
               <p className="text-lg text-dark_text">info@IdeaAEC.com</p>
@@ -45,7 +45,7 @@ export default function Footer(){
             </div>
           </div>
           </div>
-          <div className="md:ml-[160px] md:w-[450px] h-[95%] mt-5" >
+          <div className="lg:ml-[160px] lg:w-[450px] h-[95%] mt-5" >
           <div className="bg-dark_bg/60  md:h-[290px]   rounded-xl ">
             <div className="items-center justify-center">
               <form 
@@ -58,7 +58,7 @@ export default function Footer(){
                   <input 
                   type="name" 
                   name="name"
-                  className="md:w-[300px] w-[90%] rounded-xl text-center p-1" 
+                  className="lg:w-[300px] w-[90%] rounded-xl text-center p-1" 
                   placeholder="Name"
                   required/>
                 </div>
@@ -67,7 +67,7 @@ export default function Footer(){
                   <input 
                   type="email" 
                   name="email"
-                  className="md:w-[300px] w-[90%] rounded-xl text-center p-1 border-none" 
+                  className="lg:w-[300px] w-[90%] rounded-xl text-center p-1 border-none" 
                   placeholder="Email"
                   required/>
                 </div>
@@ -76,7 +76,7 @@ export default function Footer(){
                   <textarea 
                   type="text"
                   name="message" 
-                  className="md:w-[300px] w-[90%] rounded-xl text-center max-h-[70px] p-1 border-none" 
+                  className="lg:w-[300px] w-[90%] rounded-xl text-center max-h-[70px] p-1 border-none" 
                   placeholder="Message"
                   required/>
                 </div>
@@ -127,8 +127,14 @@ export default function Footer(){
         
         
       </div>
-      <div className="flex items-center justify-center mb-5">
-          <p className="text-sm text-dark_text" >© 2023 by IDEA AEC LLC</p>
+      <div className="flex items-center justify-center pb-5">
+        <div className="flex">
+          <p className="text-sm text-dark_text mr-1" >© 2023 by IDEA</p>
+          <p className="text-xs text-dark_text mr-1 mt-[3px]" >AEC</p>
+          <p className="text-xs text-dark_text mr-1 mt-[3px]" >LLC</p>
+          
+        </div>
+          
         </div>
     </div>
   )

@@ -22,8 +22,6 @@ export default function Cultural(){
       ],
       awards: [],
       image: '/assets/projects/cultural/yale-cultural.jpg',
-      images_array: [
-      ],
       width: '700',
       height: '400',
       disclaimer: '*Project performed by IDEA team member at previous employment.',
@@ -49,8 +47,6 @@ export default function Cultural(){
   
       ],
       image: '/assets/projects/cultural/bbg-2-cultural.jpg',
-      images_array: [
-      ],
       width: '700',
       height: '400',
       disclaimer: '*Project performed by IDEA team member at previous employment.', 
@@ -75,19 +71,16 @@ export default function Cultural(){
       ],
       awards: [],
       image: '/assets/projects/cultural/bbg-1-cultural.jpg',
-      images_array: [
-      ],
       width: '700',
       height: '400',
       disclaimer: '*Project performed by IDEA team member at previous employment.',
-      custom: ' w-full max-w-[900px] xl:h-[650px] rounded-lg'
 
     },
     // Glenstone Museum*
     {
       name: 'Glenstone Museum*',
       location: 'Potomac, MD',
-      heading: 'Cultural',
+      heading: ['Cultural'],
       size: '150,000 SF',
       year: '2018',
       services: [
@@ -122,7 +115,6 @@ export default function Cultural(){
       width: '650',
       height: '200',
       disclaimer: '* Project performed by IDEA team member at previous employment.',
-      custom: ' w-full max-w-[900px] xl:h-[650px] rounded-lg'
 
     },
     // Khair Community Center
@@ -215,8 +207,6 @@ export default function Cultural(){
       ],
       awards: [],
       image: '/assets/projects/cultural/church-cultural.jpg',
-      images_array: [
-      ],
       width: '700',
       height: '400',
       disclaimer: '*Project performed by IDEA team member at previous employment.',

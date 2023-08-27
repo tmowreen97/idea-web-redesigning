@@ -25,9 +25,6 @@ export default function EduInst () {
       ],
       awards : [],
       image: '/assets/projects/edu-inst/adams-ei.jpg',
-      images_array: [
-      ],
-      
       width: '700',
       height: '200',
       disclaimer: '*Project performed by IDEA team member at previous employment.'
@@ -54,7 +51,7 @@ export default function EduInst () {
         
       ],
       awards:[],
-      image: '/assets/projects/edu-inst/eefi-1-ei.png',
+      image: '/assets/projects/edu-inst/eefi-3-ei.jpg',
       images_array: [
         {
           title: 'eefi-1',
@@ -69,7 +66,6 @@ export default function EduInst () {
       width: '650',
       height: '200',
       disclaimer: "",
-      custom: ' w-full max-w-[900px] xl:h-[530px] rounded-lg'
     },
     // Fine Arts Instructional Center at ECSU (Eastern Connecticut State University)
     {
@@ -185,8 +181,6 @@ export default function EduInst () {
       ],
       awards: [],
       image: '/assets/projects/edu-inst/liu-1-ei.jpg',
-      images_array: [
-      ],
       width: '700',
       height: '400',
       disclaimer: "",

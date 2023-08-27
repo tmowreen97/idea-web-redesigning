@@ -20,8 +20,6 @@ export default function MixedUse(){
       ],
       awards: [],
       image: '/assets/projects/mixed-use/301-mu.webp',
-      images_array: [
-      ],
       width: '700',
       height: '600',
       disclaimer: "",

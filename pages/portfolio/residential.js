@@ -7,7 +7,7 @@ export default function Residential(){
     {
       name: 'Johnson Residence',
       location: 'Great Harbor Cay, Bahamas',
-      heading: 'Residential',
+      heading: ['Residential'],
       size: '3,500 SF',
       year: '2023',
       services: [
@@ -22,8 +22,6 @@ export default function Residential(){
       ],
       awards: [],
       image: '/assets/projects/featured/johnson-featured.jpg',
-      images_array: [
-      ],
       width: '700',
       height: '500',
       disclaimer:""
@@ -31,7 +29,7 @@ export default function Residential(){
     // LANG
     {
       name: 'Lang Residence',
-      heading: 'Residential',
+      heading: ['Residential'],
       location: 'Great Harbor Cay, Bahamas',
       size: '5,000 SF',
       year: '2021',
@@ -47,8 +45,6 @@ export default function Residential(){
       ],
       awards: [],
       image: '/assets/projects/featured/lang-featured.jpg',
-      images_array: [
-      ],
       width: '700',
       height: '200',
       disclaimer: ""
@@ -69,9 +65,7 @@ export default function Residential(){
       resources: [
       ],
       awards: [],
-      image: '/assets/need-filler.jpeg',
-      images_array: [
-      ],
+      image: '/assets/electrical-fire.jpg',
       width: '700',
       height: '200',
       disclaimer: "*Project performed by IDEA team member at previous employment."
@@ -97,9 +91,10 @@ export default function Residential(){
       ],
       awards: [],
       image: '/assets/projects/high-rise/838-hr.jpg',
-      width: '700',
-      height: '600',
-      disclaimer: "*Project performed by IDEA team member at previous employment."
+      width: '400',
+      height: '700',
+      disclaimer: "*Project performed by IDEA team member at previous employment.",
+      child: "lg:row-span-2 lg:col-start-3 lg:col-end-5"
     },
     // 900 CHURCH ST NEED IMAGE ?? SIZE?
     {
@@ -118,9 +113,7 @@ export default function Residential(){
 
       ],
       awards: [],
-      image: '/assets/need-filler.jpeg',
-      images_array: [
-      ],
+      image: '/assets/electrical-fire.jpg',
       width: '700',
       height: '200',
       disclaimer: "*Project performed by IDEA team member at previous employment."
