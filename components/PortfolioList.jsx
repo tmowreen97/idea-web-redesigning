@@ -68,16 +68,16 @@ function PortfolioList({project}){
         <motion.div 
         initial={{opacity:.5}}
         animate={{opacity:1, transition: {duration:1}}}
-        className={"z-20"}
+        className={"z-20 flex items-center justify-center h-full m-3"}
         >
-          <div className="mx-10 my-5 justify-center items-center bg-light_bg text-left p-5 rounded-xl z-20 fixed left-0 right-0 top-0 bottom-0">
+          <div className="justify-center items-center bg-light_bg text-left p-5 rounded-2xl z-20 w-screen max-w-[2500px] h-screen max-h-[775px] ">
             <div className="flex justify-end my-[-10px]">
               <AiOutlineCloseCircle 
               onClick={()=> setProjClick(false)}
               className="cursor-pointer hover:bg-accent_2 hover:text-primary_text  rounded-full overflow-hidden text-2xl z-10" />
             </div>
             <div className="grid grid-cols-4 items-center justify-center h-full gap-5">
-              <div className="col-start-1 col-end-3 flex items-center justify-center ">
+              <div className="col-start-1 col-end-3 flex items-center justify-center w-[100%]">
               {/* <div className=" md:w-[500px] md:h-[475px] 2xl:w-[525px] max-w-[1000px] items-center justify-center relative group  my-10 ">
                   <Carousel
                     array={project.images}
@@ -94,8 +94,11 @@ function PortfolioList({project}){
                     currentIndex={projIndex}
                     setCurrentIndex={setProjIndex}
                     // custom={'w-[500px] h-[400px] bg-cover bg-center bg-fixed'}
-                    custom={" 2xl:w-[1000px] 2xl:h-[500px] w-[500px] h-[400px] rounded-2xl bg-center bg-cover hover:scale-105  duration-500 transform"}
+                    custom={" w-[500px] h-[400px] relative right-0 rounded-2xl bg-center bg-cover hover:scale-105  duration-500 transform"}
                     />
+
+
+                  
 
                 
                 :
