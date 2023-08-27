@@ -31,7 +31,6 @@ export default function Portfolio(){
         }
         
       ],
-      awards: [],
       image: '/assets/need-filler.jpeg',
       images_array: [
 
@@ -61,7 +60,6 @@ export default function Portfolio(){
           url: 'https://www.eastendfood.org/food-hub', 
         }
       ],
-      awards:[],
       image: '/assets/projects/featured/eefi-1-featured.png',
       images_array: [
         {
@@ -94,7 +92,6 @@ export default function Portfolio(){
       resources: [
 
       ],
-      awards: [],
       image: '/assets/projects/featured/khair-1-featured.jpg',
       images_array: [
         {
@@ -128,7 +125,6 @@ export default function Portfolio(){
       ],
       resources: [
       ],
-      awards: [],
       image: '/assets/projects/featured/liu-featured.jpg',
       images_array: [
       ],
@@ -202,7 +198,6 @@ export default function Portfolio(){
           url:"https://www.amnh.org/exhibitions/permanent/north-american-mammals/educator-resources/virtual-field-trip"
         }
       ],
-      awards : [],
       image: '/assets/projects/featured/amnh-1-featured.jpg',
       images_array: [
         {
@@ -222,7 +217,7 @@ export default function Portfolio(){
     // LANG
     {
       name: 'Lang Residence',
-      heading: 'Residential',
+      heading: ['Residential'],
       location: 'Great Harbor Cay, Bahamas',
       size: '5,000 SF',
       year: '2021',
@@ -236,7 +231,6 @@ export default function Portfolio(){
       resources: [
 
       ],
-      awards: [],
       image: '/assets/projects/featured/lang-featured.jpg',
       images_array: [        
       ],
@@ -248,7 +242,7 @@ export default function Portfolio(){
     {
       name: 'Johnson Residence',
       location: 'Great Harbor Cay, Bahamas',
-      heading: 'Residential',
+      heading: ['Residential'],
       size: '3,500 SF',
       year: '2023',
       services: [
@@ -261,7 +255,6 @@ export default function Portfolio(){
       resources: [
 
       ],
-      awards: [],
       image: '/assets/projects/featured/johnson-featured.jpg',
       images_array: [        
       ],
@@ -336,8 +329,6 @@ export default function Portfolio(){
           url: 'http://www.ennead.com/work/jazz', 
         }
       ],
-      awards: [
-      ],
       image: '/assets/projects/featured/jazz-1-featured.jpg',
       images_array: [
         {
@@ -350,16 +341,6 @@ export default function Portfolio(){
         }
         
       ],
-      // images: [
-      //   {
-      //     title: 'jazz-1',
-      //     url: '/assets/projects/featured/jazz-1-featured.jpg'
-      //   },
-      //   {
-      //     title: 'jazz-2',
-      //     url: '/assets/projects/featured/jazz-2-featured.jpg'
-      //   }
-      // ],
       width: '700',
       height: '500',
       disclaimer: '*Project performed by IDEA team member at previous employment.'
@@ -384,7 +365,6 @@ export default function Portfolio(){
         }
 
       ],
-      awards : [],
       image: '/assets/projects/featured/adams-featured.jpg',
       images_array: [
       ],
@@ -408,7 +388,6 @@ export default function Portfolio(){
       resources: [
 
       ],
-      awards: [],
       image: '/assets/need-filler.jpeg',
       images_array: [
       ],

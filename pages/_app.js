@@ -14,7 +14,7 @@ export default function App({ Component, pageProps }) {
     
     className={urbanist.className}>
       <Component {...pageProps} />
-      <Footer/>
+      {/* <Footer/> */}
     </main>
     
   )

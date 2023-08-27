@@ -10,6 +10,7 @@ function PortfolioList({project}){
 
   const [projHover, setProjHover] = useState(false)
   const [projClick, setProjClick] = useState(false)
+  const [hide, setHide] = useState(false)
 
   const [projIndex, setProjIndex] = useState(0)
   function mouse (){
@@ -27,22 +28,31 @@ function PortfolioList({project}){
           clearTimeout(myVar);
       }
   }
+
+  function handleClick(){
+    setProjClick(!projClick)
+    setHide(!hide)
+  }
+
+  console.log(projClick)
   return(
     <>
-    <div className=" relative p-1 " onMouseEnter={()=> setProjHover(true)}
+    <div className=" relative p-1" onMouseEnter={()=> setProjHover(true)}
     onMouseLeave={()=> setProjHover(false)}>
-      <div className="relative rounded-xl  overflow-hidden">
-        <img src={project.image} className={project.custom ? `${project.custom}` : 'max-h-[800px] w-full max-w-[900px] rounded-lg'}/>
+
+    
+      <div className={hide ? "relative rounded-xl overflow-hidden hidden" : "relative rounded-xl overflow-hidden"}>
+        <img src={project.image} className={project.custom ? `${project.custom}` : 'max-h-[800px] w-full max-w-[900px] md:h-full rounded-lg'}/>
         {/* <Image src={project.image} width={project.width} height={project.height} alt={'project'}  /> */}
         <div className={projHover ? "absolute top-0 bottom-0 left-0 right-0 bg-[#322d44]/80 text-secondary_text  " : "hidden"}>
-          <div className="relative mx-auto justify-center items-center top-1/4">
-            <div className="relative justify-center items-center text-center">
-              <h1 className="text-4xl mb-5 ">{project.name}</h1>
-              <p className="text-lg ">{project.heading}</p>
-              <p className="text-lg ">{project.location}</p>
+          <div className="relative mx-auto justify-center items-center md:top-1/4 top-[15%] ">
+            <div className="relative justify-center items-center text-center m-2">
+              <h1 className="md:text-4xl text-xl md:mb-5 ">{project.name}</h1>
+              <p className="md:text-lg text-base">{project.heading}</p>
+              <p className="md:text-lg text-base">{project.location}</p>
               <button
-              onClick={()=> {setProjClick(true)}}
-              className="hover:bg-accent_2 hover:text-primary_text  bg-light_bg text-dark_text rounded-full overflow-hidden text-lg p-3 m-2"
+              onClick={()=> handleClick()}
+              className="hover:bg-accent_2 hover:text-primary_text  bg-light_bg text-dark_text rounded-full overflow-hidden md:text-lg text-sm p-1 md:p-3 m-2"
               >Click to Learn More</button>
             </div>
               
@@ -53,31 +63,31 @@ function PortfolioList({project}){
               {projClick ? <BsChevronCompactUp/> : <BsChevronCompactDown/>}
             
           </div> */}
-        </div>
+
       </div>
+  </div>
       {/* style="position: absolute; top: 0px; z-index: 3;" */}
       
       
-      
-    </div>
+    
     {
         projClick ?
         //This ensures the user can't click outside of the box
-        <div className="w-full h-full bg-none fixed top-0 bottom-0 right-0 left-0 z-10">
+        <div className="w-full h-full bg-none lg:fixed top-0 bottom-0 right-0 left-0 z-10">
 
         <motion.div 
         initial={{opacity:.5}}
         animate={{opacity:1, transition: {duration:1}}}
-        className={"z-20 flex items-center justify-center h-full m-3"}
+        className={"lg:z-20 flex h-full w-full items-center justify-center  bg-tertiary/80"}
         >
-          <div className="justify-center items-center bg-light_bg text-left p-5 rounded-2xl z-20 w-screen max-w-[2500px] h-screen max-h-[775px] ">
+          <div className="justify-center items-center bg-light_bg text-left p-5 rounded-2xl  z-9 lg:z-20 m-5   h-[1100px] xs:h-full md:h-auto max-w-[2500px]  md:top-[10%] md:bottom-[10%] bottom-[0] ">
             <div className="flex justify-end my-[-10px]">
               <AiOutlineCloseCircle 
-              onClick={()=> setProjClick(false)}
-              className="cursor-pointer hover:bg-accent_2 hover:text-primary_text  rounded-full overflow-hidden text-2xl z-10" />
+              onClick={()=> handleClick()}
+              className="cursor-pointer hover:bg-accent_2 hover:text-primary_text  rounded-full overflow-hidden text-2xl lg:z-10" />
             </div>
-            <div className="grid grid-cols-4 items-center justify-center h-full gap-5">
-              <div className="col-start-1 col-end-3 flex items-center justify-center w-[100%]">
+            <div className="lg:grid lg:grid-cols-4 grid-cols-1 sm:flexbox items-center justify-center h-full md:gap-5">
+              <div className="lg:col-start-1 lg:col-end-3 md:flex items-center justify-center sm:w-[100%] w-[300px]">
               {/* <div className=" md:w-[500px] md:h-[475px] 2xl:w-[525px] max-w-[1000px] items-center justify-center relative group  my-10 ">
                   <Carousel
                     array={project.images}
@@ -88,16 +98,18 @@ function PortfolioList({project}){
                 </div>  */}
                 
                 {project.images_array.length>0 ? 
+                <div className="flex justify-center">
+
 
                   <Carousel
                     array={project.images_array}
                     currentIndex={projIndex}
                     setCurrentIndex={setProjIndex}
                     // custom={'w-[500px] h-[400px] bg-cover bg-center bg-fixed'}
-                    custom={" w-[500px] h-[400px] relative right-0 rounded-2xl bg-center bg-cover hover:scale-105  duration-500 transform"}
+                    custom={" xl:w-[700px] xl:h-[400px] md:w-[400px] w-[275px] h-[200px] m-3 right-0 rounded-2xl bg-center bg-cover hover:scale-105  duration-500 transform"}
                     />
 
-
+                </div>
                   
 
                 
@@ -105,18 +117,19 @@ function PortfolioList({project}){
                 <Image src={project.image} width={project.width} height={project.height} className="rounded-xl flex overflow-hidden max-h-[750px] justify-center"/>
                 }
               </div>
-              <div className="col-start-3 col-end-5">
+              <div className="lg:col-start-3 lg:col-end-5 mz-1">
                 <div className="m-2">
-                  <h2 className="text-dark_text">{project.name}</h2>
+                  <h2 className="text-dark_text md:text-4xl text-2xl">{project.name}</h2>
                 </div>
                 <div className="m-3">
-                  <div className="flex">
+                  <div className="md:flex">
                    {
                     project.heading.map((sect, index)=> {
                       return(
                         <span className="flex">
-                          <h3 className="text-dark_text text-2xl ">{sect}</h3>
-                          {index < project.heading.length-1 ? <p className="text-dark_text text-2xl mr-2">,</p> : '' }
+                            <h3 className="text-dark_text md:text-2xl text-xl">{sect}</h3>
+                          {index < project.heading.length-1 ? <p className="text-dark_text text-xl md:text-2xl mr-2">,</p> : '' }
+                          
                         </span>
                         
                       )
@@ -126,47 +139,54 @@ function PortfolioList({project}){
                   </div>
                   
                   
-                  <h3 className="text-dark_text text-2xl">{project.size}</h3>
-                  <h3 className="text-dark_text text-2xl">Completion Date: {project.year}</h3>
+                  <h3 className="text-dark_text text-lg md:text-2xl">{project.size}</h3>
+                  <h3 className="text-dark_text text-lg md:text-2xl">Completion Date: {project.year}</h3>
                 </div>
                 <div className="m-3">
                   {
                     project.description.map((desc, index)=> {
                       return(
-                        <p key={index} className="text-dark_text">{desc}</p>
+                        <p key={index} className="text-dark_text text-sm md:text-lg">{desc}</p>
                       )
                       
                     })
                   }
                   </div>
                   <div className="m-3">
-                  {
-                    project.awards.map((award, index)=> {
-                      return(
-                        <p key={index} className="text-dark_text">{award}</p>
-                      )
-                      
-                    })
+                  { project.awards ? 
+                    <div>
+                      <h3>Awards:</h3>
+                      {project.awards.map((award, index)=> {
+                        return(
+                          <p key={index} className="text-dark_text text-sm">{award}</p>
+                        )
+                        
+                      })}
+                    
+                    </div>
+                    
+                    : ""
                   }
                   </div>
-                  <div className="m-5 flex justify-evenly items-center">
+                  <div className="m-5 flex justify-evenly ">
                     <div>
-                      <h4 className="text-xl">Services:</h4>
+                      <h3 className="md:text-2xl text-xl">Services:</h3>
                       <ul className="list-disc mx-5 m-3">
                         {project.services.map((service, index) => {
                           return(
-                            <li key={index} >{service}</li>
+                            <li key={index} className="text-sm md:text-lg" >{service}</li>
                           )
                         })}
                     </ul>
                     </div>
-                    { project.resources.length > 0 ? <div className="">
-                      <h4 className="text-xl">Resources:</h4>
-                      <ul className="mx-5 m-3">
+                    { project.resources.length > 0 ? 
+                    <div >
+                      <h3 className="md:text-2xl text-xl">Resources:</h3>
+                      <ul className="mx-4 m-3">
                         {project.resources.map((link, index) => {
                           return(
                             <li key={index} >
-                              <a href={link.url} className="hover:text-accent_1" target="__blank" rel="noopener noreferrer">{link.title}</a>
+                              <a href={link.url} className="hover:text-accent_1 text-sm md:text-lg" target="__blank" rel="noopener noreferrer">{link.title}</a>
                             </li>
                           )
                         })}
@@ -191,9 +211,12 @@ function PortfolioList({project}){
       </motion.div>
       </div> : ""
       }
+
+</div>
     </>
     
   )
+
 }
 
 export default PortfolioList;
