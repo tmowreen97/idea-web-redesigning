@@ -38,7 +38,7 @@ function Hero({heading}){
   };
 
 
-  const isBreakPoint = useMediaQuery(1300)
+  const isBreakPoint = useMediaQuery(1500)
 
  
   function handleDescTwo(e){
@@ -108,7 +108,7 @@ function Hero({heading}){
       svg_h: "143px",
       svg_class: "relative rotate-90 origin-top",
       poly_points : "0,0 244,260",
-      div_parent_class : " absolute bottom-[130%] ml-[30%] w-[350px]",
+      div_parent_class : " absolute bottom-[118%] ml-[30%] w-[350px]",
       x1 : "5",
       y1: "0",
       x2: "0",
@@ -122,16 +122,15 @@ function Hero({heading}){
       bgColor: '#FFFF00',
       delayTime:8,
       repeatDelayTime: 23,
-      classDesc : "md:absolute my-5 md:my-0 left-[30%] bottom-[38%]",
-      svg_w : "",
-      svg_h: "50px",
-      svg_class: "relative rotate-6",
-      poly_points: "0,0 400,200",
-      div_parent_class: "absolute top-[70%] ml-[-30%] w-[430px]",
-      x1 : "10",
-      y1: "0",
-      x2: "400",
-      y2: "400"
+      classDesc : "md:absolute my-5 md:my-0 left-[33%] bottom-[42%]",
+      svg_w : "w-full",
+      svg_h: "250px",
+      svg_class: "relative rotate-90 right-[90%]",
+      poly_points: "10,0 200,200",
+      div_parent_class: "absolute top-[30%] ml-[-110%] w-[375px]",
+      heading: 'Shore Power',
+      img: '/assets/clip-2.png',
+      desc: "Project will include medium voltage substations and connections to provide power to cruise vessels while dock in the port. Cruise vessels will use utility grid power in place of diesel engines.",
       // classDesc : "md:absolute my-5 md:my-0 left-1/4 top-1/3"
 
       // classDesc: "md:absolute my-5 md:my-0 left-[445px] top-[480px]"
