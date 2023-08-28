@@ -86,18 +86,18 @@ function ServicesPage(){
       animate={{opacity:1, transition:{ delay: 1.5, duration:1}}}
       className="">
         {/* MEP & FP SECTION */}
-        <div className="w-screen h-full flex items-center justify-evenly p-10">
+        <div className="w-screen h-full lg:flex items-center justify-evenly p-10">
           {/* MEP & FP NAME */}
           <motion.div 
           variants={name}
           initia="hidden"
           animate={showMep ? "visible" : "hidden"}
           onClick={()=> setShowMep(!showMep)}
-          className="bg-light_bg  w-[550px] h-[425px] my-20 rounded-xl hover:cursor-pointer hover:bg-secondary"
+          className="bg-light_bg  lg:w-[550px] lg:h-[425px] w-[300px] h-[250px] my-20 rounded-xl hover:cursor-pointer hover:bg-secondary"
           >
             <div className="absolute">
-              <div className="relative w-[208px] left-[80%]">
-                <p className="text-dark_text text-5xl my-[73%] tracking-wide leading-[55px] text-justify  ">MEP & FP Services</p>
+              <div className="relative w-[208px] lg:left-[80%]">
+                <p className="text-dark_text lg:text-5xl text-2xl my-[73%] tracking-wide lg:leading-[55px] lg:text-justify  ">MEP & FP Services</p>
               </div>
             </div>
           </motion.div>
@@ -108,7 +108,7 @@ function ServicesPage(){
             animate={showMep ? "visible" : ""}
             className={showMep ? "" : "hidden"}
           >
-            <BsArrowRight className="text-white text-7xl "/>
+            <BsArrowRight className="text-white lg:text-7xl text-4xl lg:rotate-0 rotate-90 "/>
           </motion.div>
           
           {/* MEP & FP LIST */}
@@ -116,10 +116,10 @@ function ServicesPage(){
           variants={list}
           initial="hidden"
           animate={showMep ? "visible" : ""}
-          className={showMep ? "bg-light_bg/80 w-[575px] h-[475px] rounded-xl" : "hidden"}>
+          className={showMep ? "bg-light_bg/80 lg:w-[575px] lg:h-[475px] w-[300px] h-[515px]  rounded-xl" : "hidden"}>
             <div className="absolute">
-              <div className="relative w-[475px] left-[15%] my-[8%]">
-                <ul className="list-disc text-xl" >
+              <div className="relative lg:w-[475px] w-[250px] left-[15%] my-[8%]">
+                <ul className="list-disc lg:text-xl text-lg" >
                   <li>Mechanical (HVAC) Design</li>
                   <li>Electrical Design</li>
                   <li>Plumbing Design</li>
@@ -139,17 +139,17 @@ function ServicesPage(){
           </motion.div>
         </div>
         {/* FACILITY SUPPORT SECTION */}
-        <div className="w-screen h-full flex items-center justify-evenly p-10">
+        <div className="w-screen h-full lg:flex items-center justify-evenly p-10">
           {/* FACILITY SUPPORT NAME */}
           <motion.div 
           variants={name}
           initia="hidden"
           animate={showFS ? "visible" : "hidden"}
           onClick={()=> setShowFS(!showFS)}
-          className="bg-light_bg  w-[550px] h-[425px] my-20 rounded-xl hover:cursor-pointer hover:bg-secondary">
+          className="bg-light_bg lg:w-[550px] lg:h-[425px] w-[300px] h-[250px] my-20 rounded-xl hover:cursor-pointer hover:bg-secondary">
             <div className="absolute">
-              <div className="relative w-[210px] left-[86%]">
-                <p className="text-dark_text text-5xl  my-[58%] tracking-wide leading-[55px] text-justify ">Facility Support Services</p>
+              <div className="relative lg:left-[90%] left-[35%] w-[200px]">
+                <p className="text-dark_text lg:text-5xl text-2xl lg:my-[58%] my-[30%] tracking-wide lg:leading-[55px] lg:w-[330px]  lg:text-justify ">Facility Support Services</p>
               </div>
             </div>
           </motion.div>
@@ -160,17 +160,17 @@ function ServicesPage(){
             animate={showFS ? "visible" : ""}
             className={showFS ? "" : "hidden"}
             >
-            <BsArrowRight className="text-white text-7xl "/>
+            <BsArrowRight className="text-white lg:text-7xl text-4xl  lg:rotate-0 rotate-90  "/>
           </motion.div>
           {/* FACILITY SUPPORT LIST */}
           <motion.div 
           variants={list}
           initial="hidden"
           animate={showFS ? "visible" : ""}
-          className={showFS ? "bg-light_bg/80 w-[575px] h-[475px] rounded-xl" : "hidden"}>
+          className={showFS ? "bg-light_bg/80 lg:w-[575px] lg:h-[475px] w-[300px] h-[675px] rounded-xl" : "hidden"}>
             <div className="absolute">
-              <div className="relative w-[475px] left-[15%] my-[10%]">
-                <ul className="list-disc text-xl" >
+              <div className="relative lg:w-[475px] w-[250px] left-[15%] my-[10%]">
+                <ul className="list-disc lg:text-xl text-lg" >
                   <li>MEP-FP System Upgrades</li>
                   <li>Code Compliance/Upgrades</li>
                   <li>Efficiency/Energy Use Evaluations</li>
@@ -178,7 +178,7 @@ function ServicesPage(){
                   <li>Oil To Gas/Steam Conversion</li>
                   <li>Boiler Replacement and Upgrades</li>
                   <li>Exhaust System Upgrades</li>
-                  <li>Condensation/Humidification/Dehumidification Issues</li>
+                  <li>Condensation / Humidification / Dehumidification Issues</li>
                   <li>Code Compliance Upgrades For Normal and Emergency Lighting</li>
                   <li>Code Compliance Upgrades For Lighting Controls</li>
                   <li>Fire Alarm System Upgrades</li>
@@ -190,17 +190,17 @@ function ServicesPage(){
           </motion.div>
         </div>
         {/* PROJECT MANAGEMENT & EXPEDITING SECTION */}
-        <div className="w-screen h-full flex items-center justify-evenly p-10">
+        <div className="w-screen h-full lg:flex items-center justify-evenly p-10">
           {/* PROJECT MANAGEMENT & EXPEDITING NAME */}
           <motion.div 
           variants={name}
           initia="hidden"
           animate={showPM ? "visible" : "hidden"}
           onClick={()=> setShowPM(!showPM)}
-          className="bg-light_bg  w-[550px] h-[425px] rounded-xl my-20 hover:cursor-pointer hover:bg-secondary">
+          className="bg-light_bg  lg:w-[550px] lg:h-[425px] w-[300px] h-[250px] rounded-xl my-20 hover:cursor-pointer hover:bg-secondary">
             <div className="absolute">
               <div className="relative left-[35%] ">
-                <h3 className="text-dark_text text-5xl tracking-wide w-[330px] my-[30%] leading-[55px] text-justify">Project Management & Construction Services</h3>
+                <h3 className="text-dark_text lg:text-5xl text-2xl tracking-wide lg:w-[330px] w-[200px] my-[30%] lg:leading-[55px] lg:text-justify">Project Management & Construction Services</h3>
               </div>
             </div>
           </motion.div>
@@ -211,17 +211,17 @@ function ServicesPage(){
             animate={showPM ? "visible" : ""}
             className={showPM ? "" : "hidden"}
           >
-            <BsArrowRight className="text-white text-7xl "/>
+            <BsArrowRight className="text-white lg:text-7xl text-4xl lg:rotate-0 rotate-90 "/>
           </motion.div>
-          {/* FACILITY SUPPORT LIST */}
+          {/* PROJECT MANAGEMENT LIST */}
           <motion.div
           variants={list}
           initial="hidden"
           animate={showPM ? "visible" : ""}
-          className={showPM ? "bg-light_bg/80 w-[575px] h-[475px] rounded-xl " : "hidden"}>
+          className={showPM ? "bg-light_bg/80 lg:w-[575px] lg:h-[475px] w-[300px] h-[425px] rounded-xl " : "hidden"}>
             <div className="absolute">
-              <div className="relative w-[475px] left-[15%] my-[15%]">
-            <ul className="list-disc text-xl" >
+              <div className="relative lg:w-[475px] w-[250px] left-[15%] my-[15%]">
+            <ul className="list-disc lg:text-xl text-lg" >
               <li>Owner's Representation</li>
               <li>Design Management</li>
               <li>Construction Management Assistance</li>
