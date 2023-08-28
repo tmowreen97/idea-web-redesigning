@@ -10,12 +10,20 @@ function Line({setShowDesc, blinker}){
         </svg>
       </div>
       <div className={blinker.div_parent_class}>
-          <div className="p-2 mx-2 pb-3 bg-light_bg rounded-xl ">
+          <div className="p-2   bg-light_bg rounded-xl ">
             <div className="flex justify-end ">
               <AiOutlineCloseCircle className="cursor-pointer hover:bg-accent_2 hover:text-primary_text  rounded-full overflow-hidden text-2xl z-10" onClick={()=> setShowDesc(false)} />
             </div>
-            <p className='text-dark_text text-sm'>{blinker.name}</p>
-            <p className='text-dark_text text-sm'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+            <div className="flex items-center mx-2">
+              <img width={30} height={30} src={blinker.img} className=""/>
+              <h3 className='text-dark_text text-xl m-1'>{blinker.heading}</h3>
+            </div>
+           <div className="mx-2">
+            <p className='text-dark_text text-sm'>
+            {blinker.desc}
+            </p>
+           </div>
+            
           </div>
           
       </div>

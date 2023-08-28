@@ -34,18 +34,18 @@ function Blinker({blinker}){
     <div ref={ref} className={blinker.classDesc} onClick={()=> setAnimate(!animate)}>
       <motion.div
 
-        animate= { animate && isInView ? {scale:[1,3,3,1], opacity:[0.8,1,1,0.75], transition:{
+        animate= { animate && isInView ? {scale:[2,4,4,2], opacity:[0.8,1,1,0.75], transition:{
           duration: 3,
           delay : blinker.delayTime,
           repeat: Infinity,
           repeatDelay: blinker.repeatDelayTime,
         }} : {opacity:1}}
-        
+
         initial={{opacity:1}}
         // whileInView={{opacity:1, transition:{delay:2, duration:1, repeat: Infinity, repeatDelay: 20}}}
         
       >
-        <button className=" bg-white rounded-full w-3 h-3 hover:shadow-2xl shadow-white" onClick={(e) => handleDesc(e)}/>
+        <button style={{backgroundColor: `${blinker.bgColor}`}} className="   rounded-full w-3 h-3 hover:shadow-2xl shadow-white" onClick={(e) => handleDesc(e)}/>
       </motion.div>
       <div className='absolute'>
         {showDesc ? <Line setShowDesc={setShowDesc} blinker={blinker}/> : ""}

@@ -38,7 +38,7 @@ function Hero({heading}){
   };
 
 
-  const isBreakPoint = useMediaQuery(1100)
+  const isBreakPoint = useMediaQuery(1300)
 
  
   function handleDescTwo(e){
@@ -97,15 +97,18 @@ function Hero({heading}){
     },
     {
       name: 'blinker-2',
-      bgColor: '#00FF00',
+      bgColor: '#A117FD',
       delayTime:5,
       repeatDelayTime: 23,
-      classDesc: "md:absolute my-5 md:my-0 left-[15%] top-[36%]",
+      classDesc: "md:absolute my-5 md:my-0 left-[20%] top-[22%]",
+      desc: 'The Terminal is on schedule to become LEED Silver Certified up on completion. LEED Gold Certification is currently being studied.',
+      heading: 'LEED',
+      img: '/assets/clip-2.png',
       svg_w : "",
       svg_h: "143px",
       svg_class: "relative rotate-90 origin-top",
       poly_points : "0,0 244,260",
-      div_parent_class : " absolute bottom-[170%] ml-[-40%]",
+      div_parent_class : " absolute bottom-[130%] ml-[30%] w-[350px]",
       x1 : "5",
       y1: "0",
       x2: "0",
