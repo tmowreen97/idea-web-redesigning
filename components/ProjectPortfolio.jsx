@@ -49,7 +49,7 @@ function ProjectPortfolio({ projects, category }){
             <div id="dropdown" className={ showDropDown ? "z-10 absolute right-0 md:w-[200px] bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 text-center": "hidden"}>
               <ul className="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
                 <li>
-                  <a href="/portfolio" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">Select A Sector</a>
+                  <a href="/portfolio" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">Choose A Sector</a>
                 </li>
                 <li>
                   <a href="/portfolio/commercial-transportation" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">Commercial/Transportation</a>

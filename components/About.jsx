@@ -1,29 +1,44 @@
 import Image from 'next/image';
-import React, { useState } from 'react';
+import React, { useState, useCallback, useEffect } from 'react';
 import Link from 'next/link';
 // import { SliderData } from './SliderData';
 // import { FaArrowCircleLeft, FaArrowCircleRight } from 'react-icons/fa';
 
 const About = () => {
   const [show, setShow] = useState(false)
-  function mouse (){
-    setReveal(true)
-    myStopFunction();
-    myFunction();
-  }
-  function myFunction() {
-    let myVar = setTimeout(function(){
-        setReveal(false)
-      }, 2500);
-  }   
-  function myStopFunction() {
-      if(typeof myVar != 'undefined'){
-          clearTimeout(myVar);
+
+  const useMediaQuery = (width) => {
+    const [targetReached, setTargetReached] = useState(false);
+  
+    const updateTarget = useCallback((e) => {
+      if (e.matches) {
+        setTargetReached(true);
+      } else {
+        setTargetReached(false);
       }
-  }
+    }, []);
+  
+    useEffect(() => {
+      const media = window.matchMedia(`(max-width: ${width}px)`);
+      media.addListener(updateTarget);
+  
+      // Check on mount (callback is not called until a change occurs)
+      if (media.matches) {
+        setTargetReached(true);
+      }
+  
+      return () => media.removeListener(updateTarget);
+    }, []);
+  
+    return targetReached;
+  };
+
+
+  const isBreakPoint = useMediaQuery(800)
+
 
   const traits = [
-    'sustainable', 'ethical', 'minority-owned', 'client-care', 'small-business', 'energy-efficient'
+    'Inter-Disciplinary', 'Sustainable', 'Automation', 'Small-Business', 'Client-Care', 'Ingenuity'
   ]
 // bg-[#DAD3DF]
   return (
@@ -51,16 +66,16 @@ const About = () => {
                 <p className='my-[4%]'>
                   One of our notable achievements is the successful completion of the design for the MSC Miami Cruise Terminal (project is under construction, scheduled to finish late 2024). Once completed, this transportation venue will be the largest cruise terminal in the Americas. This is a testament to our ability to service and accommodate intricate projects on a grand scale.
                 </p>
-                <p className='my-[4%]'>
+                <p className='mt-[4%]'>
                   As a certified Small Business Enterprise (SBE) and Minority Business Enterprise (MBE) establishment, IDEA stands as a beacon of diversity, aiming to empower all of our team members, our environment, and communities. Throughout the year, IDEA offers internship programs to College and High-School engineering students as a method to empower our younger generation of future professionals.
                 </p>
               </div>
             </div>
             
-            <div className='grid lg:grid-cols-2 justify-center items-center text-center  lg:w-full m-10 lg:mt-[10%]'>
+            <div className='grid lg:grid-cols-2 justify-center items-center text-center  lg:w-full mx-10 lg:mt-[0%]'>
               {
                 traits.map((trait, index) => (
-                  <div key={index} className='bg-secondary_text/90 italic rounded-xl p-4 w-[200px] m-[4%] mt-8'>
+                  <div key={index} className='bg-secondary_text/90 italic rounded-xl p-4 w-[200px] m-[4%] mt-1'>
                     <p className='text-dark_text'>{trait}</p>
                   </div>
                 ))
@@ -68,9 +83,9 @@ const About = () => {
             </div>
           </div>
 
-          <div className="about__child2 p-4 m-4 lg:m-0 lg:text-2xl items-center justify-center bg-secondary/40 rounded-xl lg:w-[485px]  ">
+          <div className="about__child2 p-4 m-4 lg:m-0 lg:text-lg items-center justify-center bg-secondary/40 rounded-xl lg:w-[485px]  ">
             <div className='lg:my-14 m-3 lg:mx-8'>
-              <h2 className="tracking-wider">Our Mission</h2>
+              <h2 className="tracking-wider ">Our Mission</h2>
             </div>
             <div className='lg:m-8 m-3'>
               <div>
@@ -86,7 +101,7 @@ const About = () => {
             <div className="relative items-center justify-center" onMouseOver={()=> setShow(true)} onMouseLeave={()=> setShow(false)}>
                 <div className="m-2 overflow-hidden rounded-xl items-center justify-center flex">
                   <div className="relative ">
-                    <Image src={'/assets/our-team-pic.jpg'} width={500} height={300} alt={'team'} className='rounded-xl'/> 
+                    {isBreakPoint ? <Image src={'/assets/our-team-pic.jpg'} width={300} height={200} alt={'team'} className='rounded-xl'/> : <Image src={'/assets/our-team-pic.jpg'} width={500} height={300} alt={'team'} className='rounded-xl'/> }
                     <div className={show ? "absolute bg-cover bottom-0 left-0 right-0 top-0 bg-[#322d44]/80 rounded-xl text-secondary_text  " : "hidden"}>
                       <Link href={'/team'}>
                         <h1 className="lg:mx-5 justify-center top-[44%] relative lg:text-2xl text-lg text-primary_text">Click to See Our Team</h1>

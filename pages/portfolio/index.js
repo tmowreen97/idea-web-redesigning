@@ -14,7 +14,7 @@ export default function Portfolio(){
       size: '490,000 SF Terminal / 1,200,000 SF Garage',
       year: '2024',
       services: [
-        'MEP-FP Project Management', 'Mechanical', 'Electrical', 'Fire Alarm Design'
+        'MEP-FP Project Management', 'Construction PM Services', 'Mechanical', 'Electrical', 'Fire Alarm Design'
       ],
       description: [
         'A 4-story cruise terminal capable of serving a total of 18,000 cruise ship passengers. The facility consists of 490,000 sf of interior space and 1,200,000 sf garage (6-Levels). There is a boarding concourse approximately 3,000 ft long by 15 ft wide running along the terminal and extending beyond the terminal to the East to accommodate three Berths. The terminal’s programming includes but not limited to: Check-In, Validation, Screening, Waiting Lounges, Office Terrace, Passenger Bridge Concourse, Baggage claim, Baggage, Restrooms, Customs and Border Protection Areas, VIP Lounges, Etc. Sustainable goals include LEED Silver Certification',
@@ -390,7 +390,7 @@ export default function Portfolio(){
   return(
     <div>
       <Navbar lightLogo={true}/>
-      <ProjectPortfolio projects={projects} category={'Select A Sector'}/>
+      <ProjectPortfolio projects={projects} category={'Choose A Sector'}/>
     </div>
   )
 }
