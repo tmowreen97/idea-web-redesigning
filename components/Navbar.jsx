@@ -36,7 +36,7 @@ const Navbar = ({setLightLogo, lightLogo}) => {
         if (setLightLogo) {
           setLightLogo(false)
         }
-        setTextColor('#000000');
+        setTextColor('#FFFFFF');
       }
     };
     window.addEventListener('scroll', changeColor);
