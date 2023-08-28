@@ -246,7 +246,7 @@ function Hero({heading}){
             </div>
           )
         }) : 
-        <div className="text-center justify-center items-center ml-[50px]">
+        <div className="text-center justify-center items-center ">
           <motion.div
             initial={{opacity:0}}
             whileInView={{opacity:1, transition:{delay:2, duration:1}}}
@@ -469,7 +469,7 @@ function Hero({heading}){
       whileInView={{opacity:1, transition:{delay:1.2, duration:1}}}
       className='p-5 text-primary_text z-[2] mt-[-10rem]'
       >
-        <h1 className='md:text-9xl text-7xl absolute font-thin left-5 bottom-[10%]'>{heading}</h1>
+        <h1 className='lg:text-[700%] text-7xl absolute font-thin right-[1%] bottom-1 py-3'>{heading}</h1>
 
         {/* <button className='px-8 py-2 border'>Book</button> */}
       </motion.div>

@@ -37,32 +37,34 @@ function ProjectHome(){
   ]
 
   return(
-    <div id='projects' className='w-screen md:h-full bg-primary'>
-      <div className='relative flex items-center justify-center p-4 md:pt-[5%]'>
-      <div className="projecthome__parent md:grid flexbox  ">
+    <div id='projects' className='w-screen lg:h-full bg-primary'>
+      <div className='relative flex items-center justify-center p-4 lg:pt-[5%]'>
+      <div className="projecthome__parent lg:grid flexbox  ">
         <div className="projecthome__title mr-2 ml-5 ">
-          <h1 className="md:text-[1000%] text-8xl tracking-wide text-left md:ml-[65px] font-thin mb-10 md:mt-[8%] text-primary_text">Projects</h1>
+          <h1 className="lg:text-[1000%] text-8xl tracking-wide text-left lg:ml-[65px] font-thin mb-10 lg:mt-[8%] text-primary_text">
+            Projects
+          </h1>
         </div>
-        <div className="projecthome__child1 md:p-10 p-2 bg-secondary/50 rounded-xl md:mr-5 md:ml-4  md:m-0 w-[375px] md:w-[815px]">
-          <div className="md:h-[450px] md:w-full md:px-4 p-1  mb-[0%]">
+        <div className="projecthome__child1 lg:p-10 p-2 bg-secondary/50 rounded-xl lg:mr-5 lg:ml-4  lg:m-0 w-[375px] lg:w-[815px]">
+          <div className="lg:h-[450px] lg:w-full lg:px-4 p-1  mb-[0%]">
             <Carousel 
               array={projects} 
               setCurrentIndex={setProjectSelect} 
               currentIndex={projectSelect} 
-              custom={"md:w-[620px] xl:w-[700px] md:h-[400px] w-[355px] h-[300px] rounded-2xl bg-center bg-cover hover:scale-105  duration-500 transform"}
+              custom={"lg:w-[620px] xl:w-[700px] lg:h-[400px] w-[355px] h-[300px] rounded-2xl bg-center bg-cover hover:scale-105  duration-500 transform"}
             />
             </div>
         </div>
-        <div className="projecthome__img relative bg-secondary/50 items-center text-center justify-center md:p-5 rounded-xl w-[375px] mt-3 md:w-[450px] md:h-[45%] md:mt-20 md:m-0">
+        <div className="projecthome__img relative bg-secondary/50 items-center text-center justify-center lg:p-5 rounded-xl w-[375px] mt-3 lg:w-[450px] lg:h-[45%] lg:mt-20 lg:m-0">
           <div className="relative">
             <button 
-            onClick={()=> {setShowDropDown(!showDropDown)}}  
+            onClick={()=> {setShowDropDown(!showDropDown)}}  lg
             data-dropdown-toggle="dropdown" 
-            className="relative md:w-[400px] md:text-2xl text-xl justify-between  hover:bg-secondary/60 focus:ring-4 focus:outline-none focus:ring-secondary_text font-medium rounded-lg p-4 md:mt-2 text-center inline-flex items-center text-secondary_text" type="button">
+            className="relative lg:w-[400px] lg:text-2xl text-xl justify-between  hover:bg-secondary/60 focus:ring-4 focus:outline-none focus:ring-secondary_text font-medium rounded-lg p-4 lg:mt-2 text-center inline-flex items-center text-secondary_text" type="button">
               {projects[projectSelect].sector}
               { showDropDown ? <BsChevronCompactUp/> : <BsChevronCompactDown/>}
             </button>
-            <div id="dropdown" className={ showDropDown ? "z-10 absolute right-0 md:w-[220px] bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700": "hidden"}>
+            <div id="dropdown" className={ showDropDown ? "z-10 absolute right-0 lg:w-[220px] bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700": "hidden"}>
         <ul className="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
           <li>
             <a href="/portfolio/commercial-transportation" className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white">Commercial/Transportation</a>
