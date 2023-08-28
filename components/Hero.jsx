@@ -38,7 +38,7 @@ function Hero({heading}){
   };
 
 
-  const isBreakPoint = useMediaQuery(1500)
+  const isBreakPoint = useMediaQuery(1510)
 
  
   function handleDescTwo(e){
@@ -62,168 +62,175 @@ function Hero({heading}){
   // WORKING ON BLINKER INFO
 
   // blinker 5 -> blinker 1
-  // blinker 4 -> blinker 2
-  // blinker 1 -> blinker 3
-  // blinker 3 -> blinker 4
-  // blinker 9 -> blinker 5
+  // blinker 7 -> blinker 2
+  // blinker 8 -> blinker 3
+  // blinker 6 -> blinker 4
+  // blinker 3 -> blinker 5
   // blinker 2 -> blinker 6
-  // blinker 8 -> blinker 7
-  // blinker 6 -> blinker 8
-  // blinker 7 -> blinker 9
-
-
 
   const blinkers = [
     {
       name: 'blinker-1',
-      bgColor: '#FF1493',
+      bgColor: '#33FF33',
       delayTime: 2,
-      repeatDelayTime : 22,
-      classDesc: "md:absolute my-5 md:my-0 left-[9%] bottom-[55%]",
-      svg_w : "",
-      svg_h: "50px",
-      svg_class: "relative rotate-6",
-      poly_points: "0,0 120,260",
-      div_parent_class: " absolute top-[80%] ml-[-40%] w-[350px]",
-      x1 : "5",
-      y1: "0",
-      x2: "0",
-      y2: "400"
-
-      // classDesc: "md:absolute my-5 md:my-0 left-[130px] top-[360px]"
-
-      
-      // classDesc : "md:absolute my-5 md:my-0 left-1/4 top-1/3"
+      repeatDelayTime : 15,
+      classDesc: "md:absolute my-5 md:my-0 left-[42%] top-[41%]",
+      svg_w: 'w-full',
+      svg_h: "170px",
+      svg_class: "relative rotate-90 origin-top left-[8%] mt-2",
+      poly_points: "20,50 150,200",
+      div_parent_class: "absolute bottom-[145%] ml-[25%] w-[375px]",
+      desc: "Terminal will consist of a NFPA-92 compliant Smoke Control System serving the whole smoke-protected areas. Terminal's Architecture, Mechanical, Electrical, Fire Alarm and Fire Protection systems will function coherently to achieve required smoke remove.",
+      heading: 'Smoke Control System',
+      img: '/assets/clip-1.png'
+      // classDesc: "md:absolute my-5 md:my-0 left-[9%] bottom-[55%]",
+      // svg_w : "",
+      // svg_h: "50px",
+      // svg_class: "relative rotate-6",
+      // poly_points: "0,0 120,260",
+      // div_parent_class: " absolute top-[80%] ml-[-40%] w-[350px]",
     },
     {
       name: 'blinker-2',
-      bgColor: '#A117FD',
+      bgColor: '#33FF33',
       delayTime:5,
-      repeatDelayTime: 23,
-      classDesc: "md:absolute my-5 md:my-0 left-[20%] top-[22%]",
-      desc: 'The Terminal is on schedule to become LEED Silver Certified up on completion. LEED Gold Certification is currently being studied.',
-      heading: 'LEED',
-      img: '/assets/clip-2.png',
-      svg_w : "",
-      svg_h: "143px",
-      svg_class: "relative rotate-90 origin-top",
-      poly_points : "0,0 244,260",
-      div_parent_class : " absolute bottom-[118%] ml-[30%] w-[350px]",
-      x1 : "5",
-      y1: "0",
-      x2: "0",
-      y2: "400"
-      // classDesc: "md:absolute my-5 md:my-0 left-[300px] top-[330px]"
+      repeatDelayTime: 15,
+      classDesc: "md:absolute my-5 md:my-0 right-[18%] top-[35%] 2xl:right-[22%]",
+      svg_w: '',
+      svg_h: '200px',
+      svg_class: "relative  origin-top rotate-90 ",
+      poly_points:"0,0 130,140",
+      div_parent_class: "absolute bottom-[131%] ml-[-25%] w-[350px]",
+      desc: "Garage structure houses Mechanical (HVAC) Cooling plants. Location was planned accordingly to conceal and not impact patron experience.",
+      heading:"Mechanical Plants",
+      img: "/assets/clip-1.png"
 
-      // classDesc: "md:absolute my-5 md:my-0 right-[460px] top-[345px]"
+      // classDesc: "md:absolute my-5 md:my-0 left-[20%] top-[22%]",
+      // desc: 'The Terminal is on schedule to become LEED Silver Certified upon completion. LEED Gold Certification is currently being studied.',
+      // heading: 'LEED',
+      // img: '/assets/clip-2.png',
+      // svg_w : "",
+      // svg_h: "143px",
+      // svg_class: "relative rotate-90 origin-top",
+      // poly_points : "0,0 244,260",
+      // div_parent_class : " absolute bottom-[118%] ml-[15%] w-[350px]",
+
     },
     {
       name: 'blinker-3',
-      bgColor: '#FFFF00',
+      bgColor: '#A117FD',
       delayTime:8,
-      repeatDelayTime: 23,
-      classDesc : "md:absolute my-5 md:my-0 left-[33%] bottom-[42%]",
-      svg_w : "w-full",
-      svg_h: "250px",
-      svg_class: "relative rotate-90 right-[90%]",
-      poly_points: "10,0 200,200",
-      div_parent_class: "absolute top-[30%] ml-[-110%] w-[375px]",
-      heading: 'Shore Power',
-      img: '/assets/clip-2.png',
-      desc: "Project will include medium voltage substations and connections to provide power to cruise vessels while dock in the port. Cruise vessels will use utility grid power in place of diesel engines.",
+      repeatDelayTime: 15,
+      classDesc: "md:absolute my-5 md:my-0 right-[7%] 3xl:right-[15%] bottom-[54%]",
+      svg_w: 'w-[100px]',
+      svg_h: '150px',
+      svg_class: "relative rotate-180 origin-left bottom-[35px] ml-2",
+      poly_points:"10,0 0,120",
+      div_parent_class: "absolute bottom-[-100%] ml-[-200%] w-[300px]",
+      desc: "Garage consists 2,500+ Parking spaces with 250+ spaces of Level-2 Electrical (EV) charging infrastructure.",
+      heading: "Electric Vehicle Charging",
+      img: "/assets/clip-2.png"
+      // classDesc : "md:absolute my-5 md:my-0 left-[33%] bottom-[42%]",
+      // svg_w : "w-full",
+      // svg_h: "250px",
+      // svg_class: "relative rotate-90 right-[90%]",
+      // poly_points: "10,0 200,200",
+      // div_parent_class: "absolute top-[30%] ml-[-110%] w-[375px]",
+      // heading: 'Shore Power',
+      // img: '/assets/clip-2.png',
+      // desc: "When finished, the Terminal will have the ability to probide (2) shore-side electrical power (15-kV) connections to service ships at Berth 8 and Berth 9, while their main and axillary diesel fueled engines are shut down.",
+      // link: 'https://www.miamidade.gov/releases/2021-08-06-portmiami-shore-power-ready.asp'
       // classDesc : "md:absolute my-5 md:my-0 left-1/4 top-1/3"
 
       // classDesc: "md:absolute my-5 md:my-0 left-[445px] top-[480px]"
     },
     {
       name: 'blinker-4',
-      bgColor: '#FFA500',
+      bgColor: '#A117FD',
       delayTime:11,
-      repeatDelayTime: 23,
-      classDesc: "md:absolute my-5 md:my-0 right-[44%] bottom-[40%]",
-      svg_w: "",
-      svg_h: '150px',
-      svg_class: "relative rotate-180 origin-top right-[95%]",
-      poly_points: "8,15 200,200",
-      div_parent_class: "absolute bottom-[180%] ml-[-125%] w-[500px]"
+      repeatDelayTime: 15,
+      classDesc: "md:absolute my-5 md:my-0 xl:right-[25%] 2xl:right-[30%] bottom-[43%]",
+      svg_w: '',
+      svg_h: '140px',
+      svg_class: "relative rotate-90 right-[70%]",
+      poly_points: "63,2 200,200",
+      div_parent_class: " absolute top-[20%] ml-[-175%] w-[525px]",
+      desc: "Terminal will include various Art in Public installations to highlight artist to enrich the public environment. A 3D Projection/Light show is planned to work with Terminal's current Architecture, Structure, Building systems including Lighting Control and Audio/Visual systems.",
+      link: {
+        title: "Danielle Roney",
+        url:"http://www.danielleroney.com/portfolio/the-eddies/"
+      },
+      img:'/assets/clip-2.png',
+      heading: "Art in Public Places"
 
-      // classDesc: "md:absolute my-5 md:my-0 left-[445px] top-[480px]"
+      // classDesc: "md:absolute my-5 md:my-0 right-[44%] bottom-[40%]",
+      // svg_w: "",
+      // svg_h: '150px',
+      // svg_class: "relative rotate-180 origin-top right-[95%]",
+      // poly_points: "8,15 200,200",
+      // div_parent_class: "absolute bottom-[180%] ml-[-125%] w-[500px]"
 
-      // classDesc: "md:absolute my-5 md:my-0 left-[300px] top-[330px]"
+
     },
     {
       name: 'blinker-5',
-      bgColor: '#BF00FF',
+      bgColor: '#A117FD',
       delayTime:14,
-      repeatDelayTime: 23,
-      classDesc: "md:absolute my-5 md:my-0 right-[30%] top-[42%]",
-      svg_w: '',
-      svg_h: "170px",
-      svg_class: "relative rotate-180 origin-top right-[95%]",
-      poly_points: "8,15 100,200",
-      div_parent_class: "absolute bottom-[200%] ml-[-125%] w-[450px]"
-
+      repeatDelayTime: 15,
+      classDesc : "md:absolute my-5 md:my-0 left-[33%] bottom-[42%]",
+      svg_w : "w-20px",
+      svg_h: "250px",
+      svg_class: "relative rotate-90 right-[90%]",
+      poly_points: "10,0 200,200",
+      div_parent_class: "absolute top-[30%] ml-[-110%] w-[375px]",
+      heading: 'Shore Power',
+      img: '/assets/clip-2.png',
+      desc: "When finished, the Terminal will have the ability to probide (2) shore-side electrical power (15-kV) connections to service ships at Berth 8 and Berth 9, while their main and auxiliary diesel fueled engines are shut down.",
+      link: {
+        title: 'Miami-Dade',
+        url:'https://www.miamidade.gov/releases/2021-08-06-portmiami-shore-power-ready.asp'
+      }
+      // classDesc: "md:absolute my-5 md:my-0 left-[42%] top-[41%]",
+      // svg_w: 'w-full',
+      // svg_h: "170px",
+      // svg_class: "relative rotate-90 origin-top left-[8%] mt-2",
+      // poly_points: "20,50 150,200",
+      // div_parent_class: "absolute bottom-[145%] ml-[25%] w-[375px]",
+      // desc: "Terminal will consist of a NFPA-92 compliant Smoke Control System serving the whole smoke-protected areas. Terminal's Architecture, Mechanical, Electrical, Fire Alarm and Fire Protection systems will function coherently to achieve required smoke remove.",
+      // heading: 'Smoke Control System',
+      // img: '/assets/clip-1.png'
 
       // classDesc: "md:absolute my-5 md:my-0 left-[130px] top-[360px]"
     },
     {
       name: 'blinker-6',
-      bgColor: '#00FFFF',
+      bgColor: '#A117FD',
       delayTime:17,
-      repeatDelayTime: 23,
-      classDesc: "md:absolute my-5 md:my-0 right-[20%] bottom-[43%]",
-      svg_w: '',
-      svg_h: '140px',
-      svg_class: "relative rotate-90 right-[70%]",
-      poly_points: "63,2 200,200",
-      div_parent_class: " absolute top-[20%] ml-[-120%] w-[345px]" 
+      repeatDelayTime: 15,
+      classDesc: "md:absolute my-5 md:my-0 left-[20%] top-[22%]",
+      desc: 'The Terminal is on schedule to become LEED Silver Certified upon completion. LEED Gold Certification is currently being studied.',
+      heading: 'LEED',
+      img: '/assets/clip-2.png',
+      svg_w : "",
+      svg_h: "143px",
+      svg_class: "relative rotate-90 origin-top",
+      poly_points : "0,0 244,260",
+      div_parent_class : " absolute bottom-[118%] ml-[15%] w-[350px]",
+      // classDesc: "md:absolute my-5 md:my-0 xl:right-[25%] 2xl:right-[30%] bottom-[43%]",
+      // svg_w: '',
+      // svg_h: '140px',
+      // svg_class: "relative rotate-90 right-[70%]",
+      // poly_points: "63,2 200,200",
+      // div_parent_class: " absolute top-[20%] ml-[-175%] w-[525px]",
+      // desc: "Terminal will include various Art in Public installations to highlight artist to enrich the public environment. A 3D Projection/Light show is planned to work with Terminal's current Architecture, Structure, Building systems including Lighting Control and Audio/Visual systems.",
+      // link: "http://www.danielleroney.com/portfolio/the-eddies/",
+      // img:'/assets/clip-2.png',
+      // heading: "Art in Public Places"
 
       // classDesc: "md:absolute my-5 md:my-0 right-[460px] top-[345px]"
 
 
     },
-    {
-      name: 'blinker-7',
-      bgColor: '#33FF33',
-      delayTime:20,
-      repeatDelayTime: 23,
-      classDesc: "md:absolute my-5 md:my-0 right-[11%] top-[49%]",
-      svg_w: '',
-      svg_h: '200px',
-      svg_class: "relative rotate-180 origin-top right-[95%] pt-3",
-      poly_points:"7,0 80,200",
-      div_parent_class: "absolute bottom-[190%] ml-[-60%] w-[350px]"
-
-
-      // classDesc: "md:absolute my-5 md:my-0 right-[295px] bottom-[355px]"
-
-      // classDesc: "md:absolute my-5 md:my-0 right-20 bottom-[275px]"
-    },
-    {
-      name: 'blinker-8',
-      bgColor: '#FF00FF',
-      delayTime:23,
-      repeatDelayTime: 23,
-      classDesc: "md:absolute my-5 md:my-0 right-[7%] bottom-[30%]",
-      svg_w: 'w-[0]',
-      svg_h: '150px',
-      svg_class: "relative rotate-180 origin-left bottom-[60px] ml-1",
-      poly_points:"10,0 0,100",
-      div_parent_class: "absolute top-[26%] left-[-180px] w-[300px]"
-
-      // classDesc: "md:absolute my-5 md:my-0 right-[145px] top-[400px]"
-
-      // classDesc: "md:absolute my-5 md:my-0 right-[295px] bottom-[355px]"
-    },
-    // {
-    //   name: 'blinker-9',
-    //   bgColor: '#00FF00',
-    //   delayTime:26,
-    //   repeatDelayTime: 23,
-    //   classDesc: "md:absolute my-5 md:my-0 right-20 bottom-[275px]"
-
-    //   // classDesc: "md:absolute my-5 md:my-0 right-[660px] bottom-[335px]"
-    // },
   ]
 
   function handleMobileAnimate(){
@@ -239,13 +246,16 @@ function Hero({heading}){
         { !isBreakPoint ? 
         blinkers.map((blinker)=> {
           return(
-            <div key={blinker.name} onClick={(e)=> handleDescTwo(e)}>
+            <motion.div 
+            initial={{opacity:0}}
+            animate ={{opacity:1, transition: {delay:1.5, duration:1}}}
+            key={blinker.name} onClick={(e)=> handleDescTwo(e)}>
               <Blinker blinker={blinker} delayTime={blinker.delayTime} blinker_name={blinker.name} repeatDelayTime={blinker.repeatDelayTime} bgColor={blinker.bgColor} classDesc={blinker.classDesc}/>
 
               {/* {descTwo? <svg width='100%' height='100%'>
                 <line x1="0" y1="0" x2="200" y2="200" strokeWidth="5" stroke='blue' fill='blue'/>
               </svg>: ""} */}
-            </div>
+            </motion.div>
           )
         }) : 
         <div className="text-center justify-center items-center ">
