@@ -113,7 +113,7 @@ function OurTeam (){
         </div>
 
       
-      <div className=" p-40 mx-auto flex flex-col items-center justify-center">
+      <div className=" md:p-40 p-10 mx-auto flex flex-col items-center justify-center">
         <AnimatedText text={words}/>
       </div>
       </motion.div>

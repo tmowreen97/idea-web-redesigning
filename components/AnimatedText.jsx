@@ -36,18 +36,17 @@ export default function AnimatedText({text}){
 
   return(
       <motion.div
-        style={{ overflow: "hidden", display: "flex", fontSize: "2rem" }}
+        style={{ overflow: "hidden", display:"marginRight", fontSize: "2rem" }}
         variants={sentence}
         initial="hidden"
         animate="visible"
-        className="text-primary_text"
+        className="text-primary_text md:flex "
       >
         {words.map((word, index) => (
           <motion.span
             variants={letter}
-            style={{ marginRight: "5px" }}
             key={index}
-            className="text-6xl font-thin py-5 tracking-wider m-4"
+            className="md:text-6xl text-2xl font-thin py-5 tracking-wider md:m-4 m-1"
           >
             {word}
           </motion.span>
