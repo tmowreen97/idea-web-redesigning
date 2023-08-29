@@ -29,6 +29,24 @@ export default function EduInst () {
       height: '200',
       disclaimer: '*Project performed by IDEA team member at previous employment.'
     },
+    // SEC at Penn State University
+    {
+      name: 'SEC at Penn State University*',
+      heading: ['Educational/Institutional'],
+      location: 'State College, PA',
+      size: '60,000 SF',
+      year: '2018',
+      services: [
+        'Electrical & Fire Alarm Design'
+      ],
+      description: [
+        'A 60,000sf student union center. The Center consisted of a 300-seat auditorium, a commercial kitchen and server, worship spaces, offices, classrooms, and conference rooms.',
+      ],
+      image: '/assets/electrical-fire.jpg',
+      width: '700',
+      height: '400',
+      disclaimer: '*Project performed by IDEA team member at previous employment.',
+    },
     // East End Food Institute EEFI
     {
       name: 'East End Food Institute EEFI',
@@ -66,6 +84,31 @@ export default function EduInst () {
       width: '650',
       height: '200',
       disclaimer: "",
+    },
+    // FOX School of Business at Temple University
+    {
+      name: 'FOX School of Business at Temple University*',
+      heading: ['Educational/Institutional'],
+      location: 'Worcester, MA',
+      size: '98,365 SF',
+      year: '2018',
+      services: [
+        'Mechanical Design'
+      ],
+      description: [
+        'A 98,385 sq. ft renovation/addition to an existing business school office and classroom building located on Temple University’s campus in the heart of North Philadelphia. The project consisted of a total renovation to the existing 4 floor structure while maintaining the existing historic façade on east side of building. Additionally, a 2 story overbuild, a glass bridge connecting the adjacent academic building and an addition on north side of the building was constructed as a part of the project. The mechanical system consists of floor-by-floor variable volume chilled water air handler units feeding single duct variable air volume terminal units with hot water reheat. Each air handler room was provided with outside air via an enthalpy core energy recovery unit located on the top floor. Chilled water and hot water were supplied from the campus district heating and cooling loop. The entrance atrium space seen in the photo above was provided with a code compliant smoke evacuation system thoughtfully coordinated into a very tight structure without compromising the architectural design intent. The project received LEED v4 BD+C NC silver certification.'
+      ],
+      resources: [
+        {
+          title: 'Case Study - Temple University',
+          url: 'https://sustainability.temple.edu/sites/sustainability/files/1810%20Liacouras%20Walk%20Case%20Study.pdf'
+        }
+      ],
+      image: '/assets/all-icons.jpg',
+      width: '700',
+      height: '400',
+      disclaimer: '*Project performed by IDEA team member at previous employment.',
+
     },
     // Fine Arts Instructional Center at ECSU (Eastern Connecticut State University)
     {
@@ -184,9 +227,72 @@ export default function EduInst () {
       width: '700',
       height: '400',
       disclaimer: "",
-      child: "col-start-1 col-end-5 flex justify-center w-full",
-      custom: ' w-[875px] max-w-[900px] xl:h-[550px] rounded-lg items-center flex'
-    }
+      // child: "col-start-1 col-end-5 flex justify-center w-full",
+      // custom: ' w-[875px] max-w-[900px] xl:h-[550px] rounded-lg items-center flex'
+    },
+    // Pendleton Hall at Wellesley College
+    {
+      name: 'Pendleton Hall at Wellesley College*',
+      heading: ['Educational/Institutional'],
+      location: 'Wellesley, MA',
+      size: '50,000 SF',
+      year: '2018',
+      services: [
+        'Electrical & Fire Alarm Design'
+      ],
+      description: [
+        'Renovation of a 40,000sf space and an addition of 10,000sf. Programmed spaces consisted of maker spaces, shops, studios, classrooms, and offices. Specialty programmed spaces are equipped with state-of-the-art process making equipment and associated infrastructure.  '
+      ],
+      image: '/assets/electrical-fire.jpg',
+      width: '700',
+      height: '400',
+      disclaimer: '*Project performed by IDEA team member at previous employment.',
+
+    },
+    // Performance Arts Center at College of the Holy Cross
+    {
+      name: 'Performance Arts Center at College of the Holy Cross*',
+      heading: ['Educational/Institutional'],
+      location: 'Worcester, MA',
+      size: '60,000 SF',
+      year: '2022',
+      services: [
+        'MEP-FP Project Management', 
+        'Electrical & Fire Alarm Design'
+      ],
+      description: [
+        'Performance arts center consists of two theatrical venues (400-Seat Proscenium Theater, 200-Seat flexible studio theater), rehearsal spaces, shops, studios, classrooms, offices, and practice rooms totaling 60,000sf. Programmed areas are equipped with state-of-the-art AV equipment, professional theatre lighting and sound systems, and other modern arts-related technology.',
+      ],
+      resources: [
+        {
+          title: 'DSRNY',
+          url: 'https://dsrny.com/project/college-of-the-holy-cross'
+        }
+      ],
+      image: '/assets/all-icons.jpg',
+      width: '700',
+      height: '400',
+      disclaimer: '*Project performed by IDEA team member at previous employment.',
+
+    },
+    // SEC at Penn State University
+    {
+      name: 'SEC at Penn State University*',
+      heading: ['Educational/Institutional'],
+      location: 'State College, PA',
+      size: '60,000 SF',
+      year: '2018',
+      services: [
+        'Electrical & Fire Alarm Design'
+      ],
+      description: [
+        'A 60,000sf student union center. The Center consisted of a 300-seat auditorium, a commercial kitchen and server, worship spaces, offices, classrooms, and conference rooms.',
+      ],
+      image: '/assets/electrical-fire.jpg',
+      width: '700',
+      height: '400',
+      disclaimer: '*Project performed by IDEA team member at previous employment.',
+    },
   ];
 
     // Child Care Center at Princeton University NEED IMAGE ??
