@@ -29,20 +29,22 @@ export default function EduInst () {
       height: '200',
       disclaimer: '*Project performed by IDEA team member at previous employment.'
     },
-    // SEC at Penn State University
+    // Child Care Center at Princeton University
     {
-      name: 'SEC at Penn State University*',
+      name: 'Child Care Center at Princeton University*',
       heading: ['Educational/Institutional'],
-      location: 'State College, PA',
-      size: '60,000 SF',
-      year: '2018',
+      location: 'Princeton, NJ',
+      size: '20,000 SF',
+      year: '2017',
       services: [
+        'MEP-FP Project Management', 
         'Electrical & Fire Alarm Design'
       ],
       description: [
-        'A 60,000sf student union center. The Center consisted of a 300-seat auditorium, a commercial kitchen and server, worship spaces, offices, classrooms, and conference rooms.',
+        'New childcare center totaling 20,000sf. Project also included a 66-kW utility interactive Photovoltaic System.',
+        'Leadership in Energy & Environmental Design (LEED) SILVER certified.'
       ],
-      image: '/assets/electrical-fire.jpg',
+      image: '/assets/all-icons.jpg',
       width: '700',
       height: '400',
       disclaimer: '*Project performed by IDEA team member at previous employment.',
@@ -104,7 +106,7 @@ export default function EduInst () {
           url: 'https://sustainability.temple.edu/sites/sustainability/files/1810%20Liacouras%20Walk%20Case%20Study.pdf'
         }
       ],
-      image: '/assets/all-icons.jpg',
+      image: '/assets/mechanical.jpg',
       width: '700',
       height: '400',
       disclaimer: '*Project performed by IDEA team member at previous employment.',
@@ -142,20 +144,28 @@ export default function EduInst () {
         '2017 SCUP/AIA-CAE Excellence in Architecture for a New Building'
       ],
       image: '/assets/projects/edu-inst/ecsu-1-ei.jpg',
-      images_array: [
-        {
-          title: 'ecsu-1',
-          image: '/assets/projects/edu-inst/ecsu-1-ei.jpg'
-        },
-        {
-          title: 'ecsu-2',
-          image: '/assets/projects/edu-inst/ecsu-2-ei.jpg'
-        }
-        
-      ],
       width: '700',
       height: '400',
       disclaimer : ""
+    },
+    // Hammond Units Study at Penn State University
+    {
+      name: 'Hammond Units Study at Penn State University*',
+      heading: ['Educational/Institutional'],
+      location: 'State College, PA',
+      size: '400,000 SF',
+      year: '2014',
+      services: [
+        'MEP-FP Project Management', 
+        'Electrical & Fire Alarm Assessment'
+      ],
+      description: [
+        'Complete existing condition assessment study of a 400,000 SF engineering facility complex.  Assessment included evaluation of the facility’s electrical power systems, lighting control systems, emergency lighting systems and fire alarm systems.'
+      ],
+      image: '/assets/all-icons.jpg',
+      width: '700',
+      height: '400',
+      disclaimer: '*Project performed by IDEA team member at previous employment.',
     },
     // Julius Romo Rabinowitz Building at Princeton University MULITIPLE IMAGES
     {
@@ -243,7 +253,7 @@ export default function EduInst () {
       description: [
         'Renovation of a 40,000sf space and an addition of 10,000sf. Programmed spaces consisted of maker spaces, shops, studios, classrooms, and offices. Specialty programmed spaces are equipped with state-of-the-art process making equipment and associated infrastructure.  '
       ],
-      image: '/assets/electrical-fire.jpg',
+      image: '/assets/electrical-fire-2.jpg',
       width: '700',
       height: '400',
       disclaimer: '*Project performed by IDEA team member at previous employment.',
@@ -292,6 +302,7 @@ export default function EduInst () {
       width: '700',
       height: '400',
       disclaimer: '*Project performed by IDEA team member at previous employment.',
+      child: "lg:col-start-2 lg:col-end-4"
     },
   ];
 
