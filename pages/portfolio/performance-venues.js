@@ -35,17 +35,6 @@ export default function PerfVenue () {
         '2017 SCUP/AIA-CAE Excellence in Architecture for a New Building'
       ],
       image: '/assets/projects/performance/ecsu-1-perf.jpg',
-      images_array: [
-        {
-          title: 'ecsu-1',
-          image: '/assets/projects/performance/ecsu-1-perf.jpg'
-        },
-        {
-          title: 'ecsu-2',
-          image: '/assets/projects/performance/ecsu-2-perf.jpg'
-        }
-        
-      ],
       width: '700',
       height: '400',
       disclaimer : ""
@@ -73,8 +62,6 @@ export default function PerfVenue () {
           title: 'Ennead',
           url: 'http://www.ennead.com/work/jazz', 
         }
-      ],
-      awards: [
       ],
       image: '/assets/projects/performance/jazz-1-perf.jpg',
       images_array: [
@@ -107,13 +94,32 @@ export default function PerfVenue () {
         'Project includes renovation of Mechanical, Electrical, Plumbing and Architectural upgrades to existing performance arts theatre building (20,000sf). Project program includes two (2) performance venues (125-Seat, 50-Seat) and associated theatrical front and back of house program (scene shop, dressing rooms, costume shop, bathrooms, etc.) spaces. Project upgrades included program revisions and associated Architectural, Mechanical (HVAC), Electrical and Plumbing upgrades.', 
         'IDEA served as Prime-Consultant on this engagement with LIU and led Architectural and Engineering efforts on this opportunity.'
       ],
-      resources: [
-      ],
-      awards: [],
       image: '/assets/projects/performance/liu-perf.jpg',
       width: '700',
       height: '400',
       disclaimer: "",
+      // custom: ' w-full max-w-[900px] xl:h-[615px] 2xl:h-[675px] rounded-lg'
+    },
+    // Merriam Webster Theater at The Kimmel Center
+    {
+      name: 'Merriam Webster Theater at The Kimmel Center*',
+      heading: ['Performance Venues'],
+      location: 'Philadelphia, PA',
+      size: '25,000 SF',
+      year: '2017',
+      services: [
+        'Electrical', 
+        'Fire Alarm Assessment',
+        'Concept Study'
+      ],
+      description: [
+        "Complete existing condition assessment study of the 25,000 SF historic facility. Assessment included evaluation of the facility’s electrical power systems, lighting control systems, emergency lighting systems, fire alarm systems, as well as telecommunications systems.",
+        "Concept/Feasibility study to add additional program areas above theater for a mixed-used program/occupancy while maintaining historic theater construction."
+      ],
+      image: '/assets/electrical-fire.jpg',
+      width: '700',
+      height: '400',
+      disclaimer: "*Project performed by IDEA team member at previous employment.",
       // custom: ' w-full max-w-[900px] xl:h-[615px] 2xl:h-[675px] rounded-lg'
     },
     // The FLEA Theater
@@ -131,9 +137,6 @@ export default function PerfVenue () {
       description: [
         'Full renovation of a 11,000sf facility to a theater venue. Programmed spaces consist of three theaters (120-Seat, 80-Seat, 46-Seat), performance supporting spaces and offices.',
       ],
-      resources: [
-      ],
-      awards: [],
       image: '/assets/projects/performance/flea-perf.jpg',
       width: '700',
       height: '400',
@@ -154,14 +157,10 @@ export default function PerfVenue () {
       description: [
         'Gut renovation of 27,000 sf tenant space to house two theaters (245-seat and 100-seat), rehearsal and performance support spaces.', 
       ],
-      resources: [
-      ],
-      awards: [],
       image: '/assets/projects/performance/mcc-perf.jpg',
       width: '700',
       height: '400',
       disclaimer: "*Project performed by IDEA team member at previous employment.",
-      child: 'lg:col-start-2 lg:col-end-4 flex justify-center',
     },
   ];
 
