@@ -154,14 +154,15 @@ function Hero({heading}){
       svg_h: '140px',
       svg_class: "relative rotate-90 right-[70%]",
       poly_points: "63,2 200,200",
-      div_parent_class: " absolute top-[20%] ml-[-175%] w-[525px]",
+      div_parent_class: " absolute top-[15%] ml-[-198%] w-[525px]",
+      heading: "Art in Public Places",
       desc: "Terminal will include various Art in Public installations to highlight artist to enrich the public environment. A 3D Projection/Light show is planned to work with Terminal's current Architecture, Structure, Building systems including Lighting Control and Audio/Visual systems.",
       link: {
         title: "Danielle Roney",
         url:"http://www.danielleroney.com/portfolio/the-eddies/"
       },
       img:'/assets/clip-2.png',
-      heading: "Art in Public Places"
+      
 
       // classDesc: "md:absolute my-5 md:my-0 right-[44%] bottom-[40%]",
       // svg_w: "",
@@ -182,7 +183,7 @@ function Hero({heading}){
       svg_h: "250px",
       svg_class: "relative rotate-90 right-[90%]",
       poly_points: "10,0 200,200",
-      div_parent_class: "absolute top-[30%] ml-[-110%] w-[375px]",
+      div_parent_class: "absolute top-[30%] ml-[-155%] w-[375px]",
       heading: 'Shore Power',
       img: '/assets/clip-2.png',
       desc: "When finished, the Terminal will have the ability to probide (2) shore-side electrical power (15-kV) connections to service ships at Berth 8 and Berth 9, while their main and auxiliary diesel fueled engines are shut down.",
