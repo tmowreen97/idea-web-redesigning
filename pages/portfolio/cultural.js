@@ -18,9 +18,6 @@ export default function Cultural(){
       description: [
         "For a full renovation of the historic Swartwout (53,000sf) & Street Hall (15,000sf) Buildings. Programmed spaces included art galleries, offices, and classrooms.",
       ],
-      resources: [
-      ],
-      awards: [],
       image: '/assets/projects/cultural/yale-cultural.jpg',
       width: '700',
       height: '400',
@@ -42,14 +39,33 @@ export default function Cultural(){
       description: [
         'A new entry building and renovation of museum shop at the existing visitors center.', 
       ],
-      awards: [],
-      resources: [
-  
-      ],
       image: '/assets/projects/cultural/bbg-2-cultural.jpg',
       width: '700',
       height: '400',
       disclaimer: '*Project performed by IDEA team member at previous employment.', 
+
+    },
+    // Church of the Heavenly Rest??
+    {
+      name: 'Church of the Heavenly Rest*',
+      heading: [
+        'Cultural',
+      ],
+      location: 'New York, NY',
+      size: '50,000 SF',
+      year: '2018',
+      services: [
+        'MEP-FP Project Management', 
+        'Electrical', 
+        'Fire Alarm Assessment',
+      ],
+      description: [
+        "Complete existing condition assessment study of the landmarked religious facility. Assessment included evaluation of the facility’s electrical power systems, lighting control systems, emergency lighting systems, and fire alarm systems."
+      ],
+      image: '/assets/all-icons.jpg',
+      width: '700',
+      height: '400',
+      disclaimer: '*Project performed by IDEA team member at previous employment.',
 
     },
     // Discovery & Water Garden at Brooklyn Botanical Garden*
@@ -66,15 +82,10 @@ export default function Cultural(){
       description: [
         'South garden re-design. Project included garden pond filtration systems, site power and lighting updates.',
       ],
-      resources: [
-  
-      ],
-      awards: [],
       image: '/assets/projects/cultural/bbg-1-cultural.jpg',
       width: '700',
       height: '400',
       disclaimer: '*Project performed by IDEA team member at previous employment.',
-
     },
     // Glenstone Museum*
     {
@@ -95,8 +106,6 @@ export default function Cultural(){
           url: 'https://www.glenstone.org/architecture/ ', 
         }
       ],
-      awards: [],
-      // need to add phase-1?
       image: '/assets/projects/cultural/glen-1-cultural.jpg',
       images_array: [
         {
@@ -130,10 +139,6 @@ export default function Cultural(){
       description: [
         'Project included lighting control design for the building. During construction, it was discovered that there were gaps in the design and the owner approached IDEA, to design a system that was cost-effective, short lead times and expandability for future projects. IDEA worked with the client to provide several options before proceeding with a final design that met the intent and desired use for the client. '
       ],
-      resources: [
-  
-      ],
-      awards: [],
       image: '/assets/projects/cultural/khair-1-cultural.jpg',
       images_array: [
         {
@@ -166,9 +171,6 @@ export default function Cultural(){
       description: [
         "For a gallery wide lighting upgrade (Gallery & Diorama’s) to LED source. Decreased gallery and diorama’s lighting power consumption by 50%",
       ],
-      resources: [
-      ],
-      awards: [],
       image: '/assets/projects/cultural/amnh-1-cultural.jpg',
       images_array: [
         {
@@ -183,7 +185,28 @@ export default function Cultural(){
       width: '700',
       height: '400',
       disclaimer: '*Project performed by IDEA team member at previous employment.',
-      custom: ' w-full max-w-[900px] xl:h-[500px] rounded-lg'
+
+    },
+    // Scenic Hudson Long Dock Park ???
+    {
+      name: 'Scenic Hudson Long Dock Park*',
+      heading: [
+        'Cultural',
+      ],
+      location: 'New York, NY',
+      size: '7,000 SF',
+      year: '2009',
+      services: [
+        'Electrical & Fire Alarm Design',
+      ],
+      description: [
+        "Renovation of existing 7,000 building consisting classrooms and offices. New construction of Kayak/Canoe storage structure with a roof mounted 12-kW utility interactive Photovoltaic system.",
+        "Leadership in Energy & Environmental Design (LEED) SILVER certified."
+      ],
+      image: '/assets/electrical-fire-2.jpg',
+      width: '700',
+      height: '400',
+      disclaimer: '*Project performed by IDEA team member at previous employment.',
 
     },
     // St. Thomas Church*
@@ -203,18 +226,15 @@ export default function Cultural(){
       description: [
         "Complete existing condition assessment study of a 40,000 SF religious facility.  Assessment included evaluation of the facility’s electrical power systems, lighting control systems, emergency lighting systems and fire alarm systems.",
       ],
-      resources: [
-      ],
-      awards: [],
       image: '/assets/projects/cultural/church-cultural.jpg',
       width: '700',
       height: '400',
       disclaimer: '*Project performed by IDEA team member at previous employment.',
-      child: 'col-start-2 col-end-4'
+      child: 'lg:col-start-2 lg:col-end-4'
 
     },
-    // Church of the Heavenly Rest??
-    // Scenic Hudson Long Dock Park ???
+
+
   ];
 
   return(

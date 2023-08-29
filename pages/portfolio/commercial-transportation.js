@@ -23,7 +23,6 @@ export default function CommTrans () {
           url: 'https://www.eastendfood.org/food-hub', 
         }
       ],
-      awards:[],
       image: '/assets/projects/com-trans/eefi-1-ct.png',
       images_array: [
         {
@@ -100,11 +99,11 @@ export default function CommTrans () {
           url: 'https://arquitectonica.com/architecture/project/msc-cruises-terminal-at-port-miami/' 
         }
       ],
-      awards: [],
-      image: '/assets/need-filler.jpeg',
+      image: '/assets/projects/com-trans/msc-2-ct-crop .jpg',
       width: '700',
       height: '600',
       disclaimer: "",
+
     },
     // Steinway & Sons Piano*
     {
@@ -119,9 +118,6 @@ export default function CommTrans () {
       description: [
         'Renovation to a 25,000sf space, which included a ground floor shown room, a concert hall, music rooms, recording rooms. Programmed consisted of high-end acoustically treated spaces.'
       ],
-      resources: [
-      ],
-      awards: [],
       image: '/assets/projects/com-trans/steinway-ct.jpg',
       width: '700',
       height: '600',

@@ -178,7 +178,7 @@ function PortfolioList({project}){
                         })}
                     </ul>
                     </div>
-                    { project.resources.length > 0 ? 
+                    { project.resources ? 
                     <div >
                       <h3 className="md:text-2xl text-xl">Resources:</h3>
                       <ul className="mx-4 m-3">

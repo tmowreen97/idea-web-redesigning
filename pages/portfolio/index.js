@@ -31,10 +31,11 @@ export default function Portfolio(){
         }
         
       ],
-      image: '/assets/need-filler.jpeg',
+      image: '/assets/projects/featured/msc-featured.jpg',
       width: '700',
       height: '600',
-      disclaimer: ""
+      disclaimer: "",
+
     },
     // EEFI
     {
@@ -56,11 +57,11 @@ export default function Portfolio(){
           url: 'https://www.eastendfood.org/food-hub', 
         }
       ],
-      image: '/assets/projects/featured/eefi-1-featured.png',
+      image: '/assets/projects/featured/eefi-1-featured.jpg',
       images_array: [
         {
           title: 'eefi-1',
-          image: '/assets/projects/featured/eefi-1-featured.png'
+          image: '/assets/projects/featured/eefi-1-featured.jpg'
         },
         {
           title: 'eefi-2',
@@ -84,9 +85,6 @@ export default function Portfolio(){
       ],
       description: [
         'Project included lighting control design for the building. During construction, it was discovered that there were gaps in the design and the owner approached IDEA, to design a system that was cost-effective, short lead times and expandability for future projects. IDEA worked with the client to provide several options before proceeding with a final design that met the intent and desired use for the client. '
-      ],
-      resources: [
-
       ],
       image: '/assets/projects/featured/khair-1-featured.png',
       images_array: [
@@ -118,8 +116,6 @@ export default function Portfolio(){
       description: [
         'Project includes renovation of Mechanical, Electrical, Plumbing and Architectural upgrades to existing performance arts theatre building (20,000sf). Project program includes two (2) performance venues (125-Seat, 50-Seat) and associated theatrical front and back of house program (scene shop, dressing rooms, costume shop, bathrooms, etc.) spaces. Project upgrades included program revisions and associated Architectural, Mechanical (HVAC), Electrical and Plumbing upgrades.', 
         'IDEA served as Prime-Consultant on this engagement with LIU and led Architectural and Engineering efforts on this opportunity.'
-      ],
-      resources: [
       ],
       image: '/assets/projects/featured/liu-featured.jpg',
       width: '700',
@@ -158,17 +154,6 @@ export default function Portfolio(){
         '2017 SCUP/AIA-CAE Excellence in Architecture for a New Building'
       ],
       image: '/assets/projects/featured/ecsu-1-featured.png',
-      images_array: [
-        {
-          title: 'ecsu-1',
-          image: '/assets/projects/featured/ecsu-1-featured.png'
-        },
-        {
-          title: 'ecsu-2',
-          image: '/assets/projects/featured/ecsu-2-featured.jpg'
-        }
-        
-      ],
       width: '700',
       height: '400',
       disclaimer : ""
@@ -222,9 +207,6 @@ export default function Portfolio(){
       description: [
         'The project is a high-end residence consisting of three separate single-story structures totaling 5,000 sf, located in Great Harbor Cay, Bahamas.'
       ],
-      resources: [
-
-      ],
       image: '/assets/projects/featured/lang-featured.jpg',
       width: '700',
       height: '200',
@@ -243,9 +225,6 @@ export default function Portfolio(){
       ],
       description: [
         'The project is a high-end residence consisting of two separate single-story structures totaling 3,500 sf, located in Great Harbor Cay, Bahamas.'
-      ],
-      resources: [
-
       ],
       image: '/assets/projects/featured/johnson-featured.jpg',
       width: '700',
@@ -295,6 +274,37 @@ export default function Portfolio(){
       height: '200',
       disclaimer: '*Project performed by IDEA team member at previous employment.',
     },
+    // 900 CHURCH ST NEED IMAGE ?? SIZE?
+    {
+      name: 'Alcove Apartments at 900 Church Street*',
+      heading: ['Residential',],
+      location: 'Nashville, TN',
+      size: '',
+      year: '2023',
+      services: [
+        ' Electrical & Fire Alarm Design',
+      ],
+      description: [
+        'Thirty-Four (34) story 372,000 sq. ft high rise residential with 356 units includes two rooftop pools and rooftop amenities such as club room, gym and private dining areas. Building includes several 75ft high outdoor terraces.'
+      ],
+      image: '/assets/projects/featured/alcove-1-featured.jpg',
+      images_array:[
+        {
+          title: 'alcove-1',
+          image: '/assets/projects/featured/alcove-1-featured.jpg'
+        },
+        {
+          title: 'alcove-2',
+          image: '/assets/projects/featured/alcove-2-featured.jpg'
+        }
+      ],
+      width: '700',
+      height: '200',
+      disclaimer: "*Project performed by IDEA team member at previous employment.",
+      child: 'lg:col-start-3 lg:col-end-5 lg:row-start-5 lg:row-end-7'
+
+    },
+
     // JAZZ LINCOLN CENTER MULTIPLE IMAGES
     {
       name: 'Jazz at Lincoln Center*',
@@ -319,21 +329,22 @@ export default function Portfolio(){
           url: 'http://www.ennead.com/work/jazz', 
         }
       ],
-      image: '/assets/projects/featured/jazz-1-featured.png',
+      image: '/assets/projects/featured/jazz-1-featured.jpg',
       images_array: [
         {
           title: 'jazz-1',
-          image: '/assets/projects/featured/jazz-1-featured.png'
+          image: '/assets/projects/featured/jazz-1-featured.jpg'
         },
         {
-          title: 'jazz-1',
+          title: 'jazz-2',
           image: '/assets/projects/featured/jazz-2-featured.jpg'
         }
         
       ],
-      width: '700',
+      width: '600',
       height: '500',
       disclaimer: '*Project performed by IDEA team member at previous employment.',
+      
     },
     // Adams Center at Yale School of Music 
     {
@@ -356,34 +367,14 @@ export default function Portfolio(){
 
       ],
       image: '/assets/projects/featured/adams-featured.jpg',
-      width: '700',
-      height: '200',
+      width: '725',
+      height: '300',
       disclaimer: '*Project performed by IDEA team member at previous employment.',
-      child: ' col-start-1 col-end-3'
+      child: "lg:col-start-2 lg:col-end-4"
+
 
     },
-    // 900 CHURCH ST NEED IMAGE ?? SIZE?
-    {
-      name: '900 Church Street*',
-      heading: ['Residential',],
-      location: 'Nashville, TN',
-      size: 'NEED',
-      year: '2023',
-      services: [
-        ' Electrical & Fire Alarm Design',
-      ],
-      description: [
-        'Thirty-Four (34) story 372,000 sq. ft high rise residential with 356 units includes two rooftop pools and rooftop amenities such as club room, gym and private dining areas. Building includes several 75ft high outdoor terraces.'
-      ],
-      resources: [
 
-      ],
-      image: '/assets/electrical-fire.jpg',
-      width: '700',
-      height: '200',
-      disclaimer: "*Project performed by IDEA team member at previous employment.",
-      child: 'col-start-3 col-end-5  '
-    },
   ]
   
 
