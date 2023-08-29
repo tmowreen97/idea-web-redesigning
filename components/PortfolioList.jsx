@@ -47,7 +47,18 @@ function PortfolioList({project}){
           <div className="relative mx-auto justify-center items-center md:top-1/4 top-[15%] ">
             <div className="relative justify-center items-center text-center m-2">
               <h1 className="md:text-4xl text-xl md:mb-5 ">{project.name}</h1>
-              <p className="md:text-lg text-base">{project.heading}</p>
+              <div className="flex justify-center items-center text-center">
+              {project.heading.map((sector, index)=> {
+                return(
+                  <>
+                    <p key={project.name} className="md:text-lg text-base">{sector}</p>
+                    {index < project.heading.length-1 ? <p className="md:text-lg text-base mr-2">,</p> : '' }
+                  </>
+                    
+                  
+                )
+              })}
+              </div>
               <p className="md:text-lg text-base">{project.location}</p>
               <button
               onClick={()=> handleClick()}
