@@ -5,7 +5,7 @@ export default function PerfVenue () {
   const projects = [
     // Fine Arts Instructional Center at ECSU (Eastern Connecticut State University)
     {
-      name: 'Fine Arts Instructional Center at ECSU (Eastern Connecticut State University)',
+      name: 'Fine Arts Instructional Center at ECSU (Eastern Connecticut State University)*',
       heading: [
         'Educational/Institutional',
         'Performance Venues'
@@ -37,7 +37,7 @@ export default function PerfVenue () {
       image: '/assets/projects/performance/ecsu-1-perf.jpg',
       width: '700',
       height: '400',
-      disclaimer : ""
+      disclaimer: "*Project performed by IDEA team member at previous employment.",
     },
     // Jazz at Lincoln Center
     {

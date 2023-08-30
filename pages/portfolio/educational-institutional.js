@@ -89,7 +89,7 @@ export default function EduInst () {
       height: '200',
       disclaimer: 'Image Courtesy of Garnett DePasquale Projects',
     },
-    // FOX School of Business at Temple University
+    // FOX School of Business at Temple University REMOVED
     // {
     //   name: 'FOX School of Business at Temple University*',
     //   heading: ['Educational/Institutional'],
@@ -116,7 +116,7 @@ export default function EduInst () {
     // },
     // Fine Arts Instructional Center at ECSU (Eastern Connecticut State University)
     {
-      name: 'Fine Arts Instructional Center at ECSU (Eastern Connecticut State University)',
+      name: 'Fine Arts Instructional Center at ECSU (Eastern Connecticut State University)*',
       heading: [
         'Educational/Institutional',
         'Performance Venues'
@@ -148,7 +148,7 @@ export default function EduInst () {
       image: '/assets/projects/edu-inst/ecsu-1-ei.jpg',
       width: '700',
       height: '400',
-      disclaimer : ""
+      disclaimer: "*Project performed by IDEA team member at previous employment.",
     },
     // Hammond Units Study at Penn State University
     {

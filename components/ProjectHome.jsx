@@ -28,7 +28,7 @@ function ProjectHome(){
     },
     {
       id: 3,
-      name: 'Johnson Private High-End Residence',
+      name: 'Private High-End Residence',
       location: "Great Harbor Cay, Bahamas",
       year: "2024 (Construction Completion)",
       sector: "Residential",

@@ -303,7 +303,7 @@ function Hero({heading}){
               className="mobile-desc-div">
                  <Link href={"/#projects"} >
                   <p className='mobile-desc'>
-                  Johnson Private High-End Residence
+                  Private High-End Residence
                   </p>
                 </Link>
               </motion.div>

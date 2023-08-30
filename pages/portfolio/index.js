@@ -35,6 +35,7 @@ export default function Portfolio(){
       width: '700',
       height: '600',
       disclaimer: "",
+      spacing: "relative top-12",
 
     },
     // EEFI
@@ -76,6 +77,7 @@ export default function Portfolio(){
       width: '700',
       height: '100',
       disclaimer: "Image Courtesy of Garnett DePasquale Projects",
+      spacing: "relative top-12",
     },
     // KHAIR
     {
@@ -128,7 +130,7 @@ export default function Portfolio(){
     },
     // ECSU
     {
-      name: 'Fine Arts Instructional Center at ECSU (Eastern Connecticut State University)',
+      name: 'Fine Arts Instructional Center at ECSU (Eastern Connecticut State University)*',
       heading: [
         'Educational/Institutional',
         'Performance Venues'
@@ -160,7 +162,7 @@ export default function Portfolio(){
       image: '/assets/projects/featured/ecsu-1-featured.png',
       width: '700',
       height: '400',
-      disclaimer : ""
+      disclaimer: "*Project performed by IDEA team member at previous employment.",
     },
     // AMNH
     {
@@ -199,7 +201,7 @@ export default function Portfolio(){
     },
     // LANG
     {
-      name: 'Lang Residence',
+      name: 'Private High-End Residence',
       heading: ['Residential'],
       location: 'Great Harbor Cay, Bahamas',
       size: '5,000 SF',
@@ -218,7 +220,7 @@ export default function Portfolio(){
     },
     // JOHNSON
     {
-      name: 'Johnson Residence',
+      name: 'Private High-End Residence',
       location: 'Great Harbor Cay, Bahamas',
       heading: ['Residential'],
       size: '3,500 SF',

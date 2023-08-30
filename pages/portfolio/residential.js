@@ -5,7 +5,7 @@ export default function Residential(){
   const projects = [
     // JOHNSON
     {
-      name: 'Johnson Residence',
+      name: 'Private High-End Residence',
       location: 'Great Harbor Cay, Bahamas',
       heading: ['Residential'],
       size: '3,500 SF',
@@ -24,7 +24,7 @@ export default function Residential(){
     },
     // LANG
     {
-      name: 'Lang Residence',
+      name: 'Private High-End Residence',
       heading: ['Residential'],
       location: 'Great Harbor Cay, Bahamas',
       size: '5,000 SF',
