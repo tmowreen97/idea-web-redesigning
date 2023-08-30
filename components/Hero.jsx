@@ -205,7 +205,7 @@ function Hero({heading}){
       div_parent_class : " absolute bottom-[118%] left-[15%] w-[350px]",
       // classDesc: "md:absolute my-5 md:my-0 xl:right-[25%] 2xl:right-[30%] bottom-[43%]",
       // svg_w: '',
-      // svg_h: '140px',
+      // svg_h: '140px', 
       // svg_class: "relative rotate-90 right-[70%]",
       // poly_points: "63,2 200,200",
       // div_parent_class: " absolute top-[20%] ml-[-175%] w-[525px]",

@@ -9,7 +9,7 @@ export default function Industrial(){
       heading: [
         'Industrial'
       ],
-      location: 'NEED',
+      location: '',
       size: '1,000,000 SF',
       year: '2023',
       services: [
@@ -23,7 +23,7 @@ export default function Industrial(){
       width: '700',
       height: '600',
       disclaimer: '*Project performed by IDEA team member at previous employment.',
-      child: 'lg:col-start-1 lg:col-end-5 ',
+      child: 'lg:col-start-1 lg:col-end-5 row-start-1 row-end-3',
 
     },
   ]
