@@ -6,7 +6,7 @@ export default function CommTrans () {
     // East End Food Institute EEFI
     {
       name: 'East End Food Institute EEFI',
-      location: 'Southampton, NY',
+      location: 'Riverhead, NY',
       heading: ['Commercial/Transportation'],
       size: '5,000 SF & SITE Development',
       year: '2023',
@@ -21,6 +21,10 @@ export default function CommTrans () {
         {
           title: 'East End Food - Food Hub',
           url: 'https://www.eastendfood.org/food-hub', 
+        },
+        {
+          title: 'GDP',
+          url: 'https://gdp.work/', 
         }
       ],
       image: '/assets/projects/com-trans/eefi-1-ct.png',
@@ -34,10 +38,9 @@ export default function CommTrans () {
           image: '/assets/projects/com-trans/eefi-2-ct.png'
         }
       ],
-      width: '650',
-      height: '200',
-      disclaimer: "",
-
+      width: '700',
+      height: '100',
+      disclaimer: "Image Courtesy of Garnett DePasquale Projects",
     },
     // JAZZ
     {

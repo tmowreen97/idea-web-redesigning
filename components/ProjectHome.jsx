@@ -23,7 +23,8 @@ function ProjectHome(){
       location:"Riverhead, NY",
       sector: "Educational/Institutional",
       year: "2023 (Construction Completion)",
-      desc: "Full renovation and upgrade of existing year-round farmers market and community kitchen facility. Facility encompasses a state of the art commercial kitchen installation and associated programming. ",
+      desc: "Full renovation and upgrade of existing year-round farmers market and community kitchen facility. Facility encompasses a state of the art commercial kitchen installation and associated programming.",
+      disclaimer: 'Image Courtesy of Garnett DePasquale Projects'
     },
     {
       id: 3,

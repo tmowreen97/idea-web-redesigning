@@ -69,7 +69,7 @@ export default function Residential(){
         'High-Rise', 
         'Residential'
       ],
-      location: 'Miami, Fl',
+      location: 'New York, NY',
       size: '120,000 SF Interior',
       year: '2020',
       services: [
@@ -87,7 +87,7 @@ export default function Residential(){
     },
     // 900 Church Street - Nashville, TN NEED IMAGE ??
     {
-      name: 'Alcove Apartments at 900 Church Street*',
+      name: 'Alcove Nashville at 900 Church Street*',
       heading: [
         'High-Rise', 
         'Residential'
@@ -126,7 +126,7 @@ export default function Residential(){
         'Mixed-Use',
         'Residential',
       ],
-      location: 'Jersey City, NJ',
+      location: 'Philadelphia, PA',
       size: '560,000 SF',
       year: '2023',
       services: [

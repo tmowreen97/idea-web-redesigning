@@ -83,7 +83,7 @@ export default function PerfVenue () {
     {
       name: 'Little Theater at LIU',
       heading: ['Educational/Institutional', 'Performance Venues'],
-      location: 'Queens, NY',
+      location: 'Brookville, NY',
       size: '20,000 SF',
       year: '2022',
       services: [
@@ -144,7 +144,7 @@ export default function PerfVenue () {
     },
     // The Robert W. WIlson MCC Theater
     {
-      name: 'The Robert W. WIlson MCC Theater*',
+      name: 'The Robert W. Wilson MCC Theater*',
       heading: ['Performance Venues'],
       location: 'New York, NY',
       size: '27,000 SF',

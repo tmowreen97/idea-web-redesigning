@@ -40,8 +40,8 @@ export default function Portfolio(){
     // EEFI
     {
       name: 'East End Food Institute EEFI',
-      location: 'Southampton, NY',
-      heading: ['Commercial/Transportation'],
+      location: 'Riverhead, NY',
+      heading: ['Commercial/Transportation', 'Educational/Institutional'],
       size: '5,000 SF & SITE Development',
       year: '2023',
       services: [
@@ -55,6 +55,10 @@ export default function Portfolio(){
         {
           title: 'East End Food - Food Hub',
           url: 'https://www.eastendfood.org/food-hub', 
+        },
+        {
+          title: 'GDP',
+          url: 'https://gdp.work/', 
         }
       ],
       image: '/assets/projects/featured/eefi-1-featured.jpg',
@@ -71,7 +75,7 @@ export default function Portfolio(){
       ],
       width: '700',
       height: '100',
-      disclaimer: "",
+      disclaimer: "Image Courtesy of Garnett DePasquale Projects",
     },
     // KHAIR
     {
@@ -106,7 +110,7 @@ export default function Portfolio(){
     {
       name: 'Little Theater at LIU',
       heading: ['Educational/Institutional', 'Performance Venues'],
-      location: 'Queens, NY',
+      location: 'Brookville, NY',
       size: '20,000 SF',
       year: '2022',
       services: [
@@ -160,7 +164,7 @@ export default function Portfolio(){
     },
     // AMNH
     {
-      name: 'North American Mammals Gallery at AMNH (American Museum of Natural History)*',
+      name: 'North American Mammals Gallery at American Museum of Natural History*',
       heading: ['Cultural'],
       location: 'New York, NY',
       size: '',
@@ -276,7 +280,7 @@ export default function Portfolio(){
     },
     // 900 CHURCH ST
     {
-      name: 'Alcove Apartments at 900 Church Street*',
+      name: 'Alcove Nashville at 900 Church Street*',
       heading: ['Residential',],
       location: 'Nashville, TN',
       size: '',

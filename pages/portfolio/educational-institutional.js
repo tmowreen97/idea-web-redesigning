@@ -51,8 +51,8 @@ export default function EduInst () {
     // East End Food Institute EEFI
     {
       name: 'East End Food Institute EEFI',
-      location: 'Southampton, NY',
-      heading: ['Commercial/Transportation'],
+      location: 'Riverhead, NY',
+      heading: ['Commercial/Transportation', 'Educational/Institutional'],
       size: '5,000 SF & SITE Development',
       year: '2023',
       services: [
@@ -66,6 +66,10 @@ export default function EduInst () {
         {
           title: 'East End Food - Food Hub',
           url: 'https://www.eastendfood.org/food-hub', 
+        },
+        {
+          title: 'GDP',
+          url: 'https://gdp.work/', 
         }
         
       ],
@@ -83,33 +87,33 @@ export default function EduInst () {
       ],
       width: '650',
       height: '200',
-      disclaimer: "",
+      disclaimer: 'Image Courtesy of Garnett DePasquale Projects',
     },
     // FOX School of Business at Temple University
-    {
-      name: 'FOX School of Business at Temple University*',
-      heading: ['Educational/Institutional'],
-      location: 'Worcester, MA',
-      size: '98,365 SF',
-      year: '2018',
-      services: [
-        'Mechanical Design'
-      ],
-      description: [
-        'A 98,385 sq. ft renovation/addition to an existing business school office and classroom building located on Temple University’s campus in the heart of North Philadelphia. The project consisted of a total renovation to the existing 4 floor structure while maintaining the existing historic façade on east side of building. Additionally, a 2 story overbuild, a glass bridge connecting the adjacent academic building and an addition on north side of the building was constructed as a part of the project. The mechanical system consists of floor-by-floor variable volume chilled water air handler units feeding single duct variable air volume terminal units with hot water reheat. Each air handler room was provided with outside air via an enthalpy core energy recovery unit located on the top floor. Chilled water and hot water were supplied from the campus district heating and cooling loop. The entrance atrium space seen in the photo above was provided with a code compliant smoke evacuation system thoughtfully coordinated into a very tight structure without compromising the architectural design intent. The project received LEED v4 BD+C NC silver certification.'
-      ],
-      resources: [
-        {
-          title: 'Case Study - Temple University',
-          url: 'https://sustainability.temple.edu/sites/sustainability/files/1810%20Liacouras%20Walk%20Case%20Study.pdf'
-        }
-      ],
-      image: '/assets/mechanical.jpg',
-      width: '700',
-      height: '400',
-      disclaimer: '*Project performed by IDEA team member at previous employment.',
+    // {
+    //   name: 'FOX School of Business at Temple University*',
+    //   heading: ['Educational/Institutional'],
+    //   location: 'Worcester, MA',
+    //   size: '98,365 SF',
+    //   year: '2018',
+    //   services: [
+    //     'Mechanical Design'
+    //   ],
+    //   description: [
+    //     'A 98,385 sq. ft renovation/addition to an existing business school office and classroom building located on Temple University’s campus in the heart of North Philadelphia. The project consisted of a total renovation to the existing 4 floor structure while maintaining the existing historic façade on east side of building. Additionally, a 2 story overbuild, a glass bridge connecting the adjacent academic building and an addition on north side of the building was constructed as a part of the project. The mechanical system consists of floor-by-floor variable volume chilled water air handler units feeding single duct variable air volume terminal units with hot water reheat. Each air handler room was provided with outside air via an enthalpy core energy recovery unit located on the top floor. Chilled water and hot water were supplied from the campus district heating and cooling loop. The entrance atrium space seen in the photo above was provided with a code compliant smoke evacuation system thoughtfully coordinated into a very tight structure without compromising the architectural design intent. The project received LEED v4 BD+C NC silver certification.'
+    //   ],
+    //   resources: [
+    //     {
+    //       title: 'Case Study - Temple University',
+    //       url: 'https://sustainability.temple.edu/sites/sustainability/files/1810%20Liacouras%20Walk%20Case%20Study.pdf'
+    //     }
+    //   ],
+    //   image: '/assets/mechanical.jpg',
+    //   width: '700',
+    //   height: '400',
+    //   disclaimer: '*Project performed by IDEA team member at previous employment.',
 
-    },
+    // },
     // Fine Arts Instructional Center at ECSU (Eastern Connecticut State University)
     {
       name: 'Fine Arts Instructional Center at ECSU (Eastern Connecticut State University)',
@@ -217,7 +221,7 @@ export default function EduInst () {
     {
       name: 'Little Theater at LIU',
       heading: ['Educational/Institutional', 'Performance Venues'],
-      location: 'Queens, NY',
+      location: 'Brookville, NY',
       size: '20,000 SF',
       year: '2022',
       services: [

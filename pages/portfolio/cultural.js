@@ -9,7 +9,7 @@ export default function Cultural(){
       heading: [
         'Cultural',
       ],
-      location: 'New York, NY',
+      location: 'New Haven, CT',
       size: '68,000 SF',
       year: '2010',
       services: [
@@ -193,7 +193,7 @@ export default function Cultural(){
       heading: [
         'Cultural',
       ],
-      location: 'New York, NY',
+      location: 'Beacon, NY',
       size: '7,000 SF',
       year: '2009',
       services: [

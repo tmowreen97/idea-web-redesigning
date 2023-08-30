@@ -7,7 +7,7 @@ export default function MixedUse(){
     {
       name: '301 East 21st Street',
       heading: ['Mixed-Use'],
-      location: 'Brooklyn, NY',
+      location: 'New York, NY',
       size: '200,000 SF',
       year: '2022',
       services: [
@@ -30,7 +30,7 @@ export default function MixedUse(){
         'Mixed-Use',
         'Residential',
       ],
-      location: 'Jersey City, NJ',
+      location: 'Philadelphia, PA',
       size: '560,000 SF',
       year: '2023',
       services: [
@@ -53,6 +53,30 @@ export default function MixedUse(){
       // child: 'lg:col-start-1 lg:col-end-5 flex justify-center',
       // custom: ' w-[700px] max-w-[900px] h-full rounded-lg'
     },
+    // AmeriHealth NEED IMAGE ??
+    {
+      name: 'AmeriHealth*',
+      heading: [
+        'Mixed-Use',
+      ],
+      location: 'Newtown Square, PA',
+      size: '375,000 SF',
+      year: '2021',
+      services: [
+        'Electrical, & Fire Alarm Design'
+      ],
+      description: [
+        "Designed the Core and Shell building for client including dual 33kV utility services and provisions for full generator backup. Services were set up in a main-tie-main configuration at the 35kV level. Equipment is a manufactured outdoor walk-in switchgear and is a 2000-amp 35kV switchgear with automatic transfer.",
+        "Designed the tenant fit out for AmeriHealth Caritas, who took over the entire building for their corporate headquarters."
+      ],
+      image: '/assets/mechanical-electrical-fire.jpg',
+      width: '700',
+      height: '600',
+      disclaimer: "*Project performed by IDEA team member at previous employment.",
+      // child: 'lg:col-start-1 lg:col-end-5 flex justify-center',
+      // custom: ' w-[700px] max-w-[900px] h-full rounded-lg'
+    },
+
     // AmeriSourceBergen NEED IMAGE ??
     {
       name: 'AmeriSourceBergen*',
@@ -75,29 +99,7 @@ export default function MixedUse(){
       // child: 'lg:col-start-1 lg:col-end-5 flex justify-center',
       // custom: ' w-[700px] max-w-[900px] h-full rounded-lg'
     },
-    // AmeriHealth NEED IMAGE ??
-    {
-      name: 'AmeriHealth*',
-      heading: [
-        'Mixed-Use',
-      ],
-      location: 'Cranbury, NJ',
-      size: '375,000 SF',
-      year: '2021',
-      services: [
-        'Electrical, & Fire Alarm Design'
-      ],
-      description: [
-        "Designed the Core and Shell building for client including dual 33kV utility services and provisions for full generator backup. Services were set up in a main-tie-main configuration at the 35kV level. Equipment is a manufactured outdoor walk-in switchgear and is a 2000-amp 35kV switchgear with automatic transfer.",
-        "Designed the tenant fit out for AmeriHealth Caritas, who took over the entire building for their corporate headquarters."
-      ],
-      image: '/assets/mechanical-electrical-fire.jpg',
-      width: '700',
-      height: '600',
-      disclaimer: "*Project performed by IDEA team member at previous employment.",
-      // child: 'lg:col-start-1 lg:col-end-5 flex justify-center',
-      // custom: ' w-[700px] max-w-[900px] h-full rounded-lg'
-    },
+    
     // 545 North Broad ST NEED IMAGE??
     {
       name: '545 North Broad Street*',
@@ -105,7 +107,7 @@ export default function MixedUse(){
         'High-Rise',
         'Mixed-Use',
       ],
-      location: 'Cranbury, NJ',
+      location: 'Philadelphia, PA',
       size: '152,000 SF',
       year: '2023',
       services: [

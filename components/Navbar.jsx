@@ -129,10 +129,10 @@ const Navbar = ({setLightLogo, lightLogo}) => {
           
           <ul>
           <div className='flex justify-center '>
-              <Image src={'/assets/clip-1.png'} width={65} height={40} className="m-[12px]"/>
-              <Image src={'/assets/clip-2.png'} width={60} height={60} className="m-2"/>
-              <Image src={'/assets/clip-3.png'} width={60} height={60} className="m-2"/>
-              <Image src={'/assets/clip-4.png'} width={60} height={60} className="m-2"/>
+              <Image src={'/assets/clip-1.png'} width={52} height={50} className="m-1 my-3"/>
+              <Image src={'/assets/clip-2.png'} width={50} height={50} className="m-1"/>
+              <Image src={'/assets/clip-3.png'} width={50} height={50} className="m-1"/>
+              <Image src={'/assets/clip-4.png'} width={52} height={50} className="m-1"/>
 
           </div>
             <ul className="justify-center items-center mx-[19%] mt-5">

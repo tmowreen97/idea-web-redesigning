@@ -65,7 +65,7 @@ function Hero({heading}){
       svg_h: "170px",
       svg_class: "relative rotate-90 origin-top left-[8%] mt-2",
       poly_points: "20,50 150,200",
-      div_parent_class: "absolute bottom-[145%] left-[25%] w-[375px]",
+      div_parent_class: "absolute bottom-[145%] left-[25%] w-[325px]",
       desc: "Terminal will consist of a NFPA-92 compliant Smoke Control System serving the whole smoke-protected areas. Terminal's Architecture, Mechanical, Electrical, Fire Alarm and Fire Protection systems will function coherently to achieve required smoke remove.",
       heading: 'Smoke Control System',
       img: '/assets/clip-1.png'
