@@ -45,8 +45,8 @@ export default function Footer(){
             </div>
           </div>
           </div>
-          <div className="lg:ml-[160px] lg:w-[450px] h-[95%] mt-5" >
-          <div className="bg-dark_bg/60  md:h-[290px]   rounded-xl ">
+          <div className="lg:ml-[160px] lg:w-[450px] w-full  h-[95%] mt-5" >
+          <div className="bg-dark_bg/60  md:h-[290px]  rounded-xl ">
             <div className="items-center justify-center">
               <form 
               className="text-center pt-2 items-center justify-center"
