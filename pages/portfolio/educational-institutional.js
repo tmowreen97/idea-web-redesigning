@@ -23,7 +23,6 @@ export default function EduInst () {
         }
   
       ],
-      awards : [],
       image: '/assets/projects/edu-inst/adams-ei.jpg',
       width: '700',
       height: '200',
@@ -70,7 +69,6 @@ export default function EduInst () {
         }
         
       ],
-      awards:[],
       image: '/assets/projects/edu-inst/eefi-3-ei.jpg',
       images_array: [
         {
@@ -230,9 +228,6 @@ export default function EduInst () {
         'Project includes renovation of Mechanical, Electrical, Plumbing and Architectural upgrades to existing performance arts theatre building (20,000sf). Project program includes two (2) performance venues (125-Seat, 50-Seat) and associated theatrical front and back of house program (scene shop, dressing rooms, costume shop, bathrooms, etc.) spaces. Project upgrades included program revisions and associated Architectural, Mechanical (HVAC), Electrical and Plumbing upgrades.', 
         'IDEA served as Prime-Consultant on this engagement with LIU and led Architectural and Engineering efforts on this opportunity.'
       ],
-      resources: [
-      ],
-      awards: [],
       image: '/assets/projects/edu-inst/liu-1-ei.jpg',
       width: '700',
       height: '400',

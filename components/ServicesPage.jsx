@@ -44,7 +44,6 @@ function ServicesPage(){
 
   useEffect(() => {
     mouse()
-    console.log("Element is in view: ", isInView)
   }, [isInView])
 
   function mouse (){
@@ -122,8 +121,8 @@ function ServicesPage(){
 
       initial={{opacity:0}}
       animate={{opacity:1, transition:{delay:1 , duration:1}}}
-      className="pt-20 px-20 pb-10">
-        <h1 className="md:text-[1100%] text-5xl font-thin text-primary_text text-left tracking-wide">Services</h1>
+      className="lg:p-20 pt-20  pb-10">
+        <h1 className="md:text-[1100%] text-8xl font-thin text-primary_text text-center lg:text-left tracking-wide">Services</h1>
       </motion.div>
       <div className="flex items-center justify-center">
         <div>

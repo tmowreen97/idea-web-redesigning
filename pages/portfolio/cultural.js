@@ -24,12 +24,12 @@ export default function Cultural(){
       disclaimer: '*Project performed by IDEA team member at previous employment.',
 
     },
-    // BBG NEED SIZE 
+    // BBG 
     {
       name: 'Brooklyn Botanical Garden*',
       heading: ['Cultural'],
       location: 'Brooklyn, NY',
-      size: 'NEED',
+      size: '',
       year: '2015',
       services: [
         'MEP-FP Project Management', 
@@ -163,7 +163,7 @@ export default function Cultural(){
         'Cultural',
       ],
       location: 'New York, NY',
-      size: 'NEED',
+      size: '',
       year: '2010',
       services: [
         'Electrical Design', 

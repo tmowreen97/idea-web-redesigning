@@ -17,10 +17,6 @@ export default function Residential(){
       description: [
         'The project is a high-end residence consisting of two separate single-story structures totaling 3,500 sf, located in Great Harbor Cay, Bahamas.'
       ],
-      resources: [
-
-      ],
-      awards: [],
       image: '/assets/projects/featured/johnson-featured.jpg',
       width: '700',
       height: '500',
@@ -40,10 +36,6 @@ export default function Residential(){
       description: [
         'The project is a high-end residence consisting of three separate single-story structures totaling 5,000 sf, located in Great Harbor Cay, Bahamas.'
       ],
-      resources: [
-
-      ],
-      awards: [],
       image: '/assets/projects/featured/lang-featured.jpg',
       width: '700',
       height: '200',

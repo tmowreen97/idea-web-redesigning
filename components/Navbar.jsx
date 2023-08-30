@@ -14,8 +14,6 @@ const Navbar = ({setLightLogo, lightLogo}) => {
   
   const router = useRouter();
 
-  console.log(router.asPath)
-
   const handleNav = () => {
     setNav(!nav);
   };
@@ -108,7 +106,7 @@ const Navbar = ({setLightLogo, lightLogo}) => {
             <Link href='/clients' id={router.pathname == "/clients" ? "active" : ""}>Clients</Link>
           </li> */}
           <li className='m-2 p-2 hover:bg-accent_2/60 hover:text-primary_text rounded-xl'>
-            <Link href='/contact' id={router.pathname == "/contact" ? "active" : ""}>Contact Us</Link>
+            <Link href='/contact' id={router.pathname == "/contact" ? "active" : ""}>Contact</Link>
           </li>
         </ul>
 
@@ -185,7 +183,7 @@ const Navbar = ({setLightLogo, lightLogo}) => {
               <Link href='/culture' id={router.pathname == "/culture" ? "active" : ""}>Culture</Link>
             </li>
             <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500 '>
-              <Link href='/contact' id={router.pathname == "/contact" ? "active" : ""}>Contact Us</Link>
+              <Link href='/contact' id={router.pathname == "/contact" ? "active" : ""}>Contact</Link>
             </li>
             </ul>
           

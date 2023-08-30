@@ -109,7 +109,7 @@ export default function CommTrans () {
     {
       name: 'Steinway & Sons Piano*',
       heading: ['Commercial/Transportation'],
-      location: 'NEED',
+      location: 'New York, NY',
       size: '25,000 SF',
       year: '2016',
       services: [

@@ -274,7 +274,7 @@ export default function Portfolio(){
       height: '200',
       disclaimer: '*Project performed by IDEA team member at previous employment.',
     },
-    // 900 CHURCH ST NEED IMAGE ?? SIZE?
+    // 900 CHURCH ST
     {
       name: 'Alcove Apartments at 900 Church Street*',
       heading: ['Residential',],

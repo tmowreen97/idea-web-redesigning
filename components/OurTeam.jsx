@@ -41,56 +41,13 @@ function OurTeam (){
     }
   ]
 
-  const second_team = [
-    {
-      name:'',
-      title:'',
-      image:'/assets/profile-pic.webp'
-    },
-    {
-      name:'',
-      title:'',
-      image:'/assets/profile-pic.webp'
-    },
-    {
-      name:'',
-      title:'',
-      image:'/assets/profile-pic.webp'
-    },
-    {
-      name:'',
-      title:'',
-      image:'/assets/profile-pic.webp'
-    },
-    {
-      name:'',
-      title:'',
-      image:'/assets/profile-pic.webp'
-    },
-    {
-      name:'',
-      title:'',
-      image:'/assets/profile-pic.webp'
-    },
-    {
-      name:'',
-      title:'',
-      image:'/assets/profile-pic.webp'
-    },
-    {
-      name:'',
-      title:'',
-      image:'/assets/profile-pic.webp'
-    }
-  ]
-
   return(
     <div className="w-screen h-full items-center text-center justify-center bg-primary">
       <motion.div 
       initial={{opacity:0}}
       animate={{opacity:1, transition:{delay:1 , duration:1}}}
-      className="p-20">
-        <h1 className="md:text-[1100%] text-8xl font-thin text-primary_text text-left tracking-wide">Our Team</h1>
+      className="lg:p-20 pt-20 pb-10">
+        <h1 className="md:text-[1100%] text-8xl font-thin text-primary_text text-center lg:text-left tracking-wide">Our Team</h1>
       </motion.div>
       <motion.div
       initial={{opacity:0}}
