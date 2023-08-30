@@ -263,7 +263,7 @@ function Hero({heading}){
               initial={{opacity:0}}
               whileInView={{opacity:1, transition:{duration:1, delay:1}}}
               className="mobile-desc-div">
-                <a href="/#projects" >
+                <a href="#projects" >
                   <p className='mobile-desc'>
                     MSC Miami Cruise Terminal
                   </p>
@@ -279,7 +279,7 @@ function Hero({heading}){
               initial={{opacity:0}}
               whileInView={{opacity:1, transition:{duration:1, delay:2}}}
               className="mobile-desc-div">
-                <a href="/#projects" >
+                <a href="#projects" >
                   <p className='mobile-desc'>
                     East End Food Institute (EEFI)
                   </p>
@@ -297,7 +297,7 @@ function Hero({heading}){
               whileInView={{opacity:1, transition:{duration:1, delay:3}}}
               
               className="mobile-desc-div">
-                 <a href="/#projects" >
+                 <a href="#projects" >
                 <p className='mobile-desc'>
                 Johnson Private High-End Residence
                 </p>

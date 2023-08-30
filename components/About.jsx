@@ -42,8 +42,8 @@ const About = () => {
   ]
 // bg-[#DAD3DF]
   return (
-    <div id='about' className='w-screen lg:h-full bg-primary font-light'>
-      <div className=' flex items-center justify-center lg:p-4'>
+    <div id='about' className='w-screen h-full bg-primary font-light'>
+      <div className=' flex items-center justify-center lg:p-4 '>
         <div className="about__parent lg:grid mt-[5%] lg:mx-[15%]">
           <div className="about__title m-[5%] lg:m-0 ">
             <h1 className="lg:text-[1100%] text-8xl tracking-wider text-center font-thin text-primary_text ">
@@ -97,11 +97,11 @@ const About = () => {
             
             
           </div>
-          <div className="about__img  bg-secondary/40 p-4 m-4 items-center justify-center text-center rounded-xl hover:animate-none  lg:w-[485px] lg:m-0 animation-pulse delay-200">
+          <div className="about__img  bg-secondary/40 p-4 m-4 items-center justify-center text-center rounded-xl hover:animate-none  lg:w-[485px] lg:m-0 ">
             <div className="relative items-center justify-center" onMouseOver={()=> setShow(true)} onMouseLeave={()=> setShow(false)}>
                 <div className="m-2 overflow-hidden rounded-xl items-center justify-center flex">
                   <div className="relative ">
-                    {isBreakPoint ? <Image src={'/assets/our-team-pic.jpg'} width={300} height={200} alt={'team'} className='rounded-xl'/> : <Image src={'/assets/our-team-pic.jpg'} width={500} height={300} alt={'team'} className='rounded-xl'/> }
+                    {isBreakPoint ? <Image src={'/assets/our-team-pic.jpg'} width={200} height={100} alt={'team'} className='rounded-xl'/> : <Image src={'/assets/our-team-pic.jpg'} width={500} height={300} alt={'team'} className='rounded-xl'/> }
                     <div className={show ? "absolute bg-cover bottom-0 left-0 right-0 top-0 bg-[#322d44]/80 rounded-xl text-secondary_text  " : "hidden"}>
                       <Link href={'/team'}>
                         <h1 className="lg:mx-5 justify-center top-[44%] relative lg:text-2xl text-lg text-primary_text">Click to See Our Team</h1>
