@@ -243,7 +243,7 @@ function Hero({heading}){
           <div className='justify-center items-center ml-10'>
           
           
-          
+          {/* MOBILE HERO */}
           <motion.div
             initial={{opacity:0}}
             whileInView={{opacity:1, transition:{delay:2, duration:1}}}
@@ -264,11 +264,11 @@ function Hero({heading}){
               initial={{opacity:0}}
               whileInView={{opacity:1, transition:{duration:1, delay:1}}}
               className="mobile-desc-div">
-                <a href="#projects" >
+                <Link href={"/#projects"} >
                   <p className='mobile-desc'>
                     MSC Miami Cruise Terminal
                   </p>
-                </a>
+                </Link>
               </motion.div>
               <motion.div 
               initial={{opacity:0}}
@@ -280,7 +280,9 @@ function Hero({heading}){
               initial={{opacity:0}}
               whileInView={{opacity:1, transition:{duration:1, delay:2}}}
               className="mobile-desc-div">
-                <Link  href={'#projects'}>East End Food Institute (EEFI)</Link>
+                <Link  href={'/#projects'} >
+                  <p className='mobile-desc'>East End Food Institute (EEFI)</p>
+                </Link>
                 {/* <a href="#projects" >
                   <p className='mobile-desc'>
                     East End Food Institute (EEFI)
@@ -299,11 +301,11 @@ function Hero({heading}){
               whileInView={{opacity:1, transition:{duration:1, delay:3}}}
               
               className="mobile-desc-div">
-                 <a href="#projects" >
-                <p className='mobile-desc'>
-                Johnson Private High-End Residence
-                </p>
-                </a>
+                 <Link href={"/#projects"} >
+                  <p className='mobile-desc'>
+                  Johnson Private High-End Residence
+                  </p>
+                </Link>
               </motion.div>
 
               
