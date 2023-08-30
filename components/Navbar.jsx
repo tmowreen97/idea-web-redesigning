@@ -115,9 +115,9 @@ const Navbar = ({setLightLogo, lightLogo}) => {
         {/* Mobile Button */}
         <div onClick={handleNav} className='block sm:hidden z-10'>
           {nav ? (
-            <AiOutlineClose size={25} className='text-primary_text' />
+            <AiOutlineClose size={25} className='text-primary_text mr-3' />
           ) : (
-            <AiOutlineMenu size={25}  className='text-primary_text' />
+            <AiOutlineMenu size={25}  className='text-primary_text mr-3' />
           )}
         </div>
         {/* Mobile Menu */}

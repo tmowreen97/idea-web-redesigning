@@ -1,4 +1,4 @@
-import {React, useState, useRef, useEffect} from "react";
+import {React, useState, useRef, useEffect, useCallback} from "react";
 import { motion, useInView } from "framer-motion";
 import { BsArrowRight } from "react-icons/bs";
 import {LiaLongArrowAltRightSolid} from 'react-icons/lia';
@@ -12,6 +12,35 @@ function ServicesPage(){
 
   const ref = useRef(null)
   const isInView = useInView(ref)
+
+  const useMediaQuery = (width) => {
+    const [targetReached, setTargetReached] = useState(false);
+  
+    const updateTarget = useCallback((e) => {
+      if (e.matches) {
+        setTargetReached(true);
+      } else {
+        setTargetReached(false);
+      }
+    }, []);
+  
+    useEffect(() => {
+      const media = window.matchMedia(`(max-width: ${width}px)`);
+      media.addListener(updateTarget);
+  
+      // Check on mount (callback is not called until a change occurs)
+      if (media.matches) {
+        setTargetReached(true);
+      }
+  
+      return () => media.removeListener(updateTarget);
+    }, []);
+  
+    return targetReached;
+  };
+
+
+  const isBreakPoint = useMediaQuery(1250)
 
   useEffect(() => {
     mouse()
@@ -47,11 +76,26 @@ function ServicesPage(){
     }
   }
 
+
   const arrow = {
     hidden:{ opacity:1 },
     visible: {
       opacity:[0,1],
       x: [0,8,5,0],
+      transition: {
+        delay: .5,
+        duration: .5,
+        repeat: Infinity,
+        repeatDelay: 1
+      }
+    }
+  }
+
+  const arrow_resp = {
+    hidden:{ opacity:1 },
+    visible: {
+      opacity:[0,1],
+      y: [0,8,5,0],
       transition: {
         delay: .5,
         duration: .5,
@@ -81,34 +125,37 @@ function ServicesPage(){
       className="pt-20 px-20 pb-10">
         <h1 className="md:text-[1100%] text-5xl font-thin text-primary_text text-left tracking-wide">Services</h1>
       </motion.div>
-      <motion.div 
+      <div className="flex items-center justify-center">
+        <div>
+
+<motion.div 
       initial={{opacity:0}}
       animate={{opacity:1, transition:{ delay: 1.5, duration:1}}}
       className="">
         {/* MEP & FP SECTION */}
-        <div className="w-screen h-full lg:flex items-center justify-evenly p-10">
+        <div className="w-screen h-full xl:flex items-center justify-center xl:justify-evenly p-10">
           {/* MEP & FP NAME */}
           <motion.div 
-          variants={name}
-          initia="hidden"
+          variants={isBreakPoint ? "" : name }
+          initial="hidden"
           animate={showMep ? "visible" : "hidden"}
           onClick={()=> setShowMep(!showMep)}
-          className="bg-light_bg  lg:w-[550px] lg:h-[425px] w-[300px] h-[250px] my-20 rounded-xl hover:cursor-pointer hover:bg-secondary"
+          className="bg-light_bg lg:w-[550px] lg:h-[425px] md:w-[400px] w-[300px] h-[250px] lg:my-20 my-10 rounded-xl hover:cursor-pointer hover:bg-secondary"
           >
-            <div className="absolute">
-              <div className="relative w-[208px] lg:left-[80%]">
-                <p className="text-dark_text lg:text-5xl text-2xl my-[73%] tracking-wide lg:leading-[55px] lg:text-justify  ">MEP & FP Services</p>
+            <div className="absolute ">
+              <div className="relative w-[225px] lg:w-[208px] lg:left-[80%] left-[28%]">
+                <p className="text-dark_text lg:text-5xl text-4xl my-[35%] lg:my-[73%] tracking-wide lg:leading-[55px] lg:text-justify  ">MEP & FP Services</p>
               </div>
             </div>
           </motion.div>
           {/* MEP FP ARROW */}
           <motion.div 
-            variants={arrow}
+            variants={isBreakPoint ? arrow_resp : arrow }
             initial="hidden"
             animate={showMep ? "visible" : ""}
-            className={showMep ? "" : "hidden"}
+            className={showMep ? "flex items-center justify-center my-10 lg:my-0" : "hidden"}
           >
-            <BsArrowRight className="text-white lg:text-7xl text-4xl lg:rotate-0 rotate-90 "/>
+            <BsArrowRight className="text-white lg:text-7xl text-4xl xl:rotate-0 rotate-90 "/>
           </motion.div>
           
           {/* MEP & FP LIST */}
@@ -139,28 +186,28 @@ function ServicesPage(){
           </motion.div>
         </div>
         {/* FACILITY SUPPORT SECTION */}
-        <div className="w-screen h-full lg:flex items-center justify-evenly p-10">
+        <div className="w-screen h-full xl:flex items-center justify-evenly p-10">
           {/* FACILITY SUPPORT NAME */}
           <motion.div 
-          variants={name}
+          variants={isBreakPoint ? "" : name }
           initia="hidden"
           animate={showFS ? "visible" : "hidden"}
           onClick={()=> setShowFS(!showFS)}
-          className="bg-light_bg lg:w-[550px] lg:h-[425px] w-[300px] h-[250px] my-20 rounded-xl hover:cursor-pointer hover:bg-secondary">
+          className="bg-light_bg lg:w-[550px] lg:h-[425px] md:w-[400px] w-[300px] h-[250px] lg:my-20 my-10 rounded-xl hover:cursor-pointer hover:bg-secondary">
             <div className="absolute">
-              <div className="relative lg:left-[90%] left-[35%] w-[200px]">
-                <p className="text-dark_text lg:text-5xl text-2xl lg:my-[58%] my-[30%] tracking-wide lg:leading-[55px] lg:w-[330px]  lg:text-justify ">Facility Support Services</p>
+              <div className="relative lg:left-[90%] left-[35%] w-[200px]" >
+                <p className="text-dark_text lg:text-5xl text-4xl lg:my-[58%] my-[30%] tracking-wide lg:leading-[55px] lg:w-[330px]  lg:text-justify ">Facility Support Services</p>
               </div>
             </div>
           </motion.div>
           {/* FACILITY ARROW */}
           <motion.div
-            variants={arrow}
+            variants={isBreakPoint ? arrow_resp : arrow }
             initial="hidden"
             animate={showFS ? "visible" : ""}
-            className={showFS ? "" : "hidden"}
+            className={showFS ? "flex xl:relative items-center justify-center xl:justify-start xl:items-start my-10 lg:my-0" : "hidden"}
             >
-            <BsArrowRight className="text-white lg:text-7xl text-4xl  lg:rotate-0 rotate-90  "/>
+            <BsArrowRight className="text-white lg:text-7xl text-4xl xl:rotate-0 rotate-90  "/>
           </motion.div>
           {/* FACILITY SUPPORT LIST */}
           <motion.div 
@@ -190,28 +237,28 @@ function ServicesPage(){
           </motion.div>
         </div>
         {/* PROJECT MANAGEMENT & EXPEDITING SECTION */}
-        <div className="w-screen h-full lg:flex items-center justify-evenly p-10">
+        <div className="w-screen h-full xl:flex items-center justify-evenly p-10">
           {/* PROJECT MANAGEMENT & EXPEDITING NAME */}
           <motion.div 
-          variants={name}
+          variants={isBreakPoint ? "" : name }
           initia="hidden"
           animate={showPM ? "visible" : "hidden"}
           onClick={()=> setShowPM(!showPM)}
-          className="bg-light_bg  lg:w-[550px] lg:h-[425px] w-[300px] h-[250px] rounded-xl my-20 hover:cursor-pointer hover:bg-secondary">
+          className="bg-light_bg  lg:w-[550px] lg:h-[425px] md:w-[400px] w-[300px] h-[250px] rounded-xl lg:my-20 my-10 hover:cursor-pointer hover:bg-secondary">
             <div className="absolute">
-              <div className="relative left-[35%] ">
-                <h3 className="text-dark_text lg:text-5xl text-2xl tracking-wide lg:w-[330px] w-[200px] my-[30%] lg:leading-[55px] lg:text-justify">Project Management & Construction Services</h3>
+              <div className="relative lg:left-[35%] left-[5%]">
+                <h3 className="text-dark_text lg:text-5xl text-4xl tracking-wide lg:w-[330px] w-[300px] lg:my-[30%] my-[15%] lg:leading-[55px] lg:text-justify">Project Management & Construction Services</h3>
               </div>
             </div>
           </motion.div>
           {/* PROJECT MANAGEMENT ARROW */}
           <motion.div
-            variants={arrow}
+            variants={isBreakPoint ? arrow_resp : arrow }
             initial="hidden"
             animate={showPM ? "visible" : ""}
-            className={showPM ? "" : "hidden"}
+            className={showPM ? "flex items-center justify-center my-10 lg:my-0" : "hidden"}
           >
-            <BsArrowRight className="text-white lg:text-7xl text-4xl lg:rotate-0 rotate-90 "/>
+            <BsArrowRight className="text-white lg:text-7xl text-4xl xl:rotate-0 rotate-90 "/>
           </motion.div>
           {/* PROJECT MANAGEMENT LIST */}
           <motion.div
@@ -238,6 +285,12 @@ function ServicesPage(){
           </motion.div>
         </div>
       </motion.div>
+
+        </div>
+
+
+      </div>
+      
       
       
 
