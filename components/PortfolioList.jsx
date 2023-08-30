@@ -41,28 +41,28 @@ function PortfolioList({project}){
 
     
       <div className={hide ? "relative rounded-xl overflow-hidden hidden" : "relative rounded-xl overflow-hidden"}>
-        <img src={project.image} className={project.custom ? `${project.custom}` : 'w-full rounded-lg'}/>
+        <img src={project.image} className={project.custom ? `${project.custom}` : 'w-full h-full rounded-lg'}/>
         {/* <Image src={project.image} width={project.width} height={project.height} alt={'project'}  /> */}
         <div className={projHover ? "absolute top-0 bottom-0 left-0 right-0 bg-[#322d44]/80 text-secondary_text  " : "hidden"}>
-          <div className="relative mx-auto justify-center items-center md:top-1/4 top-[15%] ">
-            <div className="relative justify-center items-center text-center m-2">
+          <div className="relative mx-auto justify-center items-center md:top-1/4 top-5 bottom-0 ">
+            <div className="relative justify-center items-center text-center m-2 ">
               <h1 className="md:text-4xl text-xl md:mb-5 ">{project.name}</h1>
               <div className="flex justify-center items-center text-center">
               {project.heading.map((sector, index)=> {
                 return(
                   <>
-                    <p key={project.name} className="md:text-lg text-base">{sector}</p>
-                    {index < project.heading.length-1 ? <p className="md:text-lg text-base mr-2">,</p> : '' }
+                    <p key={project.name} className="md:text-lg text-xs">{sector}</p>
+                    {index < project.heading.length-1 ? <p className="md:text-lg text-xs mr-2">,</p> : '' }
                   </>
                     
                   
                 )
               })}
               </div>
-              <p className="md:text-lg text-base">{project.location}</p>
+              <p className="md:text-lg text-xs">{project.location}</p>
               <button
               onClick={()=> handleClick()}
-              className="hover:bg-accent_2 hover:text-primary_text  bg-light_bg text-dark_text rounded-full overflow-hidden md:text-lg text-sm p-1 md:p-3 m-2"
+              className="hover:bg-accent_2 hover:text-primary_text  bg-light_bg text-dark_text rounded-full overflow-hidden md:text-lg text-xs p-1 md:p-3 m-2"
               >Click to Learn More</button>
             </div>
               
