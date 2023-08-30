@@ -61,7 +61,7 @@ function ContactPage(){
                 <h2 className="lg:text-2xl text-lg">Inter-Disciplinary Engineering Associates, LLC</h2>
                 <p className="lg:text-2xl text-lg">Architectural Engineering Consultants</p>
               </div>
-              <p className="text-lg lg:text-lg">Monroe, Connecticut | Miami, Florida</p>
+              <p className="text-lg">Monroe, Connecticut | Miami, Florida</p>
               <p className="text-lg">info@IdeaAEC.com</p>
               <p className="text-lg ">FL: 954-295-2125</p>
               <p className="text-lg ">CT: 203-917-7907</p>
