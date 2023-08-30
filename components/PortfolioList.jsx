@@ -41,7 +41,7 @@ function PortfolioList({project}){
 
     
       <div className={hide ? "relative rounded-xl overflow-hidden hidden h-full" : "relative rounded-xl overflow-hidden"}>
-        <img src={project.image} className={project.custom ? `${project.custom}` : 'w-full h-full rounded-lg'}/>
+        <img src={project.image} width={'auto'} height={'auto'} alt={project.name} className={project.custom ? `${project.custom}` : 'w-full h-full rounded-lg'}/>
         {/* <Image src={project.image} width={project.width} height={project.height} alt={'project'}  /> */}
         <div className={projHover ? "absolute top-0 bottom-0 left-0 right-0 bg-[#322d44]/80 text-secondary_text  " : "hidden"}>
           <div className="relative mx-auto justify-center items-center md:top-1/4 top-5 bottom-0 ">
@@ -50,10 +50,10 @@ function PortfolioList({project}){
               <div className="flex justify-center items-center text-center">
               {project.heading.map((sector, index)=> {
                 return(
-                  <>
-                    <p key={project.name} className="md:text-lg text-xs">{sector}</p>
+                  <span key={index}>
+                    <p  className="md:text-lg text-xs">{sector}</p>
                     {index < project.heading.length-1 ? <p className="md:text-lg text-xs mr-2">,</p> : '' }
-                  </>
+                  </span>
                     
                   
                 )
@@ -136,7 +136,7 @@ function PortfolioList({project}){
                    {
                     project.heading.map((sect, index)=> {
                       return(
-                        <span className="flex">
+                        <span className="flex" key={sect}>
                             <h3 className="text-dark_text md:text-2xl text-xl">{sect}</h3>
                           {index < project.heading.length-1 ? <p className="text-dark_text text-xl md:text-2xl mr-2">,</p> : '' }
                           
