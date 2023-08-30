@@ -153,7 +153,7 @@ function ServicesPage(){
             variants={isBreakPoint ? arrow_resp : arrow }
             initial="hidden"
             animate={showMep ? "visible" : ""}
-            className={showMep ? "flex items-center justify-center my-10 lg:my-0" : "hidden"}
+            className={showMep ? "flex  items-center justify-center md:justify-start md:items-start my-10 lg:my-0" : "hidden"}
           >
             <BsArrowRight className="text-white lg:text-7xl text-4xl xl:rotate-0 rotate-90 "/>
           </motion.div>
@@ -205,7 +205,7 @@ function ServicesPage(){
             variants={isBreakPoint ? arrow_resp : arrow }
             initial="hidden"
             animate={showFS ? "visible" : ""}
-            className={showFS ? "flex xl:relative items-center justify-center xl:justify-start xl:items-start my-10 lg:my-0" : "hidden"}
+            className={showFS ? "flex items-center justify-center md:justify-start md:items-start my-10 lg:my-0" : "hidden"}
             >
             <BsArrowRight className="text-white lg:text-7xl text-4xl xl:rotate-0 rotate-90  "/>
           </motion.div>
@@ -256,7 +256,7 @@ function ServicesPage(){
             variants={isBreakPoint ? arrow_resp : arrow }
             initial="hidden"
             animate={showPM ? "visible" : ""}
-            className={showPM ? "flex items-center justify-center my-10 lg:my-0" : "hidden"}
+            className={showPM ? "flex items-center justify-center md:justify-start md:items-start my-10 lg:my-0" : "hidden"}
           >
             <BsArrowRight className="text-white lg:text-7xl text-4xl xl:rotate-0 rotate-90 "/>
           </motion.div>
