@@ -58,7 +58,7 @@ function ProjectHome(){
         <div className="projecthome__img relative bg-secondary/50 items-center text-center justify-center lg:p-5 rounded-xl w-[375px] mt-3 lg:w-[450px] lg:h-[45%] lg:mt-20 lg:m-0">
           <div className="relative">
             <button 
-            onClick={()=> {setShowDropDown(!showDropDown)}}  lg
+            onClick={()=> {setShowDropDown(!showDropDown)}}
             data-dropdown-toggle="dropdown" 
             className="relative lg:w-[400px] lg:text-2xl text-xl justify-between  hover:bg-secondary/60 focus:ring-4 focus:outline-none focus:ring-secondary_text font-medium rounded-lg p-4 lg:mt-2 text-center inline-flex items-center text-secondary_text" type="button">
               {projects[projectSelect].sector}
