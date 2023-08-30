@@ -139,7 +139,7 @@ function ServicesPage(){
           initial="hidden"
           animate={showMep ? "visible" : "hidden"}
           onClick={()=> setShowMep(!showMep)}
-          className="bg-light_bg lg:w-[550px] lg:h-[425px] md:w-[400px] w-[300px] h-[250px] lg:my-20 my-10 rounded-xl hover:cursor-pointer hover:bg-secondary"
+          className="bg-light_bg lg:w-[550px] lg:h-[425px] md:w-[400px] w-[325px] h-[250px] lg:my-20 my-10 rounded-xl hover:cursor-pointer hover:bg-secondary"
           >
             <div className="absolute ">
               <div className="relative w-[225px] lg:w-[208px] lg:left-[80%] left-[28%]">
@@ -162,7 +162,7 @@ function ServicesPage(){
           variants={list}
           initial="hidden"
           animate={showMep ? "visible" : ""}
-          className={showMep ? "bg-light_bg/80 lg:w-[575px] lg:h-[475px] w-[300px] h-[515px]  rounded-xl" : "hidden"}>
+          className={showMep ? "bg-light_bg/80 lg:w-[575px] lg:h-[475px] w-[325px] h-[515px]  rounded-xl" : "hidden"}>
             <div className="absolute">
               <div className="relative lg:w-[475px] w-[250px] left-[15%] my-[8%]">
                 <ul className="list-disc lg:text-xl text-lg" >
@@ -192,7 +192,7 @@ function ServicesPage(){
           initia="hidden"
           animate={showFS ? "visible" : "hidden"}
           onClick={()=> setShowFS(!showFS)}
-          className="bg-light_bg lg:w-[550px] lg:h-[425px] md:w-[400px] w-[300px] h-[250px] lg:my-20 my-10 rounded-xl hover:cursor-pointer hover:bg-secondary">
+          className="bg-light_bg lg:w-[550px] lg:h-[425px] md:w-[400px] w-[325px] h-[250px] lg:my-20 my-10 rounded-xl hover:cursor-pointer hover:bg-secondary">
             <div className="absolute">
               <div className="relative lg:left-[90%] left-[35%] w-[200px]" >
                 <p className="text-dark_text lg:text-5xl text-4xl lg:my-[58%] my-[30%] tracking-wide lg:leading-[55px] lg:w-[330px]  lg:text-justify ">Facility Support Services</p>
@@ -213,7 +213,7 @@ function ServicesPage(){
           variants={list}
           initial="hidden"
           animate={showFS ? "visible" : ""}
-          className={showFS ? "bg-light_bg/80 lg:w-[575px] lg:h-[475px] w-[300px] h-[675px] rounded-xl" : "hidden"}>
+          className={showFS ? "bg-light_bg/80 lg:w-[575px] lg:h-[475px] w-[325px] h-[675px] rounded-xl" : "hidden"}>
             <div className="absolute">
               <div className="relative lg:w-[475px] w-[250px] left-[15%] my-[10%]">
                 <ul className="list-disc lg:text-xl text-lg" >
@@ -243,7 +243,7 @@ function ServicesPage(){
           initia="hidden"
           animate={showPM ? "visible" : "hidden"}
           onClick={()=> setShowPM(!showPM)}
-          className="bg-light_bg  lg:w-[550px] lg:h-[425px] md:w-[400px] w-[300px] h-[250px] rounded-xl lg:my-20 my-10 hover:cursor-pointer hover:bg-secondary">
+          className="bg-light_bg  lg:w-[550px] lg:h-[425px] md:w-[400px] w-[325px] h-[250px] rounded-xl lg:my-20 my-10 hover:cursor-pointer hover:bg-secondary">
             <div className="absolute">
               <div className="relative lg:left-[35%] left-[5%]">
                 <h3 className="text-dark_text lg:text-5xl text-4xl tracking-wide lg:w-[330px] w-[300px] lg:my-[30%] my-[15%] lg:leading-[55px] lg:text-justify">Project Management & Construction Services</h3>
@@ -264,7 +264,7 @@ function ServicesPage(){
           variants={list}
           initial="hidden"
           animate={showPM ? "visible" : ""}
-          className={showPM ? "bg-light_bg/80 lg:w-[575px] lg:h-[475px] w-[300px] h-[425px] rounded-xl " : "hidden"}>
+          className={showPM ? "bg-light_bg/80 lg:w-[575px] lg:h-[475px] w-[325px] h-[425px] rounded-xl " : "hidden"}>
             <div className="absolute">
               <div className="relative lg:w-[475px] w-[250px] left-[15%] my-[15%]">
             <ul className="list-disc lg:text-xl text-lg" >
