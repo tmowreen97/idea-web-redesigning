@@ -23,7 +23,7 @@ export default function Industrial(){
       width: '700',
       height: '600',
       disclaimer: '*Project performed by IDEA team member at previous employment.',
-      child: 'lg:col-start-1 lg:col-end-5 row-start-1 row-end-3',
+      child: 'lg:col-start-1 lg:col-end-5 row-start-1 row-end-3 h-full',
 
     },
   ]
