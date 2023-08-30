@@ -48,9 +48,9 @@ function PortfolioList({project}){
               <div className="flex justify-center items-center text-center">
               {project.heading.map((sector, index)=> {
                 return(
-                  <span key={index}>
+                  <span key={index} className="flex">
                     <p  className="md:text-lg text-xs">{sector}</p>
-                    {index < project.heading.length-1 ? <p className="md:text-lg text-xs mr-2">,</p> : '' }
+                    {index < project.heading.length-1 ? <p className="md:text-lg text-xs lg:mr-2 mr-1">,</p> : '' }
                   </span>
                     
                   
@@ -136,7 +136,7 @@ function PortfolioList({project}){
                       return(
                         <span className="flex" key={sect}>
                             <h3 className="text-dark_text md:text-2xl text-xl">{sect}</h3>
-                          {index < project.heading.length-1 ? <p className="text-dark_text text-xl md:text-2xl mr-2">,</p> : '' }
+                            {index < project.heading.length-1 ? <p className="text-dark_text text-xl md:text-2xl mr-2">,</p> : '' }
                           
                         </span>
                         
@@ -194,7 +194,7 @@ function PortfolioList({project}){
                         {project.resources.map((link, index) => {
                           return(
                             <li key={index} >
-                              <a href={link.url} className="hover:text-accent_1 text-sm md:text-lg" target="__blank" rel="noopener noreferrer">{link.title}</a>
+                              <a href={link.url} className="hover:text-accent_2 hover:underline text-sm md:text-lg" target="__blank" rel="noopener noreferrer">{link.title}</a>
                             </li>
                           )
                         })}
