@@ -174,7 +174,7 @@ function CulturePage(){
                 height='500px'
               /> : 
               <ReactPlayer 
-                url={'https://www.youtube.com/watch?v=f7DEe1hqRq0&ab_channel=IDEA'}
+                url={'https://www.youtube.com/watch?v=xUWu2wi4o-A&ab_channel=IDEA'}
                 playing
                 loop
                 muted
@@ -188,19 +188,19 @@ function CulturePage(){
       
       
       <div className="flex justify-center items-center p-5  md:pb-20 tracking-wider">
-        <div className="culture__parent justify-center   pt-10 mx-[8%]  md:grid">
+        <div className="culture__parent justify-center   pt-10 mx-[8%]  lg:grid">
           <div className="culture__child1 md:p-10 p-3 pb-10flex bg-secondary/40 rounded-xl justify-center md:w-[705px] w-[350px]">
             <div className="">
               <div className="">
                 <h1 className="md:text-6xl text-5xl px-5 pt-[50px] text-primary_text font-light ">2 Year BBQ</h1>
                 <h2 className=" ml-6  text-primary_text md:text-3xl text-2xl font-light ">May 12, 2023</h2>
               </div>
-            <div className=" md:w-[630px] md:h-[750px] items-center justify-center relative group  md:my-20 my-5">
+            <div className=" md:w-[630px] md:h-[750px] w-[320px] items-center justify-center relative group  md:my-20 my-5">
               <Carousel
                 array={bbq}
                 currentIndex={bbqIndex}
                 setCurrentIndex={setBbqIndex}
-                custom={"md:w-[630px] h-[700px] rounded-2xl bg-center bg-cover hover:scale-105  duration-500 transform p-0"}
+                custom={"md:w-[630px] md:h-[700px] w-[320px] h-[400px] rounded-2xl bg-center bg-cover hover:scale-105  duration-500 transform p-0"}
               />
             </div>
             <div>
@@ -272,7 +272,7 @@ function CulturePage(){
                 array={interns}
                 currentIndex={internIndex}
                 setCurrentIndex={setInternIndex}
-                custom={"md:w-[625px] h-[650px] rounded-2xl bg-center bg-cover hover:scale-105  duration-500 transform"}
+                custom={"md:w-[625px] md:h-[650px] w-[320px] h-[400px] rounded-2xl bg-center bg-cover hover:scale-105  duration-500 transform"}
               />
             </div>
             <div>
