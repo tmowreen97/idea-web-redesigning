@@ -78,6 +78,7 @@ export default function HighRise(){
         width: '700',
         height: '600',
         disclaimer: "*Project performed by IDEA team member at previous employment.",
+        spacing: 'relative top-[37%]'
         // child: 'lg:col-start-1 lg:col-end-5 flex justify-center',
         // custom: ' w-[700px] max-w-[900px] h-full rounded-lg'
       },
@@ -111,6 +112,7 @@ export default function HighRise(){
         width: '700',
         height: '600',
         disclaimer: "*Project performed by IDEA team member at previous employment.",
+        spacing: 'relative top-[40%]'
         // child: 'lg:col-start-1 lg:col-end-5 flex justify-center',
         // custom: ' w-[700px] max-w-[900px] h-full rounded-lg'
       },

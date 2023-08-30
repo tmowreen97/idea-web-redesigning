@@ -216,7 +216,8 @@ export default function Portfolio(){
       image: '/assets/projects/featured/lang-featured.jpg',
       width: '700',
       height: '200',
-      disclaimer: ""
+      disclaimer: "",
+      spacing: 'relative top-1/3'
     },
     // JOHNSON
     {
@@ -235,7 +236,8 @@ export default function Portfolio(){
       image: '/assets/projects/featured/johnson-featured.jpg',
       width: '700',
       height: '500',
-      disclaimer:""
+      disclaimer:"",
+      spacing: 'relative top-1/3'
     },
     // Julius Romo Rabinowitz Building at Princeton University MULITIPLE IMAGES
     {
@@ -307,6 +309,7 @@ export default function Portfolio(){
       width: '700',
       height: '200',
       disclaimer: "*Project performed by IDEA team member at previous employment.",
+      spacing: 'relative top-[40%]',
       child: 'lg:col-start-3 lg:col-end-5 lg:row-start-5 lg:row-end-7'
 
     },
@@ -350,6 +353,7 @@ export default function Portfolio(){
       width: '600',
       height: '500',
       disclaimer: '*Project performed by IDEA team member at previous employment.',
+      spacing: 'relative top-1/3',
       
     },
     // Adams Center at Yale School of Music 
@@ -376,6 +380,7 @@ export default function Portfolio(){
       width: '725',
       height: '300',
       disclaimer: '*Project performed by IDEA team member at previous employment.',
+      spacing: 'relative top-1/3',
       child: "lg:col-start-2 lg:col-end-4"
 
 

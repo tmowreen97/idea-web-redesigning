@@ -158,7 +158,7 @@ export default function Cultural(){
     },
     // North American Mammals Gallery at AMNH*
     {
-      name: 'North American Mammals Gallery at AMNH*',
+      name: 'North American Mammals Gallery at American Museum of Natural History*',
       heading: [
         'Cultural',
       ],
@@ -230,6 +230,7 @@ export default function Cultural(){
       width: '700',
       height: '400',
       disclaimer: '*Project performed by IDEA team member at previous employment.',
+      spacing: 'relative top-[38%]',
       child: 'lg:col-start-2 lg:col-end-4'
 
     },

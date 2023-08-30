@@ -26,7 +26,9 @@ export default function EduInst () {
       image: '/assets/projects/edu-inst/adams-ei.jpg',
       width: '700',
       height: '200',
-      disclaimer: '*Project performed by IDEA team member at previous employment.'
+      disclaimer: '*Project performed by IDEA team member at previous employment.',
+      spacing: 'relative top-1/3',
+
     },
     // Child Care Center at Princeton University
     {
@@ -43,10 +45,11 @@ export default function EduInst () {
         'New childcare center totaling 20,000sf. Project also included a 66-kW utility interactive Photovoltaic System.',
         'Leadership in Energy & Environmental Design (LEED) SILVER certified.'
       ],
-      image: '/assets/all-icons.jpg',
+      image: '/assets/all-icons-edit.jpg',
       width: '700',
-      height: '400',
+      height: '200',
       disclaimer: '*Project performed by IDEA team member at previous employment.',
+      spacing: 'relative top-1/3',
     },
     // East End Food Institute EEFI
     {
@@ -88,6 +91,7 @@ export default function EduInst () {
       width: '650',
       height: '200',
       disclaimer: 'Image Courtesy of Garnett DePasquale Projects',
+      spacing: 'relative top-[30%]'
     },
     // FOX School of Business at Temple University REMOVED
     // {
@@ -278,7 +282,7 @@ export default function EduInst () {
           url: 'https://dsrny.com/project/college-of-the-holy-cross'
         }
       ],
-      image: '/assets/all-icons.jpg',
+      image: '/assets/all-icons-edit.jpg',
       width: '700',
       height: '400',
       disclaimer: '*Project performed by IDEA team member at previous employment.',
@@ -301,7 +305,7 @@ export default function EduInst () {
       width: '700',
       height: '400',
       disclaimer: '*Project performed by IDEA team member at previous employment.',
-      child: "lg:col-start-2 lg:col-end-4"
+  
     },
   ];
 

@@ -20,7 +20,8 @@ export default function Residential(){
       image: '/assets/projects/featured/johnson-featured.jpg',
       width: '700',
       height: '500',
-      disclaimer:""
+      disclaimer:"",
+      spacing: 'relative top-1/3'
     },
     // LANG
     {
@@ -39,7 +40,8 @@ export default function Residential(){
       image: '/assets/projects/featured/lang-featured.jpg',
       width: '700',
       height: '200',
-      disclaimer: ""
+      disclaimer: "",
+      spacing: 'relative top-1/3'
     },
     // 801 Church Street - Nashville, TN NEED IMAGE ?? 
     {
@@ -83,6 +85,7 @@ export default function Residential(){
       width: '400',
       height: '700',
       disclaimer: "*Project performed by IDEA team member at previous employment.",
+      spacing: 'relative top-[38%]',
       child: "lg:row-start-2 lg:row-end-4 lg:col-start-3 lg:col-end-5"
     },
     // 900 Church Street - Nashville, TN NEED IMAGE ??
@@ -115,6 +118,7 @@ export default function Residential(){
       width: '700',
       height: '600',
       disclaimer: "*Project performed by IDEA team member at previous employment.",
+      spacing: 'relative top-[40%]',
       child: 'lg:row-start-3 lg:row-end-5 lg:col-start-1 lg:col-end-3 flex justify-center',
       // custom: ' w-[700px] max-w-[900px] h-full rounded-lg'
     },
@@ -146,6 +150,7 @@ export default function Residential(){
       width: '700',
       height: '600',
       disclaimer: "*Project performed by IDEA team member at previous employment.",
+      spacing: 'relative top-1/3',
       child: "lg:col-start-3 lg:col-end-5"
     },
 

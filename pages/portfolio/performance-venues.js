@@ -98,6 +98,7 @@ export default function PerfVenue () {
       width: '700',
       height: '400',
       disclaimer: "",
+      spacing: 'relative top-1/3'
       // custom: ' w-full max-w-[900px] xl:h-[615px] 2xl:h-[675px] rounded-lg'
     },
     // Merriam Webster Theater at The Kimmel Center
@@ -141,6 +142,7 @@ export default function PerfVenue () {
       width: '700',
       height: '400',
       disclaimer: '*Project performed by IDEA team member at previous employment.', 
+      spacing: 'relative top-1/3'
     },
     // The Robert W. WIlson MCC Theater
     {

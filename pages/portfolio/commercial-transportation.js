@@ -41,6 +41,7 @@ export default function CommTrans () {
       width: '700',
       height: '100',
       disclaimer: "Image Courtesy of Garnett DePasquale Projects",
+      spacing: 'relative top-[18%]',
     },
     // JAZZ
     {
@@ -77,6 +78,7 @@ export default function CommTrans () {
       width: '700',
       height: '400',
       disclaimer: '*Project performed by IDEA team member at previous employment.',
+      spacing: 'relative top-[18%]',
     },
     // MSC Miami Cruise Terminal
     {
@@ -106,6 +108,7 @@ export default function CommTrans () {
       width: '700',
       height: '600',
       disclaimer: "",
+      spacing: 'relative top-[35%]',
 
     },
     // Steinway & Sons Piano*
@@ -125,6 +128,7 @@ export default function CommTrans () {
       width: '700',
       height: '600',
       disclaimer: "*Project performed by IDEA team member at previous employment. ",
+      spacing: 'relative top-1/3',
     },
   ];
   
