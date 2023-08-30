@@ -197,10 +197,9 @@ polyline {
   
 }
 .mobile-desc{
-  font-size:x-small;
+  font-size:larger;
   color: #301B3D;
-  padding: 5px;
-
+  padding: 7px;
 }
 
 
