@@ -2,6 +2,7 @@ import {React, useState, useEffect, useCallback} from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Blinker from './Blinker';
+import Link from 'next/link';
 import Line from './Line';
 import {AiOutlineLine} from 'react-icons/ai';
 
@@ -279,12 +280,13 @@ function Hero({heading}){
               initial={{opacity:0}}
               whileInView={{opacity:1, transition:{duration:1, delay:2}}}
               className="mobile-desc-div">
-                <a href="#projects" >
+                <Link  href={'#projects'}>East End Food Institute (EEFI)</Link>
+                {/* <a href="#projects" >
                   <p className='mobile-desc'>
                     East End Food Institute (EEFI)
                   </p>
                 
-                </a>
+                </a> */}
               </motion.div>
               <motion.div 
               initial={{opacity:0}}
