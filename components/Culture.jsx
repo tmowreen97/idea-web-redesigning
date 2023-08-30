@@ -235,7 +235,7 @@ function CulturePage(){
             </div>
             <div>
               <p className="md:my-8 md:mx-[35px] m-3 2xl:text-xl tracking-wide text-lg  leading-[185%]">
-              Would you look at the progress here at East End Food Institute! This collection of site visits show the envelope closure and the installation of underground plumbing work. The envelope closure marks the first step toward waterproofing and structural integrity, while the installation of underground plumbing is a critical infrastructure development for building commercial kitchen programs!
+              Would you look at the progress here at East End Food Institute! This collection of site visits show the envelope closure and the installation of underground plumbing work. The envelope closure marks the first step toward waterproofing and structural integrity, while the installation of underground plumbing is a critical infrastructure development for building commercial kitchen program!
               </p>
             </div>
             </div>
@@ -366,8 +366,8 @@ function CulturePage(){
               </div>
               <div >
               <p className="md:my-8 md:mx-[35px] m-3 2xl:text-xl tracking-wide text-lg leading-[185%]">
-                On April 5, 2021, Kazi Karim, PE took on the initiative to contribute and improve the Architectural Engineering community by founding IDEA. With the intent to provide client-specific high-quality MEP-FP Engineering services, Kazi is facilitating the growth of IDEAs. He is now the Founder and Managing Principal for IDEA and currently servicing a variety of World Class IDEAs.
-                </p>
+              On April 5, 2022 Vinoo Jankie, PE, RCDD was Appointed and Promoted to a Principal of the firm. Vinoo empowers IDEA’s initiatives with a diverse engineering portfolio. He has successfully completed various large scale and complex Electrical and Low Voltage engineering engagements. Vinoo will help build and lead IDEA’s Electrical and Low Voltage Inter-Disciplinary disciplines.
+              </p>
 
               </div>
             </div>
