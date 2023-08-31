@@ -13,7 +13,7 @@ function ProjectHome(){
       location: 'PortMiami, Miami, FL',
       sector: 'Commercial/Transportation',
       year: '2024 (Construction Completion)',
-      image: "/assets/project-home/msc-1.jpg",
+      image: "/assets/project-home/msc-1.webp",
       desc: "A 4-Story cruise terminal capable of serving a total of 36,000 cruise ship passengers daily (embarking & disembarking). The facility consists of 495,000 SF of interior space and 1,200,000 SF garage (2500 parking spaces). Project will be LEED Silver Certified upon completion.",
     },
     {
@@ -128,6 +128,7 @@ function ProjectHome(){
                 <h3 className="tracking-wider md:text-xl text-secondary_text">{projects[projectSelect].year}</h3>
               </div>
               <p className="tracking-wider m-2 md:text-lg">{projects[projectSelect].desc}</p>
+              {projects[projectSelect].disclaimer ? <p className="tracking-wider m-2 text-[12px]">{projects[projectSelect].disclaimer}</p> : ""}
             </div>
             <div className=" text-center absolute bottom-0 md:left-[15%] left-5 ">
               <Link href={'/portfolio'}>

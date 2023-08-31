@@ -128,7 +128,7 @@ const Navbar = ({setLightLogo, lightLogo}) => {
         >
           
           <ul>
-          <div className='flex justify-center '>
+          <div className='flex justify-evenly '>
               <Image src={'/assets/clip-1.png'} width={52} height={50} className="m-1 my-3" alt={'icon'}/>
               <Image src={'/assets/clip-2.png'} width={50} height={50} className="m-1" alt={'icon'}/>
               <Image src={'/assets/clip-3.png'} width={50} height={50} className="m-1" alt={'icon'}/>
