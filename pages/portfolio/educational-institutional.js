@@ -10,53 +10,27 @@ export default function EduInst () {
   }
 
   const projects = [
-    // Adams Center at Yale School of Music 
+    // Little Theater at LIU
     {
-      name: 'Adams Center at Yale School of Music*',
-      heading: ['Educational/Institutional',],
-      location: 'New Haven, CT',
-      size: '60,000 SF',
-      year: '2016',
-      services: [
-        'Electrical & Fire Alarm Design',
-      ],
-      description: [
-        'Renovation to a 60,000sf facility historic facility. Renovated program consisted of rehearsal rooms, classrooms, music rooms, practice rooms, and offices. Specialty programmed spaces are equipped with state-of-the-art AV equipment, professional sound systems and other modern music/arts-related technology.'
-      ],
-      resources: [
-        {
-          title: 'Yale School of Music',
-          url: 'https://music.yale.edu/2017/01/17/adams-center-musical-arts-opens'
-        }
-  
-      ],
-      image: '/assets/projects/edu-inst/adams-ei.jpg',
-      width: '700',
-      height: '200',
-      disclaimer: '*Project performed by IDEA team member at previous employment.',
-      spacing: 'relative lg:top-1/3 top-16',
-
-    },
-    // Child Care Center at Princeton University
-    {
-      name: 'Child Care Center at Princeton University*',
-      heading: ['Educational/Institutional'],
-      location: 'Princeton, NJ',
+      name: 'Little Theater at LIU',
+      heading: ['Educational/Institutional', 'Performance Venues'],
+      location: 'Brookville, NY',
       size: '20,000 SF',
-      year: '2017',
+      year: '2022',
       services: [
-        'MEP-FP Project Management', 
-        'Electrical & Fire Alarm Design'
+        'Prime Consultant (Architectural & MEP-FP)',  
+        'MEP & Architectural Project Management' , 'MEP Design'
       ],
       description: [
-        'New childcare center totaling 20,000sf. Project also included a 66-kW utility interactive Photovoltaic System.',
-        'Leadership in Energy & Environmental Design (LEED) SILVER certified.'
+        'Project includes renovation of Mechanical, Electrical, Plumbing and Architectural upgrades to existing performance arts theatre building (20,000sf). Project program includes two (2) performance venues (125-Seat, 50-Seat) and associated theatrical front and back of house program (scene shop, dressing rooms, costume shop, bathrooms, etc.) spaces. Project upgrades included program revisions and associated Architectural, Mechanical (HVAC), Electrical and Plumbing upgrades.', 
+        'IDEA served as Prime-Consultant on this engagement with LIU and led Architectural and Engineering efforts on this opportunity.'
       ],
-      image: '/assets/all-icons-edit.jpg',
+      image: '/assets/projects/edu-inst/liu-1-ei.jpg',
       width: '700',
-      height: '200',
-      disclaimer: '*Project performed by IDEA team member at previous employment.',
-      spacing: 'relative lg:top-1/3 top-12',
+      height: '400',
+      disclaimer: "",
+      // child: "col-start-1 col-end-5 flex justify-center w-full",
+      // custom: ' w-[875px] max-w-[900px] xl:h-[550px] rounded-lg items-center flex'
     },
     // East End Food Institute EEFI
     {
@@ -100,31 +74,6 @@ export default function EduInst () {
       disclaimer: 'Image Courtesy of Garnett DePasquale Projects',
       spacing: 'relative top-[30%]'
     },
-    // FOX School of Business at Temple University REMOVED
-    // {
-    //   name: 'FOX School of Business at Temple University*',
-    //   heading: ['Educational/Institutional'],
-    //   location: 'Worcester, MA',
-    //   size: '98,365 SF',
-    //   year: '2018',
-    //   services: [
-    //     'Mechanical Design'
-    //   ],
-    //   description: [
-    //     'A 98,385 sq. ft renovation/addition to an existing business school office and classroom building located on Temple University’s campus in the heart of North Philadelphia. The project consisted of a total renovation to the existing 4 floor structure while maintaining the existing historic façade on east side of building. Additionally, a 2 story overbuild, a glass bridge connecting the adjacent academic building and an addition on north side of the building was constructed as a part of the project. The mechanical system consists of floor-by-floor variable volume chilled water air handler units feeding single duct variable air volume terminal units with hot water reheat. Each air handler room was provided with outside air via an enthalpy core energy recovery unit located on the top floor. Chilled water and hot water were supplied from the campus district heating and cooling loop. The entrance atrium space seen in the photo above was provided with a code compliant smoke evacuation system thoughtfully coordinated into a very tight structure without compromising the architectural design intent. The project received LEED v4 BD+C NC silver certification.'
-    //   ],
-    //   resources: [
-    //     {
-    //       title: 'Case Study - Temple University',
-    //       url: 'https://sustainability.temple.edu/sites/sustainability/files/1810%20Liacouras%20Walk%20Case%20Study.pdf'
-    //     }
-    //   ],
-    //   image: '/assets/mechanical.jpg',
-    //   width: '700',
-    //   height: '400',
-    //   disclaimer: '*Project performed by IDEA team member at previous employment.',
-
-    // },
     // Fine Arts Instructional Center at ECSU (Eastern Connecticut State University)
     {
       name: 'Fine Arts Instructional Center at ECSU (Eastern Connecticut State University)*',
@@ -160,26 +109,6 @@ export default function EduInst () {
       width: '700',
       height: '400',
       disclaimer: "*Project performed by IDEA team member at previous employment.",
-    },
-    // Hammond Units Study at Penn State University
-    {
-      name: 'Hammond Units Study at Penn State University*',
-      heading: ['Educational/Institutional'],
-      location: 'State College, PA',
-      size: '400,000 SF',
-      year: '2014',
-      services: [
-        'MEP-FP Project Management', 
-        'Electrical & Fire Alarm Assessment'
-      ],
-      description: [
-        'Complete existing condition assessment study of a 400,000 SF engineering facility complex.  Assessment included evaluation of the facility’s electrical power systems, lighting control systems, emergency lighting systems and fire alarm systems.'
-      ],
-      image: '/assets/all-icons.jpg',
-      width: '700',
-      height: '400',
-      disclaimer: '*Project performed by IDEA team member at previous employment.',
-      spacing: 'relative lg:top-1/3 top-10'
     },
     // Julius Romo Rabinowitz Building at Princeton University MULITIPLE IMAGES
     {
@@ -229,27 +158,98 @@ export default function EduInst () {
       height: '200',
       disclaimer: '*Project performed by IDEA team member at previous employment.'
     },
-    // Little Theater at LIU
+    // Adams Center at Yale School of Music 
     {
-      name: 'Little Theater at LIU',
-      heading: ['Educational/Institutional', 'Performance Venues'],
-      location: 'Brookville, NY',
-      size: '20,000 SF',
-      year: '2022',
+      name: 'Adams Center at Yale School of Music*',
+      heading: ['Educational/Institutional',],
+      location: 'New Haven, CT',
+      size: '60,000 SF',
+      year: '2016',
       services: [
-        'Prime Consultant (Architectural & MEP-FP)',  
-        'MEP & Architectural Project Management' , 'MEP Design'
+        'Electrical & Fire Alarm Design',
       ],
       description: [
-        'Project includes renovation of Mechanical, Electrical, Plumbing and Architectural upgrades to existing performance arts theatre building (20,000sf). Project program includes two (2) performance venues (125-Seat, 50-Seat) and associated theatrical front and back of house program (scene shop, dressing rooms, costume shop, bathrooms, etc.) spaces. Project upgrades included program revisions and associated Architectural, Mechanical (HVAC), Electrical and Plumbing upgrades.', 
-        'IDEA served as Prime-Consultant on this engagement with LIU and led Architectural and Engineering efforts on this opportunity.'
+        'Renovation to a 60,000sf facility historic facility. Renovated program consisted of rehearsal rooms, classrooms, music rooms, practice rooms, and offices. Specialty programmed spaces are equipped with state-of-the-art AV equipment, professional sound systems and other modern music/arts-related technology.'
       ],
-      image: '/assets/projects/edu-inst/liu-1-ei.jpg',
+      resources: [
+        {
+          title: 'Yale School of Music',
+          url: 'https://music.yale.edu/2017/01/17/adams-center-musical-arts-opens'
+        }
+  
+      ],
+      image: '/assets/projects/edu-inst/adams-ei.jpg',
+      width: '700',
+      height: '200',
+      disclaimer: '*Project performed by IDEA team member at previous employment.',
+      spacing: 'relative lg:top-1/3 top-16',
+
+    },
+    // Child Care Center at Princeton University
+    {
+      name: 'Child Care Center at Princeton University*',
+      heading: ['Educational/Institutional'],
+      location: 'Princeton, NJ',
+      size: '20,000 SF',
+      year: '2017',
+      services: [
+        'MEP-FP Project Management', 
+        'Electrical & Fire Alarm Design'
+      ],
+      description: [
+        'New childcare center totaling 20,000sf. Project also included a 66-kW utility interactive Photovoltaic System.',
+        'Leadership in Energy & Environmental Design (LEED) SILVER certified.'
+      ],
+      image: '/assets/all-icons-edit.jpg',
+      width: '700',
+      height: '200',
+      disclaimer: '*Project performed by IDEA team member at previous employment.',
+      spacing: 'relative lg:top-1/3 top-12',
+    },
+    // FOX School of Business at Temple University REMOVED
+    // {
+    //   name: 'FOX School of Business at Temple University*',
+    //   heading: ['Educational/Institutional'],
+    //   location: 'Worcester, MA',
+    //   size: '98,365 SF',
+    //   year: '2018',
+    //   services: [
+    //     'Mechanical Design'
+    //   ],
+    //   description: [
+    //     'A 98,385 sq. ft renovation/addition to an existing business school office and classroom building located on Temple University’s campus in the heart of North Philadelphia. The project consisted of a total renovation to the existing 4 floor structure while maintaining the existing historic façade on east side of building. Additionally, a 2 story overbuild, a glass bridge connecting the adjacent academic building and an addition on north side of the building was constructed as a part of the project. The mechanical system consists of floor-by-floor variable volume chilled water air handler units feeding single duct variable air volume terminal units with hot water reheat. Each air handler room was provided with outside air via an enthalpy core energy recovery unit located on the top floor. Chilled water and hot water were supplied from the campus district heating and cooling loop. The entrance atrium space seen in the photo above was provided with a code compliant smoke evacuation system thoughtfully coordinated into a very tight structure without compromising the architectural design intent. The project received LEED v4 BD+C NC silver certification.'
+    //   ],
+    //   resources: [
+    //     {
+    //       title: 'Case Study - Temple University',
+    //       url: 'https://sustainability.temple.edu/sites/sustainability/files/1810%20Liacouras%20Walk%20Case%20Study.pdf'
+    //     }
+    //   ],
+    //   image: '/assets/mechanical.jpg',
+    //   width: '700',
+    //   height: '400',
+    //   disclaimer: '*Project performed by IDEA team member at previous employment.',
+
+    // },
+    // Hammond Units Study at Penn State University
+    {
+      name: 'Hammond Units Study at Penn State University*',
+      heading: ['Educational/Institutional'],
+      location: 'State College, PA',
+      size: '400,000 SF',
+      year: '2014',
+      services: [
+        'MEP-FP Project Management', 
+        'Electrical & Fire Alarm Assessment'
+      ],
+      description: [
+        'Complete existing condition assessment study of a 400,000 SF engineering facility complex.  Assessment included evaluation of the facility’s electrical power systems, lighting control systems, emergency lighting systems and fire alarm systems.'
+      ],
+      image: '/assets/all-icons.jpg',
       width: '700',
       height: '400',
-      disclaimer: "",
-      // child: "col-start-1 col-end-5 flex justify-center w-full",
-      // custom: ' w-[875px] max-w-[900px] xl:h-[550px] rounded-lg items-center flex'
+      disclaimer: '*Project performed by IDEA team member at previous employment.',
+      spacing: 'relative lg:top-1/3 top-10'
     },
     // Pendleton Hall at Wellesley College
     {
