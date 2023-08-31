@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { useRouter } from 'next/router';
 import Link from "next/link";
 import Image from "next/image";
@@ -10,7 +10,35 @@ function ProjectPortfolio({ projects, category }){
   
   const [showDropDown, setShowDropDown] = useState(false)
   const router = useRouter();
+
+  const useOutsideClick = (callback) => {
+    const ref = useRef();
   
+    useEffect(() => {
+      const handleClick = (event) => {
+        callback();
+      };
+  
+      document.addEventListener('click', handleClick);
+  
+      return () => {
+        document.removeEventListener('click', handleClick);
+      };
+    }, []);
+  
+    return ref;
+  };
+
+  const handleClick = () => {
+    setShowDropDown(!showDropDown);
+  };
+  function handleClickOutside (){
+    console.log('hello')
+  }
+  const ref = useOutsideClick(handleClickOutside);
+  
+  
+    
   // if id is odd, open the description div to the right
   //  if id is even, open the description div to the left
   
@@ -24,14 +52,13 @@ function ProjectPortfolio({ projects, category }){
       className="md:px-20 pt-20 pb-10">
         <h1 className="md:text-[1100%] text-8xl font-thin text-primary_text md:text-left text-center tracking-wide">Portfolio</h1>
       </motion.div>
-      <div className="items-center justify-center">
-        <div className="md:mx-[100px] items-center justify-center text-center ml-[9%] flex">
-
-        </div>
+      <div className="items-center justify-center" >
+        
         <motion.div 
         initial={{opacity:0}}
         animate={{opacity:1, transition:{delay:1.5, duration:1}}}
-        className="flex md:justify-start md:mx-20 justify-center ">
+        className="flex md:justify-start md:mx-20 justify-center "
+        >
           <div className='relative'>
             {/* <label className="text-2xl text-secondary_text mr-2 ">Select a Category:</label> */}
             <button onClick={()=> {setShowDropDown(!showDropDown)}}  data-dropdown-toggle="dropdown" className="relative text-xl justify-between w-[300px] bg-button_bg/30 hover:bg-secondary/70 focus:ring-4 focus:outline-none focus:ring-secondary_text font-medium rounded-lg  py-2  ml-2 inline-flex items-center text-secondary_text" type="button">
