@@ -32,7 +32,9 @@ function Blinker({blinker}){
         // whileInView={{opacity:1, transition:{delay:2, duration:1, repeat: Infinity, repeatDelay: 20}}}
         
       >
-        <button id={blinker.name} aria-label="blinker" style={{backgroundColor: `${blinker.bgColor}`}} className=" hover:border-solid hover:border-4 hover:w-5 hover:h-5 rounded-full w-3 h-3 hover:shadow-2xl shadow-white" onClick={(e) => handleDesc(e)}/>
+        <button id={blinker.name} aria-label="blinker" style={{backgroundColor: `${blinker.bgColor}`}} 
+        className={showDesc ? "border-solid border-4 w-5 h-5 rounded-full hover:shadow-2xl shadow-white" :" hover:border-solid hover:border-4 hover:w-5 hover:h-5 rounded-full w-3 h-3 hover:shadow-2xl shadow-white" }
+        onClick={(e) => handleDesc(e)}/>
       </motion.div>
       <div className='absolute'>
         {showDesc ? <Line setShowDesc={setShowDesc} blinker={blinker}/> : ""}
