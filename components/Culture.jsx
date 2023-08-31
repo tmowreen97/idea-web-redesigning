@@ -252,7 +252,7 @@ function CulturePage(){
           <div>
             <div>
               <h1 className="md:text-6xl text-5xl px-5  pt-[30px] text-primary_text font-light">Project EEFI Update</h1>
-              <h2 className=" ml-6 text-primary_text md:text-3xl text-2xl font-light ">DATE</h2>
+              <h2 className=" ml-6 text-primary_text md:text-3xl text-2xl font-light ">August 21, 2023</h2>
             </div>
             <div className=" md:w-[445px] md:h-[350px] items-center justify-center relative group  md:my-10 my-5">
               <Carousel
@@ -273,7 +273,7 @@ function CulturePage(){
           <div>
             <div>
               <h1 className="md:text-6xl text-5xl px-5 pt-[30px] text-primary_text font-light">Project MSC Update </h1>
-              <h2 className=" ml-6  text-primary_text md:text-3xl text-2xl font-light">DATE</h2>
+              <h2 className=" ml-6  text-primary_text md:text-3xl text-2xl font-light">August 18, 2023</h2>
             </div>
             <div className=" md:w-[445px] md:h-[475px]  items-center justify-center relative group  md:my-10 my-5">
               <Carousel
