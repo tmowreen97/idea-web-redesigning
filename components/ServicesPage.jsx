@@ -164,7 +164,7 @@ function ServicesPage(){
           animate={showMep ? "visible" : ""}
           className={showMep ? "bg-light_bg/80 lg:w-[575px] lg:h-[475px] w-[314px] h-[515px]  rounded-xl" : "hidden"}>
             <div className="absolute">
-              <div className="relative lg:w-[475px] w-[250px] left-[15%] my-[8%]">
+              <div className="relative lg:w-[475px] w-[250px] left-[15%] my-[10%]">
                 <ul className="list-disc lg:text-xl text-lg" >
                   <li>Mechanical (HVAC) Design</li>
                   <li>Electrical Design</li>
@@ -213,9 +213,9 @@ function ServicesPage(){
           variants={list}
           initial="hidden"
           animate={showFS ? "visible" : ""}
-          className={showFS ? "bg-light_bg/80 lg:w-[575px] lg:h-[475px] w-[314px] h-[675px] rounded-xl" : "hidden"}>
+          className={showFS ? "bg-light_bg/80 lg:w-[575px] lg:h-[500px] w-[325px] h-[645px] rounded-xl" : "hidden"}>
             <div className="absolute">
-              <div className="relative lg:w-[475px] w-[250px] left-[15%] my-[10%]">
+              <div className="relative lg:w-[475px] w-[250px] left-[15%] my-[7%]">
                 <ul className="list-disc lg:text-xl text-lg" >
                   <li>MEP-FP System Upgrades</li>
                   <li>Code Compliance/Upgrades</li>
@@ -264,9 +264,9 @@ function ServicesPage(){
           variants={list}
           initial="hidden"
           animate={showPM ? "visible" : ""}
-          className={showPM ? "bg-light_bg/80 lg:w-[575px] lg:h-[475px] w-[314px] h-[425px] rounded-xl " : "hidden"}>
+          className={showPM ? "bg-light_bg/80 lg:w-[575px] lg:h-[475px] w-[314px] h-[415px] rounded-xl " : "hidden"}>
             <div className="absolute">
-              <div className="relative lg:w-[475px] w-[250px] left-[15%] my-[15%]">
+              <div className="relative lg:w-[475px] w-[250px] left-[15%] lg:my-[20%] my-[15%]">
             <ul className="list-disc lg:text-xl text-lg" >
               <li>Owner's Representation</li>
               <li>Design Management</li>

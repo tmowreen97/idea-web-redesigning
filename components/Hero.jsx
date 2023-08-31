@@ -39,7 +39,7 @@ function Hero({heading}){
   };
 
 
-  const isBreakPoint = useMediaQuery(1510)
+  const isBreakPoint = useMediaQuery(1300)
 
  
   // console.log('coord',coord)
@@ -135,12 +135,12 @@ function Hero({heading}){
       bgColor: '#A117FD',
       delayTime:11,
       repeatDelayTime: 15,
-      classDesc: "md:absolute my-5 md:my-0 xl:right-[25%] 2xl:right-[30%] bottom-[43%]",
+      classDesc: "md:absolute my-5 md:my-0 right-[30%]  bottom-[43%]",
       svg_w: '',
       svg_h: '140px',
       svg_class: "relative rotate-90 right-[70%]",
       poly_points: "63,2 200,200",
-      div_parent_class: " absolute top-[0%] right-[130%] w-[455px]",
+      div_parent_class: " absolute top-[0%] right-[120%] w-[325px]",
       heading: "Art in Public Places",
       desc: "Terminal will include various Art in Public installations to highlight artist to enrich the public environment. A 3D Projection/Light show is planned to work with Terminal's current Architecture, Structure, Building systems including Lighting Control and Audio/Visual systems.",
       link: {
