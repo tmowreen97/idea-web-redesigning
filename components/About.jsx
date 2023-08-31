@@ -113,20 +113,6 @@ const About = () => {
               
       
           </div>
-            
-            {/* <div className='relative'>
-            <div onMouseEnter={()=> mouse()} className='rounded-xl absolute  items-center justify-center mx-20 overflow-hidden'>
-                <div className=" flex w-[350px] h-[250px] items-center justify-center text-center">
-                  <Image src={'/assets/filler-1.jpg'} fill cover alt={'team'}/>
-                </div>
-                
-              </div>
-              {reveal ? <div id='cover' className=' z-9 absolute left-[-8px] bg-tertiary/60  md:w-[509px] h-[340px] rounded-xl ml-2 pt-[150px]'>
-                <Link href={'/team'} className='text-primary_text font-light '>Click to See Our Team</Link>
-              </div>: ""}
-              
-              
-            </div> */}
           </div>
         </div>
     </div>

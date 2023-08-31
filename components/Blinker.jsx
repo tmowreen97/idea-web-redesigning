@@ -11,7 +11,7 @@ function Blinker({blinker}){
   const [animate, setAnimate] = useState(true)
 
 
-  function handleDesc(e){
+  function handleDesc(){
     setShowDesc(!showDesc)
   }
 
@@ -28,13 +28,13 @@ function Blinker({blinker}){
         }} : {opacity:1}}
 
         initial={{opacity:1}}
-        
+        className="z-30"
         // whileInView={{opacity:1, transition:{delay:2, duration:1, repeat: Infinity, repeatDelay: 20}}}
-        
+        onClick={() => handleDesc()}
       >
         <button id={blinker.name} aria-label="blinker" style={{backgroundColor: `${blinker.bgColor}`}} 
         className={showDesc ? "border-solid border-4 w-5 h-5 rounded-full hover:shadow-2xl shadow-white" :" hover:border-solid hover:border-4 hover:w-5 hover:h-5 rounded-full w-3 h-3 hover:shadow-2xl shadow-white" }
-        onClick={(e) => handleDesc(e)}/>
+        />
       </motion.div>
       <div className='absolute'>
         {showDesc ? <Line setShowDesc={setShowDesc} blinker={blinker}/> : ""}

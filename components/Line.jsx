@@ -4,14 +4,17 @@ import Image from "next/image";
 function Line({setShowDesc, blinker}){
   return(
     <div className="">
-      <div className={blinker.svg_w}>
+      <span className="z-0">
+        <div className={blinker.svg_w}>
         <svg height={blinker.svg_h} className={blinker.svg_class} >
           <polyline points={blinker.poly_points} strokeWidth={1}  stroke='white'/>
           {/* <line x1="0" y1="80" x2="100" y2="20" strokeWidth="2" stroke='blue' fill='blue'/> */}
         </svg>
       </div>
+      </span>
+      
       <div className={blinker.div_parent_class}>
-          <div className="p-2   bg-light_bg rounded-xl z-20 ">
+          <div className="p-2  bg-light_bg rounded-xl z-0 ">
             <div className="flex justify-end ">
               <AiOutlineCloseCircle className="cursor-pointer hover:bg-accent_2 hover:text-primary_text  rounded-full overflow-hidden text-2xl z-10" onClick={()=> setShowDesc(false)} />
             </div>

@@ -86,7 +86,7 @@ function Hero({heading}){
       svg_h: '200px',
       svg_class: "relative  origin-top rotate-90 ",
       poly_points:"0,0 130,140",
-      div_parent_class: "absolute bottom-[131%] right-[10%] w-[350px]",
+      div_parent_class: "absolute bottom-[137%] right-[10%] w-[350px]",
       desc: "Garage structure houses Mechanical (HVAC) Cooling plants. Location was planned accordingly to conceal and not impact patron experience.",
       heading:"Mechanical Plants",
       img: "/assets/clip-1.png"
