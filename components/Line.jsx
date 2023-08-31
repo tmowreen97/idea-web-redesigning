@@ -1,4 +1,5 @@
 import { AiOutlineCloseCircle } from "react-icons/ai";
+import Image from "next/image";
 
 function Line({setShowDesc, blinker}){
   return(
@@ -15,7 +16,7 @@ function Line({setShowDesc, blinker}){
               <AiOutlineCloseCircle className="cursor-pointer hover:bg-accent_2 hover:text-primary_text  rounded-full overflow-hidden text-2xl z-10" onClick={()=> setShowDesc(false)} />
             </div>
             <div className="flex items-center m-2">
-              <img width={30} height={30} src={blinker.img} className=""/>
+              <Image width={30} height={30} src={blinker.img} className=""/>
               <h3 className='text-dark_text text-xl m-1'>{blinker.heading}</h3>
             </div>
            <div className="m-2">
