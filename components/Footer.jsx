@@ -49,7 +49,7 @@ export default function Footer(){
           <div className="bg-dark_bg/60  md:h-[290px]  rounded-xl ">
             <div className="items-center justify-center">
               <form 
-              className="text-center pt-2 items-center justify-center"
+              className="text-center pt-2 pb-4 items-center justify-center"
               action="https://formsubmit.co/info@ideaaec.com" 
               method="POST">
                 <h2 className="text-primary_text">Contact Us</h2>
