@@ -39,7 +39,8 @@ function PortfolioList({project}){
     <div className=" relative p-1" onMouseEnter={()=> setProjHover(true)}
     onMouseLeave={()=> setProjHover(false)}>
       <div className={hide ? "relative rounded-xl overflow-hidden hidden h-full" : "relative rounded-xl overflow-hidden h-full"}>
-        <img src={project.image} width={'auto'} height={'auto'} alt={project.name} className={project.custom ? `${project.custom}` : 'w-full h-full rounded-lg'}/>
+      {/* <img src={project.image} width={'auto'} height={'auto'} alt={project.name} className={project.custom ? `${project.custom}` : 'w-full h-full rounded-lg'}/> */}
+        <Image src={project.image}  width={800} height={200} sizes="200vw" alt={project.name} className={project.custom ? `${project.custom}` : 'w-full h-full rounded-lg'}/>
         <div className={projHover ? "absolute top-0 bottom-0 left-0 right-0 bg-[#322d44]/80 text-secondary_text  " : "hidden"}>
           <div className={project.spacing ? project.spacing : "relative top-1/4"}>
             <div className="relative justify-center items-center text-center m-2 ">
