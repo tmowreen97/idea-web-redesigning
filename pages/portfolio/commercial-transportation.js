@@ -40,7 +40,7 @@ export default function CommTrans () {
       height: '600',
       disclaimer: "",
       spacing: 'relative top-[35%]',
-      child: "lg:row-start-2 lg:row-end-5 lg:col-start-1 lg:col-end-3 w-full col-span-2"
+      child: "lg:row-start-1 lg:row-end-4 lg:col-start-1 lg:col-end-3 w-full col-span-2"
 
     },
     // East End Food Institute EEFI
@@ -81,6 +81,7 @@ export default function CommTrans () {
       width: '700',
       height: '100',
       disclaimer: "Image Courtesy of Garnett DePasquale Projects",
+      child: 'lg:row-start-1 lg:row-end-2 lg:col-start-3 lg:col-end-5 w-full col-span-2',
       spacing: 'relative lg:top-[18%] top-3',
     },
     // JAZZ
@@ -104,7 +105,7 @@ export default function CommTrans () {
           url: 'https://www.ennead.com/work/jazz'
         }
       ],
-      image: '/assets/projects/performance/jazz-1-perf.jpg',
+      image: '/assets/projects/com-trans/jazz-1-ct.jpg',
       images_array: [
         {
           title: 'jazz-1',
@@ -119,7 +120,8 @@ export default function CommTrans () {
       height: '400',
       disclaimer: '*Project performed by IDEA team member at previous employment.',
       spacing: 'relative top-[18%]',
-      child: 'lg:row-start-1 lg:row-end-3 lg:col-start-3 lg:col-end-5 w-full col-span-2'
+      child: "lg:row-start-2 lg:row-end-3 lg:col-start-3 lg:col-end-5 w-full col-span-2 h-full"
+      // child: 'lg:row-start-1 lg:row-end-3 lg:col-start-3 lg:col-end-5 w-full col-span-2'
     },
     // Steinway & Sons Piano*
     {
@@ -139,7 +141,8 @@ export default function CommTrans () {
       height: '600',
       disclaimer: "*Project performed by IDEA team member at previous employment. ",
       spacing: 'relative top-1/3',
-      child: 'lg:row-start-3 lg:row-end-5 lg:col-start-3 lg:col-end-5 w-full col-span-2'
+      child: "lg:row-start-3 lg:row-end-4 lg:col-start-3 lg:col-end-5 w-full col-span-2 h-full"
+      // child: 'lg:row-start-3 lg:row-end-5 lg:col-start-3 lg:col-end-5 w-full col-span-2'
     },
   ];
   
