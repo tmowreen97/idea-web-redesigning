@@ -1,9 +1,16 @@
 import Navbar from "@/components/Navbar"
 import ProjectPortfolio from "@/components/ProjectPortfolio"
+import { useState } from "react"
 
 
 // This contains all of the projects no category selected
 export default function Portfolio(){
+  const [showDropDown, setShowDropDown] = useState(false)
+  function handleClick(){
+    if (showDropDown) {
+      setShowDropDown(false)
+    }
+  }
     
   const projects = [
     // MSC
@@ -390,9 +397,9 @@ export default function Portfolio(){
   
 
   return(
-    <div>
+    <div onClick={()=> handleClick()}>
       <Navbar lightLogo={true}/>
-      <ProjectPortfolio projects={projects} category={'Choose A Sector'}/>
+      <ProjectPortfolio projects={projects} category={'Choose A Sector'} showDropDown={showDropDown} setShowDropDown={setShowDropDown}/>
     </div>
   )
 }

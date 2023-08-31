@@ -6,19 +6,15 @@ import { motion } from "framer-motion";
 import PortfolioList from "./PortfolioList";
 import {BsChevronCompactDown, BsChevronCompactUp} from 'react-icons/bs';
 
-function ProjectPortfolio({ projects, category }){
+function ProjectPortfolio({ projects, category, showDropDown, setShowDropDown }){
   
-  const [showDropDown, setShowDropDown] = useState(false)
+  
   const router = useRouter();
-  function handleClick(){
-    if (showDropDown) {
-      setShowDropDown(false)
-    }
-  }
+  
 
 
   return(
-    <div className="w-screen h-full bg-primary" onClick={()=> handleClick()}>
+    <div className="w-screen h-full bg-primary">
       <motion.div 
       initial={{opacity:0}}
       animate={{opacity:1, transition:{delay:1, duration:1}}}
