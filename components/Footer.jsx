@@ -83,7 +83,7 @@ export default function Footer(){
                 <input type="hidden" name="_next" value="http://localhost:3000/thank-you"/>
                 <div className="text-center items-center justify-center flex ">
                   <div className="bg-tertiary/80 hover:bg-accent_2/80 rounded-xl p-2 shadow-xl text-primary_text">
-                    <button type='submit'>Send</button>
+                    <button id='submit_2' type='submit'>Send</button>
                   </div>
                 </div>
               </form>
