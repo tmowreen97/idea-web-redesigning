@@ -10,6 +10,36 @@ export default function Cultural(){
     }
   }
   const projects = [
+    // Khair Community Center
+    {
+      name: 'Khair Community Center',
+      heading: ['Cultural'],
+      location: 'Phoenixville, PA',
+      size: '20,000 SF',
+      year: '2023',
+      services: [
+        'Electrical Engineering'
+      ],
+      description: [
+        'Project included lighting control design for the building. During construction, it was discovered that there were gaps in the design and the owner approached IDEA, to design a system that was cost-effective, short lead times and expandability for future projects. IDEA worked with the client to provide several options before proceeding with a final design that met the intent and desired use for the client. '
+      ],
+      image: '/assets/projects/cultural/khair-1-cultural.jpg',
+      images_array: [
+        {
+          title: 'khair-1',
+          image: '/assets/projects/cultural/khair-1-cultural.jpg'
+        },
+        {
+          title: 'khair-2',
+          image: '/assets/projects/cultural/khair-2-cultural.jpg'
+        }
+      ],
+      width: '700',
+      height: '400',
+      disclaimer: "",
+
+
+    },
     // Art Gallery at Yale University*
     {
       name: 'Art Gallery at Yale University*',
@@ -131,36 +161,6 @@ export default function Cultural(){
       width: '700',
       height: '400',
       disclaimer: '* Project performed by IDEA team member at previous employment.',
-
-    },
-    // Khair Community Center
-    {
-      name: 'Khair Community Center',
-      heading: ['Cultural'],
-      location: 'Phoenixville, PA',
-      size: '20,000 SF',
-      year: '2023',
-      services: [
-        'Electrical Engineering'
-      ],
-      description: [
-        'Project included lighting control design for the building. During construction, it was discovered that there were gaps in the design and the owner approached IDEA, to design a system that was cost-effective, short lead times and expandability for future projects. IDEA worked with the client to provide several options before proceeding with a final design that met the intent and desired use for the client. '
-      ],
-      image: '/assets/projects/cultural/khair-1-cultural.jpg',
-      images_array: [
-        {
-          title: 'khair-1',
-          image: '/assets/projects/cultural/khair-1-cultural.jpg'
-        },
-        {
-          title: 'khair-2',
-          image: '/assets/projects/cultural/khair-2-cultural.jpg'
-        }
-      ],
-      width: '700',
-      height: '400',
-      disclaimer: "",
-
 
     },
     // North American Mammals Gallery at AMNH*
