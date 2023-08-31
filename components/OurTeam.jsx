@@ -105,25 +105,7 @@ function OurTeam (){
             
           })
           } */}
-          
-          {/* {second_team.map((member)=> {
-            return(
-              <div key='card' id="card" className="flex " onClick={()=> setFlip(!flip)}>
-                <div className="front-card relative" >
-                  <Image src={member.image} width={300} height={400}/> 
-                  <div className={flip ? "absolute w-[300px] h-[300px] top-0 bg-[#322d44]/80 text-white  text-center justify-center items-center" : "hidden"}>
-                    <h1 className="mx-5 mt-[100px] text-4xl ">John Doe</h1>
-                    <p className="mx-5 mt-2 ">Intern</p>
-                  </div>
-                </div>
-            
-              </div>
-            )
-          })} */}
-
-        {/* </div>
-
-      </div> */}
+      
 
       
     </div>

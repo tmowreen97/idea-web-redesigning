@@ -63,7 +63,7 @@ const Navbar = ({setLightLogo, lightLogo}) => {
           </li> */}
           <li className='p-4'>
           <div className="dropdown inline-block relative">
-          <button id='about_button' className="inline-flex items-center " id={router.asPath == '/#about' || router.asPath == '/team' ? "active" : ''}>
+          <button id='about_button' aria-label='about_button' className="inline-flex items-center " id={router.asPath == '/#about' || router.asPath == '/team' ? "active" : ''}>
             <div className="mr-1 tracking-wider ">About</div>
             <BiChevronDown />
             {/* <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg> */}
@@ -80,7 +80,7 @@ const Navbar = ({setLightLogo, lightLogo}) => {
           </li> 
           <li className='p-4'>
           <div className="dropdown inline-block relative">
-          <button id='project_button' className="inline-flex items-center" id={router.asPath == '/#projects' || router.asPath == '/portfolio' ? "active" : ''}>
+          <button id='project_button' aria-label='project_button' className="inline-flex items-center" id={router.asPath == '/#projects' || router.asPath == '/portfolio' ? "active" : ''}>
             <span className="mr-1 tracking-wider">Projects</span>
             <BiChevronDown />
             {/* <svg className="fill-current h-4 w-4 hover" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg> */}
@@ -144,7 +144,7 @@ const Navbar = ({setLightLogo, lightLogo}) => {
             </li>
             <li  className=' hover:text-gray-500 text-4xl p-4'>
               <div className="dropdown inline-block relative">
-                <button id="about_button" className="inline-flex items-center " id={router.asPath == '/#about' || router.asPath == '/team' ? "active" : ''}>
+                <button id="about_button" aria-label='about_button' className="inline-flex items-center " id={router.asPath == '/#about' || router.asPath == '/team' ? "active" : ''}>
                   <div className="relative">About</div>
                   <BiChevronDown />
                   {/* <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg> */}
@@ -161,7 +161,7 @@ const Navbar = ({setLightLogo, lightLogo}) => {
             </li>
             <li className='p-4 text-4xl hover:text-gray-500 '>
             <div className="dropdown inline-block relative">
-                <button id='project_button' className="inline-flex items-center " id={router.asPath == '/#projects' || router.asPath == '/portfolio' ? "active" : ''}>
+                <button id='project_button' aria-label='project_button' className="inline-flex items-center " id={router.asPath == '/#projects' || router.asPath == '/portfolio' ? "active" : ''}>
                   <div className="relative">Projects</div>
                   <BiChevronDown />
                   {/* <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg> */}

@@ -103,7 +103,7 @@ function ThankYou(){
               >
                 <BsArrowRight className="text-3xl text-left"/>
               </motion.div>
-              <button id='culture_button' className="bg-button_bg p-3 rounded-xl text-dark_text hover:bg-accent_2 hover:text-primary_text text-xl">
+              <button id='culture' aria-label='culture' className="bg-button_bg p-3 rounded-xl text-dark_text hover:bg-accent_2 hover:text-primary_text text-xl">
               <Link href={'/culture'}>Culture</Link>
             </button>
             </div>

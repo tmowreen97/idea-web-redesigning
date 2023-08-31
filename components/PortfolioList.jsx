@@ -60,6 +60,7 @@ function PortfolioList({project}){
               <p className="md:text-lg text-xs">{project.location}</p>
               <button
               id='our_team_button'
+              aria-label='our_team_button'
               onClick={()=> handleClick()}
               className="hover:bg-accent_2 hover:text-primary_text  bg-light_bg text-dark_text rounded-full overflow-hidden md:text-lg text-xs p-1 md:p-3 m-2"
               >Click to Learn More</button>

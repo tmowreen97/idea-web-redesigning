@@ -14,12 +14,12 @@ function TeamList({member}){
             <div className="flex text-white my-[65%] justify-evenly text-lg ">
               <Link href={member.contact} legacyBehavior className="my-[50%]">
                 <a target="_blank" rel="noopener noreferrer">
-                  <button id='contact_button' className="bg-button_bg rounded-xl p-3">Contact Card</button>
+                  <button id='contact_button' aria-label='contact' className="bg-button_bg rounded-xl p-3">Contact Card</button>
                 </a>
               </Link>
               <Link href={member.linkedin} legacyBehavior className="my-[50%]">
                 <a target="_blank" rel="noopener noreferrer">
-                <button id='linkedin_button' className="bg-button_bg rounded-xl p-3">LinkedIn</button>
+                <button id='linkedin_button' aria-label='linkein' className="bg-button_bg rounded-xl p-3">LinkedIn</button>
                 </a>
               </Link>
             </div>

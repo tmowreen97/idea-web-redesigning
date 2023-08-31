@@ -6,9 +6,6 @@ import {RxDotFilled} from 'react-icons/rx'
 function Carousel ({array, setCurrentIndex, currentIndex, custom}){
 
   const timeoutRef = useRef(null);
-
-  console.log(array)
-
   function resetTimeout() {
     if (timeoutRef.current) {
       clearTimeout(timeoutRef.current);
@@ -51,21 +48,6 @@ function Carousel ({array, setCurrentIndex, currentIndex, custom}){
   };
 
   return (
-    // <Carousel showArrows dynamicHeight infiniteLoop >
-    //   {
-    //     images.map((img)=> {
-    //       return(
-    //         <div key={img.image} className="rounded-xl overflow-hidden">
-    //           <Image src={img.image} width={700} height={300} />
-    //           <p className="legend">Legend 1</p>
-    //         </div>
-    //       )
-    //     })
-    //   }
-      
-    // </Carousel>
-
-    
     <div className="relative group items-center justify-center ">
 
       <motion.div 

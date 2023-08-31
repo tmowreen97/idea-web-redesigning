@@ -62,7 +62,7 @@ function ProjectPortfolio({ projects, category }){
         >
           <div className='relative'>
             {/* <label className="text-2xl text-secondary_text mr-2 ">Select a Category:</label> */}
-            <button id='drop_down_button' onClick={()=> {setShowDropDown(!showDropDown)}}  data-dropdown-toggle="dropdown" className="relative text-xl justify-between w-[300px] bg-button_bg/30 hover:bg-secondary/70 focus:ring-4 focus:outline-none focus:ring-secondary_text font-medium rounded-lg  py-2  ml-2 inline-flex items-center text-secondary_text" type="button">
+            <button id='drop_down_button' aria-label='drop_down_button' onClick={()=> {setShowDropDown(!showDropDown)}}  data-dropdown-toggle="dropdown" className="relative text-xl justify-between w-[300px] bg-button_bg/30 hover:bg-secondary/70 focus:ring-4 focus:outline-none focus:ring-secondary_text font-medium rounded-lg  py-2  ml-2 inline-flex items-center text-secondary_text" type="button">
               <p className='mx-2'>{category}</p>
               <motion.p 
               animate={{y:[-1,2,2,-1]}}

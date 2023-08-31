@@ -116,7 +116,7 @@ function ContactPage(){
             {/* <input type="hidden" name="_captcha" value="false"></input> */}
             <div className="text-center items-center justify-center flex ">
               <div className="bg-tertiary/80 hover:bg-accent_2/80 rounded-xl p-2 px-5 shadow-xl text-primary_text">
-                <button id='submit' type='submit'>Send</button>
+                <button id='submit' aria-label="submit" type='submit'>Send</button>
               </div>
             </div>
           </form>

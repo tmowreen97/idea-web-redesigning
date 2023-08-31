@@ -60,6 +60,7 @@ function ProjectHome(){
           <div className="relative">
             <button 
             id='drop_down_button'
+            aria-label='drop_down_button'
             onClick={()=> {setShowDropDown(!showDropDown)}}
             data-dropdown-toggle="dropdown" 
             className="relative lg:w-[400px] lg:text-2xl text-xl justify-between  hover:bg-secondary/60 focus:ring-4 focus:outline-none focus:ring-secondary_text font-medium rounded-lg p-4 lg:mt-2 text-center inline-flex items-center text-secondary_text" type="button">
@@ -130,7 +131,7 @@ function ProjectHome(){
             </div>
             <div className=" text-center absolute bottom-0 md:left-[15%] left-5 ">
               <Link href={'/portfolio'}>
-                <button id='portfolio_button' className="inline-block rounded-xl bg-secondary_text text-dark_text p-3 px-4 font-normal hover:drop-shadow-xl hover:bg-accent_2/80 hover:text-secondary_text  tracking-wider">Learn More on Our Portfolio</button>
+                <button id='portfolio_button' aria-label='portfolio_button' className="inline-block rounded-xl bg-secondary_text text-dark_text p-3 px-4 font-normal hover:drop-shadow-xl hover:bg-accent_2/80 hover:text-secondary_text  tracking-wider">Learn More on Our Portfolio</button>
               </Link>
             </div>
             

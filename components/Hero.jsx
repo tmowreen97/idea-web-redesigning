@@ -249,7 +249,7 @@ function Hero({heading}){
             whileInView={{opacity:1, transition:{delay:2, duration:1}}}
             className='justify-center items-center '
           >
-            <button id='mobile-button' className={animate ? "bg-light_bg ease-in-out duration-200 p-2 rounded-xl animation-blimp-1 m-auto" : "bg-accent_1 text-primary_text ease-in-out duration-200 p-2 rounded-xl"} onClick={()=> handleMobileAnimate()}>
+            <button id='mobile-button' aria-label='mobile_button' className={animate ? "bg-light_bg ease-in-out duration-200 p-2 rounded-xl animation-blimp-1 m-auto" : "bg-accent_1 text-primary_text ease-in-out duration-200 p-2 rounded-xl"} onClick={()=> handleMobileAnimate()}>
               What We're Working On
             </button>
           </motion.div>
