@@ -1,8 +1,48 @@
 import Navbar from "@/components/Navbar"
 import ProjectPortfolio from "@/components/ProjectPortfolio"
+import { useState } from "react"
+
 export default function CommTrans () {
+  const [showDropDown, setShowDropDown] = useState(false)
+  function handleClick(){
+    if (showDropDown) {
+      setShowDropDown(false)
+    }
+  }
 
   const projects = [
+    // MSC Miami Cruise Terminal
+    {
+      name: 'MSC Miami Cruise Terminal',
+      heading: ['Commercial/Transportation'],
+      location: 'Miami, Fl',
+      size: '490,000 SF Terminal / 1,200,000 SF Garage',
+      year: '2024',
+      services: [
+        'MEP-FP Project Management', 'Construction PM Services', 'Mechanical', 'Electrical', 'Fire Alarm Design'
+      ],
+      description: [
+        'A 4-story cruise terminal capable of serving a total of 18,000 cruise ship passengers. The facility consists of 490,000 sf of interior space and 1,200,000 sf garage (6-Levels). There is a boarding concourse approximately 3,000 ft long by 15 ft wide running along the terminal and extending beyond the terminal to the East to accommodate three Berths. The terminal’s programming includes but not limited to: Check-In, Validation, Screening, Waiting Lounges, Office Terrace, Passenger Bridge Concourse, Baggage claim, Baggage, Restrooms, Customs and Border Protection Areas, VIP Lounges, Etc. Sustainable goals include LEED Silver Certification',
+        'IDEA’s team is also providing MEP-FP Construction Project Management Assistance services to the Design Builder/Construction Team on this opportunity.'
+      ],
+      resources: [
+        {
+          title: 'MSC Cruises',
+          url: 'https://www.msccruisesusa.com/news/new-cruise-terminal-miami', 
+        },
+        {
+          title: 'Arquitectonica',
+          url: 'https://arquitectonica.com/architecture/project/msc-cruises-terminal-at-port-miami/' 
+        }
+      ],
+      image: '/assets/projects/com-trans/msc-2.jpg',
+      width: '700',
+      height: '600',
+      disclaimer: "",
+      spacing: 'relative top-[35%]',
+      child: "lg:row-start-2 lg:row-end-5 lg:col-start-1 lg:col-end-3 w-full col-span-2"
+
+    },
     // East End Food Institute EEFI
     {
       name: 'East End Food Institute EEFI',
@@ -81,38 +121,6 @@ export default function CommTrans () {
       spacing: 'relative top-[18%]',
       child: 'lg:row-start-1 lg:row-end-3 lg:col-start-3 lg:col-end-5 w-full col-span-2'
     },
-    // MSC Miami Cruise Terminal
-    {
-      name: 'MSC Miami Cruise Terminal',
-      heading: ['Commercial/Transportation'],
-      location: 'Miami, Fl',
-      size: '490,000 SF Terminal / 1,200,000 SF Garage',
-      year: '2024',
-      services: [
-        'MEP-FP Project Management', 'Construction PM Services', 'Mechanical', 'Electrical', 'Fire Alarm Design'
-      ],
-      description: [
-        'A 4-story cruise terminal capable of serving a total of 18,000 cruise ship passengers. The facility consists of 490,000 sf of interior space and 1,200,000 sf garage (6-Levels). There is a boarding concourse approximately 3,000 ft long by 15 ft wide running along the terminal and extending beyond the terminal to the East to accommodate three Berths. The terminal’s programming includes but not limited to: Check-In, Validation, Screening, Waiting Lounges, Office Terrace, Passenger Bridge Concourse, Baggage claim, Baggage, Restrooms, Customs and Border Protection Areas, VIP Lounges, Etc. Sustainable goals include LEED Silver Certification',
-        'IDEA’s team is also providing MEP-FP Construction Project Management Assistance services to the Design Builder/Construction Team on this opportunity.'
-      ],
-      resources: [
-        {
-          title: 'MSC Cruises',
-          url: 'https://www.msccruisesusa.com/news/new-cruise-terminal-miami', 
-        },
-        {
-          title: 'Arquitectonica',
-          url: 'https://arquitectonica.com/architecture/project/msc-cruises-terminal-at-port-miami/' 
-        }
-      ],
-      image: '/assets/projects/com-trans/msc-2.jpg',
-      width: '700',
-      height: '600',
-      disclaimer: "",
-      spacing: 'relative top-[35%]',
-      child: "lg:row-start-2 lg:row-end-5 lg:col-start-1 lg:col-end-3 w-full col-span-2"
-
-    },
     // Steinway & Sons Piano*
     {
       name: 'Steinway & Sons Piano*',
@@ -137,9 +145,9 @@ export default function CommTrans () {
   
 
   return(
-    <div>
+    <div onClick={()=> handleClick()}>
       <Navbar lightLogo={true}/>
-      <ProjectPortfolio projects={projects} category={'Commercial/Transportation'}/>
+      <ProjectPortfolio projects={projects} category={'Commercial/Transportation'} showDropDown={showDropDown} setShowDropDown={setShowDropDown}/>
     </div>
   )
 }

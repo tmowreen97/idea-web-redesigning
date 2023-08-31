@@ -1,7 +1,14 @@
 import Navbar from "@/components/Navbar"
 import ProjectPortfolio from "@/components/ProjectPortfolio"
+import { useState } from "react"
 
 export default function Cultural(){
+  const [showDropDown, setShowDropDown] = useState(false)
+  function handleClick(){
+    if (showDropDown) {
+      setShowDropDown(false)
+    }
+  }
   const projects = [
     // Art Gallery at Yale University*
     {
@@ -239,9 +246,9 @@ export default function Cultural(){
   ];
 
   return(
-    <div>
+    <div onClick={()=> handleClick()}>
       <Navbar lightLogo={true}/>
-      <ProjectPortfolio projects={projects} category={'Cultural'}/>
+      <ProjectPortfolio projects={projects} category={'Cultural'} showDropDown={showDropDown} setShowDropDown={setShowDropDown}/>
     </div>
   )
 }

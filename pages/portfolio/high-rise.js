@@ -1,7 +1,14 @@
 import Navbar from "@/components/Navbar"
 import ProjectPortfolio from "@/components/ProjectPortfolio"
+import { useState } from "react"
 
 export default function HighRise(){
+  const [showDropDown, setShowDropDown] = useState(false)
+  function handleClick(){
+    if (showDropDown) {
+      setShowDropDown(false)
+    }
+  }
   const projects = [
       // ALCOVE- Nashville, TN NEED IMAGE ??
       {
@@ -144,9 +151,9 @@ export default function HighRise(){
 
   ]
   return(
-    <div>
+    <div onClick={()=> handleClick()}>
       <Navbar lightLogo={true}/>
-      <ProjectPortfolio projects={projects} category={'High-Rise'}/>
+      <ProjectPortfolio projects={projects} category={'High-Rise'} showDropDown={showDropDown} setShowDropDown={setShowDropDown}/>
     </div>
   )
 }

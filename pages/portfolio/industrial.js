@@ -1,7 +1,14 @@
 import Navbar from "@/components/Navbar"
 import ProjectPortfolio from "@/components/ProjectPortfolio"
+import { useState } from "react"
 
 export default function Industrial(){
+  const [showDropDown, setShowDropDown] = useState(false)
+  function handleClick(){
+    if (showDropDown) {
+      setShowDropDown(false)
+    }
+  }
   const projects = [
     // URBAN OUTFITTERS DC
     {
@@ -28,9 +35,9 @@ export default function Industrial(){
     },
   ]
   return(
-    <div>
+    <div onClick={()=> handleClick()}>
       <Navbar lightLogo={true}/>
-      <ProjectPortfolio projects={projects} category={'Industrial'}/>
+      <ProjectPortfolio projects={projects} category={'Industrial'} showDropDown={showDropDown} setShowDropDown={setShowDropDown}/>
     </div>
   )
 }

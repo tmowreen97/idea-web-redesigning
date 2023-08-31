@@ -1,6 +1,13 @@
 import Navbar from "@/components/Navbar"
 import ProjectPortfolio from "@/components/ProjectPortfolio"
+import { useState } from "react"
 export default function PerfVenue () {
+  const [showDropDown, setShowDropDown] = useState(false)
+  function handleClick(){
+    if (showDropDown) {
+      setShowDropDown(false)
+    }
+  }
 
   const projects = [
     // Fine Arts Instructional Center at ECSU (Eastern Connecticut State University)
@@ -168,9 +175,9 @@ export default function PerfVenue () {
 
 // MERRIAM WEBSTER NEED IMAGES ??
   return(
-    <div>
+    <div onClick={()=> handleClick()}>
       <Navbar lightLogo={true}/>
-      <ProjectPortfolio projects={projects} category={'Performance Venues'}/>
+      <ProjectPortfolio projects={projects} category={'Performance Venues'} showDropDown={showDropDown} setShowDropDown={setShowDropDown}/>
     </div>
   )
 }

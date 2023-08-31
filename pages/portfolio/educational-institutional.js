@@ -1,6 +1,13 @@
 import Navbar from "@/components/Navbar"
 import ProjectPortfolio from "@/components/ProjectPortfolio"
+import { useState } from "react"
 export default function EduInst () {
+  const [showDropDown, setShowDropDown] = useState(false)
+  function handleClick(){
+    if (showDropDown) {
+      setShowDropDown(false)
+    }
+  }
 
   const projects = [
     // Adams Center at Yale School of Music 
@@ -316,9 +323,9 @@ export default function EduInst () {
     // FOX School of Business at Temple University NEED IMAGE ??
     // SEC at Penn State University NEED IMAGE ??
   return(
-    <div>
+    <div onClick={()=> handleClick()}>
       <Navbar lightLogo={true}/>
-      <ProjectPortfolio projects={projects} category={'Educational/Institutional'}/>
+      <ProjectPortfolio projects={projects} category={'Educational/Institutional'} showDropDown={showDropDown} setShowDropDown={setShowDropDown}/>
     </div>
   )
 }

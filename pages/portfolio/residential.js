@@ -1,7 +1,14 @@
 import Navbar from "@/components/Navbar"
 import ProjectPortfolio from "@/components/ProjectPortfolio"
+import { useState } from "react"
 
 export default function Residential(){
+  const [showDropDown, setShowDropDown] = useState(false)
+  function handleClick(){
+    if (showDropDown) {
+      setShowDropDown(false)
+    }
+  }
   const projects = [
     // JOHNSON
     {
@@ -157,9 +164,9 @@ export default function Residential(){
   ]
 
   return(
-    <div>
+    <div onClick={()=> handleClick()}>
       <Navbar lightLogo={true}/>
-      <ProjectPortfolio projects={projects} category={'Residential'}/>
+      <ProjectPortfolio projects={projects} category={'Residential'} showDropDown={showDropDown} setShowDropDown={setShowDropDown}/>
     </div>
   )
 }

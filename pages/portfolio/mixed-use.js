@@ -1,7 +1,13 @@
 import Navbar from "@/components/Navbar"
 import ProjectPortfolio from "@/components/ProjectPortfolio"
-
+import { useState } from "react"
 export default function MixedUse(){
+  const [showDropDown, setShowDropDown] = useState(false)
+  function handleClick(){
+    if (showDropDown) {
+      setShowDropDown(false)
+    }
+  }
   const projects = [
     // 301 EAST 21 ST NEED IMAGE?
     {
@@ -125,9 +131,9 @@ export default function MixedUse(){
     },
   ]
   return(
-    <div>
+    <div onClick={()=> handleClick()}>
       <Navbar lightLogo={true}/>
-      <ProjectPortfolio projects={projects} category={'Mixed-Use'}/>
+      <ProjectPortfolio projects={projects} category={'Mixed-Use'} showDropDown={showDropDown} setShowDropDown={setShowDropDown}/>
     </div>
   )
 }
