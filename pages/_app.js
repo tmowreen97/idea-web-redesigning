@@ -13,7 +13,7 @@ export default function App({ Component, pageProps }) {
     
     className={urbanist.className}>
       <Head>
-        <title>IDEA AEC | WE EMPOWER IDEAS</title>
+        <title>IDEA | Inter-Disciplinary Engineering Associates</title>
       </Head>
       <Component {...pageProps} />
       <Footer/>
