@@ -41,7 +41,7 @@ export default function CommTrans () {
       width: '700',
       height: '100',
       disclaimer: "Image Courtesy of Garnett DePasquale Projects",
-      spacing: 'relative top-[18%]',
+      spacing: 'relative lg:top-[18%] top-3',
     },
     // JAZZ
     {

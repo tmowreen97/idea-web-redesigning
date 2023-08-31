@@ -27,7 +27,7 @@ export default function EduInst () {
       width: '700',
       height: '200',
       disclaimer: '*Project performed by IDEA team member at previous employment.',
-      spacing: 'relative top-1/3',
+      spacing: 'relative lg:top-1/3 top-16',
 
     },
     // Child Care Center at Princeton University
@@ -49,7 +49,7 @@ export default function EduInst () {
       width: '700',
       height: '200',
       disclaimer: '*Project performed by IDEA team member at previous employment.',
-      spacing: 'relative top-1/3',
+      spacing: 'relative lg:top-1/3 top-12',
     },
     // East End Food Institute EEFI
     {
@@ -172,6 +172,7 @@ export default function EduInst () {
       width: '700',
       height: '400',
       disclaimer: '*Project performed by IDEA team member at previous employment.',
+      spacing: 'relative lg:top-1/3 top-10'
     },
     // Julius Romo Rabinowitz Building at Princeton University MULITIPLE IMAGES
     {
