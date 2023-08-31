@@ -11,31 +11,32 @@ function ProjectPortfolio({ projects, category }){
   const [showDropDown, setShowDropDown] = useState(false)
   const router = useRouter();
 
-  const useOutsideClick = (callback) => {
-    const ref = useRef();
+  // const useOutsideClick = (callback) => {
+  //   const ref = useRef();
   
-    useEffect(() => {
-      const handleClick = (event) => {
-        callback();
-      };
+  //   useEffect(() => {
+  //     const handleClick = (event) => {
+  //       callback();
+  //     };
   
-      document.addEventListener('click', handleClick);
+  //     document.addEventListener('click', handleClick);
   
-      return () => {
-        document.removeEventListener('click', handleClick);
-      };
-    }, []);
+  //     return () => {
+  //       document.removeEventListener('click', handleClick);
+  //     };
+  //   }, []);
   
-    return ref;
-  };
+  //   return ref;
+  // };
 
-  const handleClick = () => {
-    setShowDropDown(!showDropDown);
-  };
-  function handleClickOutside (){
-    console.log('hello')
-  }
-  const ref = useOutsideClick(handleClickOutside);
+  // const handleClick = () => {
+  //   console.log('hi')
+  //   setShowDropDown(true);
+  // };
+  // function handleClickOutside (){
+  //   setShowDropDown(!showDropDown)
+  // }
+  // const ref = useOutsideClick(handleClickOutside);
   
   
     
