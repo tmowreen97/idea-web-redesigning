@@ -40,9 +40,7 @@ function PortfolioList({project}){
     onMouseLeave={()=> setProjHover(false)}>
       <div className={hide ? "relative rounded-xl overflow-hidden hidden h-full" : "relative rounded-xl overflow-hidden h-full"}>
         <img src={project.image} width={'auto'} height={'auto'} alt={project.name} className={project.custom ? `${project.custom}` : 'w-full h-full rounded-lg'}/>
-        {/* <Image src={project.image} width={project.width} height={project.height} alt={'project'}  /> */}
         <div className={projHover ? "absolute top-0 bottom-0 left-0 right-0 bg-[#322d44]/80 text-secondary_text  " : "hidden"}>
-          {/* NEED TO ADD CUSTOM CLASS TO CHANGE SPACING */}
           <div className={project.spacing ? project.spacing : "relative top-1/4"}>
             <div className="relative justify-center items-center text-center m-2 ">
               <h1 className="md:text-4xl text-lg md:mb-5 items-center justify-center">{project.name}</h1>
@@ -125,7 +123,7 @@ function PortfolioList({project}){
 
                 
                 :
-                <Image src={project.image} width={project.width} height={project.height} className="rounded-xl flex overflow-hidden max-h-[750px] justify-center"/>
+                <Image src={project.image} width={project.width} height={project.height} alt={'proj_image'} className="rounded-xl flex overflow-hidden max-h-[750px] justify-center"/>
                 }
               </div>
               <div className="lg:col-start-3 lg:col-end-5 mz-1">

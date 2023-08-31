@@ -11,16 +11,16 @@ export default function Footer(){
           <div className="items-center justify-between text-2xl font-light flex md:p-0 px-5" >
           <div className="bg-secondary/70  rounded-xl  text-center mx-3 mt-[20%] md:mx-0 md:mt-0 ">
             <div className="my-1">
-              <Image src={'/assets/clip-1.png'} width={70} height={70}/>
+              <Image src={'/assets/clip-1.png'} width={70} height={70} alt={'icon'}/>
             </div>
             <div className="my-1">
-              <Image src={'/assets/clip-2.png'} width={62} height={62}/>
+              <Image src={'/assets/clip-2.png'} width={62} height={62} alt={'icon'}/>
             </div>
             <div className="my-1">
-              <Image src={'/assets/clip-3.png'} width={65} height={65}/>
+              <Image src={'/assets/clip-3.png'} width={65} height={65} alt={'icon'}/>
             </div>
             <div className="my-1">
-              <Image src={'/assets/clip-4.png'} width={65} height={65}/>
+              <Image src={'/assets/clip-4.png'} width={65} height={65} alt={'icon'}/>
             </div>
           </div>
           <div className="mb-10">

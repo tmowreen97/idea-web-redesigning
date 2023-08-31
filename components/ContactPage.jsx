@@ -23,27 +23,27 @@ function ContactPage(){
               animate={{opacity:1, transition:{duration:2, delay:2}}}
               className="lg:mb-2 mb-5"
             >
-              <Image src={'/assets/clip-1.png'} width={84} height={82} className=""/>
+              <Image src={'/assets/clip-1.png'} width={84} height={82} alt={'icon'}/>
             </motion.div>
             <motion.div
               initial={{opacity:0}}
               animate={{opacity:1, transition:{duration:2, delay:2.5}}}
               className="lg:mb-2 mb-5"
             >
-            <Image src={'/assets/clip-2.png'} width={80} height={80}/>              
+            <Image src={'/assets/clip-2.png'} width={80} height={80} alt={'icon'}/>              
             </motion.div>
             <motion.div
               initial={{opacity:0}}
               animate={{opacity:1, transition:{duration:2, delay:3}}}
               className="lg:mb-3 mb-6"
             >
-            <Image src={'/assets/clip-3.png'} width={80} height={80}/>              
+            <Image src={'/assets/clip-3.png'} width={80} height={80} alt={'icon'}/>              
             </motion.div>
             <motion.div
               initial={{opacity:0}}
               animate={{opacity:1, transition:{duration:2, delay:3.5}}}
             >
-            <Image src={'/assets/clip-4.png'} width={82} height={82}/>              
+            <Image src={'/assets/clip-4.png'} width={82} height={82} alt={'icon'}/>              
             </motion.div>
 
           </div>

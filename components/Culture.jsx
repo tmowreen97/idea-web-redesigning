@@ -322,7 +322,7 @@ function CulturePage(){
               <h2 className=" ml-6  text-primary_text md:text-3xl text-2xl font-light">April 5, 2022</h2>
             </div>
               <div className="flex items-center justify-center md:my-10 my-5">
-                <Image src={'/assets/idea_turns_1.png'} width={500} height={300} className="rounded-xl overflow-hidden"/>
+                <Image src={'/assets/idea_turns_1.png'} width={500} height={300} alt={'idea_1'} className="rounded-xl overflow-hidden"/>
               </div>
               <div >
                 <div>
@@ -391,7 +391,7 @@ function CulturePage(){
             </div>
               
               <div className="items-center justify-center rounded-xl overflow-hidden my-10">
-              <Image src={'/assets/vinoo_promoted.png'} width={500} height={300} className="rounded-xl overflow-hidden"/>
+              <Image src={'/assets/vinoo_promoted.png'} width={500} height={300} alt={'vinoo'} className="rounded-xl overflow-hidden"/>
               </div>
               <div >
               <p className="md:my-8 md:mx-[35px] m-3 2xl:text-xl tracking-wide text-lg leading-[185%]">
@@ -408,7 +408,7 @@ function CulturePage(){
               <h2 className="ml-6  text-primary_text md:text-3xl text-2xl font-light">April 5, 2021</h2>
             </div>
             <div className="flex items-center justify-center my-10">
-              <Image src={'/assets/idea_founded.png'} width={400} height={300} className="rounded-xl overflow-hidden"/>
+              <Image src={'/assets/idea_founded.png'} width={400} height={300} alt={'founded'} className="rounded-xl overflow-hidden"/>
             </div>
             <div>
               <p className="md:my-8 md:mx-[35px] m-3 2xl:text-xl tracking-wide text-lg leading-[185%]">
@@ -437,7 +437,7 @@ function CulturePage(){
             className="items-center justify-center">
 
               <div className="flex m-[9%]">
-                <Image src={'/assets/light-logo-2.png'} width={400} height={100} className="items-center justify-center "/>
+                <Image src={'/assets/light-logo-2.png'} width={400} height={100} alt={'light_logo'} className="items-center justify-center "/>
               </div>
           
             </motion.div>
