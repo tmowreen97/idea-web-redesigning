@@ -111,7 +111,7 @@ const Navbar = ({setLightLogo, lightLogo}) => {
         </ul>
 
         {/* Mobile Button */}
-        <div onClick={handleNav} className='block sm:hidden z-10'>
+        <div onClick={handleNav} className='block sm:hidden z-40'>
           {nav ? (
             <AiOutlineClose size={25} className='text-primary_text mr-3' />
           ) : (
@@ -122,8 +122,8 @@ const Navbar = ({setLightLogo, lightLogo}) => {
         <div
           className={
             nav
-              ? 'sm:hidden absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-dark_bg ease-in duration-300 tracking-wider pt-10'
-              : 'sm:hidden absolute top-0 left-[-100%] right-0 bottom-0 flex justify-center items-center w-full h-screen bg-dark_bg ease-in duration-300 tracking-wider'
+              ? 'sm:hidden absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-dark_bg ease-in duration-300 tracking-wider pt-10 z-30'
+              : 'sm:hidden absolute top-0 left-[-100%] right-0 bottom-0 flex justify-center items-center w-full h-screen bg-dark_bg ease-in duration-300 tracking-wider z-30'
           }
         >
           
@@ -149,7 +149,7 @@ const Navbar = ({setLightLogo, lightLogo}) => {
                   <BiChevronDown />
                   {/* <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg> */}
                 </button>
-                <ul className="dropdown-menu absolute left-0 hidden text-gray-70 text-center z-10">
+                <ul className="dropdown-menu absolute left-0 hidden text-gray-70 text-center z-30">
                   <li onClick={handleNav} className="bg-button_bg hover:bg-accent_2 hover:text-primary_text text-dark_text rounded-xl text-4xl p-2 w-[200px] m-2 ">
                     <Link className="block " href={'/#about'}>About Us</Link>
                   </li>
@@ -166,7 +166,7 @@ const Navbar = ({setLightLogo, lightLogo}) => {
                   <BiChevronDown />
                   {/* <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg> */}
                 </button>
-                <ul className="dropdown-menu absolute left-0 hidden text-gray-70  z-10">
+                <ul className="dropdown-menu absolute left-0 hidden text-gray-70  z-20">
                   <li onClick={handleNav} className="bg-button_bg hover:bg-accent_2 hover:text-primary_text text-dark_text rounded-xl text-4xl p-2 w-[275px] m-2 ">
                     <Link className="block " href={'/#projects'}>Recent Projects</Link>
                   </li>

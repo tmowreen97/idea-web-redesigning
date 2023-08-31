@@ -112,7 +112,7 @@ function ContactPage(){
               placeholder="Message"
               required/>
             </div>
-            <input type="hidden" name="_next" value="http://localhost:3000/thank-you"></input>
+            <input type="hidden" name="_next" value="https://www.ideaaec.com/thank-you"></input>
             {/* <input type="hidden" name="_captcha" value="false"></input> */}
             <div className="text-center items-center justify-center flex ">
               <div className="bg-tertiary/80 hover:bg-accent_2/80 rounded-xl p-2 px-5 shadow-xl text-primary_text">
