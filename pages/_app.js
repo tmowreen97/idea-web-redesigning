@@ -1,6 +1,5 @@
 import '@/styles/globals.css'
-import Navbar from '@/components/Navbar'
-// import { Urbanist } from 'next/font/google'
+import Head from 'next/head';
 import Footer from '@/components/Footer'
 import { Urbanist } from 'next/font/google'
 
@@ -13,6 +12,9 @@ export default function App({ Component, pageProps }) {
     <main 
     
     className={urbanist.className}>
+      <Head>
+        <title>IDEA AEC | WE EMPOWER IDEAS</title>
+      </Head>
       <Component {...pageProps} />
       <Footer/>
     </main>
