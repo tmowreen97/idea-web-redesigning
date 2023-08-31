@@ -121,8 +121,8 @@ export default function Cultural(){
           image: '/assets/projects/cultural/glen-3-cultural.jpeg'
         },
       ],
-      width: '650',
-      height: '200',
+      width: '700',
+      height: '400',
       disclaimer: '* Project performed by IDEA team member at previous employment.',
 
     },
@@ -153,7 +153,7 @@ export default function Cultural(){
       width: '700',
       height: '400',
       disclaimer: "",
-      custom: ' w-full max-w-[900px] xl:h-[500px] rounded-lg'
+
 
     },
     // North American Mammals Gallery at AMNH*
