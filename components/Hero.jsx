@@ -172,7 +172,7 @@ function Hero({heading}){
       div_parent_class: "absolute top-[30%] right-[138%] w-[375px]",
       heading: 'Shore Power',
       img: '/assets/clip-2.png',
-      desc: "When finished, the Terminal will have the ability to probide (2) shore-side electrical power (15-kV) connections to service ships at Berth 8 and Berth 9, while their main and auxiliary diesel fueled engines are shut down.",
+      desc: "When finished, the Terminal will have the ability to provide (2) shore-side electrical power (15-kV) connections to service ships at Berth 8 and Berth 9, while their main and auxiliary diesel fueled engines are shut down.",
       link: {
         title: 'Miami-Dade',
         url:'https://www.miamidade.gov/releases/2021-08-06-portmiami-shore-power-ready.asp'

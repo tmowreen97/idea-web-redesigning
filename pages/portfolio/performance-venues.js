@@ -10,6 +10,28 @@ export default function PerfVenue () {
   }
 
   const projects = [
+    // Little Theater at LIU 
+    {
+      name: 'Little Theater at LIU',
+      heading: ['Educational/Institutional', 'Performance Venues'],
+      location: 'Brookville, NY',
+      size: '20,000 SF',
+      year: '2022',
+      services: [
+        'Prime Consultant (Architectural & MEP-FP)',  
+        'MEP & Architectural Project Management' , 'MEP Design'
+      ],
+      description: [
+        'Project includes renovation of Mechanical, Electrical, Plumbing and Architectural upgrades to existing performance arts theatre building (20,000sf). Project program includes two (2) performance venues (125-Seat, 50-Seat) and associated theatrical front and back of house program (scene shop, dressing rooms, costume shop, bathrooms, etc.) spaces. Project upgrades included program revisions and associated Architectural, Mechanical (HVAC), Electrical and Plumbing upgrades.', 
+        'IDEA served as Prime-Consultant on this engagement with LIU and led Architectural and Engineering efforts on this opportunity.'
+      ],
+      image: '/assets/projects/performance/liu-perf.jpg',
+      width: '700',
+      height: '400',
+      disclaimer: "",
+      spacing: 'relative top-1/3'
+      // custom: ' w-full max-w-[900px] xl:h-[615px] 2xl:h-[675px] rounded-lg'
+    },
     // Fine Arts Instructional Center at ECSU (Eastern Connecticut State University)
     {
       name: 'Fine Arts Instructional Center at ECSU (Eastern Connecticut State University)*',
@@ -86,28 +108,6 @@ export default function PerfVenue () {
       disclaimer: '*Project performed by IDEA team member at previous employment.',
       // custom: ' w-full max-w-[900px] xl:h-[475px] 2xl:h-[600px] rounded-lg'
     },
-    // Little Theater at LIU 
-    {
-      name: 'Little Theater at LIU',
-      heading: ['Educational/Institutional', 'Performance Venues'],
-      location: 'Brookville, NY',
-      size: '20,000 SF',
-      year: '2022',
-      services: [
-        'Prime Consultant (Architectural & MEP-FP)',  
-        'MEP & Architectural Project Management' , 'MEP Design'
-      ],
-      description: [
-        'Project includes renovation of Mechanical, Electrical, Plumbing and Architectural upgrades to existing performance arts theatre building (20,000sf). Project program includes two (2) performance venues (125-Seat, 50-Seat) and associated theatrical front and back of house program (scene shop, dressing rooms, costume shop, bathrooms, etc.) spaces. Project upgrades included program revisions and associated Architectural, Mechanical (HVAC), Electrical and Plumbing upgrades.', 
-        'IDEA served as Prime-Consultant on this engagement with LIU and led Architectural and Engineering efforts on this opportunity.'
-      ],
-      image: '/assets/projects/performance/liu-perf.jpg',
-      width: '700',
-      height: '400',
-      disclaimer: "",
-      spacing: 'relative top-1/3'
-      // custom: ' w-full max-w-[900px] xl:h-[615px] 2xl:h-[675px] rounded-lg'
-    },
     // Merriam Webster Theater at The Kimmel Center
     {
       name: 'Merriam Webster Theater at The Kimmel Center*',
@@ -124,7 +124,7 @@ export default function PerfVenue () {
         "Complete existing condition assessment study of the 25,000 SF historic facility. Assessment included evaluation of the facility’s electrical power systems, lighting control systems, emergency lighting systems, fire alarm systems, as well as telecommunications systems.",
         "Concept/Feasibility study to add additional program areas above theater for a mixed-used program/occupancy while maintaining historic theater construction."
       ],
-      image: '/assets/electrical-fire.jpg',
+      image: '/assets/electrical-fire-2.jpg',
       width: '700',
       height: '400',
       disclaimer: "*Project performed by IDEA team member at previous employment.",
