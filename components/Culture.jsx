@@ -4,6 +4,7 @@ import Carousel from "./Carousel";
 import {React, useState, useEffect, useCallback} from "react";
 import ReactPlayer from "react-player/lazy";
 import { motion } from "framer-motion";
+import { AiFillInstagram, AiFillFacebook, AiFillLinkedin } from "react-icons/ai";
 
 
 function CulturePage(){
@@ -158,7 +159,7 @@ function CulturePage(){
       initial={{opacity:0}}
       animate={{opacity:1, transition: {delay:1.5, duration:1}}}
       >
-        <div className="pb-[25px]">
+        <div className="pb-[35px]">
           <h1 className="md:text-[500%] text-4xl text-center items-center tracking-wide font-light text-primary_text/70">IDEA Turns 2!</h1>
         </div>
       { isClient ? <div className="justify-center items-center flex md:w-[100%] md:h=[100%] overflow-hidden">
@@ -186,9 +187,37 @@ function CulturePage(){
 
       </div> : ""}
       
-      
+      <div>
+        <motion.div 
+        initial={{opacity:0}}
+        animate={{opacity:1, transition:{duration:2, delay:2.5} }}
+        className="flex justify-evenly p-14  rounded-xl text-primary_text/90">
+          <div className="bg-tertiary/80 hover:bg-accent_2/80  rounded-full p-7 text-5xl mx-2">
+            <Link href="https://www.instagram.com/idea.aec/" legacyBehavior>
+                <a target="_blank" rel="noopener noreferrer">
+                  <AiFillInstagram/>
+                </a>
+            </Link>
+          </div>
+          <div className="bg-tertiary/80 hover:bg-accent_2/80  rounded-full p-7 text-5xl mx-2">
+            <Link href="https://www.facebook.com/profile.php?id=100076951517206" legacyBehavior>
+                <a target="_blank" rel="noopener noreferrer">
+                  <AiFillFacebook/>
+                </a>
+            </Link>
+          </div>
+          <div className="bg-tertiary/80 hover:bg-accent_2/80  rounded-full p-7 text-5xl mx-2">
+            <Link href="https://www.linkedin.com/company/idea-aec/" legacyBehavior>
+                <a target="_blank" rel="noopener noreferrer">
+                  <AiFillLinkedin/>
+                </a>
+            </Link>
+          </div>
+        </motion.div>
+        
+      </div> 
       <div className="flex justify-center items-center p-5  md:pb-20 tracking-wider">
-        <div className="culture__parent justify-center   pt-10 mx-[8%]  lg:grid">
+        <div className="culture__parent justify-center  mx-[8%]  lg:grid">
           <div className="culture__child1 md:p-10 p-3 pb-10flex bg-secondary/40 rounded-xl justify-center md:w-[705px] w-[350px]">
             <div className="">
               <div className="">

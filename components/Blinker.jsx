@@ -7,26 +7,12 @@ function Blinker({blinker}){
   const ref = useRef(null)
   const isInView = useInView(ref)
   const [showDesc, setShowDesc] = useState(false)
-  const [coord, setCoord] = useState(["0,0 0,0 0,0"]) 
+  const [click, setClick] = useState(false) 
   const [animate, setAnimate] = useState(true)
 
 
   function handleDesc(e){
-    // console.log(e)
-    // console.log('current coord', e.clientX, e.clientY)
-    // console.log(e)
-    console.log(blinker)
-    let y1= e.clientY-47
-    let x2 = e.clientX+150
-    let y2= y1-100
-    // console.log('clientX, clientY', e.clientX, e.clientY, 'y1', y1, 'x2,y2', x2, y2)
-
-    setCoord(`${e.clientX},${y1}, ${x2},${y1}, ${x2}, ${y2}`)
     setShowDesc(!showDesc)
-    // setAnimate(fas)
-    // "1145,426 1301,426 1301,350"
-    // original is 1140, 423 changed to 1142, 375
-    // original x - 145, y +26
   }
 
 
@@ -34,7 +20,7 @@ function Blinker({blinker}){
     <div ref={ref} className={blinker.classDesc} onClick={()=> setAnimate(!animate)}>
       <motion.div
 
-        animate= { animate && isInView ? {scale:[2,4,4,2], opacity:[0.9,1,1,0.9], transition:{
+        animate= { animate && isInView ? {scale:[3,5,5,3], opacity:[0.9,1,1,0.9], transition:{
           duration: 3,
           delay : blinker.delayTime,
           repeat: Infinity,
@@ -42,10 +28,11 @@ function Blinker({blinker}){
         }} : {opacity:1}}
 
         initial={{opacity:1}}
+        
         // whileInView={{opacity:1, transition:{delay:2, duration:1, repeat: Infinity, repeatDelay: 20}}}
         
       >
-        <button style={{backgroundColor: `${blinker.bgColor}`}} className="   rounded-full w-3 h-3 hover:shadow-2xl shadow-white" onClick={(e) => handleDesc(e)}/>
+        <button style={{backgroundColor: `${blinker.bgColor}`}} className=" hover:border-solid hover:border-4 hover:w-5 hover:h-5 rounded-full w-3 h-3 hover:shadow-2xl shadow-white" onClick={(e) => handleDesc(e)}/>
       </motion.div>
       <div className='absolute'>
         {showDesc ? <Line setShowDesc={setShowDesc} blinker={blinker}/> : ""}

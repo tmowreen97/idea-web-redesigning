@@ -112,7 +112,7 @@ function Hero({heading}){
       svg_h: '150px',
       svg_class: "relative rotate-180 origin-left bottom-[35px] ml-2",
       poly_points:"10,0 0,120",
-      div_parent_class: "absolute bottom-[-100%] right-0 w-[240px]",
+      div_parent_class: "absolute bottom-[-100%] right-0 w-[215px]",
       desc: "Garage consists 2,500+ Parking spaces with 250+ spaces of Level-2 Electrical (EV) charging infrastructure.",
       heading: "Electric Vehicle Charging",
       img: "/assets/clip-2.png"
@@ -140,7 +140,7 @@ function Hero({heading}){
       svg_h: '140px',
       svg_class: "relative rotate-90 right-[70%]",
       poly_points: "63,2 200,200",
-      div_parent_class: " absolute top-[15%] right-[130%] w-[525px]",
+      div_parent_class: " absolute top-[0%] right-[130%] w-[455px]",
       heading: "Art in Public Places",
       desc: "Terminal will include various Art in Public installations to highlight artist to enrich the public environment. A 3D Projection/Light show is planned to work with Terminal's current Architecture, Structure, Building systems including Lighting Control and Audio/Visual systems.",
       link: {
