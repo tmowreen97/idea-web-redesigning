@@ -140,7 +140,7 @@ function Hero({heading}){
       svg_h: '140px',
       svg_class: "relative rotate-90 right-[70%]",
       poly_points: "63,2 200,200",
-      div_parent_class: " absolute top-[0%] right-[120%] w-[325px]",
+      div_parent_class: " absolute top-[-35%] right-[120%] w-[400px]",
       heading: "Art in Public Places",
       desc: "Terminal will include various Art in Public installations to highlight artist to enrich the public environment. A 3D Projection/Light show is planned to work with Terminal's current Architecture, Structure, Building systems including Lighting Control and Audio/Visual systems.",
       link: {
@@ -319,9 +319,9 @@ function Hero({heading}){
       <motion.div 
       initial={{opacity:0}}
       whileInView={{opacity:1, transition:{delay:1.2, duration:1}}}
-      className='p-5 text-primary_text  outline-black z-[2] mt-[-10rem]'
+      className='p-5 text-primary_text  outline-black z-0 mt-[-10rem]'
       >
-        <h1 className='lg:text-[700%] text-7xl bg-slate-800/50 rounded-xl md:bg-white/0 m-2 md:m-0 absolute lg:font-thin lg:right-[1%] right-0 bottom-1 p-3'>{heading}</h1>
+        <h1 className='lg:text-[700%] text-7xl bg-slate-800/50 rounded-xl md:bg-white/0 m-2 md:m-0 absolute lg:font-thin lg:right-[1%] right-0 bottom-1 p-3 z-0'>{heading}</h1>
       </motion.div>
     </div>
   );
