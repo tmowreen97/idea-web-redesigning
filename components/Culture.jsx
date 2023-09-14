@@ -234,7 +234,7 @@ function CulturePage(){
             </div>
             <div>
               <p className="md:my-8 md:mx-[35px] m-3 2xl:text-xl tracking-wide text-lg leading-[185%]">
-              Celebrating 2 Remarkable Years: A Fusion BBQ Extravaganza! IDEA’s 2-year anniversary marked a splendid occasion as we united the dedicated forces of MSC, Fincentari, and IDEA for a memorable Company BBQ. Orchestrated meticulously by the Marketing team, the event boasted an inviting ambiance, complemented by the culinary creations of our in-house engineering talents turned BBQ maestros. This harmonious collaboration embodies our unwavering commitment to excellence and the spirit of collaboration. Cheers to sharing in this journey of success!
+              Celebrating 2 Remarkable Years: A Fusion BBQ Extravaganza! IDEA’s 2-year anniversary marked a splendid occasion as we united the dedicated forces of MSC, Fincantieri, and IDEA for a memorable Company BBQ. Orchestrated meticulously by the Marketing team, the event boasted an inviting ambiance, complemented by the culinary creations of our in-house engineering talents turned BBQ maestros. This harmonious collaboration embodies our unwavering commitment to excellence and the spirit of collaboration. Cheers to sharing in this journey of success!
               </p>
               <p className="md:my-8 md:mx-[35px] m-3 2xl:text-xl tracking-wide text-lg leading-[32px]">
               The Marketing team's thorough preparation was clear in the event's details, from combining company identities in decorations to organizing engaging activities. The delicious food, grilled by our engineering talents, mirrored the blend of skills they contribute.
