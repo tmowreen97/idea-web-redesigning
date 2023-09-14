@@ -14,6 +14,7 @@ export default function App({ Component, pageProps }) {
     className={urbanist.className}>
       <Head>
         <title>IDEA | Inter-Disciplinary Engineering Associates</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
       </Head>
       <Component {...pageProps} />
       <Footer/>
