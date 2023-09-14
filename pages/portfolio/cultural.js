@@ -36,7 +36,7 @@ export default function Cultural(){
       ],
       width: '700',
       height: '400',
-      disclaimer: "",
+      disclaimer: "Image Courtesy of Khair Community Center",
 
 
     },
