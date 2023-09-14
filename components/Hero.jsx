@@ -317,7 +317,7 @@ function Hero({heading}){
       }
       </div>
       <motion.div 
-      initial={{opacity:0}}
+      initial={{opacity:0.5}}
       whileInView={{opacity:1, transition:{delay:1.2, duration:1}}}
       className='p-5 text-primary_text  outline-black z-0 mt-[-10rem]'
       >
