@@ -93,7 +93,7 @@ export default function Residential(){
       height: '700',
       disclaimer: "*Project performed by IDEA team member at previous employment.",
       spacing: 'relative top-[38%]',
-      child: "lg:row-start-2 lg:row-end-4 lg:col-start-3 lg:col-end-5"
+      child: "lg:row-start-2 lg:row-end-4 lg:col-start-3 lg:col-end-5 w-full col-span-2"
     },
     // 900 Church Street - Nashville, TN NEED IMAGE ??
     {
@@ -126,7 +126,7 @@ export default function Residential(){
       height: '600',
       disclaimer: "*Project performed by IDEA team member at previous employment.",
       spacing: 'relative top-[40%]',
-      child: 'lg:row-start-3 lg:row-end-5 lg:col-start-1 lg:col-end-3 flex justify-center',
+      child: 'lg:row-start-3 lg:row-end-5 lg:col-start-1 lg:col-end-3 w-full col-span-2 flex justify-center',
       // custom: ' w-[700px] max-w-[900px] h-full rounded-lg'
     },
     // 3025 JFK BLVD in Schuylkill Yards NEED IMAGE ??
@@ -158,7 +158,7 @@ export default function Residential(){
       height: '600',
       disclaimer: "*Project performed by IDEA team member at previous employment.",
       spacing: 'relative top-1/3',
-      child: "lg:col-start-3 lg:col-end-5"
+      child: "lg:col-start-3 lg:col-end-5 w-full col-span-2"
     },
 
   ]
