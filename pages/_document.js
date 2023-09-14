@@ -4,6 +4,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
+        <link rel="preconnect"/>
         <link className='width-5 height-5'rel="icon" href="/assets/icon.jpg"  />
       </Head>
       <body>
