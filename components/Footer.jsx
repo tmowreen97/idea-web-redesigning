@@ -94,7 +94,7 @@ export default function Footer(){
             <div className="text-center items-center justify-center flex rounded-xl ">
               <div className="bg-tertiary/80 hover:bg-accent_2/80  rounded-full p-4 text-2xl">
                 <Link href="https://www.instagram.com/idea.aec/" legacyBehavior>
-                    <a target="_blank" rel="noopener noreferrer">
+                    <a target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                       <AiFillInstagram/>
                     </a>
                 </Link>
@@ -103,7 +103,7 @@ export default function Footer(){
             <div className="text-center items-center justify-center flex  p-1 rounded-xl ">
               <div className="bg-tertiary/80 hover:bg-accent_2/80  rounded-full p-4 text-2xl">
                 <Link href="https://www.facebook.com/profile.php?id=100076951517206" legacyBehavior>
-                    <a target="_blank" rel="noopener noreferrer">
+                    <a target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                       <AiFillFacebook/>
                     </a>
                 </Link>
@@ -112,7 +112,7 @@ export default function Footer(){
             <div className="text-center items-center justify-center flex  p-1 rounded-xl ">
               <div className="bg-tertiary/80 hover:bg-accent_2/80 rounded-full p-4 text-2xl">
                 <Link href="https://www.linkedin.com/company/idea-aec/" legacyBehavior>
-                    <a target="_blank" rel="noopener noreferrer">
+                    <a target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                       <AiFillLinkedin/>
                     </a>
                 </Link>

@@ -197,7 +197,7 @@ function PortfolioList({project}){
                         {project.resources.map((link, index) => {
                           return(
                             <li key={index} >
-                              <a href={link.url} className="hover:text-accent_2 hover:underline text-sm md:text-lg" target="__blank" rel="noopener noreferrer">{link.title}</a>
+                              <a href={link.url} className="hover:text-accent_2 hover:underline text-sm md:text-lg" target="__blank" rel="noopener noreferrer" aria-label="Resource">{link.title}</a>
                             </li>
                           )
                         })}

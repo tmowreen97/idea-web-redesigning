@@ -190,21 +190,21 @@ const Navbar = ({setLightLogo, lightLogo}) => {
           <div className="flex justify-evenly py-5 pt-10 rounded-xl text-dark_text/90">
                 <div className="bg-button_bg/90 hover:bg-accent_2/80 hover:text-primary_text  rounded-full p-5 text-4xl mx-5">
                   <Link href="https://www.instagram.com/idea.aec/" legacyBehavior>
-                      <a target="_blank" rel="noopener noreferrer">
+                      <a target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                         <AiFillInstagram/>
                       </a>
                   </Link>
                 </div>
                 <div className="bg-button_bg/90 hover:bg-accent_2/80 hover:text-primary_text  rounded-full p-5 text-4xl mx-5">
                   <Link href="https://www.facebook.com/profile.php?id=100076951517206" legacyBehavior>
-                      <a target="_blank" rel="noopener noreferrer">
+                      <a target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                         <AiFillFacebook/>
                       </a>
                   </Link>
                 </div>
                 <div className="bg-button_bg/90 hover:bg-accent_2/80 hover:text-primary_text rounded-full p-5 text-4xl mx-5">
                   <Link href="https://www.linkedin.com/company/idea-aec/" legacyBehavior>
-                      <a target="_blank" rel="noopener noreferrer">
+                      <a target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                         <AiFillLinkedin/>
                       </a>
                   </Link>

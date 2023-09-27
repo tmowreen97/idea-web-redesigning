@@ -26,7 +26,7 @@ function Line({setShowDesc, blinker}){
             <p className='text-dark_text text-sm'>
             {blinker.desc}
             </p>
-           {blinker.link ?  <a className="text-[12px] underline hover:text-accent_2 justify-end flex" href={blinker.link.url} rel="noopener noreferrer" target="__blank" >{blinker.link.title}</a> : ""}
+           {blinker.link ?  <a className="text-[12px] underline hover:text-accent_2 justify-end flex" href={blinker.link.url} rel="noopener noreferrer" target="__blank" aria-label="Resource">{blinker.link.title}</a> : ""}
            </div>
             
           </div>
