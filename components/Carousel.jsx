@@ -1,10 +1,12 @@
-import {React, useRef, useEffect} from "react";
+import {React, useRef, useEffect, useState} from "react";
 import { motion, transform } from "framer-motion";
 import {BsChevronCompactLeft, BsChevronCompactRight} from 'react-icons/bs'
 import {RxDotFilled} from 'react-icons/rx'
 
-function Carousel ({array, setCurrentIndex, currentIndex, custom}){
+function Carousel ({array,  custom}){
 
+  const [currentIndex, setCurrentIndex] = useState(0)
+    
   const timeoutRef = useRef(null);
   function resetTimeout() {
     if (timeoutRef.current) {
@@ -48,7 +50,7 @@ function Carousel ({array, setCurrentIndex, currentIndex, custom}){
   };
 
   return (
-    <div className="relative group items-center justify-center ">
+    <div className="relative group items-center justify-center z-5">
 
       <motion.div 
       // initial={{ opacity:0 }}

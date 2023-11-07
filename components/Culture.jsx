@@ -18,7 +18,7 @@ function CulturePage(){
   const bbq = [
     {
       name: 'bbq-1',
-      image: '/assets/culture/bbq/bbq-1-cropp.png'
+      image: '/assets/culture/bbq/bbq-1-crop.png'
     },
     {
       name: 'bbq-2',
@@ -118,7 +118,7 @@ function CulturePage(){
       image: '/assets/culture/msc/10.jpg'
     },
   ]
-
+  // to change video dimensions based on screen size
   const useMediaQuery = (width) => {
     const [targetReached, setTargetReached] = useState(false);
   

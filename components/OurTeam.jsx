@@ -5,7 +5,7 @@ import AnimatedText from "./AnimatedText";
 
 function OurTeam (){
 
-    const words = "Manifesting World Class Ideas"
+  const words = "Manifesting World Class Ideas"
 
   const main_team = [
     {
