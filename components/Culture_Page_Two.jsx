@@ -141,6 +141,8 @@ function Culture_Page_Two(){
         }
       ],
       category: "Project Developments",
+      special: "xl:w-[700px] xl:h-[650px] w-[320px] h-[400px] rounded-2xl bg-center bg-cover hover:scale-105  duration-500 transform p-0 z-0",
+
     },
     //Project MSC Update *
     {
@@ -220,6 +222,8 @@ function Culture_Page_Two(){
         }
       ],
       category: "Cultural Developments",
+      special: "xl:w-[700px] xl:h-[650px] w-[320px] h-[400px] rounded-2xl bg-center bg-cover hover:scale-105  duration-500 transform p-0 z-0",
+
     },
     //IDEA Turns 1
     {
@@ -378,7 +382,7 @@ function Culture_Page_Two(){
       <div>
         <motion.div 
         initial={{opacity:0}}
-        animate={{opacity:1, transition:{duration:2, delay:2.5} }}
+        animate={{opacity:1, transition:{duration:2, delay:1.5} }}
         className="flex justify-evenly p-14  rounded-xl text-primary_text/90">
           <div className="bg-tertiary/80 hover:bg-accent_2/80  rounded-full p-7 text-5xl mx-2">
             <Link href="https://www.instagram.com/idea.aec/" legacyBehavior>
@@ -405,7 +409,9 @@ function Culture_Page_Two(){
         
       </div> 
       {/* Posts Filter */}
-      <div className="items-center justify-left pl-[5%] flex">
+      <motion.div 
+        initial={{opacity:0}}
+        animate={{opacity:1, transition:{duration:2, delay:2} }}className="items-center justify-left pl-[5%] flex">
         <div className="relative items-center" id='drop_down_parent'>
             {/* <label className="text-2xl text-secondary_text mr-2 ">Select a Category:</label> */}
             <button id='drop_down_button' aria-label='drop_down_button' onClick={()=> {setShowDropDown(!showDropDown)}}  data-dropdown-toggle="dropdown" className="relative text-xl justify-between w-[300px] bg-button_bg/30 hover:bg-secondary/70 focus:ring-4 focus:outline-none focus:ring-secondary_text font-medium rounded-lg  py-2  ml-2 inline-flex items-center text-secondary_text" type="button">
@@ -434,7 +440,7 @@ function Culture_Page_Two(){
               </ul>
             </div>
           </div>
-      </div>
+      </motion.div>
       {/* Posts body */}
       <div>
         <div className="items-center justify-center bg-primary ">
@@ -449,7 +455,10 @@ function Culture_Page_Two(){
                     counter%2==0 ? 
                     
                     // EVEN POSTS
-                    <div className="bg-secondary/40 rounded-xl p-[5%] tracking-wider font-light xl:max-h-[900px]  h-full">
+                    <motion.div 
+                      initial={{opacity:0.15}}
+                      whileInView={{opacity:1, scale:[0.95, 1], transition:{duration:1.5}}}
+                      className="bg-secondary/40 rounded-xl p-[5%] tracking-wider font-light xl:max-h-[900px]  h-full">
                       <div className="xl:ml-5">
                         <p className="italic text-[10px]">{post.category=="Cultural Developments" ? "Cultural Development" : "Project Development"}</p>
                       </div>
@@ -507,10 +516,12 @@ function Culture_Page_Two(){
                         <TextBody post={post} />
                       </div>
                     </div>
-                    </div>
+                    </motion.div>
                     :
                     //ODD POSTS
-                    <div className="bg-secondary/40 rounded-xl p-[5%] tracking-wider font-light xl:max-h-[900px] h-full">
+                    <motion.div 
+                    initial={{opacity:0.15}}
+                    whileInView={{opacity:1, scale:[1.05, 1], transition:{duration:1.5}}} className="bg-secondary/40 rounded-xl p-[5%] tracking-wider font-light xl:max-h-[900px] h-full">
                     <div className="ml-3">
                       <p className="italic text-[10px]">{post.category=="Cultural Developments" ? "Cultural Development" : "Project Development"}</p>
                     </div>
@@ -569,7 +580,7 @@ function Culture_Page_Two(){
                       </div>
                       
                     </div>
-                    </div>
+                    </motion.div>
                     
                   }
                   
