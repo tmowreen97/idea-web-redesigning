@@ -447,7 +447,6 @@ function Culture_Page_Two(){
           {
             posts.map((post, i)=> {
               let counter = i + 1
-              console.log(counter)
               return(
                 <div key={post.id} className="p-[5%]">
                   {/* Ternary operator for conditional mapping, creating alternating layouts */}
