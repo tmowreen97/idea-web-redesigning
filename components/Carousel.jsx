@@ -3,7 +3,7 @@ import { motion, transform } from "framer-motion";
 import {BsChevronCompactLeft, BsChevronCompactRight} from 'react-icons/bs'
 import {RxDotFilled} from 'react-icons/rx'
 
-function Carousel ({array,  custom}){
+function Carousel ({array,  custom, handleIndex}){
 
   const [currentIndex, setCurrentIndex] = useState(0)
     
@@ -15,6 +15,7 @@ function Carousel ({array,  custom}){
   }
 
   useEffect(() => {
+    handleIndex(currentIndex)
     resetTimeout();
     timeoutRef.current = setTimeout(
       () =>
@@ -48,6 +49,8 @@ function Carousel ({array,  custom}){
   const goToSlide = (slideIndex) => {
     setCurrentIndex(slideIndex);
   };
+
+  
 
   return (
     <div className="relative group items-center justify-center z-5">

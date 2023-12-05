@@ -36,6 +36,10 @@ function ProjectHome(){
       desc: "High-end residence consisting of two separate single-story glass enveloped structures located in the Bahamas.",
     }
   ]
+  //Grabs index from Carousel component
+  function handleIndex(index){
+    setProjectSelect(index)
+  }
 
   return(
     <div id='projects' className='w-screen lg:h-full bg-primary'>
@@ -50,8 +54,7 @@ function ProjectHome(){
           <div className="lg:h-[450px] lg:w-full lg:px-4 p-1  mb-[0%]">
             <Carousel 
               array={projects} 
-              setCurrentIndex={setProjectSelect} 
-              currentIndex={projectSelect} 
+              handleIndex = {handleIndex}
               custom={"lg:w-[620px] xl:w-[700px] lg:h-[400px] w-[355px] h-[300px] rounded-2xl bg-center bg-cover hover:scale-105  duration-500 transform"}
             />
             </div>
