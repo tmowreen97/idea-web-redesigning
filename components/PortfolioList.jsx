@@ -114,8 +114,8 @@ function PortfolioList({project}){
 
                   <Carousel
                     array={project.images_array}
-                    currentIndex={projIndex}
-                    setCurrentIndex={setProjIndex}
+                    // currentIndex={projIndex}
+                    // setCurrentIndex={setProjIndex}
                     // custom={'w-[500px] h-[400px] bg-cover bg-center bg-fixed'}
                     custom={" xl:w-[700px] xl:h-[490px] md:w-[400px] w-[275px] h-[200px] m-3 right-0 rounded-2xl bg-center bg-cover hover:scale-105  duration-500 transform"}
                     />

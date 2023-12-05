@@ -15,7 +15,11 @@ function Carousel ({array,  custom, handleIndex}){
   }
 
   useEffect(() => {
-    handleIndex(currentIndex)
+    if(handleIndex){
+
+        handleIndex(currentIndex)
+    }
+
     resetTimeout();
     timeoutRef.current = setTimeout(
       () =>
