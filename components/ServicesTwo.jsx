@@ -210,12 +210,12 @@ function ServicesTwo(){
           </div>
         </div>
         {/* Life Cycle + Construction */}
-        <div className="grid xl:grid-cols-2 grid-cols-1 gap-x-10 mx-[5%] justify-center items-center font-light">
+        <div id='subsection' className="xl:grid xl:grid-cols-2 gap-10 mx-[5%] justify-center items-center font-light">
           {/* TITLES */}
           {/* Life Cycle */}
-          <div className=" justify-center items-center">
+          <div className="justify-center items-center">
             <div className="flex items-center justify-center">
-              <h1 className="text-dark_text bg-light_bg rounded-xl p-5 m-10 w-[650px] 2xl:text-6xl text-4xl text-center">{life_cycle_services.title}</h1>
+              <h1 className="text-dark_text bg-light_bg rounded-xl p-5 m-10 xl:w-[650px] 2xl:text-6xl text-4xl text-center">{life_cycle_services.title}</h1>
             </div>
             <div className="justify-center items-center ">
               <div className="flex justify-center 2xl:h-[550px] rounded-xl 2xl:mx-10 p-5  my-5 2xl:my-0 2xl:w-auto w-[375px]" style={{backgroundColor: `${life_cycle_services.color}`}}>
@@ -232,7 +232,7 @@ function ServicesTwo(){
             </div>
           </div>
           {/* Construction */}
-          <div className=" justify-center items-center">
+          <div className="justify-center items-center">
           <div className="flex items-center justify-center">
             <h1 className="text-dark_text bg-light_bg rounded-xl p-5 m-10 w-[650px] 2xl:text-6xl text-4xl text-center">{construction_services.title}</h1>
           </div>
