@@ -149,20 +149,22 @@ function ServicesTwo(){
         <div className="font-light">
           {/* Title */}
           <div className="items-center justify-center flex">
-            <h1 className="text-dark_text bg-light_bg rounded-xl p-7 m-10 2xl:text-6xl text-4xl">Engineering Services</h1>
+            <h1 className="text-dark_text bg-light_bg rounded-2xl p-7 m-10 2xl:text-6xl text-4xl">Engineering Services</h1>
           </div>
           {/* Subsections*/}
-          <div className="grid 2xl:grid-cols-3 grid-cols-1 gap-10 2xl:p-0 2xl:mx-[5%] justify-center items-center ">
+          {/* actual grid without title */}
+          <div id="subsection" className="xl:grid xl:grid-cols-3 gap-10 xl:p-0 xl:mx-[5%] justify-center items-center">
             {engineering_services.map((service)=> {
               return(
-                <div className="flex 2xl:h-[550px] items-center justify-center text-dark_text p-5 my-5 2xl:my-0 rounded-xl 2xl:w-auto w-[375px]" style={{backgroundColor: `${service.color}`}}>
+                // **
+                <div className="xl:h-[625px] flex justify-center text-dark_text p-5 my-5 xl:my-0 rounded-2xl xl:w-auto w-[375px]" style={{backgroundColor: `${service.color}`}}>
                   <div className="justify-center">
                     <div className="items-center justify-center flex">
-                      <h1 className="text-3xl p-5">{service.title}</h1>
+                      <h1 className="text-4xl p-5">{service.title}</h1>
                     </div>
-                    <div className="2xl:w-[400px] flex justify-center rounded-xl p-5 shadow-inner font-medium" style={{backgroundColor: `${service.list_color}`}}>
-                    <div>
-                      <ul className=" items-center justify-center">
+                    <div className="2xl:w-[400px] 2xl:h-[450px] items-center flexjustify-center rounded-2xl p-5 shadow-inner font-medium" style={{backgroundColor: `${service.list_color}`}}>
+                    <div className="flex items-center justify-center">
+                      <ul className="items-center justify-center">
                         {service.services.map((list_item)=> {
                           return(
                             <li className="list-disc text-lg">{list_item}</li>
@@ -181,15 +183,15 @@ function ServicesTwo(){
         {/* Engineering Services Section TWO */}
         <div className="font-light">
           {/* Subsections*/}
-          <div className="2xl:grid 2xl:grid-cols-2 grid-cols-1 items-center gap-10 2xl:p-0 2xl:mx-[20%] 2xl:m-10 justify-center">
+          <div id='subsection' className="xl:grid xl:grid-cols-2 items-center gap-10 xl:p-0 xl:mx-[20%] xl:m-10 justify-center">
             {engineering_services_two.map((service)=> {
               return(
-                <div className="flex 2xl:h-[350px] justify-center text-dark_text p-5 my-5 2xl:my-0 rounded-xl 2xl:w-auto w-[375px]" style={{backgroundColor: `${service.color}`}}>
+                <div className="flex xl:h-[350px] justify-center text-dark_text p-5 my-5 xl:my-0 rounded-2xl xl:w-auto w-[375px]" style={{backgroundColor: `${service.color}`}}>
                   <div className="justify-center">
                     <div className="items-center justify-center flex">
-                      <h1 className="text-3xl p-5">{service.title}</h1>
+                      <h1 className="text-4xl p-5">{service.title}</h1>
                     </div>
-                    <div className="2xl:w-[400px] flex justify-center rounded-xl p-5 shadow-inner font-medium" style={{backgroundColor: `${service.list_color}`}}>
+                    <div className="2xl:w-[400px] xl:h-[200px] flex justify-center rounded-2xl p-5 shadow-inner font-medium" style={{backgroundColor: `${service.list_color}`}}>
                     <div>
                       <ul className=" items-center justify-center">
                         {service.services.map((list_item)=> {
@@ -208,7 +210,7 @@ function ServicesTwo(){
           </div>
         </div>
         {/* Life Cycle + Construction */}
-        <div className="2xl:grid 2xl:grid-cols-2 gap-x-10 mx-[5%] justify-center items-center font-light">
+        <div className="grid xl:grid-cols-2 grid-cols-1 gap-x-10 mx-[5%] justify-center items-center font-light">
           {/* TITLES */}
           {/* Life Cycle */}
           <div className=" justify-center items-center">

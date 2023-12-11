@@ -229,7 +229,12 @@ polyline {
   .culture__child9 { grid-area: 6 / 5 / 7 / 8; }
 
 
-
+#subsection {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  margin: 1/2;
+}
 
   /* .row-border{
     border-top: 2px solid gray;
