@@ -149,25 +149,25 @@ function ServicesTwo(){
         <div className="font-light">
           {/* Title */}
           <div className="items-center justify-center flex">
-            <h1 className="text-dark_text bg-light_bg rounded-2xl p-7 m-10 2xl:text-6xl text-4xl">Engineering Services</h1>
+            <h1 className="text-dark_text bg-light_bg rounded-2xl p-7 xl:m-10 my-2 2xl:text-6xl text-4xl">Engineering Services</h1>
           </div>
           {/* Subsections*/}
           {/* actual grid without title */}
-          <div id="subsection" className="xl:grid xl:grid-cols-3 gap-10 xl:p-0 xl:mx-[5%] justify-center items-center">
+          <div id="subsection" className="xl:grid xl:grid-cols-3 xl:gap-10 xl:p-0 xl:mx-[5%] justify-center items-center">
             {engineering_services.map((service)=> {
               return(
                 // **
-                <div className="xl:h-[625px] flex justify-center text-dark_text p-5 my-5 xl:my-0 rounded-2xl xl:w-auto w-[375px]" style={{backgroundColor: `${service.color}`}}>
+                <div className="xl:h-[625px] flex justify-center text-dark_text p-5 my-5 rounded-2xl xl:w-auto w-[375px]" style={{backgroundColor: `${service.color}`}}>
                   <div className="justify-center">
                     <div className="items-center justify-center flex">
-                      <h1 className="text-4xl p-5">{service.title}</h1>
+                      <h1 className="xl:text-4xl text-3xl p-5">{service.title}</h1>
                     </div>
-                    <div className="2xl:w-[400px] 2xl:h-[450px] items-center flexjustify-center rounded-2xl p-5 shadow-inner font-medium" style={{backgroundColor: `${service.list_color}`}}>
+                    <div className="2xl:w-[400px] 2xl:h-[450px] items-center flex justify-center rounded-2xl p-5 shadow-inner font-medium" style={{backgroundColor: `${service.list_color}`}}>
                     <div className="flex items-center justify-center">
                       <ul className="items-center justify-center">
                         {service.services.map((list_item)=> {
                           return(
-                            <li className="list-disc text-lg">{list_item}</li>
+                            <li className="list-disc xl:text-lg">{list_item}</li>
                           )
                         })}
                       </ul>
@@ -183,20 +183,20 @@ function ServicesTwo(){
         {/* Engineering Services Section TWO */}
         <div className="font-light">
           {/* Subsections*/}
-          <div id='subsection' className="xl:grid xl:grid-cols-2 items-center gap-10 xl:p-0 xl:mx-[20%] xl:m-10 justify-center">
+          <div id='subsection' className="xl:grid xl:grid-cols-2 items-center xl:gap-10 xl:p-0 xl:mx-[20%] xl:m-10 justify-center">
             {engineering_services_two.map((service)=> {
               return(
-                <div className="flex xl:h-[350px] justify-center text-dark_text p-5 my-5 xl:my-0 rounded-2xl xl:w-auto w-[375px]" style={{backgroundColor: `${service.color}`}}>
+                <div className="flex xl:h-[350px] justify-center text-dark_text p-5 my-5 rounded-2xl xl:w-auto w-[375px]" style={{backgroundColor: `${service.color}`}}>
                   <div className="justify-center">
                     <div className="items-center justify-center flex">
-                      <h1 className="text-4xl p-5">{service.title}</h1>
+                      <h1 className="text-3xl xl:text-4xl p-5">{service.title}</h1>
                     </div>
                     <div className="2xl:w-[400px] xl:h-[200px] flex justify-center rounded-2xl p-5 shadow-inner font-medium" style={{backgroundColor: `${service.list_color}`}}>
                     <div>
                       <ul className=" items-center justify-center">
                         {service.services.map((list_item)=> {
                           return(
-                            <li className="list-disc text-lg">{list_item}</li>
+                            <li className="list-disc xl:text-lg">{list_item}</li>
                           )
                         })}
                       </ul>
