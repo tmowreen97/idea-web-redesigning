@@ -149,7 +149,7 @@ function ServicesTwo(){
         <div className="font-light">
           {/* Title */}
           <div className="items-center justify-center flex">
-            <h1 className="text-dark_text bg-light_bg rounded-2xl p-7 xl:m-10 my-2 2xl:text-6xl text-4xl">Engineering Services</h1>
+            <h1 className="text-dark_text bg-light_bg rounded-2xl p-7 xl:m-10 my-2 2xl:text-7xl lg:text-5xl text-4xl">Engineering Services</h1>
           </div>
           {/* Subsections*/}
           {/* actual grid without title */}
@@ -157,17 +157,20 @@ function ServicesTwo(){
             {engineering_services.map((service)=> {
               return(
                 // **
-                <div className="xl:h-[625px] flex justify-center text-dark_text p-5 my-5 rounded-2xl xl:w-auto w-[375px]" style={{backgroundColor: `${service.color}`}}>
+                <div className="xl:h-[675px] flex justify-center text-dark_text p-5 my-5 rounded-2xl xl:w-auto w-[375px]" style={{backgroundColor: `${service.color}`}}>
                   <div className="justify-center">
                     <div className="items-center justify-center flex">
                       <h1 className="xl:text-4xl text-3xl p-5">{service.title}</h1>
                     </div>
-                    <div className="2xl:w-[400px] 2xl:h-[450px] items-center flex justify-center rounded-2xl p-5 shadow-inner font-medium" style={{backgroundColor: `${service.list_color}`}}>
-                    <div className="flex items-center justify-center">
+                    <div className="2xl:w-[400px] xl:w-[345px] lg:w-[325px] 2xl:h-[450px] items-center flex justify-center rounded-2xl p-8 shadow-inner font-medium" style={{backgroundColor: `${service.list_color}`}}>
+                    <div className="">
                       <ul className="items-center justify-center">
                         {service.services.map((list_item)=> {
                           return(
-                            <li className="list-disc xl:text-lg">{list_item}</li>
+                            <li className="list-disc xl:text-lg">
+                              <p className="text-dark_text lg:leading-6 xl:leading-7">{list_item}</p>
+                            </li>
+                            
                           )
                         })}
                       </ul>
@@ -196,7 +199,9 @@ function ServicesTwo(){
                       <ul className=" items-center justify-center">
                         {service.services.map((list_item)=> {
                           return(
-                            <li className="list-disc xl:text-lg">{list_item}</li>
+                            <li className="list-disc xl:text-lg">
+                              <p className="text-dark_text lg:leading-6 xl:leading-7">{list_item}</p>
+                            </li>
                           )
                         })}
                       </ul>
@@ -210,40 +215,45 @@ function ServicesTwo(){
           </div>
         </div>
         {/* Life Cycle + Construction */}
-        <div id='subsection' className="xl:grid xl:grid-cols-2 gap-10 mx-[5%] justify-center items-center font-light">
+        <div id='extraservices' className="xl:grid xl:grid-cols-2 xl:gap-10 mx-[5%] justify-center font-light">
           {/* TITLES */}
           {/* Life Cycle */}
-          <div className="justify-center items-center">
+          <div className="">
             <div className="flex items-center justify-center">
-              <h1 className="text-dark_text bg-light_bg rounded-xl p-5 m-10 xl:w-[650px] 2xl:text-6xl text-4xl text-center">{life_cycle_services.title}</h1>
+              <h1 className="text-dark_text bg-light_bg rounded-2xl p-5 m-10 xl:w-[650px] 2xl:text-7xl lg:text-5xl text-4xl text-center">{life_cycle_services.title}</h1>
             </div>
-            <div className="justify-center items-center ">
-              <div className="flex justify-center 2xl:h-[550px] rounded-xl 2xl:mx-10 p-5  my-5 2xl:my-0 2xl:w-auto w-[375px]" style={{backgroundColor: `${life_cycle_services.color}`}}>
-              <div className="w-[500px] flex items-center justify-center rounded-xl p-5 m-10 shadow-inner font-medium" style={{backgroundColor: `${life_cycle_services.list_color}`}}>
-                <ul className="items-start justify-center">
+            <div className="justify-center items-center flex ">
+              <div className="flex justify-center 2xl:h-[550px] rounded-2xl 2xl:mx-10 p-5  my-5 2xl:my-0 xl:w-[500px] w-[375px]" style={{backgroundColor: `${life_cycle_services.color}`}}>
+              <div className="2xl:w-[500px] flex items-center justify-center rounded-2xl p-5 xl:m-10 shadow-inner font-medium" style={{backgroundColor: `${life_cycle_services.list_color}`}}>
+                <div>
+                  <ul className="items-center justify-center">
                   {life_cycle_services.services.map((service)=> {
                     return(
-                      <li className="list-disc text-lg">{service}</li>
+                      <li className="list-disc xl:text-lg">
+                        <p className="text-dark_text text-lg lg:leading-6 xl:leading-7">{service}</p>
+                      </li>
                     )
                   })}
                 </ul>
+                </div>
+                
               </div>
               </div>  
             </div>
           </div>
           {/* Construction */}
-          <div className="justify-center items-center">
-          <div className="flex items-center justify-center">
-            <h1 className="text-dark_text bg-light_bg rounded-xl p-5 m-10 w-[650px] 2xl:text-6xl text-4xl text-center">{construction_services.title}</h1>
+          <div className="justify-center">
+          <div className="flex justify-center items-center">
+            <h1 className="text-dark_text bg-light_bg rounded-2xl p-5 m-10 xl:w-[650px] 2xl:text-7xl lg:text-5xl text-4xl text-center">{construction_services.title}</h1>
           </div>
-            <div className="justify-center ">
-              <div className="flex justify-center 2xl:h-[550px] rounded-xl 2xl:mx-10 p-5  my-5 2xl:my-0 2xl:w-auto w-[375px]" style={{backgroundColor: `${construction_services.color}`}}>
-                <div className="w-[475px] flex justify-center rounded-xl p-5 m-10 shadow-inner font-medium" style={{backgroundColor: `${life_cycle_services.list_color}`}}>
+            <div className="justify-center flex ">
+              <div className="flex justify-center 2xl:h-[550px] rounded-2xl 2xl:mx-10 p-5  my-5 2xl:my-0 xl:w-[500px] w-[375px]" style={{backgroundColor: `${construction_services.color}`}}>
+                <div className="2xl:w-[475px] flex justify-center rounded-2xl p-5 xl:m-10 shadow-inner font-medium" style={{backgroundColor: `${life_cycle_services.list_color}`}}>
                   <div className="flex ">
                     <ul className="justify-center items-center">
                   {construction_services.services.map((service)=> {
                     return(
-                      <li className="list-disc text-lg">{service}</li>
+                      <li className="list-disc text-lg lg:leading-6 xl:leading-7">{service}</li>
                     )
                   })}
                 </ul>

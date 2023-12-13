@@ -236,6 +236,13 @@ polyline {
   margin: 1/2;
 }
 
+#extraservices {
+  display: grid;
+
+  justify-content: center;
+  margin: 1/2;
+}
+
   /* .row-border{
     border-top: 2px solid gray;
     \
