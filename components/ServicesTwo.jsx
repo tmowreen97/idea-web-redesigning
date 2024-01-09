@@ -220,7 +220,7 @@ function ServicesTwo(){
           {/* Life Cycle */}
           <div className="">
             <div className="flex items-center justify-center">
-              <h1 className="text-dark_text bg-light_bg rounded-2xl p-5 m-10 xl:w-[650px] 2xl:text-7xl lg:text-5xl text-4xl text-center">{life_cycle_services.title}</h1>
+              <h1 className="text-dark_text bg-light_bg rounded-2xl p-5 m-10 xl:w-[650px] lg:text-6xl text-4xl text-center">{life_cycle_services.title}</h1>
             </div>
             <div className="justify-center items-center flex ">
               <div className="flex justify-center 2xl:h-[550px] rounded-2xl 2xl:mx-10 p-5  my-5 2xl:my-0 xl:w-[500px] w-[375px]" style={{backgroundColor: `${life_cycle_services.color}`}}>
@@ -244,7 +244,7 @@ function ServicesTwo(){
           {/* Construction */}
           <div className="justify-center">
           <div className="flex justify-center items-center">
-            <h1 className="text-dark_text bg-light_bg rounded-2xl p-5 m-10 xl:w-[650px] 2xl:text-7xl lg:text-5xl text-4xl text-center">{construction_services.title}</h1>
+            <h1 className="text-dark_text bg-light_bg rounded-2xl p-5 m-10 xl:w-[650px] lg:text-6xl text-4xl text-center">{construction_services.title}</h1>
           </div>
             <div className="justify-center flex ">
               <div className="flex justify-center 2xl:h-[550px] rounded-2xl 2xl:mx-10 p-5  my-5 2xl:my-0 xl:w-[500px] w-[375px]" style={{backgroundColor: `${construction_services.color}`}}>

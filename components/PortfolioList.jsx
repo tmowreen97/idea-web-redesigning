@@ -4,7 +4,6 @@ import {BsChevronCompactDown, BsChevronCompactUp} from 'react-icons/bs';
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { AiOutlineCloseCircle } from "react-icons/ai";
-import { Catamaran } from "next/font/google";
 
 function PortfolioList({project}){
 
@@ -12,7 +11,6 @@ function PortfolioList({project}){
   const [projClick, setProjClick] = useState(false)
   const [hide, setHide] = useState(false)
 
-  const [projIndex, setProjIndex] = useState(0)
   function mouse (){
     setProjHover(true)
     myStopFunction();
