@@ -384,19 +384,19 @@ function ServicesNew(){
             {engineering_services.map((service)=> {
               return(
                 // **
-                <div key={service.title} className="xl:h-[675px] flex justify-center text-dark_text p-5 my-5 rounded-2xl xl:w-auto w-[375px]" style={{backgroundColor: `${service.color}`}}>
+                <div key={service.title} className="xl:h-[700px] flex justify-center text-dark_text p-5 my-5 rounded-2xl xl:w-auto w-[375px]" style={{backgroundColor: `${service.color}`}}>
                   <div className="justify-center">
                     {/* List Title w Image*/}
                     <div className="items-center justify-center flex my-2">
                       <h1 className="text-dark_text xl:text-4xl text-3xl p-5">{service.title}</h1>
                       {/* <Image src={service.icon} width={service.width ? service.width : 70} height={100} className="bg-black/20 rounded-2xl py-2"/> */}
                     </div>
-                    <div className="2xl:w-[400px] xl:w-[345px] lg:w-[325px] 2xl:h-[450px] items-center flex justify-center rounded-2xl p-8 shadow-inner font-medium" style={{backgroundColor: `${service.list_color}`}}>
+                    <div className="2xl:w-[400px] xl:w-[345px] lg:w-[325px] 2xl:h-[525px] items-start flex justify-center rounded-2xl p-8 shadow-inner font-medium" style={{backgroundColor: `${service.list_color}`}}>
                     <div className="">
-                      <ul className="items-center justify-center">
+                      <ul className="items-start justify-center">
                         {service.services.map((list_item)=> {
                           return(
-                            <li key={list_item.alt} className="list-disc xl:text-lg">
+                            <li key={list_item.alt} className="list-disc xl:text-xl">
                               <p className="text-dark_text lg:leading-6 xl:leading-7">{list_item.service}</p>
                             </li>
                             
@@ -437,7 +437,7 @@ function ServicesNew(){
                       <ul>
                         {service.services.map((list_item)=> {
                           return(
-                            <li key={list_item.alt} className="list-disc xl:text-lg">
+                            <li key={list_item.alt} className="list-disc xl:text-xl">
                               <p className="text-dark_text lg:leading-6 xl:leading-7">{list_item.service}</p>
                             </li>
                           )
@@ -459,10 +459,11 @@ function ServicesNew(){
           <div className="font-light justify-center">
             <div className="xl:grid grid-cols-2 items-start h-full">
               {/* Building Life Cycle Services */}
+              
               <div>
               <motion.div 
               initial={{opacity:0}}
-              animate={{opacity:1, transition:{delay:2.5, duration:1}}} 
+              animate={{opacity:1, transition:{delay:4, duration:1}}} 
               className="items-center justify-center flex">
                 <div className=" bg-light_bg font-thin text-center xl:w-[700px] rounded-2xl p-7 xl:m-10 my-2  flex items-center justify-center">
                   <h1 className="lg:w-[400px] 2xl:text-6xl lg:text-5xl text-3xl">{life_cycle_services.title}</h1>
@@ -470,15 +471,18 @@ function ServicesNew(){
               </motion.div>
               <div className="flex justify-center">
                 {/* motion */}
-                <div>
-                  <div className="flex justify-center 2xl:h-[600px] rounded-2xl 2xl:mx-10 p-5 my-5 2xl:my-0 xl:w-[600px] w-[375px]" style={{backgroundColor: `${life_cycle_services.color}`}}>
+                <motion.div
+                initial={{opacity:0}}
+                animate={{opacity:1, transition:{delay:4.5, duration:1}}} 
+                >
+                  <div className="flex justify-center 2xl:h-[625px] rounded-2xl 2xl:mx-10 p-5 my-5 2xl:my-0 xl:w-[600px] w-[375px]" style={{backgroundColor: `${life_cycle_services.color}`}}>
                     <div>
                       <div className="2xl:w-[500px] flex items-center justify-center rounded-2xl px-5 py-4 xl:mx-10 xl:my-4 shadow-inner font-medium" style={{backgroundColor: `${life_cycle_services.list_color}`}}>
                         <div className="flex items-center justify-center p-4 xl:p-6 ">
                           <ul>
                             {life_cycle_services.services.map((list_item)=> {
                               return(
-                                <li key={list_item.alt} className="list-disc xl:text-lg text-dark_text">
+                                <li key={list_item.alt} className="list-disc xl:text-xl text-dark_text">
                                   <p className="text-dark_text">{list_item.service}</p>
                                 </li>
                               )
@@ -489,7 +493,7 @@ function ServicesNew(){
                     </div>
 
                   </div>
-                </div>
+                </motion.div>
 
               </div>
               </div>
@@ -497,21 +501,24 @@ function ServicesNew(){
               <div>
               <motion.div 
               initial={{opacity:0}}
-              animate={{opacity:1, transition:{delay:2.5, duration:1}}} 
+              animate={{opacity:1, transition:{delay:4, duration:1}}} 
               className="items-center justify-center flex">
                 <h1 className=" bg-light_bg font-thin text-center rounded-2xl p-7 xl:m-10 my-2 xl:w-[675px] lg:w-[600px] w-[400px] 2xl:text-6xl lg:text-5xl text-3xl  flex ">{construction_services.title}</h1>
               </motion.div>
               <div className="flex justify-center">
                 {/* motion */}
-                <div>
-                  <div className="flex justify-center xl:h-[600px] rounded-2xl 2xl:mx-10 p-5 my-5 2xl:my-0 xl:w-[600px] w-[375px]" style={{backgroundColor: `${construction_services.color}`}}>
+                <motion.div
+                initial={{opacity:0}}
+                animate={{opacity:1, transition:{delay:4.5, duration:1}}} 
+                >
+                  <div className="flex justify-center xl:h-[625px] rounded-2xl 2xl:mx-10 p-5 my-5 2xl:my-0 xl:w-[600px] w-[375px]" style={{backgroundColor: `${construction_services.color}`}}>
                     <div>
                       <div className="2xl:w-[500px] flex items-center justify-center rounded-2xl px-5 py-4 xl:mx-10 xl:my-4 shadow-inner font-medium" style={{backgroundColor: `${construction_services.list_color}`}}>
                         <div className="flex items-center justify-center p-4 xl:p-6 ">
                           <ul>
                             {construction_services.services.map((list_item)=> {
                               return(
-                                <li key={list_item.alt} className="list-disc xl:text-lg text-dark_text">
+                                <li key={list_item.alt} className="list-disc xl:text-xl text-dark_text">
                                   <p className="text-dark_text">{list_item.service}</p>
                                 </li>
                               )
@@ -522,7 +529,7 @@ function ServicesNew(){
                     </div>
 
                   </div>
-                </div>
+                </motion.div>
 
               </div>
               </div>
