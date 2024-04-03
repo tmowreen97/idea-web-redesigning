@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Image from 'next/image';
 
 function ServicesNew(){
 
@@ -389,7 +390,7 @@ function ServicesNew(){
                     {/* List Title w Image*/}
                     <div className="items-center justify-center flex my-2">
                       <h1 className="text-dark_text xl:text-4xl text-3xl p-5">{service.title}</h1>
-                      {/* <Image src={service.icon} width={service.width ? service.width : 70} height={100} className="bg-black/20 rounded-2xl py-2"/> */}
+                      <Image src={service.icon} width={service.width ? service.width : 70} height={100} className="bg-black/20 rounded-2xl py-2"/>
                     </div>
                     <div className="2xl:w-[400px] xl:w-[345px] lg:w-[325px] 2xl:h-[525px] items-start flex justify-center rounded-2xl p-8 shadow-inner font-medium" style={{backgroundColor: `${service.list_color}`}}>
                     <div className="">
@@ -429,7 +430,7 @@ function ServicesNew(){
                     {/* List Title w Image */}
                     <div className="items-center justify-center flex my-2">
                       <h1 className="text-dark_text text-3xl xl:text-4xl p-5">{service.title}</h1>
-                      {/* <Image src={service.icon} width={service.width ? service.width : 70} height={100} className="bg-black/10 rounded-2xl py-2"/> */}
+                      <Image src={service.icon} width={service.width ? service.width : 70} height={100} className="bg-black/10 rounded-2xl py-2"/>
                     </div>
                     <div className="2xl:w-[400px] xl:h-[200px] flex justify-center rounded-2xl p-5 shadow-inner font-medium" style={{backgroundColor: `${service.list_color}`}}>
                     <div>
