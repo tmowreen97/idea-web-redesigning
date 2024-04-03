@@ -457,11 +457,11 @@ function ServicesNew(){
           </div>
           </div>
           {/* Building Life Cycle Services + Project Management Services */}
-          <div className="font-light justify-center">
-            <div className="xl:grid grid-cols-2 items-start h-full">
+          <div className="font-light flex justify-center">
+            <div className="xl:grid xl:grid-cols-2 items-start h-full ">
               {/* Building Life Cycle Services */}
               
-              <div>
+              <div >
               <motion.div 
               initial={{opacity:0}}
               animate={{opacity:1, transition:{delay:4, duration:1}}} 
