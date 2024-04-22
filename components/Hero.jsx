@@ -229,6 +229,7 @@ function Hero({heading}){
     <div className='flex items-center justify-center h-screen w-screen pb-16 bg-center bg-cover custom-img'>
       <div className=" mb-40 md:mb-0 ">
         { !isBreakPoint ? 
+        // ""
         blinkers.map((blinker)=> {
           return(
             <motion.div 
@@ -238,12 +239,14 @@ function Hero({heading}){
               <Blinker blinker={blinker} delayTime={blinker.delayTime} blinker_name={blinker.name} repeatDelayTime={blinker.repeatDelayTime} bgColor={blinker.bgColor} classDesc={blinker.classDesc}/>
             </motion.div>
           )
-        }) : 
+        }) 
+        : 
+        /* MOBILE HERO */
         <div className="text-center justify-center items-center flex">
           <div className='justify-center items-center ml-10'>
           
           
-          {/* MOBILE HERO */}
+          
           <motion.div
             initial={{opacity:0}}
             whileInView={{opacity:1, transition:{delay:2, duration:1}}}
