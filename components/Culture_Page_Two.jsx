@@ -17,6 +17,31 @@ function Culture_Page_Two(){
   const [showDropDown, setShowDropDown] = useState(false)
   const [category, setCategory] = useState("All Developments")
   const allPosts = [
+    //3 YEAR ANNIVERSARY
+    {
+      id: 9,
+      title: 'IDEA Turns 3',
+      date: 'April 19, 2024 ',
+      text: [
+        "Three years of successfully contributing to the AEC industry and we are proud of it. Good IDEAs are contagious and as our team continues to grow, we look forward to welcoming new challenges and opportunities. Thank You Kazi, Vinoo, Jameer, Sm, Karl, Hassan, Jacob, Matt, Nancy, Nabila and Tasreen for your efforts, commitments, and hard work.",
+        ],
+      slideshow: [
+        {
+          title: '3_year_anniversary_1',
+          image: '/assets/culture/3_year/MSC-site.jpg'
+        },
+        {
+          title: '3_year_anniversary_2',
+          image: '/assets/culture/3_year/MSC-site-updated.jpg'
+        },
+        {
+          title: '3_year_anniversary_3',
+          image: '/assets/culture/3_year/team-webex.jpeg'
+        },
+      ],
+      special: "2xl:w-[895px] 2xl:h-[680px] xl:w-[700px] xl:h-[600px]  lg:w-[500px] lg:h-[400px] w-[340px] h-[300px] rounded-2xl bg-center bg-cover hover:scale-105  duration-500 transform p-0 z-0",
+      category: "Cultural Developments",
+    },
     //JAMEER UPDATE
     {
       id: 9,
@@ -70,7 +95,9 @@ function Culture_Page_Two(){
           image: '/assets/culture/j&s/j&s-4.jpg'
         },
       ],
-      special: "xl:w-[800px] xl:h-[700px] w-[320px] h-[400px] rounded-2xl bg-center bg-cover hover:scale-105  duration-500 transform p-0 z-0",
+      special: "2xl:w-[800px] 2xl:h-[700px] xl:w-[700px] xl:h-[600px] lg:w-[600px] lg:h-[500px] w-[320px] h-[400px] rounded-2xl bg-center bg-cover hover:scale-105  duration-500 transform p-0 z-0",
+
+
       category: "Project Developments",
     },
     // 2 Year BBQ
@@ -222,8 +249,7 @@ function Culture_Page_Two(){
         }
       ],
       category: "Cultural Developments",
-      special: "xl:w-[700px] xl:h-[650px] w-[320px] h-[400px] rounded-2xl bg-center bg-cover hover:scale-105  duration-500 transform p-0 z-0",
-
+      special: "2xl:w-[700px] 2xl:h-[650px] xl:w-[600px] xl:h-[550px] lg:w-[425px] lg:h-[400px] w-[320px] h-[400px] rounded-2xl bg-center bg-cover hover:scale-105  duration-500 transform p-0 z-0",
     },
     //IDEA Turns 1
     {
@@ -379,11 +405,11 @@ function Culture_Page_Two(){
           </div> : ""}
       </div>
       {/* Social Media Links */}
-      <div>
+      <div className="m-4">
         <motion.div 
         initial={{opacity:0}}
         animate={{opacity:1, transition:{duration:2, delay:1.5} }}
-        className="flex justify-evenly p-14  rounded-xl text-primary_text/90">
+        className="flex justify-evenly lg:p-14  rounded-xl text-primary_text/90">
           <div className="bg-tertiary/80 hover:bg-accent_2/80  rounded-full p-7 text-5xl mx-2">
             <Link href="https://www.instagram.com/idea.aec/" legacyBehavior>
                 <a target="_blank" rel="noopener noreferrer" aria-label="Instagram">
@@ -454,6 +480,7 @@ function Culture_Page_Two(){
                     counter%2==0 ? 
                     
                     // EVEN POSTS
+                    <div className="justify-center">
                     <motion.div 
                       initial={{opacity:0.15}}
                       whileInView={{opacity:1, scale:[0.95, 1], transition:{duration:1.5}}}
@@ -516,8 +543,10 @@ function Culture_Page_Two(){
                       </div>
                     </div>
                     </motion.div>
+                    </div>
                     :
                     //ODD POSTS
+                    <div className="">
                     <motion.div 
                     initial={{opacity:0.15}}
                     whileInView={{opacity:1, scale:[1.05, 1], transition:{duration:1.5}}} className="bg-secondary/40 rounded-xl p-[5%] tracking-wider font-light xl:max-h-[900px] h-full">
@@ -580,6 +609,8 @@ function Culture_Page_Two(){
                       
                     </div>
                     </motion.div>
+                    </div>
+                    
                     
                   }
                   
