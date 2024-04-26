@@ -45,7 +45,7 @@ const Navbar = ({setLightLogo, lightLogo}) => {
       initial={{opacity:0}}
       whileInView={{opacity:1, transition:{delay:0.6, duration:1}}}
       style={{ backgroundColor: `${color}`, opacity:40}}
-      className='fixed left-0 top-0 w-full z-10 ease-in duration-200 tracking-wider'
+      className='fixed left-0 top-0 w-full z-20 ease-in duration-200 tracking-wider'
     >
       <div className='w-screen  m-auto flex justify-between items-center p-3 text-white ml-1'>
         <motion.div

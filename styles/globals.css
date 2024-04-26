@@ -9,12 +9,15 @@ html{
   font-family: var(--font-urbanist);
 }
 
-.custom-img{
-  background-image: url("/assets/1-hero-crop.webp ");
-}
 /* .custom-img{
-  background-image: url("/assets/updated-landing.jpg ");
+  background-image: url("/assets/1-hero-crop.webp ");
 } */
+.custom-img{
+  background-image: url("/assets/updated-landing copy.jpg ");
+}
+.mobile-img{
+  background-image: url("/assets/updated-landing copy 2.jpg ");
+}
 
 h2{
   color:#DAD3F5;

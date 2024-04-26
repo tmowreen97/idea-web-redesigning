@@ -44,14 +44,16 @@ function ProjectHome(){
   return(
     <div id='projects' className='w-screen lg:h-full bg-primary'>
       <div className='relative flex items-center justify-center p-4 pt-20 lg:pt-[5%]'>
-      <div className="projecthome__parent lg:grid flexbox  ">
+      <div className="projecthome__parent xl:grid flexbox  ">
         <div className="projecthome__title mr-2 ml-5 ">
           <h1 className="lg:text-[1000%] text-8xl tracking-wide text-left lg:ml-[65px] font-thin mb-10 lg:mt-[8%] text-primary_text">
             Projects
           </h1>
         </div>
-        <div className="projecthome__child1 lg:p-10 p-2 bg-secondary/50 rounded-xl lg:mr-5 lg:ml-4  lg:m-0 w-[375px] lg:w-[815px]">
-          <div className="lg:h-[450px] lg:w-full lg:px-4 p-1  mb-[0%]">
+        {/* CAROUSEL */}
+        
+        <div className="projecthome__child1 lg:p-10 p-2 bg-secondary/50 rounded-xl lg:mr-5 lg:ml-4  lg:m-0 w-[375px] xl:w-[815px] lg:w-[715px] ">
+          <div className="lg:h-[450px] lg:w-full lg:px-4 p-1  mb-[0%] flex justify-center">
             <Carousel 
               array={projects} 
               handleIndex = {handleIndex}
@@ -59,14 +61,18 @@ function ProjectHome(){
             />
             </div>
         </div>
-        <div className="projecthome__img relative bg-secondary/50 items-center text-center justify-center lg:p-5 rounded-xl w-[375px] mt-3 lg:w-[450px] lg:h-[45%] lg:mt-20 lg:m-0">
+        
+        {/* DROPDOWN */}
+        <div >
+        <div className="projecthome__img relative bg-secondary/50 items-center text-center justify-center lg:p-5 rounded-xl w-[360px] xl:w-[450px] lg:w-[350px] lg:h-[45%] lg:mt-20 xl:mt-24  xl:mx-1 mx-4 my-4">
+          <div className="flex justify-center">
           <div className="relative">
             <button 
             id='drop_down_button'
             aria-label='drop_down_button'
             onClick={()=> {setShowDropDown(!showDropDown)}}
             data-dropdown-toggle="dropdown" 
-            className="relative lg:w-[400px] lg:text-2xl text-xl justify-between  hover:bg-secondary/60 focus:ring-4 focus:outline-none focus:ring-secondary_text font-medium rounded-lg p-4 lg:mt-2 text-center inline-flex items-center text-secondary_text" type="button">
+            className="relative xl:w-[400px] lg:w-[300px] xl:text-2xl text-xl justify-between  hover:bg-secondary/60 focus:ring-4 focus:outline-none focus:ring-secondary_text font-medium rounded-lg py-4 xl:px-4 px-0 lg:mt-2 text-center inline-flex items-center text-secondary_text" type="button">
               {projects[projectSelect].sector}
               { showDropDown ? <BsChevronCompactUp/> : <BsChevronCompactDown/>}
             </button>
@@ -103,7 +109,7 @@ function ProjectHome(){
           
           
           </div>
-          
+          </div>
 
     
           {/* <div className='category__select'>
@@ -121,16 +127,19 @@ function ProjectHome(){
 
           </div> */}
         </div>
-        <div className="projecthome__child2 p-10 bg-secondary/50 rounded-xl md:w-[450px] md:m-0 m-2 md:h-[550px] h-[600px] w-[360px]">
-          <div>
-            <div className="absolute md:w-[380px] h-[525px] w-[250px] md:h-[475px]">
+        </div>
+        
+        {/* DESCRIPTION */}
+        <div className="projecthome__child2 p-10 bg-secondary/50 rounded-xl xl:w-[450px] lg:w-[600px] w-[360px] md:m-0 m-2 xl:h-[550px] h-[560px] ">
+          <div className="flex justify-center">
+            <div className="absolute xl:w-[380px] lg:w-[380px] w-[300px] md:h-[475px] h-[475px]">
             <div className="relative">
-              <h2 className="md:text-4xl text-2xl m-2">{projects[projectSelect].name}</h2>
+              <h2 className="xl:text-4xl lg:text-3xl text-2xl m-2">{projects[projectSelect].name}</h2>
               <div className="m-2">
-                <h3 className="tracking-wider md:text-xl text-secondary_text">{projects[projectSelect].location}</h3>
-                <h3 className="tracking-wider md:text-xl text-secondary_text">{projects[projectSelect].year}</h3>
+                <h3 className="tracking-wider xl:text-xl text-secondary_text">{projects[projectSelect].location}</h3>
+                <h3 className="tracking-wider xl:text-xl text-secondary_text">{projects[projectSelect].year}</h3>
               </div>
-              <p className="tracking-wider m-2 md:text-lg">{projects[projectSelect].desc}</p>
+              <p className="tracking-wider m-2 xl:text-lg">{projects[projectSelect].desc}</p>
               {projects[projectSelect].disclaimer ? <p className="tracking-wider m-2 text-[12px]">{projects[projectSelect].disclaimer}</p> : ""}
             </div>
             <div className=" text-center absolute bottom-0 md:left-[15%] left-5 ">
@@ -140,13 +149,14 @@ function ProjectHome(){
             </div>
             
           </div>
-          </div>
+         
           
           
           
           
           {/* <h1 className="text-4xl">Our Story</h1>
           <p className="tracking-wider">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p> */}
+        </div>
         </div>
       </div>
   </div>

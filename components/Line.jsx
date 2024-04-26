@@ -3,7 +3,7 @@ import Image from "next/image";
 
 function Line({setShowDesc, blinker}){
   return(
-    <div className="">
+    <div className="z-0">
       <span className="z-0">
         <div className={blinker.svg_w}>
         <svg height={blinker.svg_h} className={blinker.svg_class} >
