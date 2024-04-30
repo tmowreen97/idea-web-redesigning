@@ -17,9 +17,25 @@ function Culture_Page_Two(){
   const [showDropDown, setShowDropDown] = useState(false)
   const [category, setCategory] = useState("All Developments")
   const allPosts = [
+    //MSC CONSTRUCTION MILESTONE
+    {
+      id: 11,
+      title: "MSC Construction Milestone",
+      date: 'April 30, 2024',
+      text: [
+        "Another milestone achieved at IDEA! Check out the view from the 6th level of our Garage as we witness the installation of our new cooling towers on the 4th level. These towers are crucial to our building’s mechanical system, marking a significant step towards completing our MEP systems. Let’s keep the progress rolling!",
+      ],
+      single_image: {
+        title: 'msc_construction_milestone',
+        image: '/assets/culture/MSC-milestone/MSC-Construction-Milestone.jpg',
+        width: 1000,
+        height:500,
+      },
+      category: "Project Developments",
+    },
     //3 YEAR ANNIVERSARY
     {
-      id: 9,
+      id: 10,
       title: 'IDEA Turns 3',
       date: 'April 19, 2024 ',
       text: [
