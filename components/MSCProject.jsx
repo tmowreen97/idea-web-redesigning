@@ -84,6 +84,13 @@ function MSCProject(){
                 </div>
               </div>
             </div>
+            <div className="flex justify-left px-20 p-10 xl:max-w-[1600px]">
+              <div>
+                <div>
+                  <h2>Make sure to follow along </h2>
+                </div>
+              </div>
+            </div>
             </div>
         </div> 
         

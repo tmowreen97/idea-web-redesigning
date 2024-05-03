@@ -39,6 +39,33 @@ export default function Portfolio(){
         
       ],
       image: '/assets/projects/featured/msc-featured.jpg',
+      images_array: [
+        {
+          title: 'MSC-1',
+          image: '/assets/projects/com-trans/MSC-1.jpg'
+        },
+        {
+          title: 'MSC-2',
+          image: '/assets/projects/com-trans/MSC-2-new.jpg'
+        },
+        {
+          title: 'MSC-3',
+          image: '/assets/projects/com-trans/MSC-3-new.jpg'
+        },
+        {
+          title: 'MSC-4',
+          image: '/assets/projects/com-trans/MSC-4-new.jpg'
+        },
+        {
+          title: 'MSC-5',
+          image: '/assets/projects/com-trans/MSC-5-new.jpg'
+        },
+        {
+          title: 'MSC-6',
+          image: '/assets/projects/com-trans/MSC-6-new.jpg'
+        },
+        
+      ],
       width: '700',
       height: '600',
       disclaimer: "",
