@@ -14,8 +14,8 @@ function ImageCarousel({projectImages}){
   const [nextImgIndex, setNextImgIndex] = useState(2)
   const [currentImgIndex, setCurrentImgIndex] = useState(1)
   
-  console.log(previousImgIndex,currentImgIndex,nextImgIndex)
-  console.log('current',updatedImgs)
+  // console.log(previousImgIndex,currentImgIndex,nextImgIndex)
+  // console.log('current',updatedImgs)
 
   function handleImage(){
     
@@ -125,14 +125,13 @@ function ImageCarousel({projectImages}){
           {updatedImgs.map((img, index)=> {
             handleImage()
             return(
-              <Image className={img.className} src={img.image} data-index={index+1} width={500} height={400} id={img.title}/>
+              <Image className={img.className} src={img.image} data-index={index+1} width={600} height={500} id={img.title} quality={90}/>
             )
-            
           })}
         </div>
-        <div className="gallery-controls">
-          <button onClick={(e)=> handlePrevious(e)}>Previous</button>
-          <button onClick={(e)=> handleNext(e)}>Next</button>
+        <div className="gallery-controls font-light gap-40">
+          <button className="bg-button_bg px-6 rounded-xl" onClick={(e)=> handlePrevious(e)}>Previous</button>
+          <button className="bg-button_bg px-6 rounded-xl" onClick={(e)=> handleNext(e)}>Next</button>
         </div>
       </div>
     </div>

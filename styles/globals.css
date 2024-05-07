@@ -305,17 +305,17 @@ polyline {
 
 .gallery-item-1{
   box-shadow: -2px 5px 33px 6px rgba(0, 0, 0, .35) ;
-  height: 650px;
+  height: 750px;
   opacity:1;
   left: 50%;
   transform: translateX(-50%);
-  width:900px;
+  width:1000px;
   z-index: 2;
 }
 
 /* .gallery-item-3{
   box-shadow: -2px 5px 33px 6px rgba(0, 0, 0, .35) ;
-  height: 650px;
+  height: 60px;
   opacity:1;
   left: 50%;
   transform: translateX(-50%);
@@ -345,11 +345,13 @@ polyline {
 .gallery-controls{
   display: flex;
   justify-content: center;
-  margin: 100px 0;
-  height:100px;
+  /* margin: 220px 0px; */
+  margin-top: 240px;
+  height:40px;
+  
 }
 
-.gallery-controls button{
+/* .gallery-controls button{
   background-color: white;
   border:0;
   cursor: pointer;
@@ -358,9 +360,9 @@ polyline {
   padding: 0 10px;
   text-align: capitalize;
   border-radius: 15px;
-}
+} */
 
-.gallery-controls-button:focus{
+/* .gallery-controls-button:focus{
   outline:none
 }
 
@@ -381,10 +383,10 @@ polyline {
   transform: rotate(135deg) translateY(-50%);
   transition: left 0.15s ease-in-out;
   width: 5px;
-}
+} */
 
 
-.gallery-controls-previous:hover::before{
+/* .gallery-controls-previous:hover::before{
   left: 40px;
 }
 
@@ -409,8 +411,8 @@ polyline {
 
 .gallery-controls-next:hover:before{
   right: -40px;
-}
-
+} */
+/* 
 .gallery-nav{
   bottom: -15px;
   display: flex;
@@ -430,4 +432,4 @@ polyline {
 
 .gallery-nav li.gallery-item-selected{
   background: #555;
-}
+} */

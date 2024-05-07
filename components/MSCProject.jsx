@@ -100,6 +100,42 @@ function MSCProject(){
     
   ]
 
+  const projectServices=[
+    {
+      title: 'service-1',
+      service: 'MEP-FP Project Management', 
+    },
+    {
+      title: 'service-2',
+      service:'Construction PM Services', 
+    },
+    {
+      title: 'service-3',
+      service:'Mechanical',
+    },
+    {
+      title: 'service-4',
+      service:'Electrical',
+    },
+    {
+      title: 'service-5',
+      service: 'Fire Alarm Design'
+    }
+    
+  ]
+
+  const projectResources= [
+    {
+      title: 'MSC Cruises',
+      url: 'https://www.msccruisesusa.com/news/new-cruise-terminal-miami', 
+    },
+    {
+      title: 'Arquitectonica',
+      url: 'https://arquitectonica.com/architecture/project/msc-cruises-terminal-at-port-miami/' 
+    }
+    
+  ]
+
   function handleDesc(){
     setShowDesc(!showDesc)
   }
@@ -144,7 +180,7 @@ function MSCProject(){
                 </div>
               </div>
               {/* Image Carousel */}
-              <div className="justify-center px-20 p-10">
+              <div className="justify-center my-40 p-10">
                 <div> 
                   <ImageCarousel projectImages={projectImages}/>
                 </div>
@@ -184,27 +220,55 @@ function MSCProject(){
                 </div>
                 </div>
               </div>
-              {/* Services Container */}
-              <div className="flex justify-left px-20 p-10 xl:max-w-[1600px]">
-                <div>
-                  <div>
-                    <h2>Services Provided</h2>
+              {/* Services/Resources Container */}
+              <div className="px-20 p-10 xl:max-w-[1600px]">
+                <div className="">
+                <div className="grid grid-cols-2">
+                  {/* Services Container */}
+                  <div className="flex justify-center">
+                  <div className="">
+                    <div>
+                      <h2>Services</h2>
+                    </div>
+                    <div>
+                      <ul className="text-secondary_text text-2xl">
+                        {projectServices.map((serv)=>{
+                          return(
+                            <div>
+                              <li>{serv.service}</li>
+                            </div>
+                            
+                          )
+                        })}
+                      </ul>
+                    </div>
                   </div>
+                  </div>
+                  {/* Resources Container */}
+                  <div className="flex justify-center">
                   <div>
-                    <h2>List of Services</h2>
+                    <div>
+                      <h2>Resources</h2>
+                    </div>
+                    <div>
+                    <ul className="text-secondary_text text-2xl">
+                        {projectResources.map((resource)=>{
+                          return(
+                            <div>
+                              <li>
+                              <a href={resource.url} className="hover:text-accent_2 hover:underline" target="__blank" rel="noopener noreferrer" aria-label="Resource">{resource.title}</a>
+                              </li>
+                            </div>
+                            
+                          )
+                        })}
+                      </ul>
+                    </div>
+                  </div>
                   </div>
                 </div>
-              </div>
-              {/* Resources */}
-              <div className="flex justify-left px-20 p-10 xl:max-w-[1600px]">
-                <div>
-                  <div>
-                    <h2>Resources</h2>
-                  </div>
-                  <div>
-                    <h2>List of Resources</h2>
-                  </div>
                 </div>
+
               </div>
               {/* Contact */}
               <div className="flex justify-left px-20 p-10 xl:max-w-[1600px]">
