@@ -9,40 +9,53 @@ function MSCProject(){
 
   const projectImages = [
     {
+      title: 'MSC-image-0',
+      description: 'Image Description',
+      className: "gallery-item gallery-item-0",
+      class_list: ["gallery-item", "gallery-item-0"],
+      image: '/assets/projects/com-trans/MSC-1.jpg',
+    },
+    {
       title: 'MSC-image-1',
       description: 'Image Description',
       className: "gallery-item gallery-item-1",
-      image: '/assets/projects/com-trans/MSC-1.jpg',
+      class_list: ["gallery-item", "gallery-item-1"],
+      image: '/assets/projects/com-trans/MSC-2-new.jpg',
     },
     {
       title: 'MSC-image-2',
       description: 'Image Description',
       className: "gallery-item gallery-item-2",
-      image: '/assets/projects/com-trans/MSC-2-new.jpg',
+      class_list: ["gallery-item", "gallery-item-2"],
+      image: '/assets/projects/com-trans/MSC-3-new.jpg',
     },
     {
       title: 'MSC-image-3',
       description: 'Image Description',
       className: "gallery-item gallery-item-3",
-      image: '/assets/projects/com-trans/MSC-3-new.jpg',
+      class_list: ["gallery-item", "gallery-item-3"],
+      image: '/assets/projects/com-trans/MSC-4-new.jpg',
     },
     {
       title: 'MSC-image-4',
       description: 'Image Description',
       className: "gallery-item gallery-item-4",
-      image: '/assets/projects/com-trans/MSC-4-new.jpg',
+      class_list: ["gallery-item", "gallery-item-4"],
+      image: '/assets/projects/com-trans/MSC-5-new.jpg',
     },
     {
       title: 'MSC-image-5',
       description: 'Image Description',
       className: "gallery-item gallery-item-5",
-      image: '/assets/projects/com-trans/MSC-5-new.jpg',
+      class_list: ["gallery-item", "gallery-item-5"],
+      image: '/assets/projects/com-trans/MSC-6-new.jpg',
     },
     {
       title: 'MSC-image-6',
       description: 'Image Description',
       className: "gallery-item gallery-item-6",
-      image: '/assets/projects/com-trans/MSC-6-new.jpg',
+      class_list: ["gallery-item", "gallery-item-5"],
+      image: '/assets/projects/com-trans/msc-ct.jpg',
     },
     
   ]
