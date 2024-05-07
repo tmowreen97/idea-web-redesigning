@@ -285,8 +285,9 @@ polyline {
 
 .gallery-item-0{
   left: 10%;
-  opacity:.6;
+  opacity:.9;
   transform: translateX(-50%);
+  transition: 0.15s ease-in-out;
 }
 
 /* .gallery-item-2, .gallery-item-4{
@@ -325,8 +326,10 @@ polyline {
 .gallery-item-2{
   left:90%;
   transform: translateX(-50%);
-  opacity:.6;
+  opacity:.9;
+  transition: 0.15s ease-in-out;
 } 
+
 
 /* .gallery-item-4{
   left:90%;
