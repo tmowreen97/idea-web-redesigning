@@ -9,10 +9,10 @@ function Cards({feature}){
   }
   
   return(
-    <div>
-      <div onMouseEnter={()=>handleDesc()} className="bg-light_bg w-[400px] h-[400px] rounded-xl">
-        <div className="flex items-center text-center align-middle justify-center p-[30%]">
-          {showDesc ? <p className=" text-dark_text text-center  text-4xl">{feature.description}</p> : <p className=" text-dark_text text-center max-w-[200px]  text-4xl">{feature.heading}</p>}
+    <div className="relative">
+      <div onMouseEnter={()=>handleDesc()} className={showDesc? "bg-shaded_bg w-[400px] h-[400px] rounded-xl shadow-lg shadow-black/70 " : "bg-light_bg w-[400px] h-[400px] rounded-xl shadow-lg shadow-black/70"}>
+        <div className=" items-center text-center align-middle justify-center">
+          <p className={showDesc ? " text-secondary_text text-center text-pretty text-4xl absolute top-[30%] p-10 justify-center w-full" : " text-dark_text text-center absolute text-pretty text-4xl top-[40%] justify-center w-full"}>{showDesc ? feature.description : feature.heading}</p> 
         </div>
       </div>
       

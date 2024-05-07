@@ -205,7 +205,7 @@ function MSCProject(){
                   {/* Cards */}
                   <div className="flex justify-center">
                     <div className="">
-                    <div className="grid-cols-3 grid justify-center items-center gap-4 p-20">
+                    <div className="grid-cols-3 grid justify-center items-center gap-8 p-20">
                       {projectFeatures.map((feature)=> {
                       return(
                         <Cards feature={feature}/>

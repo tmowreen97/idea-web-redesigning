@@ -28,6 +28,7 @@ module.exports = {
         dark_text : '#301B3D',
         button_bg : '#C0B4D3',
         light_bg : '#E9DCF9',
+        shaded_bg: '#4b3c5c',
         dark_bg : '#170927'
       },
       fontFamily: {
