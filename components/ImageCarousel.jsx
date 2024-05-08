@@ -1,11 +1,11 @@
 import Image from "next/image";
 import { useState } from "react";
-import dynamic from 'next/dynamic'
-import next from "next";
+// import dynamic from 'next/dynamic'
+// import next from "next";
  
-const DynamicHeader = dynamic(() => import('../components/ImageCarousel'), {
-  ssr: false,
-})
+// const DynamicHeader = dynamic(() => import('../components/ImageCarousel'), {
+//   ssr: false,
+// })
 
 
 function ImageCarousel({projectImages}){
@@ -13,6 +13,8 @@ function ImageCarousel({projectImages}){
   const [previousImgIndex, setPreviousImgIndex] = useState(0)
   const [nextImgIndex, setNextImgIndex] = useState(2)
   const [currentImgIndex, setCurrentImgIndex] = useState(1)
+  const [showDesc, setShowDesc] = useState(false)
+  const [imageDesc, setImageDesc] = useState('')
   
   // console.log(previousImgIndex,currentImgIndex,nextImgIndex)
   // console.log('current',updatedImgs)
@@ -24,36 +26,6 @@ function ImageCarousel({projectImages}){
     updatedImages[previousImgIndex].className = `gallery-item gallery-item-0`
     updatedImages[currentImgIndex].className = `gallery-item gallery-item-1`
     updatedImages[nextImgIndex].className = `gallery-item gallery-item-2`
-    // console.log('new',updatedImages)
-
-    // const newImgs = projectImages.map(img => {
-    //   if (img.title == `MSC-image-${previousImgIndex}`){
-    //     return {...img, className: `gallery-item gallery-item-${previousImgIndex}`}
-    //   }
-    //   return img;
-    // })
-    // updatedImgs[previousImgIndex].className = `gallery-item gallery-item-${previousImgIndex}`
-    // updatedImgs[currentImgIndex].className = `gallery-item gallery-item-${currentImgIndex}`
-    // updatedImgs[nextImgIndex].className = `gallery-item gallery-item-${nextImgIndex}`
-    
-    // console.log(
-    //   'previous image', updatedImgs[previousImgIndex],
-    //   'current image', updatedImgs[currentImgIndex],
-    //   'next image', updatedImgs[nextImgIndex]
-    // )
-    // let newPreviousImage = updatedImgs.find(img => img.title == `MSC-image-${previousImgIndex}`)
-    // console.log(newPreviousImage.className=`gallery-item gallery-item-${previousImgIndex}`)
-    // newPreviousImage.className = `gallery-item gallery-item-${previousImgIndex}`
-    // projectImages.find(img => img.title = `MSC-image-${currentImgIndex}`).className = `gallery-item gallery-item-${currentImgIndex}`
-    // projectImages.find(img => img.title = `MSC-image-${nextImgIndex}`).className = `gallery-item gallery-item-${nextImgIndex}`
-    // console.log('after handle image',updatedImgs)
-    // console.log('prev',previousImgIndex,'current',currentImgIndex,'next',nextImgIndex)
-    // console.log(document.getElementById(`MSC-image-${previousImgIndex}`)).classList
-    // console.log(document.getElementById(`MSC-image-${currentImgIndex}`)).classList
-    // console.log(document.getElementById(`MSC-image-${nextImgIndex}`)).classList
-    // document.getElementById(`MSC-image-${previousImgIndex}`).classList=`gallery-item gallery-item-${previousImgIndex}`
-    // document.getElementById(`MSC-image-${currentImgIndex}`).classList=`gallery-item gallery-item-${currentImgIndex}`
-    // document.getElementById(`MSC-image-${nextImgIndex}`).classList=`gallery-item gallery-item-${nextImgIndex}`
   }
 
   function handleNext(e){
@@ -116,6 +88,13 @@ function ImageCarousel({projectImages}){
     }    
   }
 
+  function handleDesc(e){
+    console.log(projectImages[e.target.dataset.index].description)
+    if (e.target.className=="gallery-item gallery-item-1"){
+      setImageDesc(projectImages[e.target.dataset.index].description)
+      setShowDesc(!showDesc)
+    }
+  }
 
   return(
     <div>
@@ -125,7 +104,15 @@ function ImageCarousel({projectImages}){
           {updatedImgs.map((img, index)=> {
             handleImage()
             return(
-              <Image className={img.className} src={img.image} data-index={index+1} width={600} height={500} id={img.title} quality={90}/>
+              <>
+                <Image onClick={(e)=> handleDesc(e)} className={img.className} src={img.image} data-index={index} width={600} height={500} id={img.title} quality={90}/>
+                { showDesc ? <div onClick={()=> setShowDesc(!showDesc)} className="bg-black/10 absolute z-10  w-[1000px] h-[750px] rounded-xl">
+                  <div className="relative top-[45%] text-center">
+                    <p className="w-full text-2xl font-light">{imageDesc}</p>
+                  </div>
+                </div> : ''}
+              </>
+              
             )
           })}
         </div>
