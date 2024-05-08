@@ -311,6 +311,7 @@ polyline {
   transform: translateX(-50%);
   width:1000px;
   z-index: 2;
+  cursor: pointer;
 }
 
 /* .gallery-item-3{

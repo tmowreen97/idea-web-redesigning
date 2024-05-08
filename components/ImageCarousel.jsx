@@ -106,7 +106,7 @@ function ImageCarousel({projectImages}){
             return(
               <>
                 <Image onClick={(e)=> handleDesc(e)} className={img.className} src={img.image} data-index={index} width={600} height={500} id={img.title} quality={90}/>
-                { showDesc ? <div onClick={()=> setShowDesc(!showDesc)} className="bg-black/10 absolute z-10  w-[1000px] h-[750px] rounded-xl">
+                { showDesc ? <div onClick={()=> setShowDesc(!showDesc)} className="bg-black/10 absolute z-10 cursor-pointer  w-[1000px] h-[750px] rounded-xl">
                   <div className="relative top-[45%] text-center">
                     <p className="w-full text-2xl font-light">{imageDesc}</p>
                   </div>
@@ -116,9 +116,9 @@ function ImageCarousel({projectImages}){
             )
           })}
         </div>
-        <div className="gallery-controls font-light gap-40">
-          <button className="bg-button_bg px-6 rounded-xl" onClick={(e)=> handlePrevious(e)}>Previous</button>
-          <button className="bg-button_bg px-6 rounded-xl" onClick={(e)=> handleNext(e)}>Next</button>
+        <div className="gallery-controls font-light gap-40 text-xl">
+          <button className="bg-button_bg px-7 h-14 rounded-xl" onClick={(e)=> handlePrevious(e)}>Previous</button>
+          <button className="bg-button_bg px-7 h-14 rounded-xl" onClick={(e)=> handleNext(e)}>Next</button>
         </div>
       </div>
     </div>
