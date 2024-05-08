@@ -117,8 +117,8 @@ function ImageCarousel({projectImages}){
           })}
         </div>
         <div className="gallery-controls font-light gap-40 text-xl">
-          <button className="bg-button_bg px-7 h-14 rounded-xl" onClick={(e)=> handlePrevious(e)}>Previous</button>
-          <button className="bg-button_bg px-7 h-14 rounded-xl" onClick={(e)=> handleNext(e)}>Next</button>
+          <button className="bg-button_bg hover:bg-button_highlight/90 hover:shadow-md hover:shadow-black/80 shadow-sm shadow-black/80 px-7 h-14 rounded-xl " onClick={(e)=> handlePrevious(e)}>Previous</button>
+          <button className="bg-button_bg hover:bg-button_highlight/90 hover:shadow-md hover:shadow-black/80 shadow-sm shadow-black/80 px-7 h-14 rounded-xl" onClick={(e)=> handleNext(e)}>Next</button>
         </div>
       </div>
     </div>
