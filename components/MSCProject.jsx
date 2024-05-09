@@ -136,9 +136,7 @@ function MSCProject(){
     
   ]
 
-  function handleDesc(){
-    setShowDesc(!showDesc)
-  }
+  
   return(
     <div className="w-screen h-full bg-primary font-thin">
       <div className="">
@@ -208,7 +206,7 @@ function MSCProject(){
                     <div className="grid-cols-3 grid justify-center items-center gap-8 p-20">
                       {projectFeatures.map((feature)=> {
                       return(
-                        <Cards feature={feature}/>
+                        <Cards key={feature.title} feature={feature}/>
                         )
                       })}
                     </div>
@@ -231,11 +229,11 @@ function MSCProject(){
                       <h2>Services</h2>
                     </div>
                     <div>
-                      <ul className="text-secondary_text text-2xl">
+                      <ul className="text-secondary_text text-2xl font-light">
                         {projectServices.map((serv)=>{
                           return(
-                            <div>
-                              <li>{serv.service}</li>
+                            <div key={serv.title}>
+                              <li className="py-2">{serv.service}</li>
                             </div>
                             
                           )
@@ -251,12 +249,12 @@ function MSCProject(){
                       <h2>Resources</h2>
                     </div>
                     <div>
-                    <ul className="text-secondary_text text-2xl">
+                    <ul className="text-secondary_text text-2xl font-light">
                         {projectResources.map((resource)=>{
                           return(
                             <div>
-                              <li>
-                              <a href={resource.url} className="hover:text-accent_2 hover:underline" target="__blank" rel="noopener noreferrer" aria-label="Resource">{resource.title}</a>
+                              <li className="p-2 ">
+                                <a href={resource.url} className="hover:text-light_accent_2 hover:underline" target="__blank" rel="noopener noreferrer" aria-label="Resource">{resource.title}</a>
                               </li>
                             </div>
                             

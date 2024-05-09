@@ -105,7 +105,7 @@ function ImageCarousel({projectImages}){
             handleImage()
             return(
               <>
-                <Image onClick={(e)=> handleDesc(e)} className={img.className} src={img.image} data-index={index} width={600} height={500} id={img.title} quality={90}/>
+                <Image onClick={(e)=> handleDesc(e)} key={img.title} className={img.className} src={img.image} data-index={index} width={600} height={500} id={img.title} quality={90}/>
                 { showDesc ? <div onClick={()=> setShowDesc(!showDesc)} className="bg-black/10 absolute z-10 cursor-pointer  w-[1000px] h-[750px] rounded-xl">
                   <div className="relative top-[45%] text-center">
                     <p className="w-full text-2xl font-light">{imageDesc}</p>

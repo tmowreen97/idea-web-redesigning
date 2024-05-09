@@ -23,6 +23,7 @@ module.exports = {
         footer_bg: '#564C6A',
         accent_1 : '#9C6DB5',
         accent_2 : '#9C36FC',
+        light_accent_2: '#AE5BFC',
         primary_text : '#F6F6F6',
         secondary_text : '#DAD3F5',
         dark_text : '#301B3D',
