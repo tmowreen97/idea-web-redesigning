@@ -64,7 +64,7 @@ function MSCProject(){
     {
       title:'proj-feature-1',
       heading: 'MECHANICAL PLANTS',
-      description: 'Mechanical plants desc',
+      description: "Garage structure houses Mechanical (HVAC) Cooling plants. Location was planned accordingly to conceal and not impact patron experience.",
       img: '/assets/logos/mech-icon.png',
       img_width: 275,
       img_className: 'top-[20%] absolute',
@@ -73,7 +73,7 @@ function MSCProject(){
     {
       title:'proj-feature-2',
       heading: 'SMOKE CONTROL SYSTEM',
-      description: 'Smoke control System desc',
+      description: "Terminal will consist of a NFPA-92 compliant Smoke Control System serving the whole smoke-protected areas. Terminal's Architecture, Mechanical, Electrical, Fire Alarm and Fire Protection systems will function coherently to achieve required smoke remove.",
       img: '/assets/logos/mech-icon.png',
       img_width: 275,
       img_className: 'top-[20%] absolute',
@@ -81,7 +81,7 @@ function MSCProject(){
     {
       title:'proj-feature-3',
       heading: 'ELECTRIC VEHICLE CHARGING',
-      description: 'Electric Vehicle Charging desc',
+      description: "Garage consists 2,500+ Parking spaces with 250+ spaces of Level-2 Electrical (EV) charging infrastructure.",
       img: '/assets/logos/elec-icon.png',
       img_width: 200,
       img_className: 'top-[20%] absolute',
@@ -89,7 +89,7 @@ function MSCProject(){
     {
       title:'proj-feature-4',
       heading: 'ART IN PUBLIC PLACES',
-      description: 'Art in Public Places desc',
+      description: "Terminal will include various Art in Public installations to highlight artist to enrich the public environment. A 3D Projection/Light show is planned to work with Terminal's current Architecture, Structure, Building systems including Lighting Control and Audio/Visual systems.",
       img: '/assets/logos/elec-icon.png',
       img_width: 200,
       img_className: 'top-[20%] absolute',
@@ -97,7 +97,7 @@ function MSCProject(){
     {
       title:'proj-feature-5',
       heading: 'SHORE POWER',
-      description: 'Shore Power desc',
+      description: "When finished, the Terminal will have the ability to provide (2) shore-side electrical power (15-kV) connections to service ships at Berth 8 and Berth 9, while their main and auxiliary diesel fueled engines are shut down.",
       img: '/assets/logos/elec-icon.png',
       img_width: 200,
       img_className: 'top-[20%] absolute',
@@ -105,7 +105,7 @@ function MSCProject(){
     {
       title:'proj-feature-6',
       heading: 'LEED CERTIFICATION',
-      description: 'Leed Certification desc',
+      description: "The Terminal is on schedule to become LEED Gold Certified upon completion.",
       img: '/assets/logos/elec-icon.png',
       img_width: 200,
       img_className: 'top-[20%] absolute',
@@ -163,7 +163,7 @@ function MSCProject(){
           <div className="p-20 md:p-4 flex justify-center">
             <div>
               {/* Featured Photo Container */}
-              <div className="flex justify-center p-20">           
+              <div className="flex justify-center p-10">           
                 <div >
                 {/* Photo */}
                 <div className="py-4">
@@ -191,7 +191,7 @@ function MSCProject(){
                 </div>
               </div>
               {/* Image Carousel */}
-              <div className="justify-center my-40 p-10">
+              <div className="justify-center mt-40 mb-20 p-10">
                 <div> 
                   <ImageCarousel projectImages={projectImages}/>
                 </div>
