@@ -2,10 +2,10 @@ import Image from "next/image";
 import ImageCarousel from "./ImageCarousel";
 import Cards from "./Cards";
 import { useState } from "react";
+import BeforeAndAfter from "./BeforeAndAfter";
 
 function MSCProject(){
 
-  const [showDesc, setShowDesc] = useState(false)
 
   const projectImages = [
     {
@@ -66,36 +66,49 @@ function MSCProject(){
       heading: 'MECHANICAL PLANTS',
       description: 'Mechanical plants desc',
       img: '/assets/logos/mech-icon.png',
+      img_width: 275,
+      img_className: 'top-[20%] absolute',
+
     },
     {
       title:'proj-feature-2',
       heading: 'SMOKE CONTROL SYSTEM',
       description: 'Smoke control System desc',
       img: '/assets/logos/mech-icon.png',
+      img_width: 275,
+      img_className: 'top-[20%] absolute',
     },
     {
       title:'proj-feature-3',
       heading: 'ELECTRIC VEHICLE CHARGING',
       description: 'Electric Vehicle Charging desc',
       img: '/assets/logos/elec-icon.png',
+      img_width: 200,
+      img_className: 'top-[20%] absolute',
     },
     {
       title:'proj-feature-4',
       heading: 'ART IN PUBLIC PLACES',
       description: 'Art in Public Places desc',
       img: '/assets/logos/elec-icon.png',
+      img_width: 200,
+      img_className: 'top-[20%] absolute',
     },
     {
       title:'proj-feature-5',
       heading: 'SHORE POWER',
       description: 'Shore Power desc',
       img: '/assets/logos/elec-icon.png',
+      img_width: 200,
+      img_className: 'top-[20%] absolute',
     },
     {
       title:'proj-feature-6',
       heading: 'LEED CERTIFICATION',
       description: 'Leed Certification desc',
       img: '/assets/logos/elec-icon.png',
+      img_width: 200,
+      img_className: 'top-[20%] absolute',
     },
     
   ]
@@ -154,7 +167,7 @@ function MSCProject(){
                 <div >
                 {/* Photo */}
                 <div className="py-4">
-                  <Image src={'/assets/updated-landing copy.jpg'} width={1500} height={300}/>
+                  <BeforeAndAfter/>
                 </div>
                 {/* Caption */}
                 <div className="py-4 flex italic justify-left text-secondary_text lg:text-2xl ">

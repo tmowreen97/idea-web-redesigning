@@ -434,3 +434,86 @@ polyline {
 .gallery-nav li.gallery-item-selected{
   background: #555;
 } */
+
+
+/* BEFORE AND AFTER IMAGE SLIDER */
+
+.image-before, .image-after{
+  display: block;
+  max-width: 100%;
+}
+
+.main-image-container{
+  display: grid;
+  place-items: center;
+  min-height: 80vh;
+}
+
+.before-and-after-container{
+  display: grid;
+  place-content: center;
+  position: relative;
+  overflow:hidden;
+  border-radius: 1rem;
+  --position: 50%;
+
+}
+
+.image-container{
+  max-width: 1500px;
+  max-height: 300vh;
+}
+
+.slider-image{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left;
+}
+
+.image-before{
+  position: absolute;
+  inset: 0;
+  width:var(--position);
+}
+
+.slider{
+  position: absolute;
+  inset: 0;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  opacity:0;
+}
+
+.slider:focus-visible ~ .slider-button{
+  outline:5px solid black;
+  outline-offset: 3px;
+}
+
+.slider-line{
+  position: absolute;
+  inset: 0;
+  width: .5rem;
+  height: 100%;
+  background-color: white;
+  z-index: 10;
+  left: var(--position);
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+
+.slider-button{
+  position: absolute;
+  background-color: white;
+  padding: .5rem;
+  border-radius: 100vw;
+  display: grid;
+  place-items: center;
+  top: 50%;
+  left: var(--position);
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 20;
+
+}
