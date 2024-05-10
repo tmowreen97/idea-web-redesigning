@@ -11,7 +11,7 @@ function Cards({feature}){
   
   return(
     <div className="relative">
-      <div onMouseEnter={()=>handleDesc()} className={showDesc? "bg-shaded_bg w-[400px] h-[400px] rounded-xl shadow-lg shadow-black/70" : "bg-light_bg w-[400px] h-[400px] rounded-xl shadow-lg shadow-black/70 relative"}>
+      <div onMouseEnter={()=>handleDesc()} className={showDesc? "bg-shaded_bg md:w-[400px] md:h-[400px] w-[300px] h-[300px] rounded-xl shadow-lg shadow-black/70" : "bg-light_bg md:w-[400px] md:h-[400px] w-[300px] h-[300px] rounded-xl shadow-lg shadow-black/70 relative"}>
         <div className=" items-center text-center align-middle justify-center">
           <div className="opacity-60 flex justify-center">
             {showDesc ? '' : <Image src={feature.img} width={feature.img_width} height={300} className={feature.img_className}/>}

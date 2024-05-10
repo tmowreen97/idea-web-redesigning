@@ -254,7 +254,6 @@ polyline {
 .gallery-body{
   margin: 0;
   padding: 0;
-  width: full;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -266,16 +265,16 @@ polyline {
 }
 
 
-@media only screen and (max-width: 1024px) {
+/* @media only screen and (max-width: 1024px) {
   .gallery-container{
     align-items: center;
     justify-content: center;
     display: flex;
-    height: 400px;
+    height: 300px;
     margin: 0;
     max-width: 900px;
     position: relative;
-}}
+}} */
 
 /* lg */
 .gallery-container{
@@ -299,18 +298,50 @@ polyline {
   background-size: contain;
 }
 
+.gallery-item-2{
+  left:90%;
+  transform: translateX(-50%);
+  opacity:.9;
+  transition: 0.15s ease-in-out;
+} 
+
 /* sm */
 @media only screen and (max-width: 767px) {
-  .gallery-item-0{
-    left: 10%;
+  .gallery-container{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 300px;
+    margin: 0;
+    max-width: 900px;
+    position: relative;
+  }
+  .gallery-item{
+    height: 100px;
+    opacity:0;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+    width: 100px;
+    z-index:0;
+    border-radius: 15px;
+    /* background-size: contain; */
+  }
+  /* .gallery-item-0{
+    left: 60px;
     opacity:.9;
     transform: translateX(-50%);
     transition: 0.15s ease-in-out;
   }
+  .gallery-item-2{
+    left:290px;
+    transform: translateX(-50%);
+    opacity:.9;
+    transition: 0.15s ease-in-out;
+  }  */
   .gallery-item-1{
     box-shadow: -2px 5px 33px 6px rgba(0, 0, 0, .35) ;
-    width:60%;
-    height: 30%;
+    width:300px;
+    height: auto;
     /* max-height: 800px; */
     opacity:1;
     left: 50%;
@@ -330,8 +361,8 @@ polyline {
   }
   .gallery-item-1{
     box-shadow: -2px 5px 33px 6px rgba(0, 0, 0, .35) ;
-    width:65%;
-    height: 45%;
+    width:auto;
+    height: auto;
     /* max-height: 800px; */
     opacity:1;
     left: 50%;
@@ -359,7 +390,7 @@ polyline {
 @media only screen and (min-width: 1536px) {
   .gallery-item-1{
   box-shadow: -2px 5px 33px 6px rgba(0, 0, 0, .35) ;
-  width:65%;
+  width:70%;
   height: 80%;
   /* max-height: 800px; */
   opacity:1;
@@ -370,18 +401,10 @@ polyline {
 }}
 
 
-.gallery-item-2{
-  left:90%;
-  transform: translateX(-50%);
-  opacity:.9;
-  transition: 0.15s ease-in-out;
-} 
-
-
 .gallery-controls{
   display: flex;
   justify-content: center;
-  margin-top: 240px;
+  margin-top: 25px;
   height:40px;
   
 }
@@ -480,7 +503,7 @@ polyline {
 .main-image-container{
   display: grid;
   place-items: center;
-  min-height: 50vh;
+  min-height: 30vh;
 }
 
 .before-and-after-container{

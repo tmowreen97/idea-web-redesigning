@@ -160,10 +160,10 @@ function MSCProject(){
         {/* Body */}
         <div className="" >
           {/* Body Container */}
-          <div className="p-20 md:p-4 flex justify-center">
+          <div className="lg:p-20 md:p-4 flex justify-center">
             <div>
               {/* Featured Photo Container */}
-              <div className="flex justify-center p-10">           
+              <div className="flex justify-center md:p-10 p-4">           
                 <div >
                 {/* Photo */}
                 <div className="py-4">
@@ -181,42 +181,42 @@ function MSCProject(){
                 </div>
               </div>
               {/* Heading Text */}
-              <div className="flex justify-center px-20 p-10 text-secondary_text tracking-wide xl:max-w-[1600px]">
+              <div className="flex justify-center md:px-20 md:p-10 p-4 text-secondary_text tracking-wide xl:max-w-[1600px]">
                 <div>
                   <div className="my-4 ">
-                    <h2 className="xl:text-5xl text-4xl xl:leading-[60px]">
+                    <h2 className="2xl:text-5xl lg:text-4xl text-2xl xl:leading-[60px]">
                       IDEA AEC has been developing the MEP design for our biggest project yet, MSC Miami Cruise Terminal. Alongside some other talented Architectural and Engineering companies, we've made significant progress.
                     </h2>
                   </div>
                 </div>
               </div>
               {/* Image Carousel */}
-              <div className="justify-center mt-40 mb-20 p-10 max-w-[2000px]">
+              <div className="justify-center lg:mt-20 lg:mb-20 md:p-10 max-w-[2000px]">
                 <div> 
                   <ImageCarousel projectImages={projectImages}/>
                 </div>
               </div>
               {/* Description Text */}
-              <div className="flex justify-center px-20 p-10 text-secondary_text tracking-wide xl:max-w-[1600px]">
+              <div className="flex justify-center md:px-20 md:p-10 p-4 text-secondary_text tracking-wide xl:max-w-[1600px]">
                 <div>
                   <div className="my-4 tracking-wider">
-                    <h3 className="xl:text-3xl md:text-2xl text-xl xl:leading-[45px]">
+                    <h3 className="xl:text-3xl md:text-2xl text-lg xl:leading-[45px]">
                       A 4-story cruise terminal capable of serving a total of 18,000 cruise ship passengers. The facility consists of 490,000 sf of interior space and 1,200,000 sf garage (6-Levels). There is a boarding concourse approximately 3,000 ft long by 15 ft wide running along the terminal and extending beyond the terminal to the East to accommodate three Berths. The terminal’s programming includes but not limited to: Check-In, Validation, Screening, Waiting Lounges, Office Terrace, Passenger Bridge Concourse, Baggage claim, Baggage, Restrooms, Customs and Border Protection Areas, VIP Lounges, Etc. Sustainable goals include LEED Silver Certification IDEA’s team is also providing MEP-FP Construction Project Management Assistance services to the Design Builder/Construction Team on this opportunity.
                     </h3>
                   </div>
                 </div>
               </div>
               {/* Project Features */}
-              <div className="px-20 p-10 xl:max-w-[1600px]">
+              <div className="xl:px-20 md:p-10 p-4 xl:max-w-[1600px]">
                 <div>
                   {/* Title */}
-                  <div className="flex justify-left">
+                  <div className="flex justify-left py-4">
                     <h2>Project Features</h2>
                   </div>
                   {/* Cards */}
                   <div className="flex justify-center">
                     <div className="">
-                    <div className="2xl:grid-cols-3 lg:grid-cols-2 grid justify-center items-center 2xl:gap-8 gap-12 2xl:p-20 p-10">
+                    <div className="2xl:grid-cols-3 lg:grid-cols-2 grid justify-center items-center 2xl:gap-8 gap-12 2xl:p-20 md:p-10 p-4">
                       {projectFeatures.map((feature)=> {
                       return(
                         <Cards key={feature.title} feature={feature}/>
@@ -232,11 +232,11 @@ function MSCProject(){
                 </div>
               </div>
               {/* Services/Resources Container */}
-              <div className="px-20 p-10 xl:max-w-[1600px]">
+              <div className="xl:px-20 md:p-10 xl:max-w-[1600px]">
                 <div className="">
-                <div className="grid grid-cols-2">
+                <div className="grid lg:grid-cols-2">
                   {/* Services Container */}
-                  <div className="flex justify-center">
+                  <div className="flex lg:justify-center justify-left p-4">
                   <div className="">
                     <div>
                       <h2>Services</h2>
@@ -256,7 +256,7 @@ function MSCProject(){
                   </div>
                   </div>
                   {/* Resources Container */}
-                  <div className="flex justify-center">
+                  <div className="flex lg:justify-center justify-left p-4">
                   <div>
                     <div>
                       <h2>Resources</h2>
@@ -282,7 +282,7 @@ function MSCProject(){
 
               </div>
               {/* Contact */}
-              <div className="flex justify-left px-20 p-10 xl:max-w-[1600px]">
+              <div className="flex justify-left md:px-20 md:p-10 p-4 xl:max-w-[1600px]">
                 <div>
                   <div>
                     <h2>Make sure to follow along </h2>

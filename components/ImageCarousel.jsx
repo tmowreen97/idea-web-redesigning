@@ -106,19 +106,19 @@ function ImageCarousel({projectImages}){
             return(
               <>
                 <Image onClick={(e)=> handleDesc(e)} key={img.title} className={img.className} src={img.image} data-index={index} width={600} height={500} id={img.title} quality={90}/>
-                { showDesc ? <div onClick={()=> setShowDesc(!showDesc)} className="bg-black/10 absolute z-10 cursor-pointer  w-[60%] h-[30%]  2xl:w-[65%] 2xl:h-[80%]  rounded-xl">
+                {/* { showDesc ? <div onClick={()=> setShowDesc(!showDesc)} className="bg-black/10 absolute z-10 cursor-pointer  w-[60%] h-[30%]  2xl:w-[70%] 2xl:h-[80%]  rounded-xl">
                   <div className="relative top-[45%] text-center">
                     <p className="w-full text-2xl font-light">{imageDesc}</p>
                   </div>
-                </div> : ''}
+                </div> : ''} */}
               </>
               
             )
           })}
         </div>
-        <div className="gallery-controls font-light gap-40 text-xl">
-          <button className="bg-button_bg hover:bg-button_highlight/90 hover:shadow-md hover:shadow-black/80 shadow-sm shadow-black/80 px-7 h-14 rounded-xl " onClick={(e)=> handlePrevious(e)}>Previous</button>
-          <button className="bg-button_bg hover:bg-button_highlight/90 hover:shadow-md hover:shadow-black/80 shadow-sm shadow-black/80 px-7 h-14 rounded-xl" onClick={(e)=> handleNext(e)}>Next</button>
+        <div className="gallery-controls font-light lg:gap-40 gap-20 md:text-xl text-lg">
+          <button className="bg-button_bg hover:bg-button_highlight/90 hover:shadow-md hover:shadow-black/80 shadow-sm shadow-black/80 md:px-7 md:h-14 px-4 h-10 rounded-xl " onClick={(e)=> handlePrevious(e)}>Previous</button>
+          <button className="bg-button_bg hover:bg-button_highlight/90 hover:shadow-md hover:shadow-black/80 shadow-sm shadow-black/80 md:px-7 md:h-14 px-4 h-10 rounded-xl" onClick={(e)=> handleNext(e)}>Next</button>
         </div>
       </div>
     </div>
