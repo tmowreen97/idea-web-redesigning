@@ -18,7 +18,7 @@ function MSCProject(){
     {
       title: 'MSC-image-1',
       description: 'MSC-image-1 Image Description',
-      className: "gallery-item gallery-item-1",
+      className: "gallery-item md:gallery-item-1 gallery-item-1-md",
       class_list: ["gallery-item", "gallery-item-1"],
       image: '/assets/projects/com-trans/MSC-2-new.jpg',
     },
@@ -191,7 +191,7 @@ function MSCProject(){
                 </div>
               </div>
               {/* Image Carousel */}
-              <div className="justify-center mt-40 mb-20 p-10">
+              <div className="justify-center mt-40 mb-20 p-10 max-w-[2000px]">
                 <div> 
                   <ImageCarousel projectImages={projectImages}/>
                 </div>
@@ -216,7 +216,7 @@ function MSCProject(){
                   {/* Cards */}
                   <div className="flex justify-center">
                     <div className="">
-                    <div className="grid-cols-3 grid justify-center items-center gap-8 p-20">
+                    <div className="2xl:grid-cols-3 lg:grid-cols-2 grid justify-center items-center 2xl:gap-8 gap-12 2xl:p-20 p-10">
                       {projectFeatures.map((feature)=> {
                       return(
                         <Cards key={feature.title} feature={feature}/>
@@ -266,7 +266,7 @@ function MSCProject(){
                         {projectResources.map((resource)=>{
                           return(
                             <div>
-                              <li className="p-2 ">
+                              <li className="py-2 ">
                                 <a href={resource.url} className="hover:text-light_accent_2 hover:underline" target="__blank" rel="noopener noreferrer" aria-label="Resource">{resource.title}</a>
                               </li>
                             </div>

@@ -24,7 +24,7 @@ function ImageCarousel({projectImages}){
     const updatedImages = [...projectImages]
     // console.log('new previous img', updatedImages[previousImgIndex], 'new current img', updatedImages[currentImgIndex], 'new next img', updatedImages[nextImgIndex])
     updatedImages[previousImgIndex].className = `gallery-item gallery-item-0`
-    updatedImages[currentImgIndex].className = `gallery-item gallery-item-1`
+    updatedImages[currentImgIndex].className = `gallery-item gallery-item-1 gallery-item-1-lg`
     updatedImages[nextImgIndex].className = `gallery-item gallery-item-2`
   }
 
@@ -90,7 +90,7 @@ function ImageCarousel({projectImages}){
 
   function handleDesc(e){
     console.log(projectImages[e.target.dataset.index].description)
-    if (e.target.className=="gallery-item gallery-item-1"){
+    if (e.target.className=="gallery-item gallery-item-1 gallery-item-1-lg"){
       setImageDesc(projectImages[e.target.dataset.index].description)
       setShowDesc(!showDesc)
     }
@@ -106,7 +106,7 @@ function ImageCarousel({projectImages}){
             return(
               <>
                 <Image onClick={(e)=> handleDesc(e)} key={img.title} className={img.className} src={img.image} data-index={index} width={600} height={500} id={img.title} quality={90}/>
-                { showDesc ? <div onClick={()=> setShowDesc(!showDesc)} className="bg-black/10 absolute z-10 cursor-pointer  w-[1000px] h-[750px] rounded-xl">
+                { showDesc ? <div onClick={()=> setShowDesc(!showDesc)} className="bg-black/10 absolute z-10 cursor-pointer  w-[60%] h-[30%]  2xl:w-[65%] 2xl:h-[80%]  rounded-xl">
                   <div className="relative top-[45%] text-center">
                     <p className="w-full text-2xl font-light">{imageDesc}</p>
                   </div>
