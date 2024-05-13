@@ -123,11 +123,13 @@ function ContactPage(){
         </div>
       </motion.div>
       </div>
+      {/* Social Media */}
       <div>
         <motion.div 
         initial={{opacity:0}}
         animate={{opacity:1, transition:{duration:2, delay:2.5} }}
-        className="flex justify-evenly p-14 pb-24 rounded-xl text-primary_text/90">
+        className="flex justify-center p-14 pb-24 rounded-xl text-primary_text/90">
+          <div className="flex">
           <div className="bg-tertiary/80 hover:bg-accent_2/80  rounded-full p-7 text-4xl mx-2">
             <Link href="https://www.instagram.com/idea.aec/" legacyBehavior>
                 <a target="_blank" rel="noopener noreferrer" aria-label="Instagram">
@@ -149,6 +151,7 @@ function ContactPage(){
                 </a>
             </Link>
           </div>
+        </div>
         </motion.div>
         
       </div>      
