@@ -1,10 +1,11 @@
 import Image from "next/image";
 import ImageCarousel from "./ImageCarousel";
 import Cards from "./Cards";
-import { useState } from "react";
 import BeforeAndAfter from "./BeforeAndAfter";
+import { motion } from "framer-motion";
 
 function MSCProject(){
+
 
 
   const projectImages = [
@@ -155,7 +156,12 @@ function MSCProject(){
       <div className="">
         {/* Title */}
         <div className="md:px-20 pt-40 lg:pb-[80px]">
+        <motion.div 
+        initial={{opacity:0}}
+        animate={{opacity:1, transition: {delay:1, duration:1}}}
+        >
           <h1 className="text-primary_text lg:text-9xl text-center text-7xl md:text-left tracking-wider">MSC Miami Cruise Terminal</h1>
+        </motion.div>
         </div>  
         {/* Body */}
         <div className="" >
@@ -164,7 +170,10 @@ function MSCProject(){
             <div>
               {/* Featured Photo Container */}
               <div className="flex justify-center md:p-10 p-4">           
-                <div >
+                <motion.div 
+                initial={{opacity:0}}
+                animate={{opacity:1, transition: {delay:1.5, duration:1}}} 
+                >
                 {/* Photo */}
                 <div className="py-4">
                   <BeforeAndAfter/>
@@ -178,7 +187,7 @@ function MSCProject(){
                     <h3>Completion Date:2024</h3>
                   </div>
                 </div>
-                </div>
+                </motion.div>
               </div>
               {/* Heading Text */}
               <div className="flex justify-center md:px-20 md:p-10 p-4 text-secondary_text tracking-wide xl:max-w-[1600px]">

@@ -524,8 +524,8 @@ polyline {
 }
 
 .image-container{
-  max-width: 1500px;
-  max-height: 300vh;
+  max-width: 1575px;
+  max-height: 315vh;
 }
 
 .slider-image{
@@ -548,6 +548,7 @@ polyline {
   width: 100%;
   height: 100%;
   opacity:0;
+  
 }
 
 .slider:focus-visible ~ .slider-button{
@@ -566,10 +567,26 @@ polyline {
   transform: translateX(-50%);
   pointer-events: none;
 }
+.slider-button:hover{
+  position: absolute;
+  background-color: purple;
+  padding: .4rem;
+  border-radius: 100vw;
+  display: grid;
+  place-items: center;
+  top: 50%;
+  left: var(--position);
+  transform: translate(-50%, -50%), scale(1.25);
+  pointer-events: none;
+  z-index: 12;
+  /* transform: scale(1.25); */
+  /* animation: blimp 3s infinite; */
+
+}
 
 .slider-button{
   position: absolute;
-  background-color: white;
+  background-color: #E9DCF9;
   padding: .4rem;
   border-radius: 100vw;
   display: grid;
@@ -579,5 +596,6 @@ polyline {
   transform: translate(-50%, -50%);
   pointer-events: none;
   z-index: 12;
+  /* animation: blimp 3s infinite; */
 
 }

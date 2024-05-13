@@ -387,7 +387,7 @@ function Culture_Page_Two(){
       <motion.div 
       initial={{opacity:0}}
       animate={{opacity:1, transition: {delay:1, duration:1}}}
-      className="md:px-20 pt-20 pb-[80px]">
+      className="">
         <h1 className="md:text-[1100%] text-center text-8xl font-thin text-primary_text md:text-left tracking-wider">Culture</h1>
       </motion.div>
       {/* Featured Video */}
