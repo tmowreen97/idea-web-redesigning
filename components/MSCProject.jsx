@@ -191,16 +191,19 @@ function MSCProject(){
               </div>
               {/* Heading Text */}
               <div className="flex justify-center md:px-20 md:p-10 p-4 text-secondary_text tracking-wide xl:max-w-[1600px]">
-                <div>
-                  <div className="my-4 ">
-                    <h2 className="2xl:text-5xl lg:text-4xl text-2xl xl:leading-[60px]">
+                <motion.div 
+                initial={{opacity:0}}
+                animate={{opacity:1, transition: {delay:2, duration:1}}} 
+                >
+                  <div className="my-4">
+                    <h2 className="2xl:text-5xl 2xl:leading-[60px] lg:text-4xl text-2xl ">
                       IDEA AEC has been developing the MEP design for our biggest project yet, MSC Miami Cruise Terminal. Alongside some other talented Architectural and Engineering companies, we've made significant progress.
                     </h2>
                   </div>
-                </div>
+                </motion.div>
               </div>
               {/* Image Carousel */}
-              <div className="justify-center lg:mt-20 lg:mb-20 md:p-10 max-w-[2000px]">
+              <div className="justify-center lg:my-10 my-4 md:p-10 max-w-[2000px]">
                 <div> 
                   <ImageCarousel projectImages={projectImages}/>
                 </div>
@@ -209,8 +212,17 @@ function MSCProject(){
               <div className="flex justify-center md:px-20 md:p-10 p-4 text-secondary_text tracking-wide xl:max-w-[1600px]">
                 <div>
                   <div className="my-4 tracking-wider">
-                    <h3 className="xl:text-3xl md:text-2xl text-lg xl:leading-[45px]">
-                      A 4-story cruise terminal capable of serving a total of 18,000 cruise ship passengers. The facility consists of 490,000 sf of interior space and 1,200,000 sf garage (6-Levels). There is a boarding concourse approximately 3,000 ft long by 15 ft wide running along the terminal and extending beyond the terminal to the East to accommodate three Berths. The terminal’s programming includes but not limited to: Check-In, Validation, Screening, Waiting Lounges, Office Terrace, Passenger Bridge Concourse, Baggage claim, Baggage, Restrooms, Customs and Border Protection Areas, VIP Lounges, Etc. Sustainable goals include LEED Silver Certification IDEA’s team is also providing MEP-FP Construction Project Management Assistance services to the Design Builder/Construction Team on this opportunity.
+                    <h3 className="xl:text-3xl md:text-2xl text-lg xl:leading-[45px] lg:py-4 py-2">
+                    A multi-vessel cruise terminal capable of serving a total of 36,000 cruise ship passengers
+                    daily. The facility consists of 490,000 sf of interior space and 1,200,000 sf garage (6-Levels).
+                    A boarding concourse extends east approximately 3,000 feet to allow for berthing of three (3)
+                    cruise vessels simultaneously.
+                    </h3>
+                    <h3 className="xl:text-3xl md:text-2xl text-lg xl:leading-[45px] lg:py-4 py-2">
+                    The Terminal’s programming includes but is not limited to: check-in, validation, screening,
+                    waiting lounges, office terrace, passenger bridge concourse, baggage claim, restrooms, U.S.A
+                    customs and border protection areas, VIP lounges, etc. Sustainable goals include LEED Silver
+                    certifcation.
                     </h3>
                   </div>
                 </div>
