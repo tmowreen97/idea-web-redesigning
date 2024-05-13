@@ -1,16 +1,44 @@
 import Image from "next/image";
-import dynamic from 'next/dynamic'
+import dynamic from 'next/dynamic';
+import { useRef, useEffect, useState } from "react";
  
 
 function BeforeAndAfter(){
+
+  const [position, setPosition] = useState('--position')
   
   // const DynamicHeader = dynamic(() => import('../components/ImageCarousel'), {
   //   ssr: false,
   // })
 
+  const timeoutRef = useRef(null);
+  function resetTimeout() {
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+    }
+  }
+
+  useEffect(() => {
+    const container = document.querySelector('.before-and-after-container');
+    resetTimeout();
+    console.log('in useeffect')
+    timeoutRef.current = setTimeout(
+      () =>
+        container.style.setProperty(position, `15%`),
+        // document.querySelector('.slider').addEventListener('input', () => {
+        // container.style.setProperty(position, `25%`)
+        // }),
+      3500
+    );
+
+    return () => {
+      resetTimeout();
+    };
+  }, []);
+
   if (typeof window!== "undefined"){const container = document.querySelector('.before-and-after-container');
   document.querySelector('.slider').addEventListener('input', (e) => {
-    container.style.setProperty('--position', `${e.target.value}%`)
+    container.style.setProperty(position, `${e.target.value}%`)
   })}
 
   return(
