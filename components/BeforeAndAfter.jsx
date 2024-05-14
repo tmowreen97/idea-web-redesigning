@@ -40,7 +40,7 @@ function BeforeAndAfter( {} ){
 
   if (typeof window!== "undefined" && isClient){const container = document.querySelector('.before-and-after-container');
   document.querySelector('.slider').addEventListener('input', (e) => {
-    container.style.setProperty(position, `${e.target.value}%`)
+    container.style.setProperty('--position', `${e.target.value}%`)
   })}
 
   return(
