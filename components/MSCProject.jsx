@@ -200,10 +200,7 @@ function MSCProject(){
             <div>
               {/* Featured Photo Container */}
               <div className="flex justify-center md:p-10 p-2">           
-                <motion.div 
-                initial={{opacity:0}}
-                animate={{opacity:2.5, transition: {delay:4, duration:1}}} 
-                >
+                <div>
                 {/* Photo */}
                 <div className="py-4">
                   <BeforeAndAfter/>
@@ -217,7 +214,7 @@ function MSCProject(){
                     <h3>Completion Date:2024</h3>
                   </div>
                 </div>
-                </motion.div>
+              </div>
               </div>
               {/* Heading Text */}
               <div className="flex justify-center md:px-20 md:p-10 p-4 text-secondary_text tracking-wide xl:max-w-[1600px]">

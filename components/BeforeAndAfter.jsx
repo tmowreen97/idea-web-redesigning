@@ -1,5 +1,5 @@
 import Image from "next/image";
-// import dynamic from 'next/dynamic';
+import { motion } from "framer-motion";
 import { useRef, useEffect, useState } from "react";
  
 
@@ -45,7 +45,9 @@ function BeforeAndAfter( {} ){
 
   return(
     <div className="main-image-container">
-      <div className="before-and-after-container">
+      <motion.div 
+        initial={{opacity:0}}
+        animate={{opacity:1, transition: {delay:1.5, duration:1}}}  className="before-and-after-container">
         <div className="image-container">
           <Image className="image-before slider-image" src={'/assets/MSC/MSC-before-new.png'} alt={'Before Image'} width={1800} height={800}/>
           <Image className="image-after slider-image" src={'/assets/MSC/MSC-after-new.png'} alt={'After Image'} width={1800} height={800}/>
@@ -59,7 +61,7 @@ function BeforeAndAfter( {} ){
         </div>
         
         
-      </div>
+      </motion.div>
     </div>
   )
 }
