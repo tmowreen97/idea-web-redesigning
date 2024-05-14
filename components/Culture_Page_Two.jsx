@@ -416,6 +416,7 @@ function Culture_Page_Two(){
                   controls
                   width='375px'
                   height='250px'
+
                 />
             }
           </div> : ""}

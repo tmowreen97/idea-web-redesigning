@@ -257,15 +257,15 @@ function MSCProject(){
               {/* Services/Resources Container */}
               <div className="xl:px-20 md:p-10 p-4 xl:max-w-[1600px]">
                 <div className="">
-                <div className="grid lg:grid-cols-2">
+                <div className="grid lg:grid-cols-2 lg:gap-40">
                   {/* Services Container */}
-                  <div className="flex lg:justify-center justify-left py-2">
+                  <div className="flex lg:justify-end py-2">
                   <div className="md:px-0">
                     <div>
                       <h2 className="lg:text-5xl py-2">Services</h2>
                     </div>
                     <div>
-                      <ul className="text-secondary_text lg:text-2xl text-xl font-light px-4 ">
+                      <ul className="text-secondary_text lg:text-2xl text-xl font-light list-disc px-8">
                         {projectServices.map((serv)=>{
                           return(
                             <div key={serv.title}>
@@ -279,13 +279,13 @@ function MSCProject(){
                   </div>
                   </div>
                   {/* Resources Container */}
-                  <div className="flex lg:justify-center justify-left py-2">
+                  <div className="flex lg:justify-start py-2">
                   <div className="">
                     <div>
                       <h2 className="lg:text-5xl py-2">Resources</h2>
                     </div>
                     <div>
-                    <ul className="text-secondary_text lg:text-2xl text-xl font-light px-4">
+                    <ul className="text-secondary_text lg:text-2xl text-xl font-light list-disc px-8">
                         {projectResources.map((resource)=>{
                           return(
                             <div>
@@ -320,7 +320,7 @@ function MSCProject(){
                   <div className="grid grid-cols-3 text-primary_text/90">
                     {/* Instagram */}
                     <div className="flex justify-center">
-                      <div className="p-7 rounded-full md:text-4xl text-3xl bg-tertiary/80 hover:bg-accent_2/80 ">
+                      <div className="p-7 rounded-full md:text-5xl text-3xl bg-tertiary/80 hover:bg-accent_2/80 ">
                       <Link href="https://www.instagram.com/idea.aec/" legacyBehavior>
                         <a target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                           <AiFillInstagram/>
@@ -330,7 +330,7 @@ function MSCProject(){
                     </div>
                     {/* Facebook */}
                     <div className="flex justify-center">
-                      <div className="p-7 rounded-full md:text-4xl text-3xl bg-tertiary/80 hover:bg-accent_2/80 ">
+                      <div className="p-7 rounded-full md:text-5xl text-3xl bg-tertiary/80 hover:bg-accent_2/80 ">
                       <Link href="https://www.facebook.com/profile.php?id=100076951517206" legacyBehavior>
                         <a target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                           <AiFillFacebook/>
@@ -340,7 +340,7 @@ function MSCProject(){
                     </div>
                     {/* LinkedIn */}
                     <div className="flex justify-center">
-                      <div className="p-7 rounded-full md:text-4xl text-3xl bg-tertiary/80 hover:bg-accent_2/80 ">
+                      <div className="p-7 rounded-full md:text-5xl text-3xl bg-tertiary/80 hover:bg-accent_2/80 ">
                       <Link href="https://www.linkedin.com/company/idea-aec/" legacyBehavior>
                         <a target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                           <AiFillLinkedin/>
