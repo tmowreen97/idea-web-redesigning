@@ -2,12 +2,39 @@ import Image from "next/image";
 import ImageCarousel from "./ImageCarousel";
 import Cards from "./Cards";
 import BeforeAndAfter from "./BeforeAndAfter";
+import { useState, useEffect, useCallback } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { AiFillInstagram, AiFillFacebook, AiFillLinkedin } from "react-icons/ai";
 
 function MSCProject(){
 
+  const useMediaQuery = (width) => {
+    const [targetReached, setTargetReached] = useState(false);
+  
+    const updateTarget = useCallback((e) => {
+      if (e.matches) {
+        setTargetReached(true);
+      } else {
+        setTargetReached(false);
+      }
+    }, []);
+  
+    useEffect(() => {
+      const media = window.matchMedia(`(max-width: ${width}px)`);
+      media.addListener(updateTarget);
+  
+      // Check on mount (callback is not called until a change occurs)
+      if (media.matches) {
+        setTargetReached(true);
+      }
+  
+      return () => media.removeListener(updateTarget);
+    }, []);
+  
+    return targetReached;
+  };
+  const isBreakPoint = useMediaQuery(900)
 
 
   const projectImages = [
@@ -157,7 +184,7 @@ function MSCProject(){
     <div className="w-screen h-full bg-primary font-thin">
       <div className="">
         {/* Title */}
-        <div className="md:px-20 pt-40 lg:pb-[80px]">
+        <div className="md:px-20 pt-40 lg:pb-[50px]">
         <motion.div 
         initial={{opacity:0}}
         animate={{opacity:1, transition: {delay:1, duration:1}}}
@@ -205,7 +232,7 @@ function MSCProject(){
                 </motion.div>
               </div>
               {/* Image Carousel */}
-              <div className="justify-center lg:my-10 my-4 md:p-10 max-w-[2000px]">
+              <div className="justify-center lg:my-10 my-4  max-w-[2000px]">
                 <div> 
                   <ImageCarousel projectImages={projectImages}/>
                 </div>
@@ -242,7 +269,7 @@ function MSCProject(){
                     <div className="2xl:grid-cols-3 lg:grid-cols-2 grid justify-center items-center 2xl:gap-8 gap-12 2xl:p-20 md:p-10 p-4">
                       {projectFeatures.map((feature)=> {
                       return(
-                        <Cards key={feature.title} feature={feature}/>
+                        <Cards key={feature.title} feature={feature} isBreakPoint={isBreakPoint}/>
                         )
                       })}
                     </div>
