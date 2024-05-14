@@ -49,8 +49,14 @@ function BeforeAndAfter( {} ){
         initial={{opacity:0}}
         animate={{opacity:1, transition: {delay:1.5, duration:1}}}  className="before-and-after-container">
         <div className="image-container">
+          {setIsClient ? 
+          <>
           <Image className="image-before slider-image" src={'/assets/MSC/MSC-before-new.png'} alt={'Before Image'} width={1800} height={800}/>
-          <Image className="image-after slider-image" src={'/assets/MSC/MSC-after-new.png'} alt={'After Image'} width={1800} height={800}/>
+          <Image className="image-after slider-image" src={'/assets/MSC/MSC-after-new.png'} alt={'After Image'} width={1800} height={800}/>          
+          </>
+
+          : ''
+        }
         </div>
         <input type="range" min='0' max='100' value='50' className="slider" aria-label='Percentage of before photo shown'/>
         <div className="slider-line shadow-sm shadow-black/50"></div>

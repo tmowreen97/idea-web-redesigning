@@ -206,14 +206,17 @@ function MSCProject(){
                   <BeforeAndAfter/>
                 </div>
                 {/* Caption */}
-                <div className="py-4 flex italic justify-left text-secondary_text lg:text-2xl ">
+                <motion.div 
+                initial={{opacity:0}}
+                animate={{opacity:1, transition: {delay:2, duration:1}}}
+                className="py-4 flex italic justify-left text-secondary_text lg:text-2xl ">
                   <div>
                     <h3>Commercial/Transportation</h3>
                     <h3>Miami,FL</h3>
                     <h3>490,000 SF Terminal / 1,200,000 SF Garage</h3>
                     <h3>Completion Date:2024</h3>
                   </div>
-                </div>
+                </motion.div>
               </div>
               </div>
               {/* Heading Text */}
