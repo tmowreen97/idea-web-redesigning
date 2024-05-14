@@ -249,6 +249,10 @@ polyline {
   margin: 1/2;
 }
 
+/* MSC TITLE */
+
+
+
 /* IMAGE CAROUSEL */
 
 .gallery-body{
@@ -303,7 +307,7 @@ polyline {
     align-items: center;
     justify-content: center;
     display: flex;
-    height: 300px;
+    height: 250px;
     margin: 0;
     max-width: 900px;
     position: relative;
@@ -438,7 +442,7 @@ polyline {
   align-items: center;
   justify-content: center;
   display: flex;
-  height: 900px;
+  height: 875px;
   margin: 0;
   max-width: 1800px;
   position: relative;
@@ -451,7 +455,6 @@ polyline {
 .gallery-controls{
   display: flex;
   justify-content: center;
-  margin-top: 25px;
   height:40px;
   
 }
