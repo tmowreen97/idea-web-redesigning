@@ -202,7 +202,7 @@ function MSCProject(){
               <div className="flex justify-center md:p-10 p-2">           
                 <motion.div 
                 initial={{opacity:0}}
-                animate={{opacity:3, transition: {delay:4, duration:1}}} 
+                animate={{opacity:2.5, transition: {delay:4, duration:1}}} 
                 >
                 {/* Photo */}
                 <div className="py-4">

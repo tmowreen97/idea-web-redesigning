@@ -1,11 +1,11 @@
 import Image from "next/image";
-import dynamic from 'next/dynamic';
+// import dynamic from 'next/dynamic';
 import { useRef, useEffect, useState } from "react";
  
 
 function BeforeAndAfter( {} ){
 
-  const [position, setPosition] = useState('--position')
+  const [position, setPosition] = useState(`--position`)
   const [isClient, setIsClient] = useState(false)
   
   // const DynamicHeader = dynamic(() => import('../components/ImageCarousel'), {
@@ -20,8 +20,8 @@ function BeforeAndAfter( {} ){
   }
 
   useEffect(() => {
-    setIsClient(true)
     const container = document.querySelector('.before-and-after-container');
+    setIsClient(true)
     resetTimeout();
     console.log('in useeffect')
     timeoutRef.current = setTimeout(
