@@ -22,13 +22,14 @@ function ImageCarousel({projectImages}){
   function handleImage(){
     
     const updatedImages = [...projectImages]
-    // console.log('new previous img', updatedImages[previousImgIndex], 'new current img', updatedImages[currentImgIndex], 'new next img', updatedImages[nextImgIndex])
+    console.log('new previous img', updatedImages[previousImgIndex], 'new current img', updatedImages[currentImgIndex], 'new next img', updatedImages[nextImgIndex])
     updatedImages[previousImgIndex].className = `gallery-item gallery-item-0`
-    updatedImages[currentImgIndex].className = `gallery-item gallery-item-1 gallery-item-1-lg`
+    updatedImages[currentImgIndex].className = `gallery-item gallery-item-1`
     updatedImages[nextImgIndex].className = `gallery-item gallery-item-2`
   }
 
   function handleNext(e){
+    console.log('in next')
     const updatedImages=[...projectImages]
     updatedImages[previousImgIndex].className='gallery-item'
     updatedImages[currentImgIndex].className='gallery-item'
@@ -61,6 +62,7 @@ function ImageCarousel({projectImages}){
   }
 
   function handlePrevious(){
+    console.log('in previous')
     const updatedImages= [...projectImages]
     updatedImages[previousImgIndex].className='gallery-item gallery-item'
     updatedImages[currentImgIndex].className='gallery-item gallery-item'
@@ -90,7 +92,7 @@ function ImageCarousel({projectImages}){
 
   function handleDesc(e){
     console.log(projectImages[e.target.dataset.index].description)
-    if (e.target.className=="gallery-item gallery-item-1 gallery-item-1-lg"){
+    if (e.target.className=="gallery-item gallery-item-1"){
       setImageDesc(projectImages[e.target.dataset.index].description)
       setShowDesc(!showDesc)
     }
@@ -116,7 +118,7 @@ function ImageCarousel({projectImages}){
             )
           })}
         </div>
-        <div className="gallery-controls font-light lg:gap-40 gap-20 md:text-xl text-lg mt-20 md:mt-0">
+        <div className="gallery-controls font-light lg:gap-40 gap-20 md:text-xl text-lg mt-20  ">
           <button className="bg-button_bg hover:bg-button_highlight/90 hover:shadow-md hover:shadow-black/80 shadow-sm shadow-black/80 md:px-7 md:h-14 px-4 h-10 rounded-xl " onClick={(e)=> handlePrevious(e)}>Previous</button>
           <button className="bg-button_bg hover:bg-button_highlight/90 hover:shadow-md hover:shadow-black/80 shadow-sm shadow-black/80 md:px-7 md:h-14 px-4 h-10 rounded-xl" onClick={(e)=> handleNext(e)}>Next</button>
         </div>

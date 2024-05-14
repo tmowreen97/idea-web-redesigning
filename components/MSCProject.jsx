@@ -6,6 +6,7 @@ import { useState, useEffect, useCallback } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { AiFillInstagram, AiFillFacebook, AiFillLinkedin } from "react-icons/ai";
+import MobileImageCarousel from "./MobileImageCarousel";
 
 function MSCProject(){
 
@@ -198,7 +199,7 @@ function MSCProject(){
           <div className="lg:p-20 md:p-4 flex justify-center">
             <div>
               {/* Featured Photo Container */}
-              <div className="flex justify-center md:p-10 p-4">           
+              <div className="flex justify-center md:p-10 p-2">           
                 <motion.div 
                 initial={{opacity:0}}
                 animate={{opacity:1, transition: {delay:1.5, duration:1}}} 
@@ -234,7 +235,7 @@ function MSCProject(){
               {/* Image Carousel */}
               <div className="justify-center lg:my-10 my-4  max-w-[2000px]">
                 <div> 
-                  <ImageCarousel projectImages={projectImages}/>
+                  {isBreakPoint ? <MobileImageCarousel projectImages={projectImages}/> : <ImageCarousel projectImages={projectImages}/>}
                 </div>
               </div>
               {/* Description Text */}
