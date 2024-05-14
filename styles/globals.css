@@ -558,3 +558,13 @@ polyline {
   /* animation: blimp 3s infinite; */
 
 }
+
+
+/* Feature Cards */
+
+.feature-card{
+  position:absolute;
+  justify-content: center;
+  inset: 0;
+  place-content: center;
+}

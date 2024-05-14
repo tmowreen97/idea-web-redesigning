@@ -267,7 +267,7 @@ function MSCProject(){
                   {/* Cards */}
                   <div className="flex justify-center">
                     <div className="">
-                    <div className="2xl:grid-cols-3 lg:grid-cols-2 grid justify-center items-center 2xl:gap-8 gap-12 2xl:p-20 md:p-10 p-4">
+                    <div className="2xl:grid-cols-3 lg:grid-cols-2 grid grid-cols-1 place-content-center justify-center items-center 2xl:gap-8 gap-12 2xl:p-20 md:p-10 p-4">
                       {projectFeatures.map((feature)=> {
                       return(
                         <Cards key={feature.title} feature={feature} isBreakPoint={isBreakPoint}/>

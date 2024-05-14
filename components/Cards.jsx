@@ -23,7 +23,7 @@ function Cards({feature, isBreakPoint}){
             {showDesc ? '' : <Image src={feature.img} width={feature.img_width} height={300} className={feature.img_className}/>}
           </div>
           <div className="font-light flex">
-            <p className={showDesc ? " text-secondary_text md:text-2xl text-lg absolute xl:p-6 p-4 justify-center inset-0 place-content-center" : " text-dark_text xl:text-4xl text-3xl absolute p-6 inset-0 place-content-center justify-center "}>{showDesc ? feature.description : feature.heading}</p> 
+            <p className={showDesc ? " feature-card text-secondary_text md:text-2xl text-lg xl:p-6 p-4" : " text-dark_text xl:text-4xl text-3xl absolute p-6 inset-0 place-content-center justify-center "}>{showDesc ? feature.description : feature.heading}</p> 
           </div>
         </div>
       </div>
