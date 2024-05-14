@@ -8,9 +8,9 @@ function BeforeAndAfter( {} ){
   const [position, setPosition] = useState('--position')
   const [isClient, setIsClient] = useState(false)
   
-  const DynamicHeader = dynamic(() => import('../components/ImageCarousel'), {
-    ssr: false,
-  })
+  // const DynamicHeader = dynamic(() => import('../components/ImageCarousel'), {
+  //   ssr: false,
+  // })
 
   const timeoutRef = useRef(null);
   function resetTimeout() {
