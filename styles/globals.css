@@ -470,6 +470,8 @@ polyline {
 .main-image-container{
   display: grid;
   place-items: center;
+  min-height: 10vh;
+
 }
 
 .before-and-after-container{
@@ -484,7 +486,7 @@ polyline {
 
 .image-container{
   max-width: 1575px;
-  max-height: 300%;
+  max-height: 315vh;
 }
 
 .slider-image{
