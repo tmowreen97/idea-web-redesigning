@@ -465,12 +465,13 @@ polyline {
 .image-before, .image-after{
   display: block;
   max-width: 100%;
+  min-height: 10vh;
 }
 
 .main-image-container{
   display: grid;
   place-items: center;
-  min-height: 50vh;
+  min-height: 15vh;
 
 }
 
