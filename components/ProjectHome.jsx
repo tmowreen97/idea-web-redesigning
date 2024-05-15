@@ -13,7 +13,7 @@ function ProjectHome(){
       location: 'PortMiami, Miami, FL',
       sector: 'Commercial/Transportation',
       year: '2024 (Construction Completion)',
-      image: "/assets/project-home/msc-1.webp",
+      image: "/assets/MSC/MSC-after-new.png",
       desc: "A 4-Story cruise terminal capable of serving a total of 36,000 cruise ship passengers daily (embarking & disembarking). The facility consists of 495,000 SF of interior space and 1,200,000 SF garage (2500 parking spaces). Project will be LEED Silver Certified upon completion.",
     },
     {

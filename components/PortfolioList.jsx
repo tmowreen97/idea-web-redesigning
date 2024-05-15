@@ -1,11 +1,14 @@
 import Image from "next/image";
 import Carousel from "./Carousel";
+import { useRouter } from "next/router";
 import {BsChevronCompactDown, BsChevronCompactUp} from 'react-icons/bs';
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 
 function PortfolioList({project}){
+
+  const router = useRouter()
 
   const [projHover, setProjHover] = useState(false)
   const [projClick, setProjClick] = useState(false)
@@ -28,8 +31,16 @@ function PortfolioList({project}){
   }
 
   function handleClick(){
-    setProjClick(!projClick)
-    setHide(!hide)
+      setProjClick(!projClick)
+      setHide(!hide)
+    // if (project.name == 'MSC Miami Cruise Terminal'){
+    //   router.push('/MSC-Miami-Cruise-Terminal')
+    // }
+    // else{
+    //   setProjClick(!projClick)
+    //   setHide(!hide)
+    // }
+    
   }
 
   return(
