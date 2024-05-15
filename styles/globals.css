@@ -470,7 +470,7 @@ polyline {
 .main-image-container{
   display: grid;
   place-items: center;
-  min-height: 10vh;
+  min-height: 50vh;
 
 }
 
@@ -560,12 +560,3 @@ polyline {
   /* animation: blimp 3s infinite; */
 
 }
-
-
-/* Feature Cards */
-
-/* .feature-card{
-  position:absolute;
-  top: 25%;
-
-} */
