@@ -19,11 +19,11 @@ function Cards({feature, isBreakPoint}){
     <div className="relative">
       <div onClick={()=> handleClick()} onMouseEnter={()=>handleHover()} className={showDesc? "bg-shaded_bg md:w-[400px] md:h-[400px] w-[300px] h-[300px] rounded-xl shadow-lg shadow-black/70 cursor-pointer" : "bg-light_bg md:w-[400px] md:h-[400px] w-[300px] h-[300px] rounded-xl shadow-lg shadow-black/70 relative cursor-pointer"}>
         <div className=" items-center text-center align-middle justify-center">
-          <div className="opacity-60 flex justify-center">
+          <div className="opacity-60 flex ">
             {showDesc ? '' : <Image src={feature.img} width={feature.img_width} height={300} className={feature.img_className}/>}
           </div>
-          <div className="font-light flex">
-            <p className={showDesc ? " feature-card text-secondary_text md:text-2xl text-lg xl:p-6 p-4" : " text-dark_text xl:text-4xl text-3xl p-6 feature-card"}>{showDesc ? feature.description : feature.heading}</p> 
+          <div className="font-light flex ">
+            <p className={showDesc ? feature.description_className : feature.heading_className}>{showDesc ? feature.description : feature.heading}</p> 
           </div>
         </div>
       </div>
