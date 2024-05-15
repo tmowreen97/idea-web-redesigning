@@ -211,7 +211,7 @@ function MSCProject(){
           <div className="lg:p-20 md:p-4 flex justify-center">
             <div>
               {/* Featured Photo Container */}
-              <div className="flex justify-center md:p-10 p-2">           
+              <div className="flex justify-center md:p-10 p-2 min-h-[15vh]">           
                 <div>
                 {/* Photo */}
                 <div className="py-4">
