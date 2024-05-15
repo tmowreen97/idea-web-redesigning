@@ -488,6 +488,7 @@ polyline {
 .image-container{
   max-width: 1575px;
   max-height: 315vh;
+  min-height: 15vh;
 }
 
 .slider-image{

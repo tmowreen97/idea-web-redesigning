@@ -37,7 +37,7 @@ function MobileImageCarousel({projectImages}){
           animate={{ opacity:1 }}
           transition={{ ease: "easeInOut", duration: 1, delay:2}}
           >
-            <img src={projectImages[index].image} width={500} height={200} className=" mobile-img-carousel transition ease-in-out delay-150"/>
+            <img src={projectImages[index].image} width={500} height={200} className=" mobile-img-carousel transition ease-in-out delay-150 image-rendering:auto "/>
           </motion.div>
         </div>
         <div className="flex justify-center">
