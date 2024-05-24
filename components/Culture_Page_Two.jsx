@@ -19,7 +19,7 @@ function Culture_Page_Two(){
   const allPosts = [
     //MSC CONSTRUCTION MILESTONE
     {
-      id: 11,
+      id: 12,
       title: "MSC Construction Milestone",
       date: 'April 30, 2024',
       text: [
@@ -35,7 +35,7 @@ function Culture_Page_Two(){
     },
     //3 YEAR ANNIVERSARY
     {
-      id: 10,
+      id: 11,
       title: 'IDEA Turns 3',
       date: 'April 19, 2024 ',
       text: [
@@ -60,7 +60,7 @@ function Culture_Page_Two(){
     },
     //JAMEER UPDATE
     {
-      id: 9,
+      id: 10,
       title: 'Team Spotlight: Jameer Ali',
       date: 'October 10, 2023 ',
       text: [
@@ -84,7 +84,7 @@ function Culture_Page_Two(){
     },
     //J&S UPDATE
     {
-      id: 8,
+      id: 9,
       title: 'J&S Warehouse Unveiling',
       date: 'October 10, 2023 ',
       text: [
@@ -118,7 +118,7 @@ function Culture_Page_Two(){
     },
     // 2 Year BBQ
     {
-      id: 7,
+      id: 8,
       title: '2 Year BBQ',
       date: 'May 12, 2023',
       text: [
@@ -151,6 +151,28 @@ function Culture_Page_Two(){
           image: '/assets/culture/bbq/bbq-5-crop.png'
         }
       ],
+      category: "Cultural Developments",
+    },
+    // 2 YEAR ANNIVERSARY
+    {
+      id: 7,
+      title: "IDEA Turns 2",
+      date: 'March 11, 2023',
+      text: [
+        "IDEA is celebrating 2 years of growth, innovation and success. We continue to strive to enhance the MEP-FP industry with exceeding standards and inter-disciplinary solutions. Watch this video our Marketing Manager created to show our journey!",
+      ],
+      video_small : {
+        title: "msc_groundbreak",
+        url: "https://www.youtube.com/watch?v=SjdX1mYmiP0&ab_channel=IDEA",
+        height: '500px',
+        width: '300px',
+      },
+      video_large: {
+        title: "msc_groundbreak",
+        url: "https://www.youtube.com/watch?v=SjdX1mYmiP0&ab_channel=IDEA",
+        height: '350px',
+        width: '615px',
+      },
       category: "Cultural Developments",
     },
     // Project EEFI Update *
@@ -393,14 +415,18 @@ function Culture_Page_Two(){
       {/* Featured Video */}
       <div>
         <div className="pb-[35px]">
-          <h1 className="md:text-[500%] text-4xl text-center items-center tracking-wide font-light text-primary_text/70">IDEA Turns 2!</h1>
+          <h1 className="md:text-[500%] text-4xl text-center items-center tracking-wide font-light text-primary_text/70">IDEA Turns 3!</h1>
         </div>
         { isClient ? 
           <div className="justify-center items-center flex md:w-[100%] md:h=[100%] overflow-hidden">
             {
               !isBreakPoint ? 
                 <ReactPlayer 
-                  url={'https://www.youtube.com/watch?v=xUWu2wi4o-A&ab_channel=IDEA'}
+                // new 3yr video
+                // https://www.youtube.com/watch?v=SjdX1mYmiP0&ab_channel=IDEA
+                // 2 yr video
+                // https://www.youtube.com/watch?v=xUWu2wi4o-A&ab_channel=IDEA
+                  url={'https://www.youtube.com/watch?v=SjdX1mYmiP0&ab_channel=IDEA'}
                   playing
                   loop
                   muted
@@ -409,7 +435,7 @@ function Culture_Page_Two(){
                   height='500px'
                 /> : 
                 <ReactPlayer 
-                  url={'https://www.youtube.com/watch?v=xUWu2wi4o-A&ab_channel=IDEA'}
+                  url={'https://www.youtube.com/watch?v=SjdX1mYmiP0&ab_channel=IDEA'}
                   playing
                   loop
                   muted
