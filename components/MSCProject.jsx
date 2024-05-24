@@ -239,7 +239,7 @@ function MSCProject(){
                 >
                   <div className="my-4">
                     <h2 className="2xl:text-5xl 2xl:leading-[60px] lg:text-4xl text-2xl ">
-                      IDEA AEC has been developing the MEP design for our biggest project yet, MSC Miami Cruise Terminal. Alongside some other talented Architectural and Engineering companies, we've made significant progress.
+                      For the last 3+ years, IDEA AEC Engineering team has been performing Design and Project Management services on this nearly completed masterpiece of Architecture. Alongside multiple talented industry professionals, we continue to accomodate the needs of this project as it heads towards completion for the end of this year.
                     </h2>
                   </div>
                 </motion.div>
