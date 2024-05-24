@@ -31,15 +31,13 @@ function PortfolioList({project}){
   }
 
   function handleClick(){
+    if (project.name == 'MSC Miami Cruise Terminal'){
+      router.push('/MSC-Miami-Cruise-Terminal-Highlight')
+    }
+    else{
       setProjClick(!projClick)
       setHide(!hide)
-    // if (project.name == 'MSC Miami Cruise Terminal'){
-    //   router.push('/MSC-Miami-Cruise-Terminal')
-    // }
-    // else{
-    //   setProjClick(!projClick)
-    //   setHide(!hide)
-    // }
+    }
     
   }
 
