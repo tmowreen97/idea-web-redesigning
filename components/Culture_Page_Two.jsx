@@ -6,6 +6,7 @@ import {React, useState, useEffect, useCallback} from "react";
 import ReactPlayer from "react-player/lazy";
 import { AiFillInstagram, AiFillFacebook, AiFillLinkedin } from "react-icons/ai";
 import {BsChevronCompactDown, BsChevronCompactUp} from 'react-icons/bs';
+// import highlight from "/assets/culture/MSC-highlight/MSC Highlight.mp4";
 
 import TextBody from "./TextBody";
 
@@ -18,33 +19,33 @@ function Culture_Page_Two(){
   const [category, setCategory] = useState("All Developments")
   const allPosts = [
     //MSC Project Page
-    {
-      id: 13,
-      title: "MSC Project Highlight Page",
-      date: 'May 31, 2024',
-      text: [
-        "We've developed a highlight page all about the progress on our MSC Miami Cruise Terminal Project. There are some new interactive features, like the before and after image slider. It shows the progress we've made from August 2023 to March 2024. We've come a long way and we're so much closer to the finish line! Make sure to follow along with us on our journey.",
-      ],
-      link: {
-        title: 'MSC Project Highlight Page',
-        url: 'https://www.ideaaec.com/MSC-Miami-Cruise-Terminal-Highlight',
-      },
-      video_small : {
-        title: "msc_groundbreak",
-        url: "/assets/culture/MSC-Highlight/MSC Highlight.mp4",
-        link: 'https://www.ideaaec.com/MSC-Miami-Cruise-Terminal-Highlight',
-        height: '500px',
-        width: '300px',
-      },
-      video_large: {
-        title: "msc_groundbreak",
-        url: "/assets/culture/MSC-Highlight/MSC Highlight.mp4",
-        link: 'https://www.ideaaec.com/MSC-Miami-Cruise-Terminal-Highlight',
-        height: '350px',
-        width: '615px',
-      },
-      category: "Project Developments",
-    },
+    // {
+    //   id: 13,
+    //   title: "MSC Project Highlight Page",
+    //   date: 'May 31, 2024',
+    //   text: [
+    //     "We've developed a highlight page all about the progress on our MSC Miami Cruise Terminal Project. There are some new interactive features, like the before and after image slider. It shows the progress we've made from August 2023 to March 2024. We've come a long way and we're so much closer to the finish line! Make sure to follow along with us on our journey.",
+    //   ],
+    //   link: {
+    //     title: 'MSC Project Highlight Page',
+    //     url: 'https://www.ideaaec.com/MSC-Miami-Cruise-Terminal-Highlight',
+    //   },
+    //   video_small : {
+    //     title: "msc_groundbreak",
+    //     url: "/assets/culture/MSC-Highlight/MSC Highlight.mp4",
+    //     link: 'https://www.ideaaec.com/MSC-Miami-Cruise-Terminal-Highlight',
+    //     height: '500px',
+    //     width: '300px',
+    //   },
+    //   video_large: {
+    //     title: "msc_groundbreak",
+    //     url: "/assets/culture/MSC-Highlight/MSC Highlight.mp4",
+    //     link: 'https://www.ideaaec.com/MSC-Miami-Cruise-Terminal-Highlight',
+    //     height: '350px',
+    //     width: '615px',
+    //   },
+    //   category: "Project Developments",
+    // },
     //MSC CONSTRUCTION MILESTONE
     {
       id: 12,
