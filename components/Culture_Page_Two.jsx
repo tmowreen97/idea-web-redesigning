@@ -17,6 +17,32 @@ function Culture_Page_Two(){
   const [showDropDown, setShowDropDown] = useState(false)
   const [category, setCategory] = useState("All Developments")
   const allPosts = [
+    //MSC Project Page
+    {
+      id: 13,
+      title: "MSC Project Highlight Page",
+      date: 'May 31, 2024',
+      text: [
+        "We've developed a highlight page all about the progress on our MSC Miami Cruise Terminal Project. There are some new interactive features, like the before and after image slider. It shows the progress we've made from August 2023 to March 2024. We've come a long way and we're so much closer to the finish line! Make sure to follow along with us on our journey.",
+      ],
+      link: {
+        title: 'MSC Project Highlight Page',
+        url: 'https://www.ideaaec.com/MSC-Miami-Cruise-Terminal-Highlight',
+      },
+      video_small : {
+        title: "msc_groundbreak",
+        url: "/assets/culture/MSC-Highlight/MSC Highlight.MOV",
+        height: '500px',
+        width: '300px',
+      },
+      video_large: {
+        title: "msc_groundbreak",
+        url: "/assets/culture/MSC-Highlight/MSC Highlight.MOV",
+        height: '350px',
+        width: '615px',
+      },
+      category: "Project Developments",
+    },
     //MSC CONSTRUCTION MILESTONE
     {
       id: 12,
@@ -44,15 +70,15 @@ function Culture_Page_Two(){
       slideshow: [
         {
           title: '3_year_anniversary_1',
-          image: '/assets/culture/3_year/MSC-site.jpg'
+          image: '/assets/culture/3-year/MSC-site.jpg'
         },
         {
           title: '3_year_anniversary_2',
-          image: '/assets/culture/3_year/MSC-site-updated.jpg'
+          image: '/assets/culture/3-year/MSC-site-updated.jpg'
         },
         {
           title: '3_year_anniversary_3',
-          image: '/assets/culture/3_year/team-webex.jpeg'
+          image: '/assets/culture/3-year/team-webex.jpeg'
         },
       ],
       special: "2xl:w-[895px] 2xl:h-[680px] xl:w-[700px] xl:h-[600px]  lg:w-[500px] lg:h-[400px] w-[340px] h-[300px] rounded-2xl bg-center bg-cover hover:scale-105  duration-500 transform p-0 z-0",
@@ -583,6 +609,13 @@ function Culture_Page_Two(){
                       {/* Text body */}
                       <div className="m-3 max-w-[700px] z-[9]">
                         <TextBody post={post} />
+                        {post.link ? 
+                          <Link href={post.link.url} legacyBehavior>
+                            <a target="_blank" rel="noopener noreferrer" aria-label="MSC-Project-Page" className="hover:text-light_accent_2 hover:underline 2xl:text-xl text-lg text-light_accent_1 font-medium">
+                              {post.link.title}
+                            </a>
+                          </Link> 
+                          : ''}
                       </div>
                     </div>
                     </motion.div>
@@ -600,6 +633,13 @@ function Culture_Page_Two(){
                       {/* Text body */}
                       <div className="m-3 max-w-[700px] z-[9]">
                         <TextBody post={post} />
+                        {post.link ? 
+                        <Link href={post.link.url} legacyBehavior>
+                          <a target="_blank" rel="noopener noreferrer" aria-label="MSC-Project-Page" className="hover:text-light_accent_2 hover:underline 2xl:text-xl text-lg text-light_accent_1 font-medium">
+                            {post.link.title}
+                          </a>
+                        </Link>
+                        : ''}
                       </div>
                       <div className="m-5">
                       { post.slideshow ? 
