@@ -31,13 +31,15 @@ function Culture_Page_Two(){
       },
       video_small : {
         title: "msc_groundbreak",
-        url: "/assets/culture/MSC-Highlight/MSC Highlight.MOV",
+        url: "/assets/culture/MSC-Highlight/MSC Highlight.mp4",
+        link: 'https://www.ideaaec.com/MSC-Miami-Cruise-Terminal-Highlight',
         height: '500px',
         width: '300px',
       },
       video_large: {
         title: "msc_groundbreak",
-        url: "/assets/culture/MSC-Highlight/MSC Highlight.MOV",
+        url: "/assets/culture/MSC-Highlight/MSC Highlight.mp4",
+        link: 'https://www.ideaaec.com/MSC-Miami-Cruise-Terminal-Highlight',
         height: '350px',
         width: '615px',
       },
@@ -190,12 +192,14 @@ function Culture_Page_Two(){
       video_small : {
         title: "msc_groundbreak",
         url: "https://www.youtube.com/watch?v=SjdX1mYmiP0&ab_channel=IDEA",
+        link: 'https://www.linkedin.com/posts/idea-aec_engineeringexcellence-activity-7108521663280881665-DO3J?utm_source=share&utm_medium=member_desktop',
         height: '500px',
         width: '300px',
       },
       video_large: {
         title: "msc_groundbreak",
         url: "https://www.youtube.com/watch?v=SjdX1mYmiP0&ab_channel=IDEA",
+        link: 'https://www.linkedin.com/posts/idea-aec_engineeringexcellence-activity-7108521663280881665-DO3J?utm_source=share&utm_medium=member_desktop',
         height: '350px',
         width: '615px',
       },
@@ -358,12 +362,14 @@ function Culture_Page_Two(){
       video_small : {
         title: "msc_groundbreak",
         url: "/assets/msc_groundbreaking.mp4",
+        link: 'https://www.facebook.com/reel/661496844905448',
         height: '500px',
         width: '300px',
       },
       video_large: {
         title: "msc_groundbreak",
         url: "/assets/msc_groundbreaking.mp4",
+        link: 'https://www.facebook.com/reel/661496844905448',
         height: '750px',
         width: '600px',
       },
@@ -573,7 +579,7 @@ function Culture_Page_Two(){
                         : ""
                       }
                       {post.video_large && isClient ? 
-                         <Link href={'https://www.facebook.com/reel/661496844905448'} legacyBehavior>
+                         <Link href={video_large.link} legacyBehavior>
                          <a target="_blank" rel="noopener noreferrer" aria-label="MSC Groundbreaking Video">
                            {!isBreakPoint ? 
                            <ReactPlayer 
@@ -656,7 +662,7 @@ function Culture_Page_Two(){
                         : ""
                       }
                       {post.video_large && isClient ? 
-                         <Link href={'https://www.facebook.com/reel/661496844905448'} legacyBehavior>
+                         <Link href={video_large.link} legacyBehavior>
                          <a target="_blank" rel="noopener noreferrer" aria-label="MSC Groundbreaking Video">
                            {!isBreakPoint ? 
                            <ReactPlayer 
