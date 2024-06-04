@@ -579,7 +579,7 @@ function Culture_Page_Two(){
                         : ""
                       }
                       {post.video_large && isClient ? 
-                         <Link href={video_large.link} legacyBehavior>
+                         <Link href={post.video_large.link} legacyBehavior>
                          <a target="_blank" rel="noopener noreferrer" aria-label="MSC Groundbreaking Video">
                            {!isBreakPoint ? 
                            <ReactPlayer 
@@ -662,7 +662,7 @@ function Culture_Page_Two(){
                         : ""
                       }
                       {post.video_large && isClient ? 
-                         <Link href={video_large.link} legacyBehavior>
+                         <Link href={post.video_large.link} legacyBehavior>
                          <a target="_blank" rel="noopener noreferrer" aria-label="MSC Groundbreaking Video">
                            {!isBreakPoint ? 
                            <ReactPlayer 
