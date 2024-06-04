@@ -32,14 +32,14 @@ function Culture_Page_Two(){
       },
       video_small : {
         title: "msc_groundbreak",
-        url: "/assets/culture/MSC-Highlight/MSC-Highlight.mp4",
+        url: "/assets/MSC-Highlight.mp4",
         link: 'https://www.ideaaec.com/MSC-Miami-Cruise-Terminal-Highlight',
         height: '500px',
         width: '300px',
       },
       video_large: {
         title: "msc_groundbreak",
-        url: "/assets/culture/MSC-Highlight/MSC-Highlight.mp4",
+        url: "/assets/MSC-Highlight.mp4",
         link: 'https://www.ideaaec.com/MSC-Miami-Cruise-Terminal-Highlight',
         height: '350px',
         width: '615px',
