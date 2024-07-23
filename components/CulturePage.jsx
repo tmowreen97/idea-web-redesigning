@@ -12,7 +12,7 @@ import TextBody from "./TextBody";
 
 
 
-function Culture_Page_Two(){
+function Culture_Page(){
 
   const [isClient, setIsClient] = useState(false)
   const [showDropDown, setShowDropDown] = useState(false)
@@ -443,7 +443,7 @@ function Culture_Page_Two(){
       initial={{opacity:0}}
       animate={{opacity:1, transition: {delay:1, duration:1}}}
       className="md:px-20 pt-20 pb-[80px]">
-        <h1 className="md:text-[1100%] text-center text-8xl font-thin text-primary_text md:text-left tracking-wider">Culture</h1>
+        <h1 className="xl:text-[1100%] lg:text-9xl text-center text-5xl font-thin text-primary_text md:text-left tracking-wider">Developments</h1>
       </motion.div>
       {/* Featured Video */}
       <div>
@@ -714,4 +714,4 @@ function Culture_Page_Two(){
   )
 }
 
-export default Culture_Page_Two;
+export default Culture_Page;
