@@ -100,7 +100,7 @@ const Navbar = ({setLightLogo, lightLogo}) => {
             <Link href='/services' id={router.pathname == "/services" ? "active" : ""}>Services</Link>
           </li>
           <li className='m-2 p-2 hover:bg-accent_2/60 hover:text-primary_text rounded-xl'>
-            <Link href='/culture' id={router.pathname == "/developments" ? "active" : ""}>Developments</Link>
+            <Link href='/developments' id={router.pathname == "/developments" ? "active" : ""}>Developments</Link>
           </li>
           {/* <li className='p-4'>
             <Link href='/clients' id={router.pathname == "/clients" ? "active" : ""}>Clients</Link>
@@ -180,7 +180,7 @@ const Navbar = ({setLightLogo, lightLogo}) => {
               <Link href='/services' id={router.pathname == "/services" ? "active" : ""}>Services</Link>
             </li>
             <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500 '>
-              <Link href='/culture' id={router.pathname == "/developments" ? "active" : ""}>Developments</Link>
+              <Link href='/developments' id={router.pathname == "/developments" ? "active" : ""}>Developments</Link>
             </li>
             <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500 '>
               <Link href='/contact' id={router.pathname == "/contact" ? "active" : ""}>Contact</Link>
