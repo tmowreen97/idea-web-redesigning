@@ -11,7 +11,7 @@ function Hero2(){
           initial={{opacity:0}}
           whileInView={{opacity:1, transition: {delay:1.8, duration:1}}}
           >
-            <Link href={'#eefi-page'} id='intro-button-link' className=' bg-primary hover:bg-button_shadow/90 hover:animate-none rounded-lg p-3 motion-safe:animate-pulse md:text-base text-sm'>Click Here to Enter</Link>
+            <Link href={'#eefi-page'} id='intro-button-link' className=' bg-light_bg hover:bg-button_highlight hover:animate-none rounded-lg p-3 motion-safe:animate-pulse md:text-base text-sm'>Click Here to Enter</Link>
           </motion.div>
       </div>
       {/* <motion.div

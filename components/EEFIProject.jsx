@@ -45,21 +45,21 @@ function EEFI_Project(){
       description: 'MSC-image-0 Description',
       className: "gallery-item gallery-item-0",
       class_list: ["gallery-item", "gallery-item-0"],
-      image: '/assets/MSC/MSC-1.png',
+      image: '/assets/EEFI/EEFI-1.png',
     },
     {
       title: 'MSC-image-1',
       description: 'MSC-image-1 Image Description',
       className: "gallery-item md:gallery-item-1 gallery-item-1-md",
       class_list: ["gallery-item", "gallery-item-1"],
-      image: '/assets/MSC/MSC-2.png',
+      image: '/assets/EEFI/EEFI-2.png',
     },
     {
       title: 'MSC-image-2',
       description: 'MSC-image-2 Image Description',
       className: "gallery-item gallery-item-2",
       class_list: ["gallery-item", "gallery-item-2"],
-      image: '/assets/MSC/MSC-3.png',
+      image: '/assets/EEFI/EEFI-3.png',
     },
     {
       title: 'MSC-image-3',
@@ -227,10 +227,10 @@ function EEFI_Project(){
                 animate={{opacity:1, transition: {delay:2, duration:1}}}
                 className="py-4 flex italic justify-left text-secondary_text lg:text-2xl ">
                   <div>
-                    <h3>Commercial/Transportation</h3>
-                    <h3>Miami,FL</h3>
-                    <h3>490,000 SF Terminal / 1,200,000 SF Garage</h3>
-                    <h3>Completion Date:2024</h3>
+                    <h3>Commercial/Transportation, Educational/Institutional</h3>
+                    <h3>Riverhead,NY</h3>
+                    <h3>5,000 SF & SITE Development</h3>
+                    <h3>Completion Date:2023</h3>
                   </div>
                 </motion.div>
               </div>
