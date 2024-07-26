@@ -58,16 +58,6 @@ polyline {
   .about__child1 { grid-area: 2 / 1 / 4 / 2; }
   .about__child2 { grid-area : 2 / 2 / 3 / 4; }
   .about__img { grid-area : 3 / 2 / 4 / 4; }
-  /* .about__parent {
-    grid-template-columns: 2fr repeat(4, 1fr);
-    grid-template-rows: repeat(3, .5fr) repeat(2, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    }    
-  .about__title { grid-area: 1 / 1 / 2 / 2; }
-  .about__child1 { grid-area: 2 / 1 / 4 / 2; }
-  .about__child2 { grid-area: 1 / 2 / 3 / 3; }
-  .about__img { grid-area: 3 / 2 / 4 / 5; } */
 
   .projecthome__parent {
     grid-template-columns: 2fr, 1fr;
@@ -115,32 +105,16 @@ polyline {
     opacity: 90%;
   }
 
-
-  /* .back-card{
-    position: absolute;
-    width: 100%;;
-    height: 100%;
-    backface-visibility: hidden;
-    background: green;
-    color: purple;
-    transform: rotateY(180deg);
-    
-  } */
-
   .animation-pulse {
-    /*box-shadow: 0 0 0 20px rgba(229,62,62, 0.5);
-    transform: scale(0.8);*/
     animation: pulse 3s infinite;
 }
 @keyframes pulse {
   0% {
       transform: scale(0.95);
-      /* box-shadow: 0 0 0 0 rgba(229, 62, 62, 1); */
   }
 
   70% {
       transform: scale(1);
-      /* box-shadow: 0 0 0 60px rgba(229, 62, 62, 0); */
   }
 
   100% {
@@ -249,10 +223,6 @@ polyline {
   margin: 1/2;
 }
 
-/* MSC TITLE */
-
-
-
 /* IMAGE CAROUSEL */
 
 .mobile-img-carousel {
@@ -287,9 +257,6 @@ polyline {
   position: relative;
 }
 
-
-
-
 .gallery-item{
   height: 300px;
   opacity:0;
@@ -301,13 +268,6 @@ polyline {
   background-size: contain;
 
 }
-
-/* .gallery-item-2{
-  left:90%;
-  transform: translateX(-50%);
-  opacity:.9;
-  transition: 0.15s ease-in-out;
-}  */
 
 /* sm */
 @media only screen and (max-width: 767px) {
@@ -561,4 +521,43 @@ polyline {
   z-index: 12;
   /* animation: blimp 3s infinite; */
 
+}
+
+
+/* HERO 2 */
+.main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem;
+  height: 100vh;
+}
+
+#intro-contents h1 {
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1.5rem;
+  font-weight: 500;
+  padding: 2rem 0;
+  font-size: 2rem;
+}
+
+#video {
+  /* position: absolute;
+  z-index: -1; */
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+
+}
+
+#intro_button{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
