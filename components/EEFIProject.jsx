@@ -12,7 +12,7 @@ import Hero2 from "./Hero2";
 
 function EEFI_Project(){
   const [isClient, setIsClient] = useState(false)
-  const [isBreakPoint, setIsBreakPoint] = useState('')
+  // const [isBreakPoint, setIsBreakPoint] = useState('')
 
 
   const useMediaQuery = (width) => {
@@ -27,8 +27,8 @@ function EEFI_Project(){
     }, []);
   
     useEffect(() => {
-      setIsBreakPoint(useMediaQuery(900))
-      setIsClient(true)
+      // setIsBreakPoint(useMediaQuery(900))
+      // setIsClient(true)
       const media = window.matchMedia(`(max-width: ${width}px)`);
       media.addListener(updateTarget);
       // setIsClient(true)
@@ -44,6 +44,7 @@ function EEFI_Project(){
   
     return targetReached;
   };
+  const isBreakPoint= useMediaQuery(900)
   
 
   const projectImages = [
@@ -102,7 +103,7 @@ function EEFI_Project(){
   const projectFeatures=[
     {
       title:'proj-feature-1',
-      heading: 'MECHANICAL PLANTS',
+      heading: 'MECHANICAL (HVAC) DESIGN',
       heading_className: 'text-dark_text xl:text-4xl text-3xl p-20 md:top-[20%] md:left-auto left-[-6%] top-[10%] absolute',
       description: "Garage structure houses Mechanical (HVAC) Cooling plants. Location was planned accordingly to conceal and not impact patron experience.",
       description_className:'text-secondary_text absolute md:text-2xl text-lg xl:p-6 p-4 top-[22%]',
@@ -113,7 +114,7 @@ function EEFI_Project(){
     },
     {
       title:'proj-feature-2',
-      heading: 'SMOKE CONTROL SYSTEM',
+      heading: 'ELECTRICAL DESIGN',
       heading_className: 'text-dark_text xl:text-4xl text-3xl p-6 md:top-[33%] top-[30%] absolute',
       description: "Terminal will consist of a NFPA-92 compliant Smoke Control System serving the whole smoke-protected areas. Terminal's Architecture, Mechanical, Electrical, Fire Alarm and Fire Protection systems will function coherently to achieve required smoke remove.",
       description_className:'text-secondary_text absolute md:text-2xl text-lg xl:p-6 p-4 top-[3%]',
@@ -123,7 +124,7 @@ function EEFI_Project(){
     },
     {
       title:'proj-feature-3',
-      heading: 'ELECTRIC VEHICLE CHARGING',
+      heading: 'PLUMBING DESIGN',
       heading_className: 'text-dark_text xl:text-4xl text-3xl p-6 md:top-[35%] top-[30%] absolute',
       description: "Garage consists 2,500+ Parking spaces with 250+ spaces of Level-2 Electrical (EV) charging infrastructure.",
       description_className:'text-secondary_text absolute md:text-2xl text-lg xl:p-6 p-4 top-[25%]',
@@ -133,7 +134,7 @@ function EEFI_Project(){
     },
     {
       title:'proj-feature-4',
-      heading: 'ART IN PUBLIC PLACES',
+      heading: 'FIRE PROTECTION DESIGN',
       heading_className: 'text-dark_text xl:text-4xl text-3xl p-20 md:top-[20%] top-[5%] absolute',
       description: "Terminal will include various Art in Public installations to highlight artist to enrich the public environment. A 3D Projection/Light show is planned to work with Terminal's current Architecture, Structure, Building systems including Lighting Control and Audio/Visual systems.",
       description_className:'text-secondary_text absolute md:text-2xl text-lg xl:p-6 p-4 top-[3%]',
@@ -143,7 +144,7 @@ function EEFI_Project(){
     },
     {
       title:'proj-feature-5',
-      heading: 'SHORE POWER',
+      heading: 'FIRE ALARM DESIGN',
       heading_className: 'text-dark_text xl:text-4xl text-3xl p-6 lg:left-[15%] md:top-[40%] md:left-[20%] top-[35%] left-[9%] absolute',
       description: "When finished, the Terminal will have the ability to provide (2) shore-side electrical power (15-kV) connections to service ships at Berth 8 and Berth 9, while their main and auxiliary diesel fueled engines are shut down.",
       description_className:'text-secondary_text absolute md:text-2xl text-lg xl:p-6 p-4 top-[13%]',
@@ -153,7 +154,7 @@ function EEFI_Project(){
     },
     {
       title:'proj-feature-6',
-      heading: 'LEED CERTIFICATION',
+      heading: 'LIGHTING & LIGHTING CONTROL DESIGN',
       heading_className: 'text-dark_text xl:text-4xl text-3xl p-6 lg:left-[4%] lg:top-[40%] md:top-[35%] md:left-[10%] top-[28%] absolute',
       description: "The Terminal is on schedule to become LEED Gold Certified upon completion.",
       description_className:'text-secondary_text absolute md:text-2xl text-lg xl:p-6 p-4 top-[30%]',
@@ -207,7 +208,7 @@ function EEFI_Project(){
               {/* Featured Photo Container */}
               <div className="flex justify-center md:p-10 p-2 min-h-[15vh]">           
                 <div>
-                { !isBreakPoint ? 
+                {/* { !isBreakPoint ? 
                   <div className="justify-center items-center flex md:w-[100%] md:h=[100%] overflow-hidden rounded-2xl">
                   {
                     !isBreakPoint ? 
@@ -236,17 +237,17 @@ function EEFI_Project(){
                       />
                     }
                   </div> 
-                : ""}
+                : ""} */}
                 {/* Caption */}
                 <motion.div 
                 initial={{opacity:0}}
                 animate={{opacity:1, transition: {delay:2, duration:1}}}
                 className="py-4 flex italic justify-left text-secondary_text lg:text-2xl ">
                   <div>
-                    <h3>Commercial/Transportation, Educational/Institutional</h3>
-                    <h3>Riverhead,NY</h3>
+                    <h3>Institutional</h3>
+                    <h3>Southampton, NY</h3>
                     <h3>5,000 SF & SITE Development</h3>
-                    <h3>Completion Date:2023</h3>
+                    <h3>Completion Date:2024</h3>
                   </div>
                 </motion.div>
               </div>
@@ -259,7 +260,7 @@ function EEFI_Project(){
                 >
                   <div className="my-4">
                     <h2 className="2xl:text-5xl 2xl:leading-[60px] lg:text-4xl text-2xl ">
-                      For the last 3+ years, IDEA AEC Engineering team has been performing Design and Project Management services on this nearly completed masterpiece of Architecture. Alongside multiple talented industry professionals, we continue to accomodate the needs of this project as it heads towards completion for the end of this year.
+                      In collaboration with East End Food Institute (EEFI), Garnett-DePasquale Architects (GDP), IDEA<span className='2xl:text-3xl lg:text-2xl text-lg'> AEC</span>  provided MEP-FP Engineering and Lighting Design services to achieve this project milestone. We are very proud of this project in supporting the local farmers and associated community. We look forward to upcoming Phase-2 of this vision.
                     </h2>
                   </div>
                 </motion.div>
@@ -271,9 +272,12 @@ function EEFI_Project(){
                 </div>
               </div>
               {/* Description Text */}
-              <div className="flex justify-center md:px-20 md:p-10 p-4 text-secondary_text tracking-wide xl:max-w-[1600px]">
+              <div className="flex justify-center xl:px-20 md:p-10 p-4 text-secondary_text tracking-wide xl:max-w-[1600px]">
                 <div>
-                  <div className="my-4 tracking-wider">
+                  <div className='py-6'>
+                    <h2>Project Description</h2>
+                  </div>
+                  <div className="my-4 tracking-wider md:px-20">
                     <h3 className="xl:text-3xl md:text-2xl text-lg xl:leading-[45px] lg:py-4 py-2">
                     MEP-FP site/campus design and planning of proposed multi-facility and multi-phase project at EEFI project site. Design includes a central MEP-FP plant, the plant would include centralized geothermal and boiler plant to heat and cool several buildings. Plant would interconnect several wells located on the site to provide efficient sustainable HVAC systems accommodations.
                     </h3>
