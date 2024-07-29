@@ -1,4 +1,5 @@
 import Image from "next/image";
+import ReactPlayer from "react-player/lazy";
 import ImageCarousel from "./ImageCarousel";
 import Cards from "./Cards";
 import BeforeAndAfter from "./BeforeAndAfter";
@@ -10,6 +11,9 @@ import MobileImageCarousel from "./MobileImageCarousel";
 import Hero2 from "./Hero2";
 
 function EEFI_Project(){
+  const [isClient, setIsClient] = useState(false)
+  const [isBreakPoint, setIsBreakPoint] = useState('')
+
 
   const useMediaQuery = (width) => {
     const [targetReached, setTargetReached] = useState(false);
@@ -23,21 +27,24 @@ function EEFI_Project(){
     }, []);
   
     useEffect(() => {
+      setIsBreakPoint(useMediaQuery(900))
+      setIsClient(true)
       const media = window.matchMedia(`(max-width: ${width}px)`);
       media.addListener(updateTarget);
+      // setIsClient(true)
   
       // Check on mount (callback is not called until a change occurs)
       if (media.matches) {
         setTargetReached(true);
       }
+
   
       return () => media.removeListener(updateTarget);
     }, []);
   
     return targetReached;
   };
-  const isBreakPoint = useMediaQuery(900)
-
+  
 
   const projectImages = [
     {
@@ -160,35 +167,18 @@ function EEFI_Project(){
   const projectServices=[
     {
       title: 'service-1',
-      service: 'MEP-FP Project Management', 
-    },
-    {
-      title: 'service-2',
-      service:'Construction PM Services', 
-    },
-    {
-      title: 'service-3',
-      service:'Mechanical',
-    },
-    {
-      title: 'service-4',
-      service:'Electrical',
-    },
-    {
-      title: 'service-5',
-      service: 'Fire Alarm Design'
+      service: 'MEP-FP Design', 
     }
-    
   ]
 
   const projectResources= [
     {
-      title: 'MSC Cruises',
-      url: 'https://www.msccruisesusa.com/news/new-cruise-terminal-miami', 
+      title: 'East End Food - Food Hub',
+      url: 'https://www.eastendfood.org/food-hub', 
     },
     {
-      title: 'Arquitectonica',
-      url: 'https://arquitectonica.com/architecture/project/msc-cruises-terminal-at-port-miami/' 
+      title: 'GDP',
+      url: 'https://gdp.work/' 
     }
     
   ]
@@ -217,10 +207,36 @@ function EEFI_Project(){
               {/* Featured Photo Container */}
               <div className="flex justify-center md:p-10 p-2 min-h-[15vh]">           
                 <div>
-                {/* Photo */}
-                <div className="py-4">
-                  <BeforeAndAfter/>
-                </div>
+                { !isBreakPoint ? 
+                  <div className="justify-center items-center flex md:w-[100%] md:h=[100%] overflow-hidden rounded-2xl">
+                  {
+                    !isBreakPoint ? 
+                      <ReactPlayer 
+                      // new 3yr video
+                      // https://www.youtube.com/watch?v=SjdX1mYmiP0&ab_channel=IDEA
+                      // 2 yr video
+                      // https://www.youtube.com/watch?v=xUWu2wi4o-A&ab_channel=IDEA
+                        url={'https://www.youtube.com/watch?v=SjdX1mYmiP0&ab_channel=IDEA'}
+                        playing
+                        loop
+                        muted
+                        controls
+                        width='900px'
+                        height='500px'
+                      /> : 
+                      <ReactPlayer 
+                        url={'https://www.youtube.com/watch?v=SjdX1mYmiP0&ab_channel=IDEA'}
+                        playing
+                        loop
+                        muted
+                        controls
+                        width='375px'
+                        height='250px'
+
+                      />
+                    }
+                  </div> 
+                : ""}
                 {/* Caption */}
                 <motion.div 
                 initial={{opacity:0}}
@@ -259,16 +275,10 @@ function EEFI_Project(){
                 <div>
                   <div className="my-4 tracking-wider">
                     <h3 className="xl:text-3xl md:text-2xl text-lg xl:leading-[45px] lg:py-4 py-2">
-                    A multi-vessel cruise terminal capable of serving a total of 36,000 cruise ship passengers
-                    daily. The facility consists of 490,000 sf of interior space and 1,200,000 sf garage (6-Levels).
-                    A boarding concourse extends east approximately 3,000 feet to allow for berthing of three (3)
-                    cruise vessels simultaneously.
+                    MEP-FP site/campus design and planning of proposed multi-facility and multi-phase project at EEFI project site. Design includes a central MEP-FP plant, the plant would include centralized geothermal and boiler plant to heat and cool several buildings. Plant would interconnect several wells located on the site to provide efficient sustainable HVAC systems accommodations.
                     </h3>
                     <h3 className="xl:text-3xl md:text-2xl text-lg xl:leading-[45px] lg:py-4 py-2">
-                    The Terminal’s programming includes but is not limited to: check-in, validation, screening,
-                    waiting lounges, office terrace, passenger bridge concourse, baggage claim, restrooms, U.S.A
-                    customs and border protection areas, VIP lounges, etc. Sustainable goals include LEED Silver
-                    certifcation.
+                    Phase 1 : Full renovation of existing 5,000 sq ft. facility to provide a permanent home for East End Food Institute, including a year-round farmers market and community kitchen. Renovation will include upgrade/replacement of existing Mechanical, Electrical, Plumbing and Fire Protection systems to align with new program.
                     </h3>
                   </div>
                 </div>

@@ -18,6 +18,22 @@ function Culture_Page(){
   const [showDropDown, setShowDropDown] = useState(false)
   const [category, setCategory] = useState("All Developments")
   const allPosts = [
+    // FOOTBALL TAPE
+    {
+      id: 15,
+      title: "Title",
+      date: 'July 5, 2024',
+      text: [
+        "Here we see Kazi playfully showing our Interns a VHS tape of his football skills from back in the day.. Just like a football team, our engineering company thrives on teamwork, precision and strategy. Each project is a game where every engineer, designer and manager plays a crucial role in achieving victory. Whether it's developing cutting-edge technology or delivering complex infrastructure, we score our goals by working together."
+      ],
+      single_image: {
+        title: 'msc_construction_milestone',
+        image: '/assets/culture/VHS/VHS.png',
+        width: 1000,
+        height:500,
+      },
+      category: "Cultural Developments",
+    },
     //NABS HIGHLIGHT
     {
       id: 14,
@@ -488,7 +504,7 @@ function Culture_Page(){
           <h1 className="md:text-[500%] text-4xl text-center items-center tracking-wide font-light text-primary_text/70">IDEA Turns 3!</h1>
         </div>
         { isClient ? 
-          <div className="justify-center items-center flex md:w-[100%] md:h=[100%] overflow-hidden">
+          <div className="justify-center items-center flex md:w-[100%] md:h=[100%] overflow-hidden rounded-2xl">
             {
               !isBreakPoint ? 
                 <ReactPlayer 

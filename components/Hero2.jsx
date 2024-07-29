@@ -7,7 +7,7 @@ function Hero2(){
       <div id='intro-contents' className=''>
           <motion.div 
           id='intro_button' 
-          className='z-[9]'
+          className='z-[9] tracking-wider'
           initial={{opacity:0}}
           whileInView={{opacity:1, transition: {delay:1.8, duration:1}}}
           >
