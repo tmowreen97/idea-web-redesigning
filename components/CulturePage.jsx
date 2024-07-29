@@ -18,6 +18,43 @@ function Culture_Page(){
   const [showDropDown, setShowDropDown] = useState(false)
   const [category, setCategory] = useState("All Developments")
   const allPosts = [
+    //NABS HIGHLIGHT
+    {
+      id: 14,
+      title: 'Team Spotlight: Nabila Hoque',
+      date: 'June 15, 2024 ',
+      text: [
+        "Meet Nabila, part of the powerhouse team behind IDEA's marketing magic! From outreach and networking to creating stunning videos, she truly lets her creative juices flow. Whether it's site visits, photo and video shoots, or digital design, Nabila wears many hats and rocks each one with style."
+        ],
+      slideshow: [
+        {
+          title: 'Nabs_Highlight_1',
+          image: '/assets/culture/nabs/Nabs-1.png'
+        },
+        {
+          title: 'Nabs_Highlight_2',
+          image: '/assets/culture/nabs/Nabs-2.png'
+        },
+        {
+          title: 'Nabs_Highlight_3',
+          image: '/assets/culture/nabs/Nabs-3.png'
+        },
+        {
+          title: 'Nabs_Highlight_4',
+          image: '/assets/culture/nabs/Nabs-4.png'
+        },
+        {
+          title: 'Nabs_Highlight_5',
+          image: '/assets/culture/nabs/Nabs-5.png'
+        },
+        {
+          title: 'Nabs_Highlight_6',
+          image: '/assets/culture/nabs/Nabs-6.png'
+        },
+      ],
+      special: "2xl:w-[800px] 2xl:h-[680px] xl:w-[700px] xl:h-[600px]  lg:w-[500px] lg:h-[400px] w-[340px] h-[300px] rounded-2xl bg-center bg-cover hover:scale-105  duration-500 transform p-0 z-0",
+      category: "Cultural Developments",
+    },
     //MSC Project Page
     {
       id: 13,
