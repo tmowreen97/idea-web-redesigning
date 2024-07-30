@@ -18,46 +18,45 @@ function Culture_Page({showDropDown, setShowDropDown}){
   // const [showDropDown, setShowDropDown] = useState(false)
   const [category, setCategory] = useState("All Developments")
   const allPosts = [
-    // https://www.youtube.com/watch?v=Zc6OkoSx_UE&ab_channel=IDEA
-        //MSC Project Page
+    //EEFI Phase 1
+    {
+      id: 16,
+      title: "East End Food Institute - Phase 1",
+      date: 'July 22, 2024',
+      text: [
+        "In collaboration with GDP, IDEA AEC provided MEP-FP Engineering services to achieve this project milestone. We are very proud of this project in supporting the local farmers and associated community. Check out this video celebrating completion of the first phase of our project and our hardwork.",
+      ],
+      extended_text: [
+        '"East End Food envisions the new site as a dynamic Hub that enhances the local food system. The development includes state-of-the-art facilities for food processing, distribution, and retail, as well as educational spaces for workshops and events. This site will serve as a central point for farmers, producers, and consumers to connect and strengthen the local food system."',
+        '- Miranda, East End Food'
+      ],
+      link: [
         {
-          id: 16,
-          title: "East End Food Institute - Phase 1",
-          date: 'July 22, 2024',
-          text: [
-            "In collaboration with GDP, IDEA AEC provided MEP-FP Engineering services to achieve this project milestone. We are very proud of this project in supporting the local farmers and associated community. Check out this video celebrating completion of the first phase of our project and our hardwork.",
-          ],
-          extended_text: [
-            '"East End Food envisions the new site as a dynamic Hub that enhances the local food system. The development includes state-of-the-art facilities for food processing, distribution, and retail, as well as educational spaces for workshops and events. This site will serve as a central point for farmers, producers, and consumers to connect and strengthen the local food system."',
-            '- Miranda, East End Food'
-          ],
-          link: [
-            {
-              title: 'East End Food - Food Hub',
-              url: 'https://gdp.work/',
-            },
-            {
-              title: 'GDP',
-              url: 'https://www.ideaaec.com/MSC-Miami-Cruise-Terminal-Highlight',
-            },
-
-          ],
-          video_small : {
-            title: "msc_groundbreak",
-            url: "https://www.youtube.com/watch?v=Zc6OkoSx_UE&ab_channel=IDEA",
-            link: 'https://www.youtube.com/watch?v=Zc6OkoSx_UE&ab_channel=IDEA',
-            height: '200px',
-            width: '300px',
-          },
-          video_large: {
-            title: "msc_groundbreak",
-            url: "https://www.youtube.com/watch?v=Zc6OkoSx_UE&ab_channel=IDEA",
-            link: 'https://www.youtube.com/watch?v=Zc6OkoSx_UE&ab_channel=IDEA',
-            height: '420px',
-            width: '725px',
-          },
-          category: "Project Developments",
+          title: 'East End Food - Food Hub',
+          url: 'https://gdp.work/',
         },
+        {
+          title: 'GDP',
+          url: 'https://www.ideaaec.com/MSC-Miami-Cruise-Terminal-Highlight',
+        },
+
+      ],
+      video_small : {
+        title: "msc_groundbreak",
+        url: "https://www.youtube.com/watch?v=Zc6OkoSx_UE&ab_channel=IDEA",
+        link: 'https://www.youtube.com/watch?v=Zc6OkoSx_UE&ab_channel=IDEA',
+        height: '200px',
+        width: '300px',
+      },
+      video_large: {
+        title: "msc_groundbreak",
+        url: "https://www.youtube.com/watch?v=Zc6OkoSx_UE&ab_channel=IDEA",
+        link: 'https://www.youtube.com/watch?v=Zc6OkoSx_UE&ab_channel=IDEA',
+        height: '420px',
+        width: '725px',
+      },
+      category: "Project Developments",
+    },
     // FOOTBALL TAPE
     {
       id: 15,
@@ -127,7 +126,7 @@ function Culture_Page({showDropDown, setShowDropDown}){
         title: "msc_groundbreak",
         url: "/assets/MSC-Highlight.mp4",
         link: 'https://www.ideaaec.com/MSC-Miami-Cruise-Terminal-Highlight',
-        height: '500px',
+        height: '250px',
         width: '300px',
       },
       video_large: {
@@ -287,7 +286,7 @@ function Culture_Page({showDropDown, setShowDropDown}){
         title: "msc_groundbreak",
         url: "https://www.youtube.com/watch?v=SjdX1mYmiP0&ab_channel=IDEA",
         link: 'https://www.linkedin.com/posts/idea-aec_engineeringexcellence-activity-7108521663280881665-DO3J?utm_source=share&utm_medium=member_desktop',
-        height: '500px',
+        height: '200px',
         width: '300px',
       },
       video_large: {
