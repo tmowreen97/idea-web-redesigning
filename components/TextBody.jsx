@@ -32,7 +32,7 @@ function TextBody ({post}){
               }
             </div>
             <div className="text-center p-2 text-primary_text" >
-              <button onClick={()=> setShowExtended(!showExtended)} className={showExtended ? "bg-secondary_text text-dark_text hover:bg-accent_2/80 hover:text-secondary_text p-3 px-4 rounded-xl text-lg " : "bg-secondary_text text-dark_text hover:bg-accent_2/80 hover:text-secondary_text p-3 px-4 rounded-xl text-lg my-10"}>
+              <button onClick={()=> setShowExtended(!showExtended)} className={showExtended ? "bg-secondary_text text-dark_text hover:bg-accent_2/80 hover:text-secondary_text p-3 px-4 rounded-xl text-lg " : "bg-secondary_text text-dark_text hover:bg-accent_2/80 hover:text-secondary_text p-3 px-4 rounded-xl text-lg my-2"}>
                 {showExtended ? 'Read Less' : 'Read More'}
               </button>
             </div>

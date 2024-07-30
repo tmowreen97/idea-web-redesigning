@@ -18,6 +18,46 @@ function Culture_Page(){
   const [showDropDown, setShowDropDown] = useState(false)
   const [category, setCategory] = useState("All Developments")
   const allPosts = [
+    // https://www.youtube.com/watch?v=Zc6OkoSx_UE&ab_channel=IDEA
+        //MSC Project Page
+        {
+          id: 16,
+          title: "East End Food Institute - Phase 1",
+          date: 'July 22, 2024',
+          text: [
+            "In collaboration with GDP, IDEA AEC provided MEP-FP Engineering services to achieve this project milestone. We are very proud of this project in supporting the local farmers and associated community. Check out this video celebrating completion of the first phase of our project and our hardwork.",
+          ],
+          extended_text: [
+            '"East End Food envisions the new site as a dynamic Hub that enhances the local food system. The development includes state-of-the-art facilities for food processing, distribution, and retail, as well as educational spaces for workshops and events. This site will serve as a central point for farmers, producers, and consumers to connect and strengthen the local food system."',
+            '- Miranda, East End Food'
+          ],
+          link: [
+            {
+              title: 'East End Food - Food Hub',
+              url: 'https://gdp.work/',
+            },
+            {
+              title: 'GDP',
+              url: 'https://www.ideaaec.com/MSC-Miami-Cruise-Terminal-Highlight',
+            },
+
+          ],
+          video_small : {
+            title: "msc_groundbreak",
+            url: "https://www.youtube.com/watch?v=Zc6OkoSx_UE&ab_channel=IDEA",
+            link: 'https://www.youtube.com/watch?v=Zc6OkoSx_UE&ab_channel=IDEA',
+            height: '200px',
+            width: '300px',
+          },
+          video_large: {
+            title: "msc_groundbreak",
+            url: "https://www.youtube.com/watch?v=Zc6OkoSx_UE&ab_channel=IDEA",
+            link: 'https://www.youtube.com/watch?v=Zc6OkoSx_UE&ab_channel=IDEA',
+            height: '420px',
+            width: '725px',
+          },
+          category: "Project Developments",
+        },
     // FOOTBALL TAPE
     {
       id: 15,
@@ -79,10 +119,10 @@ function Culture_Page(){
       text: [
         "We've developed a highlight page all about the progress on our MSC Miami Cruise Terminal Project. There are some new interactive features, like the before and after image slider. It shows the progress we've made from August 2023 to March 2024. We've come a long way and we're so much closer to the finish line! Make sure to follow along with us on our journey.",
       ],
-      link: {
+      link: [{
         title: 'MSC Project Highlight Page',
         url: 'https://www.ideaaec.com/MSC-Miami-Cruise-Terminal-Highlight',
-      },
+      }],
       video_small : {
         title: "msc_groundbreak",
         url: "/assets/MSC-Highlight.mp4",
@@ -609,15 +649,15 @@ function Culture_Page(){
                     counter%2==0 ? 
                     
                     // EVEN POSTS
-                    <div className="justify-center">
+                    <div className="h-full justify-center flex xl:block">
                     <motion.div 
                       initial={{opacity:0.15}}
                       whileInView={{opacity:1, scale:[0.95, 1], transition:{duration:1.5}}}
-                      className="bg-secondary/40 rounded-xl p-[5%] tracking-wider font-light xl:max-h-[900px]  h-full">
+                      className="bg-secondary/40 rounded-xl p-[5%] tracking-wider font-light xl:max-h-[900px] h-full">
                       <div className="xl:ml-5">
                         <p className="italic text-[10px]">{post.category=="Cultural Developments" ? "Cultural Development" : "Project Development"}</p>
                       </div>
-                    <div className={post.extended_text ? "xl:flex justify-between  " : "xl:flex justify-between  items-center"}>
+                    <div className={post.extended_text ? "xl:flex justify-between items-center " : "xl:flex justify-between items-center"}>
                       <div className="m-5 z-0">
                       { post.slideshow ? 
                         <div className="items-center justify-center flex">
@@ -633,6 +673,7 @@ function Culture_Page(){
                         : ""
                       }
                       {post.video_large && isClient ? 
+                      <div className='flex align-middle justify-center'>
                          <Link href={post.video_large.link} legacyBehavior>
                          <a target="_blank" rel="noopener noreferrer" aria-label="MSC Groundbreaking Video">
                            {!isBreakPoint ? 
@@ -644,7 +685,7 @@ function Culture_Page(){
                            muted
                            height={post.video_large.height}
                            width={post.video_large.width}
-                           className="rounded-xl overflow-hidden"
+                           className="rounded-xl overflow-hidden justify-center"
                            />
                            : 
                            <ReactPlayer 
@@ -655,7 +696,7 @@ function Culture_Page(){
                            muted
                            height={post.video_small.height}
                            width={post.video_small.width}
-                           className="rounded-xl overflow-hidden"
+                           className="rounded-xl overflow-hidden justify-center"
                            />
                          }
                            
@@ -663,43 +704,62 @@ function Culture_Page(){
                          </a>
                          
                          </Link>
+                         </div>
                          : ""                    
                       }
                       </div>
                       {/* Text body */}
                       <div className="m-3 max-w-[700px] z-[9]">
                         <TextBody post={post} />
-                        {post.link ? 
-                          <Link href={post.link.url} legacyBehavior>
-                            <a target="_blank" rel="noopener noreferrer" aria-label="MSC-Project-Page" className="hover:text-light_accent_2 hover:underline 2xl:text-xl text-lg text-light_accent_1 font-medium">
-                              {post.link.title}
-                            </a>
-                          </Link> 
-                          : ''}
+                        <div className='mt-4'>
+                          {post.link ? 
+                            post.link.map((resource)=> {
+                              console.log(resource)
+                              return(
+                                <div className='py-1'>
+                                  <Link href={resource.url} legacyBehavior>
+                                    <a target="_blank" rel="noopener noreferrer" aria-label="MSC-Project-Page" className="hover:text-light_accent_2 underline 2xl:text-xl text-lg text-light_accent_1 font-medium">
+                                      {resource.title}
+                                    </a>
+                                  </Link> 
+                                </div>
+                              )
+                            })
+                            : ''}
+                        </div>
                       </div>
                     </div>
                     </motion.div>
                     </div>
                     :
                     //ODD POSTS
-                    <div className="">
+                    <div className="h-full justify-center flex xl:block">
                     <motion.div 
                     initial={{opacity:0.15}}
-                    whileInView={{opacity:1, scale:[1.05, 1], transition:{duration:1.5}}} className="bg-secondary/40 rounded-xl p-[5%] tracking-wider font-light xl:max-h-[900px] h-full">
+                    whileInView={{opacity:1, scale:[1.05, 1], transition:{duration:1.5}}} className="bg-secondary/40 rounded-xl p-[5%] tracking-wider font-light h-full">
                     <div className="ml-3">
                       <p className="italic text-[10px]">{post.category=="Cultural Developments" ? "Cultural Development" : "Project Development"}</p>
                     </div>
-                      <div className={post.extended_text ? "xl:flex justify-between" : "xl:flex justify-between items-center"}>
+                      <div className={post.extended_text ? "xl:flex justify-between items-center" : "xl:flex justify-between items-center"}>
                       {/* Text body */}
-                      <div className="m-3 max-w-[700px] z-[9]">
-                        <TextBody post={post} />
-                        {post.link ? 
-                        <Link href={post.link.url} legacyBehavior>
-                          <a target="_blank" rel="noopener noreferrer" aria-label="MSC-Project-Page" className="hover:text-light_accent_2 hover:underline 2xl:text-xl text-lg text-light_accent_1 font-medium">
-                            {post.link.title}
-                          </a>
-                        </Link>
-                        : ''}
+                        <div className="m-3 max-w-[700px] z-[9]">
+                          <TextBody post={post} />
+                          <div className='mt-4'>
+                            {post.link ? 
+                              post.link.map((resource)=> {
+                                console.log(resource)
+                                return(
+                                  <div className='py-1'>
+                                    <Link href={resource.url} legacyBehavior>
+                                      <a target="_blank" rel="noopener noreferrer" aria-label="MSC-Project-Page" className="hover:text-light_accent_2 underline 2xl:text-xl text-lg text-light_accent_1 font-medium">
+                                        {resource.title}
+                                      </a>
+                                    </Link> 
+                                  </div>
+                                )
+                              })
+                            : ''}
+                          </div>
                       </div>
                       <div className="m-5">
                       { post.slideshow ? 
@@ -716,6 +776,7 @@ function Culture_Page(){
                         : ""
                       }
                       {post.video_large && isClient ? 
+                      <div className='flex align-middle'>
                          <Link href={post.video_large.link} legacyBehavior>
                          <a target="_blank" rel="noopener noreferrer" aria-label="MSC Groundbreaking Video">
                            {!isBreakPoint ? 
@@ -746,6 +807,7 @@ function Culture_Page(){
                          </a>
                          
                          </Link>
+                         </div>
                          : ""                    
                       }
                       </div>
