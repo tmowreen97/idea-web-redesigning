@@ -12,10 +12,10 @@ import TextBody from "./TextBody";
 
 
 
-function Culture_Page(){
+function Culture_Page({showDropDown, setShowDropDown}){
 
   const [isClient, setIsClient] = useState(false)
-  const [showDropDown, setShowDropDown] = useState(false)
+  // const [showDropDown, setShowDropDown] = useState(false)
   const [category, setCategory] = useState("All Developments")
   const allPosts = [
     // https://www.youtube.com/watch?v=Zc6OkoSx_UE&ab_channel=IDEA

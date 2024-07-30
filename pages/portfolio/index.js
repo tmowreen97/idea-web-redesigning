@@ -7,6 +7,7 @@ import { useState } from "react"
 export default function Portfolio(){
   const [showDropDown, setShowDropDown] = useState(false)
   function handleClick(){
+    console.log('in here!')
     if (showDropDown) {
       setShowDropDown(false)
     }
