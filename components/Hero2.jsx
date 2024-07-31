@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
+import Video from 'next-video';
+import awesomeVideo from '/videos/EEFI-video-trimmed.mp4';
 
 function Hero2(){
   return(
@@ -22,8 +24,8 @@ function Hero2(){
       initial={{opacity:0}}
       animate={{opacity:[0.25,0.5,0.75,1], transition: {duration:1}}}
       >
-        <video
-          src={require("public/assets/EEFI/EEFI-video-trimmed.mp4")}
+        <Video
+          src={awesomeVideo}
           autoPlay
           muted
           loop

@@ -9,6 +9,10 @@ import Link from "next/link";
 import { AiFillInstagram, AiFillFacebook, AiFillLinkedin } from "react-icons/ai";
 import MobileImageCarousel from "./MobileImageCarousel";
 import Hero2 from "./Hero2";
+import Video from 'next-video';
+import awesomeVideo from '/videos/EEFI-Phase-1.mov';
+
+// import highlightVideo from 'https://www.youtube.com/watch?v=SjdX1mYmiP0&ab_channel=IDEA';
 
 function EEFI_Project(){
   const [isClient, setIsClient] = useState(false)
@@ -208,6 +212,14 @@ function EEFI_Project(){
               {/* Featured Photo Container */}
               <div className="flex justify-center md:p-10 p-2 min-h-[15vh]">           
                 <div>
+                <Video
+                  src={awesomeVideo}
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  id='video'
+                /> 
                 {/* { !isBreakPoint ? 
                   <div className="justify-center items-center flex md:w-[100%] md:h=[100%] overflow-hidden rounded-2xl">
                   {
