@@ -212,14 +212,17 @@ function EEFI_Project(){
               {/* Featured Photo Container */}
               <div className="flex justify-center md:p-10 p-2 min-h-[15vh]">           
                 <div>
-                <Video
-                  src={awesomeVideo}
-                  autoPlay
-                  muted
-                  loop
-                  playsInline
-                  id='video'
-                /> 
+                  <div>
+                    <Video
+                      src={awesomeVideo}
+                      autoPlay
+                      muted
+                      loop
+                      playsInline
+                      id='eefi-phase-1-video'
+                    /> 
+                  </div>
+                
                 {/* { !isBreakPoint ? 
                   <div className="justify-center items-center flex md:w-[100%] md:h=[100%] overflow-hidden rounded-2xl">
                   {
