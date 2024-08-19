@@ -530,9 +530,11 @@ polyline {
   align-items: center;
   padding: 6rem;
   height: 100vh;
+  /* height: screen; */
+  /* position: relative; */
 }
 
-#intro-contents h1 {
+#intro_contents h1 {
   text-transform: uppercase;
   color: white;
   letter-spacing: 1.5rem;
@@ -541,23 +543,25 @@ polyline {
   font-size: 2rem;
 }
 
-#video {
-  /* position: absolute;
-  z-index: -1; */
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
+#video_container{
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-#eefi-phase-1-video {
-  /* position: absolute;
-  z-index: -1; */
-  /* height: 100%;
-  width: 100%; */
-  object-fit: fill;
-  min-height: 500px;
-  min-width: 1000px;
-  /* object-fit: cover; */
+#video {
+  position: absolute;
+  /* z-index: 0; */
+  height:fit-content;
+  width: fit-content;
+  min-width: 100%;
+  min-height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
 
 #intro_button{
@@ -567,4 +571,16 @@ polyline {
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+}
+#eefi-phase-1-video {
+  /* position: absolute;
+  z-index: -1; */
+  /* height: 100%;
+  width: 100%; */
+  /* object-fit: contain; */
+  /* height: 100%;
+  width: 100%; */
+  max-width: 100%;
+  height: auto;
+  /* object-fit: cover; */
 }

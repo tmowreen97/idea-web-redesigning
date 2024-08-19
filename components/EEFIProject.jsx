@@ -9,6 +9,7 @@ import Link from "next/link";
 import { AiFillInstagram, AiFillFacebook, AiFillLinkedin } from "react-icons/ai";
 import MobileImageCarousel from "./MobileImageCarousel";
 import Hero2 from "./Hero2";
+import Hero3 from "./Hero3"
 import Video from 'next-video';
 import awesomeVideo from '/videos/EEFI-Phase-1.mov';
 
@@ -108,7 +109,7 @@ function EEFI_Project(){
     {
       title:'proj-feature-1',
       heading: 'MECHANICAL (HVAC) DESIGN',
-      heading_className: 'text-dark_text xl:text-4xl text-3xl p-20 md:top-[20%] md:left-auto left-[-6%] top-[10%] absolute',
+      heading_className: 'text-dark_text xl:text-4xl text-3xl p-20 md:top-[20%] md:left-auto left-[-6%] top-[3%] absolute',
       description: "Garage structure houses Mechanical (HVAC) Cooling plants. Location was planned accordingly to conceal and not impact patron experience.",
       description_className:'text-secondary_text absolute md:text-2xl text-lg xl:p-6 p-4 top-[22%]',
       img: '/assets/logos/mech-icon.png',
@@ -210,9 +211,9 @@ function EEFI_Project(){
           <div className="lg:p-20 md:p-4 flex justify-center">
             <div>
               {/* Featured Photo Container */}
-              <div className="flex justify-center md:p-10 p-2 min-h-[15vh]">           
+              <div className="flex justify-center">           
                 <div>
-                  <div>
+                  <div className='z-1'>
                     <Video
                       src={awesomeVideo}
                       autoPlay

@@ -18,6 +18,105 @@ function Culture_Page({showDropDown, setShowDropDown}){
   // const [showDropDown, setShowDropDown] = useState(false)
   const [category, setCategory] = useState("All Developments")
   const allPosts = [
+    // NANCY HIGHLIGHT
+    {
+      id: 19,
+      title: "3 Year Team Celebration",
+      date: 'August 16, 2024',
+      text: [
+        "IDEA is celebrating three (3) years of successfully contribution to the AEC industry, this past week topped it off with celebratory office vibes! From hard work to endless fun, our team has truly made every moment special. A huges hout out to our founder Kazi for making the team feel appreciated with these incredible gifts. Here's to many more years of teamwork and success."
+      ],
+      slideshow: [
+        {
+          title: 'Team_Celebration_1',
+          image: '/assets/culture/team-gifts/team-gifts-1.jpeg',
+        },
+        {
+          title: 'Team_Celebration_2',
+          image: '/assets/culture/team-gifts/team-gifts-2.jpeg',
+        },
+        {
+          title: 'Team_Celebration_3',
+          image: '/assets/culture/team-gifts/team-gifts-3.jpeg',
+        },
+        {
+          title: 'Team_Celebration_4',
+          image: '/assets/culture/team-gifts/team-gifts-4.jpeg',
+        },
+        {
+          title: 'Team_Celebration_5',
+          image: '/assets/culture/team-gifts/team-gifts-5.jpeg',
+        },
+
+      ],
+      special: "2xl:w-[800px] 2xl:h-[680px] xl:w-[700px] xl:h-[600px]  lg:w-[500px] lg:h-[400px] w-[340px] h-[300px] rounded-2xl bg-center bg-cover hover:scale-105  duration-500 transform p-0 z-0",
+
+      category: "Cultural Developments",
+    },
+    //KHAIR PROGRESS
+    {
+      id: 18,
+      title: "Khair Community Center Progress",
+      date: 'August 12, 2024',
+      text: [
+        "Here we have the remarkable progress of the Khair Community Center in Phoenixville, PA. The vision, current progress & development of this community organization is inspirational. Once, all phases are completed, this project will include a Masjid, Youth Islamic Educational programs, recreational and social programs fro the local community.",
+
+      ],
+      extended_text:[
+        "IDEA AEC was priviliged to provide Engineering services and be part of this transformative journey, and empower the Khair organization to complete Phase 2A successfully.",
+        "The Khair organization continues to raise funds for the construction of the next phase (Phase-3) of this campus. We invite you to join us in supporting this inspiring movement & community organization."
+      ],
+      link: [
+        {
+          title: 'Support the Khair Community Center',
+          url: 'https://www.khaircenter.org/donate',
+        },
+      ],
+      video_small : {
+        title: "khair_progress",
+        url: "/assets/culture/khair/khair-video.MOV",
+        link: 'https://www.instagram.com/reel/C-lhhfSufu9/?igsh=MTh4amx3eHh4Ynp0Zw==',
+        height: '500px',
+        width: '300px',
+      },
+      video_large: {
+        title: "khair_progress",
+        url: "/assets/culture/khair/khair-video.MOV",
+        link: 'https://www.instagram.com/reel/C-lhhfSufu9/?igsh=MTh4amx3eHh4Ynp0Zw==',
+        height: '750px',
+        width: '600px',
+      },
+      category: "Project Developments",
+    },
+    // NANCY HIGHLIGHT
+    {
+      id: 17,
+      title: "Team Spotlight: Nancy Karim",
+      date: 'July 29, 2024',
+      text: [
+        "Meet our Creative Director, Nancy! With an eye for detail and a passion for creativity, our Creative Director is the lead visionary behind our brand's stunning visuals and innovative content."
+      ],
+      extended_text: [
+        "From conceptualizing color palettes to leading our team with inspiration and enthusiasm, they ensure that every project shines.",
+        "Not only does she bring vibrant ideas to life, but she also makes sure out Friday meetings end with 'Compliment Friday', where we celebrate the amazing work of each team member!",
+        "Get to know the creative force that drives our success!"
+      ],
+      slideshow: [
+        {
+          title: 'Nancy_Highlight_1',
+          image: '/assets/culture/nancy/nancy-1.jpeg',
+        },
+        {
+          title: 'Nancy_Highlight_2',
+          image: '/assets/culture/nancy/nancy-2.jpeg',
+        },
+        {
+          title: 'Nancy_Highlight_3',
+          image: '/assets/culture/nancy/nancy-3.jpeg',
+        },
+      ],
+      category: "Cultural Developments",
+    },
     //EEFI Phase 1
     {
       id: 16,
