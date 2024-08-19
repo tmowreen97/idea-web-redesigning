@@ -20,7 +20,7 @@ function Culture_Page({showDropDown, setShowDropDown}){
   const allPosts = [
     // CONCEPTUALS HIGHLIGHT
     {
-      id: 19,
+      id: 20,
       title: "Team Highlight: IDEA US Conceptual Interns",
       date: 'August 19, 2024',
       text: [
