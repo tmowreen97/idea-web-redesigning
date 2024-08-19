@@ -18,7 +18,7 @@ function Culture_Page({showDropDown, setShowDropDown}){
   // const [showDropDown, setShowDropDown] = useState(false)
   const [category, setCategory] = useState("All Developments")
   const allPosts = [
-    // NANCY HIGHLIGHT
+    // TEAM CELEBRATION
     {
       id: 19,
       title: "3 Year Team Celebration",
@@ -94,10 +94,9 @@ function Culture_Page({showDropDown, setShowDropDown}){
       title: "Team Spotlight: Nancy Karim",
       date: 'July 29, 2024',
       text: [
-        "Meet our Creative Director, Nancy! With an eye for detail and a passion for creativity, our Creative Director is the lead visionary behind our brand's stunning visuals and innovative content."
+        "Meet our Creative Director, Nancy! With an eye for detail and a passion for creativity, our Creative Director is the lead visionary behind our brand's stunning visuals and innovative content. From conceptualizing color palettes to leading our team with inspiration and enthusiasm, they ensure that every project shines."
       ],
       extended_text: [
-        "From conceptualizing color palettes to leading our team with inspiration and enthusiasm, they ensure that every project shines.",
         "Not only does she bring vibrant ideas to life, but she also makes sure out Friday meetings end with 'Compliment Friday', where we celebrate the amazing work of each team member!",
         "Get to know the creative force that drives our success!"
       ],
@@ -751,7 +750,7 @@ function Culture_Page({showDropDown, setShowDropDown}){
                     <motion.div 
                       initial={{opacity:0.15}}
                       whileInView={{opacity:1, scale:[0.95, 1], transition:{duration:1.5}}}
-                      className="bg-secondary/40 rounded-xl p-[5%] tracking-wider font-light xl:max-h-[900px] h-full">
+                      className="bg-secondary/40 rounded-xl p-[5%] tracking-wider font-light h-full">
                       <div className="xl:ml-5">
                         <p className="italic text-[10px]">{post.category=="Cultural Developments" ? "Cultural Development" : "Project Development"}</p>
                       </div>
@@ -834,13 +833,14 @@ function Culture_Page({showDropDown, setShowDropDown}){
                     <div className="h-full justify-center flex xl:block">
                     <motion.div 
                     initial={{opacity:0.15}}
-                    whileInView={{opacity:1, scale:[1.05, 1], transition:{duration:1.5}}} className="bg-secondary/40 rounded-xl p-[5%] tracking-wider font-light h-full">
+                    whileInView={{opacity:1, scale:[1.05, 1], transition:{duration:1.5}}} 
+                    className="bg-secondary/40 rounded-xl p-[5%] tracking-wider font-light h-full">
                     <div className="ml-3">
                       <p className="italic text-[10px]">{post.category=="Cultural Developments" ? "Cultural Development" : "Project Development"}</p>
                     </div>
                       <div className={post.extended_text ? "xl:flex justify-between items-center" : "xl:flex justify-between items-center"}>
                       {/* Text body */}
-                        <div className="m-3 max-w-[700px] z-[9]">
+                        <div className="m-3 max-w-[700px] z-[9] h-full">
                           <TextBody post={post} />
                           <div className='mt-4'>
                             {post.link ? 
