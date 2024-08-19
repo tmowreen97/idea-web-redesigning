@@ -18,6 +18,48 @@ function Culture_Page({showDropDown, setShowDropDown}){
   // const [showDropDown, setShowDropDown] = useState(false)
   const [category, setCategory] = useState("All Developments")
   const allPosts = [
+    // CONCEPTUALS HIGHLIGHT
+    {
+      id: 19,
+      title: "Team Highlight: IDEA US Conceptual Interns",
+      date: 'August 19, 2024',
+      text: [
+        "Wrapping up the US Conceptual Summer Internship of 2024 at IDEA aec! With some amazing summer internships later, these dedicated interns have shown incredible growth and perseverance. Their journey has been a true reflection of their hard work and passion, setting the stage for them to become exceptional engineers in the future."
+      ],
+      extended_text:[
+        "Here are some images that display their bright personalities, which bring a wonderful touch to both themselves and the team!! We’re excited to see the amazing things they’ll achieve next. Greatest 'IDEAs' in the making!"
+      ],
+      slideshow: [
+        {
+          title: 'conceptuals_1',
+          image: '/assets/culture/conceptuals/conceptual-1.jpg',
+        },
+        {
+          title: 'conceptuals_2',
+          image: '/assets/culture/conceptuals/conceptual-2.jpeg',
+        },
+        {
+          title: 'Team_Celebration_3',
+          image: '/assets/culture/conceptuals/conceptual-3.jpg',
+        },
+        {
+          title: 'Team_Celebration_4',
+          image: '/assets/culture/conceptuals/conceptual-4.jpeg',
+        },
+        {
+          title: 'Team_Celebration_5',
+          image: '/assets/culture/conceptuals/conceptual-5.jpg',
+        },
+        {
+          title: 'Team_Celebration_6',
+          image: '/assets/culture/conceptuals/conceptual-6.jpeg',
+        },
+
+      ],
+      special: "2xl:w-[725px] 2xl:h-[650px] xl:w-[650px] xl:h-[650px]  lg:w-[500px] lg:h-[500px] w-[300px] h-[300px] rounded-2xl bg-center bg-cover hover:scale-105  duration-500 transform p-0 z-0",
+
+      category: "Cultural Developments",
+    },
     // TEAM CELEBRATION
     {
       id: 19,
