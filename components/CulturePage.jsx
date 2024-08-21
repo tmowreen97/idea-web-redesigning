@@ -116,14 +116,14 @@ function Culture_Page({showDropDown, setShowDropDown}){
       ],
       video_small : {
         title: "khair_progress",
-        url: "/assets/culture/khair/khair-video.MOV",
+        url: "/assets/culture/khair/khair-video.mp4",
         link: 'https://www.instagram.com/reel/C-lhhfSufu9/?igsh=MTh4amx3eHh4Ynp0Zw==',
         height: '500px',
         width: '300px',
       },
       video_large: {
         title: "khair_progress",
-        url: "/assets/culture/khair/khair-video.MOV",
+        url: "/assets/culture/khair/khair-video.mp4",
         link: 'https://www.instagram.com/reel/C-lhhfSufu9/?igsh=MTh4amx3eHh4Ynp0Zw==',
         height: '750px',
         width: '600px',
