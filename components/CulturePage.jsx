@@ -18,6 +18,41 @@ function Culture_Page({showDropDown, setShowDropDown}){
   // const [showDropDown, setShowDropDown] = useState(false)
   const [category, setCategory] = useState("All Developments")
   const allPosts = [
+    // BANGLADESH DONATION
+    {
+      id: 21,
+      title: "A Call For Action: Help IDEA AEC Assist Families in Bangladesh",
+      date: 'September 05, 2024',
+      text: [
+        "A CALL FOR ACTION! Our friends and families in Bangladesh are in desperate need of help after devastating floods have displaced over 5.7 million people. Your donation, no matter how small, will have a real impact and help us provide essential aid to those affected-plus, every dollar will be matched to double the suppport!"
+            ],
+      extended_text:[
+        "Please consider clicking the link in our Bio to donate or share it with others who might want to help. Thank you! From IDEA AEC."
+      ],
+      slideshow: [
+        {
+          title: 'donation_1',
+          image: '/assets/culture/donation/donation-1.jpg',
+        },
+        {
+          title: 'donation_2',
+          image: '/assets/culture/donation/donation-2.jpg',
+        },
+        {
+          title: 'donation_3',
+          image: '/assets/culture/donation/donation-3.jpeg',
+        },
+      ],
+      link: [
+        {
+          title: 'Support Families in Bangladesh',
+          url: 'https://gofund.me/94760dee'
+        }
+      ],
+      special: "2xl:w-[700px] 2xl:h-[575px] xl:w-[650px] xl:h-[525px] lg:w-[500px] lg:h-[425px] w-[325px] h-[250px] rounded-2xl bg-center bg-cover hover:scale-105  duration-500 transform p-0 z-0",
+
+      category: "Cultural Developments",
+    },
     // CONCEPTUALS HIGHLIGHT
     {
       id: 20,
