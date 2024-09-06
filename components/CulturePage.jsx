@@ -51,7 +51,7 @@ function Culture_Page({showDropDown, setShowDropDown}){
       ],
       special: "2xl:w-[700px] 2xl:h-[575px] xl:w-[650px] xl:h-[525px] lg:w-[500px] lg:h-[425px] w-[325px] h-[250px] rounded-2xl bg-center bg-cover hover:scale-105  duration-500 transform p-0 z-0",
 
-      category: "Cultural Developments",
+      category: "Community Developments",
     },
     // CONCEPTUALS HIGHLIGHT
     {
@@ -687,7 +687,7 @@ function Culture_Page({showDropDown, setShowDropDown}){
 
   function categorySelect(e){
     const filtered = []
-    if (e.target.innerText == "Cultural Developments" || e.target.innerText == "Project Developments"){
+    if (e.target.innerText == "Cultural Developments" || e.target.innerText == "Project Developments" || e.target.innerText == "Community Developments"){
       allPosts.map((post)=>{
         if(post.category == e.target.innerText){
           filtered.push(post)
@@ -806,6 +806,9 @@ function Culture_Page({showDropDown, setShowDropDown}){
                 <li className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white hover:cursor-pointer " onClick={(e)=> categorySelect(e)}>
                   Project Developments
                 </li>
+                <li className="block px-4 py-2 hover:bg-accent_2/80  hover:text-white hover:cursor-pointer " onClick={(e)=> categorySelect(e)}>
+                  Community Developments
+                </li>
               </ul>
             </div>
           </div>
@@ -829,7 +832,7 @@ function Culture_Page({showDropDown, setShowDropDown}){
                       whileInView={{opacity:1, scale:[0.95, 1], transition:{duration:1.5}}}
                       className="bg-secondary/40 rounded-xl p-[5%] tracking-wider font-light h-full">
                       <div className="xl:ml-5">
-                        <p className="italic text-[10px]">{post.category=="Cultural Developments" ? "Cultural Development" : "Project Development"}</p>
+                        <p className="italic text-[10px]">{post.category}</p>
                       </div>
                     <div className={post.extended_text ? "xl:flex justify-between items-center " : "xl:flex justify-between items-center"}>
                       <div className="m-5 z-0">
@@ -913,7 +916,8 @@ function Culture_Page({showDropDown, setShowDropDown}){
                     whileInView={{opacity:1, scale:[1.05, 1], transition:{duration:1.5}}} 
                     className="bg-secondary/40 rounded-xl p-[5%] tracking-wider font-light h-full">
                     <div className="ml-3">
-                      <p className="italic text-[10px]">{post.category=="Cultural Developments" ? "Cultural Development" : "Project Development"}</p>
+                      <p className="italic text-[10px]">{post.category}</p>
+                      {/* <p className="italic text-[10px]">{post.category=="Cultural Developments" ? "Cultural Development" : "Project Development"}</p> */}
                     </div>
                       <div className={post.extended_text ? "xl:flex justify-between items-center" : "xl:flex justify-between items-center"}>
                       {/* Text body */}
