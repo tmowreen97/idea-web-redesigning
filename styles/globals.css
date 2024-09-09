@@ -519,9 +519,80 @@ polyline {
   /* animation: blimp 3s infinite; */
 
 }
+/* HERO3 */
 
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: auto;
+  height: auto;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+}
 
 /* HERO 2 */
+/* .main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem;
+  height: 100vh; */
+  /* height: screen; */
+  /* position: relative;*/
+/* } */
+
+/* #intro_contents h1 {
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1.5rem;
+  font-weight: 500;
+  padding: 2rem 0;
+  font-size: 2rem;
+} */
+
+/* #video_container{
+  position: flex;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+/* #video {
+  position: flex;
+  height:fit-content;
+  width: fit-content;
+  min-width: 100%;
+  min-height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+} */
+
+/* #intro_button{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+} */
+
+
+
 .main {
   display: flex;
   align-items: center;
@@ -530,11 +601,9 @@ polyline {
   align-items: center;
   padding: 6rem;
   height: 100vh;
-  /* height: screen; */
-  /* position: relative; */
 }
 
-#intro_contents h1 {
+#intro-contents h1 {
   text-transform: uppercase;
   color: white;
   letter-spacing: 1.5rem;
@@ -542,27 +611,7 @@ polyline {
   padding: 2rem 0;
   font-size: 2rem;
 }
-
-#video_container{
-  position: relative;
-  height: 100vh;
-  width: 100vw;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#video {
-  position: absolute;
-  /* z-index: 0; */
-  height:fit-content;
-  width: fit-content;
-  min-width: 100%;
-  min-height: 100%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-}
+ 
 
 #intro_button{
   margin: 0;
@@ -571,16 +620,4 @@ polyline {
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-}
-#eefi-phase-1-video {
-  /* position: absolute;
-  z-index: -1; */
-  /* height: 100%;
-  width: 100%; */
-  /* object-fit: contain; */
-  /* height: 100%;
-  width: 100%; */
-  max-width: 100%;
-  height: auto;
-  /* object-fit: cover; */
-}
+}   

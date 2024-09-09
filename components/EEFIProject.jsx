@@ -109,9 +109,9 @@ function EEFI_Project(){
     {
       title:'proj-feature-1',
       heading: 'MECHANICAL (HVAC) DESIGN',
-      heading_className: 'text-dark_text xl:text-4xl text-3xl p-20 md:top-[20%] md:left-auto left-[-6%] top-[3%] absolute',
-      description: "Garage structure houses Mechanical (HVAC) Cooling plants. Location was planned accordingly to conceal and not impact patron experience.",
-      description_className:'text-secondary_text absolute md:text-2xl text-lg xl:p-6 p-4 top-[22%]',
+      heading_className: 'text-dark_text xl:text-4xl text-3xl p-20 md:top-[18%] md:left-auto left-[-6%] top-[3%] absolute',
+      // description: "Garage structure houses Mechanical (HVAC) Cooling plants. Location was planned accordingly to conceal and not impact patron experience.",
+      // description_className:'text-secondary_text absolute md:text-2xl text-lg xl:p-6 p-4 top-[22%]',
       img: '/assets/logos/mech-icon.png',
       img_width: 275,
       img_className: 'md:top-1/4 md:left-[15%] top-[15%] left-[5%] absolute',
@@ -120,49 +120,49 @@ function EEFI_Project(){
     {
       title:'proj-feature-2',
       heading: 'ELECTRICAL DESIGN',
-      heading_className: 'text-dark_text xl:text-4xl text-3xl p-6 md:top-[33%] top-[30%] absolute',
-      description: "Terminal will consist of a NFPA-92 compliant Smoke Control System serving the whole smoke-protected areas. Terminal's Architecture, Mechanical, Electrical, Fire Alarm and Fire Protection systems will function coherently to achieve required smoke remove.",
-      description_className:'text-secondary_text absolute md:text-2xl text-lg xl:p-6 p-4 top-[3%]',
-      img: '/assets/logos/mech-icon.png',
-      img_width: 275,
-      img_className: 'md:top-1/4 md:left-[15%] top-[15%] left-[5%] absolute',
+      heading_className: 'text-dark_text xl:text-4xl text-3xl md:p-20 p-10 md:top-[20%] top-[25%] absolute',
+      // description: "Terminal will consist of a NFPA-92 compliant Smoke Control System serving the whole smoke-protected areas. Terminal's Architecture, Mechanical, Electrical, Fire Alarm and Fire Protection systems will function coherently to achieve required smoke remove.",
+      // description_className:'text-secondary_text absolute md:text-2xl text-lg xl:p-6 p-4 top-[3%]',
+      img: '/assets/logos/elec-icon.png',
+      img_width: 200,
+      img_className: 'md:top-[22%] md:left-[25%] top-[10%] left-[15%] absolute',
     },
     {
       title:'proj-feature-3',
       heading: 'PLUMBING DESIGN',
-      heading_className: 'text-dark_text xl:text-4xl text-3xl p-6 md:top-[35%] top-[30%] absolute',
-      description: "Garage consists 2,500+ Parking spaces with 250+ spaces of Level-2 Electrical (EV) charging infrastructure.",
-      description_className:'text-secondary_text absolute md:text-2xl text-lg xl:p-6 p-4 top-[25%]',
-      img: '/assets/logos/elec-icon.png',
+      heading_className: 'text-dark_text xl:text-4xl text-3xl md:p-20 p-10 md:top-[20%] top-[25%] absolute',
+      // description: "Garage consists 2,500+ Parking spaces with 250+ spaces of Level-2 Electrical (EV) charging infrastructure.",
+      // description_className:'text-secondary_text absolute md:text-2xl text-lg xl:p-6 p-4 top-[25%]',
+      img: '/assets/logos/plumb-icon.png',
       img_width: 200,
       img_className: 'md:top-[22%] md:left-[25%] top-[10%] left-[15%] absolute',
     },
     {
       title:'proj-feature-4',
       heading: 'FIRE PROTECTION DESIGN',
-      heading_className: 'text-dark_text xl:text-4xl text-3xl p-20 md:top-[20%] top-[5%] absolute',
-      description: "Terminal will include various Art in Public installations to highlight artist to enrich the public environment. A 3D Projection/Light show is planned to work with Terminal's current Architecture, Structure, Building systems including Lighting Control and Audio/Visual systems.",
-      description_className:'text-secondary_text absolute md:text-2xl text-lg xl:p-6 p-4 top-[3%]',
-      img: '/assets/logos/elec-icon.png',
+      heading_className: 'text-dark_text xl:text-4xl text-3xl md:p-20 p-10 md:top-[15%] top-[20%] absolute',
+      // description: "Terminal will include various Art in Public installations to highlight artist to enrich the public environment. A 3D Projection/Light show is planned to work with Terminal's current Architecture, Structure, Building systems including Lighting Control and Audio/Visual systems.",
+      // description_className:'text-secondary_text absolute md:text-2xl text-lg xl:p-6 p-4 top-[3%]',
+      img: '/assets/logos/fp-icon.png',
       img_width: 200,
-      img_className: 'md:top-[22%] md:left-[25%] top-[10%] left-[15%] absolute',
+      img_className: 'md:top-[20%] md:left-[25%] top-[10%] left-[15%] absolute',
     },
     {
       title:'proj-feature-5',
       heading: 'FIRE ALARM DESIGN',
-      heading_className: 'text-dark_text xl:text-4xl text-3xl p-6 lg:left-[15%] md:top-[40%] md:left-[20%] top-[35%] left-[9%] absolute',
-      description: "When finished, the Terminal will have the ability to provide (2) shore-side electrical power (15-kV) connections to service ships at Berth 8 and Berth 9, while their main and auxiliary diesel fueled engines are shut down.",
-      description_className:'text-secondary_text absolute md:text-2xl text-lg xl:p-6 p-4 top-[13%]',
-      img: '/assets/logos/elec-icon.png',
+      heading_className: 'text-dark_text xl:text-4xl text-3xl md:p-20  p-10 md:top-[20%] md:left-[5%] top-[30%] left-[4%] absolute',
+      // description: "When finished, the Terminal will have the ability to provide (2) shore-side electrical power (15-kV) connections to service ships at Berth 8 and Berth 9, while their main and auxiliary diesel fueled engines are shut down.",
+      // description_className:'text-secondary_text absolute md:text-2xl text-lg xl:p-6 p-4 top-[13%]',
+      img: '/assets/logos/fp-icon.png',
       img_width: 200,
-      img_className: 'md:top-[22%] md:left-[25%] top-[10%] left-[15%] absolute',
+      img_className: 'md:top-[20%] md:left-[25%] top-[10%] left-[15%] absolute',
     },
     {
       title:'proj-feature-6',
       heading: 'LIGHTING & LIGHTING CONTROL DESIGN',
-      heading_className: 'text-dark_text xl:text-4xl text-3xl p-6 lg:left-[4%] lg:top-[40%] md:top-[35%] md:left-[10%] top-[28%] absolute',
-      description: "The Terminal is on schedule to become LEED Gold Certified upon completion.",
-      description_className:'text-secondary_text absolute md:text-2xl text-lg xl:p-6 p-4 top-[30%]',
+      heading_className: 'text-dark_text xl:text-4xl text-3xl p-6 lg:left-[4%] lg:top-[30%] md:top-[35%] md:left-[10%] top-[28%] absolute',
+      // description: "The Terminal is on schedule to become LEED Gold Certified upon completion.",
+      // description_className:'text-secondary_text absolute md:text-2xl text-lg xl:p-6 p-4 top-[30%]',
       img: '/assets/logos/elec-icon.png',
       img_width: 200,
       img_className: 'md:top-[22%] md:left-[25%] top-[10%] left-[15%] absolute',
@@ -192,17 +192,19 @@ function EEFI_Project(){
   
   return(
     <div className="w-screen h-full bg-primary font-thin">
-      <div className="">
+      <div className="h-full">
         {/* Title */}
-        <div>
-          <Hero2/>
+        <div className='h-screen w-full bg-primary'>
+          <div>
+            <Hero3/>
+          </div>
         </div>
         <div className="md:px-20 pt-40 lg:pb-[50px]" id='eefi-page'>
         <motion.div 
         initial={{opacity:0}}
         animate={{opacity:1, transition: {delay:1, duration:1}}}
         >
-          <h1 className="text-primary_text lg:text-9xl text-center text-7xl md:text-left tracking-wider">East End Food Institute EEFI</h1>
+          <h1 className="text-primary_text lg:text-8xl text-center text-7xl md:text-left tracking-wider">East End Food Institute EEFI</h1>
         </motion.div>
         </div>  
         {/* Body */}
@@ -220,40 +222,10 @@ function EEFI_Project(){
                       muted
                       loop
                       playsInline
-                      id='eefi-phase-1-video'
+
+                      className='w-auto 2xl:h-[800px] xl:h-[600px] lg:h-[400px] md:h-[300px] h-[200px] overflow-hidden rounded-2xl'
                     /> 
                   </div>
-                
-                {/* { !isBreakPoint ? 
-                  <div className="justify-center items-center flex md:w-[100%] md:h=[100%] overflow-hidden rounded-2xl">
-                  {
-                    !isBreakPoint ? 
-                      <ReactPlayer 
-                      // new 3yr video
-                      // https://www.youtube.com/watch?v=SjdX1mYmiP0&ab_channel=IDEA
-                      // 2 yr video
-                      // https://www.youtube.com/watch?v=xUWu2wi4o-A&ab_channel=IDEA
-                        url={'https://www.youtube.com/watch?v=SjdX1mYmiP0&ab_channel=IDEA'}
-                        playing
-                        loop
-                        muted
-                        controls
-                        width='900px'
-                        height='500px'
-                      /> : 
-                      <ReactPlayer 
-                        url={'https://www.youtube.com/watch?v=SjdX1mYmiP0&ab_channel=IDEA'}
-                        playing
-                        loop
-                        muted
-                        controls
-                        width='375px'
-                        height='250px'
-
-                      />
-                    }
-                  </div> 
-                : ""} */}
                 {/* Caption */}
                 <motion.div 
                 initial={{opacity:0}}
