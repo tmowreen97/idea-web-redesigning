@@ -34,6 +34,9 @@ function PortfolioList({project}){
     if (project.name == 'MSC Miami Cruise Terminal'){
       router.push('/MSC-Miami-Cruise-Terminal-Highlight')
     }
+    else if (project.name == 'East End Food Institute EEFI'){
+      router.push('/EEFI-East-End-Food-Institute-Highlight')
+    }
     else{
       setProjClick(!projClick)
       setHide(!hide)
