@@ -420,6 +420,32 @@ export default function Portfolio(){
 
 
     },
+    // 345 LEFFERTS **
+    {
+      name: '345 Lefferts',
+      heading: ['NEED',],
+      location: 'New Haven, CT',
+      size: '60,000 SF',
+      year: '2016',
+      services: [
+        'NEED',
+      ],
+      description: [
+        "The property, originally constructed in the 1920s, is a 4-story residential apartment complex comprising 43 units. The building has been experiencing significant stormwater infiltration, leading to damage in tenants&#39; apartments. A comprehensive study was conducted to identify the sources of the infiltration. The investigation revealed that the existing 4&quot; cast iron piping, deteriorated due to age, required replacement. The IDEA design includes a thorough assessment and remediation plan to address and rectify the stormwater infiltration issues, ensuring the structural integrity of the building and the safety and comfort of its residents."
+      ],
+      resources: [
+
+
+      ],
+      image: '/assets/projects/featured/adams-featured.jpg',
+      width: '725',
+      height: '300',
+      disclaimer: '*Project performed by IDEA team member at previous employment.',
+      spacing: 'relative top-1/3',
+      child: "lg:col-start-2 lg:col-end-4"
+
+
+    },
 
   ]
   
