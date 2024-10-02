@@ -70,7 +70,7 @@ export default function Portfolio(){
       width: '700',
       height: '600',
       disclaimer: "",
-      spacing: "relative lg:top-1/3 top-3",
+      spacing: "relative lg:top-1/3 top-1/3",
 
     },
     // EEFI
@@ -112,7 +112,7 @@ export default function Portfolio(){
       width: '700',
       height: '100',
       disclaimer: "Image Courtesy of Garnett DePasquale Projects",
-      spacing: "relative lg:top-1/3 top-3",
+      spacing: "relative lg:top-1/3 top-1/3",
     },
     // KHAIR
     {
