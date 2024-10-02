@@ -51,8 +51,10 @@ function BeforeAndAfter( {} ){
         <div className="image-container">
           {setIsClient ? 
           <>
-          <Image className="image-before slider-image" src={'/assets/MSC/MSC-before-new.png'} alt={'Before Image'} width={1800} height={800}/>
-          <Image className="image-after slider-image" src={'/assets/MSC/MSC-after-new.png'} alt={'After Image'} width={1800} height={800}/>          
+          <Image className="image-before slider-image" src={'/assets/MSC/NEW-MSC-before.jpg'} alt={'Before Image'} width={1800} height={800}/>
+          <Image className="image-after slider-image" src={'/assets/MSC/NEW-MSC-after.jpg'} alt={'After Image'} width={1800} height={800}/>      
+          {/* <Image className="image-before slider-image" src={'/assets/MSC/MSC-before-new.png'} alt={'Before Image'} width={1800} height={800}/>
+          <Image className="image-after slider-image" src={'/assets/MSC/MSC-after-new.png'} alt={'After Image'} width={1800} height={800}/>           */}
           </>
 
           : ''
