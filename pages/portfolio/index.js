@@ -39,7 +39,7 @@ export default function Portfolio(){
         }
         
       ],
-      image: '/assets/projects/featured/msc-featured.jpg',
+      image: '/assets/MSC/MSC-2.jpg',
       images_array: [
         {
           title: 'MSC-1',
@@ -70,7 +70,7 @@ export default function Portfolio(){
       width: '700',
       height: '600',
       disclaimer: "",
-      spacing: "relative lg:top-12 top-3",
+      spacing: "relative lg:top-1/3 top-3",
 
     },
     // EEFI
@@ -97,7 +97,7 @@ export default function Portfolio(){
           url: 'https://gdp.work/', 
         }
       ],
-      image: '/assets/projects/featured/eefi-1-featured.jpg',
+      image: '/assets/projects/featured/EEFI-featured.png',
       images_array: [
         {
           title: 'eefi-1',
@@ -112,7 +112,7 @@ export default function Portfolio(){
       width: '700',
       height: '100',
       disclaimer: "Image Courtesy of Garnett DePasquale Projects",
-      spacing: "relative lg:top-12 top-3",
+      spacing: "relative lg:top-1/3 top-3",
     },
     // KHAIR
     {

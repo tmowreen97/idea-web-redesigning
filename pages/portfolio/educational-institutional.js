@@ -57,7 +57,7 @@ export default function EduInst () {
         }
         
       ],
-      image: '/assets/projects/edu-inst/eefi-3-ei.jpg',
+      image: '/assets/projects/edu-inst/EEFI-ei.png',
       images_array: [
         {
           title: 'eefi-1',

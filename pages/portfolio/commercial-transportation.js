@@ -35,7 +35,7 @@ export default function CommTrans () {
           url: 'https://arquitectonica.com/architecture/project/msc-cruises-terminal-at-port-miami/' 
         }
       ],
-      image: '/assets/projects/com-trans/msc-2.jpg',
+      image: '/assets/projects/com-trans/msc-ct-1.jpg',
       images_array: [
         {
           title: 'MSC-1',
