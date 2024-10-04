@@ -423,7 +423,7 @@ export default function Portfolio(){
     // 345 LEFFERTS **
     {
       name: '345 Lefferts',
-      heading: ['Residential',],
+      heading: ['Multi-Dwelling Residential',],
       location: 'New Haven, CT',
       size: '60,000 SF',
       year: '2016',
