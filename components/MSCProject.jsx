@@ -226,7 +226,7 @@ function MSCProject(){
                     <h3>Commercial/Transportation</h3>
                     <h3>Miami,FL</h3>
                     <h3>490,000 SF Terminal / 1,200,000 SF Garage</h3>
-                    <h3>Completion Date:2024</h3>
+                    <h3>Completion Date: 2025</h3>
                   </div>
                 </motion.div>
               </div>
