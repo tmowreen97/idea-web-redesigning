@@ -54,7 +54,7 @@ function Hero({heading}){
       bgColor: '#33FF33',
       delayTime: 2,
       repeatDelayTime : 15,
-      classDesc: "md:absolute my-5 md:my-0 2xl:left-[40%] left-[30%] top-[48%]",
+      classDesc: "md:absolute my-5 md:my-0 left-[40%] top-[48%]",
       svg_w: '',
       svg_h: '250px',
       svg_class: "relative  origin-top rotate-90 mt-6",
@@ -125,12 +125,12 @@ function Hero({heading}){
       bgColor: '#A117FD',
       delayTime:11,
       repeatDelayTime: 15,
-      classDesc: "md:absolute my-5 md:my-0 2xl:right-[45%] right-[20%] bottom-[41%]",
+      classDesc: "md:absolute my-5 md:my-0 right-[45%] bottom-[41%]",
       svg_w: '',
       svg_h: '140px',
       svg_class: "relative rotate-90 right-[70%]",
       poly_points: "80,-15, 220,200",
-      div_parent_class: " absolute top-[45%] right-[50%] w-[525px]",
+      div_parent_class: " absolute top-[48%] right-[40%] w-[525px]",
       heading: "Art in Public Places",
       desc: "Terminal will include various Art in Public installations to highlight artist to enrich the public environment. A 3D Projection/Light show is planned to work with Terminal's current Architecture, Structure, Building systems including Lighting Control and Audio/Visual systems.",
       link: {
@@ -149,7 +149,7 @@ function Hero({heading}){
 
 
     },
-    // Shore Power -> LEED
+    // LEED
     {
       name: 'blinker-5',
       bgColor: '#A117FD',
@@ -167,13 +167,13 @@ function Hero({heading}){
       img: '/assets/clip-2.png',
       desc: 'The Terminal is on schedule to become LEED Gold Certified upon completion.',
     },
-    // LEED -> Shore Power
+    // Shore Power
     {
       name: 'blinker-6',
       bgColor: '#A117FD',
       delayTime:17,
       repeatDelayTime: 15,
-      classDesc: "md:absolute my-5 md:my-0 left-[18%] 2xl:top-[44%] bottom-[41%]",
+      classDesc: "md:absolute my-5 md:my-0 left-[18%] top-[44%]",
       heading: 'Shore Power',
       img: '/assets/clip-2.png',
       desc: "When finished, the Terminal will have the ability to provide (2) shore-side electrical power (15-kV) connections to service ships at Berth 8 and Berth 9, while their main and auxiliary diesel fueled engines are shut down.",
