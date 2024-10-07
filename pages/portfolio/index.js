@@ -424,7 +424,7 @@ export default function Portfolio(){
     {
       name: '345 Lefferts',
       heading: ['Multi-Dwelling Residential',],
-      location: 'New Haven, CT',
+      location: 'Brooklyn, NY',
       size: '60,000 SF',
       year: '2016',
       services: [
