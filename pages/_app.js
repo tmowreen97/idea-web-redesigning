@@ -15,7 +15,7 @@ export default function App({ Component, pageProps }) {
       <main      
       className={urbanist.className}>
         <Head>
-          <title>IDEA | Inter-Disciplinary Engineering Associates</title>
+          <title>IDEA | Inter-Disciplinary Engineering Associates | MEP-FP Engineers</title>
           <meta name="IDEA aec is an engineering firm of inter-disciplinary engineering associates. A technology-oriented, forward focused MEP-FP Engineering firm that thrives on innovation and collaboration."/>
           <link rel="preconnect" href="https://fonts.gstatic.com" />
         </Head>
