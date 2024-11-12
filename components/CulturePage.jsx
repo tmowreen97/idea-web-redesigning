@@ -18,6 +18,76 @@ function Culture_Page({showDropDown, setShowDropDown}){
   // const [showDropDown, setShowDropDown] = useState(false)
   const [category, setCategory] = useState("All Developments")
   const allPosts = [
+    //MSC Progress update
+    {
+      id: 23,
+      title: "MSC Cruise Terminal Progress Update",
+      date: 'September 30, 2024',
+      text: [
+        "Our team is on-site documenting the progress of multiple key operations: the construction of a modern building facade, the connection of shore power, and the final stages of dredging. From groundbreaking to final touches, we're proud to bring this project to life. Stay tuned for more updates!"
+            ],
+      // extended_text:[
+      //   "The Little Theater acts as an important element to LIU's School of Performing Arts program. IDEA aec is proud to provide the effective services to ensure comfort and proper will facilitate Arts and Talents to flourish!"
+      // ],
+      slideshow: [
+        {
+          title: 'MSC_Progress_1',
+          image: '/assets/culture/MSC-progress/MSC-progress-1.jpeg',
+        },
+        {
+          title: 'MSC_Progress_2',
+          image: '/assets/culture/MSC-progress/MSC-progress-2.jpeg',
+        },
+        {
+          title: 'MSC_Progress_3',
+          image: '/assets/culture/MSC-progress/MSC-progress-3.jpeg',
+        },
+      ],
+      // link: [
+      //   {
+      //     title: 'Support Families in Bangladesh',
+      //     url: 'https://gofund.me/94760dee'
+      //   }
+      // ],
+      special: "2xl:w-[700px] 2xl:h-[575px] xl:w-[650px] xl:h-[525px] lg:w-[500px] lg:h-[425px] w-[325px] h-[250px] rounded-2xl bg-center bg-cover hover:scale-105  duration-500 transform p-0 z-0",
+
+      category: "Project Developments",
+    },
+    // LIU POST
+    {
+      id: 22,
+      title: "LIU Little Theatre Building Progress Update",
+      date: 'September 13, 2024',
+      text: [
+        "IDEA aec was privileged to provide Mechanical and Electrical Engineering Services on the existing historic Little Theatre building - Performance Arts Center, at Long Island University at the Brookville campus. Swipe through to see progress on this project which is scheduled to be completed in September!"
+            ],
+      extended_text:[
+        "The Little Theater acts as an important element to LIU's School of Performing Arts program. IDEA aec is proud to provide the effective services to ensure comfort and proper will facilitate Arts and Talents to flourish!"
+      ],
+      slideshow: [
+        {
+          title: 'LIU_1',
+          image: '/assets/culture/LIU/LIU-1.jpeg',
+        },
+        {
+          title: 'LIU_2',
+          image: '/assets/culture/LIU/LIU-2.jpeg',
+        },
+        {
+          title: 'LIU_3',
+          image: '/assets/culture/LIU/LIU-3.jpeg',
+        },
+      ],
+      // link: [
+      //   {
+      //     title: 'Support Families in Bangladesh',
+      //     url: 'https://gofund.me/94760dee'
+      //   }
+      // ],
+      special: "2xl:w-[700px] 2xl:h-[575px] xl:w-[650px] xl:h-[525px] lg:w-[500px] lg:h-[425px] w-[325px] h-[250px] rounded-2xl bg-center bg-cover hover:scale-105  duration-500 transform p-0 z-0",
+
+      category: "Project Developments",
+    },
     // BANGLADESH DONATION
     {
       id: 21,
@@ -687,15 +757,15 @@ function Culture_Page({showDropDown, setShowDropDown}){
 
   function categorySelect(e){
     const filtered = []
-    if (e.target.innerText == "Cultural Developments" || e.target.innerText == "Project Developments" || e.target.innerText == "Community Developments"){
+    if (e.target.innerText == "All Developments"){
+      allPosts.map((post)=>{
+        filtered.push(post)
+      })
+    } else { 
       allPosts.map((post)=>{
         if(post.category == e.target.innerText){
           filtered.push(post)
         }
-      })
-    } else { 
-      allPosts.map((post)=>{
-        filtered.push(post)
       })
     } 
     setShowDropDown(false)
