@@ -77,6 +77,10 @@ function Culture_Page({showDropDown, setShowDropDown}){
           title: 'LIU_3',
           image: '/assets/culture/LIU/LIU-3.jpeg',
         },
+        {
+          title: 'LIU_4',
+          image: '/assets/culture/LIU/LIU-4.jpeg',
+        },
       ],
       // link: [
       //   {
