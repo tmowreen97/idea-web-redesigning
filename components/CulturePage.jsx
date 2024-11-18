@@ -18,6 +18,36 @@ function Culture_Page({showDropDown, setShowDropDown}){
   // const [showDropDown, setShowDropDown] = useState(false)
   const [category, setCategory] = useState("All Developments")
   const allPosts = [
+    //Miami Meet Up
+    {
+      id: 24,
+      title: "Work Hard, Play Hard",
+      date: 'November 14, 2024',
+      text: [
+        "After a productive day on-site surveying our project, our team, along with some of our amazing collaborating partners, had the chance to unwind at El Patio in Miami. It was great to connect outside of work, share laughs and celebrate our hard work together. Here's to strong partnerships and making big things happen!"
+            ],
+      // extended_text:[
+      //   "The Little Theater acts as an important element to LIU's School of Performing Arts program. IDEA aec is proud to provide the effective services to ensure comfort and proper will facilitate Arts and Talents to flourish!"
+      // ],
+      slideshow: [
+        {
+          title: 'Work_Hard_1',
+          image: '/assets/culture/work-hard/work-hard-1.jpeg',
+        },
+        {
+          title: 'Work_Hard_2',
+          image: '/assets/culture/work-hard/work-hard-2.jpeg',
+        },
+        {
+          title: 'Work_Hard_3',
+          image: '/assets/culture/work-hard/work-hard-3.jpeg',
+        },
+        {
+          title: 'Work_Hard_4',
+          image: '/assets/culture/work-hard/work-hard-4.jpeg',
+        },
+      ],
+    },
     //MSC Progress update
     {
       id: 23,
