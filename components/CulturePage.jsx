@@ -47,6 +47,9 @@ function Culture_Page({showDropDown, setShowDropDown}){
           image: '/assets/culture/work-hard/work-hard-4.jpeg',
         },
       ],
+      special: "2xl:w-[700px] 2xl:h-[575px] xl:w-[650px] xl:h-[525px] lg:w-[500px] lg:h-[425px] w-[325px] h-[250px] rounded-2xl bg-center bg-cover hover:scale-105  duration-500 transform p-0 z-0",
+
+      category: "Culture Developments",
     },
     //MSC Progress update
     {
