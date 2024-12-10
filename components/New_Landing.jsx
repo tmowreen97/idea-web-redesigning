@@ -13,6 +13,7 @@ function New_Landing(){
       autoPlay
       loop
       muted
+      playsInline
       id='background-video'
       // src="/videos/EEFI-video-trimmed.mp4"
       // type="video/mp4"
