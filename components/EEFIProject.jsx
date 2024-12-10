@@ -9,7 +9,7 @@ import Link from "next/link";
 import { AiFillInstagram, AiFillFacebook, AiFillLinkedin } from "react-icons/ai";
 import MobileImageCarousel from "./MobileImageCarousel";
 import Hero2 from "./Hero2";
-import Hero3 from "./Hero3"
+import Hero3 from "./EEFI_bg_video"
 import Video from 'next-video';
 import awesomeVideo from '/videos/EEFI-Phase-1.mov';
 

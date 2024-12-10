@@ -1,4 +1,5 @@
 import EEFI_Project from "@/components/EEFIProject";
+import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import { useEffect, useState } from "react";
 
@@ -11,6 +12,7 @@ function EEFI_Highlight(){
     <div>
       <Navbar lightLogo={true}/>
       <EEFI_Project/>
+      <Footer/>
     </div>
   )
 }

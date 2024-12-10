@@ -4,7 +4,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <title>IDEA | Inter-Disciplinary Engineering Associates | MEP Engineers (MEP-FP)</title>
+        {/* <title>IDEA | Inter-Disciplinary Engineering Associates | MEP Engineers (MEP-FP)</title> */}
         <link className='width-5 height-5'rel="icon" href="/assets/icon.jpg"  />
         <meta name="IDEA aec is an engineering firm of inter-disciplinary engineering associates. A technology-oriented, forward focused MEP-FP Engineering firm that thrives on innovation and collaboration."/>
       </Head>

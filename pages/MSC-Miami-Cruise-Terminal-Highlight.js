@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import MSCProject from "@/components/MSCProject";
 import Navbar from "@/components/Navbar";
 
@@ -7,6 +8,7 @@ function MSC_Miami_Cruise_Terminal(){
     <div>
       <Navbar lightLogo={true}/>
       <MSCProject/>
+      <Footer/>
     </div>
   )
 }

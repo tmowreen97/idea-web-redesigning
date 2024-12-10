@@ -1,4 +1,5 @@
 import ContactPage from "@/components/ContactPage";
+import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import { Urbanist } from "next/font/google";
 
@@ -12,6 +13,7 @@ export default function Contact (){
     <div classname={urbanist.classname}>
       <Navbar lightLogo={true}/>
       <ContactPage/>
+      <Footer/>
     </div>
   )
 }
