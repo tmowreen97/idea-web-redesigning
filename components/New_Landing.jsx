@@ -9,15 +9,15 @@ import { useRouter } from 'next/router';
 function New_Landing(){
   const router = useRouter();
 
-  useEffect(() => {
-    // Set a timeout to redirect after 30 seconds
-    const timer = setTimeout(() => {
-      router.replace('/');  // Replace '/another-page' with your target page
-    }, 45000); // 30000ms = 30 seconds
+  // useEffect(() => {
+  //   // Set a timeout to redirect after 30 seconds
+  //   const timer = setTimeout(() => {
+  //     router.replace('/');  // Replace '/another-page' with your target page
+  //   }, 45000); // 30000ms = 30 seconds
 
-    // Clean up the timeout if the component unmounts before the timeout completes
-    return () => clearTimeout(timer);
-  }, [router]);
+  //   // Clean up the timeout if the component unmounts before the timeout completes
+  //   return () => clearTimeout(timer);
+  // }, [router]);
 
   const handleOutsideClick = ()=> {
     router.replace('/')
