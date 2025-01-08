@@ -15,7 +15,7 @@ function New_Landing(){
       playsInline
       id='background-video'
       >
-      <source src="/EEFI-video-trimmed.mp4"
+      <source src="/New_Landing_Video.mp4"
       type="video/mp4"/>
       </video>
       <motion.div
