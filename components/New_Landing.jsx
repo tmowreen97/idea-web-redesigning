@@ -1,11 +1,69 @@
-import react from "react";
+import {React, useRef, useEffect, useState} from "react";
 import Video from 'next-video';
 import Link from "next/link";
 import awesomeVideo from '/videos/EEFI-reverse.mp4';
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { useRouter } from 'next/router';
 
 function New_Landing(){
+  const router = useRouter();
+
+  useEffect(() => {
+    // Set a timeout to redirect after 30 seconds
+    const timer = setTimeout(() => {
+      router.replace('/');  // Replace '/another-page' with your target page
+    }, 45000); // 30000ms = 30 seconds
+
+    // Clean up the timeout if the component unmounts before the timeout completes
+    return () => clearTimeout(timer);
+  }, [router]);
+
+  const handleOutsideClick = ()=> {
+    router.replace('/')
+  }
+  // const router = useRouter();
+  // const query = router.query;
+  // useEffect(() => {
+  //   if (query?.redirect) {
+  //       if (redirectSeconds == 0) {
+  //           router.push(query.redirect.toString());
+  //           return;
+  //       }
+   
+  //       setTimeout(() => {
+  //           console.log(redirectSeconds);
+  //           setRedirectSeconds((redirectSeconds) => redirectSeconds - 1);
+  //       }, 1000)
+  //   }
+  //  }, [redirectSeconds]);
+
+  // const timeoutRef = useRef(null);
+  //   function resetTimeout() {
+  //     if (timeoutRef.current) {
+  //       clearTimeout(timeoutRef.current);
+  //     }
+  //   }
+  
+    // useEffect(() => {
+    //   if(handleIndex){
+  
+    //       handleIndex(currentIndex)
+    //   }
+  
+    //   resetTimeout();
+    //   timeoutRef.current = setTimeout(
+    //     () =>
+    //       setCurrentIndex((prevIndex) =>
+    //         prevIndex === array.length - 1 ? 0 : prevIndex + 1
+    //       ),
+    //     4500
+    //   );
+  
+    //   return () => {
+    //     resetTimeout();
+    //   };
+    // }, [currentIndex]);
   return(
     <div id='container-top'>
       <video
@@ -14,6 +72,7 @@ function New_Landing(){
       muted
       playsInline
       id='background-video'
+      onClick={()=>{handleOutsideClick()}}
       >
       <source src="/New_Landing_Video.mp4"
       type="video/mp4"/>
@@ -23,13 +82,14 @@ function New_Landing(){
         animate= {{
           opacity:1,
           transition:{
-            delay:3
+            delay:15
           }
         }}
       >
         <Link id="enter-text" className="p-2 rounded-xl bg-light_bg animate-pulse" href={'https://www.ideaaec.com'}>
           <div >
-            <Image className="rounded-xl overflow-hidden" src='/assets/icon.jpg' width={75} height={5}/>
+            <p className='text-dark_text'>Click Here to Enter</p>
+            {/* <Image className="rounded-xl overflow-hidden" src='/assets/icon.jpg' width={75} height={5}/> */}
           </div> 
         </Link>   
       </motion.div>
