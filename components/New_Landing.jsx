@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 import { useRouter } from 'next/router';
 
 function New_Landing(){
-  const router = useRouter();
+  // const router = useRouter();
 
   // useEffect(() => {
   //   // Set a timeout to redirect after 30 seconds
@@ -20,7 +20,7 @@ function New_Landing(){
   // }, [router]);
 
   const handleOutsideClick = ()=> {
-    router.replace('/')
+    console.log('hi')
   }
   // const router = useRouter();
   // const query = router.query;
