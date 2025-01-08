@@ -86,7 +86,7 @@ function New_Landing(){
           }
         }}
       >
-        <Link id="enter-text" className="p-2 rounded-xl bg-light_bg animate-pulse" href={'https://www.ideaaec.com'}>
+        <Link id="enter-text" className="p-3 rounded-xl bg-light_bg animate-pulse" href={'https://www.ideaaec.com'}>
           <div >
             <p className='text-dark_text'>Click Here to Enter</p>
             {/* <Image className="rounded-xl overflow-hidden" src='/assets/icon.jpg' width={75} height={5}/> */}
