@@ -32,7 +32,7 @@ function New_Landing(){
       id='background-video'
       onClick={()=>{handleOutsideClick()}}
       >
-      <source src="/New_Landing_Video.mp4"
+      <source src="/final_new_landing.mp4"
       type="video/mp4"/>
       </video>
       <motion.div
