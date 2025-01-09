@@ -6,6 +6,22 @@ import { motion } from "framer-motion";
 import { useRouter } from 'next/router';
 
 function New_Landing(){
+  const router = useRouter();
+
+  useEffect(() => {
+    // Set a timeout to redirect after 30 seconds
+    const timer = setTimeout(() => {
+      router.replace('/');  // Replace '/another-page' with your target page
+    }, 45000); // 30000ms = 30 seconds
+
+    // Clean up the timeout if the component unmounts before the timeout completes
+    return () => clearTimeout(timer);
+  }, [router]);
+
+  const handleOutsideClick = ()=> {
+    router.replace('/')
+  }
+
   return(
     <div id='container-top'>
       <video
@@ -14,6 +30,7 @@ function New_Landing(){
       muted
       playsInline
       id='background-video'
+      onClick={()=>{handleOutsideClick()}}
       >
       <source src="/New_Landing_Video.mp4"
       type="video/mp4"/>
@@ -23,13 +40,14 @@ function New_Landing(){
         animate= {{
           opacity:1,
           transition:{
-            delay:3
+            delay:15
           }
         }}
       >
         <Link id="enter-text" className="p-3 rounded-xl bg-light_bg animate-pulse" href={'https://www.ideaaec.com'}>
           <div >
-            <Image className="rounded-xl overflow-hidden" src='/assets/icon.jpg' width={75} height={5}/>
+            <p className='text-dark_text'>Click Here to Enter</p>
+            {/* <Image className="rounded-xl overflow-hidden" src='/assets/icon.jpg' width={75} height={5}/> */}
           </div> 
         </Link>   
       </motion.div>
