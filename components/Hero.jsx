@@ -256,7 +256,7 @@ function Hero({heading}){
               initial={{opacity:0}}
               whileInView={{opacity:1, transition:{duration:1, delay:1}}}
               className="mobile-desc-div">
-                <Link href={"/#projects"} >
+                <Link href={"/home#projects"} >
                   <p className='mobile-desc'>
                     MSC Miami Cruise Terminal
                   </p>
@@ -272,7 +272,7 @@ function Hero({heading}){
               initial={{opacity:0}}
               whileInView={{opacity:1, transition:{duration:1, delay:2}}}
               className="mobile-desc-div">
-                <Link  href={'/#projects'} >
+                <Link  href={'/home#projects'} >
                   <p className='mobile-desc'>East End Food Institute (EEFI)</p>
                 </Link>
                 {/* <a href="#projects" >
@@ -293,7 +293,7 @@ function Hero({heading}){
               whileInView={{opacity:1, transition:{duration:1, delay:3}}}
               
               className="mobile-desc-div">
-                 <Link href={"/#projects"} >
+                 <Link href={"/home#projects"} >
                   <p className='mobile-desc'>
                   Private High-End Residence
                   </p>
