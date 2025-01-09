@@ -11,7 +11,7 @@ function New_Landing(){
   useEffect(() => {
     // Set a timeout to redirect after 30 seconds
     const timer = setTimeout(() => {
-      router.replace('/');  // Replace '/another-page' with your target page
+      router.replace('/home');  // Replace '/another-page' with your target page
     }, 45000); // 30000ms = 30 seconds
 
     // Clean up the timeout if the component unmounts before the timeout completes
@@ -19,7 +19,7 @@ function New_Landing(){
   }, [router]);
 
   const handleOutsideClick = ()=> {
-    router.replace('/')
+    router.replace('/home')
   }
 
   return(

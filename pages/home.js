@@ -6,6 +6,7 @@ import ProjectHome from '@/components/ProjectHome'
 import Navbar from '@/components/Navbar'
 import { useState } from 'react';
 import New_Landing from '@/components/New_Landing'
+import Footer from '@/components/Footer'
 
 const urbanist = Urbanist({ 
   subsets: ['latin'],
@@ -17,11 +18,12 @@ export default function Home() {
 
   return (
     <main className={`${urbanist.variable} font-sans tracking-wider justify-center items-center`}>
-      <New_Landing/>
-      {/* <Navbar setLightLogo={setLightLogo} lightLogo={lightLogo} />
+      {/* <New_Landing/> */}
+      <Navbar setLightLogo={setLightLogo} lightLogo={lightLogo} />
       <Hero heading='We Empower Ideas'/>
       <About/>
-      <ProjectHome/> */}
+      <ProjectHome/>
+      <Footer/>
     </main>
   )
 }

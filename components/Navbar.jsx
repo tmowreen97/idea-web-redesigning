@@ -51,7 +51,7 @@ const Navbar = ({setLightLogo, lightLogo}) => {
         <motion.div
         
         >
-          <Link href='/'>
+          <Link href='/home'>
             {/* style={{ color: `${textColor}` }} */}
             {lightLogo ? <Image src={'/assets/light-logo-2.png'} width={200} height={124} alt={'light_logo'} /> : <Image src={'/assets/dark-logo.png'} width={100} height={100} alt={'dark_logo'} className="ml-5"/>}
           </Link>
@@ -70,7 +70,7 @@ const Navbar = ({setLightLogo, lightLogo}) => {
           </button>
           <ul className="dropdown-menu absolute hidden text-gray-700 pt-1 text-center">
             <li className="bg-button_bg hover:bg-accent_2/80 hover:text-primary_text ml-[-20px] rounded-xl">
-              <Link className="p-2 block mb-1" href={'/#about'}>About Us</Link>
+              <Link className="p-2 block mb-1" href={'/home#about'}>About Us</Link>
             </li>
             <li className="bg-button_bg hover:bg-accent_2/80 hover:text-primary_text ml-[-30px] rounded-xl">
               <Link className="p-2 block" href={'/team'}>Our Team</Link>
@@ -80,14 +80,14 @@ const Navbar = ({setLightLogo, lightLogo}) => {
           </li> 
           <li className='p-4'>
           <div className="dropdown inline-block relative">
-          <button id='project_button' aria-label='project_button' className="inline-flex items-center" id={router.asPath == '/#projects' || router.asPath == '/portfolio' ? "active" : ''}>
+          <button id='project_button' aria-label='project_button' className="inline-flex items-center" id={router.asPath == '/home#projects' || router.asPath == '/portfolio' ? "active" : ''}>
             <span className="mr-1 tracking-wider">Projects</span>
             <BiChevronDown />
             {/* <svg className="fill-current h-4 w-4 hover" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg> */}
           </button>
           <ul className="dropdown-menu absolute hidden text-gray-700 pt-1 text-center">
             <li className="bg-button_bg hover:bg-accent_2/80 hover:text-primary_text ml-[-55px] rounded-xl">
-              <Link className="p-2 block mb-1" href={'/#projects'}>Recent Projects</Link>
+              <Link className="p-2 block mb-1" href={'/home#projects'}>Recent Projects</Link>
             </li>
             <li className="bg-button_bg hover:bg-accent_2/80 hover:text-primary_text ml-[-10px] rounded-xl">
               <Link className="p-2 block" href={'/portfolio'}>Portfolio</Link>
@@ -140,18 +140,18 @@ const Navbar = ({setLightLogo, lightLogo}) => {
             
             
             <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500 '>
-              <Link href='/' id={router.pathname == "/" ? "active" : ""}>Home</Link>
+              <Link href='/home' id={router.pathname == "/home" ? "active" : ""}>Home</Link>
             </li>
             <li  className=' hover:text-gray-500 text-4xl p-4'>
               <div className="dropdown inline-block relative">
-                <button id="about_button" aria-label='about_button' className="inline-flex items-center " id={router.asPath == '/#about' || router.asPath == '/team' ? "active" : ''}>
+                <button id="about_button" aria-label='about_button' className="inline-flex items-center " id={router.asPath == '/home#about' || router.asPath == '/team' ? "active" : ''}>
                   <div className="relative">About</div>
                   <BiChevronDown />
                   {/* <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg> */}
                 </button>
                 <ul className="dropdown-menu absolute left-0 hidden text-gray-70 text-center z-30">
                   <li onClick={handleNav} className="bg-button_bg hover:bg-accent_2 hover:text-primary_text text-dark_text rounded-xl text-4xl p-2 w-[200px] m-2 ">
-                    <Link className="block " href={'/#about'}>About Us</Link>
+                    <Link className="block " href={'/home#about'}>About Us</Link>
                   </li>
                   <li onClick={handleNav} className="bg-button_bg hover:bg-accent_2 hover:text-primary_text text-dark_text rounded-xl text-4xl p-2 w-[200px] m-2">
                     <Link className="block" href={'/team'}>Our Team</Link>
@@ -161,14 +161,14 @@ const Navbar = ({setLightLogo, lightLogo}) => {
             </li>
             <li className='p-4 text-4xl hover:text-gray-500 '>
             <div className="dropdown inline-block relative">
-                <button id='project_button' aria-label='project_button' className="inline-flex items-center " id={router.asPath == '/#projects' || router.asPath == '/portfolio' ? "active" : ''}>
+                <button id='project_button' aria-label='project_button' className="inline-flex items-center " id={router.asPath == '/home#projects' || router.asPath == '/portfolio' ? "active" : ''}>
                   <div className="relative">Projects</div>
                   <BiChevronDown />
                   {/* <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg> */}
                 </button>
                 <ul className="dropdown-menu absolute left-0 hidden text-gray-70  z-20">
                   <li onClick={handleNav} className="bg-button_bg hover:bg-accent_2 hover:text-primary_text text-dark_text rounded-xl text-4xl p-2 w-[275px] m-2 ">
-                    <Link className="block " href={'/#projects'}>Recent Projects</Link>
+                    <Link className="block " href={'/home#projects'}>Recent Projects</Link>
                   </li>
                   <li onClick={handleNav} className="bg-button_bg hover:bg-accent_2 right-0 hover:text-primary_text text-dark_text rounded-xl text-4xl p-2 w-[200px] m-2">
                     <Link className="block" href={'/portfolio'}>Portfolio</Link>
