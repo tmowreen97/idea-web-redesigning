@@ -18,6 +18,48 @@ function Culture_Page({showDropDown, setShowDropDown}){
   // const [showDropDown, setShowDropDown] = useState(false)
   const [category, setCategory] = useState("All Developments")
   const allPosts = [
+    //IDEA OFFICE
+    {
+      id: 25,
+      title: "IDEA's New Miami Office",
+      date: 'December 24, 2024',
+      text: [
+        "Happy Holidays!! What an amazing 2024 it has been for the IDEA team. As the year ends, we are proud and excited to share that we have moved into a new office right in the heart of Downtown Miami! As we continue to grow and innovate in the MEP-FP industry, we remain committed to empowering nationwide and internationally! Even more so in our new Miami office."
+            ],
+      extended_text:[
+        "This chapter marks a significant milestone as we push the boundaries of engineering excellence and collaboration. Here;s to continuously evolving and reaching for the stars!",
+        "Comve visit us! Located:",
+        "25 SE 2nd Ave, Suite 450, Miami, FL 33131"
+      ],
+
+      slideshow: [
+        {
+          title: 'Idea_Office_1',
+          image: '/assets/culture/idea-office/idea-office-1.jpeg',
+        },
+        {
+          title: 'Idea_Office_2',
+          image: '/assets/culture/idea-office/idea-office-2.jpeg',
+        },
+        {
+          title: 'Idea_Office_3',
+          image: '/assets/culture/idea-office/idea-office-3.jpeg',
+        },
+        {
+          title: 'Idea_Office_4',
+          image: '/assets/culture/idea-office/idea-office-4.jpeg',
+        },
+      ],
+      link:[
+        {
+          title: 'Miami Office Address',
+          url: 'https://maps.app.goo.gl/5vz69Uz2WWyiXvoq8'
+        }
+      ],
+      special: "2xl:w-[700px] 2xl:h-[575px] xl:w-[650px] xl:h-[525px] lg:w-[500px] lg:h-[425px] w-[325px] h-[250px] rounded-2xl bg-center bg-cover hover:scale-105  duration-500 transform p-0 z-0",
+
+      category: "Culture Developments",
+    },
     //Miami Meet Up
     {
       id: 24,
