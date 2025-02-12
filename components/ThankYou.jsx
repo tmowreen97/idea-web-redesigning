@@ -59,7 +59,7 @@ function ThankYou(){
                   <h2 className="lg:text-8xl text-6xl">IDEA</h2>
                   <h2 className="lg:text-2xl text-lg lg:pt-14 pt-8 ml-3">AEC</h2>
                 </div>
-                <h2 className="lg:text-2xl text-lg">Inter-Disciplinary Engineering Associates, LLC</h2>
+                <h2 className="lg:text-2xl text-lg">Innovative Design Engineering Associates, LLC</h2>
                 <p className="lg:text-2xl text-lg">Architectural Engineering Consultants</p>
               </div>
               <p className="text-lg">Monroe, Connecticut | Miami, Florida</p>

@@ -13,7 +13,7 @@ function OurTeam (){
       title: 'Introducing Kazi: Our Visionary Founder & Managing Principal',
       heading: '',
       body: [
-        "At the helm of Inter-Disciplinary Engineering Associates, LLC (IDEA) stands Kazi, the visionary Founder & Managing Principal. His leadership fuels the strategic growth of IDEA's integrated Mechanical, Electrical (including Fire Alarm), Plumbing, and Fire Protection (MEP-FP) engineering practice. Drawing from an extensive portfolio of Design and Forensics engineering expertise, Kazi is uniquely experienced to lead and accommodate complex and demanding project engagements.",
+        "At the helm of Innovative Design Engineering Associates, LLC (IDEA) stands Kazi, the visionary Founder & Managing Principal. His leadership fuels the strategic growth of IDEA's integrated Mechanical, Electrical (including Fire Alarm), Plumbing, and Fire Protection (MEP-FP) engineering practice. Drawing from an extensive portfolio of Design and Forensics engineering expertise, Kazi is uniquely experienced to lead and accommodate complex and demanding project engagements.",
         "Prior to founding IDEA, Kazi's journey included impactful roles at prominent engineering establishments including AltieriSeborWieber LLC (Altieri) and DeSimone Consulting Engineers, LLC (New York). With a wealth of diverse professional experience and knowledge, Kazi continues to drive innovation and excellence, translating engineering visions into tangible accomplishments and developments for the Architectural Engineering industry."
       ],
       contact: "/assets/PEKaziAKarimUPDATED.msg",
