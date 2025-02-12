@@ -30,7 +30,7 @@ export default function Footer(){
                   <h1 className="pl-2 md:pt-9 text-2xl pt-6">AEC</h1>
                 </div>
                 <div className="pt-5">
-                  <h1 className="">Inter-Disciplinary Engineering Associates,</h1>
+                  <h1 className="">Innovative Design Engineering Associates,</h1>
                   <h1 className="">Architectural Engineering Consultants LLC</h1>
                 </div>
               
