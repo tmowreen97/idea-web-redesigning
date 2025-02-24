@@ -21,20 +21,20 @@ function OurTeam (){
       fun_fact: "Kazi is an enthusiastic sports fan, always willing to hit the field or harwood (football & basketball) for a good competitive workout. His experience as a College and High-School Quarterback empowers Kazi to joyfully Quarterback the growth and development of IDEA.",
       image: '/assets/KK.jpg'
     },
-    {
-      name: 'Vinoo Jankie',
-      title: 'Introducing Vinoo, An Instrumental Figure at IDEA',
-      heading: "",
-      body:[
-        "In his role as Principal and Electrical Department Lead, Vinoo spearheads overall client engagement, ensuring a seamless experience for all opportunities.",
-        "Vinoo brings 12+ years of detailed Electrical, Fire Alarm, Lighting Controls and Low Voltage (Information Technology, Security, Audio/Visual, etc.) System Design experience to our growing team. With a diverse set of project experience and expertise in multiple sectors of the industry including high-rise residential, mission critical, industrial, and cultural institutions, Vinoo is able to seamlessly service and manage projects of all scales and types. Vinoo has serviced and completed multiple LEED certified projects."
+    // {
+    //   name: 'Vinoo Jankie',
+    //   title: 'Introducing Vinoo, An Instrumental Figure at IDEA',
+    //   heading: "",
+    //   body:[
+    //     "In his role as Principal and Electrical Department Lead, Vinoo spearheads overall client engagement, ensuring a seamless experience for all opportunities.",
+    //     "Vinoo brings 12+ years of detailed Electrical, Fire Alarm, Lighting Controls and Low Voltage (Information Technology, Security, Audio/Visual, etc.) System Design experience to our growing team. With a diverse set of project experience and expertise in multiple sectors of the industry including high-rise residential, mission critical, industrial, and cultural institutions, Vinoo is able to seamlessly service and manage projects of all scales and types. Vinoo has serviced and completed multiple LEED certified projects."
 
-      ],
-      contact: "/assets/PERCDDVinooJankieUPDATED.msg",
-      linkedin: "https://www.linkedin.com/in/vinoo-jankie-pe-09206828/",
-      fun_fact: "Vinoo has two kids and no time for fun… he also has a passion for history, and is an avid reader on the subject.",
-      image: '/assets/VJ.jpg'
-    }
+    //   ],
+    //   contact: "/assets/PERCDDVinooJankieUPDATED.msg",
+    //   linkedin: "https://www.linkedin.com/in/vinoo-jankie-pe-09206828/",
+    //   fun_fact: "Vinoo has two kids and no time for fun… he also has a passion for history, and is an avid reader on the subject.",
+    //   image: '/assets/VJ.jpg'
+    // }
   ]
 
   return(
