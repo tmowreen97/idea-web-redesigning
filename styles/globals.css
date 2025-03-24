@@ -47,11 +47,12 @@ html{
 }
 
 .custom-img{
-  /* background-image: url("/assets/updated-landing copy.jpg "); */
-  background-image: url("/assets/NEW-LANDING-EDITED.png ");
+  background-image: url("/assets/editing copy.jpg ");
+  /* background-image: url("/assets/NEW-LANDING-EDITED.png "); */
 }
 .mobile-img{
-  background-image: url("/assets/NEW-LANDING-EDITED.png ");
+  background-image: url("/assets/editing copy.jpg ");
+  /* background-image: url("/assets/NEW-LANDING-EDITED.png "); */
 }
 
 h2{

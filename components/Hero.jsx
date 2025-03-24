@@ -54,17 +54,14 @@ function Hero({heading}){
       bgColor: '#33FF33',
       delayTime: 2,
       repeatDelayTime : 15,
-      classDesc: "md:absolute my-5 md:my-0 left-[40%] top-[48%]",
+      // classDesc: "md:absolute my-5 md:my-0 left-[40%] top-[48%]",
+      classDesc: "md:absolute my-5 md:my-0 left-[48%] top-[51%]",
       svg_w: '',
       svg_h: '250px',
       svg_class: "relative  origin-top rotate-90 mt-6",
       poly_points:"0,0 130,140",
-      div_parent_class: "absolute bottom-[140%] right-[-10%] w-[350px]",
-      // svg_w: '',
-      // svg_h: "200px",
-      // svg_class: "relative rotate-180 origin-top right-[92%] mt-[-5%]",
-      // poly_points: "30,0, 120,150",
-      // div_parent_class: "absolute bottom-[145%] right-[130%] w-[300px]",
+      // div_parent_class: "absolute bottom-[140%] right-[-10%] w-[350px]",
+      div_parent_class: "absolute bottom-[140%] right-[2%] w-[360px]",
       desc: "Terminal will consist of a NFPA-92 compliant Smoke Control System serving required smoke-protected areas. Terminal's Architecture, Mechanical, Electrical, Fire Alarm and Fire Protection systems will function coherently to achieve required smoke remove.",
       heading: 'Smoke Control System',
       img: '/assets/clip-1.png'
@@ -75,14 +72,13 @@ function Hero({heading}){
       bgColor: '#33FF33',
       delayTime:5,
       repeatDelayTime: 15,
-      classDesc: "md:absolute my-5 md:my-0 right-[27%] top-[42%]",
+      // classDesc: "md:absolute my-5 md:my-0 right-[27%] top-[42%]",
+      classDesc: "md:absolute my-5 md:my-0 right-[25%] top-[48%]",
       svg_w: '',
       svg_h: '250px',
       svg_class: "relative  origin-top rotate-90 mt-6",
       poly_points:"0,0 130,140",
       div_parent_class: "absolute bottom-[140%] right-[-15%] w-[350px]",
-
-      // div_parent_class: "absolute bottom-[140%] right-[20%] w-[350px]",
       desc: "Garage structure houses Mechanical (HVAC) Cooling plants. Location was planned accordingly to conceal and not impact patron experience.",
       heading:"Mechanical Plants",
       img: "/assets/clip-1.png"
@@ -95,29 +91,17 @@ function Hero({heading}){
       bgColor: '#A117FD',
       delayTime:8,
       repeatDelayTime: 15,
-      classDesc: "md:absolute my-5 md:my-0 right-[10%]  top-[45%]",
+      // classDesc: "md:absolute my-5 md:my-0 right-[10%]  top-[45%]",
+      classDesc: "md:absolute my-5 md:my-0 right-[10%]  top-[51%]",
       svg_w: 'w-0',
       svg_h: '300px',
       svg_class: "relative rotate-180 origin-left bottom-[5px] ml-2 h-full",
-      // 55,-10 ,-40,480
       poly_points:"55,40 ,-50,480",
-      div_parent_class: "absolute bottom-[-20%] right-[5%] mr-[-30px] w-[305px]",
+      // div_parent_class: "absolute bottom-[-20%] right-[5%] mr-[-30px] w-[305px]",
+      div_parent_class: "absolute bottom-[-5%] right-[0%] mr-[-95px] w-[305px]",
       desc: "Garage consists 2,500+ Parking spaces with 250+ spaces of Level-2 Electrical (EV) charging infrastructure.",
       heading: "Electric Vehicle Charging",
       img: "/assets/clip-2.png"
-      // classDesc : "md:absolute my-5 md:my-0 left-[33%] bottom-[42%]",
-      // svg_w : "w-full",
-      // svg_h: "250px",
-      // svg_class: "relative rotate-90 right-[90%]",
-      // poly_points: "10,0 200,200",
-      // div_parent_class: "absolute top-[30%] ml-[-110%] w-[375px]",
-      // heading: 'Shore Power',
-      // img: '/assets/clip-2.png',
-      // desc: "When finished, the Terminal will have the ability to probide (2) shore-side electrical power (15-kV) connections to service ships at Berth 8 and Berth 9, while their main and axillary diesel fueled engines are shut down.",
-      // link: 'https://www.miamidade.gov/releases/2021-08-06-portmiami-shore-power-ready.asp'
-      // classDesc : "md:absolute my-5 md:my-0 left-1/4 top-1/3"
-
-      // classDesc: "md:absolute my-5 md:my-0 left-[445px] top-[480px]"
     },
     // Art in Public Places
     {
@@ -125,12 +109,17 @@ function Hero({heading}){
       bgColor: '#A117FD',
       delayTime:11,
       repeatDelayTime: 15,
-      classDesc: "md:absolute my-5 md:my-0 right-[45%] bottom-[41%]",
+      // classDesc: "md:absolute my-5 md:my-0 right-[45%] bottom-[41%]",
+      classDesc: "md:absolute my-5 md:my-0 right-[31%] bottom-[41%]",
       svg_w: '',
       svg_h: '140px',
-      svg_class: "relative rotate-90 right-[70%]",
-      poly_points: "80,-15, 220,200",
-      div_parent_class: " absolute top-[48%] right-[40%] w-[525px]",
+      // svg_class: "relative rotate-90 right-[70%]",
+      // poly_points: "80,-15, 220,200",
+      svg_class: "relative rotate-180 origin-left bottom-[5px] ml-[48px] h-full",
+      poly_points:"55,40 ,-50,480",
+      // div_parent_class: " absolute top-[48%] right-[40%] w-[525px]",
+      div_parent_class: " absolute top-[47%] right-[95%] w-[530px]",
+
       heading: "Art in Public Places",
       desc: "Terminal will include various Art in Public installations to highlight artist to enrich the public environment. A 3D Projection/Light show is planned to work with Terminal's current Architecture, Structure, Building systems including Lighting Control and Audio/Visual systems.",
       link: {
@@ -138,16 +127,6 @@ function Hero({heading}){
         url:"http://www.danielleroney.com/portfolio/the-eddies/"
       },
       img:'/assets/clip-2.png',
-      
-
-      // classDesc: "md:absolute my-5 md:my-0 right-[44%] bottom-[40%]",
-      // svg_w: "",
-      // svg_h: '150px',
-      // svg_class: "relative rotate-180 origin-top right-[95%]",
-      // poly_points: "8,15 200,200",
-      // div_parent_class: "absolute bottom-[180%] ml-[-125%] w-[500px]"
-
-
     },
     // LEED
     {
@@ -155,14 +134,14 @@ function Hero({heading}){
       bgColor: '#A117FD',
       delayTime:14,
       repeatDelayTime: 15,
-      classDesc : "md:absolute my-5 md:my-0 left-[15%] bottom-[40%]",
+      // classDesc : "md:absolute my-5 md:my-0 left-[15%] bottom-[40%]",
+      classDesc : "md:absolute my-5 md:my-0 left-[21%] bottom-[40%]",
       svg_w : "",
       svg_h: "270px",
       svg_class: "relative rotate-180 right-[75%]",
       poly_points: "30,20 100,450",
-
-      // poly_points: "20,-30 150,200",
-      div_parent_class: "absolute top-[45%] right-[50%] 2xl:w-[375px] w-[325px]",
+      // div_parent_class: "absolute top-[45%] right-[50%] 2xl:w-[375px] w-[325px]",
+      div_parent_class: "absolute top-[40%] lg:right-[70%] 2xl:right-[45%] w-[350px]",
       heading: 'LEED',
       img: '/assets/clip-2.png',
       desc: 'The Terminal is on schedule to become LEED Gold Certified upon completion.',
@@ -173,7 +152,8 @@ function Hero({heading}){
       bgColor: '#A117FD',
       delayTime:17,
       repeatDelayTime: 15,
-      classDesc: "md:absolute my-5 md:my-0 left-[18%] top-[44%]",
+      // classDesc: "md:absolute my-5 md:my-0 left-[18%] top-[44%]",
+      classDesc: "md:absolute my-5 md:my-0 left-[30%] top-[49%]",
       heading: 'Shore Power',
       img: '/assets/clip-2.png',
       desc: "When finished, the Terminal will have the ability to provide (2) shore-side electrical power (15-kV) connections to service ships at Berth 8 and Berth 9, while their main and auxiliary diesel fueled engines are shut down.",
@@ -182,30 +162,11 @@ function Hero({heading}){
         url:'https://www.miamidade.gov/releases/2021-08-06-portmiami-shore-power-ready.asp'
       },
       svg_h: "200px",
-      // relative rotate-90 origin-top left-[8%] mt-2
       svg_class: "relative rotate-180 origin-top right-[92%] mt-[-5%]",
-      // ""20,0, 100,100""
       poly_points: "30,0, 120,150",
-      div_parent_class: "absolute bottom-[145%] right-[55%] w-[350px]",
+      // div_parent_class: "absolute bottom-[145%] right-[55%] w-[350px]",
+      div_parent_class: "absolute bottom-[145%] right-[50%] w-[350px]",
       svg_w : "",
-      // svg_h: "143px",
-      // svg_class: "relative rotate-90 origin-top",
-      // poly_points : "20,-20, 244,260",
-      // div_parent_class : " absolute bottom-[170%] left-[0%] w-[350px]",
-      // classDesc: "md:absolute my-5 md:my-0 xl:right-[25%] 2xl:right-[30%] bottom-[43%]",
-      // svg_w: '',
-      // svg_h: '140px', 
-      // svg_class: "relative rotate-90 right-[70%]",
-      // poly_points: "63,2 200,200",
-      // div_parent_class: " absolute top-[20%] ml-[-175%] w-[525px]",
-      // desc: "Terminal will include various Art in Public installations to highlight artist to enrich the public environment. A 3D Projection/Light show is planned to work with Terminal's current Architecture, Structure, Building systems including Lighting Control and Audio/Visual systems.",
-      // link: "http://www.danielleroney.com/portfolio/the-eddies/",
-      // img:'/assets/clip-2.png',
-      // heading: "Art in Public Places"
-
-      // classDesc: "md:absolute my-5 md:my-0 right-[460px] top-[345px]"
-
-
     },
   ]
 
