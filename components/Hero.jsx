@@ -92,7 +92,7 @@ function Hero({heading}){
       delayTime:8,
       repeatDelayTime: 15,
       // classDesc: "md:absolute my-5 md:my-0 right-[10%]  top-[45%]",
-      classDesc: "md:absolute my-5 md:my-0 right-[10%]  top-[51%]",
+      classDesc: "md:absolute my-5 md:my-0 right-[12%] top-[51%]",
       svg_w: 'w-0',
       svg_h: '300px',
       svg_class: "relative rotate-180 origin-left bottom-[5px] ml-2 h-full",
