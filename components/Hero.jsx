@@ -176,7 +176,7 @@ function Hero({heading}){
   }
 
   return (
-    <div className={isBreakPoint ? 'flex items-center justify-center h-screen w-screen pb-16 bg-center bg-cover mobile-img' :'flex items-center justify-center h-screen w-screen pb-16 bg-center bg-cover custom-img'}>
+    <div className={isBreakPoint ? 'flex items-center justify-center h-screen w-screen pb-16 bg-center bg-cover mobile-img' :'flex items-center justify-center h-screen w-screen pb-16 bg-center bg-cover custom-img overflow-hidden'}>
       <motion.div className=" mb-40 md:mb-0 ">
         { !isBreakPoint && !isInView ? 
         // ""

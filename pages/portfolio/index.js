@@ -39,7 +39,7 @@ export default function Portfolio(){
         }
         
       ],
-      image: '/assets/MSC/MSC-2.jpg',
+      image: '/assets/MSC/MSC-2-cropped.jpg',
       images_array: [
         {
           title: 'MSC-1',
