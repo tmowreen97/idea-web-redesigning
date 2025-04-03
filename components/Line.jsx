@@ -14,7 +14,7 @@ function Line({setShowDesc, blinker}){
       </span>
       
       <div className={blinker.div_parent_class}>
-          <div className="p-2  bg-light_bg rounded-xl z-20 ">
+          <div className="p-2  bg-light_bg rounded-xl">
             <div className="flex justify-end ">
               <AiOutlineCloseCircle className="cursor-pointer hover:bg-accent_2 hover:text-primary_text  rounded-full overflow-hidden text-2xl z-10" onClick={()=> setShowDesc(false)} />
             </div>

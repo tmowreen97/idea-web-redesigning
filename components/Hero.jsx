@@ -62,7 +62,7 @@ function Hero({heading}){
       poly_points:"0,0 130,140",
       // div_parent_class: "absolute bottom-[140%] right-[-10%] w-[350px]",
       div_parent_class: "absolute bottom-[140%] right-[2%] w-[360px]",
-      desc: "Terminal will consist of a NFPA-92 compliant Smoke Control System serving required smoke-protected areas. Terminal's Architecture, Mechanical, Electrical, Fire Alarm and Fire Protection systems will function coherently to achieve required smoke remove.",
+      desc: "Terminal will consist of an NFPA-92 compliant smoke control system serving required smoke-protected areas. Terminal's Architectural, Mechanical, Electrical, Fire Alarm and Fire Protection systems will function coherently to achieve required smoke removal and associated requirements.",
       heading: 'Smoke Control System',
       img: '/assets/clip-1.png'
     },
@@ -79,7 +79,7 @@ function Hero({heading}){
       svg_class: "relative  origin-top rotate-90 mt-6",
       poly_points:"0,0 130,140",
       div_parent_class: "absolute bottom-[140%] right-[-15%] w-[350px]",
-      desc: "Garage structure houses Mechanical (HVAC) Cooling plants. Location was planned accordingly to conceal and not impact patron experience.",
+      desc: "Garage structure houses Mechanical (HVAC) Cooling plants. Location was planned accordingly and coordinated to align with project's Architectural and Acoustic aspirations and performance requirements.",
       heading:"Mechanical Plants",
       img: "/assets/clip-1.png"
 
@@ -142,9 +142,9 @@ function Hero({heading}){
       poly_points: "30,20 100,450",
       // div_parent_class: "absolute top-[45%] right-[50%] 2xl:w-[375px] w-[325px]",
       div_parent_class: "absolute top-[40%] lg:right-[70%] 2xl:right-[45%] w-[350px]",
-      heading: 'LEED',
+      heading: 'LEED Gold',
       img: '/assets/clip-2.png',
-      desc: 'The Terminal is on schedule to become LEED Gold Certified upon completion.',
+      desc: 'The Terminal is on schedule to become LEED Gold Certified.',
     },
     // Shore Power
     {
@@ -156,7 +156,7 @@ function Hero({heading}){
       classDesc: "md:absolute my-5 md:my-0 left-[30%] top-[49%]",
       heading: 'Shore Power',
       img: '/assets/clip-2.png',
-      desc: "When finished, the Terminal will have the ability to provide (2) shore-side electrical power (15-kV) connections to service ships at Berth 8 and Berth 9, while their main and auxiliary diesel fueled engines are shut down.",
+      desc: "When finished, the Terminal will have the ability to provide shore-side electrical power (15-kV) connections to service ships at berth. This feature allows shore-to-ship connections without using ship's auxiliary diesel fueled power generators, and limiting environmental impact.",
       link: {
         title: 'Miami-Dade',
         url:'https://www.miamidade.gov/releases/2021-08-06-portmiami-shore-power-ready.asp'
@@ -185,7 +185,7 @@ function Hero({heading}){
             <motion.div 
             initial={{opacity:0}}
             animate ={{opacity:1, transition: {delay:1.5, duration:1}}}
-            key={blinker.name} className='z-20'>
+            key={blinker.name} className='z-40'>
               <Blinker blinker={blinker}  showDesc={showDesc} setShowDesc={setShowDesc}/>
             </motion.div>
           )
@@ -269,6 +269,7 @@ function Hero({heading}){
         </div>
       }
       </motion.div>
+      {/* We Empower IDEAs Heading */}
       <motion.div 
       initial={{opacity:0.1}}
       whileInView={{opacity:[0.5, 0.8, 1], transition:{delay:1.2, duration:1}}}
