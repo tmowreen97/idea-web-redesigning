@@ -53,7 +53,7 @@ const Navbar = ({setLightLogo, lightLogo}) => {
         >
           <Link href='/home'>
             {/* style={{ color: `${textColor}` }} */}
-            {lightLogo ? <Image src={'/assets/light-logo-2.png'} width={200} height={124} alt={'light_logo'} /> : <Image src={'/assets/dark-logo.png'} width={100} height={100} alt={'dark_logo'} className="ml-5"/>}
+            {lightLogo ? <Image src={'/assets/light-logo-2.png'} width={200} height={124} alt={'light_logo'} /> : <Image src={'/assets/dark-logo.png'} width={100} height={100} alt={'IDEA_Homepage'} className="ml-5"/>}
           </Link>
         </motion.div>
         
