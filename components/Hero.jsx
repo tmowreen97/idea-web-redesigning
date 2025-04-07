@@ -153,7 +153,7 @@ function Hero({heading}){
       delayTime:17,
       repeatDelayTime: 15,
       // classDesc: "md:absolute my-5 md:my-0 left-[18%] top-[44%]",
-      classDesc: "md:absolute my-5 md:my-0 left-[30%] top-[49%]",
+      classDesc: "md:absolute my-5 md:my-0 left-[28%] top-[49%]",
       heading: 'Shore Power',
       img: '/assets/clip-2.png',
       desc: "When finished, the Terminal will have the ability to provide shore-side electrical power (15-kV) connections to service ships at berth. This feature allows shore-to-ship connections without using ship's auxiliary diesel fueled power generators, and limiting environmental impact.",
@@ -275,7 +275,7 @@ function Hero({heading}){
       whileInView={{opacity:[0.5, 0.8, 1], transition:{delay:1.2, duration:1}}}
       className='p-5 text-primary_text  outline-black z-0 mt-[-10rem]'
       >
-        <h1 className='lg:text-[700%] text-7xl bg-slate-800/50 rounded-xl md:bg-white/0 m-2 md:m-0 absolute lg:font-thin lg:right-[1%] right-0 bottom-1 p-3 z-0'>{heading}</h1>
+        <h1 className='lg:text-[680%] text-7xl bg-slate-800/50 rounded-xl md:bg-white/0 m-2 md:m-0 absolute lg:font-thin lg:right-[1%] right-0 bottom-1 p-3 z-0'>{heading}</h1>
       </motion.div>
     </div>
   );
