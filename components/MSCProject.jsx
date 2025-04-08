@@ -7,9 +7,10 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { AiFillInstagram, AiFillFacebook, AiFillLinkedin } from "react-icons/ai";
 import MobileImageCarousel from "./MobileImageCarousel";
+import AnimatedText from "./AnimatedText";
 
 function MSCProject(){
-
+  const words = "All Aboard, the Ribbon has Been Cut on the World’s Largest Terminal!"
   const useMediaQuery = (width) => {
     const [targetReached, setTargetReached] = useState(false);
   
@@ -210,8 +211,12 @@ function MSCProject(){
           {/* Body Container */}
           <div className="lg:p-20 md:p-4 flex justify-center">
             <div>
+              {/* Animated Text */}
+              {/* <div className="flex flex-col items-center justify-center">
+                  <AnimatedText text={words}/>
+              </div>   */}
               {/* Featured Photo Container */}
-              <div className="flex justify-center md:p-10 p-2 min-h-[15vh]">           
+              <div className="flex justify-center md:p-10 p-2 min-h-[15vh]">         
                 <div>
                 {/* Photo */}
                 <div className="py-4">

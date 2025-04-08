@@ -43,13 +43,13 @@ export default function AnimatedText({text}){
         className="text-primary_text md:flex "
       >
         {words.map((word, index) => (
-          <motion.span
+          <motion.p
             variants={letter}
             key={index}
             className="md:text-6xl text-2xl font-thin py-5 tracking-wider md:m-4 m-1"
           >
             {word}
-          </motion.span>
+          </motion.p>
         ))}
       </motion.div>
     )
