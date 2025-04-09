@@ -220,8 +220,8 @@ function MSCProject(){
                 {
                   isBreakPoint ? 
                   <div className="py-10">
-                    <AnimatedText text={words1} specialClass={"md:text-4xl text-[14px] font-thin tracking-wider mx-1"}/>
-                    <AnimatedText text={words2} specialClass={"md:text-4xl text-[14px] font-thin tracking-wider mx-1 text-center flex justify-center"}/>
+                    <AnimatedText text={words1} specialClass={"md:text-4xl text-[18px] font-thin tracking-wider mx-1"}/>
+                    <AnimatedText text={words2} specialClass={"md:text-4xl text-[18px] font-thin tracking-wider mx-1 text-center flex justify-center"}/>
                   </div> 
                   :
                   <div>
