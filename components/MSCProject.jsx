@@ -11,6 +11,8 @@ import AnimatedText from "./AnimatedText";
 
 function MSCProject(){
   const words = "All Aboard, the Ribbon has Been Cut on the World’s Largest Terminal!"
+  const words1 = "All Aboard, the Ribbon has Been Cut"
+  const words2 = "on the World’s Largest Terminal!"
   const useMediaQuery = (width) => {
     const [targetReached, setTargetReached] = useState(false);
   
@@ -45,7 +47,7 @@ function MSCProject(){
       description: 'MSC-image-0 Description',
       className: "gallery-item gallery-item-0",
       class_list: ["gallery-item", "gallery-item-0"],
-      image: '/assets/MSC/MSC-1.jpg',
+      image: '/assets/MSC/MSC-1.jpeg',
     },
     {
       title: 'MSC-image-1',
@@ -97,8 +99,8 @@ function MSCProject(){
       title:'proj-feature-1',
       heading: 'MECHANICAL PLANTS',
       heading_className: 'text-dark_text xl:text-4xl text-3xl p-20 md:top-[20%] md:left-auto left-[-6%] top-[10%] absolute',
-      description: "Garage structure houses Mechanical (HVAC) Cooling plants. Location was planned accordingly to conceal and not impact patron experience.",
-      description_className:'text-secondary_text absolute md:text-2xl text-lg xl:p-6 p-4 top-[22%]',
+      description: "Garage structure houses Mechanical (HVAC) Cooling plants. Location was planned accordingly and coordinated to align with project's Architectural and Acoustic aspirations and performance requirements.",
+      description_className:'text-secondary_text absolute md:text-2xl text-lg xl:p-6 p-4 top-[17%]',
       img: '/assets/logos/mech-icon.png',
       img_width: 275,
       img_className: 'md:top-1/4 md:left-[15%] top-[15%] left-[5%] absolute',
@@ -108,8 +110,8 @@ function MSCProject(){
       title:'proj-feature-2',
       heading: 'SMOKE CONTROL SYSTEM',
       heading_className: 'text-dark_text xl:text-4xl text-3xl p-6 md:top-[33%] top-[30%] absolute',
-      description: "Terminal will consist of a NFPA-92 compliant Smoke Control System serving the whole smoke-protected areas. Terminal's Architecture, Mechanical, Electrical, Fire Alarm and Fire Protection systems will function coherently to achieve required smoke remove.",
-      description_className:'text-secondary_text absolute md:text-2xl text-lg xl:p-6 p-4 top-[3%]',
+      description: "Terminal will consist of an NFPA-92 compliant smoke control system serving required smoke-protected areas. Terminal's Architectural, Mechanical, Electrical, Fire Alarm and Fire Protection systems will function coherently to achieve required smoke removal and associated requirements.",
+      description_className:'text-secondary_text absolute md:text-2xl text-lg xl:p-6 p-4 top-[2%]',
       img: '/assets/logos/mech-icon.png',
       img_width: 275,
       img_className: 'md:top-1/4 md:left-[15%] top-[15%] left-[5%] absolute',
@@ -137,9 +139,9 @@ function MSCProject(){
     {
       title:'proj-feature-5',
       heading: 'SHORE POWER',
-      heading_className: 'text-dark_text xl:text-4xl text-3xl p-6 lg:left-[15%] md:top-[40%] md:left-[20%] top-[35%] left-[9%] absolute',
-      description: "When finished, the Terminal will have the ability to provide (2) shore-side electrical power (15-kV) connections to service ships at Berth 8 and Berth 9, while their main and auxiliary diesel fueled engines are shut down.",
-      description_className:'text-secondary_text absolute md:text-2xl text-lg xl:p-6 p-4 top-[13%]',
+      heading_className: 'text-dark_text xl:text-4xl text-3xl p-6 lg:left-[15%] md:top-[35%] md:left-[20%] top-[35%] left-[9%] absolute',
+      description: "When finished, the Terminal will have the ability to provide shore-side electrical power (15-kV) connections to service ships at berth. This feature allows shore-to-ship connections without using ship's auxiliary diesel fueled power generators, and limiting environmental impact.",
+      description_className:'text-secondary_text absolute md:text-2xl text-lg xl:p-6 p-4 top-[5%]',
       img: '/assets/logos/elec-icon.png',
       img_width: 200,
       img_className: 'md:top-[22%] md:left-[25%] top-[10%] left-[15%] absolute',
@@ -148,7 +150,7 @@ function MSCProject(){
       title:'proj-feature-6',
       heading: 'LEED CERTIFICATION',
       heading_className: 'text-dark_text xl:text-4xl text-3xl p-6 lg:left-[4%] lg:top-[40%] md:top-[35%] md:left-[10%] top-[28%] absolute',
-      description: "The Terminal is on schedule to become LEED Gold Certified upon completion.",
+      description: "The Terminal is on schedule to become LEED Gold Certified.",
       description_className:'text-secondary_text absolute md:text-2xl text-lg xl:p-6 p-4 top-[30%]',
       img: '/assets/logos/elec-icon.png',
       img_width: 200,
@@ -212,9 +214,22 @@ function MSCProject(){
           <div className="lg:p-20 md:p-4 flex justify-center">
             <div>
               {/* Animated Text */}
-              {/* <div className="flex flex-col items-center justify-center">
-                  <AnimatedText text={words}/>
-              </div>   */}
+              <motion.div 
+                initial={{opacity:0}}
+                animate={{opacity:1, transition: {delay:1.5, duration:1}}} className="flex items-center justify-center align-middle text-center p-0 w-full">
+                {
+                  isBreakPoint ? 
+                  <div className="py-10">
+                    <AnimatedText text={words1} specialClass={"md:text-4xl text-[14px] font-thin tracking-wider mx-1"}/>
+                    <AnimatedText text={words2} specialClass={"md:text-4xl text-[14px] font-thin tracking-wider mx-1 text-center flex justify-center"}/>
+                  </div> 
+                  :
+                  <div>
+                    <AnimatedText text={words} specialClass={"xl:text-4xl md:text-[26px] text-[12px] font-thin py-5 tracking-wider m-1"}/>
+                  </div>
+                }
+
+              </motion.div>  
               {/* Featured Photo Container */}
               <div className="flex justify-center md:p-10 p-2 min-h-[15vh]">         
                 <div>
@@ -225,7 +240,7 @@ function MSCProject(){
                 {/* Caption */}
                 <motion.div 
                 initial={{opacity:0}}
-                animate={{opacity:1, transition: {delay:2, duration:1}}}
+                animate={{opacity:1, transition: {delay:2.5, duration:1}}}
                 className="py-4 flex italic justify-left text-secondary_text lg:text-2xl ">
                   <div>
                     <h3>Commercial/Transportation</h3>
@@ -240,11 +255,11 @@ function MSCProject(){
               <div className="flex justify-center md:px-20 md:p-10 p-4 text-secondary_text tracking-wide xl:max-w-[1600px]">
                 <motion.div 
                 initial={{opacity:0}}
-                animate={{opacity:1, transition: {delay:2, duration:1}}} 
+                animate={{opacity:1, transition: {delay:3, duration:1}}} 
                 >
                   <div className="my-4">
                     <h2 className="2xl:text-5xl 2xl:leading-[60px] lg:text-4xl text-2xl ">
-                      For the last 3+ years, IDEA AEC Engineering team has been performing Design and Project Management services on this nearly completed masterpiece of Architecture. Alongside multiple talented industry professionals, we continue to accomodate the needs of this project as it heads towards completion for the end of this year.
+                    For the last Four (4) Years, The IDEA Team has provided Engineering and Construction Support Services on this marvel of a project – MSC Miami Cruise Terminal, located at the cruise capital of the world PortMiami (Miami, FL). A unique (BIG) piece of Architecture and it is the World’s largest. The Terminal has been delivered and on April 6th, 2025, IDEA was invited and privileged to attend the Ribbon Cutting Ceremony (which was also, IDEA’s 4th Anniversary).
                     </h2>
                   </div>
                 </motion.div>
@@ -260,16 +275,13 @@ function MSCProject(){
                 <div>
                   <div className="my-4 tracking-wider">
                     <h3 className="xl:text-3xl md:text-2xl text-lg xl:leading-[45px] lg:py-4 py-2">
-                    A multi-vessel cruise terminal capable of serving a total of 36,000 cruise ship passengers
-                    daily. The facility consists of 490,000 sf of interior space and 1,200,000 sf garage (6-Levels).
-                    A boarding concourse extends east approximately 3,000 feet to allow for berthing of three (3)
-                    cruise vessels simultaneously.
+                    A multi-vessel cruise Terminal capable of serving a total of 36,000 cruise ship passengers daily. The facility consists of 492,000 sf of interior space and 1,200,000 sf garage (6-Levels). A boarding concourse extends east approximately 3,000 feet to allow for berthing of three (3) cruise vessels simultaneously.
                     </h3>
                     <h3 className="xl:text-3xl md:text-2xl text-lg xl:leading-[45px] lg:py-4 py-2">
-                    The Terminal’s programming includes but is not limited to: check-in, validation, screening,
-                    waiting lounges, office terrace, passenger bridge concourse, baggage claim, restrooms, U.S.A
-                    customs and border protection areas, VIP lounges, etc. Sustainable goals include LEED Silver
-                    certifcation.
+                    The Terminal’s programming includes but is not limited to: check-in, validation, screening, waiting lounges, office terrace, passenger bridge concourse, baggage claim, restrooms, U.S.A customs and border protection areas, VIP lounges, etc. Sustainable goals include LEED GOLD certification.
+                    </h3>
+                    <h3 className="xl:text-3xl md:text-2xl text-lg xl:leading-[45px] lg:py-4 py-2">
+                    The Terminal is also equipped with shore-to-ship (Shore-Power) infrastructure in-place to provide auxiliary power source to berthed ships, limiting the use of ship’s auxiliary diesel fueled power generators.
                     </h3>
                   </div>
                 </div>

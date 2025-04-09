@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-export default function AnimatedText({text}){
+export default function AnimatedText({text, specialClass}){
 
   const words = text.split(" ")
   const sentence = {
@@ -40,13 +40,13 @@ export default function AnimatedText({text}){
         variants={sentence}
         initial="hidden"
         animate="visible"
-        className="text-primary_text md:flex "
+        className="text-primary_text flex text-center justify-center"
       >
         {words.map((word, index) => (
           <motion.p
             variants={letter}
             key={index}
-            className="md:text-6xl text-2xl font-thin py-5 tracking-wider md:m-4 m-1"
+            className={specialClass}
           >
             {word}
           </motion.p>

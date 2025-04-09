@@ -67,7 +67,7 @@ function OurTeam (){
 
       
       <div className=" md:p-40 p-10 mx-auto flex flex-col items-center justify-center">
-        <AnimatedText text={words}/>
+        <AnimatedText text={words} specialClass={"md:text-6xl text-2xl font-thin py-5 tracking-wider md:m-4 m-1"}/>
       </div>
       </motion.div>
       
