@@ -139,7 +139,7 @@ function MSCProject(){
     {
       title:'proj-feature-5',
       heading: 'SHORE POWER',
-      heading_className: 'text-dark_text xl:text-4xl text-3xl p-6 lg:left-[15%] md:top-[35%] md:left-[20%] top-[35%] left-[9%] absolute',
+      heading_className: 'text-dark_text xl:text-4xl text-3xl p-6 lg:left-[15%] md:top-[38%] md:left-[20%] top-[35%] left-[9%] absolute',
       description: "When finished, the Terminal will have the ability to provide shore-side electrical power (15-kV) connections to service ships at berth. This feature allows shore-to-ship connections without using ship's auxiliary diesel fueled power generators, and limiting environmental impact.",
       description_className:'text-secondary_text absolute md:text-2xl text-lg xl:p-6 p-4 top-[5%]',
       img: '/assets/logos/elec-icon.png',

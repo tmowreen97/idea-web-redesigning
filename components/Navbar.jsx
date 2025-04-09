@@ -24,6 +24,9 @@ const Navbar = ({setLightLogo, lightLogo}) => {
     // }
     const changeColor = () => {
       if (window.scrollY >= 25) {
+        // CFC5CE
+        // setColor('#cfc5ce');
+
         setColor('#a88ca4');
         setTextColor('#FFFFFF');
         if (setLightLogo) {
