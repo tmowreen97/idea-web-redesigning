@@ -18,6 +18,40 @@ function Culture_Page({showDropDown, setShowDropDown}){
   // const [showDropDown, setShowDropDown] = useState(false)
   const [category, setCategory] = useState("All Developments")
   const allPosts = [
+    // UPDATED MSC BEFORE AND AFTER
+    {
+      id: 26,
+      title: "MSC Miami Cruise Terminal Ribbon Cutting!",
+      date: 'April 9, 2025',
+      text: [
+        "The excitement this week is one for the books! IDEA aec has reached yet another milestone with our world class sized project (MSC Miami Cruise Terminal) that has reached completion & ribbon cutting has taken place. World's largest cruise terminal is open to the public and the many passengers who will be embarking and disembarking through this magnificent cruise Terminal at PortMiami."
+        // "We've developed a highlight page all about the progress on our MSC Miami Cruise Terminal Project. There are some new interactive features, like the before and after image slider. It shows the progress we've made from August 2023 to March 2024. We've come a long way and we're so much closer to the finish line! Make sure to follow along with us on our journey.",
+      ],
+      extended_text: [
+        "We are very proud to be a major partner & contributor through the journey that led to this unique build, which beautifully sits at the PortMiami.",
+        "Check our project highlight page (before and after interactive slider feature and ribbon cutting images) developed by our in-house software development team.",
+        "Will be sharing more amazing content soon, stay tuned!"
+      ],
+      link: [{
+        title: 'MSC Project Highlight Page',
+        url: 'https://www.ideaaec.com/MSC-Miami-Cruise-Terminal-Highlight',
+      }],
+      video_small : {
+        title: "msc_updated_before_and_after",
+        url: "/assets/msc-beforeandafter-video.mp4",
+        link: 'https://www.ideaaec.com/MSC-Miami-Cruise-Terminal-Highlight',
+        height: '185px',
+        width: '300px',
+      },
+      video_large: {
+        title: "msc_updated_before_and_after",
+        url: "/assets/msc-beforeandafter-video.mp4",
+        link: 'https://www.ideaaec.com/MSC-Miami-Cruise-Terminal-Highlight',
+        height: '425px',
+        width: '675px',
+      },
+      category: "Project Developments",
+    },
     //IDEA OFFICE
     {
       id: 25,
@@ -366,14 +400,14 @@ function Culture_Page({showDropDown, setShowDropDown}){
 
       ],
       video_small : {
-        title: "msc_groundbreak",
+        title: "eefi_video",
         url: "https://www.youtube.com/watch?v=Zc6OkoSx_UE&ab_channel=IDEA",
         link: 'https://www.youtube.com/watch?v=Zc6OkoSx_UE&ab_channel=IDEA',
         height: '200px',
         width: '300px',
       },
       video_large: {
-        title: "msc_groundbreak",
+        title: "eefi_video",
         url: "https://www.youtube.com/watch?v=Zc6OkoSx_UE&ab_channel=IDEA",
         link: 'https://www.youtube.com/watch?v=Zc6OkoSx_UE&ab_channel=IDEA',
         height: '420px',
