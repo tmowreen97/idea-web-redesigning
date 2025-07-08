@@ -13,7 +13,7 @@ function New_Landing(){
     // Set a timeout to redirect after 30 seconds
     const timer = setTimeout(() => {
       router.replace('/home');  // Replace '/another-page' with your target page
-    }, 45000); // 30000ms = 30 seconds
+    }, 65000); // 30000ms = 30 seconds
 
     // Clean up the timeout if the component unmounts before the timeout completes
     return () => clearTimeout(timer);
@@ -33,7 +33,7 @@ function New_Landing(){
       id='background-video'
       onClick={()=>{handleOutsideClick()}}
       >
-      <source src="/final_new_landing.mp4"
+      <source src="/4_year_video_resized.mp4"
       type="video/mp4"/>
       </video>
       <motion.div
