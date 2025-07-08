@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer"
 import Navbar from "@/components/Navbar"
 import ProjectPortfolio from "@/components/ProjectPortfolio"
 import { useState } from "react"
@@ -326,6 +327,7 @@ export default function EduInst () {
     <div onClick={()=> handleClick()}>
       <Navbar lightLogo={true}/>
       <ProjectPortfolio projects={projects} category={'Educational/Institutional'} showDropDown={showDropDown} setShowDropDown={setShowDropDown}/>
+      <Footer/>
     </div>
   )
 }

@@ -27,7 +27,7 @@ module.exports = {
         tertiary : '#1D0E25',
         // footer_bg: '#CFC5CE',
 
-        footer_bg: '#564C6A',
+        footer_bg: '#a492b0',
         accent_1 : '#9C6DB5',
         accent_2 : '#9C36FC',
         light_accent_1: '#AF8AC3',
@@ -37,9 +37,9 @@ module.exports = {
         primary_text : '#F6F6F6',
         // secondary_text : '#301B3D',
 
-        secondary_text : '#301B3D',
+        secondary_text : '#cfc6e8',
         dark_text_2: '#F6F6F6',
-        dark_text: '#F6F6F6',
+        dark_text: '#301b3d',
         // dark_text : '#301B3D',
         button_bg : '#C0B4D3',
         button_bg_2: '#C3B9D2',

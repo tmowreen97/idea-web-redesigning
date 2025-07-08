@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer"
 import Navbar from "@/components/Navbar"
 import ProjectPortfolio from "@/components/ProjectPortfolio"
 import { useState } from "react"
@@ -38,6 +39,7 @@ export default function Industrial(){
     <div onClick={()=> handleClick()}>
       <Navbar lightLogo={true}/>
       <ProjectPortfolio projects={projects} category={'Industrial'} showDropDown={showDropDown} setShowDropDown={setShowDropDown}/>
+      <Footer/>
     </div>
   )
 }

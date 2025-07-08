@@ -1,4 +1,5 @@
-import {React, useRef, useEffect, useState} from "react";import Video from 'next-video';
+import {React, useRef, useEffect, useState} from "react";
+import Video from 'next-video';
 import Link from "next/link";
 import awesomeVideo from '/videos/EEFI-reverse.mp4';
 import Image from "next/image";

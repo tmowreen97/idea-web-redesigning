@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer"
 import Navbar from "@/components/Navbar"
 import ProjectPortfolio from "@/components/ProjectPortfolio"
 import { useState } from "react"
@@ -154,6 +155,7 @@ export default function HighRise(){
     <div onClick={()=> handleClick()}>
       <Navbar lightLogo={true}/>
       <ProjectPortfolio projects={projects} category={'High-Rise'} showDropDown={showDropDown} setShowDropDown={setShowDropDown}/>
+      <Footer/>
     </div>
   )
 }
