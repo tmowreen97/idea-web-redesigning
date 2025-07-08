@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Footer(){
   return(
-    <div id='footer' className="w-full h-full  bg-secondary ">
+    <div id='footer' className="w-full h-full  bg-secondary_2 ">
       <div className="flex items-center justify-center pt-[50px]">
         <div className=" lg:grid lg:grid-cols-2 justify-evenly text-dark_text tracking-wide">
           <div className="items-center justify-between text-2xl font-light flex md:p-0 px-5" >
@@ -46,7 +46,7 @@ export default function Footer(){
           </div>
           </div>
           <div className="lg:ml-[160px] lg:w-[450px] w-full  h-[95%] mt-5" >
-          <div className="bg-dark_bg/60  md:h-[290px]  rounded-xl ">
+          <div className="bg-dark_bg_2/80  md:h-[290px]  rounded-xl ">
             <div className="items-center justify-center">
               <form 
               className="text-center pt-2 pb-4 items-center justify-center"

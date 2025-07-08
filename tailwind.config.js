@@ -17,10 +17,12 @@ module.exports = {
 
       },
       colors:{
-        // primary: '#DDD8D4',
-        primary: '#301B3D',
-        // secondary: '#978FA8',
+        primary_2: '#CECCD3',
 
+        // primary_2: '#CBC8D3',
+        primary: '#301B3D',
+        // secondary_2: '#978FA8',
+        secondary_2: '#9D97AA',
         secondary: '#A593B1',
         tertiary : '#1D0E25',
         // footer_bg: '#CFC5CE',
@@ -35,13 +37,19 @@ module.exports = {
         primary_text : '#F6F6F6',
         // secondary_text : '#301B3D',
 
-        secondary_text : '#DAD3F5',
-        dark_text : '#301B3D',
+        secondary_text : '#301B3D',
+        dark_text_2: '#F6F6F6',
+        dark_text: '#F6F6F6',
+        // dark_text : '#301B3D',
         button_bg : '#C0B4D3',
+        button_bg_2: '#C3B9D2',
         button_highlight: '#C07FFD',
+        // button_highlight_2: '#E5C9FF',
+        button_highlight_2: '#8241BF',
         light_bg : '#E9DCF9',
         shaded_bg: '#4b3c5c',
-        dark_bg : '#170927'
+        // dark_bg : '#170927'
+        dark_bg_2: '#2D1E3F'
       },
       fontFamily: {
         sans: ['var(--font-urbanist)'],
