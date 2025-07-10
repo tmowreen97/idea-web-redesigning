@@ -19,29 +19,29 @@ function Culture_Page({showDropDown, setShowDropDown}){
   const [category, setCategory] = useState("All Developments")
   const allPosts = [
     // IDEA CULTURE POST
-    // {
-    //   id: 27,
-    //   title: "IDEA's Culture!",
-    //   date: 'July 8, 2025',
-    //   text: [
-    //     "From our IDEA office in Monroe, Connecticut to behind-the-scenes glimpses of our 3D modeling in action, this video highlights the people, culture, and energy that drive our MEP-FP engineering work. With offices in Connecticut, Miami and New York, IDEA is proud to foster a team-focused environment where innovation and technical excellence come together."  
-    //   ],
-    //   video_small : {
-    //     title: "msc_updated_before_and_after",
-    //     url: "/assets/msc-beforeandafter-video.mp4",
-    //     link: 'https://www.ideaaec.com/MSC-Miami-Cruise-Terminal-Highlight',
-    //     height: '185px',
-    //     width: '300px',
-    //   },
-    //   video_large: {
-    //     title: "msc_updated_before_and_after",
-    //     url: "/assets/msc-beforeandafter-video.mp4",
-    //     link: 'https://www.ideaaec.com/MSC-Miami-Cruise-Terminal-Highlight',
-    //     height: '425px',
-    //     width: '675px',
-    //   },
-    //   category: "Cultural Developments",
-    // },
+    {
+      id: 27,
+      title: "IDEA's Culture!",
+      date: 'July 8, 2025',
+      text: [
+        "From our IDEA office in Monroe, Connecticut to behind-the-scenes glimpses of our 3D modeling in action, this video highlights the people, culture, and energy that drive our MEP-FP engineering work. With offices in Connecticut, Miami and New York, IDEA is proud to foster a team-focused environment where innovation and technical excellence come together."  
+      ],
+      video_small : {
+        title: "msc_updated_before_and_after",
+        url: "/assets/final_new_landing.mp4",
+        link: 'https://www.ideaaec.com/MSC-Miami-Cruise-Terminal-Highlight',
+        height: '185px',
+        width: '300px',
+      },
+      video_large: {
+        title: "msc_updated_before_and_after",
+        url: "/assets/final_new_landing.mp4",
+        link: 'https://www.ideaaec.com/MSC-Miami-Cruise-Terminal-Highlight',
+        height: '425px',
+        width: '675px',
+      },
+      category: "Cultural Developments",
+    },
     // UPDATED MSC BEFORE AND AFTER
     {
       id: 26,
@@ -922,7 +922,7 @@ function Culture_Page({showDropDown, setShowDropDown}){
       {/* Featured Video */}
       <div>
         <div className="pb-[35px]">
-          <h1 className="md:text-[500%] text-4xl text-center items-center tracking-wide font-light text-primary_text/70">IDEA Turns 3!</h1>
+          <h1 className="md:text-[500%] text-4xl text-center items-center tracking-wide font-light text-primary_text/70">IDEA Turns 4!</h1>
         </div>
         { isClient ? 
           <div className="justify-center items-center flex md:w-[100%] md:h=[100%] overflow-hidden rounded-2xl">
@@ -933,7 +933,7 @@ function Culture_Page({showDropDown, setShowDropDown}){
                 // https://www.youtube.com/watch?v=SjdX1mYmiP0&ab_channel=IDEA
                 // 2 yr video
                 // https://www.youtube.com/watch?v=xUWu2wi4o-A&ab_channel=IDEA
-                  url={'https://www.youtube.com/watch?v=SjdX1mYmiP0&ab_channel=IDEA'}
+                  url={'https://www.youtube.com/watch?v=YjZ27T5unxg&ab_channel=IDEA'}
                   playing
                   loop
                   muted
@@ -942,7 +942,7 @@ function Culture_Page({showDropDown, setShowDropDown}){
                   height='500px'
                 /> : 
                 <ReactPlayer 
-                  url={'https://www.youtube.com/watch?v=SjdX1mYmiP0&ab_channel=IDEA'}
+                  url={'https://www.youtube.com/watch?v=YjZ27T5unxg&ab_channel=IDEA'}
                   playing
                   loop
                   muted
