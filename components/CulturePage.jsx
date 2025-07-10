@@ -27,16 +27,16 @@ function Culture_Page({showDropDown, setShowDropDown}){
         "From our IDEA office in Monroe, Connecticut to behind-the-scenes glimpses of our 3D modeling in action, this video highlights the people, culture, and energy that drive our MEP-FP engineering work. With offices in Connecticut, Miami and New York, IDEA is proud to foster a team-focused environment where innovation and technical excellence come together."  
       ],
       video_small : {
-        title: "msc_updated_before_and_after",
+        title: "ideas_culture",
         url: "/assets/final_new_landing.mp4",
-        link: 'https://www.ideaaec.com/MSC-Miami-Cruise-Terminal-Highlight',
+        link: 'https://www.ideaaec.com/',
         height: '185px',
         width: '300px',
       },
       video_large: {
-        title: "msc_updated_before_and_after",
+        title: "ideas_culture",
         url: "/assets/final_new_landing.mp4",
-        link: 'https://www.ideaaec.com/MSC-Miami-Cruise-Terminal-Highlight',
+        link: 'https://www.ideaaec.com/',
         height: '425px',
         width: '675px',
       },
